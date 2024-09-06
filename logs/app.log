@@ -1,0 +1,9 @@
+2024-09-06 14:31:05.369 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-06 14:31:30.282 [main] INFO  testCases.LoginTest - login test started..
+2024-09-06 15:29:12.648 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-06 15:29:28.104 [main] INFO  testCases.TC_LoginTest - login test started..
+2024-09-06 15:29:37.192 [main] INFO  testCases.TC_LoginTest - test case finished

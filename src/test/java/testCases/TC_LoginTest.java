@@ -1,0 +1,36 @@
+package testCases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import testBase.BaseClass;
+
+public class TC_LoginTest extends BaseClass
+{
+	@Test
+	public void verify_login()
+	{
+		logger.info("login test started..");
+		try
+		{
+			// login page
+			LoginPage lp = new LoginPage(driver);
+			lp.setUsername(p.getProperty("username"));
+			lp.setPwd(p.getProperty("pwd"));
+			lp.clkSignin();
+
+			// home page
+			HomePage hp = new HomePage(driver);
+			boolean act = hp.isCompanyNameDisplay();
+			Assert.assertEquals(act, true, "login failed");
+			// Assert.assertTrue(act);
+		}
+		catch (Exception e)
+		{
+			Assert.fail();
+		}
+		logger.info("test case finished..");
+	}
+}
