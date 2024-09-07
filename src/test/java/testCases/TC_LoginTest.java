@@ -18,7 +18,9 @@ public class TC_LoginTest extends BaseClass
 			// login page
 			LoginPage lp = new LoginPage(driver);
 			lp.setUsername(p.getProperty("username"));
+			Thread.sleep(3000);
 			lp.setPwd(p.getProperty("pwd"));
+			Thread.sleep(3000);
 			lp.clkSignin();
 
 			// home page
