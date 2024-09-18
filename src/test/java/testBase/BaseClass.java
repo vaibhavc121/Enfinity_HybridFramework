@@ -9,10 +9,8 @@ import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 
 public class BaseClass
 {
@@ -21,8 +19,7 @@ public class BaseClass
 	public Logger logger; // log4j
 
 	@BeforeClass
-	@Parameters("browser")
-	public void setup(String br) throws IOException
+	public void setup() throws IOException
 	{
 		// Loading config.properties file
 		// read- e- input stream
@@ -45,24 +42,24 @@ public class BaseClass
 //			System.out.println("No matching browser ");
 //		}
 
-		switch (br.toLowerCase())
-		{
-		case "chrome":
-			driver = new ChromeDriver();
+//		switch (br.toLowerCase())
+//		{
+//		case "chrome":
+//			driver = new ChromeDriver();
+//
+//			break;
+//
+//		case "edge":
+//			driver = new EdgeDriver();
+//
+//			break;
+//
+//		default:
+//			System.out.println("invalid browser name");
+//			return; // return- totally exit from the execution
+//		}
 
-			break;
-
-		case "edge":
-			driver = new EdgeDriver();
-
-			break;
-
-		default:
-			System.out.println("invalid browser name");
-			return; // return- totally exit from the execution
-		}
-
-		// driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
