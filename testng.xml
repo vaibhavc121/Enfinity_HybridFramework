@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test thread-count="5" name="Test">
+<suite name="RegressionSuite">
+
+	<groups>
+		<run>
+			<include name="regression"></include>
+		</run>
+	</groups>
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"></listener>
+	</listeners>
+
+	<test thread-count="5" name="RegressionTestCases">
 		<classes>
 			<class name="testCases.TC_HrCoreTest" />
 			<!--<class name="testCases.TC_LoginTest" />-->

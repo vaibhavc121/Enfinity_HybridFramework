@@ -1,34 +1,53 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.HrCorePage;
-import pageObjects.LoginPage;
 import testBase.BaseClass;
 
 public class TC_HrCoreTest extends BaseClass
 {
-	@Test
+	@Test(groups = "regression", retryAnalyzer = utilities.RetryAnalyzerClass.class)
 	public void verifyEmpCreation()
 	{
-		// login page
-		LoginPage lp = new LoginPage(driver);
-		lp.setUsername(p.getProperty("username"));
-		lp.setPwd(p.getProperty("pwd"));
-		lp.clkSignin();
+		try
+		{
+			// hr core
+			HrCorePage hc = new HrCorePage(driver);
+			hc.clkHRCore();
+			logger.info("clicked on hr core link");
+			hc.clkEmp();
+			logger.info("clicked on emp form");
+			hc.clkBtnNew();
+			logger.info("clicked on new button");
+			hc.clkMgrDropdown();
+			logger.info("clicked on mgr dropdown");
+			hc.slctMgr();
+			logger.info("mgr selected");
+			hc.setName();
+			logger.info("emp name provided");
+			hc.clkDept();
+			logger.info("clicked on dept");
+			hc.slctDept();
+			logger.info("dept selected");
+			hc.clkDesig();
+			logger.info("clicked on designation");
+			hc.slctDesig();
+			logger.info("designation selected");
+			hc.clkSave();
+			logger.info("clicked on save button");
 
-		// hr core
-		HrCorePage hc = new HrCorePage(driver);
-		hc.clkEmp();
-		hc.clkBtnNew();
-		hc.clkMgrDropdown();
-		hc.slctMgr();
-		hc.setName();
-		hc.clkDept();
-		hc.slctDept();
-		hc.clkDesig();
-		hc.slctDesig();
-		hc.clkSave();
+			logger.info("assertion started");
+			boolean act = hc.verifyEmp();
+			Assert.assertEquals(act, true);
+			logger.info("test case passed");
+		}
+		catch (Exception e)
+		{
+			Assert.fail();
+		}
 
+		logger.info("--test case ends--");
 	}
 }

@@ -13,11 +13,14 @@ public class HrCorePage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
+	@FindBy(xpath = "//span[normalize-space()='HR Core']")
+	WebElement hRCore;
+
 	@FindBy(xpath = "//span[@class='dx-vam'][normalize-space()='Employee']")
 	WebElement employee;
 
 	@FindBy(css = "#MainMenu_DXI0_Img")
-	WebElement mainMenuDXI0Img;
+	WebElement newbtn;
 
 	@FindBy(css = "div[class='dx-first-col dx-last-col dx-last-row dx-field-item dx-col-0 dx-field-item-optional dx-field-item-has-group'] div[class='dx-dropdowneditor-icon']")
 	WebElement clkmgr;
@@ -37,11 +40,19 @@ public class HrCorePage extends BasePage
 	@FindBy(css = "div[class='dx-first-row dx-last-row dx-field-item dx-col-1 dx-field-item-required dx-flex-layout dx-label-v-align'] div[class='dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-show-clear-button dx-dropdowneditor-button-visible dx-editor-outlined dx-texteditor-empty dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler'] div[class='dx-dropdowneditor-icon']")
 	WebElement clkdesg;
 
-	@FindBy(xpath = "//div[contains(text(),'Systems Analyst')]")
+	@FindBy(xpath = "//div[contains(text(,'Systems Analyst')]") // error
 	WebElement slctdesg;
 
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
+
+	@FindBy(xpath = "//h2[normalize-space()='Suraj']")
+	WebElement empname;
+
+	public void clkHRCore()
+	{
+		hRCore.click();
+	}
 
 	public void clkEmp()
 	{
@@ -50,7 +61,7 @@ public class HrCorePage extends BasePage
 
 	public void clkBtnNew()
 	{
-		mainMenuDXI0Img.click();
+		newbtn.click();
 	}
 
 	public void clkMgrDropdown()
@@ -91,6 +102,19 @@ public class HrCorePage extends BasePage
 	public void clkSave()
 	{
 		save.click();
+	}
+
+	public boolean verifyEmp()
+	{
+		// String emp=empname.getText();
+		if (empname.isDisplayed())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 }
