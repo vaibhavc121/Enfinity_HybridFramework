@@ -8,7 +8,7 @@ import testBase.BaseClass;
 
 public class TC_HrCoreTest extends BaseClass
 {
-	@Test(groups = "regression", retryAnalyzer = utilities.RetryAnalyzerClass.class)
+	@Test(groups = "regression", retryAnalyzer = utilities.RetryAnalyzer.class)
 	public void verifyEmpCreation()
 	{
 		try

@@ -330,3 +330,104 @@
 2024-09-20 19:26:27.862 [main] INFO  testCases.TC_HrCoreTest - clicked on dept
 2024-09-20 19:26:27.968 [main] INFO  testCases.TC_HrCoreTest - dept selected
 2024-09-20 19:26:28.259 [main] INFO  testCases.TC_HrCoreTest - clicked on designation
+2024-09-22 23:57:00.819 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-22 23:57:01.199 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-22 23:57:18.615 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-22 23:57:23.112 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-22 23:57:25.669 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-22 23:58:14.447 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-22 23:58:14.606 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-22 23:58:29.315 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-22 23:59:11.540 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:05:03.505 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-23 00:05:03.605 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-23 00:05:05.551 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-23 00:05:05.610 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-23 00:05:05.894 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-23 00:05:19.235 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-23 00:05:19.518 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-23 00:05:31.658 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-23 00:05:55.434 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:11:58.302 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-23 00:11:58.387 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-23 00:12:00.403 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-23 00:12:00.467 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-23 00:12:10.768 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-23 00:12:11.124 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-23 00:12:11.298 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-23 00:12:24.770 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-23 00:12:24.934 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:12:32.122 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-23 00:12:35.228 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-23 00:12:35.356 [main] INFO  testCases.TC_DeptTest - clicked on new btn
+2024-09-23 00:12:55.661 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:12:57.889 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-23 00:12:59.926 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-23 00:13:01.692 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:13:04.102 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-23 00:13:06.334 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-23 00:15:22.307 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-23 00:15:22.372 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-23 00:15:24.328 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-23 00:15:24.387 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-23 00:15:32.313 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-23 00:15:32.606 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-23 00:15:32.742 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-23 00:15:41.571 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-23 00:15:42.507 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:15:44.365 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-23 00:15:45.806 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-23 00:15:45.933 [main] INFO  testCases.TC_DeptTest - clicked on new btn
+2024-09-23 00:17:25.908 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-23 00:17:25.994 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-23 00:17:27.905 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-23 00:17:27.973 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-23 00:17:35.110 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-23 00:17:35.410 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-23 00:17:35.537 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-23 00:17:45.146 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-23 00:17:46.020 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:17:47.987 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-23 00:17:49.654 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-23 00:17:49.753 [main] INFO  testCases.TC_DeptTest - clicked on new btn
+2024-09-23 00:19:50.377 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-23 00:19:50.441 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-23 00:19:52.366 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-23 00:19:52.437 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-23 00:19:59.995 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-23 00:20:00.248 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-23 00:20:00.368 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-23 00:20:12.103 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-23 00:20:20.012 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:20:31.014 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-23 00:20:53.055 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-23 00:21:41.123 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:22:23.076 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-23 00:22:23.164 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-23 00:22:25.047 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-23 00:22:25.118 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-23 00:22:32.985 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-23 00:22:33.322 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-23 00:22:33.486 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-23 00:22:43.154 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-23 00:22:43.283 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-23 00:22:46.407 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-23 00:23:04.052 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-23 00:23:10.437 [main] INFO  testCases.TC_DeptTest - clicked on new btn
+2024-09-23 00:23:19.182 [main] INFO  testCases.TC_DeptTest - dept name entered
+2024-09-23 00:23:25.242 [main] INFO  testCases.TC_DeptTest - clicked self servide dd
+2024-09-23 00:23:40.594 [main] INFO  testCases.TC_DeptTest - clicked dept mgr dd

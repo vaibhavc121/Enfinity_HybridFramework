@@ -14,7 +14,8 @@
 
 	<test thread-count="5" name="RegressionTestCases">
 		<classes>
-			<class name="testCases.TC_HrCoreTest" />
+			<class name="testCases.TC_DeptTest" />
+			<!--<class name="testCases.TC_HrCoreTest" />-->
 			<!--<class name="testCases.TC_LoginTest" />-->
 		</classes>
 	</test> <!--

@@ -19,6 +19,9 @@ public class HrCorePage extends BasePage
 	@FindBy(xpath = "//span[@class='dx-vam'][normalize-space()='Employee']")
 	WebElement employee;
 
+	@FindBy(xpath = "//span[normalize-space()='Setups']")
+	WebElement setups;
+
 	@FindBy(css = "#MainMenu_DXI0_Img")
 	WebElement newbtn;
 
@@ -57,6 +60,11 @@ public class HrCorePage extends BasePage
 	public void clkEmp()
 	{
 		employee.click();
+	}
+
+	public void clkSetupForm()
+	{
+		setups.click();
 	}
 
 	public void clkBtnNew()

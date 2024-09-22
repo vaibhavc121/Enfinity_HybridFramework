@@ -3,7 +3,7 @@ package utilities;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class RetryAnalyzerClass implements IRetryAnalyzer
+public class RetryAnalyzer implements IRetryAnalyzer
 {
 	int counter = 1;
 	int retrylimit = 2;
