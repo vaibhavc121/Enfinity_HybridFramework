@@ -3,15 +3,16 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.DeptPage;
+import pageObjects.DesignationPage;
 import pageObjects.HrCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_DeptTest extends BaseClass
+public class TC_DesignationTest extends BaseClass
 {
+
 	@Test(groups = "regression")
-	public void verifyDept()
+	public void verifyDesignation() throws InterruptedException
 	{
 		try
 		{
@@ -24,29 +25,26 @@ public class TC_DeptTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkDept();
+			sp.clkDesignation();
 			Thread.sleep(2000);
-			logger.info("clicked on dept");
+			logger.info("clicked on desg");
 
-			// dept page
-			DeptPage dp = new DeptPage(driver);
-			dp.clkNewbtn();
+			// designation pg
+			DesignationPage dp = new DesignationPage(driver);
+			dp.clkNewBtn();
 			logger.info("clicked on new btn");
-			dp.setDeptName();
-			logger.info("dept name entered");
-			dp.clkSelfServiceDD();
-			logger.info("clicked self servide dd");
-			dp.clkDeptMgrDD();
-			logger.info("clicked dept mgr dd");
-			dp.setDeptMgrName();
-			logger.info("dept mgr name entered");
-			dp.slctDeptMgr();
-			logger.info("dept mgr selected");
+			dp.setDesigCode();
+			logger.info("entered desg code");
+			dp.setDesignation();
+			logger.info("entered desg");
+//			dp.clkGrade();
+//			logger.info("clicked on grade");
+//			dp.slctGrade();
+//			logger.info("selected grade");
+			dp.setJobDesc();
+			logger.info("provided job desc");
 			dp.clkSave();
-			logger.info("clicked on save button");
-
-			Assert.assertTrue(true);
-
+			logger.info("clicked on save btn");
 		}
 		catch (Exception e)
 		{
@@ -56,4 +54,5 @@ public class TC_DeptTest extends BaseClass
 		logger.info("--test case completed--");
 
 	}
+
 }

@@ -13,9 +13,6 @@ public class DeptPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='Department']")
-	WebElement department;
-
 	@FindBy(css = "#MainMenu_DXI0_Img")
 	WebElement newbtn;
 
@@ -25,7 +22,7 @@ public class DeptPage extends BasePage
 	@FindBy(xpath = "//img[@id='EmployeeSelfService_CBImg']")
 	WebElement selfservice;
 
-	@FindBy(css = "img[id='Department.ManagerEmployeeIdLookup_B-1Img']")
+	@FindBy(xpath = "//input[@id='Department.ManagerEmployeeIdLookup_I']")
 	WebElement deptmgrdd;
 
 	@FindBy(xpath = "//div[@class='lookup-text']")
@@ -33,11 +30,6 @@ public class DeptPage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
-
-	public void clkDept()
-	{
-		department.click();
-	}
 
 	public void clkNewbtn()
 	{
