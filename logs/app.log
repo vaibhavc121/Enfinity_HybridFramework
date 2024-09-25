@@ -551,3 +551,129 @@
 2024-09-23 23:37:39.729 [main] INFO  testCases.TC_DesignationTest - provided job desc
 2024-09-23 23:37:42.346 [main] INFO  testCases.TC_DesignationTest - clicked on save btn
 2024-09-23 23:37:50.547 [main] INFO  testCases.TC_DesignationTest - --test case completed--
+2024-09-24 22:07:51.042 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-24 22:07:51.154 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-09-24 22:07:55.433 [main] INFO  testCases.TC_GradeTest - browser opened
+2024-09-24 22:07:55.492 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-09-24 22:08:04.566 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-09-24 22:08:04.940 [main] INFO  testCases.TC_GradeTest - provided username
+2024-09-24 22:08:05.152 [main] INFO  testCases.TC_GradeTest - provided password
+2024-09-24 22:08:20.529 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-09-24 22:08:22.411 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-09-24 22:08:25.698 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-09-24 22:08:29.892 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-09-24 22:10:52.982 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-09-24 22:11:00.896 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-09-24 22:11:20.678 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-09-24 22:11:33.729 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-09-24 22:11:41.854 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-09-24 22:14:48.844 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-24 22:14:48.938 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-09-24 22:14:50.890 [main] INFO  testCases.TC_GradeTest - browser opened
+2024-09-24 22:14:50.941 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-09-24 22:15:00.667 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-09-24 22:15:00.984 [main] INFO  testCases.TC_GradeTest - provided username
+2024-09-24 22:15:01.141 [main] INFO  testCases.TC_GradeTest - provided password
+2024-09-24 22:15:14.963 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-09-24 22:15:15.088 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-09-24 22:15:17.614 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-09-24 22:15:21.284 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-09-24 22:15:21.385 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-09-24 22:15:23.237 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-09-24 22:15:23.438 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-09-24 22:15:23.616 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-09-24 22:15:23.710 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-09-24 22:18:55.705 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-24 22:18:55.774 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-09-24 22:18:57.643 [main] INFO  testCases.TC_GradeTest - browser opened
+2024-09-24 22:18:57.709 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-09-24 22:19:07.660 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-09-24 22:19:21.126 [main] INFO  testCases.TC_GradeTest - provided username
+2024-09-24 22:19:21.287 [main] INFO  testCases.TC_GradeTest - provided password
+2024-09-24 22:19:31.267 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-09-24 22:19:32.118 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-09-24 22:19:34.108 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-09-24 22:19:37.822 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-09-24 22:19:37.938 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-09-24 22:19:39.749 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-09-24 22:19:39.972 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-09-24 22:19:40.261 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-09-24 22:19:40.417 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-09-24 22:19:49.802 [main] INFO  testCases.TC_GradeTest - indeminity selected
+2024-09-24 22:19:50.485 [main] INFO  testCases.TC_GradeTest - clicked on save button
+2024-09-24 22:22:07.892 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-24 22:22:07.991 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-09-24 22:22:09.808 [main] INFO  testCases.TC_GradeTest - browser opened
+2024-09-24 22:22:09.886 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-09-24 22:22:19.346 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-09-24 22:22:19.670 [main] INFO  testCases.TC_GradeTest - provided username
+2024-09-24 22:22:19.848 [main] INFO  testCases.TC_GradeTest - provided password
+2024-09-24 22:22:31.436 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-09-24 22:22:31.993 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-09-24 22:22:34.130 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-09-24 22:22:37.609 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-09-24 22:22:37.784 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-09-24 22:22:39.584 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-09-24 22:22:39.886 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-09-24 22:22:40.094 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-09-24 22:22:40.202 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-09-24 22:22:43.341 [main] INFO  testCases.TC_GradeTest - indeminity selected
+2024-09-24 22:22:43.956 [main] INFO  testCases.TC_GradeTest - clicked on save button
+2024-09-25 23:11:57.905 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-25 23:11:57.980 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-25 23:12:08.439 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-25 23:12:08.541 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-25 23:12:15.286 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-25 23:12:15.546 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-09-25 23:12:15.671 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-09-25 23:12:27.555 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-25 23:12:29.353 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-09-25 23:12:31.122 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-09-25 23:12:35.995 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-09-25 23:13:08.750 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-09-25 23:13:20.352 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-09-25 23:16:25.901 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-25 23:16:25.961 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-25 23:16:27.477 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-25 23:16:27.531 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-25 23:16:34.305 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-25 23:16:34.544 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-09-25 23:16:34.656 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-09-25 23:16:44.152 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-25 23:16:44.239 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-09-25 23:16:47.051 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-09-25 23:16:50.309 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-09-25 23:17:06.341 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-09-25 23:17:09.597 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-09-25 23:19:17.061 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-25 23:19:17.130 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-25 23:19:18.654 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-25 23:19:18.706 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-25 23:19:25.702 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-25 23:19:26.004 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-09-25 23:19:26.178 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-09-25 23:19:34.376 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-25 23:19:34.464 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-09-25 23:19:36.467 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-09-25 23:19:39.677 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-09-25 23:19:43.986 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-09-25 23:19:47.183 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-09-25 23:20:06.927 [main] INFO  testCases.TC_CalendarTest - entered date
+2024-09-25 23:20:15.732 [main] INFO  testCases.TC_CalendarTest - check weekoff
+2024-09-25 23:20:25.008 [main] INFO  testCases.TC_CalendarTest - check restday
+2024-09-25 23:20:36.213 [main] INFO  testCases.TC_CalendarTest - clicked on save button
+2024-09-25 23:20:47.457 [main] INFO  testCases.TC_CalendarTest - --test case completed--

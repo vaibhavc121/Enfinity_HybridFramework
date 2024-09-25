@@ -11,14 +11,14 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_DeptTest">
+      <class name="testCases.TC_GradeTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyDept"/>
           <include name="setup"/>
+          <include name="verifyGrade"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_DeptTest -->
+      </class> <!-- testCases.TC_GradeTest -->
     </classes>
   </test> <!-- RegressionTestCases(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->
