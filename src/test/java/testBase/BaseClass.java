@@ -8,6 +8,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.OutputType;
@@ -26,7 +27,8 @@ public class BaseClass
 	public Properties p;
 	public Logger logger; // log4j
 
-	@BeforeClass(groups = "regression")
+	@BeforeClass(groups =
+	{ "regression", "datadriven" })
 	public void setup() throws IOException
 	{
 		// Loading config.properties file
@@ -66,6 +68,7 @@ public class BaseClass
 //			System.out.println("invalid browser name");
 //			return; // return- totally exit from the execution
 //		}
+		logger.info("Automation Engineer(SDET)- Vaibhav Chavan");
 		logger.info("--test case started--");
 		driver = new ChromeDriver();
 		logger.info("browser opened");
@@ -77,7 +80,8 @@ public class BaseClass
 		logger.info("provided app URL in browser");
 	}
 
-	@BeforeMethod(groups = "regression")
+	@BeforeMethod(groups =
+	{ "regression", "datadriven" })
 	public void login()
 	{
 		// login page
@@ -90,12 +94,14 @@ public class BaseClass
 		logger.info("clicked on sign in button");
 	}
 
-	@AfterClass(groups = "regression")
+	@AfterClass(groups =
+	{ "regression", "datadriven" })
 	public void teardown()
 	{
 		// driver.quit();
 	}
 
+	// used in extent report manager class
 	public String captureScreen(String tname)
 	{
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -112,8 +118,48 @@ public class BaseClass
 
 	}
 
+	// used in extent report manager class
 	public WebDriver getDriver()
 	{
 		return driver;
 	}
+
+	public String randomString()
+	{
+		String generatedString = RandomStringUtils.randomAlphabetic(6);
+		return generatedString;
+	}
+
+	public String randomNumber()
+	{
+		String generatedNumber = RandomStringUtils.randomNumeric(4);
+		return generatedNumber;
+	}
+
+	public String randomAlphaNumeric()
+	{
+		String alphanumeric = RandomStringUtils.randomAlphanumeric(10);
+		return alphanumeric;
+	}
+
+	public String randomEmail()
+	{
+		String generatedString = RandomStringUtils.randomAlphabetic(6);
+		String generatedNumber = RandomStringUtils.randomNumeric(3);
+		return generatedString + generatedNumber + "@" + "gmail.com";
+	}
+
+	public String randomMblNum()
+	{
+		String generatedNumber = RandomStringUtils.randomNumeric(10);
+		return generatedNumber;
+	}
+
+//	public String randomAlphaNumeric()
+//	{
+//		String generatedString = RandomStringUtils.randomAlphabetic(3);
+//		String generatedNumber = RandomStringUtils.randomNumeric(3);
+//		return (generatedString + "@" + generatedNumer);
+//	}
+
 }

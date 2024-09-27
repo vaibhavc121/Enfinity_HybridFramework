@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-24T22:22:07 IST" name="RegressionSuite" finished-at="2024-09-24T22:22:43 IST" duration-ms="36061">
+  <suite started-at="2024-09-27T17:13:19 IST" name="RegressionSuite" finished-at="2024-09-27T17:13:43 IST" duration-ms="24281">
     <groups>
       <group name="regression">
-        <method signature="TC_GradeTest.verifyGrade()[pri:0, instance:testCases.TC_GradeTest@6bb2d00b]" name="verifyGrade" class="testCases.TC_GradeTest"/>
+        <method signature="TC_CalendarTest.verifyCalendar()[pri:0, instance:testCases.TC_CalendarTest@544820b7]" name="verifyCalendar" class="testCases.TC_CalendarTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2024-09-24T22:22:07 IST" name="RegressionTestCases" finished-at="2024-09-24T22:22:43 IST" duration-ms="36061">
-      <class name="testCases.TC_GradeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_GradeTest@6bb2d00b]" started-at="2024-09-24T22:22:07 IST" name="setup" finished-at="2024-09-24T22:22:19 IST" duration-ms="11374" status="PASS">
+    <test started-at="2024-09-27T17:13:19 IST" name="RegressionTestCases" finished-at="2024-09-27T17:13:43 IST" duration-ms="24281">
+      <class name="testCases.TC_CalendarTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_CalendarTest@544820b7]" started-at="2024-09-27T17:13:19 IST" name="setup" finished-at="2024-09-27T17:13:27 IST" duration-ms="7815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_GradeTest@6bb2d00b]" started-at="2024-09-24T22:22:19 IST" name="login" finished-at="2024-09-24T22:22:31 IST" duration-ms="12070" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_CalendarTest@544820b7]" started-at="2024-09-27T17:13:27 IST" name="login" finished-at="2024-09-27T17:13:36 IST" duration-ms="9235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyGrade()[pri:0, instance:testCases.TC_GradeTest@6bb2d00b]" started-at="2024-09-24T22:22:31 IST" name="verifyGrade" finished-at="2024-09-24T22:22:43 IST" duration-ms="12520" status="PASS">
+        <test-method signature="verifyCalendar()[pri:0, instance:testCases.TC_CalendarTest@544820b7]" started-at="2024-09-27T17:13:36 IST" name="verifyCalendar" finished-at="2024-09-27T17:13:43 IST" duration-ms="6959" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGrade -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_GradeTest@6bb2d00b]" started-at="2024-09-24T22:22:43 IST" name="teardown" finished-at="2024-09-24T22:22:43 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- verifyCalendar -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_CalendarTest@544820b7]" started-at="2024-09-27T17:13:43 IST" name="teardown" finished-at="2024-09-27T17:13:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_GradeTest -->
+      </class> <!-- testCases.TC_CalendarTest -->
     </test> <!-- RegressionTestCases -->
   </suite> <!-- RegressionSuite -->
 </testng-results>

@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.GradePage;
-import pageObjects.HrCorePage;
+import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
@@ -16,7 +16,7 @@ public class TC_GradeTest extends BaseClass
 		try
 		{
 			// hr core
-			HrCorePage hc = new HrCorePage(driver);
+			HRCorePage hc = new HRCorePage(driver);
 			hc.clkHRCore();
 			logger.info("clicked on hr core link");
 			hc.clkSetupForm();

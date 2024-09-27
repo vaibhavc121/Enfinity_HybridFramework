@@ -5,6 +5,7 @@
 	<groups>
 		<run>
 			<include name="regression"></include>
+			<include name="datadriven"></include>
 		</run>
 	</groups>
 
@@ -13,13 +14,17 @@
 	</listeners>
 
 	<test thread-count="5" name="RegressionTestCases">
+		<parameter name="os" value="Windows"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		
 		<classes>
 			<class name="testCases.TC_CalendarTest" />
 			<!--<class name="testCases.TC_GradeTest" />-->
 			<!--<class name="testCases.TC_DesignationTest" />-->
 			<!--<class name="testCases.TC_DeptTest" />-->
-			<!--<class name="testCases.TC_HrCoreTest" />-->
+			<!--<class name="testCases.TC_EmployeeTest" />-->
 			<!--<class name="testCases.TC_LoginTest" />-->
+			<!--<class name="testCases.DDT_ResidencyInfo" />-->			
 		</classes>
 	</test> <!--
 	Test -->

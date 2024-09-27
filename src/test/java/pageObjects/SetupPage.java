@@ -25,6 +25,9 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Calendar']")
 	WebElement calendar;
 
+	@FindBy(xpath = "//a[@class='dxnb-link']//span[@class='dx-vam'][normalize-space()='Employee']")
+	WebElement employee;
+
 	public void clkDept()
 	{
 		department.click();
@@ -43,6 +46,11 @@ public class SetupPage extends BasePage
 	public void clkCalendar()
 	{
 		calendar.click();
+	}
+
+	public void clkEmployee()
+	{
+		employee.click();
 	}
 
 }

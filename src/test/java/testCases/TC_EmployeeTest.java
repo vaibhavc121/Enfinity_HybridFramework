@@ -3,10 +3,12 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.HrCorePage;
+import pageObjects.EmployeePage;
+import pageObjects.HRCorePage;
+import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_HrCoreTest extends BaseClass
+public class TC_EmployeeTest extends BaseClass
 {
 	@Test(groups = "regression", retryAnalyzer = utilities.RetryAnalyzer.class)
 	public void verifyEmpCreation()
@@ -14,32 +16,43 @@ public class TC_HrCoreTest extends BaseClass
 		try
 		{
 			// hr core
-			HrCorePage hc = new HrCorePage(driver);
+			HRCorePage hc = new HRCorePage(driver);
 			hc.clkHRCore();
 			logger.info("clicked on hr core link");
-			hc.clkEmp();
-			logger.info("clicked on emp form");
-			hc.clkBtnNew();
+			hc.clkSetupForm();
+			logger.info("clicked on setup form");
+
+			// setup page
+			SetupPage sp = new SetupPage(driver);
+			sp.clkEmployee();
+			Thread.sleep(2000);
+			logger.info("clicked on employee");
+
+			// employee pg
+			EmployeePage ep = new EmployeePage(driver);
+			ep.clkBtnNew();
 			logger.info("clicked on new button");
-			hc.clkMgrDropdown();
+			ep.setWorkEmail();
+			logger.info("work email provided");
+			ep.clkMgrDropdown();
 			logger.info("clicked on mgr dropdown");
-			hc.slctMgr();
+			ep.slctMgr();
 			logger.info("mgr selected");
-			hc.setName();
+			ep.setName();
 			logger.info("emp name provided");
-			hc.clkDept();
+			ep.clkDept();
 			logger.info("clicked on dept");
-			hc.slctDept();
+			ep.slctDept();
 			logger.info("dept selected");
-			hc.clkDesig();
+			ep.clkDesig();
 			logger.info("clicked on designation");
-			hc.slctDesig();
+			ep.slctDesig();
 			logger.info("designation selected");
-			hc.clkSave();
+			ep.clkSave();
 			logger.info("clicked on save button");
 
 			logger.info("assertion started");
-			boolean act = hc.verifyEmp();
+			boolean act = ep.verifyEmp();
 			Assert.assertEquals(act, true);
 			logger.info("test case passed");
 		}
