@@ -68,7 +68,8 @@ public class BaseClass
 //			System.out.println("invalid browser name");
 //			return; // return- totally exit from the execution
 //		}
-		logger.info("===>> Automation Engineer (SDET)- Vaibhav Chavan <<===");
+		logger.info(
+				"============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================");
 		logger.info("--test case started--");
 		driver = new ChromeDriver();
 		logger.info("browser opened");
