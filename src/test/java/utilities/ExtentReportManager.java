@@ -29,9 +29,10 @@ public class ExtentReportManager implements ITestListener
 
 	public void onStart(ITestContext testContext)
 	{
+
 		/*
-		 * SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); Date dt=new
-		 * Date(); String currentdatetimestamp=df.format(dt);
+		 * SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); Date dt =
+		 * new Date(); String currentdatetimestamp = df.format(dt);
 		 */
 
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp

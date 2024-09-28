@@ -909,3 +909,588 @@
 2024-09-27 17:13:43.245 [main] INFO  testCases.TC_CalendarTest - check restday
 2024-09-27 17:13:43.326 [main] INFO  testCases.TC_CalendarTest - clicked on save button
 2024-09-27 17:13:43.330 [main] INFO  testCases.TC_CalendarTest - --test case completed--
+2024-09-27 23:22:05.232 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-27 23:22:05.644 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-27 23:22:05.644 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-27 23:30:02.865 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-27 23:30:03.247 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-27 23:30:03.248 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-27 23:33:05.793 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-27 23:33:06.160 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-27 23:33:06.160 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-27 23:36:10.821 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-27 23:36:31.498 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-27 23:36:34.856 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-27 23:38:05.954 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-27 23:38:28.713 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-27 23:38:29.604 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 00:07:57.788 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 00:07:58.133 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 00:07:58.134 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 00:08:03.268 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 00:08:03.352 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 00:08:11.372 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 00:08:11.662 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 00:08:11.855 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 00:08:46.168 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-28 00:08:46.300 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-09-28 00:08:49.904 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-09-28 00:08:54.839 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-09-28 00:08:54.936 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-09-28 00:08:58.605 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-09-28 00:08:58.968 [main] INFO  testCases.TC_CalendarTest - entered date
+2024-09-28 00:08:59.121 [main] INFO  testCases.TC_CalendarTest - check weekoff
+2024-09-28 00:08:59.260 [main] INFO  testCases.TC_CalendarTest - check restday
+2024-09-28 00:08:59.352 [main] INFO  testCases.TC_CalendarTest - clicked on save button
+2024-09-28 00:08:59.357 [main] INFO  testCases.TC_CalendarTest - --test case completed--
+2024-09-28 00:20:29.179 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 00:20:29.405 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 00:20:29.406 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 00:20:30.768 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 00:20:30.821 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 00:20:47.256 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 00:21:22.191 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 00:21:22.425 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 00:21:22.425 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 00:26:17.709 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 00:26:27.584 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 00:26:27.769 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 00:34:59.254 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 00:34:59.495 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 00:34:59.496 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 00:35:56.324 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 00:35:56.560 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 00:35:56.561 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 08:10:24.581 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 08:10:24.877 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 08:10:24.877 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 08:18:16.939 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 08:18:17.186 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 08:18:17.187 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 08:18:21.310 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 08:18:35.052 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 08:18:35.299 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 08:18:35.449 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 08:18:50.729 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-28 08:18:51.168 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-09-28 08:18:56.796 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-09-28 08:19:01.535 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-09-28 08:19:01.677 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-09-28 08:19:04.904 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-09-28 08:19:05.306 [main] INFO  testCases.TC_CalendarTest - entered date
+2024-09-28 08:19:05.478 [main] INFO  testCases.TC_CalendarTest - check weekoff
+2024-09-28 08:19:05.605 [main] INFO  testCases.TC_CalendarTest - check restday
+2024-09-28 08:19:05.714 [main] INFO  testCases.TC_CalendarTest - clicked on save button
+2024-09-28 08:19:05.714 [main] INFO  testCases.TC_CalendarTest - --test case completed--
+2024-09-28 09:35:39.619 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\compatibilitytesting.xml
+
+2024-09-28 09:35:39.789 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:35:39.789 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:35:39.863 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:35:39.863 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:35:47.250 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 09:35:51.213 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 09:36:12.590 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 09:36:16.352 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 09:36:16.626 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 09:36:16.745 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 09:36:16.938 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 09:36:17.018 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 09:36:18.660 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-28 09:37:57.148 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\compatibilitytesting.xml
+
+2024-09-28 09:37:57.304 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:37:57.306 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:37:57.382 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:37:57.382 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:37:59.076 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 09:37:59.079 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 09:38:26.702 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 09:38:34.141 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 09:38:34.382 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 09:38:34.514 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 09:38:34.687 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 09:38:34.771 [TestNG-tests-2] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 09:38:44.918 [TestNG-tests-1] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-28 09:40:13.668 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 09:40:13.918 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:40:13.919 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:40:17.399 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 09:40:27.215 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 09:40:27.473 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 09:40:27.621 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 09:40:43.560 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-28 09:40:43.697 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-09-28 09:40:48.228 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-09-28 09:40:51.754 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-09-28 09:40:51.897 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-09-28 09:40:53.473 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-09-28 09:40:53.777 [main] INFO  testCases.TC_CalendarTest - entered date
+2024-09-28 09:40:53.893 [main] INFO  testCases.TC_CalendarTest - check weekoff
+2024-09-28 09:40:54.018 [main] INFO  testCases.TC_CalendarTest - check restday
+2024-09-28 09:40:54.318 [main] INFO  testCases.TC_CalendarTest - clicked on save button
+2024-09-28 09:40:54.318 [main] INFO  testCases.TC_CalendarTest - --test case completed--
+2024-09-28 09:43:48.033 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 09:43:48.253 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:43:48.253 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:44:57.281 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 09:44:57.474 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:44:57.474 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:46:39.877 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 09:46:40.084 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:46:40.084 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:46:41.596 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 09:46:41.647 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 09:46:48.749 [main] INFO  testCases.TC_GradeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:46:48.750 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-09-28 09:46:51.723 [main] INFO  testCases.TC_GradeTest - browser opened
+2024-09-28 09:46:51.832 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-09-28 09:47:01.287 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 09:47:01.948 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-09-28 09:47:02.428 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-09-28 09:47:16.906 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-09-28 09:47:17.292 [main] INFO  testCases.TC_GradeTest - provided username
+2024-09-28 09:47:17.437 [main] INFO  testCases.TC_GradeTest - provided password
+2024-09-28 09:47:18.982 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-09-28 09:47:20.099 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-09-28 09:47:21.905 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-09-28 09:47:25.285 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-09-28 09:47:25.406 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-09-28 09:47:25.857 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-09-28 09:47:25.973 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-09-28 09:47:26.966 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-09-28 09:47:27.254 [main] INFO  testCases.TC_CalendarTest - entered date
+2024-09-28 09:47:27.385 [main] INFO  testCases.TC_CalendarTest - check weekoff
+2024-09-28 09:47:27.478 [main] INFO  testCases.TC_CalendarTest - check restday
+2024-09-28 09:47:27.572 [main] INFO  testCases.TC_CalendarTest - clicked on save button
+2024-09-28 09:47:27.575 [main] INFO  testCases.TC_CalendarTest - --test case completed--
+2024-09-28 09:47:27.607 [main] INFO  testCases.TC_GradeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:47:27.607 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-09-28 09:47:28.190 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-09-28 09:47:30.361 [main] INFO  testCases.TC_GradeTest - browser opened
+2024-09-28 09:47:30.445 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-09-28 09:47:31.784 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-09-28 09:47:31.900 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-09-28 09:47:40.211 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-09-28 09:47:40.480 [main] INFO  testCases.TC_GradeTest - provided username
+2024-09-28 09:47:40.643 [main] INFO  testCases.TC_GradeTest - provided password
+2024-09-28 09:47:50.192 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-09-28 09:47:50.312 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-09-28 09:47:51.805 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-09-28 09:47:52.132 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-09-28 09:47:52.361 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-09-28 09:47:52.483 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-09-28 09:47:52.547 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-09-28 09:47:55.759 [main] INFO  testCases.TC_GradeTest - indeminity selected
+2024-09-28 09:47:55.916 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-09-28 09:47:56.043 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-09-28 09:47:56.579 [main] INFO  testCases.TC_GradeTest - clicked on save button
+2024-09-28 09:47:56.583 [main] INFO  testCases.TC_GradeTest - --test case completed--
+2024-09-28 09:47:56.593 [main] INFO  testCases.TC_DesignationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:47:56.593 [main] INFO  testCases.TC_DesignationTest - --test case started--
+2024-09-28 09:47:57.650 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-09-28 09:47:57.845 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-09-28 09:47:58.020 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-09-28 09:47:58.145 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-09-28 09:47:59.321 [main] INFO  testCases.TC_DesignationTest - browser opened
+2024-09-28 09:47:59.385 [main] INFO  testCases.TC_DesignationTest - browser maximized
+2024-09-28 09:48:01.265 [main] INFO  testCases.TC_GradeTest - indeminity selected
+2024-09-28 09:48:01.549 [main] INFO  testCases.TC_GradeTest - clicked on save button
+2024-09-28 09:48:01.550 [main] INFO  testCases.TC_GradeTest - --test case completed--
+2024-09-28 09:48:01.557 [main] INFO  testCases.TC_DesignationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:48:01.557 [main] INFO  testCases.TC_DesignationTest - --test case started--
+2024-09-28 09:48:04.227 [main] INFO  testCases.TC_DesignationTest - browser opened
+2024-09-28 09:48:04.326 [main] INFO  testCases.TC_DesignationTest - browser maximized
+2024-09-28 09:48:04.794 [main] INFO  testCases.TC_DesignationTest - provided app URL in browser
+2024-09-28 09:48:12.183 [main] INFO  testCases.TC_DesignationTest - provided app URL in browser
+2024-09-28 09:48:12.332 [main] INFO  testCases.TC_DesignationTest - provided username
+2024-09-28 09:48:12.481 [main] INFO  testCases.TC_DesignationTest - provided password
+2024-09-28 09:48:25.536 [main] INFO  testCases.TC_DesignationTest - clicked on sign in button
+2024-09-28 09:48:25.615 [main] INFO  testCases.TC_DesignationTest - clicked on hr core link
+2024-09-28 09:48:27.779 [main] INFO  testCases.TC_DesignationTest - clicked on setup form
+2024-09-28 09:48:28.366 [main] INFO  testCases.TC_DesignationTest - provided username
+2024-09-28 09:48:28.808 [main] INFO  testCases.TC_DesignationTest - provided password
+2024-09-28 09:48:31.237 [main] INFO  testCases.TC_DesignationTest - clicked on desg
+2024-09-28 09:48:31.347 [main] INFO  testCases.TC_DesignationTest - clicked on new btn
+2024-09-28 09:48:38.018 [main] INFO  testCases.TC_DesignationTest - entered desg code
+2024-09-28 09:48:38.139 [main] INFO  testCases.TC_DesignationTest - entered desg
+2024-09-28 09:48:38.306 [main] INFO  testCases.TC_DesignationTest - provided job desc
+2024-09-28 09:48:38.384 [main] INFO  testCases.TC_DesignationTest - clicked on save btn
+2024-09-28 09:48:38.384 [main] INFO  testCases.TC_DesignationTest - --test case completed--
+2024-09-28 09:48:38.389 [main] INFO  testCases.TC_DeptTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:48:38.389 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-28 09:48:38.808 [main] INFO  testCases.TC_DesignationTest - clicked on sign in button
+2024-09-28 09:48:38.959 [main] INFO  testCases.TC_DesignationTest - clicked on hr core link
+2024-09-28 09:48:40.790 [main] INFO  testCases.TC_DesignationTest - clicked on setup form
+2024-09-28 09:48:41.105 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-28 09:48:41.172 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-28 09:48:44.201 [main] INFO  testCases.TC_DesignationTest - clicked on desg
+2024-09-28 09:48:44.335 [main] INFO  testCases.TC_DesignationTest - clicked on new btn
+2024-09-28 09:48:45.691 [main] INFO  testCases.TC_DesignationTest - entered desg code
+2024-09-28 09:48:45.823 [main] INFO  testCases.TC_DesignationTest - entered desg
+2024-09-28 09:48:46.065 [main] INFO  testCases.TC_DesignationTest - provided job desc
+2024-09-28 09:48:46.178 [main] INFO  testCases.TC_DesignationTest - clicked on save btn
+2024-09-28 09:48:46.178 [main] INFO  testCases.TC_DesignationTest - --test case completed--
+2024-09-28 09:48:46.189 [main] INFO  testCases.TC_DeptTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:48:46.190 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-09-28 09:48:48.995 [main] INFO  testCases.TC_DeptTest - browser opened
+2024-09-28 09:48:49.062 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-09-28 09:48:51.215 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-28 09:48:51.382 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-28 09:48:51.552 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-28 09:49:03.555 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-28 09:49:03.642 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-28 09:49:05.943 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-28 09:49:09.292 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-28 09:49:09.802 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-09-28 09:49:09.940 [main] INFO  testCases.TC_DeptTest - provided username
+2024-09-28 09:49:10.080 [main] INFO  testCases.TC_DeptTest - provided password
+2024-09-28 09:49:15.500 [main] INFO  testCases.TC_DeptTest - clicked on new btn
+2024-09-28 09:49:21.732 [main] INFO  testCases.TC_DeptTest - dept name entered
+2024-09-28 09:49:21.818 [main] INFO  testCases.TC_DeptTest - clicked self servide dd
+2024-09-28 09:49:22.068 [main] INFO  testCases.TC_DeptTest - clicked dept mgr dd
+2024-09-28 09:49:22.214 [main] INFO  testCases.TC_DeptTest - dept mgr name entered
+2024-09-28 09:49:22.219 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-09-28 09:49:23.214 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-09-28 09:49:24.294 [main] INFO  testCases.TC_DeptTest - dept mgr selected
+2024-09-28 09:49:24.887 [main] INFO  testCases.TC_DeptTest - clicked on save button
+2024-09-28 09:49:24.888 [main] INFO  testCases.TC_DeptTest - --test case completed--
+2024-09-28 09:49:24.893 [main] INFO  testCases.TC_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:49:24.893 [main] INFO  testCases.TC_EmployeeTest - --test case started--
+2024-09-28 09:49:25.357 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-09-28 09:49:27.617 [main] INFO  testCases.TC_EmployeeTest - browser opened
+2024-09-28 09:49:27.675 [main] INFO  testCases.TC_EmployeeTest - browser maximized
+2024-09-28 09:49:28.548 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-09-28 09:49:28.666 [main] INFO  testCases.TC_DeptTest - clicked on new btn
+2024-09-28 09:49:30.703 [main] INFO  testCases.TC_DeptTest - dept name entered
+2024-09-28 09:49:30.842 [main] INFO  testCases.TC_DeptTest - clicked self servide dd
+2024-09-28 09:49:31.097 [main] INFO  testCases.TC_DeptTest - clicked dept mgr dd
+2024-09-28 09:49:31.247 [main] INFO  testCases.TC_DeptTest - dept mgr name entered
+2024-09-28 09:49:32.210 [main] INFO  testCases.TC_DeptTest - dept mgr selected
+2024-09-28 09:49:32.542 [main] INFO  testCases.TC_DeptTest - clicked on save button
+2024-09-28 09:49:32.542 [main] INFO  testCases.TC_DeptTest - --test case completed--
+2024-09-28 09:49:32.547 [main] INFO  testCases.TC_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:49:32.547 [main] INFO  testCases.TC_EmployeeTest - --test case started--
+2024-09-28 09:49:35.370 [main] INFO  testCases.TC_EmployeeTest - browser opened
+2024-09-28 09:49:35.497 [main] INFO  testCases.TC_EmployeeTest - browser maximized
+2024-09-28 09:49:45.475 [main] INFO  testCases.TC_EmployeeTest - provided app URL in browser
+2024-09-28 09:49:45.628 [main] INFO  testCases.TC_EmployeeTest - provided username
+2024-09-28 09:49:45.898 [main] INFO  testCases.TC_EmployeeTest - provided password
+2024-09-28 09:50:01.267 [main] INFO  testCases.TC_EmployeeTest - clicked on sign in button
+2024-09-28 09:50:01.343 [main] INFO  testCases.TC_EmployeeTest - clicked on hr core link
+2024-09-28 09:50:03.006 [main] INFO  testCases.TC_EmployeeTest - clicked on setup form
+2024-09-28 09:50:05.638 [main] INFO  testCases.TC_EmployeeTest - provided app URL in browser
+2024-09-28 09:50:05.884 [main] INFO  testCases.TC_EmployeeTest - provided username
+2024-09-28 09:50:06.028 [main] INFO  testCases.TC_EmployeeTest - provided password
+2024-09-28 09:50:06.267 [main] INFO  testCases.TC_EmployeeTest - clicked on employee
+2024-09-28 09:50:06.393 [main] INFO  testCases.TC_EmployeeTest - clicked on new button
+2024-09-28 09:50:10.881 [main] INFO  testCases.TC_EmployeeTest - work email provided
+2024-09-28 09:50:11.160 [main] INFO  testCases.TC_EmployeeTest - clicked on mgr dropdown
+2024-09-28 09:50:11.415 [main] INFO  testCases.TC_EmployeeTest - mgr selected
+2024-09-28 09:50:11.518 [main] INFO  testCases.TC_EmployeeTest - emp name provided
+2024-09-28 09:50:11.777 [main] INFO  testCases.TC_EmployeeTest - clicked on dept
+2024-09-28 09:50:11.924 [main] INFO  testCases.TC_EmployeeTest - dept selected
+2024-09-28 09:50:12.065 [main] INFO  testCases.TC_EmployeeTest - clicked on designation
+2024-09-28 09:50:21.614 [main] INFO  testCases.TC_EmployeeTest - clicked on sign in button
+2024-09-28 09:50:22.058 [main] INFO  testCases.TC_EmployeeTest - clicked on hr core link
+2024-09-28 09:50:22.298 [main] INFO  testCases.TC_EmployeeTest - clicked on hr core link
+2024-09-28 09:50:23.517 [main] INFO  testCases.TC_EmployeeTest - clicked on setup form
+2024-09-28 09:50:26.256 [main] INFO  testCases.TC_EmployeeTest - clicked on employee
+2024-09-28 09:50:27.447 [main] INFO  testCases.TC_EmployeeTest - clicked on new button
+2024-09-28 09:50:27.617 [main] INFO  testCases.TC_EmployeeTest - work email provided
+2024-09-28 09:50:27.806 [main] INFO  testCases.TC_EmployeeTest - clicked on mgr dropdown
+2024-09-28 09:50:28.152 [main] INFO  testCases.TC_EmployeeTest - mgr selected
+2024-09-28 09:50:28.275 [main] INFO  testCases.TC_EmployeeTest - emp name provided
+2024-09-28 09:50:28.487 [main] INFO  testCases.TC_EmployeeTest - clicked on dept
+2024-09-28 09:50:28.624 [main] INFO  testCases.TC_EmployeeTest - clicked on setup form
+2024-09-28 09:50:28.639 [main] INFO  testCases.TC_EmployeeTest - dept selected
+2024-09-28 09:50:28.785 [main] INFO  testCases.TC_EmployeeTest - clicked on designation
+2024-09-28 09:50:28.934 [main] INFO  testCases.TC_EmployeeTest - clicked on hr core link
+2024-09-28 09:50:29.993 [main] INFO  testCases.TC_EmployeeTest - clicked on setup form
+2024-09-28 09:50:32.706 [main] INFO  testCases.TC_EmployeeTest - clicked on employee
+2024-09-28 09:50:33.180 [main] INFO  testCases.TC_EmployeeTest - clicked on new button
+2024-09-28 09:50:33.985 [main] INFO  testCases.TC_EmployeeTest - work email provided
+2024-09-28 09:50:34.174 [main] INFO  testCases.TC_EmployeeTest - clicked on mgr dropdown
+2024-09-28 09:50:34.399 [main] INFO  testCases.TC_EmployeeTest - mgr selected
+2024-09-28 09:50:34.558 [main] INFO  testCases.TC_EmployeeTest - emp name provided
+2024-09-28 09:50:34.580 [main] INFO  testCases.TC_EmployeeTest - clicked on employee
+2024-09-28 09:50:34.779 [main] INFO  testCases.TC_EmployeeTest - clicked on dept
+2024-09-28 09:50:34.983 [main] INFO  testCases.TC_EmployeeTest - dept selected
+2024-09-28 09:50:35.172 [main] INFO  testCases.TC_EmployeeTest - clicked on designation
+2024-09-28 09:50:35.401 [main] INFO  testCases.TC_EmployeeTest - clicked on new button
+2024-09-28 09:50:35.462 [main] INFO  testCases.DDT_ResidencyInfo - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:50:35.462 [main] INFO  testCases.DDT_ResidencyInfo - --test case started--
+2024-09-28 09:50:38.260 [main] INFO  testCases.DDT_ResidencyInfo - browser opened
+2024-09-28 09:50:38.316 [main] INFO  testCases.DDT_ResidencyInfo - browser maximized
+2024-09-28 09:50:39.280 [main] INFO  testCases.TC_EmployeeTest - work email provided
+2024-09-28 09:50:39.544 [main] INFO  testCases.TC_EmployeeTest - clicked on mgr dropdown
+2024-09-28 09:50:39.873 [main] INFO  testCases.TC_EmployeeTest - mgr selected
+2024-09-28 09:50:40.015 [main] INFO  testCases.TC_EmployeeTest - emp name provided
+2024-09-28 09:50:40.298 [main] INFO  testCases.TC_EmployeeTest - clicked on dept
+2024-09-28 09:50:40.577 [main] INFO  testCases.TC_EmployeeTest - dept selected
+2024-09-28 09:50:40.858 [main] INFO  testCases.TC_EmployeeTest - clicked on designation
+2024-09-28 09:50:49.677 [main] INFO  testCases.DDT_ResidencyInfo - provided app URL in browser
+2024-09-28 09:50:51.407 [main] INFO  testCases.DDT_ResidencyInfo - provided username
+2024-09-28 09:50:51.592 [main] INFO  testCases.DDT_ResidencyInfo - provided password
+2024-09-28 09:50:51.748 [main] INFO  testCases.TC_EmployeeTest - clicked on hr core link
+2024-09-28 09:50:54.837 [main] INFO  testCases.TC_EmployeeTest - clicked on setup form
+2024-09-28 09:50:59.543 [main] INFO  testCases.TC_EmployeeTest - clicked on employee
+2024-09-28 09:50:59.706 [main] INFO  testCases.DDT_ResidencyInfo - clicked on sign in button
+2024-09-28 09:50:59.790 [main] INFO  testCases.DDT_ResidencyInfo - clicked on hr core link
+2024-09-28 09:51:00.797 [main] INFO  testCases.TC_EmployeeTest - clicked on new button
+2024-09-28 09:51:01.753 [main] INFO  testCases.DDT_ResidencyInfo - clicked on setup form
+2024-09-28 09:51:04.316 [main] INFO  testCases.TC_EmployeeTest - work email provided
+2024-09-28 09:51:04.602 [main] INFO  testCases.TC_EmployeeTest - clicked on mgr dropdown
+2024-09-28 09:51:04.861 [main] INFO  testCases.TC_EmployeeTest - mgr selected
+2024-09-28 09:51:04.972 [main] INFO  testCases.TC_EmployeeTest - emp name provided
+2024-09-28 09:51:05.133 [main] INFO  testCases.DDT_ResidencyInfo - clicked on employee
+2024-09-28 09:51:05.174 [main] INFO  testCases.TC_EmployeeTest - clicked on dept
+2024-09-28 09:51:05.385 [main] INFO  testCases.DDT_ResidencyInfo - emp name entered
+2024-09-28 09:51:05.423 [main] INFO  testCases.TC_EmployeeTest - dept selected
+2024-09-28 09:51:05.755 [main] INFO  testCases.TC_EmployeeTest - clicked on designation
+2024-09-28 09:51:05.944 [main] INFO  testCases.TC_EmployeeTest - clicked on hr core link
+2024-09-28 09:51:08.198 [main] INFO  testCases.TC_EmployeeTest - clicked on setup form
+2024-09-28 09:51:08.612 [main] INFO  testCases.DDT_ResidencyInfo - clicked on filtered employee
+2024-09-28 09:51:13.917 [main] INFO  testCases.TC_EmployeeTest - clicked on employee
+2024-09-28 09:51:18.013 [main] INFO  testCases.TC_EmployeeTest - clicked on new button
+2024-09-28 09:51:18.336 [main] INFO  testCases.TC_EmployeeTest - work email provided
+2024-09-28 09:51:18.640 [main] INFO  testCases.TC_EmployeeTest - clicked on mgr dropdown
+2024-09-28 09:51:19.253 [main] INFO  testCases.TC_EmployeeTest - mgr selected
+2024-09-28 09:51:19.470 [main] INFO  testCases.TC_EmployeeTest - emp name provided
+2024-09-28 09:51:19.699 [main] INFO  testCases.TC_EmployeeTest - clicked on dept
+2024-09-28 09:51:19.818 [main] INFO  testCases.TC_EmployeeTest - dept selected
+2024-09-28 09:51:20.054 [main] INFO  testCases.TC_EmployeeTest - clicked on designation
+2024-09-28 09:51:21.151 [main] INFO  testCases.DDT_ResidencyInfo - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:51:21.151 [main] INFO  testCases.DDT_ResidencyInfo - --test case started--
+2024-09-28 09:51:24.543 [main] INFO  testCases.DDT_ResidencyInfo - browser opened
+2024-09-28 09:51:24.614 [main] INFO  testCases.DDT_ResidencyInfo - browser maximized
+2024-09-28 09:51:35.941 [main] INFO  testCases.DDT_ResidencyInfo - provided app URL in browser
+2024-09-28 09:51:37.534 [main] INFO  testCases.DDT_ResidencyInfo - provided username
+2024-09-28 09:51:37.678 [main] INFO  testCases.DDT_ResidencyInfo - provided password
+2024-09-28 09:51:49.483 [main] INFO  testCases.DDT_ResidencyInfo - clicked on sign in button
+2024-09-28 09:51:50.022 [main] INFO  testCases.DDT_ResidencyInfo - clicked on hr core link
+2024-09-28 09:51:51.605 [main] INFO  testCases.DDT_ResidencyInfo - clicked on setup form
+2024-09-28 09:51:54.822 [main] INFO  testCases.DDT_ResidencyInfo - clicked on employee
+2024-09-28 09:51:55.028 [main] INFO  testCases.DDT_ResidencyInfo - emp name entered
+2024-09-28 09:51:58.202 [main] INFO  testCases.DDT_ResidencyInfo - clicked on filtered employee
+2024-09-28 09:56:08.155 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 09:56:08.464 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:56:08.464 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 09:57:32.529 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 09:57:32.743 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 09:57:32.744 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 10:03:08.385 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 10:03:08.633 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 10:03:08.633 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 10:03:41.328 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 10:03:41.558 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 10:03:41.558 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 10:04:53.119 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 10:04:53.389 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 10:04:53.389 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 10:04:56.215 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 10:34:23.761 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 10:34:24.045 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 10:34:24.045 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 10:41:05.209 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 10:41:05.445 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 10:41:05.445 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 10:41:39.075 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 11:57:06.031 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 11:57:06.266 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 11:57:06.266 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 11:58:07.044 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 11:58:07.278 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 11:58:07.278 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 11:58:37.818 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 11:58:38.050 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 11:58:38.050 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:36:28.865 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml
+
+2024-09-28 17:36:29.337 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:36:29.337 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:36:33.288 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 17:40:10.172 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:40:10.504 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:40:10.505 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:41:51.630 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:42:08.396 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:42:08.397 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:42:59.207 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:42:59.589 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:42:59.590 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:43:20.993 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:43:21.406 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:43:21.407 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:44:32.285 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:44:32.741 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:44:32.742 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:46:17.735 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:46:18.096 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:46:18.096 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:46:38.654 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:46:39.001 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:46:39.002 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:47:40.803 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 17:47:41.192 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 17:47:41.193 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 17:48:05.450 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 17:48:05.549 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 17:48:08.768 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 17:49:18.226 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 17:49:18.349 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 17:49:21.630 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 17:49:21.801 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 17:51:11.579 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 17:51:21.663 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 18:32:43.395 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml
+
+2024-09-28 18:32:43.636 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:32:43.636 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:32:45.798 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 18:34:49.532 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml
+
+2024-09-28 18:34:49.817 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:34:49.817 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:35:00.900 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:35:00.900 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:36:19.715 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 18:36:19.971 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:36:19.972 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:37:29.764 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 18:37:30.019 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:37:30.019 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:37:33.781 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 18:37:33.853 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 18:38:33.563 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 18:38:51.121 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 18:38:51.357 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:38:51.357 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:38:52.772 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-09-28 18:38:52.820 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 18:39:37.242 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-09-28 18:41:07.684 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml
+
+2024-09-28 18:41:07.905 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:41:07.905 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:41:08.927 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:41:08.927 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:41:41.714 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 18:41:41.972 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:41:41.972 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:53:08.727 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml
+
+2024-09-28 18:53:09.054 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:53:09.054 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:55:00.665 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml
+
+2024-09-28 18:55:00.900 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:55:00.900 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:56:15.643 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 18:56:15.867 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:56:15.867 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 18:59:53.706 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 18:59:53.943 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 18:59:53.943 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 19:03:02.810 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-09-28 19:03:03.050 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 19:03:03.050 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 19:03:17.425 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-09-28 19:11:49.555 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml
+
+2024-09-28 19:11:49.829 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-09-28 19:11:49.829 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-09-28 19:11:52.669 [main] INFO  testCases.TC_CalendarTest - browser maximized

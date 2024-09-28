@@ -3,6 +3,7 @@ package testBase;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -12,12 +13,17 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import pageObjects.LoginPage;
 
@@ -27,9 +33,12 @@ public class BaseClass
 	public Properties p;
 	public Logger logger; // log4j
 
+	@SuppressWarnings("deprecation")
 	@BeforeClass(groups =
 	{ "regression", "datadriven" })
-	public void setup() throws IOException
+	@Parameters(
+	{ "os", "browser" })
+	public void setup(String os, String br) throws IOException
 	{
 		// Loading config.properties file
 		// read- e- input stream
@@ -39,40 +48,86 @@ public class BaseClass
 
 		logger = LogManager.getLogger(this.getClass()); // log4j2
 
-//		if (br.equalsIgnoreCase("chrome"))
-//		{
-//			driver = new ChromeDriver();
-//		}
-//		else if (br.equalsIgnoreCase("edge"))
-//		{
-//			driver = new EdgeDriver();
-//		}
-//		else
-//		{
-//			System.out.println("No matching browser ");
-//		}
-
-//		switch (br.toLowerCase())
-//		{
-//		case "chrome":
-//			driver = new ChromeDriver();
-//
-//			break;
-//
-//		case "edge":
-//			driver = new EdgeDriver();
-//
-//			break;
-//
-//		default:
-//			System.out.println("invalid browser name");
-//			return; // return- totally exit from the execution
-//		}
-		logger.warn(
+		logger.info(
 				"============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================");
 		logger.info("--test case started--");
-		driver = new ChromeDriver();
-		logger.info("browser opened");
+
+		// code for execution on selenium grid
+		if (p.getProperty("execution_env").equals("remote"))
+		{
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+
+			// OS (we are getting os from xml file)
+			if (os.equalsIgnoreCase("windows"))
+			{
+				capabilities.setPlatform(Platform.WIN11);
+			}
+			else if (os.equalsIgnoreCase("linux"))
+			{
+				capabilities.setPlatform(Platform.LINUX);
+			}
+			else if (os.equalsIgnoreCase("mac"))
+			{
+				capabilities.setPlatform(Platform.MAC);
+			}
+			else
+			{
+				System.out.println("no matching os");
+				return; // It will automatically exit
+			}
+
+			// browser (we are getting browser from xml file)
+			switch (br.toLowerCase())
+			{
+			case "chrome":
+				capabilities.setBrowserName("chrome");
+
+				break;
+
+			case "edge":
+				capabilities.setBrowserName("MicrosoftEdge");
+
+				break;
+
+			case "firefox":
+				capabilities.setBrowserName("firefox");
+
+				break;
+
+			default:
+				System.out.println("No matching browser ");
+				return; // It will automatically exit from switch case statement
+			}
+
+			driver = new RemoteWebDriver(new URL("http://192.168.233.117:4444/wd/hub"), capabilities);
+			// driver = new RemoteWebDriver(new URL("http://localhost:4444/ui/"),
+			// capabilities);
+		}
+
+		if (p.getProperty("execution_env").equals("local"))
+		{
+			switch (br.toLowerCase())
+			{
+			case "chrome":
+				driver = new ChromeDriver();
+				logger.info("browser opened");
+
+				break;
+
+			case "edge":
+				driver = new EdgeDriver();
+				logger.info("browser opened");
+
+				break;
+
+			default:
+				System.out.println("invalid browser name");
+				return; // return- totally exit from the execution
+			}
+		}
+
+//		driver = new ChromeDriver();
+//		logger.info("browser opened");
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		logger.info("browser maximized");

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Compatibility Testing]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="edgetest(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+        <include name="datadriven"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC_CalendarTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyCalendar"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC_CalendarTest -->
+    </classes>
+  </test> <!-- edgetest(failed) -->
+  <test thread-count="5" parallel="tests" name="chrometest(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+        <include name="datadriven"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC_CalendarTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyCalendar"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC_CalendarTest -->
+    </classes>
+  </test> <!-- chrometest(failed) -->
+</suite> <!-- Failed suite [Compatibility Testing] -->
