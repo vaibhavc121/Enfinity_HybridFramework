@@ -4,9 +4,9 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="linux-chrome(failed)">
-    <parameter name="os" value="linux"/>
-    <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="chrome test(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
     <groups>
       <run>
         <include name="regression"/>
@@ -14,14 +14,14 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_CalendarTest">
+      <class name="testCases.TC_WorkLocationTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyCalendar"/>
+          <include name="verifyWorkLocation"/>
           <include name="setup"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_CalendarTest -->
+      </class> <!-- testCases.TC_WorkLocationTest -->
     </classes>
-  </test> <!-- linux-chrome(failed) -->
+  </test> <!-- chrome test(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

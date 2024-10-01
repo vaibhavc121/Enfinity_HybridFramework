@@ -28,6 +28,12 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//a[@class='dxnb-link']//span[@class='dx-vam'][normalize-space()='Employee']")
 	WebElement employee;
 
+	@FindBy(xpath = "//span[normalize-space()='Religion']")
+	WebElement religion;
+
+	@FindBy(xpath = "//span[normalize-space()='Work Location']")
+	WebElement workLocation;
+
 	public void clkDept()
 	{
 		department.click();
@@ -51,6 +57,16 @@ public class SetupPage extends BasePage
 	public void clkEmployee()
 	{
 		employee.click();
+	}
+
+	public void clkReligion()
+	{
+		religion.click();
+	}
+
+	public void clkWorkLocation()
+	{
+		workLocation.click();
 	}
 
 }

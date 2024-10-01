@@ -99,7 +99,7 @@ public class BaseClass
 				return; // It will automatically exit from switch case statement
 			}
 
-			driver = new RemoteWebDriver(new URL("http://192.168.233.117:4444/wd/hub"), capabilities);
+			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
 			// driver = new RemoteWebDriver(new URL("http://localhost:4444/ui/"),
 			// capabilities);
 		}
