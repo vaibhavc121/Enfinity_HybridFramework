@@ -16,18 +16,19 @@
 
 	<test name="chrome test">
 		<parameter name="os" value="windows"></parameter>
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
 
 		<classes>
-			<class name="testCases.TC_WorkLocationTest" />
+			<!--<class name="testCases.TC_BankTest" />-->
+			<!--<class name="testCases.TC_WorkLocationTest" />-->
 			<!--<class name="testCases.TC_ReligionTest" />-->
-			<!--<class name="testCases.TC_CalendarTest" />-->
-			<!--<class name="testCases.TC_GradeTest" />
-			<class name="testCases.TC_DesignationTest" />
-			<class name="testCases.TC_DeptTest" />
-			<class name="testCases.TC_EmployeeTest" />
-			<class name="testCases.TC_LoginTest" />
-			<class name="testCases.DDT_ResidencyInfo" />	-->
+			<class name="testCases.TC_CalendarTest" />
+			<!--<class name="testCases.TC_GradeTest" /> -->
+			<!--<class name="testCases.TC_DesignationTest" />-->
+			<!--<class name="testCases.TC_DeptTest" />-->
+			<!--<class name="testCases.TC_EmployeeTest" />-->
+			<!--<class name="testCases.TC_LoginTest" />-->
+			<!--<class name="testCases.DDT_ResidencyInfo" />-->	
 		</classes>
 	</test>
 

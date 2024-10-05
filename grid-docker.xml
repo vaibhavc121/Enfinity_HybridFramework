@@ -15,7 +15,7 @@
 
 	<test  name="linux-chrome">
 		<parameter name="os" value="linux"></parameter>
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="browser" value="edge"></parameter>
 		
 		<classes>
 			<class name="testCases.TC_CalendarTest" />

@@ -99,9 +99,16 @@ public class BaseClass
 				return; // It will automatically exit from switch case statement
 			}
 
-			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
+			/* for selenium grid standalone */
+			// driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"),
+			// capabilities);
+			/* for docker container on selenium grid */
 			// driver = new RemoteWebDriver(new URL("http://localhost:4444/ui/"),
 			// capabilities);
+			/* for browserstack */
+			driver = new RemoteWebDriver(
+					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
+					capabilities);
 		}
 
 		if (p.getProperty("execution_env").equals("local"))
@@ -154,7 +161,7 @@ public class BaseClass
 	{ "regression", "datadriven" })
 	public void teardown()
 	{
-		// driver.quit();
+		driver.quit();
 	}
 
 	// used in extent report manager class

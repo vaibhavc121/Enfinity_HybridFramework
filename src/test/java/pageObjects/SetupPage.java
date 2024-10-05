@@ -34,6 +34,9 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Work Location']")
 	WebElement workLocation;
 
+	@FindBy(xpath = "//span[normalize-space()='Bank']")
+	WebElement bank;
+
 	public void clkDept()
 	{
 		department.click();
@@ -67,6 +70,11 @@ public class SetupPage extends BasePage
 	public void clkWorkLocation()
 	{
 		workLocation.click();
+	}
+
+	public void clkBank()
+	{
+		bank.click();
 	}
 
 }

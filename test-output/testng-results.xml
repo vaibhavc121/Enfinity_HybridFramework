@@ -1,54 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-01T23:57:56 IST" name="RegressionSuite" finished-at="2024-10-01T23:58:35 IST" duration-ms="38751">
+  <suite started-at="2024-10-05T11:08:23 IST" name="Default suite" finished-at="2024-10-05T11:08:38 IST" duration-ms="14113">
     <groups>
-      <group name="regression">
-        <method signature="TC_WorkLocationTest.verifyWorkLocation()[pri:0, instance:testCases.TC_WorkLocationTest@5b529706]" name="verifyWorkLocation" class="testCases.TC_WorkLocationTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2024-10-01T23:57:56 IST" name="chrome test" finished-at="2024-10-01T23:58:35 IST" duration-ms="38751">
-      <class name="testCases.TC_WorkLocationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_WorkLocationTest@5b529706]" started-at="2024-10-01T23:57:56 IST" name="setup" finished-at="2024-10-01T23:58:12 IST" duration-ms="15300" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-10-05T11:08:23 IST" name="Default test" finished-at="2024-10-05T11:08:38 IST" duration-ms="14113">
+      <class name="securityTesting.ZAPSecurityTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:securityTesting.ZAPSecurityTest@54d18072]" started-at="2024-10-05T11:08:23 IST" name="setup" finished-at="2024-10-05T11:08:26 IST" duration-ms="2188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_WorkLocationTest@5b529706]" started-at="2024-10-01T23:58:12 IST" name="login" finished-at="2024-10-01T23:58:22 IST" duration-ms="9835" status="PASS">
+        <test-method signature="amazonSecurityTest()[pri:0, instance:securityTesting.ZAPSecurityTest@54d18072]" started-at="2024-10-05T11:08:26 IST" name="amazonSecurityTest" finished-at="2024-10-05T11:08:37 IST" duration-ms="11815" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyWorkLocation()[pri:0, instance:testCases.TC_WorkLocationTest@5b529706]" started-at="2024-10-01T23:58:22 IST" name="verifyWorkLocation" finished-at="2024-10-01T23:58:35 IST" duration-ms="12949" status="FAIL">
+        </test-method> <!-- amazonSecurityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:securityTesting.ZAPSecurityTest@54d18072]" started-at="2024-10-05T11:08:37 IST" name="tearDown" finished-at="2024-10-05T11:08:37 IST" duration-ms="31" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1067)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at org.testng.Assert.assertEquals(Assert.java:1077)
-at testCases.TC_WorkLocationTest.verifyWorkLocation(TC_WorkLocationTest.java:38)
+at org.testng.Assert.fail(Assert.java:116)
+at securityTesting.ZAPSecurityTest.tearDown(ZAPSecurityTest.java:75)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -76,12 +61,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWorkLocation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_WorkLocationTest@5b529706]" started-at="2024-10-01T23:58:35 IST" name="teardown" finished-at="2024-10-01T23:58:35 IST" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_WorkLocationTest -->
-    </test> <!-- chrome test -->
-  </suite> <!-- RegressionSuite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- securityTesting.ZAPSecurityTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
