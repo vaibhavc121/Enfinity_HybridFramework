@@ -51,9 +51,10 @@ public class ReligionPage extends BasePage
 		Thread.sleep(3000);
 	}
 
-	public boolean isReligionCreated()
+	public boolean isReligionCreated() throws InterruptedException
 	{
 		filter.sendKeys(temp);
+		Thread.sleep(2000);
 		String religion = result.getText();
 		if (religion.equals(temp))
 		{

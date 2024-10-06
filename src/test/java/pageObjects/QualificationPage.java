@@ -6,10 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 import testBase.BaseClass;
 
-public class BankPage extends BasePage
+public class QualificationPage extends BasePage
 {
-
-	public BankPage(WebDriver driver)
+	public QualificationPage(WebDriver driver)
 	{
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -20,11 +19,14 @@ public class BankPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='New']")
 	WebElement newbtn;
 
-	@FindBy(xpath = "//input[@id='Bank.Name_I']")
+	@FindBy(xpath = "//input[@id='Qualification.Name_I']")
 	WebElement name;
 
-	@FindBy(xpath = "//span[@id='Bank.CheckIbanValidation_S_D']")
-	WebElement toggle;
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/img[1]")
+	WebElement QualificationType;
+
+	@FindBy(xpath = "//div[normalize-space()='Diploma']")
+	WebElement diploma;
 
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
@@ -47,24 +49,30 @@ public class BankPage extends BasePage
 		name.sendKeys(temp);
 	}
 
-	public void checkToggle()
+	public void clickQualificationDD()
 	{
-		toggle.click();
+		QualificationType.click();
 	}
 
-	public void clkSave() throws InterruptedException
+	public void slctType()
+	{
+		QualificationType.click();
+	}
+
+	public void clkSaveBtn() throws InterruptedException
 	{
 		save.click();
 		driver.navigate().back();
 		Thread.sleep(2000);
 	}
 
-	public boolean isBankCreated() throws InterruptedException
+	public boolean isQualificationCreated() throws InterruptedException
 	{
 		filter.sendKeys(temp);
 		Thread.sleep(2000);
-		String bank = result.getText();
-		if (temp.equals(bank))
+		String qualification = result.getText();
+
+		if (temp.equals(qualification))
 		{
 			return true;
 		}
@@ -72,6 +80,6 @@ public class BankPage extends BasePage
 		{
 			return false;
 		}
-	}
 
+	}
 }

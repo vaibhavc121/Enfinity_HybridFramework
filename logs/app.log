@@ -3975,3 +3975,128 @@
 2024-10-05 11:08:38.147 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@676ff3b0: 11 ms
 2024-10-05 11:08:38.156 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3db64bd4: 8 ms
 2024-10-05 11:08:38.158 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@6e106680: 0 ms
+2024-10-06 23:11:19.005 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-06 23:11:19.478 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-06 23:11:19.478 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-06 23:11:30.689 [main] INFO  testCases.TC_QualificationTest - browser maximized
+2024-10-06 23:11:33.190 [main] INFO  testCases.TC_QualificationTest - provided app URL in browser
+2024-10-06 23:11:33.559 [main] INFO  testCases.TC_QualificationTest - provided username
+2024-10-06 23:11:33.725 [main] INFO  testCases.TC_QualificationTest - provided password
+2024-10-06 23:11:44.057 [main] INFO  testCases.TC_QualificationTest - clicked on sign in button
+2024-10-06 23:11:44.523 [main] INFO  testCases.TC_QualificationTest - clicked on hr core link
+2024-10-06 23:11:51.724 [main] INFO  testCases.TC_QualificationTest - clicked on setup form
+2024-10-06 23:12:00.044 [main] INFO  testCases.TC_QualificationTest - clicked on qualification
+2024-10-06 23:12:07.165 [main] INFO  testCases.TC_QualificationTest - clicked on new btn
+2024-10-06 23:12:07.304 [main] INFO  testCases.TC_QualificationTest - provided qualification
+2024-10-06 23:12:07.759 [main] INFO  testCases.TC_QualificationTest - clicked qlfctn dd
+2024-10-06 23:12:08.172 [main] INFO  testCases.TC_QualificationTest - selected qlfctn type
+2024-10-06 23:12:16.385 [main] INFO  testCases.TC_QualificationTest - clicked on save button
+2024-10-06 23:16:59.142 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-06 23:16:59.569 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-06 23:16:59.570 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-06 23:17:14.554 [main] INFO  testCases.TC_QualificationTest - browser maximized
+2024-10-06 23:17:17.720 [main] INFO  testCases.TC_QualificationTest - provided app URL in browser
+2024-10-06 23:17:18.118 [main] INFO  testCases.TC_QualificationTest - provided username
+2024-10-06 23:17:18.296 [main] INFO  testCases.TC_QualificationTest - provided password
+2024-10-06 23:17:27.151 [main] INFO  testCases.TC_QualificationTest - clicked on sign in button
+2024-10-06 23:17:27.556 [main] INFO  testCases.TC_QualificationTest - clicked on hr core link
+2024-10-06 23:17:35.555 [main] INFO  testCases.TC_QualificationTest - clicked on setup form
+2024-10-06 23:17:44.829 [main] INFO  testCases.TC_QualificationTest - clicked on qualification
+2024-10-06 23:17:51.837 [main] INFO  testCases.TC_QualificationTest - clicked on new btn
+2024-10-06 23:17:51.976 [main] INFO  testCases.TC_QualificationTest - provided qualification
+2024-10-06 23:17:52.551 [main] INFO  testCases.TC_QualificationTest - clicked qlfctn dd
+2024-10-06 23:17:52.900 [main] INFO  testCases.TC_QualificationTest - selected qlfctn type
+2024-10-06 23:18:01.695 [main] INFO  testCases.TC_QualificationTest - clicked on save button
+2024-10-06 23:18:03.988 [main] INFO  testCases.TC_QualificationTest - --test case completed--
+2024-10-06 23:40:21.458 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-06 23:40:21.825 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-06 23:40:21.825 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-06 23:43:20.033 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-06 23:43:20.389 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-06 23:43:20.389 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-06 23:44:11.915 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-06 23:44:12.277 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-06 23:44:12.278 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-06 23:44:16.334 [main] INFO  testCases.TC_QualificationTest - browser maximized
+2024-10-06 23:44:27.143 [main] INFO  testCases.TC_QualificationTest - provided app URL in browser
+2024-10-06 23:44:27.436 [main] INFO  testCases.TC_QualificationTest - provided username
+2024-10-06 23:44:27.680 [main] INFO  testCases.TC_QualificationTest - provided password
+2024-10-06 23:44:37.944 [main] INFO  testCases.TC_QualificationTest - clicked on sign in button
+2024-10-06 23:44:38.850 [main] INFO  testCases.TC_QualificationTest - clicked on hr core link
+2024-10-06 23:44:40.855 [main] INFO  testCases.TC_QualificationTest - clicked on setup form
+2024-10-06 23:44:44.519 [main] INFO  testCases.TC_QualificationTest - clicked on qualification
+2024-10-06 23:44:44.658 [main] INFO  testCases.TC_QualificationTest - clicked on new btn
+2024-10-06 23:44:46.470 [main] INFO  testCases.TC_QualificationTest - provided qualification
+2024-10-06 23:44:46.656 [main] INFO  testCases.TC_QualificationTest - clicked qlfctn dd
+2024-10-06 23:44:46.742 [main] INFO  testCases.TC_QualificationTest - selected qlfctn type
+2024-10-06 23:44:49.806 [main] INFO  testCases.TC_QualificationTest - clicked on save button
+2024-10-06 23:44:52.120 [main] INFO  testCases.TC_QualificationTest - --test case completed--
+2024-10-06 23:45:16.052 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-06 23:45:16.384 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-06 23:45:16.384 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-06 23:45:18.277 [main] INFO  testCases.TC_QualificationTest - browser maximized
+2024-10-06 23:45:28.075 [main] INFO  testCases.TC_QualificationTest - provided app URL in browser
+2024-10-06 23:45:28.462 [main] INFO  testCases.TC_QualificationTest - provided username
+2024-10-06 23:45:28.658 [main] INFO  testCases.TC_QualificationTest - provided password
+2024-10-06 23:45:41.490 [main] INFO  testCases.TC_QualificationTest - clicked on sign in button
+2024-10-06 23:45:42.178 [main] INFO  testCases.TC_QualificationTest - clicked on hr core link
+2024-10-06 23:45:48.795 [main] INFO  testCases.TC_QualificationTest - clicked on setup form
+2024-10-06 23:45:55.129 [main] INFO  testCases.TC_QualificationTest - clicked on qualification
+2024-10-06 23:45:55.310 [main] INFO  testCases.TC_QualificationTest - clicked on new btn
+2024-10-06 23:45:58.361 [main] INFO  testCases.TC_QualificationTest - provided qualification
+2024-10-06 23:45:58.573 [main] INFO  testCases.TC_QualificationTest - clicked qlfctn dd
+2024-10-06 23:45:58.698 [main] INFO  testCases.TC_QualificationTest - selected qlfctn type
+2024-10-06 23:46:01.147 [main] INFO  testCases.TC_QualificationTest - clicked on save button
+2024-10-06 23:46:05.106 [main] INFO  testCases.TC_QualificationTest - --test case completed--
+2024-10-06 23:47:55.888 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.895 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.897 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.897 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.898 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.898 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.899 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.899 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.900 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.900 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.901 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.901 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.901 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.902 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.902 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.902 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.905 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.906 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.906 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.907 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.910 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.911 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.911 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.912 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.924 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 11 ms.
+2024-10-06 23:47:55.932 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 8 ms.
+2024-10-06 23:47:55.935 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.935 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.938 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-06 23:47:55.940 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-06 23:47:55.951 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-1067360809\testng-customsuite.xml
+
+2024-10-06 23:47:55.980 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+2024-10-06 23:48:25.773 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@767191b1: 197 ms
+2024-10-06 23:48:25.775 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@34d52ecd: 0 ms
+2024-10-06 23:48:25.799 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@48528634: 23 ms
+2024-10-06 23:48:25.831 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@4ac86d6a: 32 ms
+2024-10-06 23:48:25.847 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7f353d99: 16 ms
+2024-10-06 23:48:25.847 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4649d70a: 0 ms

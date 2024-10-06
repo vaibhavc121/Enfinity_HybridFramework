@@ -50,9 +50,10 @@ public class WorkLocationPage extends BasePage
 		Thread.sleep(3000);
 	}
 
-	public boolean isWorkLocCreated()
+	public boolean isWorkLocCreated() throws InterruptedException
 	{
 		filter.sendKeys(wc);
+		Thread.sleep(2000);
 		String workloc = result.getText();
 		if (wc.equals(workloc))
 		{
