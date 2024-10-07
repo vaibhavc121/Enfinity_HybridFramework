@@ -4100,3 +4100,77 @@
 2024-10-06 23:48:25.831 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@4ac86d6a: 32 ms
 2024-10-06 23:48:25.847 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7f353d99: 16 ms
 2024-10-06 23:48:25.847 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4649d70a: 0 ms
+2024-10-07 23:30:11.426 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-07 23:30:11.725 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-07 23:30:11.725 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-07 23:31:01.373 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-07 23:31:01.643 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-07 23:31:01.643 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-07 23:31:05.438 [main] INFO  testCases.TC_DocumentTypeTest - browser opened
+2024-10-07 23:31:05.508 [main] INFO  testCases.TC_DocumentTypeTest - browser maximized
+2024-10-07 23:31:13.525 [main] INFO  testCases.TC_DocumentTypeTest - provided app URL in browser
+2024-10-07 23:31:13.846 [main] INFO  testCases.TC_DocumentTypeTest - provided username
+2024-10-07 23:31:13.983 [main] INFO  testCases.TC_DocumentTypeTest - provided password
+2024-10-07 23:31:23.865 [main] INFO  testCases.TC_DocumentTypeTest - clicked on sign in button
+2024-10-07 23:31:23.961 [main] INFO  testCases.TC_DocumentTypeTest - clicked on hr core link
+2024-10-07 23:31:26.042 [main] INFO  testCases.TC_DocumentTypeTest - clicked on setup form
+2024-10-07 23:31:29.614 [main] INFO  testCases.TC_DocumentTypeTest - clicked on doc type
+2024-10-07 23:31:29.738 [main] INFO  testCases.TC_DocumentTypeTest - clicked on new btn
+2024-10-07 23:31:31.214 [main] INFO  testCases.TC_DocumentTypeTest - provided doc type name
+2024-10-07 23:31:34.287 [main] INFO  testCases.TC_DocumentTypeTest - clicked on save button
+2024-10-07 23:34:28.306 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-07 23:34:28.584 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-07 23:34:28.584 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-07 23:34:30.016 [main] INFO  testCases.TC_DocumentTypeTest - browser opened
+2024-10-07 23:34:30.070 [main] INFO  testCases.TC_DocumentTypeTest - browser maximized
+2024-10-07 23:34:37.255 [main] INFO  testCases.TC_DocumentTypeTest - provided app URL in browser
+2024-10-07 23:34:37.520 [main] INFO  testCases.TC_DocumentTypeTest - provided username
+2024-10-07 23:34:37.663 [main] INFO  testCases.TC_DocumentTypeTest - provided password
+2024-10-07 23:34:48.373 [main] INFO  testCases.TC_DocumentTypeTest - clicked on sign in button
+2024-10-07 23:34:48.457 [main] INFO  testCases.TC_DocumentTypeTest - clicked on hr core link
+2024-10-07 23:34:50.018 [main] INFO  testCases.TC_DocumentTypeTest - clicked on setup form
+2024-10-07 23:34:53.273 [main] INFO  testCases.TC_DocumentTypeTest - clicked on doc type
+2024-10-07 23:35:07.260 [main] INFO  testCases.TC_DocumentTypeTest - clicked on new btn
+2024-10-07 23:35:13.586 [main] INFO  testCases.TC_DocumentTypeTest - provided doc type name
+2024-10-07 23:35:24.661 [main] INFO  testCases.TC_DocumentTypeTest - clicked on save button
+2024-10-07 23:37:32.724 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-07 23:37:33.003 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-07 23:37:33.003 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-07 23:37:34.462 [main] INFO  testCases.TC_DocumentTypeTest - browser opened
+2024-10-07 23:37:34.511 [main] INFO  testCases.TC_DocumentTypeTest - browser maximized
+2024-10-07 23:37:43.170 [main] INFO  testCases.TC_DocumentTypeTest - provided app URL in browser
+2024-10-07 23:37:43.453 [main] INFO  testCases.TC_DocumentTypeTest - provided username
+2024-10-07 23:37:43.677 [main] INFO  testCases.TC_DocumentTypeTest - provided password
+2024-10-07 23:37:52.289 [main] INFO  testCases.TC_DocumentTypeTest - clicked on sign in button
+2024-10-07 23:37:52.375 [main] INFO  testCases.TC_DocumentTypeTest - clicked on hr core link
+2024-10-07 23:37:54.544 [main] INFO  testCases.TC_DocumentTypeTest - clicked on setup form
+2024-10-07 23:37:57.738 [main] INFO  testCases.TC_DocumentTypeTest - clicked on doc type
+2024-10-07 23:37:57.862 [main] INFO  testCases.TC_DocumentTypeTest - clicked on new btn
+2024-10-07 23:37:59.221 [main] INFO  testCases.TC_DocumentTypeTest - provided doc type name
+2024-10-07 23:38:02.056 [main] INFO  testCases.TC_DocumentTypeTest - clicked on save button
+2024-10-07 23:39:08.569 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-07 23:39:08.861 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-07 23:39:08.861 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-07 23:39:10.234 [main] INFO  testCases.TC_DocumentTypeTest - browser opened
+2024-10-07 23:39:10.282 [main] INFO  testCases.TC_DocumentTypeTest - browser maximized
+2024-10-07 23:39:18.178 [main] INFO  testCases.TC_DocumentTypeTest - provided app URL in browser
+2024-10-07 23:39:18.445 [main] INFO  testCases.TC_DocumentTypeTest - provided username
+2024-10-07 23:39:18.601 [main] INFO  testCases.TC_DocumentTypeTest - provided password
+2024-10-07 23:39:27.063 [main] INFO  testCases.TC_DocumentTypeTest - clicked on sign in button
+2024-10-07 23:39:27.162 [main] INFO  testCases.TC_DocumentTypeTest - clicked on hr core link
+2024-10-07 23:39:29.357 [main] INFO  testCases.TC_DocumentTypeTest - clicked on setup form
+2024-10-07 23:39:32.587 [main] INFO  testCases.TC_DocumentTypeTest - clicked on doc type
+2024-10-07 23:39:32.706 [main] INFO  testCases.TC_DocumentTypeTest - clicked on new btn
+2024-10-07 23:39:34.139 [main] INFO  testCases.TC_DocumentTypeTest - provided doc type name
+2024-10-07 23:39:36.887 [main] INFO  testCases.TC_DocumentTypeTest - clicked on save button
+2024-10-07 23:39:39.106 [main] INFO  testCases.TC_DocumentTypeTest - --test case completed--

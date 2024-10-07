@@ -1,45 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-06T23:47:55 IST" name="Default suite" finished-at="2024-10-06T23:48:25 IST" duration-ms="29528">
+  <suite started-at="2024-10-07T23:39:08 IST" name="RegressionSuite" finished-at="2024-10-07T23:39:39 IST" duration-ms="30791">
     <groups>
+      <group name="regression">
+        <method signature="TC_DocumentTypeTest.verifyDocType()[pri:0, instance:testCases.TC_DocumentTypeTest@b7838a9]" name="verifyDocType" class="testCases.TC_DocumentTypeTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2024-10-06T23:47:55 IST" name="Default test" finished-at="2024-10-06T23:48:25 IST" duration-ms="29528">
-      <class name="testCases.MySQLDataDrivenTest">
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQLDataDrivenTest@54d18072]" started-at="2024-10-06T23:47:56 IST" name="testLogin" data-provider="dbData" finished-at="2024-10-06T23:48:06 IST" duration-ms="9920" status="PASS">
+    <test started-at="2024-10-07T23:39:08 IST" name="chrome test" finished-at="2024-10-07T23:39:39 IST" duration-ms="30791">
+      <class name="testCases.TC_DocumentTypeTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_DocumentTypeTest@b7838a9]" started-at="2024-10-07T23:39:08 IST" name="setup" finished-at="2024-10-07T23:39:18 IST" duration-ms="9334" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[vaibhavc121@gmail.com]]>
+                <![CDATA[windows]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[rohitc121]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQLDataDrivenTest@54d18072]" started-at="2024-10-06T23:48:06 IST" name="testLogin" data-provider="dbData" finished-at="2024-10-06T23:48:25 IST" duration-ms="18741" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vaibhavc121@demo.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rohitc121]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_DocumentTypeTest@b7838a9]" started-at="2024-10-07T23:39:18 IST" name="login" finished-at="2024-10-07T23:39:27 IST" duration-ms="8863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- testCases.MySQLDataDrivenTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+        <test-method signature="verifyDocType()[pri:0, instance:testCases.TC_DocumentTypeTest@b7838a9]" started-at="2024-10-07T23:39:27 IST" name="verifyDocType" finished-at="2024-10-07T23:39:39 IST" duration-ms="12043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDocType -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_DocumentTypeTest@b7838a9]" started-at="2024-10-07T23:39:39 IST" name="teardown" finished-at="2024-10-07T23:39:39 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_DocumentTypeTest -->
+    </test> <!-- chrome test -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>

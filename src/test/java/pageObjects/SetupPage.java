@@ -40,6 +40,9 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Qualification']")
 	WebElement qualification;
 
+	@FindBy(xpath = "//span[normalize-space()='Document Type']")
+	WebElement documentType;
+
 	public void clkDept()
 	{
 		department.click();
@@ -83,6 +86,11 @@ public class SetupPage extends BasePage
 	public void clkQualification()
 	{
 		qualification.click();
+	}
+
+	public void clkDocType()
+	{
+		documentType.click();
 	}
 
 }
