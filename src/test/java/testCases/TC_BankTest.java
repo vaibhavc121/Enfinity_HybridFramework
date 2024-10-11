@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.BankPage;
-import pageObjects.CorePage;
+import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
@@ -16,7 +16,7 @@ public class TC_BankTest extends BaseClass
 		try
 		{
 			// hr core
-			CorePage hc = new CorePage(driver);
+			HRCorePage hc = new HRCorePage(driver);
 			hc.clkHRCore();
 			logger.info("clicked on hr core link");
 			hc.clkSetupForm();
