@@ -17,6 +17,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -112,10 +113,15 @@ public class BaseClass
 
 		if (p.getProperty("execution_env").equals("local"))
 		{
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless"); // Run in headless mode
+			options.addArguments("--no-sandbox"); // Required for CI environments
+			options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
+
 			switch (br.toLowerCase())
 			{
 			case "chrome":
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(options);
 				logger.info("browser opened");
 
 				break;
