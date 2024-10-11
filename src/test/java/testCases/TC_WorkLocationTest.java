@@ -3,7 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.HRCorePage;
+import pageObjects.CorePage;
 import pageObjects.SetupPage;
 import pageObjects.WorkLocationPage;
 import testBase.BaseClass;
@@ -16,7 +16,7 @@ public class TC_WorkLocationTest extends BaseClass
 		try
 		{
 			// hr core
-			HRCorePage hc = new HRCorePage(driver);
+			CorePage hc = new CorePage(driver);
 			hc.clkHRCore();
 			logger.info("clicked on hr core link");
 			hc.clkSetupForm();
