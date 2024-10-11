@@ -43,6 +43,15 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Document Type']")
 	WebElement documentType;
 
+	@FindBy(xpath = "//span[normalize-space()='Budget']")
+	WebElement budget;
+
+	@FindBy(xpath = "//span[normalize-space()='Asset']")
+	WebElement asset;
+
+	@FindBy(xpath = "//span[normalize-space()='License']")
+	WebElement license;
+
 	public void clkDept()
 	{
 		department.click();
@@ -91,6 +100,21 @@ public class SetupPage extends BasePage
 	public void clkDocType()
 	{
 		documentType.click();
+	}
+
+	public void clkBudget()
+	{
+		budget.click();
+	}
+
+	public void clkAsset()
+	{
+		asset.click();
+	}
+
+	public void clkLicense()
+	{
+		license.click();
 	}
 
 }

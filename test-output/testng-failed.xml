@@ -14,14 +14,14 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_DocumentTypeTest">
+      <class name="testCases.TC_AssetTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyDocType"/>
           <include name="setup"/>
+          <include name="verifyHRAsset"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_DocumentTypeTest -->
+      </class> <!-- testCases.TC_AssetTest -->
     </classes>
   </test> <!-- chrome test(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

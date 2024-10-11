@@ -4174,3 +4174,208 @@
 2024-10-07 23:39:34.139 [main] INFO  testCases.TC_DocumentTypeTest - provided doc type name
 2024-10-07 23:39:36.887 [main] INFO  testCases.TC_DocumentTypeTest - clicked on save button
 2024-10-07 23:39:39.106 [main] INFO  testCases.TC_DocumentTypeTest - --test case completed--
+2024-10-08 22:49:33.970 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-08 22:49:34.374 [main] INFO  testCases.TC_BudgetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-08 22:49:34.375 [main] INFO  testCases.TC_BudgetTest - --test case started--
+2024-10-08 22:49:38.402 [main] INFO  testCases.TC_BudgetTest - browser opened
+2024-10-08 22:49:38.455 [main] INFO  testCases.TC_BudgetTest - browser maximized
+2024-10-08 22:49:46.929 [main] INFO  testCases.TC_BudgetTest - provided app URL in browser
+2024-10-08 22:49:47.235 [main] INFO  testCases.TC_BudgetTest - provided username
+2024-10-08 22:49:47.454 [main] INFO  testCases.TC_BudgetTest - provided password
+2024-10-08 22:49:57.722 [main] INFO  testCases.TC_BudgetTest - clicked on sign in button
+2024-10-08 22:49:57.854 [main] INFO  testCases.TC_BudgetTest - clicked on hr core link
+2024-10-08 22:49:59.998 [main] INFO  testCases.TC_BudgetTest - clicked on setup form
+2024-10-08 22:50:03.615 [main] INFO  testCases.TC_BudgetTest - clicked on budget
+2024-10-08 22:50:03.801 [main] INFO  testCases.TC_BudgetTest - clicked on new btn
+2024-10-08 22:50:12.731 [main] INFO  testCases.TC_BudgetTest - provided budget name
+2024-10-08 22:50:12.903 [main] INFO  testCases.TC_BudgetTest - provided start dt
+2024-10-08 22:50:13.168 [main] INFO  testCases.TC_BudgetTest - provided end dt
+2024-10-08 22:50:22.963 [main] INFO  testCases.TC_BudgetTest - clicked on save btn
+2024-10-08 22:50:35.201 [main] INFO  testCases.TC_BudgetTest - --test case completed--
+2024-10-08 22:54:53.267 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-08 22:54:53.681 [main] INFO  testCases.TC_BudgetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-08 22:54:53.681 [main] INFO  testCases.TC_BudgetTest - --test case started--
+2024-10-08 22:54:55.696 [main] INFO  testCases.TC_BudgetTest - browser opened
+2024-10-08 22:54:55.782 [main] INFO  testCases.TC_BudgetTest - browser maximized
+2024-10-08 22:55:03.548 [main] INFO  testCases.TC_BudgetTest - provided app URL in browser
+2024-10-08 22:55:03.897 [main] INFO  testCases.TC_BudgetTest - provided username
+2024-10-08 22:55:04.048 [main] INFO  testCases.TC_BudgetTest - provided password
+2024-10-08 22:55:13.752 [main] INFO  testCases.TC_BudgetTest - clicked on sign in button
+2024-10-08 22:55:14.661 [main] INFO  testCases.TC_BudgetTest - clicked on hr core link
+2024-10-08 22:55:16.734 [main] INFO  testCases.TC_BudgetTest - clicked on setup form
+2024-10-08 22:55:20.246 [main] INFO  testCases.TC_BudgetTest - clicked on budget
+2024-10-08 22:55:33.077 [main] INFO  testCases.TC_BudgetTest - clicked on new btn
+2024-10-08 22:56:06.350 [main] INFO  testCases.TC_BudgetTest - provided budget name
+2024-10-08 22:56:12.567 [main] INFO  testCases.TC_BudgetTest - provided start dt
+2024-10-08 22:56:19.937 [main] INFO  testCases.TC_BudgetTest - provided end dt
+2024-10-08 22:57:01.429 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-08 22:57:01.768 [main] INFO  testCases.TC_BudgetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-08 22:57:01.768 [main] INFO  testCases.TC_BudgetTest - --test case started--
+2024-10-08 22:57:03.657 [main] INFO  testCases.TC_BudgetTest - browser opened
+2024-10-08 22:57:03.724 [main] INFO  testCases.TC_BudgetTest - browser maximized
+2024-10-08 22:57:11.847 [main] INFO  testCases.TC_BudgetTest - provided app URL in browser
+2024-10-08 22:57:36.016 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-08 22:57:36.383 [main] INFO  testCases.TC_BudgetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-08 22:57:36.384 [main] INFO  testCases.TC_BudgetTest - --test case started--
+2024-10-08 22:57:38.200 [main] INFO  testCases.TC_BudgetTest - browser opened
+2024-10-08 22:57:38.257 [main] INFO  testCases.TC_BudgetTest - browser maximized
+2024-10-08 22:57:46.104 [main] INFO  testCases.TC_BudgetTest - provided app URL in browser
+2024-10-08 22:57:46.411 [main] INFO  testCases.TC_BudgetTest - provided username
+2024-10-08 22:57:46.622 [main] INFO  testCases.TC_BudgetTest - provided password
+2024-10-08 22:57:55.799 [main] INFO  testCases.TC_BudgetTest - clicked on sign in button
+2024-10-08 22:57:55.906 [main] INFO  testCases.TC_BudgetTest - clicked on hr core link
+2024-10-08 22:57:58.565 [main] INFO  testCases.TC_BudgetTest - clicked on setup form
+2024-10-08 22:58:02.043 [main] INFO  testCases.TC_BudgetTest - clicked on budget
+2024-10-08 22:58:02.164 [main] INFO  testCases.TC_BudgetTest - clicked on new btn
+2024-10-08 22:58:10.621 [main] INFO  testCases.TC_BudgetTest - provided budget name
+2024-10-08 22:58:10.773 [main] INFO  testCases.TC_BudgetTest - provided start dt
+2024-10-08 22:58:35.724 [main] INFO  testCases.TC_BudgetTest - provided end dt
+2024-10-08 23:00:22.154 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-08 23:00:22.523 [main] INFO  testCases.TC_BudgetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-08 23:00:22.523 [main] INFO  testCases.TC_BudgetTest - --test case started--
+2024-10-08 23:00:24.422 [main] INFO  testCases.TC_BudgetTest - browser opened
+2024-10-08 23:00:24.491 [main] INFO  testCases.TC_BudgetTest - browser maximized
+2024-10-08 23:00:31.936 [main] INFO  testCases.TC_BudgetTest - provided app URL in browser
+2024-10-08 23:00:32.232 [main] INFO  testCases.TC_BudgetTest - provided username
+2024-10-08 23:00:32.428 [main] INFO  testCases.TC_BudgetTest - provided password
+2024-10-08 23:00:45.378 [main] INFO  testCases.TC_BudgetTest - clicked on sign in button
+2024-10-08 23:00:45.520 [main] INFO  testCases.TC_BudgetTest - clicked on hr core link
+2024-10-08 23:00:48.571 [main] INFO  testCases.TC_BudgetTest - clicked on setup form
+2024-10-08 23:00:52.708 [main] INFO  testCases.TC_BudgetTest - clicked on budget
+2024-10-08 23:00:52.830 [main] INFO  testCases.TC_BudgetTest - clicked on new btn
+2024-10-08 23:01:03.067 [main] INFO  testCases.TC_BudgetTest - provided budget name
+2024-10-08 23:01:03.230 [main] INFO  testCases.TC_BudgetTest - provided start dt
+2024-10-08 23:01:05.372 [main] INFO  testCases.TC_BudgetTest - provided end dt
+2024-10-08 23:01:10.700 [main] INFO  testCases.TC_BudgetTest - clicked on save btn
+2024-10-08 23:01:12.894 [main] INFO  testCases.TC_BudgetTest - --test case completed--
+2024-10-09 22:15:40.338 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-09 22:15:40.638 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-09 22:15:40.639 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-09 22:15:51.033 [main] INFO  testCases.TC_AssetTest - browser opened
+2024-10-09 22:15:51.086 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-09 22:15:58.909 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-09 22:15:59.217 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-09 22:15:59.379 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-09 22:16:11.608 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-09 22:16:14.728 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-09 22:16:18.037 [main] INFO  testCases.TC_AssetTest - clicked on setup form
+2024-10-09 22:16:21.970 [main] INFO  testCases.TC_AssetTest - clicked on asset
+2024-10-09 22:16:22.098 [main] INFO  testCases.TC_AssetTest - clicked on new button
+2024-10-09 22:17:04.020 [main] INFO  testCases.TC_AssetTest - provided asset name
+2024-10-09 22:17:04.130 [main] INFO  testCases.TC_AssetTest - clicked on asset category
+2024-10-09 22:17:05.446 [main] INFO  testCases.TC_AssetTest - selected asset cat
+2024-10-09 22:17:08.734 [main] INFO  testCases.TC_AssetTest - clicked on save button
+2024-10-09 22:17:53.003 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-09 22:17:53.275 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-09 22:17:53.276 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-09 22:17:54.760 [main] INFO  testCases.TC_AssetTest - browser opened
+2024-10-09 22:17:54.801 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-09 22:18:02.927 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-09 22:18:03.183 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-09 22:18:03.313 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-09 22:18:13.801 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-09 22:18:13.891 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-09 22:18:15.897 [main] INFO  testCases.TC_AssetTest - clicked on setup form
+2024-10-09 22:18:19.106 [main] INFO  testCases.TC_AssetTest - clicked on asset
+2024-10-09 22:18:19.236 [main] INFO  testCases.TC_AssetTest - clicked on new button
+2024-10-09 22:18:54.131 [main] INFO  testCases.TC_AssetTest - provided asset name
+2024-10-09 22:19:03.677 [main] INFO  testCases.TC_AssetTest - clicked on asset category
+2024-10-09 22:19:13.639 [main] INFO  testCases.TC_AssetTest - selected asset cat
+2024-10-09 22:20:08.125 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-09 22:20:08.420 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-09 22:20:08.420 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-09 22:20:09.816 [main] INFO  testCases.TC_AssetTest - browser opened
+2024-10-09 22:20:09.884 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-09 22:20:21.159 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-09 22:20:21.449 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-09 22:20:21.567 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-09 22:20:30.328 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-09 22:20:30.415 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-09 22:20:32.359 [main] INFO  testCases.TC_AssetTest - clicked on setup form
+2024-10-09 22:20:35.607 [main] INFO  testCases.TC_AssetTest - clicked on asset
+2024-10-09 22:20:35.726 [main] INFO  testCases.TC_AssetTest - clicked on new button
+2024-10-09 22:20:45.535 [main] INFO  testCases.TC_AssetTest - provided asset name
+2024-10-09 22:20:45.645 [main] INFO  testCases.TC_AssetTest - clicked on asset category
+2024-10-09 22:20:48.054 [main] INFO  testCases.TC_AssetTest - selected asset cat
+2024-10-09 22:20:51.151 [main] INFO  testCases.TC_AssetTest - clicked on save button
+2024-10-09 22:23:49.284 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-09 22:23:49.531 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-09 22:23:49.531 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-09 22:23:50.929 [main] INFO  testCases.TC_AssetTest - browser opened
+2024-10-09 22:23:50.989 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-09 22:23:59.610 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-09 22:23:59.916 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-09 22:24:00.136 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-09 22:24:10.862 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-09 22:24:10.959 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-09 22:24:12.970 [main] INFO  testCases.TC_AssetTest - clicked on setup form
+2024-10-09 22:24:16.233 [main] INFO  testCases.TC_AssetTest - clicked on asset
+2024-10-09 22:24:16.363 [main] INFO  testCases.TC_AssetTest - clicked on new button
+2024-10-09 22:24:35.439 [main] INFO  testCases.TC_AssetTest - provided asset name
+2024-10-09 22:24:39.350 [main] INFO  testCases.TC_AssetTest - clicked on asset category
+2024-10-09 22:24:52.039 [main] INFO  testCases.TC_AssetTest - selected asset cat
+2024-10-09 22:25:00.125 [main] INFO  testCases.TC_AssetTest - clicked on save button
+2024-10-09 22:27:28.783 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-09 22:27:29.055 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-09 22:27:29.055 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-09 22:27:30.454 [main] INFO  testCases.TC_AssetTest - browser opened
+2024-10-09 22:27:30.498 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-09 22:27:38.810 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-09 22:27:39.091 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-09 22:27:39.236 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-09 22:27:48.198 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-09 22:27:48.287 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-09 22:27:50.361 [main] INFO  testCases.TC_AssetTest - clicked on setup form
+2024-10-09 22:27:53.586 [main] INFO  testCases.TC_AssetTest - clicked on asset
+2024-10-09 22:27:53.697 [main] INFO  testCases.TC_AssetTest - clicked on new button
+2024-10-09 22:28:01.792 [main] INFO  testCases.TC_AssetTest - provided asset name
+2024-10-09 22:28:01.917 [main] INFO  testCases.TC_AssetTest - clicked on asset category
+2024-10-09 22:28:04.272 [main] INFO  testCases.TC_AssetTest - selected asset cat
+2024-10-09 22:28:07.106 [main] INFO  testCases.TC_AssetTest - clicked on save button
+2024-10-09 22:28:09.278 [main] INFO  testCases.TC_AssetTest - --test case completed--
+2024-10-11 08:39:31.866 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-11 08:39:32.280 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-11 08:39:32.281 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-11 08:39:34.157 [main] INFO  testCases.TC_AssetTest - browser opened
+2024-10-11 08:39:34.212 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-11 08:39:35.824 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-11 08:39:36.076 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-11 08:39:36.221 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-11 08:39:43.851 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-11 08:39:46.446 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-11 08:40:00.276 [main] INFO  testCases.TC_AssetTest - clicked on setup form
+2024-10-11 08:40:40.699 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-11 08:40:40.996 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-11 08:40:40.997 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-11 08:40:42.827 [main] INFO  testCases.TC_AssetTest - browser opened
+2024-10-11 08:40:42.878 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-11 08:40:44.722 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-11 08:40:44.961 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-11 08:40:45.097 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-11 08:40:50.387 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-11 08:40:50.498 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-11 08:40:52.299 [main] INFO  testCases.TC_AssetTest - clicked on setup form
