@@ -14,7 +14,7 @@ import utilities.DatabaseUtility;
 
 public class MySQLDataDrivenTest
 {
-	@DataProvider(name = "dbData")
+	@DataProvider(name = "userinfo")
 	public Object[][] getDataFromDB() throws Exception
 	{
 		// Query to get test data
@@ -37,7 +37,7 @@ public class MySQLDataDrivenTest
 		return testData.toArray(new Object[testData.size()][]);
 	}
 
-	@Test(dataProvider = "dbData")
+	@Test(dataProvider = "userinfo")
 	public void testLogin(String username, String password)
 	{
 		// Selenium test case using data from MySQL

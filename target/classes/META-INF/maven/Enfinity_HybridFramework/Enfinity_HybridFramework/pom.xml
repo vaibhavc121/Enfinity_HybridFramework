@@ -29,7 +29,7 @@
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 							<!--<suiteXmlFile>grouping.xml</suiteXmlFile>-->
 						</suiteXmlFiles>
-						<argLine>-Djava.awt.headless=true</argLine> <!-- Headless mode for Surefire -->
+						<!--<argLine>-Djava.awt.headless=true</argLine>  Headless mode for Surefire -->
 					</configuration>
 				</plugin>
 

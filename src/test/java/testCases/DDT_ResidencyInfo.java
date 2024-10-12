@@ -51,7 +51,8 @@ public class DDT_ResidencyInfo extends BaseClass
 		}
 		catch (Exception e)
 		{
-			Assert.fail();
+			logger.error("Test failed due to exception: ", e);
+			Assert.fail("Test case failed: " + e);
 		}
 	}
 }

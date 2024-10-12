@@ -31,8 +31,9 @@ public class TC_LoginTest extends BaseClass
 		}
 		catch (Exception e)
 		{
-			Assert.fail();
+			logger.error("Test failed due to exception: ", e);
+			Assert.fail("Test case failed: " + e);
 		}
-		logger.info("test case finished..");
+
 	}
 }

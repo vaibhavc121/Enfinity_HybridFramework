@@ -14,14 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_AssetTest">
+      <class name="testCases.MySQL_EmployeeTest">
         <methods>
           <include name="teardown"/>
+          <include name="verifyEmpCreation" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="verifyHRAsset"/>
+          <include name="afterMethod"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_AssetTest -->
+      </class> <!-- testCases.MySQL_EmployeeTest -->
     </classes>
   </test> <!-- chrome test(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

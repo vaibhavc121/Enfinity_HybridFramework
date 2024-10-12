@@ -17,11 +17,11 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -113,15 +113,16 @@ public class BaseClass
 
 		if (p.getProperty("execution_env").equals("local"))
 		{
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless"); // Run in headless mode
-			options.addArguments("--no-sandbox"); // Required for CI environments
-			options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
+//			ChromeOptions options = new ChromeOptions();
+//			options.addArguments("--headless"); // Run in headless mode
+//			options.addArguments("--no-sandbox"); // Required for CI environments
+//			options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
 
 			switch (br.toLowerCase())
 			{
 			case "chrome":
-				driver = new ChromeDriver(options);
+				// driver = new ChromeDriver(options);
+				driver = new ChromeDriver();
 				logger.info("browser opened");
 
 				break;
@@ -160,6 +161,13 @@ public class BaseClass
 		logger.info("provided password");
 		lp.clkSignin();
 		logger.info("clicked on sign in button");
+	}
+
+	@AfterMethod(groups =
+	{ "regression", "datadriven" })
+	public void afterMethod()
+	{
+		System.out.println("--test execution completed--");
 	}
 
 	@AfterClass(groups =

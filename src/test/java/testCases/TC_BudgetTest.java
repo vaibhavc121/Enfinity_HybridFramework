@@ -46,10 +46,9 @@ public class TC_BudgetTest extends BaseClass
 		}
 		catch (Exception e)
 		{
-			// TODO: handle exception
+			logger.error("Test failed due to exception: ", e);
+			Assert.fail("Test case failed: " + e);
 		}
-
-		logger.info("--test case completed--");
 
 	}
 }

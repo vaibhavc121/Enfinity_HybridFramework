@@ -45,9 +45,9 @@ public class TC_BankTest extends BaseClass
 		}
 		catch (Exception e)
 		{
-			Assert.fail();
+			logger.error("Test failed due to exception: ", e);
+			Assert.fail("Vaibhav--Test case failed: " + e);
 		}
 
-		logger.info("test case completed");
 	}
 }

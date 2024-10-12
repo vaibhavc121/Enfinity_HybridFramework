@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="securityTesting.ZAPSecurityTest">
+      <class name="testCases.TC_BankTest">
         <methods>
+          <include name="teardown"/>
+          <include name="verifyBank"/>
+          <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="amazonSecurityTest"/>
-          <include name="tearDown"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- securityTesting.ZAPSecurityTest -->
+      </class> <!-- testCases.TC_BankTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
