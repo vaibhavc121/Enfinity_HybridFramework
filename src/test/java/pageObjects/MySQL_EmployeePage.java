@@ -74,8 +74,11 @@ public class MySQL_EmployeePage extends BasePage
 	@FindBy(xpath = "//h2[normalize-space()='Suraj']")
 	WebElement empname;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filter;
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
+	WebElement filterCell;
+
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/p[1]/span[1]/a[1]")
+	WebElement result;
 
 	@FindBy(xpath = "//a[normalize-space()='001 | Vaibhav Chavan']")
 	WebElement clkfilteredemp;
@@ -243,25 +246,20 @@ public class MySQL_EmployeePage extends BasePage
 		Thread.sleep(3000);
 	}
 
-	public void empName(String empnm)
+	public boolean isEmployeeCreated(String emp) throws InterruptedException
 	{
-		String empname = empnm;
-	}
+		filterCell.sendKeys(emp);
+		Thread.sleep(2000);
+		String employee = result.getText();
+		if (employee.contains(emp))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 
-	public boolean isEmployeeCreated()
-	{
-//		filter.sendKeys(emp);
-//		Thread.sleep(2000);
-//		String bank = result.getText();
-//		if (temp.equals(bank))
-//		{
-//			return true;
-//		}
-//		else
-//		{
-//			return false;
-//		}
-		return true;
 	}
 
 }

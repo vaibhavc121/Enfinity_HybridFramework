@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-12T21:08:10 IST" name="RegressionSuite" finished-at="2024-10-12T21:09:03 IST" duration-ms="52466">
+  <suite started-at="2024-10-14T21:56:01 IST" name="RegressionSuite" finished-at="2024-10-14T21:57:13 IST" duration-ms="71643">
     <groups>
       <group name="regression">
-        <method signature="MySQL_EmployeeTest.verifyEmpCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQL_EmployeeTest@1c3146bc]" name="verifyEmpCreation" class="testCases.MySQL_EmployeeTest"/>
+        <method signature="TC_CalendarTest.verifyCalendar()[pri:0, instance:testCases.TC_CalendarTest@1c3146bc]" name="verifyCalendar" class="testCases.TC_CalendarTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2024-10-12T21:08:10 IST" name="chrome test" finished-at="2024-10-12T21:09:03 IST" duration-ms="52466">
-      <class name="testCases.MySQL_EmployeeTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQL_EmployeeTest@1c3146bc]" started-at="2024-10-12T21:08:11 IST" name="setup" finished-at="2024-10-12T21:08:20 IST" duration-ms="9002" status="PASS">
+    <test started-at="2024-10-14T21:56:01 IST" name="linux-chrome" finished-at="2024-10-14T21:57:13 IST" duration-ms="71643">
+      <class name="testCases.TC_CalendarTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_CalendarTest@1c3146bc]" started-at="2024-10-14T21:56:01 IST" name="setup" finished-at="2024-10-14T21:56:16 IST" duration-ms="14339" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[windows]]>
+                <![CDATA[linux]]>
               </value>
             </param>
             <param index="1">
@@ -26,75 +26,76 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.MySQL_EmployeeTest@1c3146bc]" started-at="2024-10-12T21:08:21 IST" name="login" finished-at="2024-10-12T21:08:50 IST" duration-ms="29913" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_CalendarTest@1c3146bc]" started-at="2024-10-14T21:56:16 IST" name="login" finished-at="2024-10-14T21:57:02 IST" duration-ms="46536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyEmpCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQL_EmployeeTest@1c3146bc]" started-at="2024-10-12T21:08:50 IST" name="verifyEmpCreation" data-provider="employeeinfo" finished-at="2024-10-12T21:09:03 IST" duration-ms="12182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vaibhavc121@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[vaibhav]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[8208992890]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[01-Jan-2001]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[prod]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Systems Analyst]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Manager]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Hindu]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Married]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyCalendar()[pri:0, instance:testCases.TC_CalendarTest@1c3146bc]" started-at="2024-10-14T21:57:02 IST" name="verifyCalendar" finished-at="2024-10-14T21:57:12 IST" duration-ms="10130" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e68395c94d0b74fd52fe70c3a95d25bb, clickElement {id=f.1FE819AF37F877EEF9A5971D561E213E.d.D037207EB67AF23139A03FDD9C9E0A53.e.70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.4:4444/sessio..., se:cdpVersion: 127.0.6533.119, se:vnc: ws://172.19.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (e68395c94d0b74fd52fe70c3a95d25bb)] -> xpath: //span[normalize-space()='HR Core']]
+Session ID: e68395c94d0b74fd52fe70c3a95d25bb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e68395c94d0b74fd52fe70c3a95d25bb, clickElement {id=f.1FE819AF37F877EEF9A5971D561E213E.d.D037207EB67AF23139A03FDD9C9E0A53.e.70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.4:4444/sessio..., se:cdpVersion: 127.0.6533.119, se:vnc: ws://172.19.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (e68395c94d0b74fd52fe70c3a95d25bb)] -> xpath: //span[normalize-space()='HR Core']]
+Session ID: e68395c94d0b74fd52fe70c3a95d25bb
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEmpCreation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.MySQL_EmployeeTest@1c3146bc]" started-at="2024-10-12T21:09:03 IST" name="teardown" finished-at="2024-10-12T21:09:03 IST" duration-ms="236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.MySQL_EmployeeTest@1c3146bc]" started-at="2024-10-12T21:09:03 IST" name="afterMethod" finished-at="2024-10-12T21:09:03 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyCalendar -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_CalendarTest@1c3146bc]" started-at="2024-10-14T21:57:13 IST" name="afterMethod" finished-at="2024-10-14T21:57:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.MySQL_EmployeeTest -->
-    </test> <!-- chrome test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_CalendarTest@1c3146bc]" started-at="2024-10-14T21:57:13 IST" name="teardown" finished-at="2024-10-14T21:57:13 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_CalendarTest -->
+    </test> <!-- linux-chrome -->
   </suite> <!-- RegressionSuite -->
 </testng-results>

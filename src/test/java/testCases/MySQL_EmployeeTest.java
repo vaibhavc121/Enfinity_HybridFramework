@@ -58,10 +58,11 @@ public class MySQL_EmployeeTest extends BaseClass
 			logger.info("religion selected");
 			ep.setMaritalStatus(maritalstatus);
 			logger.info("marital sts selected");
-			ep.empName(name);
+			ep.clkSave();
+			logger.info("clicked on save button");
 
-			// Assert.assertEquals(ep.isEmployeeCreated(), true);
-			Assert.assertTrue(true);
+			Assert.assertEquals(ep.isEmployeeCreated(name), true);
+			// Assert.assertTrue(true);
 
 		}
 		catch (Exception e)

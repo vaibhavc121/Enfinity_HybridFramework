@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Compatibility Testing" thread-count="5">
+<suite name="Compatibility Testing" thread-count="5" parallel="tests">
 
 	<groups>
 		<run>
@@ -19,12 +19,12 @@
 		
 		<classes>
 			<class name="testCases.TC_CalendarTest" />
-			<!--<class name="testCases.TC_GradeTest" />-->
-			<!--<class name="testCases.TC_DesignationTest" />-->
-			<!--<class name="testCases.TC_DeptTest" />-->
-			<!--<class name="testCases.TC_EmployeeTest" />-->
-			<!--<class name="testCases.TC_LoginTest" />-->
-			<!--<class name="testCases.DDT_ResidencyInfo" />-->			
+			<class name="testCases.TC_GradeTest" />
+			<class name="testCases.TC_DesignationTest" />
+			<class name="testCases.TC_DeptTest" />
+			<class name="testCases.TC_EmployeeTest" />
+			<class name="testCases.TC_LoginTest" />
+			<class name="testCases.DDT_ResidencyInfo" />			
 		</classes>		
 	</test> 
 	
@@ -34,12 +34,12 @@
 		
 		<classes>
 			<class name="testCases.TC_CalendarTest" />
-			<!--<class name="testCases.TC_GradeTest" />-->
-			<!--<class name="testCases.TC_DesignationTest" />-->
-			<!--<class name="testCases.TC_DeptTest" />-->
-			<!--<class name="testCases.TC_EmployeeTest" />-->
-			<!--<class name="testCases.TC_LoginTest" />-->
-			<!--<class name="testCases.DDT_ResidencyInfo" />-->			
+			<class name="testCases.TC_GradeTest" />
+			<class name="testCases.TC_DesignationTest" />
+			<class name="testCases.TC_DeptTest" />
+			<class name="testCases.TC_EmployeeTest" />
+			<class name="testCases.TC_LoginTest" />
+			<class name="testCases.DDT_ResidencyInfo" />			
 		</classes>		
 	</test> 
 	

@@ -71,6 +71,11 @@ public class BaseClass
 			{
 				capabilities.setPlatform(Platform.MAC);
 			}
+
+			else if (os.equalsIgnoreCase("android"))
+			{
+				capabilities.setPlatform(Platform.ANDROID);
+			}
 			else
 			{
 				System.out.println("no matching os");
@@ -95,20 +100,24 @@ public class BaseClass
 
 				break;
 
+			case "safari":
+				capabilities.setBrowserName("safari");
+
+				break;
+
 			default:
 				System.out.println("No matching browser ");
 				return; // It will automatically exit from switch case statement
 			}
 
 			/* for selenium grid standalone */
-			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
+//			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
 			/* for docker container on selenium grid */
-			// driver = new RemoteWebDriver(new URL("http://localhost:4444/ui/"),
-			// capabilities);
+//			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
-//			driver = new RemoteWebDriver(
-//					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
-//					capabilities);
+			driver = new RemoteWebDriver(
+					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
+					capabilities);
 		}
 
 		if (p.getProperty("execution_env").equals("local"))

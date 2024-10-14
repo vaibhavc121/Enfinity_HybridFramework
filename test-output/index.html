@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
-              <span class="suite-name border-passed">RegressionSuite</span>
+              <span class="suite-name border-failed">RegressionSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-RegressionSuite" class="navigator-link ">
-                    <span>D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml</span>
+                    <span>D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods passed suite-RegressionSuite"> (hide)</a> <!-- hide-methods passed suite-RegressionSuite -->
-                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods passed suite-RegressionSuite"> (show)</a> <!-- show-methods passed suite-RegressionSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
                     </span>
-                    <div class="method-list-content passed suite-RegressionSuite">
+                    <div class="method-list-content failed suite-RegressionSuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuite" title="testCases.MySQL_EmployeeTest" class="method navigator-link" hash-for-method="verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)">verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testCases.TC_CalendarTest" class="method navigator-link" hash-for-method="verifyCalendar">verifyCalendar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-RegressionSuite -->
+                    </div> <!-- method-list-content failed suite-RegressionSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,26 +118,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
-          <div class="suite-RegressionSuite-class-passed">
+          <div class="suite-RegressionSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.MySQL_EmployeeTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC_CalendarTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)">
-                  </a> <!-- verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...) -->
-                  <span class="method-name">verifyEmpCreation</span>
-                  <span class="parameters">(vaibhavc121@gmail.com,vaibhav,8208992890,01-Jan-2001,prod,Systems Analyst,Manager,Male,Hindu,Married)</span>
+                  <a name="verifyCalendar">
+                  </a> <!-- verifyCalendar -->
+                  <span class="method-name">verifyCalendar</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e68395c94d0b74fd52fe70c3a95d25bb, clickElement {id=f.1FE819AF37F877EEF9A5971D561E213E.d.D037207EB67AF23139A03FDD9C9E0A53.e.70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.4:4444/sessio..., se:cdpVersion: 127.0.6533.119, se:vnc: ws://172.19.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (e68395c94d0b74fd52fe70c3a95d25bb)] -&gt; xpath: //span[normalize-space()=&apos;HR Core&apos;]]
+Session ID: e68395c94d0b74fd52fe70c3a95d25bb
+	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionSuite-class-passed -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
         </div> <!-- panel RegressionSuite -->
         <div panel-name="test-xml-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml</span>
+            <span class="header-content">D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\grid-docker.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,13 +171,13 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;chrome test&quot;&gt;
-    &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;linux-chrome&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;linux&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.MySQL_EmployeeTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_CalendarTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chrome test --&gt;
+  &lt;/test&gt; &lt;!-- linux-chrome --&gt;
 &lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,7 +189,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chrome test (1 class)</span>
+                <span class="test-name">linux-chrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,7 +203,7 @@
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">verifyEmpCreation</span>
+                <span class="method-in-group-name">verifyCalendar</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -213,14 +225,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyEmpCreation')
-data.setCell(0, 2, 'testCases.MySQL_EmployeeTest')
-data.setCell(0, 3, 12182);
+data.setCell(0, 1, 'verifyCalendar')
+data.setCell(0, 2, 'testCases.TC_CalendarTest')
+data.setCell(0, 3, 10130);
 window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-RegressionSuite">
               </div> <!-- times-div-RegressionSuite -->
             </div> <!-- times-div -->
@@ -246,27 +258,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.MySQL_EmployeeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC_CalendarTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(windows, chrome)</span>
+                <span class="method-name">setup(linux, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">9852 ms</span>
+                <span class="method-start">14352 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)</span>
-                <span class="method-start">39765 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCalendar</span>
+                <span class="method-start">60890 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">51980 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">51980 ms</span>
+                <span class="method-start">71206 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">71212 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

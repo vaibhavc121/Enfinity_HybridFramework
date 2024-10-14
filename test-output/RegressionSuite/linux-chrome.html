@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 02 21:43:43 IST 2024</td>
+<td>Started on:</td><td>Mon Oct 14 21:56:01 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34719 ms)</td>
+<tr><td>Total time:</td><td>71 seconds (71643 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>datadriven regression </td>
 </tr><tr>
@@ -77,14 +77,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.TC_CalendarTest.verifyCalendar()'><b>verifyCalendar</b><br>Test class: testCases.TC_CalendarTest</td>
-<td><div><pre>java.lang.AssertionError: null
-	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:51)
+<td><div><pre>java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e68395c94d0b74fd52fe70c3a95d25bb, clickElement {id=f.1FE819AF37F877EEF9A5971D561E213E.d.D037207EB67AF23139A03FDD9C9E0A53.e.70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.4:4444/sessio..., se:cdpVersion: 127.0.6533.119, se:vnc: ws://172.19.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (e68395c94d0b74fd52fe70c3a95d25bb)] -&gt; xpath: //span[normalize-space()=&apos;HR Core&apos;]]
+Session ID: e68395c94d0b74fd52fe70c3a95d25bb
+	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:52)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1763872389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1763872389'><pre>java.lang.AssertionError: null
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1102181662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1102181662'><pre>java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e68395c94d0b74fd52fe70c3a95d25bb, clickElement {id=f.1FE819AF37F877EEF9A5971D561E213E.d.D037207EB67AF23139A03FDD9C9E0A53.e.70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.4:4444/sessio..., se:cdpVersion: 127.0.6533.119, se:vnc: ws://172.19.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (e68395c94d0b74fd52fe70c3a95d25bb)] -&gt; xpath: //span[normalize-space()=&apos;HR Core&apos;]]
+Session ID: e68395c94d0b74fd52fe70c3a95d25bb
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:51)
+	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -113,7 +128,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>10</td>
-<td>testCases.TC_CalendarTest@5b529706</td></tr>
+<td>testCases.TC_CalendarTest@1c3146bc</td></tr>
 </table><p>
 </body>
 </html>
