@@ -26,7 +26,7 @@ public class BankPage extends BasePage
 	@FindBy(xpath = "//span[@id='Bank.CheckIbanValidation_S_D']")
 	WebElement toggle;
 
-	@FindBy(xpath = "//span[normalize-space()='Sav']") // error save
+	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
 
 	@FindBy(xpath = "//input[@aria-label='Filter cell']")

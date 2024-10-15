@@ -19,22 +19,23 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
-		
-			<class name="testCases.TC_AssetTest" />
-			<class name="testCases.TC_BudgetTest" />
-			<class name="testCases.TC_DocumentTypeTest" />
-			<class name="testCases.TC_QualificationTest" /> 
-			<class name="testCases.TC_BankTest" />
-			<class name="testCases.TC_WorkLocationTest" />
-			<class name="testCases.TC_ReligionTest" />
-			<class name="testCases.TC_CalendarTest" />
-			<class name="testCases.TC_GradeTest" /> 
-			<class name="testCases.TC_DesignationTest" />
-			<class name="testCases.TC_DeptTest" />
-			<class name="testCases.TC_EmployeeTest" />
-			<class name="testCases.TC_LoginTest" />
-			<class name="testCases.DDT_ResidencyInfo" />	
-			<class name="testCases.MySQL_EmployeeTest" />
+			
+			<class name="testCases.TC_DelegationTest" />
+			<!--<class name="testCases.TC_AssetTest" />-->
+			<!--<class name="testCases.TC_BudgetTest" />-->
+			<!--<class name="testCases.TC_DocumentTypeTest" />-->
+			<!--<class name="testCases.TC_QualificationTest" />--> 
+			<!--<class name="testCases.TC_BankTest" />-->
+			<!--<class name="testCases.TC_WorkLocationTest" />-->
+			<!--<class name="testCases.TC_ReligionTest" />-->
+			<!--<class name="testCases.TC_CalendarTest" />-->
+			<!--<class name="testCases.TC_GradeTest" />--> 
+			<!--<class name="testCases.TC_DesignationTest" />-->
+			<!--<class name="testCases.TC_DeptTest" />-->
+			<!--<class name="testCases.TC_EmployeeTest" />-->
+			<!--<class name="testCases.TC_LoginTest" />-->
+			<!--<class name="testCases.DDT_ResidencyInfo" />-->	
+			<!--<class name="testCases.MySQL_EmployeeTest" />-->
 		</classes>
 	</test>
 

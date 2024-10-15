@@ -49,6 +49,9 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Asset']")
 	WebElement asset;
 
+	@FindBy(xpath = "//span[@class='dx-vam'][normalize-space()='Delegation']")
+	WebElement delegation;
+
 	@FindBy(xpath = "//span[normalize-space()='License']")
 	WebElement license;
 
@@ -110,6 +113,11 @@ public class SetupPage extends BasePage
 	public void clkAsset()
 	{
 		asset.click();
+	}
+
+	public void clkDelegation()
+	{
+		delegation.click();
 	}
 
 	public void clkLicense()

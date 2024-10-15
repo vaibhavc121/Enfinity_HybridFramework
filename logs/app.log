@@ -6117,3 +6117,479 @@ Session ID: e68395c94d0b74fd52fe70c3a95d25bb
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-14 22:03:45.465 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\browserstack.xml
+
+2024-10-14 22:03:45.762 [main] INFO  testCases.TC_AssetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:03:45.762 [main] INFO  testCases.TC_AssetTest - --test case started--
+2024-10-14 22:03:52.003 [main] INFO  testCases.TC_AssetTest - browser maximized
+2024-10-14 22:03:54.438 [main] INFO  testCases.TC_AssetTest - provided app URL in browser
+2024-10-14 22:03:54.854 [main] INFO  testCases.TC_AssetTest - provided username
+2024-10-14 22:03:55.286 [main] INFO  testCases.TC_AssetTest - provided password
+2024-10-14 22:04:04.969 [main] INFO  testCases.TC_AssetTest - clicked on sign in button
+2024-10-14 22:04:05.235 [main] INFO  testCases.TC_AssetTest - clicked on hr core link
+2024-10-14 22:04:16.402 [main] INFO  testCases.TC_AssetTest - clicked on setup form
+2024-10-14 22:04:26.519 [main] ERROR testCases.TC_AssetTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Asset']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [89ae61734c600a8cc92f3787f9dfa24e7aadc9c7, findElement {using=xpath, value=//span[normalize-space()='Asset']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:3368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 89ae61734c600a8cc92f3787f9d...}
+Session ID: 89ae61734c600a8cc92f3787f9dfa24e7aadc9c7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.SetupPage.clkAsset(SetupPage.java:112) ~[test-classes/:?]
+	at testCases.TC_AssetTest.verifyHRAsset(TC_AssetTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-14 22:04:28.075 [main] INFO  testCases.TC_BudgetTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:04:28.075 [main] INFO  testCases.TC_BudgetTest - --test case started--
+2024-10-14 22:04:33.403 [main] INFO  testCases.TC_BudgetTest - browser maximized
+2024-10-14 22:05:26.550 [main] INFO  testCases.TC_BudgetTest - provided app URL in browser
+2024-10-14 22:05:27.094 [main] INFO  testCases.TC_BudgetTest - provided username
+2024-10-14 22:05:27.399 [main] INFO  testCases.TC_BudgetTest - provided password
+2024-10-14 22:05:37.069 [main] INFO  testCases.TC_BudgetTest - clicked on sign in button
+2024-10-14 22:05:37.368 [main] INFO  testCases.TC_BudgetTest - clicked on hr core link
+2024-10-14 22:05:40.392 [main] INFO  testCases.TC_BudgetTest - clicked on setup form
+2024-10-14 22:05:50.471 [main] ERROR testCases.TC_BudgetTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Budget']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c129e840cfb4e7fd8f6a81e08c94788c82cda8c9, findElement {using=xpath, value=//span[normalize-space()='Budget']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2144}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c129e840cfb4e7fd8f6a81e08c9...}
+Session ID: c129e840cfb4e7fd8f6a81e08c94788c82cda8c9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.SetupPage.clkBudget(SetupPage.java:107) ~[test-classes/:?]
+	at testCases.TC_BudgetTest.verifyBudget(TC_BudgetTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-14 22:05:51.948 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:05:51.949 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-14 22:05:57.866 [main] INFO  testCases.TC_DocumentTypeTest - browser maximized
+2024-10-14 22:06:00.629 [main] INFO  testCases.TC_DocumentTypeTest - provided app URL in browser
+2024-10-14 22:06:01.087 [main] INFO  testCases.TC_DocumentTypeTest - provided username
+2024-10-14 22:06:01.517 [main] INFO  testCases.TC_DocumentTypeTest - provided password
+2024-10-14 22:06:11.253 [main] INFO  testCases.TC_DocumentTypeTest - clicked on sign in button
+2024-10-14 22:06:11.469 [main] INFO  testCases.TC_DocumentTypeTest - clicked on hr core link
+2024-10-14 22:06:16.921 [main] INFO  testCases.TC_DocumentTypeTest - clicked on setup form
+2024-10-14 22:06:19.183 [main] INFO  testCases.TC_DocumentTypeTest - clicked on doc type
+2024-10-14 22:06:29.302 [main] ERROR testCases.TC_DocumentTypeTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='New']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bb0a6675746317f6b7d86a843a746651bb27787, findElement {using=xpath, value=//span[normalize-space()='New']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bb0a6675746317f6b7d86a843a...}
+Session ID: 0bb0a6675746317f6b7d86a843a746651bb27787
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.DocumentTypePage.ClkNewBtn(DocumentTypePage.java:37) ~[test-classes/:?]
+	at testCases.TC_DocumentTypeTest.verifyDocType(TC_DocumentTypeTest.java:33) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-14 22:06:30.968 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:06:30.968 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-14 22:06:36.052 [main] INFO  testCases.TC_QualificationTest - browser maximized
+2024-10-14 22:06:36.422 [main] INFO  testCases.TC_QualificationTest - provided app URL in browser
+2024-10-14 22:06:41.724 [main] INFO  testCases.TC_QualificationTest - provided username
+2024-10-14 22:06:43.364 [main] INFO  testCases.TC_QualificationTest - provided password
+2024-10-14 22:06:53.985 [main] INFO  testCases.TC_QualificationTest - clicked on sign in button
+2024-10-14 22:06:54.250 [main] INFO  testCases.TC_QualificationTest - clicked on hr core link
+2024-10-14 22:07:01.427 [main] INFO  testCases.TC_QualificationTest - clicked on setup form
+2024-10-14 22:07:06.069 [main] INFO  testCases.TC_QualificationTest - clicked on qualification
+2024-10-14 22:07:06.292 [main] INFO  testCases.TC_QualificationTest - clicked on new btn
+2024-10-14 22:07:09.620 [main] INFO  testCases.TC_QualificationTest - provided qualification
+2024-10-14 22:07:10.026 [main] INFO  testCases.TC_QualificationTest - clicked qlfctn dd
+2024-10-14 22:07:10.686 [main] INFO  testCases.TC_QualificationTest - selected qlfctn type
+2024-10-14 22:07:15.112 [main] INFO  testCases.TC_QualificationTest - clicked on save button
+2024-10-14 22:07:18.813 [main] INFO  testCases.TC_BankTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:07:18.813 [main] INFO  testCases.TC_BankTest - --test case started--
+2024-10-14 22:07:25.112 [main] INFO  testCases.TC_BankTest - browser maximized
+2024-10-14 22:07:28.447 [main] INFO  testCases.TC_BankTest - provided app URL in browser
+2024-10-14 22:07:28.757 [main] INFO  testCases.TC_BankTest - provided username
+2024-10-14 22:07:29.134 [main] INFO  testCases.TC_BankTest - provided password
+2024-10-14 22:07:37.621 [main] INFO  testCases.TC_BankTest - clicked on sign in button
+2024-10-14 22:07:37.970 [main] INFO  testCases.TC_BankTest - clicked on hr core link
+2024-10-14 22:07:43.196 [main] INFO  testCases.TC_BankTest - clicked on setup form
+2024-10-14 22:07:47.341 [main] INFO  testCases.TC_BankTest - clicked on bank
+2024-10-14 22:07:47.515 [main] INFO  testCases.TC_BankTest - clicked on new btn
+2024-10-14 22:07:51.504 [main] INFO  testCases.TC_BankTest - provided bank name
+2024-10-14 22:07:51.692 [main] INFO  testCases.TC_BankTest - clicked on IBAN toggle btn
+2024-10-14 22:08:01.772 [main] ERROR testCases.TC_BankTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Sav']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a8ef0963261f421e5b6d22e520aa363518e143b1, findElement {using=xpath, value=//span[normalize-space()='Sav']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a8ef0963261f421e5b6d22e520a...}
+Session ID: a8ef0963261f421e5b6d22e520aa363518e143b1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.BankPage.clkSave(BankPage.java:57) ~[test-classes/:?]
+	at testCases.TC_BankTest.verifyBank(TC_BankTest.java:39) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-14 22:08:03.363 [main] INFO  testCases.TC_WorkLocationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:08:03.363 [main] INFO  testCases.TC_WorkLocationTest - --test case started--
+2024-10-14 22:08:09.793 [main] INFO  testCases.TC_WorkLocationTest - browser maximized
+2024-10-14 22:08:12.203 [main] INFO  testCases.TC_WorkLocationTest - provided app URL in browser
+2024-10-14 22:08:13.201 [main] INFO  testCases.TC_WorkLocationTest - provided username
+2024-10-14 22:08:14.025 [main] INFO  testCases.TC_WorkLocationTest - provided password
+2024-10-14 22:08:25.548 [main] INFO  testCases.TC_WorkLocationTest - clicked on sign in button
+2024-10-14 22:08:25.945 [main] INFO  testCases.TC_WorkLocationTest - clicked on hr core link
+2024-10-14 22:08:33.189 [main] INFO  testCases.TC_WorkLocationTest - clicked on setup form
+2024-10-14 22:08:37.818 [main] INFO  testCases.TC_WorkLocationTest - clicked on worklocation
+2024-10-14 22:08:50.732 [main] INFO  testCases.TC_ReligionTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:08:50.732 [main] INFO  testCases.TC_ReligionTest - --test case started--
+2024-10-14 22:08:56.732 [main] INFO  testCases.TC_ReligionTest - browser maximized
+2024-10-14 22:08:57.086 [main] INFO  testCases.TC_ReligionTest - provided app URL in browser
+2024-10-14 22:08:59.918 [main] INFO  testCases.TC_ReligionTest - provided username
+2024-10-14 22:09:00.204 [main] INFO  testCases.TC_ReligionTest - provided password
+2024-10-14 22:09:09.926 [main] INFO  testCases.TC_ReligionTest - clicked on sign in button
+2024-10-14 22:09:10.124 [main] INFO  testCases.TC_ReligionTest - clicked on hr core link
+2024-10-14 22:09:16.639 [main] INFO  testCases.TC_ReligionTest - clicked on setup form
+2024-10-14 22:09:20.845 [main] INFO  testCases.TC_ReligionTest - clicked on religion
+2024-10-14 22:09:21.034 [main] INFO  testCases.TC_ReligionTest - clicked on new button
+2024-10-14 22:09:23.322 [main] INFO  testCases.TC_ReligionTest - provided religion
+2024-10-14 22:09:28.318 [main] INFO  testCases.TC_ReligionTest - clicked on save button
+2024-10-14 22:09:32.011 [main] INFO  testCases.TC_CalendarTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:09:32.011 [main] INFO  testCases.TC_CalendarTest - --test case started--
+2024-10-14 22:09:40.626 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-10-14 22:09:43.987 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-10-14 22:09:44.445 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-10-14 22:09:45.151 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-10-14 22:09:53.944 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-10-14 22:09:54.414 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-10-14 22:09:57.180 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-10-14 22:10:01.489 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-10-14 22:10:01.664 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-10-14 22:10:09.752 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-10-14 22:10:10.280 [main] INFO  testCases.TC_CalendarTest - entered date
+2024-10-14 22:10:10.525 [main] INFO  testCases.TC_CalendarTest - check weekoff
+2024-10-14 22:10:10.708 [main] INFO  testCases.TC_CalendarTest - check restday
+2024-10-14 22:10:10.880 [main] INFO  testCases.TC_CalendarTest - clicked on save button
+2024-10-14 22:10:12.145 [main] INFO  testCases.TC_GradeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:10:12.146 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-10-14 22:10:22.270 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-10-14 22:10:24.434 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-10-14 22:10:24.994 [main] INFO  testCases.TC_GradeTest - provided username
+2024-10-14 22:10:25.767 [main] INFO  testCases.TC_GradeTest - provided password
+2024-10-14 22:10:34.511 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-10-14 22:10:34.722 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-10-14 22:10:40.282 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-10-14 22:10:44.987 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-10-14 22:10:45.178 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-10-14 22:10:49.333 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-10-14 22:10:49.744 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-10-14 22:10:50.209 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-10-14 22:10:50.493 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-10-14 22:10:53.779 [main] INFO  testCases.TC_GradeTest - indeminity selected
+2024-10-14 22:10:54.539 [main] INFO  testCases.TC_GradeTest - clicked on save button
+2024-10-14 22:10:56.006 [main] INFO  testCases.TC_DesignationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:10:56.006 [main] INFO  testCases.TC_DesignationTest - --test case started--
+2024-10-14 22:11:02.373 [main] INFO  testCases.TC_DesignationTest - browser maximized
+2024-10-14 22:11:02.828 [main] INFO  testCases.TC_DesignationTest - provided app URL in browser
+2024-10-14 22:11:08.707 [main] INFO  testCases.TC_DesignationTest - provided username
+2024-10-14 22:11:08.994 [main] INFO  testCases.TC_DesignationTest - provided password
+2024-10-14 22:11:18.825 [main] INFO  testCases.TC_DesignationTest - clicked on sign in button
+2024-10-14 22:11:19.229 [main] INFO  testCases.TC_DesignationTest - clicked on hr core link
+2024-10-14 22:11:25.823 [main] INFO  testCases.TC_DesignationTest - clicked on setup form
+2024-10-14 22:11:30.290 [main] INFO  testCases.TC_DesignationTest - clicked on desg
+2024-10-14 22:11:30.504 [main] INFO  testCases.TC_DesignationTest - clicked on new btn
+2024-10-14 22:11:37.541 [main] INFO  testCases.TC_DesignationTest - entered desg code
+2024-10-14 22:11:37.733 [main] INFO  testCases.TC_DesignationTest - entered desg
+2024-10-14 22:11:37.983 [main] INFO  testCases.TC_DesignationTest - provided job desc
+2024-10-14 22:11:38.158 [main] INFO  testCases.TC_DesignationTest - clicked on save btn
+2024-10-14 22:11:39.370 [main] INFO  testCases.TC_DeptTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:11:39.370 [main] INFO  testCases.TC_DeptTest - --test case started--
+2024-10-14 22:11:47.217 [main] INFO  testCases.TC_DeptTest - browser maximized
+2024-10-14 22:11:50.605 [main] INFO  testCases.TC_DeptTest - provided app URL in browser
+2024-10-14 22:11:51.308 [main] INFO  testCases.TC_DeptTest - provided username
+2024-10-14 22:11:51.672 [main] INFO  testCases.TC_DeptTest - provided password
+2024-10-14 22:12:03.762 [main] INFO  testCases.TC_DeptTest - clicked on sign in button
+2024-10-14 22:12:04.135 [main] INFO  testCases.TC_DeptTest - clicked on hr core link
+2024-10-14 22:12:11.548 [main] INFO  testCases.TC_DeptTest - clicked on setup form
+2024-10-14 22:12:16.307 [main] INFO  testCases.TC_DeptTest - clicked on dept
+2024-10-14 22:12:24.050 [main] INFO  testCases.TC_DeptTest - clicked on new btn
+2024-10-14 22:12:30.985 [main] INFO  testCases.TC_DeptTest - dept name entered
+2024-10-14 22:12:31.240 [main] INFO  testCases.TC_DeptTest - clicked self servide dd
+2024-10-14 22:12:31.487 [main] INFO  testCases.TC_DeptTest - clicked dept mgr dd
+2024-10-14 22:12:31.732 [main] INFO  testCases.TC_DeptTest - dept mgr name entered
+2024-10-14 22:12:33.253 [main] INFO  testCases.TC_DeptTest - dept mgr selected
+2024-10-14 22:12:34.028 [main] INFO  testCases.TC_DeptTest - clicked on save button
+2024-10-14 22:12:35.344 [main] INFO  testCases.TC_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:12:35.344 [main] INFO  testCases.TC_EmployeeTest - --test case started--
+2024-10-14 22:13:35.696 [main] INFO  testCases.TC_EmployeeTest - browser maximized
+2024-10-14 22:14:41.569 [main] INFO  testCases.TC_EmployeeTest - provided app URL in browser
+2024-10-14 22:15:19.064 [main] INFO  testCases.TC_EmployeeTest - provided username
+2024-10-14 22:15:39.039 [main] INFO  testCases.TC_EmployeeTest - provided password
+2024-10-14 22:18:47.152 [main] INFO  testCases.DDT_ResidencyInfo - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:18:47.152 [main] INFO  testCases.DDT_ResidencyInfo - --test case started--
+2024-10-14 22:18:54.364 [main] INFO  testCases.DDT_ResidencyInfo - browser maximized
+2024-10-14 22:18:58.673 [main] INFO  testCases.DDT_ResidencyInfo - provided app URL in browser
+2024-10-14 22:19:01.033 [main] INFO  testCases.DDT_ResidencyInfo - provided username
+2024-10-14 22:19:01.375 [main] INFO  testCases.DDT_ResidencyInfo - provided password
+2024-10-14 22:19:13.134 [main] INFO  testCases.DDT_ResidencyInfo - clicked on sign in button
+2024-10-14 22:19:13.486 [main] INFO  testCases.DDT_ResidencyInfo - clicked on hr core link
+2024-10-14 22:19:17.589 [main] INFO  testCases.DDT_ResidencyInfo - clicked on setup form
+2024-10-14 22:19:22.786 [main] INFO  testCases.DDT_ResidencyInfo - clicked on employee
+2024-10-14 22:19:24.155 [main] INFO  testCases.DDT_ResidencyInfo - emp name entered
+2024-10-14 22:19:37.271 [main] ERROR testCases.DDT_ResidencyInfo - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='001 | Vaibhav Chavan']"}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a5c6c4d2a8522da24c0aff3794b63e4b21483228, findElement {using=xpath, value=//a[normalize-space()='001 | Vaibhav Chavan']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a5c6c4d2a8522da24c0aff3794b...}
+Session ID: a5c6c4d2a8522da24c0aff3794b63e4b21483228
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.EmployeePage.clkFilteredEmp(EmployeePage.java:154) ~[test-classes/:?]
+	at testCases.DDT_ResidencyInfo.verifyResidencyInfo(DDT_ResidencyInfo.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-14 22:19:38.768 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-14 22:19:38.768 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-14 22:19:43.769 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-14 22:19:46.202 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-14 22:19:47.837 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-14 22:19:48.392 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-14 22:19:57.732 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-14 22:19:57.985 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-14 22:20:00.938 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-14 22:20:06.503 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-14 22:20:06.685 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-14 22:20:09.455 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-14 22:20:09.685 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-14 22:20:09.893 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-14 22:20:10.294 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-14 22:20:10.606 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-14 22:20:10.862 [main] INFO  testCases.MySQL_EmployeeTest - dept selected
+2024-10-14 22:20:11.123 [main] INFO  testCases.MySQL_EmployeeTest - clicked on desg
+2024-10-14 22:20:11.561 [main] INFO  testCases.MySQL_EmployeeTest - desg selected
+2024-10-14 22:20:13.421 [main] INFO  testCases.MySQL_EmployeeTest - grade selected
+2024-10-14 22:20:15.668 [main] INFO  testCases.MySQL_EmployeeTest - gender selected
+2024-10-14 22:20:18.088 [main] INFO  testCases.MySQL_EmployeeTest - religion selected
+2024-10-14 22:20:20.956 [main] INFO  testCases.MySQL_EmployeeTest - marital sts selected
+2024-10-14 22:20:25.853 [main] INFO  testCases.MySQL_EmployeeTest - clicked on save button
+2024-10-15 23:15:35.158 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-15 23:15:35.559 [main] INFO  testCases.TC_DelegationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-15 23:15:35.559 [main] INFO  testCases.TC_DelegationTest - --test case started--
+2024-10-15 23:15:39.921 [main] INFO  testCases.TC_DelegationTest - browser opened
+2024-10-15 23:15:40.000 [main] INFO  testCases.TC_DelegationTest - browser maximized
+2024-10-15 23:15:47.789 [main] INFO  testCases.TC_DelegationTest - provided app URL in browser
+2024-10-15 23:15:48.146 [main] INFO  testCases.TC_DelegationTest - provided username
+2024-10-15 23:15:48.455 [main] INFO  testCases.TC_DelegationTest - provided password
+2024-10-15 23:16:00.961 [main] INFO  testCases.TC_DelegationTest - clicked on sign in button
+2024-10-15 23:16:04.489 [main] INFO  testCases.TC_DelegationTest - clicked on hr core link
+2024-10-15 23:16:09.841 [main] INFO  testCases.TC_DelegationTest - clicked on setup form
+2024-10-15 23:16:13.515 [main] INFO  testCases.TC_DelegationTest - clicked on delegation
+2024-10-15 23:16:13.624 [main] INFO  testCases.TC_DelegationTest - clicked on new btn
+2024-10-15 23:16:15.708 [main] INFO  testCases.TC_DelegationTest - clicked on delegatee dropdown
+2024-10-15 23:16:15.898 [main] INFO  testCases.TC_DelegationTest - selected delegatee
+2024-10-15 23:16:16.196 [main] INFO  testCases.TC_DelegationTest - clicked on save btn

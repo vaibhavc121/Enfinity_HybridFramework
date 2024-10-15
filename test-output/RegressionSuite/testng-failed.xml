@@ -4,8 +4,8 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="linux-chrome(failed)">
-    <parameter name="os" value="linux"/>
+  <test thread-count="5" name="chrome test(failed)">
+    <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <groups>
       <run>
@@ -14,15 +14,60 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_CalendarTest">
+      <class name="testCases.TC_BudgetTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyCalendar"/>
+          <include name="verifyBudget"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC_BudgetTest -->
+      <class name="testCases.TC_BankTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyBank"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC_BankTest -->
+      <class name="testCases.TC_DocumentTypeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyDocType"/>
           <include name="setup"/>
           <include name="afterMethod"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_CalendarTest -->
+      </class> <!-- testCases.TC_DocumentTypeTest -->
+      <class name="testCases.TC_AssetTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="verifyHRAsset"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC_AssetTest -->
+      <class name="testCases.DDT_ResidencyInfo">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="verifyResidencyInfo" invocation-numbers="0"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.DDT_ResidencyInfo -->
+      <class name="testCases.TC_EmployeeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyEmpCreation"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC_EmployeeTest -->
     </classes>
-  </test> <!-- linux-chrome(failed) -->
+  </test> <!-- chrome test(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

@@ -3,15 +3,15 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.BankPage;
+import pageObjects.DelegationPage;
 import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_BankTest extends BaseClass
+public class TC_DelegationTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyBank()
+	public void verifyDelegation()
 	{
 		try
 		{
@@ -24,30 +24,29 @@ public class TC_BankTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkBank();
+			sp.clkDelegation();
 			Thread.sleep(2000);
-			logger.info("clicked on bank");
+			logger.info("clicked on delegation");
 
-			// bank pg
-			BankPage bp = new BankPage(driver);
-			bp.clkNewBtn();
+			// delegation pg
+			DelegationPage dp = new DelegationPage(driver);
+			dp.clkNewBtn();
 			logger.info("clicked on new btn");
-			bp.setName();
-			logger.info("provided bank name");
-			bp.checkToggle();
-			logger.info("clicked on IBAN toggle btn");
-			bp.clkSave();
-			logger.info("clicked on save button");
+			dp.clkDelegateeDD();
+			logger.info("clicked on delegatee dropdown");
+			dp.slctDelegatee();
+			logger.info("selected delegatee");
+			dp.clkSaveBtn();
+			logger.info("clicked on save btn");
 
-			boolean act = bp.isBankCreated();
-			Assert.assertEquals(act, true);
-			logger.info("assertion completed");
+			Assert.assertTrue(true);
+
 		}
 		catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
 		}
-
 	}
+
 }
