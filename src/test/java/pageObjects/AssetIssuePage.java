@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 import testBase.BaseClass;
 
-public class AssetPage extends BasePage
+public class AssetIssuePage extends BasePage
 {
 
-	public AssetPage(WebDriver driver)
+	public AssetIssuePage(WebDriver driver)
 	{
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -19,6 +19,9 @@ public class AssetPage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='New']")
 	WebElement newbtn;
+
+	@FindBy(xpath = "//i[@class='dx-icon dx-icon-add']")
+	WebElement addIcon;
 
 	@FindBy(xpath = "//input[@id='HrAsset.Name_I']")
 	WebElement name;
@@ -32,6 +35,9 @@ public class AssetPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
 
+	@FindBy(xpath = "//a[normalize-space()='Asset']")
+	WebElement asset;
+
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
 	WebElement filterCell;
 
@@ -41,6 +47,12 @@ public class AssetPage extends BasePage
 	public void clkNewBtn()
 	{
 		newbtn.click();
+	}
+
+	public void addIcon()
+	{
+		addIcon.click();
+		// Thread.sleep(10000);
 	}
 
 	String temp = bc.randomString();
@@ -63,8 +75,13 @@ public class AssetPage extends BasePage
 	public void clkSaveBtn() throws InterruptedException
 	{
 		save.click();
-		driver.navigate().back();
-		Thread.sleep(2000);
+//		driver.navigate().back();
+//		Thread.sleep(2000);
+	}
+
+	public void clkAsset()
+	{
+		asset.click();
 	}
 
 	public boolean isHrAssetCreated() throws InterruptedException

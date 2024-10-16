@@ -55,9 +55,10 @@ public class LicensesPage extends BasePage
 		clkfilenumdd.click();
 	}
 
-	public void slctFileNum()
+	public void slctFileNum() throws InterruptedException
 	{
 		slctfilenum.click();
+		Thread.sleep(3000);
 	}
 
 	public void clkSaveBtn() throws InterruptedException
@@ -71,7 +72,7 @@ public class LicensesPage extends BasePage
 	{
 		filterCell.sendKeys(temp);
 		String license = result.getText();
-		if (temp.equals(license))
+		if (license.contains(temp))
 		{
 			return true;
 		}

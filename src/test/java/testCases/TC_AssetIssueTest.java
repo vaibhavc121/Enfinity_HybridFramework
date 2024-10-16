@@ -3,15 +3,15 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.AssetPage;
+import pageObjects.AssetIssuePage;
 import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_AssetTest extends BaseClass
+public class TC_AssetIssueTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyHRAsset()
+	public void verifyAssetIssue()
 	{
 		try
 		{
@@ -28,10 +28,12 @@ public class TC_AssetTest extends BaseClass
 			Thread.sleep(2000);
 			logger.info("clicked on asset");
 
-			// HRAsset pg
-			AssetPage ap = new AssetPage(driver);
-			ap.clkNewBtn();
-			logger.info("clicked on new button");
+			// Asset issue pg
+			AssetIssuePage ap = new AssetIssuePage(driver);
+//			ap.clkNewBtn();
+//			logger.info("clicked on new button");
+			ap.addIcon();
+			logger.info("clicked on add icon");
 			ap.setName();
 			logger.info("provided asset name");
 			ap.clkAssetCatDD();

@@ -6593,3 +6593,121 @@ Session ID: a5c6c4d2a8522da24c0aff3794b63e4b21483228
 2024-10-15 23:16:15.708 [main] INFO  testCases.TC_DelegationTest - clicked on delegatee dropdown
 2024-10-15 23:16:15.898 [main] INFO  testCases.TC_DelegationTest - selected delegatee
 2024-10-15 23:16:16.196 [main] INFO  testCases.TC_DelegationTest - clicked on save btn
+2024-10-16 20:31:13.951 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 20:31:14.254 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 20:31:14.254 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-16 20:31:17.803 [main] INFO  testCases.TC_LicensesTest - browser opened
+2024-10-16 20:31:17.861 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-16 20:31:25.724 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-16 20:31:26.012 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-16 20:31:26.161 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-16 20:31:36.534 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-16 20:31:36.628 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-16 20:31:38.728 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-16 20:31:42.226 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-16 20:33:06.565 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 20:33:06.843 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 20:33:06.843 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-16 20:33:08.255 [main] INFO  testCases.TC_LicensesTest - browser opened
+2024-10-16 20:33:08.310 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-16 20:33:15.350 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-16 20:33:15.623 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-16 20:33:15.766 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-16 20:33:24.600 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-16 20:33:24.678 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-16 20:33:28.852 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-16 20:33:32.249 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-16 20:35:21.111 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 20:35:21.360 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 20:35:21.360 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-16 20:35:22.811 [main] INFO  testCases.TC_LicensesTest - browser opened
+2024-10-16 20:35:22.855 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-16 20:35:30.294 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-16 20:35:30.601 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-16 20:35:30.752 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-16 20:35:39.458 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-16 20:35:39.552 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-16 20:35:41.678 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-16 20:35:44.951 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-16 20:36:18.285 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 20:36:18.585 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 20:36:18.585 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-16 20:36:20.056 [main] INFO  testCases.TC_LicensesTest - browser opened
+2024-10-16 20:36:20.107 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-16 20:36:27.341 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-16 20:36:27.630 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-16 20:36:27.801 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-16 20:36:36.116 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-16 20:36:36.213 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-16 20:36:38.278 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-16 20:36:41.726 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-16 20:37:14.849 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 20:37:15.125 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 20:37:31.702 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-16 20:37:33.176 [main] INFO  testCases.TC_LicensesTest - browser opened
+2024-10-16 20:37:33.225 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-16 20:37:40.062 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-16 20:37:40.335 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-16 20:37:40.449 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-16 20:37:48.626 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-16 20:37:48.728 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-16 20:37:50.797 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-16 20:37:53.992 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-16 20:41:33.070 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 20:41:33.360 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 20:41:33.360 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-16 20:41:34.690 [main] INFO  testCases.TC_LicensesTest - browser opened
+2024-10-16 20:41:34.732 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-16 20:41:42.505 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-16 20:41:42.795 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-16 20:41:42.949 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-16 20:41:51.067 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-16 20:41:51.160 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-16 20:41:53.334 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-16 20:41:56.635 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-16 23:07:06.214 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 23:07:06.705 [main] INFO  testCases.TC_AssetIssueTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 23:11:59.389 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 23:11:59.727 [main] INFO  testCases.TC_AssetIssueTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 23:11:59.728 [main] INFO  testCases.TC_AssetIssueTest - --test case started--
+2024-10-16 23:12:04.109 [main] INFO  testCases.TC_AssetIssueTest - browser opened
+2024-10-16 23:12:04.197 [main] INFO  testCases.TC_AssetIssueTest - browser maximized
+2024-10-16 23:12:12.155 [main] INFO  testCases.TC_AssetIssueTest - provided app URL in browser
+2024-10-16 23:12:12.508 [main] INFO  testCases.TC_AssetIssueTest - provided username
+2024-10-16 23:12:12.682 [main] INFO  testCases.TC_AssetIssueTest - provided password
+2024-10-16 23:12:24.847 [main] INFO  testCases.TC_AssetIssueTest - clicked on sign in button
+2024-10-16 23:12:24.962 [main] INFO  testCases.TC_AssetIssueTest - clicked on hr core link
+2024-10-16 23:12:27.493 [main] INFO  testCases.TC_AssetIssueTest - clicked on setup form
+2024-10-16 23:12:29.587 [main] INFO  testCases.TC_AssetIssueTest - clicked on asset
+2024-10-16 23:14:08.404 [main] INFO  testCases.TC_AssetIssueTest - clicked on add icon
+2024-10-16 23:17:12.213 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng.xml
+
+2024-10-16 23:17:12.569 [main] INFO  testCases.TC_AssetIssueTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-16 23:17:12.569 [main] INFO  testCases.TC_AssetIssueTest - --test case started--
+2024-10-16 23:17:14.710 [main] INFO  testCases.TC_AssetIssueTest - browser opened
+2024-10-16 23:17:14.795 [main] INFO  testCases.TC_AssetIssueTest - browser maximized
+2024-10-16 23:17:23.131 [main] INFO  testCases.TC_AssetIssueTest - provided app URL in browser
+2024-10-16 23:17:23.443 [main] INFO  testCases.TC_AssetIssueTest - provided username
+2024-10-16 23:17:23.654 [main] INFO  testCases.TC_AssetIssueTest - provided password
+2024-10-16 23:17:32.888 [main] INFO  testCases.TC_AssetIssueTest - clicked on sign in button
+2024-10-16 23:17:33.004 [main] INFO  testCases.TC_AssetIssueTest - clicked on hr core link
+2024-10-16 23:17:35.795 [main] INFO  testCases.TC_AssetIssueTest - clicked on setup form
+2024-10-16 23:17:37.929 [main] INFO  testCases.TC_AssetIssueTest - clicked on asset
+2024-10-16 23:17:42.437 [main] INFO  testCases.TC_AssetIssueTest - clicked on add icon
