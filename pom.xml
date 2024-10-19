@@ -44,9 +44,9 @@
 							<!--<suiteXmlFile>testng-suites/Master.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/MySQLTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->
-							<suiteXmlFile>testng-suites/SequentialCrossBrowserTestSuite.xml</suiteXmlFile>							
+							<!--<suiteXmlFile>testng-suites/SequentialCrossBrowserTestSuite.xml</suiteXmlFile>-->							
 							<!--<suiteXmlFile>testng-suites/PerformanceTestSuite.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/Regression TestSuite.xml</suiteXmlFile>-->
+							<suiteXmlFile>testng-suites/RegressionTestSuite.xml</suiteXmlFile>
 							<!--<suiteXmlFile>testng-suites/SanityTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SecurityTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SmokeTestSuite.xml</suiteXmlFile>-->
