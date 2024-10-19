@@ -7,8 +7,8 @@
         <methods>
           <include name="teardown"/>
           <include name="verifyBank"/>
-          <include name="afterMethod"/>
           <include name="setup"/>
+          <include name="afterMethod"/>
           <include name="login"/>
         </methods>
       </class> <!-- testCases.TC_BankTest -->

@@ -1,70 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-19T10:17:49 IST" name="MasterTestSuite" finished-at="2024-10-19T10:18:21 IST" duration-ms="32909">
+  <suite started-at="2024-10-19T18:56:45 IST" name="Default suite" finished-at="2024-10-19T18:56:45 IST" duration-ms="101">
     <groups>
       <group name="regression">
-        <method signature="TC_AssetIssueTest.verifyAssetIssue()[pri:0, instance:testCases.TC_AssetIssueTest@7ce97ee5]" name="verifyAssetIssue" class="testCases.TC_AssetIssueTest"/>
+        <method signature="TC_BankTest.verifyBank()[pri:0, instance:testCases.TC_BankTest@6bea52d4]" name="verifyBank" class="testCases.TC_BankTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2024-10-19T10:17:49 IST" name="Master Tests" finished-at="2024-10-19T10:18:21 IST" duration-ms="32909">
-      <class name="testCases.TC_AssetIssueTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_AssetIssueTest@7ce97ee5]" started-at="2024-10-19T10:17:49 IST" name="setup" finished-at="2024-10-19T10:17:58 IST" duration-ms="9439" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_AssetIssueTest@7ce97ee5]" started-at="2024-10-19T10:17:58 IST" name="login" finished-at="2024-10-19T10:18:07 IST" duration-ms="8322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyAssetIssue()[pri:0, instance:testCases.TC_AssetIssueTest@7ce97ee5]" started-at="2024-10-19T10:18:07 IST" name="verifyAssetIssue" finished-at="2024-10-19T10:18:21 IST" duration-ms="14471" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2024-10-19T18:56:45 IST" name="Default test" finished-at="2024-10-19T18:56:45 IST" duration-ms="101">
+      <class name="testCases.TC_BankTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_BankTest@6bea52d4]" started-at="2024-10-19T18:56:45 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729344405729" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='HrAsset.Name_I']"}
-  (Session info: chrome=129.0.6668.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [01c360cd9e555b757d7536459a83b319, findElement {using=xpath, value=//input[@id='HrAsset.Name_I']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54567/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 01c360cd9e555b757d7536459a83b319]]>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse--1594199906\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='HrAsset.Name_I']"}
-  (Session info: chrome=129.0.6668.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [01c360cd9e555b757d7536459a83b319, findElement {using=xpath, value=//input[@id='HrAsset.Name_I']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54567/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 01c360cd9e555b757d7536459a83b319
-at org.testng.Assert.fail(Assert.java:111)
-at testCases.TC_AssetIssueTest.verifyAssetIssue(TC_AssetIssueTest.java:53)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse--1594199906\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -83,19 +46,63 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAssetIssue -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_AssetIssueTest@7ce97ee5]" started-at="2024-10-19T10:18:21 IST" name="afterMethod" finished-at="2024-10-19T10:18:21 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_BankTest@6bea52d4]" started-at="2024-10-19T18:56:45 IST" name="login" finished-at="2024-10-19T18:56:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifyBank()[pri:0, instance:testCases.TC_BankTest@6bea52d4]" started-at="2024-10-19T18:56:45 IST" name="verifyBank" finished-at="2024-10-19T18:56:45 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse--1594199906\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse--1594199906\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBank -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_BankTest@6bea52d4]" started-at="2024-10-19T18:56:45 IST" name="afterMethod" finished-at="2024-10-19T18:56:45 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_AssetIssueTest@7ce97ee5]" started-at="2024-10-19T10:18:21 IST" name="teardown" finished-at="2024-10-19T10:18:21 IST" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_BankTest@6bea52d4]" started-at="2024-10-19T18:56:45 IST" name="teardown" finished-at="2024-10-19T18:56:45 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_AssetIssueTest -->
-    </test> <!-- Master Tests -->
-  </suite> <!-- MasterTestSuite -->
+      </class> <!-- testCases.TC_BankTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
