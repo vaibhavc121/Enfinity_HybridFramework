@@ -43,7 +43,8 @@
 							<!--<suiteXmlFile>testng-suites/Jenkins.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/Master.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/MySQLTestSuite.xml</suiteXmlFile>-->
-							<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>
+							<!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->
+							<suiteXmlFile>testng-suites/SequentialCrossBrowserTestSuite.xml</suiteXmlFile>							
 							<!--<suiteXmlFile>testng-suites/PerformanceTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/Regression TestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SanityTestSuite.xml</suiteXmlFile>-->
