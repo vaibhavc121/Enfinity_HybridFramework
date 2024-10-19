@@ -21,6 +21,7 @@ public class GetData
 //	}
 
 	// Best practices (modern approach)
+
 	@Test
 	public void testResponseCode1()
 	{
