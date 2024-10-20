@@ -46,7 +46,7 @@ public class EmployeePage extends BasePage
 	@FindBy(css = "div[class='dx-first-row dx-last-row dx-field-item dx-col-1 dx-field-item-required dx-flex-layout dx-label-v-align'] div[class='dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-show-clear-button dx-dropdowneditor-button-visible dx-editor-outlined dx-texteditor-empty dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler'] div[class='dx-dropdowneditor-icon']")
 	WebElement clkdesg;
 
-	@FindBy(xpath = "//div[contains(text(,'Systems Analyst')]") // error
+	@FindBy(xpath = "//div[contains(text(),'Systems Analyst')]")
 	WebElement slctdesg;
 
 	@FindBy(xpath = "//span[normalize-space()='Save']")

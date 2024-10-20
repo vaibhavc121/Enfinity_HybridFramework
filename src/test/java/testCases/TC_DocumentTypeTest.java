@@ -24,13 +24,13 @@ public class TC_DocumentTypeTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkDocType();
+			sp.clkDocIsuue();
 			Thread.sleep(2000);
 			logger.info("clicked on doc type");
 
 			// doctype pg
 			DocumentTypePage dt = new DocumentTypePage(driver);
-			dt.ClkNewBtn();
+			dt.clkAddIcon();
 			logger.info("clicked on new btn");
 			dt.setName();
 			logger.info("provided doc type name");

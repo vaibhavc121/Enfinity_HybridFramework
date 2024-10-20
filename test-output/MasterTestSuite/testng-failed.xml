@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_AssetIssueTest">
+      <class name="testCases.TC_DocumentTypeTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyAssetIssue"/>
+          <include name="verifyDocType"/>
           <include name="setup"/>
           <include name="afterMethod"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_AssetIssueTest -->
+      </class> <!-- testCases.TC_DocumentTypeTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->

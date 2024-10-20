@@ -22,9 +22,9 @@
 
 			<!--<class name="testCases.TC_LicensesTest" />-->
 			<!--<class name="testCases.TC_DelegationTest" />-->
-			<class name="testCases.TC_AssetIssueTest" />
+			<!--<class name="testCases.TC_AssetIssueTest" />-->
 			<!--<class name="testCases.TC_BudgetTest" />-->
-			<!--<class name="testCases.TC_DocumentTypeTest" />-->
+			<class name="testCases.TC_DocumentTypeTest" />
 			<!--<class name="testCases.TC_QualificationTest" />-->
 			<!--<class name="testCases.TC_BankTest" />-->
 			<!--<class name="testCases.TC_WorkLocationTest" />-->
