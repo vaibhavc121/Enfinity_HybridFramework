@@ -32,7 +32,7 @@ public class TC_AssetIssueTest extends BaseClass
 			AssetIssuePage ap = new AssetIssuePage(driver);
 //			ap.clkNewBtn();
 //			logger.info("clicked on new button");
-			ap.addIcon();
+			ap.clkAddIcon();
 			logger.info("clicked on add icon");
 			ap.setName();
 			logger.info("provided asset name");
@@ -43,6 +43,8 @@ public class TC_AssetIssueTest extends BaseClass
 			logger.info("selected asset cat");
 			ap.clkSaveBtn();
 			logger.info("clicked on save button");
+			ap.clkAsset();
+			logger.info("clicked on asset");
 
 			Assert.assertTrue(ap.isHrAssetCreated());
 

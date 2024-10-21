@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,10 +51,21 @@ public class AssetIssuePage extends BasePage
 		newbtn.click();
 	}
 
-	public void addIcon()
+	public void clkAddIcon() throws InterruptedException
 	{
 		addIcon.click();
-		// Thread.sleep(10000);
+		Thread.sleep(10000);
+		String originalWindow = driver.getWindowHandle();
+		Set<String> allWindows = driver.getWindowHandles();
+		for (String windowHandle : allWindows)
+		{
+			if (!windowHandle.equals(originalWindow))
+			{
+				driver.switchTo().window(windowHandle);
+				break;
+			}
+		}
+
 	}
 
 	String temp = bc.randomString();

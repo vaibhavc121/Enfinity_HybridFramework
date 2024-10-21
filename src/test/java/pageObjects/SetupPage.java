@@ -46,7 +46,7 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Budget']")
 	WebElement budget;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[5]/ul[1]/li[1]/ul[1]/li[2]/span[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[5]/ul[1]/li[1]/ul[1]/li[4]/span[1]")
 	WebElement assetIssue;
 
 	@FindBy(xpath = "//span[@class='dx-vam'][normalize-space()='Delegation']")

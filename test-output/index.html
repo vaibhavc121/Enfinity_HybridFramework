@@ -129,16 +129,16 @@
                   <a name="verifyDocType">
                   </a> <!-- verifyDocType -->
                   <span class="method-name">verifyDocType</span>
-                  <div class="stack-trace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;DocumentType.Name_I&apos;]&quot;}
+                  <div class="stack-trace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]&quot;}
   (Session info: chrome=129.0.6668.101)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c87e3f1e6df8595c6bac016f7ff1c985, findElement {value=//input[@id=&apos;DocumentType.Name_I&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56565/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c87e3f1e6df8595c6bac016f7ff1c985
-	at testCases.TC_DocumentTypeTest.verifyDocType(TC_DocumentTypeTest.java:46)
+Command: [25204dcc70bc5f0f33a5e28f0b68df67, findElement {using=xpath, value=/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55403}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55403/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25204dcc70bc5f0f33a5e28f0b68df67
+	at testCases.TC_DocumentTypeTest.verifyDocType(TC_DocumentTypeTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
@@ -227,12 +227,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyDocType')
 data.setCell(0, 2, 'testCases.TC_DocumentTypeTest')
-data.setCell(0, 3, 16078);
+data.setCell(0, 3, 24761);
 window.suiteTableData['MasterTestSuite']= { tableData: data, tableDiv: 'times-div-MasterTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-MasterTestSuite">
               </div> <!-- times-div-MasterTestSuite -->
             </div> <!-- times-div -->
@@ -265,21 +265,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">10903 ms</span>
+                <span class="method-start">12736 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyDocType</span>
-                <span class="method-start">20986 ms</span>
+                <span class="method-start">21543 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">37314 ms</span>
+                <span class="method-start">46514 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">37317 ms</span>
+                <span class="method-start">46517 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
