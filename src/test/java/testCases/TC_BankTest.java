@@ -41,7 +41,7 @@ public class TC_BankTest extends BaseClass
 
 			boolean act = bp.isBankCreated();
 			Assert.assertEquals(act, true);
-			logger.info("assertion completed");
+			logger.info("test case passed");
 		}
 		catch (Exception e)
 		{

@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_BudgetTest">
+      <class name="testCases.TC_CalendarTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyBudget"/>
-          <include name="afterMethod"/>
+          <include name="verifyCalendar"/>
           <include name="setup"/>
+          <include name="afterMethod"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_BudgetTest -->
+      </class> <!-- testCases.TC_CalendarTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->

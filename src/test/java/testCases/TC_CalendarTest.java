@@ -39,11 +39,12 @@ public class TC_CalendarTest extends BaseClass
 			cp.setWeekoff();
 			logger.info("check weekoff");
 			cp.setRestday();
+			Thread.sleep(10000);
 			logger.info("check restday");
-			cp.clkSave();
+			// cp.clkSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(true);
+			Assert.assertTrue(cp.isCalendarCreated());
 
 		}
 		catch (Exception e)
