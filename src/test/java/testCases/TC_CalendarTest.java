@@ -41,7 +41,7 @@ public class TC_CalendarTest extends BaseClass
 			cp.setRestday();
 			Thread.sleep(10000);
 			logger.info("check restday");
-			// cp.clkSave();
+			cp.clkSave();
 			logger.info("clicked on save button");
 
 			Assert.assertTrue(cp.isCalendarCreated());

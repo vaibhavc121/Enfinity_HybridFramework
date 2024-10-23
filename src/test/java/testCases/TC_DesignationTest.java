@@ -45,6 +45,9 @@ public class TC_DesignationTest extends BaseClass
 			logger.info("provided job desc");
 			dp.clkSave();
 			logger.info("clicked on save btn");
+
+			Assert.assertTrue(dp.isDesgCreated());
+			logger.info("test case passed");
 		}
 		catch (Exception e)
 		{

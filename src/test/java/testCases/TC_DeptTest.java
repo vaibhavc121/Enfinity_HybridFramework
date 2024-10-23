@@ -45,7 +45,9 @@ public class TC_DeptTest extends BaseClass
 			dp.clkSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(true);
+			Assert.assertTrue(dp.isDeptCreated());
+			logger.info("test case passed");
+			// Assert.assertTrue(true);
 
 		}
 		catch (Exception e)

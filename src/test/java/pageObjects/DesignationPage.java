@@ -4,8 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import testBase.BaseClass;
+
 public class DesignationPage extends BasePage
 {
+	BaseClass bc = new BaseClass();
 
 	public DesignationPage(WebDriver driver)
 	{
@@ -34,19 +37,29 @@ public class DesignationPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
 
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
+	WebElement filterCell;
+
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
+	WebElement result;
+
 	public void clkNewBtn()
 	{
 		newbtn.click();
 	}
 
+	String num = bc.randomNumber();
+
 	public void setDesigCode()
 	{
-		code.sendKeys("DE0035");
+		code.sendKeys(num);
 	}
+
+	String temp = bc.randomString();
 
 	public void setDesignation()
 	{
-		desgname.sendKeys("BA");
+		desgname.sendKeys(temp);
 	}
 
 	public void clkGrade()
@@ -64,9 +77,28 @@ public class DesignationPage extends BasePage
 		jobdesc.sendKeys("job desc");
 	}
 
-	public void clkSave()
+	public void clkSave() throws InterruptedException
 	{
 		save.click();
+		driver.navigate().back();
+		Thread.sleep(2000);
+	}
+
+	public boolean isDesgCreated() throws InterruptedException
+	{
+		filterCell.sendKeys(temp);
+		Thread.sleep(2000);
+		String hrasset = result.getText();
+
+		if (temp.equals(hrasset))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
 	}
 
 }

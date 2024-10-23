@@ -32,13 +32,13 @@ public class CalendarPage extends BasePage
 	@FindBy(xpath = "//div[@id='SaturdayAsRestDay']//span[@class='dx-checkbox-icon']")
 	WebElement restdaycheckbox;
 
-	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement savebtn;
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]")
+	WebElement save;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
 	WebElement filterCell;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/span[1]/a[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
 	WebElement result;
 
 	public void clkNewBtn()
@@ -64,16 +64,17 @@ public class CalendarPage extends BasePage
 		weekoffcheckbox.click();
 	}
 
-	public void setRestday() throws InterruptedException
+	public void setRestday()
 	{
 		restdaycheckbox.click();
-		driver.navigate().back();
-		Thread.sleep(2000);
+
 	}
 
-	public void clkSave()
+	public void clkSave() throws InterruptedException
 	{
-		savebtn.click();
+		save.click();
+		driver.navigate().back();
+		Thread.sleep(2000);
 	}
 
 	public boolean isCalendarCreated() throws InterruptedException
