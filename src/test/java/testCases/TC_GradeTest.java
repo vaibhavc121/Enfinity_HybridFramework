@@ -46,7 +46,8 @@ public class TC_GradeTest extends BaseClass
 			gp.btnSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(true);
+			Assert.assertTrue(gp.isGradeCreated());
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)

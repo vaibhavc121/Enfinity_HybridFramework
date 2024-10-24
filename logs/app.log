@@ -9047,3 +9047,65 @@ Driver info: driver.version: RemoteWebDriver
 2024-10-23 23:13:17.521 [main] INFO  testCases.TC_DesignationTest - provided job desc
 2024-10-23 23:13:20.129 [main] INFO  testCases.TC_DesignationTest - clicked on save btn
 2024-10-23 23:13:22.362 [main] INFO  testCases.TC_DesignationTest - test case passed
+2024-10-24 23:22:10.393 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.406 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2024-10-24 23:22:10.410 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.411 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.412 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.412 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.413 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.413 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.425 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+2024-10-24 23:22:10.441 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+2024-10-24 23:22:10.443 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.444 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2024-10-24 23:22:10.445 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.446 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.447 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.447 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.449 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.450 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2024-10-24 23:22:10.451 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.452 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2024-10-24 23:22:10.456 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.457 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.457 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.457 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.459 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2024-10-24 23:22:10.459 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.461 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.462 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.462 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-10-24 23:22:10.462 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-10-24 23:22:10.475 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Vaibhav\AppData\Local\Temp\testng-eclipse-422830528\testng-customsuite.xml
+
+2024-10-24 23:22:10.504 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 7 ms.
+2024-10-24 23:22:10.795 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@235f4c10: 83 ms
+2024-10-24 23:22:10.814 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@119f1f2a: 18 ms
+2024-10-24 23:22:10.834 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@4b85880b: 20 ms
+2024-10-24 23:22:10.847 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@9635fa: 12 ms
+2024-10-24 23:22:10.857 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@71e5f61d: 10 ms
+2024-10-24 23:22:10.858 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2ce86164: 1 ms
+2024-10-24 23:22:47.318 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-24 23:22:47.761 [main] INFO  testCases.TC_GradeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-24 23:22:47.761 [main] INFO  testCases.TC_GradeTest - --test case started--
+2024-10-24 23:22:58.597 [main] INFO  testCases.TC_GradeTest - browser opened
+2024-10-24 23:22:58.676 [main] INFO  testCases.TC_GradeTest - browser maximized
+2024-10-24 23:23:14.247 [main] INFO  testCases.TC_GradeTest - provided app URL in browser
+2024-10-24 23:23:14.639 [main] INFO  testCases.TC_GradeTest - provided username
+2024-10-24 23:23:14.823 [main] INFO  testCases.TC_GradeTest - provided password
+2024-10-24 23:23:26.581 [main] INFO  testCases.TC_GradeTest - clicked on sign in button
+2024-10-24 23:23:26.708 [main] INFO  testCases.TC_GradeTest - clicked on hr core link
+2024-10-24 23:23:28.637 [main] INFO  testCases.TC_GradeTest - clicked on setup form
+2024-10-24 23:23:32.366 [main] INFO  testCases.TC_GradeTest - clicked on grade
+2024-10-24 23:23:32.549 [main] INFO  testCases.TC_GradeTest - clicked on new btn
+2024-10-24 23:23:34.832 [main] INFO  testCases.TC_GradeTest - entered grade
+2024-10-24 23:23:35.094 [main] INFO  testCases.TC_GradeTest - entered min sal 
+2024-10-24 23:23:35.288 [main] INFO  testCases.TC_GradeTest - entered max sal
+2024-10-24 23:23:35.444 [main] INFO  testCases.TC_GradeTest - clicked on indemnity dropdown
+2024-10-24 23:23:38.582 [main] INFO  testCases.TC_GradeTest - indeminity selected
+2024-10-24 23:23:42.086 [main] INFO  testCases.TC_GradeTest - clicked on save button
+2024-10-24 23:23:44.294 [main] INFO  testCases.TC_GradeTest - test case passed
