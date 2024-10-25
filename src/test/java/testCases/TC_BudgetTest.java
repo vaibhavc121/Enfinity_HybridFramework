@@ -43,6 +43,7 @@ public class TC_BudgetTest extends BaseClass
 			logger.info("clicked on save btn");
 
 			Assert.assertTrue(bp.isBudgetCreated());
+			logger.info("test case passed");
 		}
 		catch (Exception e)
 		{

@@ -28,6 +28,7 @@ public class TC_LoginTest extends BaseClass
 			boolean act = hp.isCompanyNameDisplay();
 			Assert.assertEquals(act, true, "login failed");
 			// Assert.assertTrue(act);
+			logger.info("test case passed");
 		}
 		catch (Exception e)
 		{

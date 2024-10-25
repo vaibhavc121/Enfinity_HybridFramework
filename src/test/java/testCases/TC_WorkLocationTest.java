@@ -36,6 +36,7 @@ public class TC_WorkLocationTest extends BaseClass
 			boolean act = wc.isWorkLocCreated();
 
 			Assert.assertEquals(act, true);
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)

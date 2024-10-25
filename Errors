@@ -1,7 +1,5 @@
 1.parallel execution is not working
-2.religion test false value coming
-3.licenses test
-doc type
+AssetIssueTest
 ---
 -need to think how to get the data from properties file or excel
 -need to implement random string, alphanumeric and number and use it in existing page

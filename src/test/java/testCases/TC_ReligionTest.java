@@ -39,6 +39,7 @@ public class TC_ReligionTest extends BaseClass
 			boolean act = rp.isReligionCreated();
 
 			Assert.assertEquals(act, true);
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)

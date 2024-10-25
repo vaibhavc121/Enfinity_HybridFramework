@@ -42,6 +42,7 @@ public class TC_QualificationTest extends BaseClass
 			logger.info("clicked on save button");
 
 			Assert.assertTrue(qp.isQualificationCreated());
+			logger.info("test case passed");
 		}
 		catch (Exception e)
 		{

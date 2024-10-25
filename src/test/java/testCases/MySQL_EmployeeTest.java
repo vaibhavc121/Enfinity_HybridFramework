@@ -63,6 +63,7 @@ public class MySQL_EmployeeTest extends BaseClass
 
 			Assert.assertEquals(ep.isEmployeeCreated(name), true);
 			// Assert.assertTrue(true);
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)

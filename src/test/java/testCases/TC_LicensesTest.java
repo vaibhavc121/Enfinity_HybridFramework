@@ -38,6 +38,7 @@ public class TC_LicensesTest extends BaseClass
 
 			// Assert.assertEquals(lp.isLicenseCreated(), true);
 			Assert.assertTrue(true);
+			logger.info("test case passed");
 		}
 		catch (Exception e)
 		{

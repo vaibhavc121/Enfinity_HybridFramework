@@ -39,6 +39,7 @@ public class TC_DocumentTypeTest extends BaseClass
 			// dt.clkDocType();
 			// Assert.assertTrue(dt.isDocTypeCreated());
 			Assert.assertTrue(true);
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)

@@ -30,8 +30,7 @@
 							<!--<suiteXmlFile>testng-suites/APITestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/AzureDevops.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/BrowserStack.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/CompatibilityTestSuite.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/CrossBrowserTesting.xml</suiteXmlFile>-->
+							<!--<suiteXmlFile>testng-suites/CompatibilityTestSuite.xml</suiteXmlFile>-->							
 							<!--<suiteXmlFile>testng-suites/DataDriven TestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/EndToEndTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/FunctionalTestSuite.xml</suiteXmlFile>-->
@@ -42,13 +41,14 @@
 							<!--<suiteXmlFile>testng-suites/IntegrationTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/Jenkins.xml</suiteXmlFile>-->							
 							<!--<suiteXmlFile>testng-suites/MySQLTestSuite.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/SequentialCrossBrowserTestSuite.xml</suiteXmlFile>-->							
+							<!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->														
 							<!--<suiteXmlFile>testng-suites/PerformanceTestSuite.xml</suiteXmlFile>-->							
 							<!--<suiteXmlFile>testng-suites/SanityTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SecurityTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SmokeTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/UlTestSuite.xml</suiteXmlFile>-->
+							<!--<suiteXmlFile>testng-suites/CrossBrowserTesting.xml</suiteXmlFile>-->
+							<!--<suiteXmlFile>testng-suites/SequentialCrossBrowserTestSuite.xml</suiteXmlFile>-->
 							<suiteXmlFile>testng-suites/RegressionTestSuite.xml</suiteXmlFile>
 							<!--<suiteXmlFile>testng-suites/Master.xml</suiteXmlFile>-->
 						</suiteXmlFiles>

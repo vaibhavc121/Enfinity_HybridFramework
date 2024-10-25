@@ -45,6 +45,7 @@ public class TC_CalendarTest extends BaseClass
 			logger.info("clicked on save button");
 
 			Assert.assertTrue(cp.isCalendarCreated());
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)

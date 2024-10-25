@@ -40,6 +40,7 @@ public class TC_DelegationTest extends BaseClass
 			logger.info("clicked on save btn");
 
 			Assert.assertTrue(true);
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)

@@ -47,6 +47,7 @@ public class TC_AssetIssueTest extends BaseClass
 			logger.info("clicked on asset");
 
 			Assert.assertTrue(ap.isHrAssetCreated());
+			logger.info("test case passed");
 
 		}
 		catch (Exception e)
