@@ -27,6 +27,6 @@ steps:
     findBugsRunAnalysis: true
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'build'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/build'
     ArtifactName: 'drop'
     publishLocation: 'Container'
