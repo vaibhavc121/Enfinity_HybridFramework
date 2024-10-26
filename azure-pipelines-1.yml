@@ -18,6 +18,8 @@ jobs:
           version: '6.x'
       - task: Maven@4
         inputs:
+          jdkVersionOption: 1.17
+          jdkArchitectureOption: x64
           mavenPomFile: 'pom.xml'
           mavenOptions: '-Xmx1024m'
           goals: 'clean install'
@@ -35,6 +37,8 @@ jobs:
     steps:
       - task: Maven@4
         inputs:
+          jdkVersionOption: 1.17
+          jdkArchitectureOption: x64
           mavenPomFile: 'pom.xml'
           mavenOptions: '-Xmx1024m'
           goals: 'clean install'
@@ -52,6 +56,8 @@ jobs:
     steps:
       - task: Maven@4
         inputs:
+          jdkVersionOption: 1.17
+          jdkArchitectureOption: x64
           mavenPomFile: 'pom.xml'
           mavenOptions: '-Xmx1024m'
           goals: 'clean install'
