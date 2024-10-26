@@ -49,21 +49,3 @@ jobs:
           testResultsFiles: '**/target/surefire-reports/*.xml'
         displayName: "Publish Test Results on macOS"
 
-  - job: Linux_Test
-    displayName: "Run Maven tests on Linux"
-    pool:
-      vmImage: 'ubuntu-latest'
-    steps:
-      - task: Maven@4
-        inputs:
-          jdkVersionOption: 1.17
-          jdkArchitectureOption: x64
-          mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx1024m'
-          goals: 'clean install'
-        displayName: "Run Maven Build and Tests on Linux"
-      - task: PublishTestResults@2
-        inputs:
-          testResultsFormat: 'JUnit'
-          testResultsFiles: '**/target/surefire-reports/*.xml'
-        displayName: "Publish Test Results on Linux"
