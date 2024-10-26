@@ -12,6 +12,11 @@ jobs:
     pool:
       vmImage: 'windows-latest'
     steps:
+      - task: Maven@4
+        inputs:
+          jdkVersionOption: '1.17'
+          jdkArchitectureOption: 'x64'
+        displayName: "Set JDK Version to 1.17"
       - script: |
           # Run tests in Chrome
           mvn test -Dbrowser=chrome
@@ -22,6 +27,12 @@ jobs:
     pool:
       vmImage: 'windows-latest'
     steps:
+      - task: Maven@4
+
+        inputs:
+          jdkVersionOption: '1.17'
+          jdkArchitectureOption: 'x64'
+        displayName: "Set JDK Version to 1.17"
       - script: |
           # Run tests in Firefox
           mvn test -Dbrowser=firefox
@@ -32,6 +43,11 @@ jobs:
     pool:
       vmImage: 'windows-latest'
     steps:
+      - task: Maven@4
+        inputs:
+          jdkVersionOption: '1.17'
+          jdkArchitectureOption: 'x64'
+        displayName: "Set JDK Version to 1.17"
       - script: |
           # Run tests in Edge
           mvn test -Dbrowser=edge
