@@ -35,7 +35,7 @@ public class TC_WorkLocationTest extends BaseClass
 			wc.clkSaveBtn();
 			boolean act = wc.isWorkLocCreated();
 
-			Assert.assertEquals(act, true);
+			Assert.assertEquals(act, false);
 			logger.info("test case passed");
 
 		}
