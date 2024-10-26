@@ -1,0 +1,63 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+jobs:
+  - job: Windows_Test
+    displayName: "Run Maven tests on Windows"
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+      - task: UseDotNet@2  # Example of using .NET, remove if not needed
+        inputs:
+          packageType: 'sdk'
+          version: '6.x'
+      - task: Maven@3
+        inputs:
+          mavenPomFile: 'pom.xml'
+          mavenOptions: '-Xmx1024m'
+          goals: 'clean install'
+        displayName: "Run Maven Build and Tests on Windows"
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: '**/target/surefire-reports/*.xml'
+        displayName: "Publish Test Results on Windows"
+
+  - job: MacOS_Test
+    displayName: "Run Maven tests on macOS"
+    pool:
+      vmImage: 'macos-latest'
+    steps:
+      - task: Maven@3
+        inputs:
+          mavenPomFile: 'pom.xml'
+          mavenOptions: '-Xmx1024m'
+          goals: 'clean install'
+        displayName: "Run Maven Build and Tests on macOS"
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: '**/target/surefire-reports/*.xml'
+        displayName: "Publish Test Results on macOS"
+
+  - job: Linux_Test
+    displayName: "Run Maven tests on Linux"
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - task: Maven@3
+        inputs:
+          mavenPomFile: 'pom.xml'
+          mavenOptions: '-Xmx1024m'
+          goals: 'clean install'
+        displayName: "Run Maven Build and Tests on Linux"
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: '**/target/surefire-reports/*.xml'
+        displayName: "Publish Test Results on Linux"
