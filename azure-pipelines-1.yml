@@ -16,7 +16,7 @@ jobs:
         inputs:
           packageType: 'sdk'
           version: '6.x'
-      - task: Maven@3
+      - task: Maven@4
         inputs:
           mavenPomFile: 'pom.xml'
           mavenOptions: '-Xmx1024m'
@@ -33,7 +33,7 @@ jobs:
     pool:
       vmImage: 'macos-latest'
     steps:
-      - task: Maven@3
+      - task: Maven@4
         inputs:
           mavenPomFile: 'pom.xml'
           mavenOptions: '-Xmx1024m'
@@ -50,7 +50,7 @@ jobs:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
-      - task: Maven@3
+      - task: Maven@4
         inputs:
           mavenPomFile: 'pom.xml'
           mavenOptions: '-Xmx1024m'
