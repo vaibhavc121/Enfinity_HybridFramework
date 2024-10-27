@@ -19,6 +19,8 @@ jobs:
     steps:
       - task: Maven@4
         inputs:
+          jdkVersionOption: '1.17'
+          jdkArchitectureOption: 'x64'
           mavenPomFile: 'pom.xml'  # Path to your pom.xml
           goals: 'test'   # Or any specific Maven goals like 'test'
           options: '-DBROWSERSTACK_USERNAME=$(BROWSERSTACK_USERNAME) -DBROWSERSTACK_ACCESS_KEY=$(BROWSERSTACK_ACCESS_KEY)'
