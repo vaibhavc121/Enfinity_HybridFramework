@@ -9724,3 +9724,47 @@ Session ID: 3de411d18ebf08e5bea4919ce7bf255b
 2024-10-25 23:26:37.118 [main] INFO  testCases.TC_WorkLocationTest - clicked on setup form
 2024-10-25 23:26:40.522 [main] INFO  testCases.TC_WorkLocationTest - clicked on worklocation
 2024-10-25 23:27:55.722 [main] INFO  testCases.TC_WorkLocationTest - test case passed
+2024-10-26 22:52:22.249 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Grid.xml
+
+2024-10-26 22:52:22.586 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:52:22.587 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-26 22:52:25.255 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-26 22:53:31.744 [main] INFO  testCases.TC_DelegationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:53:31.745 [main] INFO  testCases.TC_DelegationTest - --test case started--
+2024-10-26 22:53:31.807 [main] INFO  testCases.TC_AssetIssueTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:53:31.807 [main] INFO  testCases.TC_AssetIssueTest - --test case started--
+2024-10-26 22:53:31.854 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:53:31.854 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-26 22:53:31.927 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:53:31.927 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-26 22:53:41.979 [main] INFO  testCases.TC_BankTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:53:41.979 [main] INFO  testCases.TC_BankTest - --test case started--
+2024-10-26 22:54:09.337 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Grid.xml
+
+2024-10-26 22:54:09.560 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:54:09.561 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-26 22:54:20.102 [main] INFO  testCases.TC_DelegationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:54:20.103 [main] INFO  testCases.TC_DelegationTest - --test case started--
+2024-10-26 22:54:30.151 [main] INFO  testCases.TC_AssetIssueTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:54:30.151 [main] INFO  testCases.TC_AssetIssueTest - --test case started--
+2024-10-26 22:54:40.197 [main] INFO  testCases.TC_DocumentTypeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:54:40.197 [main] INFO  testCases.TC_DocumentTypeTest - --test case started--
+2024-10-26 22:54:50.239 [main] INFO  testCases.TC_QualificationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:54:50.239 [main] INFO  testCases.TC_QualificationTest - --test case started--
+2024-10-26 22:55:00.284 [main] INFO  testCases.TC_BankTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:55:00.285 [main] INFO  testCases.TC_BankTest - --test case started--
+2024-10-26 22:55:23.054 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Grid.xml
+
+2024-10-26 22:55:23.294 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:55:23.294 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-26 22:55:33.836 [main] INFO  testCases.TC_DelegationTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:55:33.837 [main] INFO  testCases.TC_DelegationTest - --test case started--
+2024-10-26 22:55:50.454 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Grid.xml
+
+2024-10-26 22:55:50.658 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-26 22:55:50.658 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-26 22:55:54.062 [main] INFO  testCases.TC_LicensesTest - browser maximized
