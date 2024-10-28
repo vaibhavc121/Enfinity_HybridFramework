@@ -1,0 +1,33 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  vmImage: windows-latest
+
+variables:
+  BROWSERSTACK_USERNAME: 'vaibhavchavan_vXTnjK'
+  BROWSERSTACK_ACCESS_KEY: 'VjyZRpR7fkRybdm1cyAb'
+
+jobs:
+  - job: BrowserStack_Test
+    displayName: "Run tests on BrowserStack with Maven on Windows"
+    steps:
+      - task: Maven@4
+        inputs:
+          jdkVersionOption: '1.17'
+          jdkArchitectureOption: 'x64'
+          mavenPomFile: 'pom.xml'  # Path to your pom.xml
+          goals: 'test'   # Or any specific Maven goals like 'test'
+          options: '-DBROWSERSTACK_USERNAME=$(BROWSERSTACK_USERNAME) -DBROWSERSTACK_ACCESS_KEY=$(BROWSERSTACK_ACCESS_KEY)'
+        displayName: "Build and Run Tests with Maven on BrowserStack"
+
+      - script: |
+          echo "Setting BrowserStack environment variables for additional scripts if needed"
+          setx BROWSERSTACK_USERNAME %BROWSERSTACK_USERNAME%
+          setx BROWSERSTACK_ACCESS_KEY %BROWSERSTACK_ACCESS_KEY%
+        displayName: "Set BrowserStack Credentials"
