@@ -25,8 +25,13 @@ public class GetData
 	@Test
 	public void testResponseCode1()
 	{
-		int code = get("https://parabank.parasoft.com/parabank/services/bank/customers/12212/").getStatusCode();
+//		int code = get("https://parabank.parasoft.com/parabank/services/bank/customers/12212/").getStatusCode();
+//		System.out.println("Status code is: " + code);
+//		Assert.assertEquals(code, 200);
+
+		int code = get("https://erp-api.onenfinity.com/security/token").getStatusCode();
 		System.out.println("Status code is: " + code);
 		Assert.assertEquals(code, 200);
+
 	}
 }
