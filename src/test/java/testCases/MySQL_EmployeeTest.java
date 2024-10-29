@@ -62,6 +62,7 @@ public class MySQL_EmployeeTest extends BaseClass
 			logger.info("clicked on save button");
 
 			Assert.assertEquals(ep.isEmployeeCreated(name), true);
+			Thread.sleep(4000);
 			// Assert.assertTrue(true);
 			logger.info("test case passed");
 

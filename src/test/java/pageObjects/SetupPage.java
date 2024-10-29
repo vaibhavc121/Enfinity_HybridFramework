@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import testBase.BaseClass;
+
 public class SetupPage extends BasePage
 {
 
@@ -12,6 +14,8 @@ public class SetupPage extends BasePage
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+
+	BaseClass bc = new BaseClass();
 
 	@FindBy(xpath = "//span[normalize-space()='Department']")
 	WebElement department;
@@ -77,7 +81,9 @@ public class SetupPage extends BasePage
 
 	public void clkEmployee()
 	{
+		bc.highlightElement(driver, employee, true);
 		employee.click();
+		// bc.highlightElement(driver, employee, false); // Remove highlight
 	}
 
 	public void clkReligion()

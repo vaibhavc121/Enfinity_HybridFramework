@@ -100,42 +100,57 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void clkBtnNew()
 	{
+		bc.highlightElement(driver, newbtn, true);
 		newbtn.click();
+		bc.highlightElement(driver, newbtn, false); // Remove highlight
 	}
 
 	public void setWorkEmail(String email)
 	{
+		bc.highlightElement(driver, workEmail, true);
 		workEmail.sendKeys(email);
+		bc.highlightElement(driver, workEmail, false); // Remove highlight
 	}
 
 	public void setName(String ename)
 	{
+		bc.highlightElement(driver, name, true);
 		name.sendKeys(ename);
+		bc.highlightElement(driver, name, false); // Remove highlight
 	}
 
 	public void clkMgrDropdown()
 	{
+		bc.highlightElement(driver, clkmgr, true);
 		clkmgr.click();
+		bc.highlightElement(driver, clkmgr, false); // Remove highlight
 	}
 
 	public void slctMgr()
 	{
+		bc.highlightElement(driver, slctmgr, true);
 		slctmgr.click();
+		bc.highlightElement(driver, slctmgr, false); // Remove highlight
 	}
 
 	public void setMblNum(String mbl)
 	{
+		bc.highlightElement(driver, mobileNumber, true);
 		mobileNumber.sendKeys(mbl);
+		bc.highlightElement(driver, mobileNumber, false); // Remove highlight
 	}
 
 	public void setDOJ(String DOJ)
 	{
+		bc.highlightElement(driver, joiningDate, true);
 		joiningDate.clear();
 		joiningDate.sendKeys(DOJ);
+		bc.highlightElement(driver, joiningDate, false); // Remove highlight
 	}
 
 	public void clkDept()
 	{
+		// bc.highlightElement(driver, clkdept, true);
 		clkdept.click();
 	}
 
@@ -149,6 +164,7 @@ public class MySQL_EmployeePage extends BasePage
 			if (actdept.equals(dept))
 			{
 				deptnm.click();
+				// bc.highlightElement(driver, clkdept, false); // Remove highlight
 				break;
 			}
 		}
@@ -157,6 +173,7 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void clkDesig()
 	{
+		// bc.highlightElement(driver, clkdesg, true);
 		clkdesg.click();
 	}
 
@@ -170,6 +187,7 @@ public class MySQL_EmployeePage extends BasePage
 			if (actdesg.equals(desg))
 			{
 				desgnm.click();
+				// bc.highlightElement(driver, clkdesg, false); // Remove highlight
 				break;
 			}
 		}
@@ -177,6 +195,7 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void setGrade(String grade)
 	{
+		// bc.highlightElement(driver, clkgrade, true);
 		clkgrade.click();
 		List<WebElement> gradelist = driver
 				.findElements(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
@@ -209,6 +228,7 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void setReligion(String religion)
 	{
+		// bc.highlightElement(driver, clkreligion, true);
 		clkreligion.click();
 		List<WebElement> religionlist = driver
 				.findElements(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
@@ -225,6 +245,7 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void setMaritalStatus(String maritalstatus)
 	{
+		// bc.highlightElement(driver, clkmaritalstatus, true);
 		clkmaritalstatus.click();
 		List<WebElement> maritalstatuslist = driver
 				.findElements(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
@@ -241,6 +262,7 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
+		bc.highlightElement(driver, save, true);
 		save.click();
 		driver.navigate().back();
 		Thread.sleep(3000);
@@ -248,8 +270,10 @@ public class MySQL_EmployeePage extends BasePage
 
 	public boolean isEmployeeCreated(String emp) throws InterruptedException
 	{
+		bc.highlightElement(driver, filterCell, true);
 		filterCell.sendKeys(emp);
 		Thread.sleep(2000);
+		bc.highlightElement(driver, result, true);
 		String employee = result.getText();
 		if (employee.contains(emp))
 		{

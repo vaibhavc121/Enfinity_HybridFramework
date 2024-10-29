@@ -9815,3 +9815,435 @@ Session ID: 3de411d18ebf08e5bea4919ce7bf255b
 2024-10-28 23:10:46.668 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@340d6d89: 10 ms
 2024-10-28 23:10:46.678 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@493ac8d3: 8 ms
 2024-10-28 23:10:46.678 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@13dbed9e: 0 ms
+2024-10-29 22:24:47.171 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:24:47.483 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:24:47.484 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:24:51.290 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:24:51.346 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:25:04.852 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 22:25:05.492 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 22:25:05.610 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 22:27:08.073 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:27:08.360 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:27:08.360 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:27:09.942 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:27:09.991 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:27:59.037 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:27:59.290 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:27:59.291 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:28:00.761 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:28:00.804 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:28:14.728 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 22:28:15.741 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 22:28:15.996 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 22:30:45.461 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:30:45.766 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:30:45.766 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:30:47.324 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:30:47.379 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:31:01.137 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 22:31:02.351 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 22:31:02.582 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 22:31:11.826 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 22:31:15.303 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 22:31:24.799 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 22:31:36.308 [main] ERROR testCases.MySQL_EmployeeTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='dxnb-link']//span[@class='dx-vam'][normalize-space()='Employee']"}
+  (Session info: chrome=130.0.6723.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd1455479c64322454c7c5e3794d8179, findElement {using=xpath, value=//a[@class='dxnb-link']//span[@class='dx-vam'][normalize-space()='Employee']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51769}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51769/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd1455479c64322454c7c5e3794d8179
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getWrappedElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48) ~[selenium-remote-driver-4.25.0.jar:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212) ~[?:?]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:702) ~[?:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474) ~[selenium-remote-driver-4.25.0.jar:?]
+	at testBase.BaseClass.highlightElement(BaseClass.java:264) ~[test-classes/:?]
+	at pageObjects.SetupPage.clkEmployee(SetupPage.java:86) ~[test-classes/:?]
+	at testCases.MySQL_EmployeeTest.verifyEmpCreation(MySQL_EmployeeTest.java:29) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-29 22:34:14.906 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:34:15.160 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:34:15.160 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:34:16.576 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:34:16.628 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:34:30.370 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 22:34:31.410 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 22:34:31.687 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 22:34:40.059 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 22:34:40.245 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 22:34:41.837 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 22:34:45.188 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 22:34:45.387 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 22:34:49.666 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 22:34:49.810 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 22:34:50.004 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 22:34:50.333 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 22:34:50.511 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 22:35:02.101 [main] ERROR testCases.MySQL_EmployeeTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='dx-first-row dx-first-col dx-last-row dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align'] div[class='dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-show-clear-button dx-dropdowneditor-button-visible dx-editor-outlined dx-texteditor-empty dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler'] div[class='dx-dropdowneditor-icon']"}
+  (Session info: chrome=130.0.6723.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b950555575bd1640c01e8a9166cb9f5c, findElement {value=div[class='dx-first-row dx-first-col dx-last-row dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align'] div[class='dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-show-clear-button dx-dropdowneditor-button-visible dx-editor-outlined dx-texteditor-empty dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler'] div[class='dx-dropdowneditor-icon'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51894/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b950555575bd1640c01e8a9166cb9f5c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getWrappedElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48) ~[selenium-remote-driver-4.25.0.jar:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212) ~[?:?]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:702) ~[?:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474) ~[selenium-remote-driver-4.25.0.jar:?]
+	at testBase.BaseClass.highlightElement(BaseClass.java:264) ~[test-classes/:?]
+	at pageObjects.MySQL_EmployeePage.slctDept(MySQL_EmployeePage.java:168) ~[test-classes/:?]
+	at testCases.MySQL_EmployeeTest.verifyEmpCreation(MySQL_EmployeeTest.java:47) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-29 22:44:02.358 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:44:02.603 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:44:02.603 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:44:04.065 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:44:04.118 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:44:18.576 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 22:44:19.599 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 22:44:19.868 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 22:44:29.165 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 22:44:29.365 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 22:44:30.979 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 22:44:34.403 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 22:44:34.602 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 22:44:36.353 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 22:44:36.574 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 22:44:36.786 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 22:44:37.139 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 22:44:37.325 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 22:44:47.522 [main] ERROR testCases.MySQL_EmployeeTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='dx-first-row dx-first-col dx-last-row dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align'] div[class='dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-show-clear-button dx-dropdowneditor-button-visible dx-editor-outlined dx-texteditor-empty dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler'] div[class='dx-dropdowneditor-icon']"}
+  (Session info: chrome=130.0.6723.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7afcc4db6fc5e0d39d7e539cbe357848, findElement {using=css selector, value=div[class='dx-first-row dx-first-col dx-last-row dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align'] div[class='dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-show-clear-button dx-dropdowneditor-button-visible dx-editor-outlined dx-texteditor-empty dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler'] div[class='dx-dropdowneditor-icon']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52362}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52362/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7afcc4db6fc5e0d39d7e539cbe357848
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getWrappedElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48) ~[selenium-remote-driver-4.25.0.jar:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212) ~[?:?]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:702) ~[?:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474) ~[selenium-remote-driver-4.25.0.jar:?]
+	at testBase.BaseClass.highlightElement(BaseClass.java:264) ~[test-classes/:?]
+	at pageObjects.MySQL_EmployeePage.slctDept(MySQL_EmployeePage.java:168) ~[test-classes/:?]
+	at testCases.MySQL_EmployeeTest.verifyEmpCreation(MySQL_EmployeeTest.java:47) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-10-29 22:45:59.196 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:45:59.453 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:45:59.453 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:46:00.856 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:46:00.908 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:46:14.511 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 22:46:15.479 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 22:46:15.726 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 22:46:25.185 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 22:46:25.385 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 22:46:27.100 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 22:46:30.456 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 22:46:30.656 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 22:46:32.173 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 22:46:32.384 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 22:46:32.657 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 22:46:33.032 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 22:46:55.119 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 22:52:16.293 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 22:52:16.549 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 22:52:16.549 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 22:52:18.018 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 22:52:18.075 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 22:52:32.207 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 22:52:33.573 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 22:52:33.834 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 22:52:42.468 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 22:52:42.700 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 22:52:44.273 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 22:52:47.926 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 22:52:48.150 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 22:52:49.762 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 22:52:49.975 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 22:52:50.242 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 22:52:50.532 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 22:53:25.949 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 22:54:00.800 [main] INFO  testCases.MySQL_EmployeeTest - dept selected
+2024-10-29 23:03:44.176 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 23:03:44.426 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 23:03:44.426 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 23:03:45.833 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 23:03:45.881 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 23:03:59.568 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 23:04:00.718 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 23:04:01.015 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 23:04:11.139 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 23:04:11.301 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 23:04:12.939 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 23:04:16.309 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 23:04:16.499 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 23:04:17.929 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 23:04:18.144 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 23:04:18.364 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 23:04:18.668 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 23:04:18.790 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 23:04:18.970 [main] INFO  testCases.MySQL_EmployeeTest - dept selected
+2024-10-29 23:04:19.133 [main] INFO  testCases.MySQL_EmployeeTest - clicked on desg
+2024-10-29 23:04:19.446 [main] INFO  testCases.MySQL_EmployeeTest - desg selected
+2024-10-29 23:04:20.447 [main] INFO  testCases.MySQL_EmployeeTest - grade selected
+2024-10-29 23:04:21.529 [main] INFO  testCases.MySQL_EmployeeTest - gender selected
+2024-10-29 23:04:22.780 [main] INFO  testCases.MySQL_EmployeeTest - religion selected
+2024-10-29 23:04:24.396 [main] INFO  testCases.MySQL_EmployeeTest - marital sts selected
+2024-10-29 23:04:28.144 [main] INFO  testCases.MySQL_EmployeeTest - clicked on save button
+2024-10-29 23:04:36.958 [main] INFO  testCases.MySQL_EmployeeTest - test case passed
+2024-10-29 23:08:15.250 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 23:08:15.530 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 23:08:15.531 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 23:08:16.970 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 23:08:17.026 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 23:08:31.016 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 23:08:32.148 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 23:08:32.367 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 23:08:41.013 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 23:08:41.190 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 23:08:43.107 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 23:08:46.549 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 23:08:46.766 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 23:08:48.375 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 23:08:48.639 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 23:08:48.877 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 23:08:49.207 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 23:08:49.340 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 23:08:49.538 [main] INFO  testCases.MySQL_EmployeeTest - dept selected
+2024-10-29 23:08:49.677 [main] INFO  testCases.MySQL_EmployeeTest - clicked on desg
+2024-10-29 23:08:50.001 [main] INFO  testCases.MySQL_EmployeeTest - desg selected
+2024-10-29 23:08:51.183 [main] INFO  testCases.MySQL_EmployeeTest - grade selected
+2024-10-29 23:08:52.495 [main] INFO  testCases.MySQL_EmployeeTest - gender selected
+2024-10-29 23:08:53.681 [main] INFO  testCases.MySQL_EmployeeTest - religion selected
+2024-10-29 23:08:55.306 [main] INFO  testCases.MySQL_EmployeeTest - marital sts selected
+2024-10-29 23:08:58.968 [main] INFO  testCases.MySQL_EmployeeTest - clicked on save button
+2024-10-29 23:09:04.269 [main] INFO  testCases.MySQL_EmployeeTest - test case passed
+2024-10-29 23:10:58.554 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 23:10:58.813 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 23:10:58.813 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 23:11:00.159 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 23:11:00.210 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 23:11:14.078 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 23:11:15.017 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 23:11:15.250 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 23:11:23.813 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 23:11:24.020 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 23:11:25.628 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 23:11:29.023 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 23:11:29.234 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 23:11:30.832 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 23:11:31.042 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 23:11:31.277 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 23:11:31.648 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 23:11:31.818 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 23:11:32.003 [main] INFO  testCases.MySQL_EmployeeTest - dept selected
+2024-10-29 23:11:32.138 [main] INFO  testCases.MySQL_EmployeeTest - clicked on desg
+2024-10-29 23:11:32.414 [main] INFO  testCases.MySQL_EmployeeTest - desg selected
+2024-10-29 23:11:33.385 [main] INFO  testCases.MySQL_EmployeeTest - grade selected
+2024-10-29 23:11:34.675 [main] INFO  testCases.MySQL_EmployeeTest - gender selected
+2024-10-29 23:11:35.879 [main] INFO  testCases.MySQL_EmployeeTest - religion selected
+2024-10-29 23:11:37.228 [main] INFO  testCases.MySQL_EmployeeTest - marital sts selected
+2024-10-29 23:11:41.048 [main] INFO  testCases.MySQL_EmployeeTest - clicked on save button
+2024-10-29 23:11:47.266 [main] INFO  testCases.MySQL_EmployeeTest - test case passed
+2024-10-29 23:13:01.276 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-29 23:13:01.576 [main] INFO  testCases.MySQL_EmployeeTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-29 23:13:01.576 [main] INFO  testCases.MySQL_EmployeeTest - --test case started--
+2024-10-29 23:13:02.954 [main] INFO  testCases.MySQL_EmployeeTest - browser opened
+2024-10-29 23:13:03.011 [main] INFO  testCases.MySQL_EmployeeTest - browser maximized
+2024-10-29 23:13:16.766 [main] INFO  testCases.MySQL_EmployeeTest - provided app URL in browser
+2024-10-29 23:13:17.857 [main] INFO  testCases.MySQL_EmployeeTest - provided username
+2024-10-29 23:13:18.133 [main] INFO  testCases.MySQL_EmployeeTest - provided password
+2024-10-29 23:13:26.872 [main] INFO  testCases.MySQL_EmployeeTest - clicked on sign in button
+2024-10-29 23:13:27.104 [main] INFO  testCases.MySQL_EmployeeTest - clicked on hr core link
+2024-10-29 23:13:28.765 [main] INFO  testCases.MySQL_EmployeeTest - clicked on setup form
+2024-10-29 23:13:32.133 [main] INFO  testCases.MySQL_EmployeeTest - clicked on employee
+2024-10-29 23:13:44.083 [main] INFO  testCases.MySQL_EmployeeTest - clicked on new btn
+2024-10-29 23:13:50.105 [main] INFO  testCases.MySQL_EmployeeTest - email provided
+2024-10-29 23:14:16.350 [main] INFO  testCases.MySQL_EmployeeTest - name provided
+2024-10-29 23:14:23.763 [main] INFO  testCases.MySQL_EmployeeTest - mbl no provided
+2024-10-29 23:14:35.170 [main] INFO  testCases.MySQL_EmployeeTest - DOJ provided
+2024-10-29 23:14:43.157 [main] INFO  testCases.MySQL_EmployeeTest - clicked on dept dd
+2024-10-29 23:14:47.184 [main] INFO  testCases.MySQL_EmployeeTest - dept selected
+2024-10-29 23:14:50.472 [main] INFO  testCases.MySQL_EmployeeTest - clicked on desg
+2024-10-29 23:14:56.307 [main] INFO  testCases.MySQL_EmployeeTest - desg selected
+2024-10-29 23:15:00.533 [main] INFO  testCases.MySQL_EmployeeTest - grade selected
+2024-10-29 23:15:08.874 [main] INFO  testCases.MySQL_EmployeeTest - gender selected
+2024-10-29 23:15:17.738 [main] INFO  testCases.MySQL_EmployeeTest - religion selected
+2024-10-29 23:15:32.231 [main] INFO  testCases.MySQL_EmployeeTest - marital sts selected
+2024-10-29 23:15:46.339 [main] INFO  testCases.MySQL_EmployeeTest - clicked on save button
+2024-10-29 23:16:17.783 [main] INFO  testCases.MySQL_EmployeeTest - test case passed

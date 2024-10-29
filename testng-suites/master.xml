@@ -26,7 +26,7 @@
 			<!--<class name="testCases.TC_DocumentTypeTest" />-->
 			<!--<class name="testCases.TC_QualificationTest" />-->
 			<!--<class name="testCases.TC_BankTest" />-->
-			<class name="testCases.TC_WorkLocationTest" />
+			<!--<class name="testCases.TC_WorkLocationTest" />-->
 			<!--<class name="testCases.TC_ReligionTest" />-->
 			<!--<class name="testCases.TC_CalendarTest" />-->
 			<!--<class name="testCases.TC_GradeTest" />-->
@@ -35,7 +35,7 @@
 			<!--<class name="testCases.TC_EmployeeTest" />-->
 			<!--<class name="testCases.TC_LoginTest" />-->
 			<!--<class name="testCases.DDT_ResidencyInfo" />-->
-			<!--<class name="testCases.MySQL_EmployeeTest" />-->
+			<class name="testCases.MySQL_EmployeeTest" />
 		</classes>
 	</test>
 

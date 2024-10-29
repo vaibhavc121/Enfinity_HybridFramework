@@ -12,10 +12,12 @@ import java.util.Properties;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -246,5 +248,21 @@ public class BaseClass
 //		String generatedNumber = RandomStringUtils.randomNumeric(3);
 //		return (generatedString + "@" + generatedNumer);
 //	}
+
+	// Method to highlight/unhighlight the element
+	public void highlightElement(WebDriver driver, WebElement element, boolean highlight)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		if (highlight)
+		{
+			// Add a red border to highlight the element
+			js.executeScript("arguments[0].style.border='3px solid red'", element);
+		}
+		else
+		{
+			// Remove the border to unhighlight the element
+			js.executeScript("arguments[0].style.border=''", element);
+		}
+	}
 
 }
