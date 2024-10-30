@@ -19,7 +19,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -84,33 +88,52 @@ public class BaseClass
 				return; // It will automatically exit
 			}
 
-			// browser (we are getting browser from xml file)
-			switch (br.toLowerCase())
+			/*
+			 * // browser (we are getting browser from xml file) switch (br.toLowerCase()) {
+			 * case "chrome": capabilities.setBrowserName("chrome");
+			 * 
+			 * break;
+			 * 
+			 * case "edge": capabilities.setBrowserName("MicrosoftEdge");
+			 * 
+			 * break;
+			 * 
+			 * case "firefox": capabilities.setBrowserName("firefox");
+			 * 
+			 * break;
+			 * 
+			 * case "safari": capabilities.setBrowserName("safari");
+			 * 
+			 * break;
+			 * 
+			 * default: System.out.println("No matching browser "); return; // It will
+			 * automatically exit from switch case statement }
+			 */
+
+			if (br.equalsIgnoreCase("chrome"))
 			{
-			case "chrome":
-				capabilities.setBrowserName("chrome");
-
-				break;
-
-			case "edge":
-				capabilities.setBrowserName("MicrosoftEdge");
-
-				break;
-
-			case "firefox":
-				capabilities.setBrowserName("firefox");
-
-				break;
-
-			case "safari":
-				capabilities.setBrowserName("safari");
-
-				break;
-
-			default:
-				System.out.println("No matching browser ");
-				return; // It will automatically exit from switch case statement
+				ChromeOptions options = new ChromeOptions();
+				options.setCapability("browserVersion", "129");
+				driver = new ChromeDriver(options);
 			}
+			else if (br.equalsIgnoreCase("firefox"))
+			{
+				FirefoxOptions options = new FirefoxOptions();
+				options.setCapability("browserVersion", "131");
+				driver = new FirefoxDriver(options);
+			}
+			else if (br.equalsIgnoreCase("edge"))
+			{
+				EdgeOptions options = new EdgeOptions();
+				options.setCapability("browserVersion", "130");
+				driver = new EdgeDriver(options);
+			}
+			else
+			{
+				throw new IllegalArgumentException("Unsupported browser: " + br);
+			}
+
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 			/* for selenium grid standalone */
 //			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
@@ -123,6 +146,7 @@ public class BaseClass
 		}
 
 		if (p.getProperty("execution_env").equals("local"))
+
 		{
 //			ChromeOptions options = new ChromeOptions();
 //			options.addArguments("--headless"); // Run in headless mode
@@ -156,7 +180,11 @@ public class BaseClass
 		driver.manage().window().maximize();
 		logger.info("browser maximized");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get(p.getProperty("appurl")); // Reading URL from properties file
+		driver.get(p.getProperty("appurl")); // Reading
+												// URL
+												// from
+												// properties
+												// file
 		logger.info("provided app URL in browser");
 	}
 
