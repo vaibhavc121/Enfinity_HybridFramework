@@ -10247,3 +10247,46 @@ Session ID: 7afcc4db6fc5e0d39d7e539cbe357848
 2024-10-29 23:15:32.231 [main] INFO  testCases.MySQL_EmployeeTest - marital sts selected
 2024-10-29 23:15:46.339 [main] INFO  testCases.MySQL_EmployeeTest - clicked on save button
 2024-10-29 23:16:17.783 [main] INFO  testCases.MySQL_EmployeeTest - test case passed
+2024-10-31 07:37:54.241 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-31 07:37:54.683 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-31 07:37:54.683 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-31 07:39:39.154 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-31 07:39:39.478 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-31 07:39:39.478 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-31 07:39:51.956 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-31 07:40:43.065 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-31 07:40:43.567 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-31 07:40:43.878 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-31 07:41:51.901 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-31 07:41:52.259 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-31 07:42:01.970 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-31 07:42:09.301 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-31 07:42:42.508 [main] INFO  testCases.TC_LicensesTest - test case passed
+2024-10-31 07:45:43.211 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-31 07:45:43.577 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-31 07:45:43.578 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-31 07:45:51.475 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-31 07:45:51.856 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-31 07:45:51.856 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-31 07:48:09.024 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-10-31 07:48:09.457 [main] INFO  testCases.TC_LicensesTest - ============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================
+2024-10-31 07:48:09.458 [main] INFO  testCases.TC_LicensesTest - --test case started--
+2024-10-31 07:48:16.853 [main] INFO  testCases.TC_LicensesTest - browser maximized
+2024-10-31 07:48:20.587 [main] INFO  testCases.TC_LicensesTest - provided app URL in browser
+2024-10-31 07:48:21.187 [main] INFO  testCases.TC_LicensesTest - provided username
+2024-10-31 07:48:21.667 [main] INFO  testCases.TC_LicensesTest - provided password
+2024-10-31 07:48:29.914 [main] INFO  testCases.TC_LicensesTest - clicked on sign in button
+2024-10-31 07:48:30.267 [main] INFO  testCases.TC_LicensesTest - clicked on hr core link
+2024-10-31 07:48:33.682 [main] INFO  testCases.TC_LicensesTest - clicked on setup form
+2024-10-31 07:48:37.463 [main] INFO  testCases.TC_LicensesTest - clicked on license
+2024-10-31 07:48:47.966 [main] INFO  testCases.TC_LicensesTest - test case passed

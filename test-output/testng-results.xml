@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-29T23:10:58 IST" name="MasterTestSuite" finished-at="2024-10-29T23:11:47 IST" duration-ms="48978">
+  <suite started-at="2024-10-31T07:48:09 IST" name="MasterTestSuite" finished-at="2024-10-31T07:48:49 IST" duration-ms="40263">
     <groups>
       <group name="regression">
-        <method signature="MySQL_EmployeeTest.verifyEmpCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQL_EmployeeTest@14d14731]" name="verifyEmpCreation" class="testCases.MySQL_EmployeeTest"/>
+        <method signature="TC_LicensesTest.verifyLicenses()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" name="verifyLicenses" class="testCases.TC_LicensesTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2024-10-29T23:10:58 IST" name="Master Tests" finished-at="2024-10-29T23:11:47 IST" duration-ms="48978">
-      <class name="testCases.MySQL_EmployeeTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQL_EmployeeTest@14d14731]" started-at="2024-10-29T23:10:58 IST" name="setup" finished-at="2024-10-29T23:11:14 IST" duration-ms="15279" status="PASS">
+    <test started-at="2024-10-31T07:48:09 IST" name="Master Tests" finished-at="2024-10-31T07:48:49 IST" duration-ms="40263">
+      <class name="testCases.TC_LicensesTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-10-31T07:48:09 IST" name="setup" finished-at="2024-10-31T07:48:20 IST" duration-ms="11158" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,75 +26,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.MySQL_EmployeeTest@14d14731]" started-at="2024-10-29T23:11:14 IST" name="login" finished-at="2024-10-29T23:11:23 IST" duration-ms="9093" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-10-31T07:48:20 IST" name="login" finished-at="2024-10-31T07:48:29 IST" duration-ms="9290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyEmpCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.MySQL_EmployeeTest@14d14731]" started-at="2024-10-29T23:11:23 IST" name="verifyEmpCreation" data-provider="employeeinfo" finished-at="2024-10-29T23:11:47 IST" duration-ms="23453" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vaibhavc121@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[vaibhav]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[8208992890]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[01-Jan-2001]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[prod]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Systems Analyst]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Manager]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Hindu]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Married]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyLicenses()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-10-31T07:48:29 IST" name="verifyLicenses" finished-at="2024-10-31T07:48:47 IST" duration-ms="18052" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEmpCreation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.MySQL_EmployeeTest@14d14731]" started-at="2024-10-29T23:11:47 IST" name="afterMethod" finished-at="2024-10-29T23:11:47 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyLicenses -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-10-31T07:48:47 IST" name="afterMethod" finished-at="2024-10-31T07:48:47 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.MySQL_EmployeeTest@14d14731]" started-at="2024-10-29T23:11:47 IST" name="teardown" finished-at="2024-10-29T23:11:47 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-10-31T07:48:48 IST" name="teardown" finished-at="2024-10-31T07:48:49 IST" duration-ms="1298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.MySQL_EmployeeTest -->
+      </class> <!-- testCases.TC_LicensesTest -->
     </test> <!-- Master Tests -->
   </suite> <!-- MasterTestSuite -->
 </testng-results>
