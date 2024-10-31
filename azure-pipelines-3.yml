@@ -15,7 +15,7 @@ variables:
 
 jobs:
   - job: BrowserStack_Test
-    displayName: "Run tests on BrowserStack with Maven on Windows"
+    displayName: "Run tests on BrowserStack"
     steps:
       - task: Maven@4
         inputs:
