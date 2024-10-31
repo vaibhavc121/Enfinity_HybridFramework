@@ -87,7 +87,7 @@ public class BaseClass
 			{
 			case "chrome":
 				capabilities.setBrowserName("chrome");
-				// capabilities.setVersion("129");
+				capabilities.setVersion("129");
 				// to work this in local env need to install the browser of ver 129, it is
 				// working on browserstack
 
