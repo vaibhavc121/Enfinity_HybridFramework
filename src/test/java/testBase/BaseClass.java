@@ -51,8 +51,7 @@ public class BaseClass
 
 		logger = LogManager.getLogger(this.getClass()); // log4j2
 
-		logger.info(
-				"============================>> Automation Engineer (SDET)- Vaibhav Chavan <<============================");
+		logger.info("==============>> Automation Engineer (SDET)- Vaibhav Chavan <<==============");
 		logger.info("--test case started--");
 
 		// code for execution on selenium grid
