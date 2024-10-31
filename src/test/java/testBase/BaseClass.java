@@ -3,7 +3,6 @@ package testBase;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -21,7 +20,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -146,7 +144,7 @@ public class BaseClass
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 			/* for selenium grid standalone */
-			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
+//			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
 			/* for docker container on selenium grid */
 //			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
