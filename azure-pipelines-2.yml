@@ -14,8 +14,16 @@ jobs:
     steps:
       - task: Maven@4
         inputs:
+          mavenPomFile: 'pom.xml'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          testRunTitle: 'Automation Engineer (SDET)- Vaibhav Chavan'
+          javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.17'
-          jdkArchitectureOption: 'x64'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
         displayName: "Set JDK Version to 1.17"
       - script: |
           # Run tests in Chrome
@@ -29,8 +37,16 @@ jobs:
     steps:
       - task: Maven@4
         inputs:
+          mavenPomFile: 'pom.xml'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          testRunTitle: 'Automation Engineer (SDET)- Vaibhav Chavan'
+          javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.17'
-          jdkArchitectureOption: 'x64'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
         displayName: "Set JDK Version to 1.17"
       - script: |
           # Run tests in Edge

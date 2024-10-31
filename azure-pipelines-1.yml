@@ -18,11 +18,17 @@ jobs:
           version: '6.x'
       - task: Maven@4
         inputs:
-          jdkVersionOption: 1.17
-          jdkArchitectureOption: x64
           mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx1024m'
           goals: 'clean install'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          testRunTitle: 'Automation Engineer (SDET)- Vaibhav Chavan'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.17'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
         displayName: "Run Maven Build and Tests on Windows"
       - task: PublishTestResults@2
         inputs:
@@ -37,11 +43,17 @@ jobs:
     steps:
       - task: Maven@4
         inputs:
-          jdkVersionOption: 1.17
-          jdkArchitectureOption: x64
           mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx1024m'
           goals: 'clean install'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          testRunTitle: 'Automation Engineer (SDET)- Vaibhav Chavan'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.17'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
         displayName: "Run Maven Build and Tests on macOS"
       - task: PublishTestResults@2
         inputs:
