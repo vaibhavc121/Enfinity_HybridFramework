@@ -51,8 +51,8 @@ public class BaseClass
 
 		logger = LogManager.getLogger(this.getClass()); // log4j2
 
-		logger.info("==============>> Automation Engineer (SDET)- Vaibhav Chavan <<==============");
-		logger.info("--test case started--");
+		logger.info(">>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<");
+		logger.info("--test execution started--");
 
 		// code for execution on selenium grid
 		if (p.getProperty("execution_env").equals("remote"))

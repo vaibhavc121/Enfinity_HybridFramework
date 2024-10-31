@@ -12,7 +12,7 @@ import org.zaproxy.clientapi.core.ApiResponseElement;
 import org.zaproxy.clientapi.core.ApiResponseList;
 import org.zaproxy.clientapi.core.ClientApi;
 
-public class ZapSeleniumIntegrationTest
+public class EnfinitySecurityTest
 {
 
 	// OWASP ZAP client

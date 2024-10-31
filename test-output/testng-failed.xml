@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apiTesting.CreateSalesman1">
+      <class name="securityTesting.EnfinitySecurityTest">
         <methods>
-          <include name="verifySalesman"/>
+          <include name="testLoginAndSecurityScan"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- apiTesting.CreateSalesman1 -->
+      </class> <!-- securityTesting.EnfinitySecurityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
