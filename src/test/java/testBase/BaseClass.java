@@ -3,6 +3,7 @@ package testBase;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -20,6 +21,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -148,9 +150,9 @@ public class BaseClass
 			/* for docker container on selenium grid */
 //			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
-//			driver = new RemoteWebDriver(
-//					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
-//					capabilities);
+			driver = new RemoteWebDriver(
+					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
+					capabilities);
 		}
 
 		if (p.getProperty("execution_env").equals("local"))
