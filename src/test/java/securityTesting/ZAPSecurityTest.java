@@ -41,7 +41,7 @@ public class ZAPSecurityTest
 	@Test
 	public void amazonSecurityTest() throws InterruptedException
 	{
-		driver.get("http://www.myntra.com/");
+		driver.get("https://testlogin.onenfinity.com/User/Login");
 		// Assert.assertTrue(driver.getTitle().contains("India"));
 
 //		driver.get("https://testlogin.onenfinity.com/User/Login");

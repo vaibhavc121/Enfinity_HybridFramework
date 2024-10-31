@@ -32,7 +32,7 @@ public class ZapSeleniumIntegrationTest
 				.setSslProxy(ZAP_PROXYHOST + ":" + ZAP_PROXYPORT);
 
 		ChromeOptions options = new ChromeOptions();
-
+		options.setAcceptInsecureCerts(true);
 		options.setProxy(proxy);
 
 		// Set up ChromeDriver with proxy settings
@@ -58,13 +58,15 @@ public class ZapSeleniumIntegrationTest
 //		passwordField.sendKeys("password123");
 //		loginButton.click();
 
-		driver.get("http://localhost:8081/");
+		driver.get("https://testlogin.onenfinity.com/User/Login");
+//		driver.get("http://localhost:8081/");
 //		driver.findElement(By.name("Username")).sendKeys("vaibhavc121@demo.com");
 //		driver.findElement(By.name("Password")).sendKeys("rohitc121");
 //		driver.findElement(By.xpath("//div[@aria-label='Sign In']//div[@class='dx-button-content']")).click();
 
 		// Step 2: Initiate OWASP ZAP active scan (scanning based on captured traffic)
-		String targetUrl = "http://localhost:8081/";
+		String targetUrl = "https://testlogin.onenfinity.com/User/Login";
+//		String targetUrl = "http://localhost:8081/";
 		zapClient.pscan.enableAllScanners(); // Enable passive scanning
 
 		// Start active scan
