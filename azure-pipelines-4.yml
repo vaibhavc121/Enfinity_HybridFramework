@@ -21,11 +21,18 @@ jobs:
     steps:
       - task: Maven@4
         inputs:
-          jdkVersionOption: '1.17'
-          jdkArchitectureOption: 'x64'
-          mavenPomFile: 'pom.xml'  # Path to your pom.xml
-          goals: 'test'   # Or any specific Maven goals like 'test'
+          mavenPomFile: 'pom.xml'
+          goals: 'test'
           options: '-DBROWSERSTACK_USERNAME=$(BROWSERSTACK_USERNAME) -DBROWSERSTACK_ACCESS_KEY=$(BROWSERSTACK_ACCESS_KEY)'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          testRunTitle: 'Automation Engineer (SDET)- Vaibhav Chavan'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.17'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
         displayName: "Build and Run Tests with Maven on BrowserStack"
 
       - script: |
