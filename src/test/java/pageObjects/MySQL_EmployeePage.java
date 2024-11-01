@@ -154,7 +154,7 @@ public class MySQL_EmployeePage extends BasePage
 		clkdept.click();
 	}
 
-	public void slctDept(String dept)
+	public void slctDept(String dept) throws InterruptedException
 	{
 		List<WebElement> deptslist = driver
 				.findElements(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
@@ -163,6 +163,7 @@ public class MySQL_EmployeePage extends BasePage
 			String actdept = deptnm.getText();
 			if (actdept.equals(dept))
 			{
+
 				deptnm.click();
 				// bc.highlightElement(driver, clkdept, false); // Remove highlight
 				break;
@@ -177,7 +178,7 @@ public class MySQL_EmployeePage extends BasePage
 		clkdesg.click();
 	}
 
-	public void slctDesig(String desg)
+	public void slctDesig(String desg) throws InterruptedException
 	{
 		List<WebElement> desglist = driver
 				.findElements(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
@@ -186,6 +187,7 @@ public class MySQL_EmployeePage extends BasePage
 			String actdesg = desgnm.getText();
 			if (actdesg.equals(desg))
 			{
+
 				desgnm.click();
 				// bc.highlightElement(driver, clkdesg, false); // Remove highlight
 				break;

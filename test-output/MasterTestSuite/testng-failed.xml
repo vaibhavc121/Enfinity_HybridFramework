@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_LicensesTest">
+      <class name="testCases.MySQL_EmployeeTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyLicenses"/>
+          <include name="verifyEmpCreation" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="setup"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.TC_LicensesTest -->
+      </class> <!-- testCases.MySQL_EmployeeTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->
