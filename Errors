@@ -1,5 +1,6 @@
 1.parallel execution is not working
 AssetIssueTest
+
 ---
 -need to think how to get the data from properties file or excel
 -need to implement random string, alphanumeric and number and use it in existing page
@@ -13,3 +14,6 @@ last work
 to do-
 -do DDT for login
 -residency ddt is pending
+--
+error-
+calendar test

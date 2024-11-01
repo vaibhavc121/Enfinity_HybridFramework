@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -88,7 +89,7 @@ public class BaseClass
 			{
 			case "chrome":
 				capabilities.setBrowserName("chrome");
-				capabilities.setVersion("129");
+				// capabilities.setVersion("129");
 				// to work this in local env need to install the browser of ver 129, it is
 				// working on browserstack
 
@@ -96,7 +97,7 @@ public class BaseClass
 
 			case "edge":
 				capabilities.setBrowserName("MicrosoftEdge");
-				capabilities.setVersion("130");
+				// capabilities.setVersion("130");
 				// to work this in local env need to install the browser of ver 130, it is
 				// working on browserstack
 
@@ -104,7 +105,7 @@ public class BaseClass
 
 			case "firefox":
 				capabilities.setBrowserName("firefox");
-				capabilities.setVersion("131");
+				// capabilities.setVersion("131");
 				// to work this in local env need to install the browser of ver 131, it is
 				// working on browserstack
 
@@ -145,7 +146,7 @@ public class BaseClass
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 			/* for selenium grid standalone */
-			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
+			driver = new RemoteWebDriver(new URL("http://192.168.102.117:4444/wd/hub"), capabilities);
 			/* for docker container on selenium grid */
 //			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
@@ -173,6 +174,10 @@ public class BaseClass
 
 			case "edge":
 				driver = new EdgeDriver();
+				logger.info("browser opened");
+
+			case "firefox":
+				driver = new FirefoxDriver();
 				logger.info("browser opened");
 
 				break;
