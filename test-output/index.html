@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-MasterTestSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterTestSuite" title="testCases.MySQL_EmployeeTest" class="method navigator-link" hash-for-method="verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)">verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MasterTestSuite" title="testCases.TC_CalendarTest" class="method navigator-link" hash-for-method="verifyCalendar">verifyCalendar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-MasterTestSuite -->
@@ -121,19 +121,18 @@
           <div class="suite-MasterTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.MySQL_EmployeeTest</span>
+              <span class="class-name">testCases.TC_CalendarTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)">
-                  </a> <!-- verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...) -->
-                  <span class="method-name">verifyEmpCreation</span>
-                  <span class="parameters">(vaibhavc121@gmail.com,vaibhav,8208992890,01-Jan-2001,prod,Systems Analyst,Manager,Male,Hindu,Married)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Test case failed: java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;actgender&quot; is null
-	at testCases.MySQL_EmployeeTest.verifyEmpCreation(MySQL_EmployeeTest.java:73)
+                  <a name="verifyCalendar">
+                  </a> <!-- verifyCalendar -->
+                  <span class="method-name">verifyCalendar</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -168,7 +167,7 @@
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.MySQL_EmployeeTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_CalendarTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Master Tests --&gt;
 &lt;/suite&gt; &lt;!-- MasterTestSuite --&gt;
@@ -196,7 +195,7 @@
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">verifyEmpCreation</span>
+                <span class="method-in-group-name">verifyCalendar</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -218,14 +217,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyEmpCreation')
-data.setCell(0, 2, 'testCases.MySQL_EmployeeTest')
-data.setCell(0, 3, 15387);
+data.setCell(0, 1, 'verifyCalendar')
+data.setCell(0, 2, 'testCases.TC_CalendarTest')
+data.setCell(0, 3, 34543);
 window.suiteTableData['MasterTestSuite']= { tableData: data, tableDiv: 'times-div-MasterTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-MasterTestSuite">
               </div> <!-- times-div-MasterTestSuite -->
             </div> <!-- times-div -->
@@ -251,28 +250,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.MySQL_EmployeeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC_CalendarTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">16133 ms</span>
+                <span class="method-start">16702 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyEmpCreation(vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu...)</span>
-                <span class="method-start">25162 ms</span>
+                <span class="method-name">verifyCalendar</span>
+                <span class="method-start">30067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">40592 ms</span>
+                <span class="method-start">65490 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">40597 ms</span>
+                <span class="method-start">65496 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

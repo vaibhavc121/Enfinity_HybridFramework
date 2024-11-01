@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 01 11:47:07 IST 2024</td>
+<td>Started on:</td><td>Fri Nov 01 22:38:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41007 ms)</td>
+<tr><td>Total time:</td><td>65 seconds (65974 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>datadriven regression </td>
 </tr><tr>
@@ -76,14 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.MySQL_EmployeeTest.verifyEmpCreation()'><b>verifyEmpCreation</b><br>Test class: testCases.MySQL_EmployeeTest<br>Parameters: vaibhavc121@gmail.com, vaibhav, 8208992890, 01-Jan-2001, prod, Systems Analyst, Manager, Male, Hindu, Married</td>
-<td><div><pre>java.lang.AssertionError: Test case failed: java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;actgender&quot; is null
-	at testCases.MySQL_EmployeeTest.verifyEmpCreation(MySQL_EmployeeTest.java:73)
+<td title='testCases.TC_CalendarTest.verifyCalendar()'><b>verifyCalendar</b><br>Test class: testCases.TC_CalendarTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345132865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345132865'><pre>java.lang.AssertionError: Test case failed: java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;actgender&quot; is null
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1750120280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1750120280'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at testCases.MySQL_EmployeeTest.verifyEmpCreation(MySQL_EmployeeTest.java:73)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCases.TC_CalendarTest.verifyCalendar(TC_CalendarTest.java:47)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -111,8 +114,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>15</td>
-<td>testCases.MySQL_EmployeeTest@14d14731</td></tr>
+<td>34</td>
+<td>testCases.TC_CalendarTest@14d14731</td></tr>
 </table><p>
 </body>
 </html>

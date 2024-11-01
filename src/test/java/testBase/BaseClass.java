@@ -145,13 +145,13 @@ public class BaseClass
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 			/* for selenium grid standalone */
-//			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
+			driver = new RemoteWebDriver(new URL("http://10.101.222.130:4444/wd/hub"), capabilities);
 			/* for docker container on selenium grid */
 //			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
-			driver = new RemoteWebDriver(
-					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
-					capabilities);
+//			driver = new RemoteWebDriver(
+//					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
+//					capabilities);
 		}
 
 		if (p.getProperty("execution_env").equals("local"))

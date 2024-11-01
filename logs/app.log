@@ -12013,3 +12013,44 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-01 22:19:55.705 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-11-01 22:19:56.020 [main] INFO  testCases.TC_AssetIssueTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-01 22:19:56.020 [main] INFO  testCases.TC_AssetIssueTest - --test execution started--
+2024-11-01 22:19:59.122 [main] INFO  testCases.TC_AssetIssueTest - browser opened
+2024-11-01 22:19:59.206 [main] INFO  testCases.TC_AssetIssueTest - browser maximized
+2024-11-01 22:20:12.907 [main] INFO  testCases.TC_AssetIssueTest - provided app URL in browser
+2024-11-01 22:20:13.259 [main] INFO  testCases.TC_AssetIssueTest - provided username
+2024-11-01 22:20:13.512 [main] INFO  testCases.TC_AssetIssueTest - provided password
+2024-11-01 22:20:23.713 [main] INFO  testCases.TC_AssetIssueTest - clicked on sign in button
+2024-11-01 22:20:23.931 [main] INFO  testCases.TC_AssetIssueTest - clicked on hr core link
+2024-11-01 22:20:26.197 [main] INFO  testCases.TC_AssetIssueTest - clicked on setup form
+2024-11-01 22:20:28.346 [main] INFO  testCases.TC_AssetIssueTest - clicked on asset
+2024-11-01 22:20:38.570 [main] INFO  testCases.TC_AssetIssueTest - clicked on add icon
+2024-11-01 22:20:38.740 [main] INFO  testCases.TC_AssetIssueTest - provided asset name
+2024-11-01 22:20:38.867 [main] INFO  testCases.TC_AssetIssueTest - clicked on asset category
+2024-11-01 22:20:41.342 [main] INFO  testCases.TC_AssetIssueTest - selected asset cat
+2024-11-01 22:20:41.950 [main] INFO  testCases.TC_AssetIssueTest - clicked on save button
+2024-11-01 22:20:42.091 [main] INFO  testCases.TC_AssetIssueTest - clicked on asset
+2024-11-01 22:20:47.550 [main] INFO  testCases.TC_AssetIssueTest - test case passed
+2024-11-01 22:38:06.738 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\Master.xml
+
+2024-11-01 22:38:07.053 [main] INFO  testCases.TC_CalendarTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-01 22:38:07.053 [main] INFO  testCases.TC_CalendarTest - --test execution started--
+2024-11-01 22:38:08.909 [main] INFO  testCases.TC_CalendarTest - browser opened
+2024-11-01 22:38:08.957 [main] INFO  testCases.TC_CalendarTest - browser maximized
+2024-11-01 22:38:23.704 [main] INFO  testCases.TC_CalendarTest - provided app URL in browser
+2024-11-01 22:38:24.059 [main] INFO  testCases.TC_CalendarTest - provided username
+2024-11-01 22:38:24.220 [main] INFO  testCases.TC_CalendarTest - provided password
+2024-11-01 22:38:37.101 [main] INFO  testCases.TC_CalendarTest - clicked on sign in button
+2024-11-01 22:38:37.317 [main] INFO  testCases.TC_CalendarTest - clicked on hr core link
+2024-11-01 22:38:44.811 [main] INFO  testCases.TC_CalendarTest - clicked on setup form
+2024-11-01 22:38:49.724 [main] INFO  testCases.TC_CalendarTest - clicked on calendar
+2024-11-01 22:38:49.901 [main] INFO  testCases.TC_CalendarTest - clicked on new btn
+2024-11-01 22:38:53.964 [main] INFO  testCases.TC_CalendarTest - entered cal name
+2024-11-01 22:38:54.288 [main] INFO  testCases.TC_CalendarTest - entered date
+2024-11-01 22:38:54.466 [main] INFO  testCases.TC_CalendarTest - check weekoff
+2024-11-01 22:39:04.656 [main] INFO  testCases.TC_CalendarTest - check restday
+2024-11-01 22:39:09.336 [main] INFO  testCases.TC_CalendarTest - clicked on save button
