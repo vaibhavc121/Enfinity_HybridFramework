@@ -52,3 +52,27 @@ jobs:
           # Run tests in Edge
           mvn test -Dbrowser=edge
         displayName: "Run Edge Tests"
+
+
+  - job: Firefox_Test
+    displayName: "Run tests on Firefox"
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+      - task: Maven@4
+        inputs:
+          mavenPomFile: 'pom.xml'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          testRunTitle: 'Automation Engineer (SDET)- Vaibhav Chavan'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.17'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
+        displayName: "Set JDK Version to 1.17"
+      - script: |
+          # Run tests in Firefox
+          mvn test -Dbrowser=firefox
+        displayName: "Run Firefox Tests"
