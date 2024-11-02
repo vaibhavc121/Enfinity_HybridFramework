@@ -15,7 +15,7 @@
 
 
 	<test name="Master Tests">
-		<parameter name="os" value="linux"></parameter>
+		<parameter name="os" value="windows"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
