@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: macos-latest
 
 variables:
   BROWSERSTACK_USERNAME: 'vaibhavchavan_vXTnjK'
@@ -36,6 +36,12 @@ jobs:
         Edge_114:
           browser: 'edge'
           browser_version: '114'
+        Safari_Latest:
+          browser: 'safari'
+          browser_version: 'latest'
+        Safari_14:
+          browser: 'safari'
+          browser_version: '14'
     steps:
       - task: Maven@4
         inputs:
