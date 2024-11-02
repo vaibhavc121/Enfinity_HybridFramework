@@ -1,82 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-01T23:35:37 IST" name="GridTestSuite" finished-at="2024-11-01T23:45:02 IST" duration-ms="564569">
+  <suite started-at="2024-11-02T09:58:58 IST" name="MasterTestSuite" finished-at="2024-11-02T09:59:00 IST" duration-ms="1991">
     <groups>
       <group name="regression">
-        <method signature="TC_AssetIssueTest.verifyAssetIssue()[pri:0, instance:testCases.TC_AssetIssueTest@765f05af]" name="verifyAssetIssue" class="testCases.TC_AssetIssueTest"/>
-        <method signature="TC_BankTest.verifyBank()[pri:0, instance:testCases.TC_BankTest@13f17eb4]" name="verifyBank" class="testCases.TC_BankTest"/>
-        <method signature="TC_CalendarTest.verifyCalendar()[pri:0, instance:testCases.TC_CalendarTest@4409e975]" name="verifyCalendar" class="testCases.TC_CalendarTest"/>
-        <method signature="TC_DelegationTest.verifyDelegation()[pri:0, instance:testCases.TC_DelegationTest@463b4ac8]" name="verifyDelegation" class="testCases.TC_DelegationTest"/>
-        <method signature="TC_DeptTest.verifyDept()[pri:0, instance:testCases.TC_DeptTest@758a34ce]" name="verifyDept" class="testCases.TC_DeptTest"/>
-        <method signature="TC_DesignationTest.verifyDesignation()[pri:0, instance:testCases.TC_DesignationTest@2a7686a7]" name="verifyDesignation" class="testCases.TC_DesignationTest"/>
-        <method signature="TC_DocumentTypeTest.verifyDocType()[pri:0, instance:testCases.TC_DocumentTypeTest@62f68dff]" name="verifyDocType" class="testCases.TC_DocumentTypeTest"/>
-        <method signature="TC_EmployeeTest.verifyEmpCreation()[pri:0, instance:testCases.TC_EmployeeTest@7ec3394b]" name="verifyEmpCreation" class="testCases.TC_EmployeeTest"/>
-        <method signature="TC_GradeTest.verifyGrade()[pri:0, instance:testCases.TC_GradeTest@5c153b9e]" name="verifyGrade" class="testCases.TC_GradeTest"/>
-        <method signature="TC_LicensesTest.verifyLicenses()[pri:0, instance:testCases.TC_LicensesTest@7c098bb3]" name="verifyLicenses" class="testCases.TC_LicensesTest"/>
-        <method signature="TC_QualificationTest.verifyQualification()[pri:0, instance:testCases.TC_QualificationTest@f001896]" name="verifyQualification" class="testCases.TC_QualificationTest"/>
-        <method signature="TC_ReligionTest.verifyReligion()[pri:0, instance:testCases.TC_ReligionTest@4bc28c33]" name="verifyReligion" class="testCases.TC_ReligionTest"/>
-        <method signature="TC_WorkLocationTest.verifyWorkLocation()[pri:0, instance:testCases.TC_WorkLocationTest@1d0d6318]" name="verifyWorkLocation" class="testCases.TC_WorkLocationTest"/>
+        <method signature="TC_LicensesTest.verifyLicenses()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" name="verifyLicenses" class="testCases.TC_LicensesTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2024-11-01T23:35:37 IST" name="Grid Tests" finished-at="2024-11-01T23:45:02 IST" duration-ms="564569">
+    <test started-at="2024-11-02T09:58:58 IST" name="Master Tests" finished-at="2024-11-02T09:59:00 IST" duration-ms="1991">
       <class name="testCases.TC_LicensesTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LicensesTest@7c098bb3]" started-at="2024-11-01T23:35:37 IST" name="setup" finished-at="2024-11-01T23:35:55 IST" duration-ms="17191" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-11-02T09:58:58 IST" name="setup" finished-at="2024-11-02T09:59:00 IST" duration-ms="1712" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[windows]]>
+                <![CDATA[linux]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_LicensesTest@7c098bb3]" started-at="2024-11-01T23:35:55 IST" name="login" finished-at="2024-11-01T23:36:09 IST" duration-ms="14113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyLicenses()[pri:0, instance:testCases.TC_LicensesTest@7c098bb3]" started-at="2024-11-01T23:36:09 IST" name="verifyLicenses" finished-at="2024-11-01T23:36:32 IST" duration-ms="23045" status="FAIL">
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='lookup-text']"}
-  (Session info: MicrosoftEdge=130.0.2849.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [a6cbfb6799c0642b68ddac7b81d6bfc6, findElement {value=//div[@class='lookup-text'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.56, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54923}, msedge: {msedgedriverVersion: 130.0.2849.68 (ef504a70102b..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.102.117:4444/s..., se:cdpVersion: 130.0.2849.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a6cbfb6799c0642b68ddac7b81d6bfc6]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'VAIBHAV-HP', ip: '10.101.222.130']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='lookup-text']"}
-  (Session info: MicrosoftEdge=130.0.2849.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [a6cbfb6799c0642b68ddac7b81d6bfc6, findElement {value=//div[@class='lookup-text'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.56, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54923}, msedge: {msedgedriverVersion: 130.0.2849.68 (ef504a70102b..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.102.117:4444/s..., se:cdpVersion: 130.0.2849.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a6cbfb6799c0642b68ddac7b81d6bfc6
-at org.testng.Assert.fail(Assert.java:111)
-at testCases.TC_LicensesTest.verifyLicenses(TC_LicensesTest.java:46)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'VAIBHAV-HP', ip: '10.101.222.130'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at testBase.BaseClass.setup(BaseClass.java:153)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -93,429 +60,123 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: 
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:59)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:31)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:120)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:397)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:122)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+... 28 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-11-02T09:59:00 IST" name="login" finished-at="2024-11-02T09:59:00 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifyLicenses()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-11-02T09:59:00 IST" name="verifyLicenses" finished-at="2024-11-02T09:59:00 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'VAIBHAV-HP', ip: '10.101.222.130']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'VAIBHAV-HP', ip: '10.101.222.130'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at testBase.BaseClass.setup(BaseClass.java:153)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: 
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:59)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:31)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:120)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:397)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:122)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLicenses -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_LicensesTest@7c098bb3]" started-at="2024-11-01T23:36:32 IST" name="afterMethod" finished-at="2024-11-01T23:36:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-11-02T09:59:00 IST" name="afterMethod" finished-at="2024-11-02T09:59:00 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_LicensesTest@7c098bb3]" started-at="2024-11-01T23:36:32 IST" name="teardown" finished-at="2024-11-01T23:36:33 IST" duration-ms="1306" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_LicensesTest@14d14731]" started-at="2024-11-02T09:59:00 IST" name="teardown" finished-at="2024-11-02T09:59:00 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC_LicensesTest -->
-      <class name="testCases.TC_ReligionTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_ReligionTest@4bc28c33]" started-at="2024-11-01T23:40:51 IST" name="setup" finished-at="2024-11-01T23:41:07 IST" duration-ms="15663" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_ReligionTest@4bc28c33]" started-at="2024-11-01T23:41:07 IST" name="login" finished-at="2024-11-01T23:41:17 IST" duration-ms="10473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyReligion()[pri:0, instance:testCases.TC_ReligionTest@4bc28c33]" started-at="2024-11-01T23:41:17 IST" name="verifyReligion" finished-at="2024-11-01T23:41:31 IST" duration-ms="13819" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyReligion -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_ReligionTest@4bc28c33]" started-at="2024-11-01T23:41:31 IST" name="afterMethod" finished-at="2024-11-01T23:41:31 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_ReligionTest@4bc28c33]" started-at="2024-11-01T23:41:31 IST" name="teardown" finished-at="2024-11-01T23:41:32 IST" duration-ms="1391" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_ReligionTest -->
-      <class name="testCases.TC_DesignationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_DesignationTest@2a7686a7]" started-at="2024-11-01T23:43:04 IST" name="setup" finished-at="2024-11-01T23:43:21 IST" duration-ms="17007" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_DesignationTest@2a7686a7]" started-at="2024-11-01T23:43:21 IST" name="login" finished-at="2024-11-01T23:43:30 IST" duration-ms="9286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyDesignation()[pri:0, instance:testCases.TC_DesignationTest@2a7686a7]" started-at="2024-11-01T23:43:30 IST" name="verifyDesignation" finished-at="2024-11-01T23:43:42 IST" duration-ms="12427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDesignation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_DesignationTest@2a7686a7]" started-at="2024-11-01T23:43:42 IST" name="teardown" finished-at="2024-11-01T23:43:44 IST" duration-ms="1363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_DesignationTest@2a7686a7]" started-at="2024-11-01T23:43:42 IST" name="afterMethod" finished-at="2024-11-01T23:43:42 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.TC_DesignationTest -->
-      <class name="testCases.TC_WorkLocationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_WorkLocationTest@1d0d6318]" started-at="2024-11-01T23:40:09 IST" name="setup" finished-at="2024-11-01T23:40:25 IST" duration-ms="16285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_WorkLocationTest@1d0d6318]" started-at="2024-11-01T23:40:25 IST" name="login" finished-at="2024-11-01T23:40:35 IST" duration-ms="9646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyWorkLocation()[pri:0, instance:testCases.TC_WorkLocationTest@1d0d6318]" started-at="2024-11-01T23:40:35 IST" name="verifyWorkLocation" finished-at="2024-11-01T23:40:49 IST" duration-ms="14663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWorkLocation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_WorkLocationTest@1d0d6318]" started-at="2024-11-01T23:40:49 IST" name="afterMethod" finished-at="2024-11-01T23:40:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_WorkLocationTest@1d0d6318]" started-at="2024-11-01T23:40:49 IST" name="teardown" finished-at="2024-11-01T23:40:51 IST" duration-ms="1428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_WorkLocationTest -->
-      <class name="testCases.TC_CalendarTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_CalendarTest@4409e975]" started-at="2024-11-01T23:41:32 IST" name="setup" finished-at="2024-11-01T23:41:48 IST" duration-ms="16044" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_CalendarTest@4409e975]" started-at="2024-11-01T23:41:48 IST" name="login" finished-at="2024-11-01T23:41:57 IST" duration-ms="8880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyCalendar()[pri:0, instance:testCases.TC_CalendarTest@4409e975]" started-at="2024-11-01T23:41:57 IST" name="verifyCalendar" finished-at="2024-11-01T23:42:19 IST" duration-ms="21873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCalendar -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_CalendarTest@4409e975]" started-at="2024-11-01T23:42:19 IST" name="afterMethod" finished-at="2024-11-01T23:42:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_CalendarTest@4409e975]" started-at="2024-11-01T23:42:19 IST" name="teardown" finished-at="2024-11-01T23:42:20 IST" duration-ms="1396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_CalendarTest -->
-      <class name="testCases.TC_DelegationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_DelegationTest@463b4ac8]" started-at="2024-11-01T23:36:33 IST" name="setup" finished-at="2024-11-01T23:36:52 IST" duration-ms="18374" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_DelegationTest@463b4ac8]" started-at="2024-11-01T23:36:52 IST" name="login" finished-at="2024-11-01T23:37:03 IST" duration-ms="11508" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyDelegation()[pri:0, instance:testCases.TC_DelegationTest@463b4ac8]" started-at="2024-11-01T23:37:03 IST" name="verifyDelegation" finished-at="2024-11-01T23:37:20 IST" duration-ms="16288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDelegation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_DelegationTest@463b4ac8]" started-at="2024-11-01T23:37:20 IST" name="afterMethod" finished-at="2024-11-01T23:37:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_DelegationTest@463b4ac8]" started-at="2024-11-01T23:37:20 IST" name="teardown" finished-at="2024-11-01T23:37:21 IST" duration-ms="1343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_DelegationTest -->
-      <class name="testCases.TC_AssetIssueTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_AssetIssueTest@765f05af]" started-at="2024-11-01T23:37:21 IST" name="setup" finished-at="2024-11-01T23:37:37 IST" duration-ms="16230" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_AssetIssueTest@765f05af]" started-at="2024-11-01T23:37:37 IST" name="login" finished-at="2024-11-01T23:37:47 IST" duration-ms="10141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyAssetIssue()[pri:0, instance:testCases.TC_AssetIssueTest@765f05af]" started-at="2024-11-01T23:37:47 IST" name="verifyAssetIssue" finished-at="2024-11-01T23:38:09 IST" duration-ms="21933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAssetIssue -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_AssetIssueTest@765f05af]" started-at="2024-11-01T23:38:09 IST" name="teardown" finished-at="2024-11-01T23:38:11 IST" duration-ms="1380" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_AssetIssueTest@765f05af]" started-at="2024-11-01T23:38:09 IST" name="afterMethod" finished-at="2024-11-01T23:38:09 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.TC_AssetIssueTest -->
-      <class name="testCases.TC_GradeTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_GradeTest@5c153b9e]" started-at="2024-11-01T23:42:20 IST" name="setup" finished-at="2024-11-01T23:42:37 IST" duration-ms="16250" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_GradeTest@5c153b9e]" started-at="2024-11-01T23:42:37 IST" name="login" finished-at="2024-11-01T23:42:45 IST" duration-ms="8724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyGrade()[pri:0, instance:testCases.TC_GradeTest@5c153b9e]" started-at="2024-11-01T23:42:45 IST" name="verifyGrade" finished-at="2024-11-01T23:43:02 IST" duration-ms="16759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGrade -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_GradeTest@5c153b9e]" started-at="2024-11-01T23:43:02 IST" name="afterMethod" finished-at="2024-11-01T23:43:02 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_GradeTest@5c153b9e]" started-at="2024-11-01T23:43:02 IST" name="teardown" finished-at="2024-11-01T23:43:04 IST" duration-ms="1378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_GradeTest -->
-      <class name="testCases.TC_BankTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_BankTest@13f17eb4]" started-at="2024-11-01T23:39:27 IST" name="setup" finished-at="2024-11-01T23:39:44 IST" duration-ms="16923" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_BankTest@13f17eb4]" started-at="2024-11-01T23:39:44 IST" name="login" finished-at="2024-11-01T23:39:55 IST" duration-ms="10861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyBank()[pri:0, instance:testCases.TC_BankTest@13f17eb4]" started-at="2024-11-01T23:39:55 IST" name="verifyBank" finished-at="2024-11-01T23:40:07 IST" duration-ms="12268" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBank -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_BankTest@13f17eb4]" started-at="2024-11-01T23:40:07 IST" name="teardown" finished-at="2024-11-01T23:40:09 IST" duration-ms="1354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_BankTest@13f17eb4]" started-at="2024-11-01T23:40:07 IST" name="afterMethod" finished-at="2024-11-01T23:40:07 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.TC_BankTest -->
-      <class name="testCases.TC_DocumentTypeTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_DocumentTypeTest@62f68dff]" started-at="2024-11-01T23:38:11 IST" name="setup" finished-at="2024-11-01T23:38:27 IST" duration-ms="16366" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_DocumentTypeTest@62f68dff]" started-at="2024-11-01T23:38:27 IST" name="login" finished-at="2024-11-01T23:38:36 IST" duration-ms="9452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyDocType()[pri:0, instance:testCases.TC_DocumentTypeTest@62f68dff]" started-at="2024-11-01T23:38:36 IST" name="verifyDocType" finished-at="2024-11-01T23:38:46 IST" duration-ms="9792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDocType -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_DocumentTypeTest@62f68dff]" started-at="2024-11-01T23:38:46 IST" name="afterMethod" finished-at="2024-11-01T23:38:46 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_DocumentTypeTest@62f68dff]" started-at="2024-11-01T23:38:46 IST" name="teardown" finished-at="2024-11-01T23:38:48 IST" duration-ms="1356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_DocumentTypeTest -->
-      <class name="testCases.TC_QualificationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_QualificationTest@f001896]" started-at="2024-11-01T23:38:48 IST" name="setup" finished-at="2024-11-01T23:39:05 IST" duration-ms="17159" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_QualificationTest@f001896]" started-at="2024-11-01T23:39:05 IST" name="login" finished-at="2024-11-01T23:39:14 IST" duration-ms="8942" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyQualification()[pri:0, instance:testCases.TC_QualificationTest@f001896]" started-at="2024-11-01T23:39:14 IST" name="verifyQualification" finished-at="2024-11-01T23:39:26 IST" duration-ms="12345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyQualification -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_QualificationTest@f001896]" started-at="2024-11-01T23:39:26 IST" name="afterMethod" finished-at="2024-11-01T23:39:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_QualificationTest@f001896]" started-at="2024-11-01T23:39:26 IST" name="teardown" finished-at="2024-11-01T23:39:27 IST" duration-ms="1406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_QualificationTest -->
-      <class name="testCases.TC_EmployeeTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_EmployeeTest@7ec3394b]" started-at="2024-11-01T23:44:24 IST" name="setup" finished-at="2024-11-01T23:44:40 IST" duration-ms="16615" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_EmployeeTest@7ec3394b]" started-at="2024-11-01T23:44:40 IST" name="login" finished-at="2024-11-01T23:44:50 IST" duration-ms="9290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyEmpCreation()[pri:0, instance:testCases.TC_EmployeeTest@7ec3394b]" started-at="2024-11-01T23:44:50 IST" name="verifyEmpCreation" finished-at="2024-11-01T23:45:00 IST" duration-ms="10824" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEmpCreation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_EmployeeTest@7ec3394b]" started-at="2024-11-01T23:45:00 IST" name="teardown" finished-at="2024-11-01T23:45:02 IST" duration-ms="1302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_EmployeeTest@7ec3394b]" started-at="2024-11-01T23:45:00 IST" name="afterMethod" finished-at="2024-11-01T23:45:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.TC_EmployeeTest -->
-      <class name="testCases.TC_DeptTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_DeptTest@758a34ce]" started-at="2024-11-01T23:43:44 IST" name="setup" finished-at="2024-11-01T23:43:59 IST" duration-ms="15888" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.TC_DeptTest@758a34ce]" started-at="2024-11-01T23:43:59 IST" name="login" finished-at="2024-11-01T23:44:08 IST" duration-ms="9020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="verifyDept()[pri:0, instance:testCases.TC_DeptTest@758a34ce]" started-at="2024-11-01T23:44:08 IST" name="verifyDept" finished-at="2024-11-01T23:44:22 IST" duration-ms="13771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDept -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_DeptTest@758a34ce]" started-at="2024-11-01T23:44:22 IST" name="teardown" finished-at="2024-11-01T23:44:24 IST" duration-ms="1457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.TC_DeptTest@758a34ce]" started-at="2024-11-01T23:44:22 IST" name="afterMethod" finished-at="2024-11-01T23:44:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.TC_DeptTest -->
-    </test> <!-- Grid Tests -->
-  </suite> <!-- GridTestSuite -->
+    </test> <!-- Master Tests -->
+  </suite> <!-- MasterTestSuite -->
 </testng-results>
