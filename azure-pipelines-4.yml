@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-latest
+  vmImage: macos-latest
 
 variables:
   BROWSERSTACK_USERNAME: 'vaibhavchavan_vXTnjK'
@@ -17,7 +17,7 @@ variables:
 
 jobs:
   - job: BrowserStack_Test
-    displayName: "Run tests on BrowserStack | OS- Windows | Chrome browser version- 129"
+    displayName: "Run tests on BrowserStack | OS- Mac | Chrome browser version- 129"
     steps:
       - task: Maven@4
         inputs:
