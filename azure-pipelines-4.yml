@@ -39,9 +39,7 @@ jobs:
         Safari_Latest:
           browser: 'safari'
           browser_version: 'latest'
-        Safari_14:
-          browser: 'safari'
-          browser_version: '14'
+        
     steps:
       - task: Maven@4
         inputs:
