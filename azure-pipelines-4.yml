@@ -12,12 +12,12 @@ pool:
 variables:
   BROWSERSTACK_USERNAME: 'vaibhavchavan_vXTnjK'
   BROWSERSTACK_ACCESS_KEY: 'VjyZRpR7fkRybdm1cyAb'
-  browser: 'chrome'  # Change as needed
-  browser_version: '129'  # Set specific versions as needed
+  browser: 'firefox'  # Change as needed
+  browser_version: '131'  # Set specific versions as needed
 
 jobs:
   - job: BrowserStack_Test
-    displayName: "Run tests on BrowserStack | OS- Mac | Chrome browser version- 129"
+    displayName: "Run tests on BrowserStack | OS- Mac | Firefox browser, version- 131"
     steps:
       - task: Maven@4
         inputs:
