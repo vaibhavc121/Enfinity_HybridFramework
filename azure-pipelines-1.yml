@@ -61,29 +61,3 @@ jobs:
           testResultsFiles: '**/target/surefire-reports/*.xml'
         displayName: "Publish Test Results on macOS"
 
-  - job: Linux_Test
-    displayName: "Run Maven tests on Linux"
-    pool:
-      vmImage: 'ubuntu-latest'  # Specifies a Linux environment
-
-    steps:
-      - task: Maven@4
-        inputs:
-          mavenPomFile: 'pom.xml'  # Path to the Maven POM file
-          goals: 'clean install'  # Maven goals to run
-          publishJUnitResults: true  # Automatically publish JUnit test results
-          testResultsFiles: '**/surefire-reports/TEST-*.xml'  # Path to JUnit XML reports
-          testRunTitle: 'Automation Engineer (SDET)- Vaibhav Chavan'  # Title for test run
-          javaHomeOption: 'JDKVersion'
-          jdkVersionOption: '1.17'  # Sets JDK 1.17
-          mavenVersionOption: 'Default'
-          mavenAuthenticateFeed: false
-          effectivePomSkip: false
-          sonarQubeRunAnalysis: false
-        displayName: "Run Maven Build and Tests on Linux"
-
-      - task: PublishTestResults@2
-        inputs:
-          testResultsFormat: 'JUnit'  # Format of test results
-          testResultsFiles: '**/target/surefire-reports/*.xml'  # Path to published test results
-        displayName: "Publish Test Results on Linux"
