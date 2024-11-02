@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: linux-latest
+  vmImage: ubuntu-latest
 
 variables:
   BROWSERSTACK_USERNAME: 'vaibhavchavan_vXTnjK'
