@@ -15,8 +15,8 @@
 
 
 	<test name="Master Tests">
-		<parameter name="os" value="linux"></parameter>
-		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="os" value="mac"></parameter>
+		<parameter name="browser" value="safari"></parameter>
 
 		<classes>
 
