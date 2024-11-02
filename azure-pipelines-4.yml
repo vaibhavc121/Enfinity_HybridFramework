@@ -7,39 +7,17 @@ trigger:
 - master
 
 pool:
-  vmImage: macos-latest
+  vmImage: ubuntu-latest
 
 variables:
   BROWSERSTACK_USERNAME: 'vaibhavchavan_vXTnjK'
   BROWSERSTACK_ACCESS_KEY: 'VjyZRpR7fkRybdm1cyAb'
+  browser: 'chrome'  # Change as needed
+  browser_version: '117'  # Set specific versions as needed
 
 jobs:
   - job: BrowserStack_Test
-    displayName: "Run tests on BrowserStack | Cross-version Testing"
-    strategy:
-      matrix:
-        Chrome_Latest:
-          browser: 'chrome'
-          browser_version: 'latest'
-        Chrome_89:
-          browser: 'chrome'
-          browser_version: '89'
-        Firefox_Latest:
-          browser: 'firefox'
-          browser_version: 'latest'
-        Firefox_85:
-          browser: 'firefox'
-          browser_version: '85'
-        Edge_Latest:
-          browser: 'edge'
-          browser_version: 'latest'
-        Edge_114:
-          browser: 'edge'
-          browser_version: '114'
-        Safari_Latest:
-          browser: 'safari'
-          browser_version: 'latest'
-        
+    displayName: "Run tests on BrowserStack | OS-Linux | Firefox browser version- 117"
     steps:
       - task: Maven@4
         inputs:
@@ -58,6 +36,8 @@ jobs:
         displayName: "Build and Run Tests with Maven on BrowserStack"
 
       - script: |
-          echo "Running tests on $(browser) version $(browser_version)"
+          echo "Setting BrowserStack environment variables for additional scripts if needed"
+          setx BROWSERSTACK_USERNAME %BROWSERSTACK_USERNAME%
+          setx BROWSERSTACK_ACCESS_KEY %BROWSERSTACK_ACCESS_KEY%
           mvn test -Dbrowser=$(browser) -Dbrowser_version=$(browser_version)
-        displayName: 'Run Cross-version Tests'
+        displayName: "Set BrowserStack Credentials"
