@@ -12,7 +12,7 @@ pool:
 variables:
   BROWSERSTACK_USERNAME: 'vaibhavchavan_vXTnjK'
   BROWSERSTACK_ACCESS_KEY: 'VjyZRpR7fkRybdm1cyAb'
-  browser: 'chrome'  # Change as needed
+  browser: 'firefox'  # Change as needed
   browser_version: '117'  # Set specific versions as needed
 
 jobs:
