@@ -105,7 +105,7 @@ public class BaseClass
 
 			case "firefox":
 				capabilities.setBrowserName("firefox");
-				// capabilities.setVersion("131");
+				capabilities.setVersion("117");
 				// to work this in local env need to install the browser of ver 131, it is
 				// working on browserstack
 
