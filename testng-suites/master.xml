@@ -20,7 +20,7 @@
 
 		<classes>
 
-			<class name="testCases.TC_LicensesTest" />
+			<class name="testCases.HRCore.TC_LicensesTest" />
 			<!--<class name="testCases.TC_DelegationTest" />-->
 			<!--<class name="testCases.TC_AssetIssueTest" />-->
 			<!--<class name="testCases.TC_DocumentTypeTest" />-->
