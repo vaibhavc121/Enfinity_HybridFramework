@@ -15,9 +15,16 @@ public class PayrollPage extends BasePage
 	
 	@FindBy(xpath="//span[normalize-space()='Payroll']") WebElement payroll;
 	
+	@FindBy(xpath="//span[@class='dxnb-ghtext']") WebElement transactions;
+	
 	public void clkPayroll()
 	{
 		payroll.click();
+	}
+	
+	public void clkTxn()
+	{
+		transactions.click();
 	}
 	
 
