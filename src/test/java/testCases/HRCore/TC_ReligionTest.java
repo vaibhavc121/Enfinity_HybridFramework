@@ -1,17 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.HRCorePage;
+import pageObjects.ReligionPage;
 import pageObjects.SetupPage;
-import pageObjects.WorkLocationPage;
 import testBase.BaseClass;
 
-public class TC_WorkLocationTest extends BaseClass
+public class TC_ReligionTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyWorkLocation()
+	public void verifyReligion()
 	{
 		try
 		{
@@ -24,16 +24,19 @@ public class TC_WorkLocationTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkWorkLocation();
+			sp.clkReligion();
 			Thread.sleep(2000);
-			logger.info("clicked on worklocation");
+			logger.info("clicked on religion");
 
-			// work location pg
-			WorkLocationPage wc = new WorkLocationPage(driver);
-			wc.clkNewBtn();
-			wc.setName();
-			wc.clkSaveBtn();
-			boolean act = wc.isWorkLocCreated();
+			// religion pg
+			ReligionPage rp = new ReligionPage(driver);
+			rp.clkBtnNew();
+			logger.info("clicked on new button");
+			rp.setReligionName();
+			logger.info("provided religion");
+			rp.clkSaveBtn();
+			logger.info("clicked on save button");
+			boolean act = rp.isReligionCreated();
 
 			Assert.assertEquals(act, true);
 			logger.info("test case passed");
@@ -46,5 +49,4 @@ public class TC_WorkLocationTest extends BaseClass
 		}
 
 	}
-
 }

@@ -1,17 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageObjects.CalendarPage;
 import pageObjects.HRCorePage;
-import pageObjects.QualificationPage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_QualificationTest extends BaseClass
+public class TC_CalendarTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyQualification() throws InterruptedException
+	public void verifyCalendar()
 	{
 		try
 		{
@@ -24,25 +24,30 @@ public class TC_QualificationTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkQualification();
+			sp.clkCalendar();
 			Thread.sleep(2000);
-			logger.info("clicked on qualification");
+			logger.info("clicked on calendar");
 
-			// qualification pg
-			QualificationPage qp = new QualificationPage(driver);
-			qp.clkNewBtn();
+			// calendar pg
+			CalendarPage cp = new CalendarPage(driver);
+			cp.clkNewBtn();
 			logger.info("clicked on new btn");
-			qp.setName();
-			logger.info("provided qualification");
-			qp.clickQualificationDD();
-			logger.info("clicked qlfctn dd");
-			qp.slctType();
-			logger.info("selected qlfctn type");
-			qp.clkSaveBtn();
+			cp.setCalName();
+			logger.info("entered cal name");
+			cp.setCalDate();
+			logger.info("entered date");
+			cp.setWeekoff();
+			logger.info("check weekoff");
+			cp.setRestday();
+			Thread.sleep(10000);
+			logger.info("check restday");
+			cp.clkSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(qp.isQualificationCreated());
+			Assert.assertTrue(cp.isCalendarCreated());
+			// Assert.assertTrue(true);
 			logger.info("test case passed");
+
 		}
 		catch (Exception e)
 		{
@@ -51,4 +56,5 @@ public class TC_QualificationTest extends BaseClass
 		}
 
 	}
+
 }

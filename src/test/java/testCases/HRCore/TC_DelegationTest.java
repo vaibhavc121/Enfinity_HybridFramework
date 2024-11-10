@@ -1,17 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CalendarPage;
+import pageObjects.DelegationPage;
 import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_CalendarTest extends BaseClass
+public class TC_DelegationTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyCalendar()
+	public void verifyDelegation()
 	{
 		try
 		{
@@ -24,28 +24,22 @@ public class TC_CalendarTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkCalendar();
+			sp.clkDelegation();
 			Thread.sleep(2000);
-			logger.info("clicked on calendar");
+			logger.info("clicked on delegation");
 
-			// calendar pg
-			CalendarPage cp = new CalendarPage(driver);
-			cp.clkNewBtn();
+			// delegation pg
+			DelegationPage dp = new DelegationPage(driver);
+			dp.clkNewBtn();
 			logger.info("clicked on new btn");
-			cp.setCalName();
-			logger.info("entered cal name");
-			cp.setCalDate();
-			logger.info("entered date");
-			cp.setWeekoff();
-			logger.info("check weekoff");
-			cp.setRestday();
-			Thread.sleep(10000);
-			logger.info("check restday");
-			cp.clkSave();
-			logger.info("clicked on save button");
+			dp.clkDelegateeDD();
+			logger.info("clicked on delegatee dropdown");
+			dp.slctDelegatee();
+			logger.info("selected delegatee");
+			dp.clkSaveBtn();
+			logger.info("clicked on save btn");
 
-			Assert.assertTrue(cp.isCalendarCreated());
-			// Assert.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("test case passed");
 
 		}
@@ -54,7 +48,6 @@ public class TC_CalendarTest extends BaseClass
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
 		}
-
 	}
 
 }

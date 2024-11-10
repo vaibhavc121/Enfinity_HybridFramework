@@ -1,17 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageObjects.DocumentTypePage;
 import pageObjects.HRCorePage;
-import pageObjects.LicensesPage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_LicensesTest extends BaseClass
+public class TC_DocumentTypeTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyLicenses()
+	public void verifyDocType()
 	{
 		try
 		{
@@ -24,27 +24,29 @@ public class TC_LicensesTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkLicense();
+			sp.clkDocIsuue();
 			Thread.sleep(2000);
-			logger.info("clicked on license");
+			logger.info("clicked on doc type");
 
-			// license pg
-			LicensesPage lp = new LicensesPage(driver);
-			lp.clkNewBtn();
-			lp.setName();
-			lp.clkFileNumDD();
-			lp.slctFileNum();
-			lp.clkSaveBtn();
-
-			// Assert.assertEquals(lp.isLicenseCreated(), true);
+			// doctype pg
+			DocumentTypePage dt = new DocumentTypePage(driver);
+			dt.clkAddIcon();
+			logger.info("clicked on new btn");
+			dt.setName();
+			logger.info("provided doc type name");
+			dt.clkSaveBtn();
+			logger.info("clicked on save button");
+			// dt.clkDocType();
+			// Assert.assertTrue(dt.isDocTypeCreated());
 			Assert.assertTrue(true);
 			logger.info("test case passed");
+
 		}
 		catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
 		}
-	}
 
+	}
 }

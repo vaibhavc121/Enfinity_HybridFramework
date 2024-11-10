@@ -1,17 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.BankPage;
 import pageObjects.HRCorePage;
+import pageObjects.QualificationPage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_BankTest extends BaseClass
+public class TC_QualificationTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyBank()
+	public void verifyQualification() throws InterruptedException
 	{
 		try
 		{
@@ -24,23 +24,24 @@ public class TC_BankTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkBank();
+			sp.clkQualification();
 			Thread.sleep(2000);
-			logger.info("clicked on bank");
+			logger.info("clicked on qualification");
 
-			// bank pg
-			BankPage bp = new BankPage(driver);
-			bp.clkNewBtn();
+			// qualification pg
+			QualificationPage qp = new QualificationPage(driver);
+			qp.clkNewBtn();
 			logger.info("clicked on new btn");
-			bp.setName();
-			logger.info("provided bank name");
-			bp.checkToggle();
-			logger.info("clicked on IBAN toggle btn");
-			bp.clkSave();
+			qp.setName();
+			logger.info("provided qualification");
+			qp.clickQualificationDD();
+			logger.info("clicked qlfctn dd");
+			qp.slctType();
+			logger.info("selected qlfctn type");
+			qp.clkSaveBtn();
 			logger.info("clicked on save button");
 
-			boolean act = bp.isBankCreated();
-			Assert.assertEquals(act, true);
+			Assert.assertTrue(qp.isQualificationCreated());
 			logger.info("test case passed");
 		}
 		catch (Exception e)

@@ -1,17 +1,18 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.DelegationPage;
+import pageObjects.DesignationPage;
 import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_DelegationTest extends BaseClass
+public class TC_DesignationTest extends BaseClass
 {
+
 	@Test(groups = "regression")
-	public void verifyDelegation()
+	public void verifyDesignation() throws InterruptedException
 	{
 		try
 		{
@@ -24,30 +25,36 @@ public class TC_DelegationTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkDelegation();
+			sp.clkDesignation();
 			Thread.sleep(2000);
-			logger.info("clicked on delegation");
+			logger.info("clicked on desg");
 
-			// delegation pg
-			DelegationPage dp = new DelegationPage(driver);
+			// designation pg
+			DesignationPage dp = new DesignationPage(driver);
 			dp.clkNewBtn();
 			logger.info("clicked on new btn");
-			dp.clkDelegateeDD();
-			logger.info("clicked on delegatee dropdown");
-			dp.slctDelegatee();
-			logger.info("selected delegatee");
-			dp.clkSaveBtn();
+			dp.setDesigCode();
+			logger.info("entered desg code");
+			dp.setDesignation();
+			logger.info("entered desg");
+//			dp.clkGrade();
+//			logger.info("clicked on grade");
+//			dp.slctGrade();
+//			logger.info("selected grade");
+			dp.setJobDesc();
+			logger.info("provided job desc");
+			dp.clkSave();
 			logger.info("clicked on save btn");
 
-			Assert.assertTrue(true);
+			Assert.assertTrue(dp.isDesgCreated());
 			logger.info("test case passed");
-
 		}
 		catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
 		}
+
 	}
 
 }

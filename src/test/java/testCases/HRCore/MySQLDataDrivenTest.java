@@ -1,4 +1,4 @@
-package testCases;
+package testCases.HRCore;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;

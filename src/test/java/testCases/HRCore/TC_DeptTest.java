@@ -1,17 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.DocumentTypePage;
+import pageObjects.DeptPage;
 import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_DocumentTypeTest extends BaseClass
+public class TC_DeptTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyDocType()
+	public void verifyDept()
 	{
 		try
 		{
@@ -24,22 +24,30 @@ public class TC_DocumentTypeTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkDocIsuue();
+			sp.clkDept();
 			Thread.sleep(2000);
-			logger.info("clicked on doc type");
+			logger.info("clicked on dept");
 
-			// doctype pg
-			DocumentTypePage dt = new DocumentTypePage(driver);
-			dt.clkAddIcon();
+			// dept page
+			DeptPage dp = new DeptPage(driver);
+			dp.clkNewbtn();
 			logger.info("clicked on new btn");
-			dt.setName();
-			logger.info("provided doc type name");
-			dt.clkSaveBtn();
+			dp.setDeptName();
+			logger.info("dept name entered");
+			dp.clkSelfServiceDD();
+			logger.info("clicked self servide dd");
+			dp.clkDeptMgrDD();
+			logger.info("clicked dept mgr dd");
+			dp.setDeptMgrName();
+			logger.info("dept mgr name entered");
+			dp.slctDeptMgr();
+			logger.info("dept mgr selected");
+			dp.clkSave();
 			logger.info("clicked on save button");
-			// dt.clkDocType();
-			// Assert.assertTrue(dt.isDocTypeCreated());
-			Assert.assertTrue(true);
+
+			Assert.assertTrue(dp.isDeptCreated());
 			logger.info("test case passed");
+			// Assert.assertTrue(true);
 
 		}
 		catch (Exception e)

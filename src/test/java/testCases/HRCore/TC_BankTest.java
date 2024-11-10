@@ -1,17 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.DeptPage;
+import pageObjects.BankPage;
 import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_DeptTest extends BaseClass
+public class TC_BankTest extends BaseClass
 {
 	@Test(groups = "regression")
-	public void verifyDept()
+	public void verifyBank()
 	{
 		try
 		{
@@ -24,31 +24,24 @@ public class TC_DeptTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkDept();
+			sp.clkBank();
 			Thread.sleep(2000);
-			logger.info("clicked on dept");
+			logger.info("clicked on bank");
 
-			// dept page
-			DeptPage dp = new DeptPage(driver);
-			dp.clkNewbtn();
+			// bank pg
+			BankPage bp = new BankPage(driver);
+			bp.clkNewBtn();
 			logger.info("clicked on new btn");
-			dp.setDeptName();
-			logger.info("dept name entered");
-			dp.clkSelfServiceDD();
-			logger.info("clicked self servide dd");
-			dp.clkDeptMgrDD();
-			logger.info("clicked dept mgr dd");
-			dp.setDeptMgrName();
-			logger.info("dept mgr name entered");
-			dp.slctDeptMgr();
-			logger.info("dept mgr selected");
-			dp.clkSave();
+			bp.setName();
+			logger.info("provided bank name");
+			bp.checkToggle();
+			logger.info("clicked on IBAN toggle btn");
+			bp.clkSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(dp.isDeptCreated());
+			boolean act = bp.isBankCreated();
+			Assert.assertEquals(act, true);
 			logger.info("test case passed");
-			// Assert.assertTrue(true);
-
 		}
 		catch (Exception e)
 		{

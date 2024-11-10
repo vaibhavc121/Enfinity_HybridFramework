@@ -1,18 +1,17 @@
-package testCases;
+package testCases.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.DesignationPage;
+import pageObjects.BudgetPage;
 import pageObjects.HRCorePage;
 import pageObjects.SetupPage;
 import testBase.BaseClass;
 
-public class TC_DesignationTest extends BaseClass
+public class TC_BudgetTest extends BaseClass
 {
-
 	@Test(groups = "regression")
-	public void verifyDesignation() throws InterruptedException
+	public void verifyBudget()
 	{
 		try
 		{
@@ -25,28 +24,25 @@ public class TC_DesignationTest extends BaseClass
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkDesignation();
+			sp.clkBudget();
 			Thread.sleep(2000);
-			logger.info("clicked on desg");
+			logger.info("clicked on budget");
 
-			// designation pg
-			DesignationPage dp = new DesignationPage(driver);
-			dp.clkNewBtn();
+			// budget pg
+			BudgetPage bp = new BudgetPage(driver);
+			bp.clkNewBtn();
 			logger.info("clicked on new btn");
-			dp.setDesigCode();
-			logger.info("entered desg code");
-			dp.setDesignation();
-			logger.info("entered desg");
-//			dp.clkGrade();
-//			logger.info("clicked on grade");
-//			dp.slctGrade();
-//			logger.info("selected grade");
-			dp.setJobDesc();
-			logger.info("provided job desc");
-			dp.clkSave();
+			bp.setName();
+			logger.info("provided budget name");
+			bp.setStartDt();
+			logger.info("provided start dt");
+			bp.setEndDt();
+			Thread.sleep(2000);
+			logger.info("provided end dt");
+			bp.clkSaveBtn();
 			logger.info("clicked on save btn");
 
-			Assert.assertTrue(dp.isDesgCreated());
+			Assert.assertTrue(bp.isBudgetCreated());
 			logger.info("test case passed");
 		}
 		catch (Exception e)
@@ -56,5 +52,4 @@ public class TC_DesignationTest extends BaseClass
 		}
 
 	}
-
 }
