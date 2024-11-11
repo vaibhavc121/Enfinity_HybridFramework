@@ -12442,3 +12442,26 @@ Session ID: a6cbfb6799c0642b68ddac7b81d6bfc6
 
 2024-11-02 09:58:58.649 [main] INFO  testCases.TC_LicensesTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
 2024-11-02 09:58:58.649 [main] INFO  testCases.TC_LicensesTest - --test execution started--
+2024-11-11 17:59:44.148 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-11 17:59:44.504 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-11 17:59:44.504 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - --test execution started--
+2024-11-11 18:00:13.777 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - browser opened
+2024-11-11 18:00:13.792 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - browser maximized
+2024-11-11 18:00:17.157 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - provided app URL in browser
+2024-11-11 18:00:51.658 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-11 18:00:51.956 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-11 18:00:51.956 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - --test execution started--
+2024-11-11 18:00:56.038 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - browser opened
+2024-11-11 18:00:56.078 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - browser maximized
+2024-11-11 18:01:18.087 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - provided app URL in browser
+2024-11-11 18:01:18.257 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - provided username
+2024-11-11 18:01:18.388 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - provided password
+2024-11-11 18:01:35.265 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - clicked on sign in button
+2024-11-11 18:01:37.519 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - clicked on hr core link
+2024-11-11 18:01:39.077 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - clicked on setup form
+2024-11-11 18:01:42.424 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - clicked on license
+2024-11-11 18:01:52.768 [main] INFO  testCases.HRMS.HRCore.TC_LicensesTest - test case passed

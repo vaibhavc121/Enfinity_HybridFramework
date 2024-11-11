@@ -29,7 +29,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import pageObjects.LoginPage;
+import pageObjects.HRMS.HRCore.LoginPage;
 
 public class BaseClass
 {
