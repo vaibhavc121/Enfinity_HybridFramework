@@ -5,8 +5,8 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="Master Tests(failed)">
-    <parameter name="os" value="mac"/>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
     <groups>
       <run>
         <include name="regression"/>
@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.HRCore.TC_LicensesTest">
+      <class name="testCases.HRMS.Payroll.TC_LeaveTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyLicenses"/>
           <include name="setup"/>
           <include name="afterMethod"/>
+          <include name="verifyLeave"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.HRMS.HRCore.TC_LicensesTest -->
+      </class> <!-- testCases.HRMS.Payroll.TC_LeaveTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->

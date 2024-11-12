@@ -19,8 +19,12 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
-
-			<class name="testCases.HRMS.HRCore.TC_LicensesTest" />
+		
+			<class name="testCases.HRMS.Payroll.TC_LeaveTest"/>
+			<!--<class name="testCases.HRMS.Payroll.TC_VariableSalaryTest"/>-->
+			
+			<!-- HR Core -->
+			<!--<class name="testCases.HRMS.HRCore.TC_LicensesTest" />-->
 			<!--<class name="testCases.TC_DelegationTest" />-->
 			<!--<class name="testCases.TC_AssetIssueTest" />-->
 			<!--<class name="testCases.TC_DocumentTypeTest" />-->

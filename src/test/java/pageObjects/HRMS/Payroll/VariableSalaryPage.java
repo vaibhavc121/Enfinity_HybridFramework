@@ -31,9 +31,9 @@ public class VariableSalaryPage extends BasePage
 	
 	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[5]/td[2]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/img[1]") WebElement clksalcompdd;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[5]/td[2]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/img[1]") WebElement slctsalcomp;
+	@FindBy(xpath="//div[normalize-space()='SC001 | Basic Salary']") WebElement basic;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[5]/td[5]/div[1]") WebElement amtfield;
+	@FindBy(xpath="//td[@class=' grid-cell dx-wrap dxgv dx-ellipsis dx-ar']//div[@class='dxgBCTC dx-ellipsis'][normalize-space()='0']") WebElement amtfield;
 	
 	@FindBy(xpath="//span[normalize-space()='View']") WebElement viewbtn;
 	
@@ -51,19 +51,22 @@ public class VariableSalaryPage extends BasePage
 		newbtn.click();
 	}
 	
-	public void clkEmpDD()
+	public void clkEmpDD() throws InterruptedException
 	{
 		clkempdd.click();
+		Thread.sleep(2000);
 	}
 	
-	public void slctEmp()
+	public void slctEmp() throws InterruptedException
 	{
 		slctemp.click();
+		Thread.sleep(2000);
 	}
 	
-	public void clkSave()
+	public void clkSave() throws InterruptedException
 	{
 		save.click();
+		Thread.sleep(2000);
 	}
 	
 	public void clkNewline()
@@ -78,13 +81,13 @@ public class VariableSalaryPage extends BasePage
 	
 	public void slctSalComp()
 	{
-		slctsalcomp.click();
+		basic.click();
 	}
 	
 	public void clkAmt()
 	{
 		amtfield.click();
-		amtfield.clear();
+		//amtfield.clear();
 	}
 	
 	public void provideAmt()
