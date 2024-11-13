@@ -32,17 +32,23 @@ public class TC_LeaveTest extends BaseClass
 			lp.slctEmp();
 			logger.info("emp selected");
 			lp.provideEffectiveDt();
-			logger.info("provide effective date");
+			logger.info("provided effective date");
 			lp.clkLeaveTypeDD();
 			logger.info("clicked on leave type dd");
 			lp.slctLeaveType();
 			logger.info("leave type selected");
+			lp.provideFromDt();
+			logger.info("provided from date");
+			lp.provideUpToDt();
+			logger.info("provided upto date");
 			lp.clkView();
 			logger.info("clicked on view btn");
 			lp.clkApprove();
 			logger.info("clicked on approve btn");
 			lp.clkLeaveLink();
 			logger.info("clicked on leave link");
+			
+			Assert.assertTrue(lp.isLeaveCreated());
 			
 			
 		} 

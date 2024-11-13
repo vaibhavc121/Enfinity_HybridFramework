@@ -17,10 +17,10 @@
       <class name="testCases.HRMS.Payroll.TC_LeaveTest">
         <methods>
           <include name="teardown"/>
-          <include name="setup"/>
           <include name="afterMethod"/>
-          <include name="verifyLeave"/>
+          <include name="setup"/>
           <include name="login"/>
+          <include name="verifyLeave"/>
         </methods>
       </class> <!-- testCases.HRMS.Payroll.TC_LeaveTest -->
     </classes>

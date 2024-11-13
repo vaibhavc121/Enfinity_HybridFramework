@@ -9,6 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.github.javafaker.DateAndTime;
+import com.github.javafaker.Faker;
+
 import pageObjects.HRMS.HRCore.BasePage;
 import testBase.BaseClass;
 
@@ -22,6 +25,7 @@ public class LeavePage extends BasePage
 	}
 	
 	BaseClass bc=new BaseClass();
+	Faker fk=new Faker();
 	
 	@FindBy(css="a[id='TxnInstanceView_I0i3_T'] span[class='dx-vam']") WebElement leave;
 	
@@ -45,6 +49,9 @@ public class LeavePage extends BasePage
 	
 	@FindBy(xpath="//a[normalize-space()='Leave']") WebElement leavelink;
 	
+	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[9]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]") WebElement filterCell;
+	
+	@FindBy(xpath="//body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[9]") WebElement result;
 	public void clkLeave()
 	{
 		leave.click();
@@ -76,10 +83,11 @@ public class LeavePage extends BasePage
 	
 	}
 	
+	//DateAndTime date=fk.date();	
 	public void provideEffectiveDt()
 	{
 		effectiveDate.clear();
-		effectiveDate.sendKeys("11-11-2024");
+		effectiveDate.sendKeys("08-11-2024");
 	}
 	
 	public void clkLeaveTypeDD()
@@ -87,21 +95,22 @@ public class LeavePage extends BasePage
 		leavetypedd.click();
 	}
 	
-	public void slctLeaveType()
+	public void slctLeaveType() throws InterruptedException
 	{
 		absentLeave.click();
+		Thread.sleep(2000);
 	}
 	
 	public void provideFromDt()
 	{
 		fromDate.clear();
-		fromDate.sendKeys("11-11-2024");
+		fromDate.sendKeys("08-11-2024");
 	}
 	
 	public void provideUpToDt()
 	{
 		uptoDate.clear();
-		uptoDate.sendKeys("11-11-2024");
+		uptoDate.sendKeys("08-11-2024");
 	}	
 	
 	public void clkView()
@@ -119,5 +128,20 @@ public class LeavePage extends BasePage
 		leavelink.click(); 	
 	}
 	
+	public boolean isLeaveCreated() throws InterruptedException
+	{
+		filterCell.sendKeys("08-11-2024");
+		String actdt="08-Nov-2024";
+		Thread.sleep(2000);
+		String dt= result.getText();
+		if(actdt.equals(dt))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 
 }

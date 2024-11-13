@@ -13451,3 +13451,416 @@ Session ID: 89a861a65f6f7a974ebf8983e70a16f8
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-13 14:51:55.253 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 14:51:55.492 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 14:51:55.492 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 14:51:58.124 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 14:51:58.166 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 14:52:05.578 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 14:52:30.649 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 14:52:30.771 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 14:52:50.939 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 14:52:58.492 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 14:53:16.074 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 14:53:18.813 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 14:53:18.871 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 14:53:44.547 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 14:53:45.725 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 14:53:45.871 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provide effective date
+2024-11-13 14:53:45.936 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 14:53:49.138 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 14:53:58.888 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 14:54:00.094 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on approve btn
+2024-11-13 14:54:00.158 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave link
+2024-11-13 14:58:08.913 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 14:58:09.114 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 14:58:09.114 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 14:58:10.409 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 14:58:10.447 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 14:58:33.748 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 14:58:33.877 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 14:58:33.954 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 14:58:53.383 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 14:58:53.454 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 14:58:56.924 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 14:58:58.304 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 14:58:58.367 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 14:59:10.602 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 14:59:11.028 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 14:59:11.174 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provide effective date
+2024-11-13 14:59:11.370 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 14:59:13.680 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 14:59:14.471 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 14:59:14.733 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on approve btn
+2024-11-13 14:59:14.799 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave link
+2024-11-13 14:59:26.893 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 14:59:27.103 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 14:59:27.103 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 14:59:28.548 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 14:59:28.593 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 14:59:55.379 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 14:59:55.508 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 14:59:55.591 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 15:00:13.199 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 15:00:13.264 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 15:00:16.555 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 15:00:18.440 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 15:00:18.495 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 15:00:28.999 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 15:00:29.499 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 15:00:29.766 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provide effective date
+2024-11-13 15:00:29.835 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 15:06:09.549 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 15:06:09.778 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 15:06:09.779 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 15:06:11.213 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 15:06:11.250 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 15:06:37.244 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 15:06:37.392 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 15:06:37.509 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 15:06:51.105 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 15:06:51.175 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 15:06:53.265 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 15:06:54.837 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 15:06:54.894 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 15:07:05.781 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 15:07:07.171 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 15:07:07.435 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided effective date
+2024-11-13 15:07:07.505 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 15:07:18.343 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 15:07:22.564 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided from date
+2024-11-13 15:07:25.907 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided upto date
+2024-11-13 15:07:32.358 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 15:08:01.738 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on approve btn
+2024-11-13 15:08:32.144 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 15:08:32.341 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 15:08:32.341 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 15:08:33.681 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 15:08:33.713 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 15:08:59.470 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 15:08:59.611 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 15:08:59.724 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 15:09:11.832 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 15:09:11.902 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 15:09:14.489 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 15:09:15.851 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 15:09:15.905 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 15:09:28.167 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 15:09:28.563 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 15:09:28.786 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided effective date
+2024-11-13 15:09:28.851 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 15:09:31.195 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 15:09:31.385 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided from date
+2024-11-13 15:09:31.572 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided upto date
+2024-11-13 15:09:31.956 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 15:09:42.011 [main] ERROR testCases.HRMS.Payroll.TC_LeaveTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0406f6fb7838bfb476f9fd3ca94164ab, clickElement {id=f.896A6845045E6C8228ACCF54311FEACD.d.4D06B31F459974AD8ACA3D05D7997173.e.577}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58572}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58572/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0406f6fb7838bfb476f9fd3ca94164ab)] -> xpath: //span[normalize-space()='Approve']]
+Session ID: 0406f6fb7838bfb476f9fd3ca94164ab
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.26.0.jar:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LeavePage.clkApprove(LeavePage.java:115) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LeaveTest.verifyLeave(TC_LeaveTest.java:46) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-13 16:53:41.217 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 16:53:41.529 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 16:53:41.530 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 16:53:43.435 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 16:53:43.476 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 16:54:09.167 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 16:54:09.307 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 16:54:09.424 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 16:54:26.655 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 16:54:26.744 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 16:54:31.729 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 16:54:34.096 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 16:54:34.149 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 16:54:49.347 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 16:54:54.118 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 16:54:54.382 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided effective date
+2024-11-13 16:54:54.452 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 16:54:56.785 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 16:54:56.969 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided from date
+2024-11-13 16:54:57.107 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided upto date
+2024-11-13 16:54:57.623 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 16:55:07.786 [main] ERROR testCases.HRMS.Payroll.TC_LeaveTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa5520aab1088e62fe66060c2d56fac8, clickElement {id=f.099B4127B02BDD47E4DDE7B15FA495A1.d.912EE679803879729CB0EE354829B72F.e.345}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58531}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58531/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aa5520aab1088e62fe66060c2d56fac8)] -> xpath: //span[normalize-space()='Approve']]
+Session ID: aa5520aab1088e62fe66060c2d56fac8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.26.0.jar:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LeavePage.clkApprove(LeavePage.java:123) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LeaveTest.verifyLeave(TC_LeaveTest.java:46) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-13 16:56:02.436 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 16:56:02.652 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 16:56:02.653 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 16:56:04.138 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 16:56:04.187 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 16:56:26.034 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 16:56:26.169 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 16:56:26.276 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 16:56:44.261 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 16:56:44.325 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 16:56:47.798 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 16:56:49.226 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 16:56:49.294 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 16:57:01.350 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 16:57:01.782 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 16:57:02.024 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided effective date
+2024-11-13 16:57:02.098 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 16:57:04.400 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 16:57:04.540 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided from date
+2024-11-13 16:57:04.673 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided upto date
+2024-11-13 16:57:05.789 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 16:57:11.256 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on approve btn
+2024-11-13 16:57:11.507 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave link
+2024-11-13 16:59:17.357 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 16:59:17.605 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 16:59:17.605 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 16:59:19.052 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 16:59:19.099 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 16:59:44.460 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 16:59:44.593 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 16:59:44.701 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 16:59:56.247 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 16:59:56.305 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 16:59:58.220 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 16:59:59.589 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 16:59:59.647 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 17:00:12.526 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 17:00:12.967 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 17:00:13.217 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided effective date
+2024-11-13 17:00:13.288 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 17:00:15.623 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 17:00:15.839 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided from date
+2024-11-13 17:00:16.007 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided upto date
+2024-11-13 17:00:16.557 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 17:00:26.609 [main] ERROR testCases.HRMS.Payroll.TC_LeaveTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [643c54bcce37d9de6c1e67311fe9a8e4, clickElement {id=f.32166180DE28DA9FA47934C5F8BF97A5.d.12042F2BDBF07855B0C0A313330EED96.e.585}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59572}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59572/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (643c54bcce37d9de6c1e67311fe9a8e4)] -> xpath: //span[normalize-space()='Approve']]
+Session ID: 643c54bcce37d9de6c1e67311fe9a8e4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.26.0.jar:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LeavePage.clkApprove(LeavePage.java:123) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LeaveTest.verifyLeave(TC_LeaveTest.java:46) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-13 17:02:31.248 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 17:02:31.458 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 17:02:31.459 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 17:02:32.801 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 17:02:32.848 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 17:02:52.381 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 17:02:52.514 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 17:02:52.668 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 17:03:06.455 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 17:03:06.529 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 17:03:08.952 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 17:03:10.366 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 17:03:10.420 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 17:03:23.029 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 17:03:23.503 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 17:03:23.751 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided effective date
+2024-11-13 17:03:23.821 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 17:03:26.107 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 17:03:26.239 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided from date
+2024-11-13 17:03:26.381 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided upto date
+2024-11-13 17:03:27.097 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 17:03:28.191 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on approve btn
+2024-11-13 17:03:28.256 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave link
+2024-11-13 17:14:29.202 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-13 17:14:29.400 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-13 17:14:29.401 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - --test execution started--
+2024-11-13 17:14:30.787 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser opened
+2024-11-13 17:14:30.832 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - browser maximized
+2024-11-13 17:14:58.430 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided app URL in browser
+2024-11-13 17:14:58.597 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided username
+2024-11-13 17:14:58.694 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided password
+2024-11-13 17:15:11.957 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on sign in button
+2024-11-13 17:15:12.027 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on payroll link
+2024-11-13 17:15:15.130 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on txn
+2024-11-13 17:15:16.650 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave
+2024-11-13 17:15:16.713 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on new btn
+2024-11-13 17:15:27.683 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on empl dd
+2024-11-13 17:15:28.354 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - emp selected
+2024-11-13 17:15:28.624 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided effective date
+2024-11-13 17:15:28.690 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave type dd
+2024-11-13 17:15:30.994 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - leave type selected
+2024-11-13 17:15:31.170 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided from date
+2024-11-13 17:15:31.302 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - provided upto date
+2024-11-13 17:15:32.017 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
+2024-11-13 17:15:33.094 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on approve btn
+2024-11-13 17:15:33.183 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave link
