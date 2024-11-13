@@ -53,7 +53,7 @@ public class DDT_ResidencyInfo extends BaseClass
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
-			//test commit
+			
 			
 		}
 	}
