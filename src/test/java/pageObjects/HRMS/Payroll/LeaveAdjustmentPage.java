@@ -29,6 +29,18 @@ public class LeaveAdjustmentPage extends BasePage
 	
 	@FindBy(xpath="//input[@id='LeaveAdjustment.PaidDays_I']") WebElement paidDaysTB;
 	
+	@FindBy(xpath="//input[@id='LeaveAdjustment.UnpaidDays_I']") WebElement unpaidDaysTB;
+	
+	@FindBy(xpath="//textarea[@id='LeaveAdjustment.Description_I']") WebElement remarks;
+	
+	@FindBy(xpath="//span[normalize-space()='View']") WebElement view;
+	
+	@FindBy(xpath="//span[normalize-space()='Approve']") WebElement approve;
+	
+	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[6]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]") WebElement filterCell;
+	
+	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/a[1]") WebElement result;;
+	
 	public void clkLeaveAdj()
 	{
 		leaveAdjustment.click();
@@ -37,6 +49,11 @@ public class LeaveAdjustmentPage extends BasePage
 	public void clkNewBtn()
 	{
 		newbtn.click();
+	}
+	
+	public void clkEmpDD()
+	{
+		empdd.click();
 	}
 	
 	public void slctEmp()
@@ -59,5 +76,47 @@ public class LeaveAdjustmentPage extends BasePage
 		paidDaysTB.clear();
 		paidDaysTB.sendKeys("1");
 	}
+	
+	public void provideUnpaidDaysValue()
+	{
+		unpaidDaysTB.clear();
+		unpaidDaysTB.sendKeys("1");
+	}
+	
+	public void provideRemarks()
+	{
+		remarks.sendKeys("remarks");
+	}
+	
+	public void clkViewBtn()
+	{
+		view.click();
+	}
+	
+	public void clkApproveBtn() throws InterruptedException
+	{		
+		approve.click();
+		driver.navigate().back();
+		Thread.sleep(2000);
+	}
+	
+	public boolean isTxnCreated()
+	{
+		String expemp=emp.getText();
+		filterCell.sendKeys(expemp);
+		String actemp=result.getText();
+		
+		if(expemp.contains(actemp))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	
+	
 
 }

@@ -19,8 +19,9 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
-		
-			<class name="testCases.HRMS.Payroll.TC_LeaveTest"/>
+			
+			<class name="testCases.HRMS.Payroll.TC_LeaveAdjustmentTest"/>
+			<!--<class name="testCases.HRMS.Payroll.TC_LeaveTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.TC_VariableSalaryTest"/>-->
 			
 			<!-- HR Core -->

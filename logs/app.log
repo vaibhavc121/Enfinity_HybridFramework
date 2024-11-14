@@ -13864,3 +13864,166 @@ Session ID: 643c54bcce37d9de6c1e67311fe9a8e4
 2024-11-13 17:15:32.017 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on view btn
 2024-11-13 17:15:33.094 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on approve btn
 2024-11-13 17:15:33.183 [main] INFO  testCases.HRMS.Payroll.TC_LeaveTest - clicked on leave link
+2024-11-14 18:31:40.825 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-14 18:32:32.582 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-14 18:33:04.269 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-14 18:34:05.757 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-14 18:34:05.962 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-14 18:34:05.962 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - --test execution started--
+2024-11-14 18:34:08.398 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser opened
+2024-11-14 18:34:08.438 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser maximized
+2024-11-14 18:34:27.970 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided app URL in browser
+2024-11-14 18:34:28.116 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided username
+2024-11-14 18:34:28.224 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided password
+2024-11-14 18:34:41.068 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on sign in button
+2024-11-14 18:34:43.225 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on payroll link
+2024-11-14 18:34:46.080 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on txn
+2024-11-14 18:35:51.014 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-14 18:35:56.541 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-14 18:35:56.541 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - --test execution started--
+2024-11-14 18:35:57.933 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser opened
+2024-11-14 18:35:57.981 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser maximized
+2024-11-14 18:36:26.715 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided app URL in browser
+2024-11-14 18:36:26.855 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided username
+2024-11-14 18:36:26.951 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided password
+2024-11-14 18:36:41.506 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on sign in button
+2024-11-14 18:36:41.585 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on payroll link
+2024-11-14 18:36:44.442 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on txn
+2024-11-14 18:44:48.115 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-14 18:44:48.884 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-14 18:44:48.885 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - --test execution started--
+2024-11-14 18:44:51.230 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser opened
+2024-11-14 18:44:51.277 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser maximized
+2024-11-14 18:45:09.410 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided app URL in browser
+2024-11-14 18:45:09.567 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided username
+2024-11-14 18:45:09.726 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided password
+2024-11-14 18:45:23.824 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on sign in button
+2024-11-14 18:45:23.887 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on payroll link
+2024-11-14 18:45:26.609 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on txn
+2024-11-14 18:45:49.647 [main] ERROR testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Sick Leave')]"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96190a85e73ddad286be5c166bc9706b, findElement {using=xpath, value=//div[contains(text(),'Sick Leave')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60523}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60523/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96190a85e73ddad286be5c166bc9706b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LeaveAdjustmentPage.slctLeaveType(LeaveAdjustmentPage.java:71) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LeaveAdjustmentTest.verifyLeaveAdjustment(TC_LeaveAdjustmentTest.java:31) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-14 18:46:30.037 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-14 18:46:30.269 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-14 18:46:30.269 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - --test execution started--
+2024-11-14 18:46:31.651 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser opened
+2024-11-14 18:46:31.699 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - browser maximized
+2024-11-14 18:46:54.759 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided app URL in browser
+2024-11-14 18:46:54.898 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided username
+2024-11-14 18:46:54.997 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - provided password
+2024-11-14 18:47:09.728 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on sign in button
+2024-11-14 18:47:09.796 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on payroll link
+2024-11-14 18:47:12.502 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on txn
+2024-11-14 18:47:38.027 [main] ERROR testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[contains(text(),'001 | Vaibhav Chavan')]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LeaveAdjustmentPage.isTxnCreated(LeaveAdjustmentPage.java:105) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LeaveAdjustmentTest.verifyLeaveAdjustment(TC_LeaveAdjustmentTest.java:38) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
