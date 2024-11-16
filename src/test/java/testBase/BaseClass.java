@@ -42,7 +42,7 @@ public class BaseClass
 	{ "regression", "datadriven" })
 	@Parameters(
 	{ "os", "browser" })
-	public void setup(String os, String br) throws IOException
+	public void setup(String os, String browser) throws IOException
 	{
 		// Loading config.properties file
 		// read- e- input stream
@@ -85,7 +85,7 @@ public class BaseClass
 			}
 
 			// browser (we are getting browser from xml file)
-			switch (br.toLowerCase())
+			switch (browser.toLowerCase())
 			{
 			case "chrome":
 				capabilities.setBrowserName("chrome");
@@ -163,7 +163,7 @@ public class BaseClass
 //			options.addArguments("--no-sandbox"); // Required for CI environments
 //			options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
 
-			switch (br.toLowerCase())
+			switch (browser.toLowerCase())
 			{
 			case "chrome":
 				// driver = new ChromeDriver(options);
