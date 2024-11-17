@@ -22,6 +22,7 @@ public class LeaveAdjustmentPage extends BasePage
 	@FindBy(css="img[id='LeaveAdjustment.EmployeeIdLookup_B-1Img']") WebElement empdd;
 	
 	@FindBy(xpath="//div[contains(text(),'001 | Vaibhav Chavan')]") WebElement emp;
+	//public String emp1=emp.getText();
 	
 	@FindBy(css="img[id='LeaveAdjustment.LeaveTypeIdLookup_B-1Img']") WebElement leavetypedd;
 	
@@ -37,9 +38,10 @@ public class LeaveAdjustmentPage extends BasePage
 	
 	@FindBy(xpath="//span[normalize-space()='Approve']") WebElement approve;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[6]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]") WebElement filterCell;
+	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[6]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]") WebElement filterCell;;
 	
 	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/a[1]") WebElement result;;
+	
 	
 	public void clkLeaveAdj()
 	{
@@ -56,9 +58,10 @@ public class LeaveAdjustmentPage extends BasePage
 		empdd.click();
 	}
 	
-	public void slctEmp()
+	public void slctEmp() throws InterruptedException
 	{
 		emp.click();
+		Thread.sleep(2000);
 	}
 	
 	public void clkLeaveTypeDD()
@@ -102,11 +105,12 @@ public class LeaveAdjustmentPage extends BasePage
 	
 	public boolean isTxnCreated()
 	{
-		String expemp=emp.getText();
+		//String expemp=emp.getText();
+		String expemp="Vaibhav Chavan";
 		filterCell.sendKeys(expemp);
 		String actemp=result.getText();
 		
-		if(expemp.contains(actemp))
+		if(actemp.contains(expemp))
 		{
 			return true;
 		}

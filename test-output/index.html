@@ -129,11 +129,15 @@
                   <a name="verifyLeaveAdjustment">
                   </a> <!-- verifyLeaveAdjustment -->
                   <span class="method-name">verifyLeaveAdjustment</span>
-                  <div class="stack-trace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[contains(text(),&apos;001 | Vaibhav Chavan&apos;)]
+                  <div class="stack-trace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;001 | Vaibhav Chavan&apos;)]&quot;}
+  (Session info: chrome=130.0.6723.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8414495668f29c8a07b02481e8313ad, findElement {using=xpath, value=//div[contains(text(),&apos;001 | Vaibhav Chavan&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50211/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8414495668f29c8a07b02481e8313ad
 	at testCases.HRMS.Payroll.TC_LeaveAdjustmentTest.verifyLeaveAdjustment(TC_LeaveAdjustmentTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 28 stack frames
@@ -223,12 +227,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLeaveAdjustment')
 data.setCell(0, 2, 'testCases.HRMS.Payroll.TC_LeaveAdjustmentTest')
-data.setCell(0, 3, 28320);
+data.setCell(0, 3, 40331);
 window.suiteTableData['MasterTestSuite']= { tableData: data, tableDiv: 'times-div-MasterTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-MasterTestSuite">
               </div> <!-- times-div-MasterTestSuite -->
             </div> <!-- times-div -->
@@ -261,21 +265,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">24509 ms</span>
+                <span class="method-start">26968 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyLeaveAdjustment</span>
-                <span class="method-start">39470 ms</span>
+                <span class="method-start">46317 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">67817 ms</span>
+                <span class="method-start">87174 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">67821 ms</span>
+                <span class="method-start">87180 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

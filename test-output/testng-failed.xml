@@ -17,8 +17,8 @@
       <class name="testCases.HRMS.Payroll.TC_LeaveAdjustmentTest">
         <methods>
           <include name="teardown"/>
-          <include name="setup"/>
           <include name="afterMethod"/>
+          <include name="setup"/>
           <include name="verifyLeaveAdjustment"/>
           <include name="login"/>
         </methods>
