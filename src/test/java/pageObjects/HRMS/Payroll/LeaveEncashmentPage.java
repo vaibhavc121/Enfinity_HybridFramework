@@ -38,9 +38,9 @@ public class LeaveEncashmentPage extends BasePage
 	
 	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/a[1]") WebElement result;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[8]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]") WebElement filterCellPaidDays;
+	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[7]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]") WebElement filterCellPaidDays;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[7]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]") WebElement resultPaidDays;
+	@FindBy(xpath="/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[7]") WebElement resultPaidDays;
 	
 	@FindBy(xpath="//td[normalize-space()='1']") WebElement countPaidDays;
 	
@@ -54,12 +54,13 @@ public class LeaveEncashmentPage extends BasePage
 		newbtn.click();
 	}
 	
-	public void clkEmpDD()
+	public void clkEmpDD() throws InterruptedException
 	{
 		empdd.click();
+		Thread.sleep(3000);
 	}
 	
-	public void slctEmp()
+	public void slctEmp() throws InterruptedException
 	{
 		List<WebElement> employees= driver.findElements(By.xpath("//div[@class='grid-row-template']"));
 		
@@ -73,6 +74,8 @@ public class LeaveEncashmentPage extends BasePage
 				emp.click(); 	 	
 			}
 		}
+		
+		Thread.sleep(2000);
 	}
 	
 	public void clkLeaveTypeDD()
@@ -91,9 +94,14 @@ public class LeaveEncashmentPage extends BasePage
 		paidDaysTB.sendKeys("1");
 	}
 	
-	public void clkViewBtn() throws InterruptedException
+	public void clkViewBtn() 
 	{
-		CommonActions.clkView();
+		CommonActions.clkView();		
+	}
+	
+	public void clkApproveBtn() throws InterruptedException
+	{
+		CommonActions.clkApprove();;
 		driver.navigate().back();
 		Thread.sleep(2000);
 	}

@@ -14439,3 +14439,277 @@ Session ID: c8414495668f29c8a07b02481e8313ad
 2024-11-17 15:33:32.641 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on sign in button
 2024-11-17 15:33:32.725 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on payroll link
 2024-11-17 15:33:37.582 [main] INFO  testCases.HRMS.Payroll.TC_LeaveAdjustmentTest - clicked on txn
+2024-11-18 17:46:54.054 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 17:46:54.488 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 17:46:54.489 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 17:47:01.889 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 17:47:02.261 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 17:47:02.261 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 17:47:05.524 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 17:47:05.583 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 17:47:31.357 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided app URL in browser
+2024-11-18 17:47:31.561 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided username
+2024-11-18 17:47:31.681 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided password
+2024-11-18 17:47:46.742 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on sign in button
+2024-11-18 17:47:53.417 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on payroll link
+2024-11-18 17:47:55.303 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on txn
+2024-11-18 17:49:10.513 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave incashment
+2024-11-18 17:49:14.461 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on new btn
+2024-11-18 17:49:37.060 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on emp dd
+2024-11-18 17:49:46.653 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - employee selected
+2024-11-18 17:49:58.004 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave type dd
+2024-11-18 17:50:01.579 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - selected leave type
+2024-11-18 17:50:40.428 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided paid days
+2024-11-18 17:50:56.717 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on view btn
+2024-11-18 18:23:51.026 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 18:23:51.360 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 18:23:51.360 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 18:23:53.390 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 18:23:53.444 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 18:26:12.330 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 18:26:12.677 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 18:26:12.678 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 18:26:14.532 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 18:26:14.577 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 18:26:35.458 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided app URL in browser
+2024-11-18 18:26:35.650 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided username
+2024-11-18 18:26:35.793 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided password
+2024-11-18 18:26:50.278 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on sign in button
+2024-11-18 18:26:50.369 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on payroll link
+2024-11-18 18:26:53.643 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on txn
+2024-11-18 18:27:10.785 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave incashment
+2024-11-18 18:27:29.852 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on new btn
+2024-11-18 18:28:00.907 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on emp dd
+2024-11-18 18:28:03.899 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - employee selected
+2024-11-18 18:28:05.891 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave type dd
+2024-11-18 18:28:19.387 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - selected leave type
+2024-11-18 18:28:31.723 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided paid days
+2024-11-18 18:29:21.300 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on view btn
+2024-11-18 18:30:27.914 [main] ERROR testCases.HRMS.Payroll.TC_LeaveEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/a[1]"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ebdfb7154714c220e4972f0d8a8196e2, findElement {value=/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/a[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65042}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65042/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebdfb7154714c220e4972f0d8a8196e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LeaveEncashmentPage.isTxnCreated(LeaveEncashmentPage.java:110) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LeaveEncashmentTest.verifyLeaveEncashment(Unknown Source) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-18 18:30:46.391 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 18:30:46.765 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 18:30:46.765 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 18:30:48.745 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 18:30:48.802 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 18:31:16.657 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided app URL in browser
+2024-11-18 18:31:16.836 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided username
+2024-11-18 18:31:16.944 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided password
+2024-11-18 18:31:40.051 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on sign in button
+2024-11-18 18:31:40.165 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on payroll link
+2024-11-18 18:31:45.082 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on txn
+2024-11-18 18:31:57.806 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave incashment
+2024-11-18 18:32:17.267 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on new btn
+2024-11-18 18:32:20.603 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on emp dd
+2024-11-18 18:32:33.419 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - employee selected
+2024-11-18 18:32:36.003 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave type dd
+2024-11-18 18:33:28.918 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 18:33:29.285 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 18:33:29.286 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 18:33:31.184 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 18:33:31.227 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 18:33:57.368 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided app URL in browser
+2024-11-18 18:33:57.548 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided username
+2024-11-18 18:33:57.666 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided password
+2024-11-18 18:34:16.563 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on sign in button
+2024-11-18 18:34:16.649 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on payroll link
+2024-11-18 18:34:21.350 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on txn
+2024-11-18 18:34:23.973 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave incashment
+2024-11-18 18:34:24.050 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on new btn
+2024-11-18 18:34:37.194 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on emp dd
+2024-11-18 18:34:47.270 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - employee selected
+2024-11-18 18:34:47.354 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave type dd
+2024-11-18 18:34:57.385 [main] ERROR testCases.HRMS.Payroll.TC_LeaveEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Condolence Leave')]"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a593edbe56ba2c4b70a5467bedfb9d91, findElement {using=xpath, value=//div[contains(text(),'Condolence Leave')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49844/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a593edbe56ba2c4b70a5467bedfb9d91
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LeaveEncashmentPage.slctLeaveType(LeaveEncashmentPage.java:85) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LeaveEncashmentTest.verifyLeaveEncashment(TC_LeaveEncashmentTest.java:36) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-18 18:37:53.505 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 18:37:53.869 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 18:37:53.870 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 18:37:55.789 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 18:37:55.842 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 18:38:19.064 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided app URL in browser
+2024-11-18 18:38:19.239 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided username
+2024-11-18 18:38:19.399 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided password
+2024-11-18 18:38:34.382 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on sign in button
+2024-11-18 18:38:34.506 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on payroll link
+2024-11-18 18:38:38.090 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on txn
+2024-11-18 18:38:39.984 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave incashment
+2024-11-18 18:38:40.051 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on new btn
+2024-11-18 18:38:56.193 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on emp dd
+2024-11-18 18:38:58.355 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - employee selected
+2024-11-18 18:38:58.445 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave type dd
+2024-11-18 18:38:58.829 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - selected leave type
+2024-11-18 18:38:59.043 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided paid days
+2024-11-18 18:38:59.744 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on view btn
+2024-11-18 18:39:02.656 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on approve btn
+2024-11-18 18:43:56.537 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 18:43:56.914 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 18:43:56.914 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 18:43:58.807 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 18:43:58.863 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 18:44:24.527 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided app URL in browser
+2024-11-18 18:44:24.716 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided username
+2024-11-18 18:44:24.896 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided password
+2024-11-18 18:44:38.526 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on sign in button
+2024-11-18 18:44:38.618 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on payroll link
+2024-11-18 18:44:42.377 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on txn
+2024-11-18 18:44:44.107 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave incashment
+2024-11-18 18:44:44.187 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on new btn
+2024-11-18 18:44:59.714 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on emp dd
+2024-11-18 18:45:01.858 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - employee selected
+2024-11-18 18:45:01.930 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave type dd
+2024-11-18 18:45:02.354 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - selected leave type
+2024-11-18 18:45:02.589 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided paid days
+2024-11-18 18:45:03.370 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on view btn
+2024-11-18 18:45:05.853 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on approve btn
+2024-11-18 18:49:10.064 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-18 18:49:10.412 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-18 18:49:10.412 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - --test execution started--
+2024-11-18 18:49:12.503 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser opened
+2024-11-18 18:49:12.549 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - browser maximized
+2024-11-18 18:49:40.203 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided app URL in browser
+2024-11-18 18:49:40.375 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided username
+2024-11-18 18:49:40.534 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided password
+2024-11-18 18:49:55.595 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on sign in button
+2024-11-18 18:49:55.686 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on payroll link
+2024-11-18 18:50:00.208 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on txn
+2024-11-18 18:50:01.814 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave incashment
+2024-11-18 18:50:01.890 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on new btn
+2024-11-18 18:50:17.548 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on emp dd
+2024-11-18 18:50:19.716 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - employee selected
+2024-11-18 18:50:19.789 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on leave type dd
+2024-11-18 18:50:20.171 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - selected leave type
+2024-11-18 18:50:20.436 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - provided paid days
+2024-11-18 18:50:21.120 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on view btn
+2024-11-18 18:50:25.320 [main] INFO  testCases.HRMS.Payroll.TC_LeaveEncashmentTest - clicked on approve btn

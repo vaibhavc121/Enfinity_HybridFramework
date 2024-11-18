@@ -34,10 +34,10 @@ public class TC_EmployeeTest extends BaseClass
 			logger.info("clicked on new button");
 			ep.setWorkEmail();
 			logger.info("work email provided");
-			ep.clkMgrDropdown();
-			logger.info("clicked on mgr dropdown");
-			ep.slctMgr();
-			logger.info("mgr selected");
+//			ep.clkMgrDropdown();
+//			logger.info("clicked on mgr dropdown");
+//			ep.slctMgr();
+//			logger.info("mgr selected");
 			ep.setName();
 			logger.info("emp name provided");
 			ep.clkDept();

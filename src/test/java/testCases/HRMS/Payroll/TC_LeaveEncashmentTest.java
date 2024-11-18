@@ -24,13 +24,23 @@ public class TC_LeaveEncashmentTest extends BaseClass
 			//Leave Encashment pg
 			LeaveEncashmentPage le=new LeaveEncashmentPage(driver);
 			le.clkLeaveEncashment();
+			logger.info("clicked on leave incashment");
 			le.clkNewBtn();
+			logger.info("clicked on new btn");
 			le.clkEmpDD();
+			logger.info("clicked on emp dd");
 			le.slctEmp();
+			logger.info("employee selected");
 			le.clkLeaveTypeDD();
+			logger.info("clicked on leave type dd");
 			le.slctLeaveType();
+			logger.info("selected leave type");
 			le.providePaidDays();
+			logger.info("provided paid days");
 			le.clkViewBtn();
+			logger.info("clicked on view btn");
+			le.clkApproveBtn();
+			logger.info("clicked on approve btn");
 			
 			Assert.assertTrue(le.isTxnCreated());
 			
