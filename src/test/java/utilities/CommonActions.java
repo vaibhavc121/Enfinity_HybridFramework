@@ -16,5 +16,10 @@ public class CommonActions
 	{
 		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='Approve']")).click();				
 	}
+	
+	public static void clkNew()
+	{
+		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='New']")).click();
+	}
 
 }
