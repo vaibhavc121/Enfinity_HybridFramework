@@ -14864,3 +14864,323 @@ Session ID: d3ac383f3a2380c3c909293f990c98a3
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-19 18:53:33.295 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-19 18:53:33.491 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-19 18:53:33.491 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-19 18:53:34.912 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-19 18:53:34.968 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-19 18:54:00.837 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-19 18:54:00.973 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided username
+2024-11-19 18:54:01.053 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided password
+2024-11-19 18:54:20.347 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on sign in button
+2024-11-19 18:54:20.452 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on payroll link
+2024-11-19 18:54:23.819 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on txn
+2024-11-19 18:54:25.829 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind adj
+2024-11-19 18:54:25.909 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on new btn
+2024-11-19 18:54:39.958 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on emp dd
+2024-11-19 18:54:49.994 [main] ERROR testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'003 | rahul')]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55367e418fdb5f931009afea716fbf20, findElement {value=//div[contains(text(),'003 | rahul')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54341/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55367e418fdb5f931009afea716fbf20
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.IndemnityAdjustmentPage.slctEmp(IndemnityAdjustmentPage.java:64) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest.verifyIndemnityAdjustment(TC_IndemnityAdjustmentTest.java:32) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-20 13:43:52.002 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-20 13:43:52.399 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-20 13:43:52.399 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-20 13:43:56.779 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-20 13:43:56.821 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-20 13:44:18.521 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-20 13:44:18.714 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided username
+2024-11-20 13:44:18.870 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided password
+2024-11-20 13:44:36.734 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on sign in button
+2024-11-20 13:44:40.059 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on payroll link
+2024-11-20 13:44:41.922 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on txn
+2024-11-20 13:44:43.661 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind adj
+2024-11-20 13:44:43.767 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on new btn
+2024-11-20 13:45:00.711 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on emp dd
+2024-11-20 13:45:02.846 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - emp selected
+2024-11-20 13:45:03.050 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind dd
+2024-11-20 13:45:03.452 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - end selected
+2024-11-20 13:45:03.683 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - paid days provided
+2024-11-20 13:45:04.231 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on view
+2024-11-20 13:45:14.417 [main] ERROR testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.70)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3124e88f669611f5647c082a8477005, clickElement {id=f.3E8B4AE79C3DC5ACB57756C3568B2D10.d.6B88419B3A1268A509F820618E4631F8.e.433}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50724}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50724/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3124e88f669611f5647c082a8477005)] -> xpath: //span[normalize-space()='Approve']]
+Session ID: c3124e88f669611f5647c082a8477005
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.26.0.jar:?]
+	at utilities.CommonActions.clkApprove(CommonActions.java:17) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.IndemnityAdjustmentPage.clkApprove(IndemnityAdjustmentPage.java:91) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest.verifyIndemnityAdjustment(TC_IndemnityAdjustmentTest.java:42) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-20 17:13:03.607 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-20 17:13:03.955 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-20 17:13:03.956 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-20 17:13:06.207 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-20 17:13:06.262 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-20 17:13:31.067 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-20 17:13:31.236 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided username
+2024-11-20 17:13:31.397 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided password
+2024-11-20 17:13:48.160 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on sign in button
+2024-11-20 17:13:51.186 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on payroll link
+2024-11-20 17:13:53.040 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on txn
+2024-11-20 17:13:55.288 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind adj
+2024-11-20 17:13:55.395 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on new btn
+2024-11-20 17:14:12.326 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on emp dd
+2024-11-20 17:14:14.465 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - emp selected
+2024-11-20 17:14:14.657 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind dd
+2024-11-20 17:14:15.042 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - end selected
+2024-11-20 17:14:17.270 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - paid days provided
+2024-11-20 17:14:18.288 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on view
+2024-11-20 17:14:21.957 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on approve
+2024-11-20 17:14:32.002 [main] ERROR testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dx-editor-cell dx-focused']//input[@aria-label='Filter cell']"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b2553c02d3c9519147ebbb3dea76c2f, findElement {using=xpath, value=//td[@class='dx-editor-cell dx-focused']//input[@aria-label='Filter cell']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60834}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60834/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b2553c02d3c9519147ebbb3dea76c2f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.IndemnityAdjustmentPage.isTxnCreated(IndemnityAdjustmentPage.java:103) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest.verifyIndemnityAdjustment(TC_IndemnityAdjustmentTest.java:45) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-20 17:22:53.338 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-20 17:22:53.689 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-20 17:22:53.690 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-20 17:22:55.509 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-20 17:22:55.561 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-20 17:23:21.513 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-20 17:23:21.687 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided username
+2024-11-20 17:23:21.854 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided password
+2024-11-20 17:23:37.427 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on sign in button
+2024-11-20 17:23:37.553 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on payroll link
+2024-11-20 17:23:43.422 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on txn
+2024-11-20 17:23:45.166 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind adj
+2024-11-20 17:23:45.267 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on new btn
+2024-11-20 17:23:59.507 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on emp dd
+2024-11-20 17:24:01.657 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - emp selected
+2024-11-20 17:24:01.754 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind dd
+2024-11-20 17:24:02.206 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - end selected
+2024-11-20 17:24:04.423 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - paid days provided
+2024-11-20 17:24:04.981 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on view
+2024-11-20 17:24:08.426 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on approve
+2024-11-20 17:24:40.241 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-20 17:24:40.604 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-20 17:24:40.604 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-20 17:24:42.476 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-20 17:24:42.525 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-20 17:25:06.788 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-20 17:25:06.968 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided username
+2024-11-20 17:25:07.121 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided password
+2024-11-20 17:25:20.825 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on sign in button
+2024-11-20 17:25:20.958 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on payroll link
+2024-11-20 17:25:24.690 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on txn
+2024-11-20 17:25:26.499 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind adj
+2024-11-20 17:25:26.598 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on new btn
+2024-11-20 17:25:41.478 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on emp dd
+2024-11-20 17:25:43.601 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - emp selected
+2024-11-20 17:25:43.717 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind dd
+2024-11-20 17:25:44.076 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - end selected
+2024-11-20 17:25:46.270 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - paid days provided
+2024-11-20 17:25:46.912 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on view
+2024-11-20 17:25:50.320 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on approve
+2024-11-20 17:30:31.018 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-20 17:30:31.395 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-20 17:30:31.396 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-20 17:30:33.283 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-20 17:30:33.337 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-20 17:31:02.718 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-20 17:31:02.894 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided username
+2024-11-20 17:31:03.066 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided password
+2024-11-20 17:31:15.881 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on sign in button
+2024-11-20 17:31:16.007 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on payroll link
+2024-11-20 17:31:19.901 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on txn
+2024-11-20 17:31:21.724 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind adj
+2024-11-20 17:31:21.827 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on new btn
+2024-11-20 17:31:37.425 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on emp dd
+2024-11-20 17:31:39.557 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - emp selected
+2024-11-20 17:31:39.687 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind dd
+2024-11-20 17:31:40.090 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - end selected
+2024-11-20 17:31:42.383 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - paid days provided
+2024-11-20 17:31:42.965 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on view
+2024-11-20 17:31:47.831 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on approve
+2024-11-20 17:51:20.847 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-20 17:51:21.227 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-20 17:51:21.227 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-20 17:51:23.088 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-20 17:51:23.148 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-20 17:51:44.044 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-20 17:51:44.233 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided username
+2024-11-20 17:51:44.366 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided password
+2024-11-20 17:51:58.378 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on sign in button
+2024-11-20 17:51:58.504 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on payroll link
+2024-11-20 17:52:02.366 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on txn
+2024-11-20 17:52:04.171 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind adj
+2024-11-20 17:52:04.297 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on new btn
+2024-11-20 17:52:19.372 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on emp dd
+2024-11-20 17:52:21.487 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - emp selected
+2024-11-20 17:52:21.685 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on ind dd
+2024-11-20 17:52:22.079 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - end selected
+2024-11-20 17:52:24.286 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - paid days provided
+2024-11-20 17:52:24.944 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on view
+2024-11-20 17:52:29.838 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on approve
