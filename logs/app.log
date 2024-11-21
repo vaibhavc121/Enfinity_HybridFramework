@@ -15184,3 +15184,658 @@ Session ID: 6b2553c02d3c9519147ebbb3dea76c2f
 2024-11-20 17:52:24.286 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - paid days provided
 2024-11-20 17:52:24.944 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on view
 2024-11-20 17:52:29.838 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - clicked on approve
+2024-11-21 14:01:10.278 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 14:01:10.526 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 14:01:10.527 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 14:01:13.040 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 14:01:13.090 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 14:01:14.123 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 14:01:14.233 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 14:01:14.233 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - --test execution started--
+2024-11-21 14:01:15.133 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser opened
+2024-11-21 14:01:15.171 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - browser maximized
+2024-11-21 14:01:15.891 [main] INFO  testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest - provided app URL in browser
+2024-11-21 14:01:44.749 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 14:01:44.958 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 14:01:44.959 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 14:01:46.325 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 14:01:46.365 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 14:02:04.087 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 14:02:04.219 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 14:02:04.327 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 14:02:17.591 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 14:02:17.675 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 14:02:21.630 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 14:03:57.720 [main] ERROR testCases.HRMS.Payroll.TC_BenefitEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/span\[\@id\=\'BenefitSchemeEncashment\.EffectiveDate_DDD_C_T\'\]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38739b0bd751d5a592191845835fbc56, findElement {value=//span[@id='BenefitSchemeEncashment.EffectiveDate_DDD_C_T'], using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57651/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38739b0bd751d5a592191845835fbc56
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at pageObjects.HRMS.Payroll.BenefitEncashmentPage.slctEffectiveDate(BenefitEncashmentPage.java:51) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_BenefitEncashmentTest.verifyBenefitEncashment(TC_BenefitEncashmentTest.java:29) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-21 15:28:25.979 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 15:28:26.183 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 15:28:26.184 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 15:28:28.100 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 15:28:28.148 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 15:28:55.119 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 15:28:55.243 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 15:28:55.357 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 15:29:15.871 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 15:29:15.967 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 15:29:19.359 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 15:30:37.382 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 15:30:37.612 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 15:30:37.613 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 15:30:39.006 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 15:30:39.044 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 15:31:10.868 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 15:31:11.011 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 15:31:11.121 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 15:31:26.082 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 15:31:26.173 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 15:31:30.064 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:22:26.159 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:22:26.556 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:22:26.556 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:22:29.003 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:22:29.056 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:22:57.320 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:22:57.505 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:22:57.678 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:23:12.106 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:23:12.234 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:23:17.085 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:23:28.341 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:23:55.007 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:24:22.351 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:25:09.456 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:30:38.788 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:30:39.172 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:30:39.173 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:30:41.117 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:30:41.164 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:31:01.577 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:31:01.758 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:31:01.922 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:31:12.876 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:31:12.996 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:31:16.848 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:31:28.121 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:31:34.080 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:31:46.056 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:31:49.175 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:31:54.967 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 17:32:14.198 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 17:32:22.583 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 17:36:18.386 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:36:18.779 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:36:18.780 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:36:20.725 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:36:20.766 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:36:46.918 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:36:47.097 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:36:47.277 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:37:03.150 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:37:03.279 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:37:07.787 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:37:09.799 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:37:09.907 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:37:24.797 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:37:24.978 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:37:27.116 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 17:37:29.239 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 17:37:37.921 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 17:37:47.990 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 17:39:38.999 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 17:39:45.520 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 17:39:48.312 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 17:39:52.927 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve
+2024-11-21 17:41:57.445 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:41:57.840 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:41:57.840 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:41:59.824 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:41:59.879 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:42:27.918 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:42:28.100 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:42:28.255 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:42:43.304 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:42:43.415 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:42:47.892 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:42:49.717 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:42:49.843 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:43:03.571 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:43:03.764 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:43:05.905 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 17:43:08.031 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 17:43:10.138 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 17:43:12.252 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 17:43:12.447 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 17:43:12.624 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 17:43:13.231 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 17:43:15.766 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve
+2024-11-21 17:49:39.003 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:49:39.388 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:49:39.388 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:49:41.336 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:49:41.384 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:50:10.258 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:50:10.480 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:50:10.602 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:50:28.669 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:50:28.867 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:50:34.544 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:50:37.074 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:50:37.187 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:50:51.249 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:50:51.446 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:50:53.569 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 17:51:03.629 [main] ERROR testCases.HRMS.Payroll.TC_BenefitEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'001 | Vaibhav Chavan')]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [344f5ec2fce46b7d0ce097de2406260e, findElement {value=//div[contains(text(),'001 | Vaibhav Chavan')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58954}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58954/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 344f5ec2fce46b7d0ce097de2406260e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.BenefitEncashmentPage.slctEmp(BenefitEncashmentPage.java:105) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_BenefitEncashmentTest.verifyBenefitEncashment(TC_BenefitEncashmentTest.java:36) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-21 17:51:21.190 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:51:21.617 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:51:21.617 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:51:23.656 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:51:23.709 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:51:49.575 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:51:49.767 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:51:49.887 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:52:10.065 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:52:10.185 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:52:18.136 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:52:21.029 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:52:21.130 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:52:33.525 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:52:33.740 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:52:35.891 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 17:52:47.662 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 17:52:49.784 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 17:52:59.828 [main] ERROR testCases.HRMS.Payroll.TC_BenefitEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"td[id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_DDD_gv_tcrow0'] div[class='lookup-text']"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9db1595821db77237b7d274cd2bb0b3c, findElement {using=css selector, value=td[id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_DDD_gv_tcrow0'] div[class='lookup-text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59238/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9db1595821db77237b7d274cd2bb0b3c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.BenefitEncashmentPage.slctBenefitSceme(BenefitEncashmentPage.java:117) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_BenefitEncashmentTest.verifyBenefitEncashment(TC_BenefitEncashmentTest.java:40) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-21 17:53:39.222 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:53:39.660 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:53:39.660 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:53:41.757 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:53:41.806 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:54:10.139 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:54:10.329 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:54:10.455 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:54:30.803 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:54:30.929 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:54:36.774 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:54:39.695 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:54:39.796 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:54:53.801 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:54:53.987 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:54:56.131 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 17:55:06.173 [main] ERROR testCases.HRMS.Payroll.TC_BenefitEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'001 | Vaibhav Chavan')]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfff9e9c2236ed5fd9f559dbee7d759a, findElement {using=xpath, value=//div[contains(text(),'001 | Vaibhav Chavan')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59619}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59619/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfff9e9c2236ed5fd9f559dbee7d759a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.BenefitEncashmentPage.slctEmp(BenefitEncashmentPage.java:105) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_BenefitEncashmentTest.verifyBenefitEncashment(TC_BenefitEncashmentTest.java:36) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-21 17:55:34.538 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 17:55:34.909 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 17:55:34.910 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 17:55:36.857 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 17:55:36.917 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 17:55:56.260 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 17:55:56.448 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 17:55:56.607 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 17:56:10.497 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 17:56:10.616 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 17:56:14.855 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 17:56:16.966 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 17:56:17.068 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 17:56:32.468 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 17:56:32.642 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 17:56:34.799 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 17:56:44.816 [main] ERROR testCases.HRMS.Payroll.TC_BenefitEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'001 | Vaibhav Chavan')]"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59b4671bf098c411a49eca5f2e439684, findElement {using=xpath, value=//div[contains(text(),'001 | Vaibhav Chavan')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59932/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59b4671bf098c411a49eca5f2e439684
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.26.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.26.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.BenefitEncashmentPage.slctEmp(BenefitEncashmentPage.java:105) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_BenefitEncashmentTest.verifyBenefitEncashment(TC_BenefitEncashmentTest.java:36) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-21 18:01:55.070 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 18:01:55.462 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 18:01:55.462 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 18:01:57.477 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 18:01:57.531 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 18:02:19.803 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 18:02:19.999 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 18:02:20.118 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 18:02:42.141 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 18:02:42.324 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 18:02:47.373 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 18:02:49.713 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 18:02:49.862 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 18:03:03.581 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 18:03:03.756 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 18:03:07.875 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 18:03:10.018 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 18:03:12.181 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 18:03:14.317 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 18:03:14.468 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 18:03:14.623 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 18:03:15.251 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 18:03:19.118 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve
+2024-11-21 18:14:01.889 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 18:14:02.277 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 18:14:02.277 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 18:14:04.193 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 18:14:04.252 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 18:14:29.020 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 18:14:29.213 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 18:14:29.330 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 18:14:48.296 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 18:14:48.409 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 18:14:54.057 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 18:14:56.532 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 18:14:56.636 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 18:15:09.476 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 18:15:09.659 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 18:15:13.785 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 18:15:15.905 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 18:15:18.061 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 18:15:20.191 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 18:15:20.336 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 18:15:20.494 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 18:15:21.043 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 18:15:23.439 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve
+2024-11-21 18:20:57.282 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 18:20:57.626 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 18:20:57.627 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 18:20:59.467 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 18:20:59.516 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 18:21:24.244 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 18:21:24.424 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 18:21:24.573 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 18:21:40.108 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 18:21:40.233 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 18:21:44.536 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 18:21:46.279 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 18:21:46.386 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 18:21:57.260 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 18:21:57.437 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 18:22:01.552 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 18:22:03.673 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 18:22:05.817 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 18:22:07.949 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 18:22:08.096 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 18:22:08.256 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 18:22:08.746 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 18:22:11.196 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve
+2024-11-21 18:43:51.692 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 18:43:51.927 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 18:43:51.927 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 18:43:53.581 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 18:43:53.630 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 18:44:16.834 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 18:44:16.962 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 18:44:17.075 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 18:44:32.481 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 18:44:32.570 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 18:44:35.999 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 18:44:37.618 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 18:44:37.718 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 18:44:49.448 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 18:44:49.591 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 18:44:53.679 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 18:44:55.794 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 18:44:57.887 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 18:44:59.988 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 18:45:00.162 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 18:45:00.271 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 18:45:01.114 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 18:45:05.485 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve
+2024-11-21 18:49:58.397 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 18:49:58.617 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 18:49:58.617 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 18:50:00.017 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 18:50:00.056 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 18:50:21.622 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 18:50:21.739 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 18:50:21.838 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 18:50:35.993 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 18:50:36.080 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 18:50:38.820 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 18:50:40.539 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 18:50:40.616 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 18:50:52.206 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 18:50:52.349 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 18:50:56.443 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 18:50:58.541 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 18:51:00.644 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 18:51:02.844 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 18:51:02.943 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 18:51:03.050 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 18:51:03.475 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 18:51:05.869 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve
+2024-11-21 18:55:39.824 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-21 18:55:40.043 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-21 18:55:40.044 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - --test execution started--
+2024-11-21 18:55:41.478 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser opened
+2024-11-21 18:55:41.524 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - browser maximized
+2024-11-21 18:56:01.377 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided app URL in browser
+2024-11-21 18:56:01.510 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided username
+2024-11-21 18:56:01.634 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - provided password
+2024-11-21 18:56:15.901 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on sign in button
+2024-11-21 18:56:16.478 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on payroll link
+2024-11-21 18:56:19.045 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on txn
+2024-11-21 18:56:20.774 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit encashment
+2024-11-21 18:56:20.877 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on new btn
+2024-11-21 18:56:31.391 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on effective dt dd
+2024-11-21 18:56:31.524 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - slctd effective dt
+2024-11-21 18:56:35.613 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on emp dd
+2024-11-21 18:56:37.786 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - employee slctd
+2024-11-21 18:56:39.890 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on benefit sceme dd
+2024-11-21 18:56:42.026 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - benefit sceme slctd
+2024-11-21 18:56:42.176 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - req amt provided
+2024-11-21 18:56:42.292 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - approved amt provided
+2024-11-21 18:56:42.749 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on view
+2024-11-21 18:56:45.151 [main] INFO  testCases.HRMS.Payroll.TC_BenefitEncashmentTest - clicked on approve

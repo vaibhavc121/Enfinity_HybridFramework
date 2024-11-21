@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest">
+      <class name="testCases.HRMS.Payroll.TC_BenefitEncashmentTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyIndemnityAdjustment"/>
-          <include name="setup"/>
+          <include name="verifyBenefitEncashment"/>
           <include name="afterMethod"/>
+          <include name="setup"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest -->
+      </class> <!-- testCases.HRMS.Payroll.TC_BenefitEncashmentTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->
