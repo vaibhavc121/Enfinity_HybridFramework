@@ -146,14 +146,14 @@ public class BenefitEncashmentPage extends BasePage
 		String expemp= "Vaibhav Chavan";
 		String expBenefitSceme="Health Insurance";
 		String expapprovedAmt="100";
-		String expEffectiveDate="20-11-2024"; //can replace effectivedt
+		String expEffectiveDate="20-Nov-2024"; //can replace effectivedt
 		CommonActions.filterCell5(expEffectiveDate);
 		CommonActions.filterCell6(expemp);
 		CommonActions.filterCell7(expBenefitSceme);
 		CommonActions.filterCell9(expapprovedAmt);
 		
 		
-		if(CommonActions.result5().contains(effectivedt) && CommonActions.result6().contains(expemp) && CommonActions.result7().contains(expBenefitSceme) && CommonActions.result9().contains(expapprovedAmt))
+		if(CommonActions.result5().contains(expEffectiveDate) && CommonActions.result6().contains(expemp) && CommonActions.result7().contains(expBenefitSceme) && CommonActions.result9().contains(expapprovedAmt))
 		//if(CommonActions.result6().contains(expemp) && CommonActions.result7().equals(expBenefitSceme))
 		{
 			return true;

@@ -1,12 +1,20 @@
 package utilities;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 
 import testBase.BaseClass;
 
 public class CommonActions
 {
+				
+	public static void clkSave()
+	{
+		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='Save']")).click();
+	}
 	
 	public static void clkView()
 	{
@@ -22,6 +30,20 @@ public class CommonActions
 	public static void clkNew()
 	{
 		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='New']")).click();
+	}
+	
+	public static void setDropdownValue(String value)
+	{		
+		List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
+		for (WebElement valuenm : valueslist)
+		{
+			String actvalue = valuenm.getText();
+			if (actvalue.contains(value))
+			{
+				valuenm.click();
+				break;
+			}
+		}
 	}
 	
 	public static void filterCell2(String name)
