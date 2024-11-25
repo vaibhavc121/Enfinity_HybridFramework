@@ -32,9 +32,9 @@ public class CommonActions
 		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='New']")).click();
 	}
 	
-	public static void setDropdownValue(String value)
+	public static void setDropdownValue(String value) throws InterruptedException
 	{		
-		List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
+		List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='grid-row-template']"));
 		for (WebElement valuenm : valueslist)
 		{
 			String actvalue = valuenm.getText();
@@ -44,6 +44,7 @@ public class CommonActions
 				break;
 			}
 		}
+		Thread.sleep(2000);
 	}
 	
 	public static void filterCell2(String name)

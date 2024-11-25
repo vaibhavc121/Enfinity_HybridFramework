@@ -36,7 +36,7 @@ public class TicketEncashmentPage extends BasePage
 		empdd.click();
 	}
 	
-	public void slctEmp()
+	public void slctEmp() throws InterruptedException
 	{
 		CommonActions.setDropdownValue("Vaibhav Chavan");
 	}
@@ -48,7 +48,7 @@ public class TicketEncashmentPage extends BasePage
 	
 	public boolean checkAvailableTicket()
 	{
-		String availableTicket= driver.findElement(By.xpath("//div[normalize-space()='-0.391']")).getText();
+		String availableTicket= driver.findElement(By.xpath("/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[5]")).getText();
 		
 		int availableTicketInt=Integer.parseInt(availableTicket);
 		if(availableTicketInt < 1)
