@@ -1,5 +1,7 @@
 package utilities;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -45,6 +47,24 @@ public class CommonActions
 			}
 		}
 		Thread.sleep(2000);
+	}
+	
+	public static String formattedDateMMM()
+	{
+		// need date in "dd-MMM-yyyy" format
+        LocalDate currentDate = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy");
+        String formattedDate = currentDate.format(formatter);
+        return formattedDate;
+	}
+	
+	public static String formattedDateMM()
+	{
+		// need date in "dd-MMM-yyyy" format
+        LocalDate currentDate = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String formattedDate = currentDate.format(formatter);
+        return formattedDate;
 	}
 	
 	public static void filterCell2(String name)

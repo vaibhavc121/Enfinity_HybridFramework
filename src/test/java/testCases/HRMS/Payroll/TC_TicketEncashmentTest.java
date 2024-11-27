@@ -27,6 +27,7 @@ public class TC_TicketEncashmentTest extends BaseClass
 			te.clkNew();
 			te.clkEmpDD();
 			te.slctEmp();
+			te.provideEffectiveDate();
 			te.clkSave();
 			if(te.checkAvailableTicket())
 			{
@@ -34,7 +35,19 @@ public class TC_TicketEncashmentTest extends BaseClass
 			}
 			else 
 			{
+				te.provideIssueTicket();
+				te.clkView();
+				te.clkApprove();
 				
+				if (te.isTicketIssued())
+				{
+					Assert.assertTrue(true);
+				}
+				else 
+				{
+					//logger.error("Test failed due to exception: ", e);
+					Assert.fail("Test case failed: " );
+				}
 			}
 			Assert.assertTrue(true);
 		}
