@@ -49,6 +49,40 @@ public class CommonActions
 		Thread.sleep(2000);
 	}
 	
+	public static void setDropdownValue1(String value) throws InterruptedException
+	{		
+		List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='grid-row-template']"));
+		for (WebElement valuenm : valueslist)
+		{
+			String actvalue = valuenm.getText();
+			
+			while(!actvalue.contains(value))
+			{
+				BaseClass.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
+			}
+			
+			if (actvalue.contains(value))
+			{
+				valuenm.click();
+				break;
+			}
+			
+			//valuenm.click();
+			//break;
+//			if (!actvalue.contains(value))
+//			{
+//				//@FindBy(xpath="//i[@class='dx-icon dx-icon-next-icon']") WebElement next-icon;
+//				BaseClass.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
+//			}
+//			else 
+//			{
+//				valuenm.click();
+//				break;
+//			}
+		}
+		Thread.sleep(2000);
+	}
+	
 	public static String formattedDateMMM()
 	{
 		// need date in "dd-MMM-yyyy" format

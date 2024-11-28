@@ -16215,3 +16215,68 @@ Session ID: 71c06fe0d94958fd02ea8872aa960d8c
 2024-11-27 18:51:29.714 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on sign in button
 2024-11-27 18:51:29.817 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on payroll link
 2024-11-27 18:51:32.533 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on txn
+2024-11-28 17:17:13.830 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-28 17:17:14.272 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-28 17:17:14.273 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - --test execution started--
+2024-11-28 17:17:17.434 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser opened
+2024-11-28 17:17:17.486 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser maximized
+2024-11-28 17:17:19.521 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided app URL in browser
+2024-11-28 17:17:19.701 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided username
+2024-11-28 17:17:19.847 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided password
+2024-11-28 17:17:26.462 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on sign in button
+2024-11-28 17:17:29.140 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on payroll link
+2024-11-28 17:17:40.705 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on txn
+2024-11-28 17:44:37.628 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-28 17:44:37.847 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-28 17:44:37.847 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - --test execution started--
+2024-11-28 17:44:39.220 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser opened
+2024-11-28 17:44:39.269 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser maximized
+2024-11-28 17:44:41.648 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided app URL in browser
+2024-11-28 17:44:41.797 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided username
+2024-11-28 17:44:41.894 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided password
+2024-11-28 17:44:48.003 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on sign in button
+2024-11-28 17:44:48.529 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on payroll link
+2024-11-28 17:44:50.482 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on txn
+2024-11-28 17:46:21.355 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-28 17:46:21.594 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-28 17:46:21.594 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - --test execution started--
+2024-11-28 17:46:23.004 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser opened
+2024-11-28 17:46:23.055 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser maximized
+2024-11-28 17:46:25.495 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided app URL in browser
+2024-11-28 17:46:25.628 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided username
+2024-11-28 17:46:25.753 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided password
+2024-11-28 17:46:33.186 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on sign in button
+2024-11-28 17:46:33.746 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on payroll link
+2024-11-28 17:46:35.516 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on txn
+2024-11-28 18:02:57.351 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-28 18:02:57.541 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-28 18:02:57.541 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - --test execution started--
+2024-11-28 18:02:58.772 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser opened
+2024-11-28 18:02:58.815 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - browser maximized
+2024-11-28 18:03:00.823 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided app URL in browser
+2024-11-28 18:03:00.949 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided username
+2024-11-28 18:03:01.063 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - provided password
+2024-11-28 18:03:09.273 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on sign in button
+2024-11-28 18:03:09.368 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on payroll link
+2024-11-28 18:03:14.527 [main] INFO  testCases.HRMS.Payroll.TC_TicketEncashmentTest - clicked on txn
+2024-11-28 18:47:54.223 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-28 18:47:54.432 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-28 18:47:54.432 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-11-28 18:47:56.117 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-11-28 18:47:56.162 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-11-28 18:47:58.508 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-11-28 18:47:58.654 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-11-28 18:47:58.765 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-11-28 18:48:11.787 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-11-28 18:48:11.875 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-11-28 18:48:14.239 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn

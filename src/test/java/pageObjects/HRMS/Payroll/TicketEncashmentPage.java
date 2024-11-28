@@ -1,9 +1,15 @@
 package pageObjects.HRMS.Payroll;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.HRMS.HRCore.BasePage;
 import utilities.CommonActions;
@@ -75,9 +81,23 @@ public class TicketEncashmentPage extends BasePage
 	
 	public void provideIssueTicket()
 	{
-		issueTicket.click();
-		issueTicket.click();
-		issueTicket.sendKeys("1");
+		//issueTicket.click();
+		//issueTicket.sendKeys("1");
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]")));
+
+		if (element.isDisplayed() && element.isEnabled()) {
+		    try {
+		        element.click(); // Clear existing text, if any
+		        element.sendKeys("1"); // Send value to the textbox
+		    } catch (ElementNotInteractableException e) {
+		        JavascriptExecutor js = (JavascriptExecutor) driver;
+		        js.executeScript("arguments[0].value='1';", element); // Set value using JavaScript
+		    }
+		} else {
+		    System.out.println("Element is either not visible or not enabled.");
+		}
 	}
 	
 	public void clkView()
@@ -93,9 +113,9 @@ public class TicketEncashmentPage extends BasePage
 	public boolean isTicketIssued()
 	{
 		String expemp= "Vaibhav Chavan";
-		String expEffectiveDate=effectiveDt;
+		String expEffectiveDate=CommonActions.formattedDateMMM();;
 		
-		CommonActions.filterCell5(effectiveDt);
+		CommonActions.filterCell5(expEffectiveDate);
 		CommonActions.filterCell6("Vaibhav Chavan");
 		
 		if(expEffectiveDate.equals(CommonActions.result5()) && CommonActions.result6().contains(expemp))
