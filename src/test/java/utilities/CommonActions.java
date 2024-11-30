@@ -36,7 +36,6 @@ public class CommonActions
 
 	public static void setDropdownValue(String value)
 	{
-
 		while (true)
 		{
 			List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='grid-row-template']"));
