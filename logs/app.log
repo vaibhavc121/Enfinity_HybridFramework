@@ -16280,3 +16280,237 @@ Session ID: 71c06fe0d94958fd02ea8872aa960d8c
 2024-11-28 18:48:11.787 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
 2024-11-28 18:48:11.875 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
 2024-11-28 18:48:14.239 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-11-30 19:51:05.451 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-30 19:51:05.814 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-30 19:51:05.814 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-11-30 19:51:17.020 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-11-30 19:51:17.072 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-11-30 19:51:33.484 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-11-30 19:51:33.729 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-11-30 19:51:33.888 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-11-30 19:51:42.405 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-11-30 19:51:42.951 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-11-30 19:51:45.234 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-11-30 19:51:55.608 [main] ERROR testCases.HRMS.Payroll.TC_TicketAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2458b489adf58cbfcc9d6cf6cf60a7be, clickElement {id=f.614D6B7C75EB03CD1C34E21ACE655990.d.724EA6D3F79ED9B56767951CF1B8FBD7.e.346}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59351/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2458b489adf58cbfcc9d6cf6cf60a7be)] -> xpath: //div[@class='grid-row-template']]
+Session ID: 2458b489adf58cbfcc9d6cf6cf60a7be
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.26.0.jar:?]
+	at utilities.CommonActions.setDropdownValue1(CommonActions.java:65) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.TicketAdjustmentPage.slctEmp(TicketAdjustmentPage.java:40) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_TicketAdjustmentTest.verifyTicketAdjustment(TC_TicketAdjustmentTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-30 19:52:12.634 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-30 19:52:12.942 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-30 19:52:12.942 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-11-30 19:52:14.613 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-11-30 19:52:14.659 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-11-30 19:52:28.262 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-11-30 19:52:28.531 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-11-30 19:52:28.730 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-11-30 19:52:37.481 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-11-30 19:52:38.632 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-11-30 19:52:41.725 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-11-30 19:52:53.052 [main] ERROR testCases.HRMS.Payroll.TC_TicketAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91f5256ac072f3a19a953a46ed8dd91d, clickElement {id=f.138F508D1C8BC4E438573887EEE42654.d.6633C16D190C0AA75159E2666A550CAB.e.345}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59539/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (91f5256ac072f3a19a953a46ed8dd91d)] -> xpath: //div[@class='grid-row-template']]
+Session ID: 91f5256ac072f3a19a953a46ed8dd91d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.26.0.jar:?]
+	at utilities.CommonActions.setDropdownValue1(CommonActions.java:65) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.TicketAdjustmentPage.slctEmp(TicketAdjustmentPage.java:40) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_TicketAdjustmentTest.verifyTicketAdjustment(TC_TicketAdjustmentTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-30 19:54:41.168 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-30 19:54:41.418 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-30 19:54:41.418 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-11-30 19:54:42.859 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-11-30 19:54:42.928 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-11-30 19:54:59.936 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-11-30 19:55:00.235 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-11-30 19:55:00.476 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-11-30 19:55:09.389 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-11-30 19:55:09.519 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-11-30 19:55:12.111 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-11-30 20:13:45.750 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-30 20:13:46.048 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-30 20:13:46.049 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-11-30 20:13:47.680 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-11-30 20:13:47.721 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-11-30 20:14:03.029 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-11-30 20:14:03.313 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-11-30 20:14:03.577 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-11-30 20:14:12.709 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-11-30 20:14:13.233 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-11-30 20:14:15.450 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-11-30 20:15:55.204 [main] ERROR testCases.HRMS.Payroll.TC_TicketAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b645dac20b67c985225752d3de59e527, getElementText {id=f.A83FFB61C54A6EE9F8A33D2B6C8CB710.d.F7CF16D5D04E6482723D364CAB85BFA4.e.386}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62875/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b645dac20b67c985225752d3de59e527)] -> xpath: //div[@class='grid-row-template']]
+Session ID: b645dac20b67c985225752d3de59e527
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191) ~[selenium-remote-driver-4.26.0.jar:?]
+	at utilities.CommonActions.setDropdownValue(CommonActions.java:45) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.TicketAdjustmentPage.slctEmp(TicketAdjustmentPage.java:42) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_TicketAdjustmentTest.verifyTicketAdjustment(TC_TicketAdjustmentTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-30 20:18:16.817 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-30 20:18:17.107 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-30 20:18:17.107 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-11-30 20:18:18.604 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-11-30 20:18:18.664 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-11-30 20:18:33.566 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-11-30 20:18:33.842 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-11-30 20:18:34.100 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-11-30 20:18:43.252 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-11-30 20:18:43.367 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-11-30 20:18:46.329 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-11-30 20:36:14.029 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\OneDrive - Bharatiya Vidya Bhavans Sardar Patel Institute Of Technology\#Testing\Automation Testing\Company Projects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-11-30 20:36:14.328 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-11-30 20:36:14.329 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-11-30 20:36:15.862 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-11-30 20:36:15.916 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-11-30 20:36:29.469 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-11-30 20:36:29.757 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-11-30 20:36:29.987 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-11-30 20:36:40.854 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-11-30 20:36:40.969 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-11-30 20:36:43.895 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn

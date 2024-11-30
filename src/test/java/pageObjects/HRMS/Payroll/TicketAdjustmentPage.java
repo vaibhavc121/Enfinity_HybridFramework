@@ -13,33 +13,33 @@ public class TicketAdjustmentPage extends BasePage
 	public TicketAdjustmentPage(WebDriver driver)
 	{
 		super(driver);
-		
+
 	}
-	
-	@FindBy(xpath="//span[normalize-space()='Ticket Adjustment']") WebElement ticketAdjustment;
-	
-	@FindBy(xpath="//img[@id='TicketEncashment.EmployeeIdLookup_B-1Img']") WebElement empdd;
-	
+
+	@FindBy(xpath = "//span[normalize-space()='Ticket Adjustment']")
+	WebElement ticketAdjustment;
+
+	@FindBy(xpath = "//img[@id='TicketEncashment.EmployeeIdLookup_B-1Img']")
+	WebElement empdd;
+
 	public void clkTicketAdjustment()
 	{
 		ticketAdjustment.click();
 	}
-	
+
 	public void clkNew()
 	{
 		CommonActions.clkNew();
 	}
-	
+
 	public void clkEmpDD()
 	{
 		empdd.click();
 	}
-	
+
 	public void slctEmp() throws InterruptedException
 	{
-		CommonActions.setDropdownValue1("Usha Fulzele");
+		CommonActions.setDropdownValue("Usha Fulzele");
 	}
-	
-	
 
 }
