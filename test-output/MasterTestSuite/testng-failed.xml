@@ -18,8 +18,8 @@
         <methods>
           <include name="teardown"/>
           <include name="verifyTicketAdjustment"/>
-          <include name="afterMethod"/>
           <include name="setup"/>
+          <include name="afterMethod"/>
           <include name="login"/>
         </methods>
       </class> <!-- testCases.HRMS.Payroll.TC_TicketAdjustmentTest -->

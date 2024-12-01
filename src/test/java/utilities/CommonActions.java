@@ -34,7 +34,7 @@ public class CommonActions
 		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='New']")).click();
 	}
 
-	public static void setDropdownValue(String value)
+	public static void setDropdownValue(String value) throws InterruptedException
 	{
 		while (true)
 		{
@@ -49,26 +49,8 @@ public class CommonActions
 				}
 			}
 			BaseClass.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
-		}
-	}
-
-	public static void setDropdownValue1(String value)
-	{
-		while (true)
-		{
-			List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='grid-row-template']"));
-			for (WebElement valuenm : valueslist)
-			{
-				String actvalue = valuenm.getText();
-				if (actvalue.contains(value))
-				{
-					break;
-				}
-
-				// valuenm.click();
-			}
-		}
-	}
+			Thread.sleep(3000);		}
+	}	
 
 	public static String formattedDateMMM()
 	{
