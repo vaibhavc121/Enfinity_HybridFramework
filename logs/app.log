@@ -16596,3 +16596,96 @@ Session ID: 0e980fe7b8ac2c097ab4e00f879322c1
 2024-12-01 18:59:36.514 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
 2024-12-01 18:59:36.618 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
 2024-12-01 18:59:39.034 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-12-02 16:58:14.312 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-02 16:58:14.561 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-02 16:58:14.562 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-12-02 16:58:17.037 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-12-02 16:58:17.093 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-12-02 16:58:19.451 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-12-02 16:58:19.608 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-12-02 16:58:19.728 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-12-02 16:58:28.372 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-12-02 16:58:28.462 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-12-02 16:58:30.538 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-12-02 16:58:32.220 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on ticket adjustment
+2024-12-02 16:58:32.303 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on new
+2024-12-02 16:58:37.361 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on emp dd
+2024-12-02 16:59:05.613 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - emp selected
+2024-12-02 16:59:08.284 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payment type dd
+2024-12-02 16:59:38.682 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - payment type selected
+2024-12-02 17:01:33.692 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-02 17:01:33.897 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-02 17:01:33.897 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-12-02 17:01:35.173 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-12-02 17:01:35.224 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-12-02 17:01:37.262 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-12-02 17:01:37.391 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-12-02 17:01:37.506 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-12-02 17:01:45.329 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-12-02 17:01:45.432 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-12-02 17:01:47.436 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-12-02 17:01:49.025 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on ticket adjustment
+2024-12-02 17:01:49.104 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on new
+2024-12-02 17:01:54.986 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on emp dd
+2024-12-02 17:03:05.260 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - emp selected
+2024-12-02 17:03:08.315 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payment type dd
+2024-12-02 17:03:53.082 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-02 17:03:53.280 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-02 17:03:53.280 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-12-02 17:03:54.638 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-12-02 17:03:54.686 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-12-02 17:03:57.101 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-12-02 17:03:57.228 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-12-02 17:03:57.359 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-12-02 17:04:02.279 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-12-02 17:04:02.363 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-12-02 17:04:04.685 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-12-02 17:04:06.108 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on ticket adjustment
+2024-12-02 17:04:06.192 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on new
+2024-12-02 17:04:11.681 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on emp dd
+2024-12-02 17:04:12.070 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - emp selected
+2024-12-02 17:04:12.170 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payment type dd
+2024-12-02 17:07:13.737 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-02 17:07:13.960 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-02 17:07:13.960 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-12-02 17:07:15.393 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-12-02 17:07:15.440 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-12-02 17:07:17.788 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-12-02 17:07:17.926 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-12-02 17:07:18.046 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-12-02 17:07:23.841 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-12-02 17:07:23.927 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-12-02 17:07:26.164 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-12-02 17:07:28.003 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on ticket adjustment
+2024-12-02 17:07:28.086 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on new
+2024-12-02 17:07:33.907 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on emp dd
+2024-12-02 17:07:34.403 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - emp selected
+2024-12-02 17:07:34.485 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payment type dd
+2024-12-02 18:19:45.248 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-02 18:19:45.467 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-02 18:19:45.467 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - --test execution started--
+2024-12-02 18:19:47.388 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser opened
+2024-12-02 18:19:47.434 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - browser maximized
+2024-12-02 18:19:49.770 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided app URL in browser
+2024-12-02 18:19:49.900 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided username
+2024-12-02 18:19:50.046 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - provided password
+2024-12-02 18:19:59.933 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on sign in button
+2024-12-02 18:20:02.032 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payroll link
+2024-12-02 18:20:03.988 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on txn
+2024-12-02 18:20:05.611 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on ticket adjustment
+2024-12-02 18:20:05.682 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on new
+2024-12-02 18:20:11.160 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on emp dd
+2024-12-02 18:20:11.610 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - emp selected
+2024-12-02 18:20:11.698 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payment type dd
+2024-12-02 18:20:16.434 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - payment type selected
+2024-12-02 18:20:25.998 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on save
