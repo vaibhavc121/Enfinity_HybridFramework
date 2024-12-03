@@ -16689,3 +16689,120 @@ Session ID: 0e980fe7b8ac2c097ab4e00f879322c1
 2024-12-02 18:20:11.698 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on payment type dd
 2024-12-02 18:20:16.434 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - payment type selected
 2024-12-02 18:20:25.998 [main] INFO  testCases.HRMS.Payroll.TC_TicketAdjustmentTest - clicked on save
+2024-12-03 13:49:06.834 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-03 13:49:07.092 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-03 13:49:07.093 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - --test execution started--
+2024-12-03 13:49:09.703 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser opened
+2024-12-03 13:49:09.746 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser maximized
+2024-12-03 13:49:12.126 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided app URL in browser
+2024-12-03 13:49:12.265 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided username
+2024-12-03 13:49:12.383 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided password
+2024-12-03 13:49:23.388 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on sign in button
+2024-12-03 13:49:23.477 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on payroll link
+2024-12-03 13:49:25.612 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on txn
+2024-12-03 14:00:44.964 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-03 14:00:45.174 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-03 14:00:45.174 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - --test execution started--
+2024-12-03 14:00:46.524 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser opened
+2024-12-03 14:00:46.570 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser maximized
+2024-12-03 14:00:48.919 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided app URL in browser
+2024-12-03 14:00:49.045 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided username
+2024-12-03 14:00:49.163 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided password
+2024-12-03 14:00:55.583 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on sign in button
+2024-12-03 14:00:55.670 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on payroll link
+2024-12-03 14:01:00.152 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on txn
+2024-12-03 14:01:08.672 [main] ERROR testCases.HRMS.Payroll.TC_OvertimeTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd0b4b118b1d96df3dc16315707ade89, getElementText {id=f.30767F1CD84AECFC7BFD78162E7A754F.d.DED9273EAB5A51531D0E908E3E932800.e.419}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65447/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cd0b4b118b1d96df3dc16315707ade89)] -> xpath: //div[@class='grid-row-template']]
+Session ID: cd0b4b118b1d96df3dc16315707ade89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.26.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191) ~[selenium-remote-driver-4.26.0.jar:?]
+	at utilities.CommonActions.setDropdownValue(CommonActions.java:44) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.OvertimePage.slctOvertime(OvertimePage.java:58) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_OvertimeTest.verifyOvertime(TC_OvertimeTest.java:31) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-12-03 14:03:44.382 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-03 14:03:44.620 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-03 14:03:44.620 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - --test execution started--
+2024-12-03 14:03:46.096 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser opened
+2024-12-03 14:03:46.139 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser maximized
+2024-12-03 14:03:48.699 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided app URL in browser
+2024-12-03 14:03:48.836 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided username
+2024-12-03 14:03:48.966 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided password
+2024-12-03 14:03:54.242 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on sign in button
+2024-12-03 14:03:54.334 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on payroll link
+2024-12-03 14:03:56.532 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on txn
+2024-12-03 16:46:33.379 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-03 16:46:33.585 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-03 16:46:33.585 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - --test execution started--
+2024-12-03 16:46:35.254 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser opened
+2024-12-03 16:46:35.306 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - browser maximized
+2024-12-03 16:46:37.623 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided app URL in browser
+2024-12-03 16:46:37.750 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided username
+2024-12-03 16:46:37.851 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided password
+2024-12-03 16:46:43.368 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on sign in button
+2024-12-03 16:46:43.458 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on payroll link
+2024-12-03 16:46:54.626 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on txn
+2024-12-03 16:46:59.226 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on overtime
+2024-12-03 16:46:59.292 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on new
+2024-12-03 16:47:21.842 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on emp dd
+2024-12-03 16:47:23.134 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - employee selected
+2024-12-03 16:47:25.210 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on overtime dd
+2024-12-03 16:47:25.427 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - overtime selected
+2024-12-03 16:47:25.697 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - provided hrs
+2024-12-03 16:47:27.932 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on view
+2024-12-03 16:47:39.933 [main] INFO  testCases.HRMS.Payroll.TC_OvertimeTest - clicked on approve

@@ -20,7 +20,8 @@
 
 		<classes>
 			
-			<class name="testCases.HRMS.Payroll.TC_TicketAdjustmentTest"/>
+			<class name="testCases.HRMS.Payroll.TC_OvertimeTest"/>
+			<!--<class name="testCases.HRMS.Payroll.TC_TicketAdjustmentTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.TC_TicketEncashmentTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.TC_BenefitEncashmentTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest"/>-->

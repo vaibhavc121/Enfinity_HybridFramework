@@ -50,7 +50,23 @@ public class CommonActions
 			}
 			BaseClass.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
 			Thread.sleep(3000);		}
-	}	
+	}
+	
+	public static void setDropdownValueOffice365(String value)
+	{
+		List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//tr[@class='dxeListBoxItemRow_Office365']"));
+		for (WebElement valuenm : valueslist)
+		{
+			String actvalue = valuenm.getText();
+			if (actvalue.contains(value))
+			{
+				valuenm.click();
+				break;
+			}
+		}
+	}
+	
+	
 
 	public static String formattedDateMMM()
 	{
