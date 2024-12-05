@@ -24,6 +24,17 @@ public class LoanPage extends BasePage
 	
 	@FindBy(xpath="//img[@id='Loan.RepaymentStartPeriodIdLookup_B-1Img']") WebElement loanRepaymentStartPeriod;
 	
+	@FindBy(xpath="//input[@id='Loan.LoanAmountFC_I']") WebElement loanAmount;
+	
+	@FindBy(xpath="//input[@id='Loan.AmountOfInstallments_I']") WebElement amountOfInstallments;
+	
+	public String expEmp="155";
+	public String expLoanAmt="50";
+	public String expInstallment="2";
+	public String expLoanType="Car Loan";
+	
+	
+	
 	public void clkLoan()
 	{
 		loan.click();
@@ -41,7 +52,7 @@ public class LoanPage extends BasePage
 	
 	public void slctEmp() throws InterruptedException
 	{
-		CommonActions.setDropdownValue("155");
+		CommonActions.setDropdownValue(expEmp);
 	}
 	
 	public void clkLoanTypeDD()
@@ -51,7 +62,7 @@ public class LoanPage extends BasePage
 	
 	public void slctLoanType() throws InterruptedException
 	{
-		CommonActions.setDropdownValue("Car Loan");
+		CommonActions.setDropdownValue(expLoanType);
 	}
 	
 	public void clkloanRepaymentStartPeriodDD()
@@ -62,6 +73,42 @@ public class LoanPage extends BasePage
 	public void setLoanRepaymentStartPeriod() throws InterruptedException
 	{
 		CommonActions.setDropdownValue("Jan-2025");
+	}
+	
+	public void provideLoanAmt()
+	{
+		loanAmount.sendKeys(expLoanAmt);
+	}
+	
+	public void provideAmountOfInstallments()
+	{
+		amountOfInstallments.sendKeys(expInstallment);
+	}
+	
+	public void clkView()
+	{
+		CommonActions.clkView();
+	}
+	
+	public void clkApprove()
+	{
+		CommonActions.clkApprove();
+	}
+	
+	public boolean isTxnCreated()
+	{
+//		String expEmp="Prachi Rawat";
+//		String expLoanAmt="50";
+//		String expInstallment="2";
+		if(CommonActions.result6().contains(expEmp) && CommonActions.result8().contains(expLoanAmt))
+		{
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+		
 	}
 
 }
