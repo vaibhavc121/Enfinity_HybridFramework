@@ -24,17 +24,28 @@ public class TC_LoanTest extends BaseClass
 			//loan pg
 			LoanPage lp=new LoanPage(driver);
 			lp.clkLoan();
+			logger.info("clicked on loan");
 			lp.clkNew();
+			logger.info("clicked on new btn");
 			lp.clkEmpDD();
+			logger.info("clicked on emp dd");
 			lp.slctEmp();
+			logger.info("emp selected");
 			lp.clkLoanTypeDD();
+			logger.info("clicked on loan type dd");
 			lp.slctLoanType();
+			logger.info("loan type selected");
 			lp.clkloanRepaymentStartPeriodDD();
+			logger.info("clicked on loanRepaymentStartPeriodDD");
 			lp.setLoanRepaymentStartPeriod();
 			lp.provideLoanAmt();
+			logger.info("loan amt entered");
 			lp.provideAmountOfInstallments();
+			logger.info("entered amt of installment");
 			lp.clkView();
+			logger.info("clicked on view");
 			lp.clkApprove();
+			logger.info("clicked on approved");
 			lp.isTxnCreated();
 
 			

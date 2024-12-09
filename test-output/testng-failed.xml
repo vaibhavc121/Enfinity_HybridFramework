@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.Payroll.TC_OvertimeTest">
+      <class name="testCases.HRMS.Payroll.TC_LoanTest">
         <methods>
           <include name="teardown"/>
-          <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="verifyOvertime"/>
+          <include name="afterMethod"/>
+          <include name="verifyLoan"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.HRMS.Payroll.TC_OvertimeTest -->
+      </class> <!-- testCases.HRMS.Payroll.TC_LoanTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->
