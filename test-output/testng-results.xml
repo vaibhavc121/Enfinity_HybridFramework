@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-09T18:44:23 IST" name="MasterTestSuite" finished-at="2024-12-09T18:45:01 IST" duration-ms="38194">
+  <suite started-at="2024-12-10T18:54:00 IST" name="MasterTestSuite" finished-at="2024-12-10T18:54:42 IST" duration-ms="42750">
     <groups>
       <group name="regression">
         <method signature="TC_LoanTest.verifyLoan()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" name="verifyLoan" class="testCases.HRMS.Payroll.TC_LoanTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2024-12-09T18:44:23 IST" name="Master Tests" finished-at="2024-12-09T18:45:01 IST" duration-ms="38194">
+    <test started-at="2024-12-10T18:54:00 IST" name="Master Tests" finished-at="2024-12-10T18:54:42 IST" duration-ms="42750">
       <class name="testCases.HRMS.Payroll.TC_LoanTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-09T18:44:23 IST" name="setup" finished-at="2024-12-09T18:44:30 IST" duration-ms="6616" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-10T18:54:00 IST" name="setup" finished-at="2024-12-10T18:54:06 IST" duration-ms="5673" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-09T18:44:30 IST" name="login" finished-at="2024-12-09T18:44:40 IST" duration-ms="9717" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-10T18:54:06 IST" name="login" finished-at="2024-12-10T18:54:17 IST" duration-ms="11081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyLoan()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-09T18:44:40 IST" name="verifyLoan" finished-at="2024-12-09T18:45:01 IST" duration-ms="21211" status="FAIL">
+        <test-method signature="verifyLoan()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-10T18:54:17 IST" name="verifyLoan" finished-at="2024-12-10T18:54:42 IST" duration-ms="25238" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='TxnInstanceView_I0i13_T']//span[@class='dx-vam'][normalize-space()='Loan']"}
@@ -39,9 +39,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [461fe6abd5071fd2a7233d7b1b92459c, findElement {using=xpath, value=//a[@id='TxnInstanceView_I0i13_T']//span[@class='dx-vam'][normalize-space()='Loan']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60040/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 461fe6abd5071fd2a7233d7b1b92459c]]>
+Command: [585fb57559b7c30fbafc5698f224472d, findElement {value=//a[@id='TxnInstanceView_I0i13_T']//span[@class='dx-vam'][normalize-space()='Loan'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58070}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58070/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 585fb57559b7c30fbafc5698f224472d]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='TxnInstanceView_I0i13_T']//span[@class='dx-vam'][normalize-space()='Loan']"}
@@ -50,9 +50,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [461fe6abd5071fd2a7233d7b1b92459c, findElement {using=xpath, value=//a[@id='TxnInstanceView_I0i13_T']//span[@class='dx-vam'][normalize-space()='Loan']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60040/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 461fe6abd5071fd2a7233d7b1b92459c
+Command: [585fb57559b7c30fbafc5698f224472d, findElement {value=//a[@id='TxnInstanceView_I0i13_T']//span[@class='dx-vam'][normalize-space()='Loan'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58070}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58070/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 585fb57559b7c30fbafc5698f224472d
 at org.testng.Assert.fail(Assert.java:111)
 at testCases.HRMS.Payroll.TC_LoanTest.verifyLoan(TC_LoanTest.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -89,11 +89,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoan -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-09T18:45:01 IST" name="afterMethod" finished-at="2024-12-09T18:45:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-10T18:54:42 IST" name="afterMethod" finished-at="2024-12-10T18:54:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-09T18:45:01 IST" name="teardown" finished-at="2024-12-09T18:45:01 IST" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-10T18:54:42 IST" name="teardown" finished-at="2024-12-10T18:54:42 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
