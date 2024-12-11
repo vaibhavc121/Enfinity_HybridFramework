@@ -16,7 +16,7 @@ public class LoanPage extends BasePage
 		
 	}
 	
-	@FindBy(xpath="//a[@id='TxnInstanceView_I0i13_T']//span[@class='dx-vam'][normalize-space()='Loan']") WebElement loan;
+	@FindBy(xpath="//span[normalize-space()='Overtime']//following::span[@class='dx-vam'][normalize-space()='Loan']") WebElement loan;
 	
 	@FindBy(xpath="//img[@id='Loan.EmployeeIdLookup_B-1Img']") WebElement empdd;
 	
