@@ -35,9 +35,10 @@ public class TC_LoanTest extends BaseClass
 			logger.info("clicked on loan type dd");
 			lp.slctLoanType();
 			logger.info("loan type selected");
-			lp.clkloanRepaymentStartPeriodDD();
-			logger.info("clicked on loanRepaymentStartPeriodDD");
+//			lp.clkloanRepaymentStartPeriodDD();
+//			logger.info("clicked on loanRepaymentStartPeriodDD");
 			lp.setLoanRepaymentStartPeriod();
+			logger.info("provided loan repayment start period");
 			lp.provideLoanAmt();
 			logger.info("loan amt entered");
 			lp.provideAmountOfInstallments();

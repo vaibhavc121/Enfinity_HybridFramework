@@ -1,10 +1,14 @@
 package pageObjects.HRMS.Payroll;
 
+import java.util.concurrent.ConcurrentHashMap.KeySetView;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import pageObjects.HRMS.HRCore.BasePage;
+import testBase.BaseClass;
 import utilities.CommonActions;
 
 public class LoanPage extends BasePage
@@ -22,13 +26,15 @@ public class LoanPage extends BasePage
 	
 	@FindBy(xpath="//img[@id='Loan.LoanTypeIdLookup_B-1Img']") WebElement loanTypeDD;
 	
+	@FindBy(xpath="//input[@id='Loan.RepaymentStartPeriodIdLookup_I']") WebElement repaymentStartPeriod;
+	
 	@FindBy(xpath="//img[@id='Loan.RepaymentStartPeriodIdLookup_B-1Img']") WebElement loanRepaymentStartPeriod;
 	
 	@FindBy(xpath="//input[@id='Loan.LoanAmountFC_I']") WebElement loanAmount;
 	
 	@FindBy(xpath="//input[@id='Loan.AmountOfInstallments_I']") WebElement amountOfInstallments;
 	
-	public String expEmp="155";
+	public String expEmp="002";
 	public String expLoanAmt="50";
 	public String expInstallment="2";
 	public String expLoanType="Car Loan";
@@ -72,7 +78,12 @@ public class LoanPage extends BasePage
 	
 	public void setLoanRepaymentStartPeriod() throws InterruptedException
 	{
-		CommonActions.setDropdownValue("Jan-2025");
+		repaymentStartPeriod.click();
+		repaymentStartPeriod.clear();
+		repaymentStartPeriod.sendKeys("Jan-2025");
+		Thread.sleep(2000);
+		repaymentStartPeriod.sendKeys(Keys.ENTER);
+		
 	}
 	
 	public void provideLoanAmt()

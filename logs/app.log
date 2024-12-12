@@ -16970,3 +16970,93 @@ Session ID: 585fb57559b7c30fbafc5698f224472d
 2024-12-11 18:52:14.410 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
 2024-12-11 18:52:49.555 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan type selected
 2024-12-11 18:53:14.253 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loanRepaymentStartPeriodDD
+2024-12-12 18:30:37.193 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-12 18:30:37.460 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-12 18:30:37.460 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - --test execution started--
+2024-12-12 18:30:40.046 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser opened
+2024-12-12 18:30:40.086 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser maximized
+2024-12-12 18:30:42.488 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided app URL in browser
+2024-12-12 18:30:42.641 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided username
+2024-12-12 18:30:42.757 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided password
+2024-12-12 18:30:48.248 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on sign in button
+2024-12-12 18:30:48.328 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on payroll link
+2024-12-12 18:30:50.535 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on txn
+2024-12-12 18:32:10.712 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan
+2024-12-12 18:32:14.621 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on new btn
+2024-12-12 18:32:20.053 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
+2024-12-12 18:34:05.892 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
+2024-12-12 18:34:10.291 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
+2024-12-12 18:35:39.936 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-12 18:35:40.165 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-12 18:35:40.166 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - --test execution started--
+2024-12-12 18:35:41.549 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser opened
+2024-12-12 18:35:41.603 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser maximized
+2024-12-12 18:35:43.645 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided app URL in browser
+2024-12-12 18:35:43.774 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided username
+2024-12-12 18:35:43.886 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided password
+2024-12-12 18:35:48.968 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on sign in button
+2024-12-12 18:35:49.062 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on payroll link
+2024-12-12 18:35:51.306 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on txn
+2024-12-12 18:35:52.677 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan
+2024-12-12 18:35:52.756 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on new btn
+2024-12-12 18:35:57.504 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
+2024-12-12 18:35:57.925 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
+2024-12-12 18:36:04.904 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
+2024-12-12 18:36:10.564 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan type selected
+2024-12-12 18:37:08.885 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loanRepaymentStartPeriodDD
+2024-12-12 18:37:26.805 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan amt entered
+2024-12-12 18:42:10.108 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - entered amt of installment
+2024-12-12 18:42:11.932 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on view
+2024-12-12 18:42:13.033 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on approved
+2024-12-12 18:42:49.025 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-12 18:42:49.229 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-12 18:42:49.229 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - --test execution started--
+2024-12-12 18:42:50.680 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser opened
+2024-12-12 18:42:50.725 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser maximized
+2024-12-12 18:42:52.889 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided app URL in browser
+2024-12-12 18:42:53.014 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided username
+2024-12-12 18:42:53.121 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided password
+2024-12-12 18:42:59.679 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on sign in button
+2024-12-12 18:42:59.772 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on payroll link
+2024-12-12 18:43:02.064 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on txn
+2024-12-12 18:43:03.536 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan
+2024-12-12 18:43:03.624 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on new btn
+2024-12-12 18:43:08.329 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
+2024-12-12 18:43:08.725 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
+2024-12-12 18:43:13.311 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
+2024-12-12 18:43:15.516 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan type selected
+2024-12-12 18:43:59.237 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided loan repayment start period
+2024-12-12 18:44:08.494 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan amt entered
+2024-12-12 18:44:15.709 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - entered amt of installment
+2024-12-12 18:44:23.364 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on view
+2024-12-12 18:44:57.756 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on approved
+2024-12-12 18:46:33.815 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-12 18:46:34.030 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-12 18:46:34.030 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - --test execution started--
+2024-12-12 18:46:35.444 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser opened
+2024-12-12 18:46:35.483 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser maximized
+2024-12-12 18:46:37.877 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided app URL in browser
+2024-12-12 18:46:38.009 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided username
+2024-12-12 18:46:38.101 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided password
+2024-12-12 18:46:43.028 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on sign in button
+2024-12-12 18:46:43.122 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on payroll link
+2024-12-12 18:46:45.362 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on txn
+2024-12-12 18:46:46.730 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan
+2024-12-12 18:46:46.817 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on new btn
+2024-12-12 18:46:51.464 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
+2024-12-12 18:46:51.861 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
+2024-12-12 18:46:55.830 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
+2024-12-12 18:46:58.263 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan type selected
+2024-12-12 18:47:10.373 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided loan repayment start period
+2024-12-12 18:47:12.524 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan amt entered
+2024-12-12 18:47:20.502 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - entered amt of installment
+2024-12-12 18:47:26.503 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on view
+2024-12-12 18:48:40.924 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on approved
