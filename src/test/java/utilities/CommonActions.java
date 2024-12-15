@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
-import testBase.BaseClass;
+import baseTest.BaseClass;
 
 public class CommonActions
 {

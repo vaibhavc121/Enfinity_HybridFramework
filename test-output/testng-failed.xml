@@ -16,11 +16,11 @@
     <classes>
       <class name="testCases.HRMS.Payroll.TC_LoanTest">
         <methods>
-          <include name="teardown"/>
           <include name="setup"/>
           <include name="afterMethod"/>
-          <include name="verifyLoan"/>
           <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyLoan"/>
         </methods>
       </class> <!-- testCases.HRMS.Payroll.TC_LoanTest -->
     </classes>

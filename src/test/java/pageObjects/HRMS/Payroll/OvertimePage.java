@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import baseTest.BaseClass;
 import pageObjects.HRMS.HRCore.BasePage;
-import testBase.BaseClass;
 import utilities.CommonActions;
 
 public class OvertimePage extends BasePage

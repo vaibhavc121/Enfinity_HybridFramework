@@ -3,9 +3,9 @@ package testCases.HRMS.Payroll;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import baseTest.BaseClass;
 import pageObjects.HRMS.Payroll.OvertimePage;
 import pageObjects.HRMS.Payroll.PayrollPage;
-import testBase.BaseClass;
 
 public class TC_OvertimeTest extends BaseClass
 {

@@ -9,10 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MasterTestSuite</th></tr>
-<tr><td><a href="#t0">Master Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">395,824</td><td>datadriven, regression</td><td></td></tr>
+<tr><td><a href="#t0">Master Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,500</td><td>datadriven, regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Master Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.TC_LoanTest</td><td><a href="#m0">verifyLoan</a></td><td rowspan="1">1734008748970</td><td rowspan="1">386637</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Master Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.Payroll.TC_LoanTest</td><td><a href="#m0">verifyLoan</a></td><td rowspan="1">1734269028262</td><td rowspan="1">9226</td></tr></tbody>
 </table>
-<h2>Master Tests</h2><h3 id="m0">testCases.HRMS.Payroll.TC_LoanTest#verifyLoan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Master Tests</h2><h3 id="m0">testCases.HRMS.Payroll.TC_LoanTest#verifyLoan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d72346bbdd27a83b72a49b59c7b81fa3, getElementText {id=f.A6CCFEAB0FB55FD295171B342B123D8B.d.22A97ED1454AECBF04E1A17F161A02E6.e.377}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58560/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d72346bbdd27a83b72a49b59c7b81fa3)] -&gt; xpath: //div[@class=&apos;grid-row-template&apos;]]
+Session ID: d72346bbdd27a83b72a49b59c7b81fa3
+	at testCases.HRMS.Payroll.TC_LoanTest.verifyLoan(TC_LoanTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

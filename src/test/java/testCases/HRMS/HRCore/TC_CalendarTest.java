@@ -3,10 +3,10 @@ package testCases.HRMS.HRCore;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import baseTest.BaseClass;
 import pageObjects.HRMS.HRCore.CalendarPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
-import testBase.BaseClass;
 
 public class TC_CalendarTest extends BaseClass
 {

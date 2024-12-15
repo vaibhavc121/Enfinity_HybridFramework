@@ -5,7 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import testBase.BaseClass;
+import baseTest.BaseClass;
 
 public class TestNGReportManager implements ITestListener
 {

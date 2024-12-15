@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MasterTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">MasterTestSuite</span>
+              <span class="suite-name border-failed">MasterTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-MasterTestSuite" class="hide-methods passed suite-MasterTestSuite"> (hide)</a> <!-- hide-methods passed suite-MasterTestSuite -->
-                      <a href="#" panel-name="suite-MasterTestSuite" class="show-methods passed suite-MasterTestSuite"> (show)</a> <!-- show-methods passed suite-MasterTestSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MasterTestSuite" class="hide-methods failed suite-MasterTestSuite"> (hide)</a> <!-- hide-methods failed suite-MasterTestSuite -->
+                      <a href="#" panel-name="suite-MasterTestSuite" class="show-methods failed suite-MasterTestSuite"> (show)</a> <!-- show-methods failed suite-MasterTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-MasterTestSuite">
+                    <div class="method-list-content failed suite-MasterTestSuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-MasterTestSuite" title="testCases.HRMS.Payroll.TC_LoanTest" class="method navigator-link" hash-for-method="verifyLoan">verifyLoan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-MasterTestSuite -->
+                    </div> <!-- method-list-content failed suite-MasterTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +118,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MasterTestSuite" class="panel MasterTestSuite">
-          <div class="suite-MasterTestSuite-class-passed">
+          <div class="suite-MasterTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.HRMS.Payroll.TC_LoanTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,10 +129,24 @@
                   <a name="verifyLoan">
                   </a> <!-- verifyLoan -->
                   <span class="method-name">verifyLoan</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test case failed: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d72346bbdd27a83b72a49b59c7b81fa3, getElementText {id=f.A6CCFEAB0FB55FD295171B342B123D8B.d.22A97ED1454AECBF04E1A17F161A02E6.e.377}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58560/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d72346bbdd27a83b72a49b59c7b81fa3)] -&gt; xpath: //div[@class=&apos;grid-row-template&apos;]]
+Session ID: d72346bbdd27a83b72a49b59c7b81fa3
+	at testCases.HRMS.Payroll.TC_LoanTest.verifyLoan(TC_LoanTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MasterTestSuite-class-passed -->
+          </div> <!-- suite-MasterTestSuite-class-failed -->
         </div> <!-- panel MasterTestSuite -->
         <div panel-name="test-xml-MasterTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -214,12 +228,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoan')
 data.setCell(0, 2, 'testCases.HRMS.Payroll.TC_LoanTest')
-data.setCell(0, 3, 386637);
+data.setCell(0, 3, 9226);
 window.suiteTableData['MasterTestSuite']= { tableData: data, tableDiv: 'times-div-MasterTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-MasterTestSuite">
               </div> <!-- times-div-MasterTestSuite -->
             </div> <!-- times-div -->
@@ -252,19 +266,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">3501 ms</span>
+                <span class="method-start">3711 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyLoan</span>
-                <span class="method-start">8816 ms</span>
+                <span class="method-start">8778 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">395464 ms</span>
+                <span class="method-start">18163 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">395467 ms</span>
+                <span class="method-start">18167 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

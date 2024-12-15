@@ -3,9 +3,9 @@ package testCases.HRMS.Payroll;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import baseTest.BaseClass;
 import pageObjects.HRMS.Payroll.LeaveAdjustmentPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
-import testBase.BaseClass;
 
 public class TC_LeaveAdjustmentTest extends BaseClass
 {
