@@ -61,9 +61,10 @@ public class LoanPage extends BasePage
 		CommonActions.setDropdownValue(expEmp);
 	}
 	
-	public void clkLoanTypeDD()
+	public void clkLoanTypeDD() throws InterruptedException
 	{
 		loanTypeDD.click();
+		Thread.sleep(2000);
 	}
 	
 	public void slctLoanType() throws InterruptedException

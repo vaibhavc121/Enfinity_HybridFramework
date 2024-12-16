@@ -17226,3 +17226,118 @@ Session ID: d72346bbdd27a83b72a49b59c7b81fa3
 2024-12-15 18:55:34.877 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
 2024-12-15 18:55:35.244 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
 2024-12-15 18:56:52.082 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
+2024-12-16 18:27:40.751 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-16 18:27:40.994 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-16 18:27:40.994 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - --test execution started--
+2024-12-16 18:27:43.344 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser opened
+2024-12-16 18:27:43.386 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser maximized
+2024-12-16 18:27:45.510 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided app URL in browser
+2024-12-16 18:27:45.653 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided username
+2024-12-16 18:27:45.768 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided password
+2024-12-16 18:27:54.318 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on sign in button
+2024-12-16 18:27:57.712 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on payroll link
+2024-12-16 18:27:59.795 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on txn
+2024-12-16 18:28:02.574 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan
+2024-12-16 18:28:02.644 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on new btn
+2024-12-16 18:28:12.761 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
+2024-12-16 18:28:13.327 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
+2024-12-16 18:28:27.801 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-16 18:28:28.008 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-16 18:28:28.008 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - --test execution started--
+2024-12-16 18:28:29.227 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser opened
+2024-12-16 18:28:29.270 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser maximized
+2024-12-16 18:28:31.614 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided app URL in browser
+2024-12-16 18:28:31.744 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided username
+2024-12-16 18:28:31.860 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided password
+2024-12-16 18:28:37.521 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on sign in button
+2024-12-16 18:28:37.599 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on payroll link
+2024-12-16 18:28:41.806 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on txn
+2024-12-16 18:28:45.041 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan
+2024-12-16 18:28:45.149 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on new btn
+2024-12-16 18:28:49.879 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
+2024-12-16 18:28:50.254 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
+2024-12-16 18:28:50.339 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
+2024-12-16 18:28:50.518 [main] ERROR testCases.HRMS.Payroll.TC_LoanTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c761236998ef4c0f39f5e3c66088588, getElementText {id=f.CCF612E2FE7B05EB843A37E3CB24FE9F.d.AE30DAAE7DF17AF9DD75E5484ED93952.e.402}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53005/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2c761236998ef4c0f39f5e3c66088588)] -> xpath: //div[@class='grid-row-template']]
+Session ID: 2c761236998ef4c0f39f5e3c66088588
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191) ~[selenium-remote-driver-4.27.0.jar:?]
+	at utilities.CommonActions.setDropdownValue(CommonActions.java:44) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.slctLoanType(LoanPage.java:71) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.TC_LoanTest.verifyLoan(TC_LoanTest.java:36) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-12-16 18:36:36.647 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Eclipse\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2024-12-16 18:36:36.846 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2024-12-16 18:36:36.846 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - --test execution started--
+2024-12-16 18:36:38.193 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser opened
+2024-12-16 18:36:38.238 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - browser maximized
+2024-12-16 18:36:40.276 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided app URL in browser
+2024-12-16 18:36:40.420 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided username
+2024-12-16 18:36:40.527 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided password
+2024-12-16 18:36:45.721 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on sign in button
+2024-12-16 18:36:45.805 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on payroll link
+2024-12-16 18:36:48.284 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on txn
+2024-12-16 18:36:49.783 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan
+2024-12-16 18:36:49.856 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on new btn
+2024-12-16 18:36:55.007 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on emp dd
+2024-12-16 18:36:55.456 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - emp selected
+2024-12-16 18:36:57.543 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on loan type dd
+2024-12-16 18:36:57.765 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan type selected
+2024-12-16 18:37:00.066 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - provided loan repayment start period
+2024-12-16 18:37:00.178 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - loan amt entered
+2024-12-16 18:37:00.275 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - entered amt of installment
+2024-12-16 18:37:01.493 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on view
+2024-12-16 18:37:10.204 [main] INFO  testCases.HRMS.Payroll.TC_LoanTest - clicked on approved
