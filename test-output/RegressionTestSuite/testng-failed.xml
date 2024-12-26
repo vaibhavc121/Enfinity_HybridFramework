@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Regression Tests(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+        <include name="datadriven"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.HRMS.HRCore.TC_DesignationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyDesignation"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_DesignationTest -->
+      <class name="testCases.HRMS.HRCore.TC_QualificationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyQualification"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_QualificationTest -->
+      <class name="testCases.HRMS.HRCore.TC_BankTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="verifyBank"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_BankTest -->
+      <class name="testCases.HRMS.Payroll.TC_TicketEncashmentTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="verifyTicketEncashment"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_TicketEncashmentTest -->
+      <class name="testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="verifyIndemnityAdjustment"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest -->
+      <class name="testCases.HRMS.HRCore.TC_WorkLocationTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="verifyWorkLocation"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_WorkLocationTest -->
+      <class name="testCases.HRMS.HRCore.TC_EmployeeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyEmpCreation"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_EmployeeTest -->
+      <class name="testCases.HRMS.Payroll.TC_LeaveEncashmentTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="verifyLeaveEncashment"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_LeaveEncashmentTest -->
+      <class name="testCases.HRMS.HRCore.DDT_ResidencyInfo">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyResidencyInfo" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.DDT_ResidencyInfo -->
+      <class name="testCases.HRMS.Payroll.TC_LeaveAdjustmentTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyLeaveAdjustment"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_LeaveAdjustmentTest -->
+      <class name="testCases.HRMS.HRCore.TC_DeptTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="verifyDept"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_DeptTest -->
+      <class name="testCases.HRMS.Payroll.TC_LeaveTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyLeave"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_LeaveTest -->
+      <class name="testCases.HRMS.Payroll.TC_LoanTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyLoan"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_LoanTest -->
+      <class name="testCases.HRMS.HRCore.TC_CalendarTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyCalendar"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_CalendarTest -->
+      <class name="testCases.HRMS.HRCore.TC_AssetIssueTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyAssetIssue"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_AssetIssueTest -->
+      <class name="testCases.HRMS.Payroll.TC_BenefitEncashmentTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyBenefitEncashment"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_BenefitEncashmentTest -->
+      <class name="testCases.HRMS.HRCore.TC_ReligionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="verifyReligion"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_ReligionTest -->
+      <class name="testCases.HRMS.Payroll.TC_VariableSalaryTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyVariableSalary"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_VariableSalaryTest -->
+      <class name="testCases.HRMS.HRCore.TC_DocumentTypeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="verifyDocType"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_DocumentTypeTest -->
+      <class name="testCases.HRMS.Payroll.TC_TicketAdjustmentTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="verifyTicketAdjustment"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.TC_TicketAdjustmentTest -->
+      <class name="testCases.HRMS.HRCore.TC_GradeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyGrade"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_GradeTest -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [RegressionTestSuite] -->

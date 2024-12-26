@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-16T18:36:36 IST" name="MasterTestSuite" finished-at="2024-12-16T18:37:10 IST" duration-ms="34334">
+  <suite started-at="2024-12-26T19:00:09 IST" name="MasterTestSuite" finished-at="2024-12-26T19:00:41 IST" duration-ms="32847">
     <groups>
       <group name="regression">
-        <method signature="TC_LoanTest.verifyLoan()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" name="verifyLoan" class="testCases.HRMS.Payroll.TC_LoanTest"/>
+        <method signature="TC_DeptTest.verifyDept()[pri:0, instance:testCases.HRMS.HRCore.TC_DeptTest@172ca72b]" name="verifyDept" class="testCases.HRMS.HRCore.TC_DeptTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2024-12-16T18:36:36 IST" name="Master Tests" finished-at="2024-12-16T18:37:10 IST" duration-ms="34334">
-      <class name="testCases.HRMS.Payroll.TC_LoanTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-16T18:36:36 IST" name="setup" finished-at="2024-12-16T18:36:40 IST" duration-ms="3441" status="PASS">
+    <test started-at="2024-12-26T19:00:09 IST" name="Master Tests" finished-at="2024-12-26T19:00:41 IST" duration-ms="32847">
+      <class name="testCases.HRMS.HRCore.TC_DeptTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.HRCore.TC_DeptTest@172ca72b]" started-at="2024-12-26T19:00:09 IST" name="setup" finished-at="2024-12-26T19:00:13 IST" duration-ms="3760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,23 +26,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-16T18:36:40 IST" name="login" finished-at="2024-12-16T18:36:45 IST" duration-ms="5435" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.HRCore.TC_DeptTest@172ca72b]" started-at="2024-12-26T19:00:13 IST" name="login" finished-at="2024-12-26T19:00:18 IST" duration-ms="5534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyLoan()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-16T18:36:45 IST" name="verifyLoan" finished-at="2024-12-16T18:37:10 IST" duration-ms="25109" status="PASS">
+        <test-method signature="verifyDept()[pri:0, instance:testCases.HRMS.HRCore.TC_DeptTest@172ca72b]" started-at="2024-12-26T19:00:18 IST" name="verifyDept" finished-at="2024-12-26T19:00:41 IST" duration-ms="23073" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"td[role='gridcell'][aria-describedby='dx-col-4'][shn-nav='2']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [868a95188744ea514581ffe3afea106d, findElement {value=td[role='gridcell'][aria-describedby='dx-col-4'][shn-nav='2'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63504/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 868a95188744ea514581ffe3afea106d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"td[role='gridcell'][aria-describedby='dx-col-4'][shn-nav='2']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [868a95188744ea514581ffe3afea106d, findElement {value=td[role='gridcell'][aria-describedby='dx-col-4'][shn-nav='2'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63504/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 868a95188744ea514581ffe3afea106d
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.HRMS.HRCore.TC_DeptTest.verifyDept(TC_DeptTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoan -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-16T18:37:10 IST" name="afterMethod" finished-at="2024-12-16T18:37:10 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyDept -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.HRCore.TC_DeptTest@172ca72b]" started-at="2024-12-26T19:00:41 IST" name="afterMethod" finished-at="2024-12-26T19:00:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.Payroll.TC_LoanTest@172ca72b]" started-at="2024-12-16T18:37:10 IST" name="teardown" finished-at="2024-12-16T18:37:10 IST" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.HRCore.TC_DeptTest@172ca72b]" started-at="2024-12-26T19:00:41 IST" name="teardown" finished-at="2024-12-26T19:00:41 IST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.Payroll.TC_LoanTest -->
+      </class> <!-- testCases.HRMS.HRCore.TC_DeptTest -->
     </test> <!-- Master Tests -->
   </suite> <!-- MasterTestSuite -->
 </testng-results>

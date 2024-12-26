@@ -47,9 +47,10 @@ public class TC_LoanTest extends BaseClass
 			logger.info("clicked on view");
 			lp.clkApprove();
 			logger.info("clicked on approved");
-			lp.isTxnCreated();
-
 			
+
+			Assert.assertTrue(lp.isTxnCreated());
+		
 			
 			
 			

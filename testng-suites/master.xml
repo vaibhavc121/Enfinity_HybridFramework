@@ -20,7 +20,7 @@
 
 		<classes>
 			
-			<class name="testCases.HRMS.Payroll.TC_LoanTest"/>
+			<!--<class name="testCases.HRMS.Payroll.TC_LoanTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.TC_OvertimeTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.TC_TicketAdjustmentTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.TC_TicketEncashmentTest"/>-->
@@ -33,20 +33,20 @@
 			
 			<!-- HR Core -->
 			<!--<class name="testCases.HRMS.HRCore.TC_LicensesTest" />-->
-			<!--<class name="testCases.TC_DelegationTest" />-->
-			<!--<class name="testCases.TC_AssetIssueTest" />-->
-			<!--<class name="testCases.TC_DocumentTypeTest" />-->
-			<!--<class name="testCases.TC_QualificationTest" />-->
-			<!--<class name="testCases.TC_BankTest" />-->
-			<!--<class name="testCases.TC_WorkLocationTest" />-->
-			<!--<class name="testCases.TC_ReligionTest" />-->
-			<!--<class name="testCases.TC_CalendarTest" />-->
-			<!--<class name="testCases.TC_GradeTest" />-->
-			<!--<class name="testCases.TC_DesignationTest" />-->
-			<!--<class name="testCases.TC_DeptTest" />-->
-			<!--<class name="testCases.TC_EmployeeTest" />-->
-			<!--<class name="testCases.TC_LoginTest" />-->
-			<!--<class name="testCases.DDT_ResidencyInfo" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_DelegationTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_AssetIssueTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_DocumentTypeTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_QualificationTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_BankTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_WorkLocationTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_ReligionTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_CalendarTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_GradeTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_DesignationTest" />-->
+			<class name="testCases.HRMS.HRCore.TC_DeptTest" />
+			<!--<class name="testCases.HRMS.HRCore.TC_EmployeeTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_LoginTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.DDT_ResidencyInfo" />-->
 			<!--<class name="testCases.MySQL_EmployeeTest" />-->			
 		</classes>
 	</test>
