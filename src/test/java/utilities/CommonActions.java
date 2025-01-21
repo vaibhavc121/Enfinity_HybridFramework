@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
-import testBase.BaseClass;
+import baseTest.BaseClass;
 
 public class CommonActions
 {
@@ -34,7 +34,7 @@ public class CommonActions
 		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='New']")).click();
 	}
 
-	public static void setDropdownValue(String value)
+	public static void setDropdownValue(String value) throws InterruptedException
 	{
 		while (true)
 		{
@@ -49,26 +49,24 @@ public class CommonActions
 				}
 			}
 			BaseClass.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
-		}
+			Thread.sleep(3000);		}
 	}
-
-	public static void setDropdownValue1(String value)
+	
+	public static void setDropdownValueOffice365(String value)
 	{
-		while (true)
+		List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//tr[@class='dxeListBoxItemRow_Office365']"));
+		for (WebElement valuenm : valueslist)
 		{
-			List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='grid-row-template']"));
-			for (WebElement valuenm : valueslist)
+			String actvalue = valuenm.getText();
+			if (actvalue.contains(value))
 			{
-				String actvalue = valuenm.getText();
-				if (actvalue.contains(value))
-				{
-					break;
-				}
-
-				// valuenm.click();
+				valuenm.click();
+				break;
 			}
 		}
 	}
+	
+	
 
 	public static String formattedDateMMM()
 	{

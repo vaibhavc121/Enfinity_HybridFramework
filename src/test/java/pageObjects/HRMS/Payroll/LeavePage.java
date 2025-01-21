@@ -12,8 +12,8 @@ import org.openqa.selenium.support.FindBy;
 import com.github.javafaker.DateAndTime;
 import com.github.javafaker.Faker;
 
+import baseTest.BaseClass;
 import pageObjects.HRMS.HRCore.BasePage;
-import testBase.BaseClass;
 
 public class LeavePage extends BasePage
 {

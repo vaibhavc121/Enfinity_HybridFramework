@@ -3,10 +3,10 @@ package testCases.HRMS.HRCore;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import baseTest.BaseClass;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
-import testBase.BaseClass;
 import utilities.DataProviders;
 
 public class DDT_ResidencyInfo extends BaseClass

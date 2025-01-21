@@ -9,10 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MasterTestSuite</th></tr>
+<<<<<<< HEAD
 <tr><td><a href="#t0">Master Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">42,550</td><td>datadriven, regression</td><td></td></tr>
 </table>
 <table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Master Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.TC_DesignationTest</td><td><a href="#m0">verifyDesignation</a></td><td rowspan="1">1737481829959</td><td rowspan="1">17732</td></tr></tbody>
 </table>
 <h2>Master Tests</h2><h3 id="m0">testCases.HRMS.HRCore.TC_DesignationTest#verifyDesignation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+=======
+<tr><td><a href="#t0">Master Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">32,847</td><td>datadriven, regression</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Master Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.HRCore.TC_DeptTest</td><td><a href="#m0">verifyDept</a></td><td rowspan="1">1735219818603</td><td rowspan="1">23073</td></tr></tbody>
+</table>
+<h2>Master Tests</h2><h3 id="m0">testCases.HRMS.HRCore.TC_DeptTest#verifyDept</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;td[role=&apos;gridcell&apos;][aria-describedby=&apos;dx-col-4&apos;][shn-nav=&apos;2&apos;]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [868a95188744ea514581ffe3afea106d, findElement {value=td[role=&apos;gridcell&apos;][aria-describedby=&apos;dx-col-4&apos;][shn-nav=&apos;2&apos;], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63504/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 868a95188744ea514581ffe3afea106d
+	at testCases.HRMS.HRCore.TC_DeptTest.verifyDept(TC_DeptTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+>>>>>>> fe4da3ab4c8c03bea3f28604da3e8ec4e3405a3e
 </body>
 </html>

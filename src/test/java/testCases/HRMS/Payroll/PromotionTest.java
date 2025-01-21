@@ -1,0 +1,29 @@
+package testCases.HRMS.Payroll;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import baseTest.BaseClass;
+import pageObjects.HRMS.Payroll.PayrollPage;
+
+public class PromotionTest extends BaseClass
+{
+	@Test(groups = "regression")
+	public void verifyPromotion()
+	{
+		try
+		{
+			//payroll pg
+			PayrollPage pp=new PayrollPage(driver);
+			pp.clkPayroll();
+			logger.info("clicked on payroll link");
+			pp.clkTxn();
+			logger.info("clicked on txn");
+		}
+		catch (Exception e)
+		{
+			logger.error("Test failed due to exception: ", e);
+			Assert.fail("Test case failed: " + e);
+		}
+	}
+}

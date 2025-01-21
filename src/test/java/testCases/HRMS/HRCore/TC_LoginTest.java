@@ -3,9 +3,9 @@ package testCases.HRMS.HRCore;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import baseTest.BaseClass;
 import pageObjects.HRMS.HRCore.HomePage;
 import pageObjects.HRMS.HRCore.LoginPage;
-import testBase.BaseClass;
 
 public class TC_LoginTest extends BaseClass
 {
