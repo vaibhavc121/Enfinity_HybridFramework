@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.CalendarPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_CalendarTest extends BaseClass
 {
@@ -44,7 +45,7 @@ public class TC_CalendarTest extends BaseClass
 			cp.clkSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(cp.isCalendarCreated());
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			// Assert.assertTrue(true);
 			logger.info("test case passed");
 

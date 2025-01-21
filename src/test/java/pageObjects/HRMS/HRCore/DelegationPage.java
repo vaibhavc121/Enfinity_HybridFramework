@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import utilities.CommonActions;
+
 public class DelegationPage extends BasePage
 {
 
@@ -42,7 +44,7 @@ public class DelegationPage extends BasePage
 
 	public void clkSaveBtn()
 	{
-		save.click();
+		CommonActions.clkSave();
 	}
 
 }

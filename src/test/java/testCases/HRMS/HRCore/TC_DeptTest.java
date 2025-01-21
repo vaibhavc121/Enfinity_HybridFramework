@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.DeptPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_DeptTest extends BaseClass
 {
@@ -17,6 +18,7 @@ public class TC_DeptTest extends BaseClass
 		{
 			// hr core
 			HRCorePage hc = new HRCorePage(driver);
+			Thread.sleep(5000);
 			hc.clkHRCore();
 			logger.info("clicked on hr core link");
 			hc.clkSetupForm();
@@ -45,7 +47,7 @@ public class TC_DeptTest extends BaseClass
 			dp.clkSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(dp.isDeptCreated());
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 			// Assert.assertTrue(true);
 

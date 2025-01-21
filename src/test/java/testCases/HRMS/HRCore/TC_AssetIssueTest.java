@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.AssetIssuePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_AssetIssueTest extends BaseClass
 {
@@ -43,10 +44,10 @@ public class TC_AssetIssueTest extends BaseClass
 			logger.info("selected asset cat");
 			ap.clkSaveBtn();
 			logger.info("clicked on save button");
-			ap.clkAsset();
-			logger.info("clicked on asset");
+//			ap.clkAsset();
+//			logger.info("clicked on asset");
 
-			Assert.assertTrue(ap.isHrAssetCreated());
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 
 		}

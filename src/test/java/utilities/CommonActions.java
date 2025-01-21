@@ -191,4 +191,19 @@ public class CommonActions
 		return result;
 	}
 
+	public static boolean IsTxnCreated()
+	{
+		String message = BaseClass.driver.findElement(By.xpath("//div[@class='dx-toast-message']")).getText();
+		// return message;
+		if (message.contains("created successfully"))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+
+		}
+	}
+
 }

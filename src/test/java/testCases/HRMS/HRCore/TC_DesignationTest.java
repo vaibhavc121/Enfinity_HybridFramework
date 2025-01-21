@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.DesignationPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_DesignationTest extends BaseClass
 {
@@ -18,6 +19,7 @@ public class TC_DesignationTest extends BaseClass
 		{
 			// hr core
 			HRCorePage hc = new HRCorePage(driver);
+			Thread.sleep(5000);
 			hc.clkHRCore();
 			logger.info("clicked on hr core link");
 			hc.clkSetupForm();
@@ -46,7 +48,7 @@ public class TC_DesignationTest extends BaseClass
 			dp.clkSave();
 			logger.info("clicked on save btn");
 
-			Assert.assertTrue(dp.isDesgCreated());
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 		}
 		catch (Exception e)

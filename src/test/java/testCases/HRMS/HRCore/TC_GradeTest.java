@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.GradePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_GradeTest extends BaseClass
 {
@@ -46,7 +47,7 @@ public class TC_GradeTest extends BaseClass
 			gp.btnSave();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(gp.isGradeCreated());
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 
 		}

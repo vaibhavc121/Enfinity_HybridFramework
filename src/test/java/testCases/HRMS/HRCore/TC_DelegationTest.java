@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.DelegationPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_DelegationTest extends BaseClass
 {
@@ -39,7 +40,7 @@ public class TC_DelegationTest extends BaseClass
 			dp.clkSaveBtn();
 			logger.info("clicked on save btn");
 
-			Assert.assertTrue(true);
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 
 		}

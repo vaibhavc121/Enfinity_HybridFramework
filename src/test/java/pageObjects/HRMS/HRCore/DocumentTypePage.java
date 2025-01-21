@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class DocumentTypePage extends BasePage
 {
@@ -67,9 +68,7 @@ public class DocumentTypePage extends BasePage
 
 	public void clkSaveBtn() throws InterruptedException
 	{
-		save.click();
-//		driver.navigate().back();
-//		Thread.sleep(2000);
+		CommonActions.clkSave();
 	}
 
 	public void clkDocType()

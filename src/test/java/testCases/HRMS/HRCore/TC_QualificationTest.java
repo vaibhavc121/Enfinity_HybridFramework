@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.QualificationPage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_QualificationTest extends BaseClass
 {
@@ -41,7 +42,7 @@ public class TC_QualificationTest extends BaseClass
 			qp.clkSaveBtn();
 			logger.info("clicked on save button");
 
-			Assert.assertTrue(qp.isQualificationCreated());
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 		}
 		catch (Exception e)

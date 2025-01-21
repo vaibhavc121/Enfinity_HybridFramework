@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.BankPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_BankTest extends BaseClass
 {
@@ -39,7 +40,7 @@ public class TC_BankTest extends BaseClass
 			bp.clkSave();
 			logger.info("clicked on save button");
 
-			boolean act = bp.isBankCreated();
+			boolean act = CommonActions.IsTxnCreated();
 			Assert.assertEquals(act, true);
 			logger.info("test case passed");
 		}

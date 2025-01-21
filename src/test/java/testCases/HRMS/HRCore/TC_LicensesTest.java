@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.LicensesPage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_LicensesTest extends BaseClass
 {
@@ -37,7 +38,7 @@ public class TC_LicensesTest extends BaseClass
 			lp.clkSaveBtn();
 
 			// Assert.assertEquals(lp.isLicenseCreated(), true);
-			Assert.assertTrue(true);
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 		}
 		catch (Exception e)

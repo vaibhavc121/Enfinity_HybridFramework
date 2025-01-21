@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import pageObjects.HRMS.HRCore.WorkLocationPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_WorkLocationTest extends BaseClass
 {
@@ -33,7 +34,7 @@ public class TC_WorkLocationTest extends BaseClass
 			wc.clkNewBtn();
 			wc.setName();
 			wc.clkSaveBtn();
-			boolean act = wc.isWorkLocCreated();
+			boolean act = CommonActions.IsTxnCreated();
 
 			Assert.assertEquals(act, true);
 			logger.info("test case passed");

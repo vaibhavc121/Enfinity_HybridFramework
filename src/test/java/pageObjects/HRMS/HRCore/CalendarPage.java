@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class CalendarPage extends BasePage
 {
@@ -72,9 +73,7 @@ public class CalendarPage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
-		save.click();
-		driver.navigate().back();
-		Thread.sleep(2000);
+		CommonActions.clkSave();
 	}
 
 	public boolean isCalendarCreated() throws InterruptedException

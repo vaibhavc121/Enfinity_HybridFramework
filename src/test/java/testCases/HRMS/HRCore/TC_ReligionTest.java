@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.ReligionPage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_ReligionTest extends BaseClass
 {
@@ -36,7 +37,7 @@ public class TC_ReligionTest extends BaseClass
 			logger.info("provided religion");
 			rp.clkSaveBtn();
 			logger.info("clicked on save button");
-			boolean act = rp.isReligionCreated();
+			boolean act = CommonActions.IsTxnCreated();
 
 			Assert.assertEquals(act, true);
 			logger.info("test case passed");

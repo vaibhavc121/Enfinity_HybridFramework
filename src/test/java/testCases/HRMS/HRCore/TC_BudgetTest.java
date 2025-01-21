@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.BudgetPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_BudgetTest extends BaseClass
 {
@@ -42,7 +43,7 @@ public class TC_BudgetTest extends BaseClass
 			bp.clkSaveBtn();
 			logger.info("clicked on save btn");
 
-			Assert.assertTrue(bp.isBudgetCreated());
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 		}
 		catch (Exception e)

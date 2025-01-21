@@ -7,6 +7,7 @@ import pageObjects.HRMS.HRCore.DocumentTypePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class TC_DocumentTypeTest extends BaseClass
 {
@@ -38,7 +39,7 @@ public class TC_DocumentTypeTest extends BaseClass
 			logger.info("clicked on save button");
 			// dt.clkDocType();
 			// Assert.assertTrue(dt.isDocTypeCreated());
-			Assert.assertTrue(true);
+			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 
 		}

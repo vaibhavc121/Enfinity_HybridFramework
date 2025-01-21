@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class GradePage extends BasePage
 {
@@ -80,9 +81,7 @@ public class GradePage extends BasePage
 
 	public void btnSave() throws InterruptedException
 	{
-		save.click();
-		driver.navigate().back();
-		Thread.sleep(2000);
+		CommonActions.clkSave();
 	}
 
 	public boolean isGradeCreated() throws InterruptedException

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import testBase.BaseClass;
+import utilities.CommonActions;
 
 public class DeptPage extends BasePage
 {
@@ -75,9 +76,7 @@ public class DeptPage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
-		save.click();
-		driver.navigate().back();
-		Thread.sleep(2000);
+		CommonActions.clkSave();
 	}
 
 	public boolean isDeptCreated() throws InterruptedException
