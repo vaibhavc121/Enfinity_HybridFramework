@@ -14,21 +14,78 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.HRCore.TC_DeptTest">
+      <class name="testCases.HRMS.HRCore.TC_ReligionTest">
         <methods>
-<<<<<<< HEAD
-          <include name="teardown"/>
-          <include name="verifyDept"/>
           <include name="afterMethod"/>
-=======
->>>>>>> fe4da3ab4c8c03bea3f28604da3e8ec4e3405a3e
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyReligion"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_ReligionTest -->
+      <class name="testCases.HRMS.HRCore.TC_EmployeeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyEmpCreation"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_EmployeeTest -->
+      <class name="testCases.HRMS.HRCore.TC_AssetIssueTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyAssetIssue"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_AssetIssueTest -->
+      <class name="testCases.HRMS.HRCore.TC_LicensesTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyLicenses"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_LicensesTest -->
+      <class name="testCases.HRMS.HRCore.DDT_ResidencyInfo">
+        <methods>
           <include name="setup"/>
           <include name="afterMethod"/>
           <include name="login"/>
-          <include name="verifyDept"/>
+          <include name="verifyResidencyInfo" invocation-numbers="0"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- testCases.HRMS.HRCore.TC_DeptTest -->
+      </class> <!-- testCases.HRMS.HRCore.DDT_ResidencyInfo -->
+      <class name="testCases.HRMS.HRCore.TC_DelegationTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyDelegation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_DelegationTest -->
+      <class name="testCases.HRMS.HRCore.MySQL_EmployeeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="verifyEmpCreation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.MySQL_EmployeeTest -->
+      <class name="testCases.HRMS.HRCore.TC_DocumentTypeTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="verifyDocType"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testCases.HRMS.HRCore.TC_DocumentTypeTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->

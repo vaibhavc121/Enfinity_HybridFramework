@@ -7,11 +7,7 @@ import baseTest.BaseClass;
 import pageObjects.HRMS.HRCore.DocumentTypePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
-<<<<<<< HEAD
-import testBase.BaseClass;
 import utilities.CommonActions;
-=======
->>>>>>> fe4da3ab4c8c03bea3f28604da3e8ec4e3405a3e
 
 public class TC_DocumentTypeTest extends BaseClass
 {

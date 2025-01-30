@@ -4,12 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-<<<<<<< HEAD
-import testBase.BaseClass;
-import utilities.CommonActions;
-=======
 import baseTest.BaseClass;
->>>>>>> fe4da3ab4c8c03bea3f28604da3e8ec4e3405a3e
+import utilities.CommonActions;
 
 public class BudgetPage extends BasePage
 {

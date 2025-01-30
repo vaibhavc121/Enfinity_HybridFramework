@@ -7,11 +7,7 @@ import baseTest.BaseClass;
 import pageObjects.HRMS.HRCore.DesignationPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
-<<<<<<< HEAD
-import testBase.BaseClass;
 import utilities.CommonActions;
-=======
->>>>>>> fe4da3ab4c8c03bea3f28604da3e8ec4e3405a3e
 
 public class TC_DesignationTest extends BaseClass
 {
@@ -23,7 +19,7 @@ public class TC_DesignationTest extends BaseClass
 		{
 			// hr core
 			HRCorePage hc = new HRCorePage(driver);
-			Thread.sleep(5000);
+			// Thread.sleep(5000);
 			hc.clkHRCore();
 			logger.info("clicked on hr core link");
 			hc.clkSetupForm();
