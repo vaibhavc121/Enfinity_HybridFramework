@@ -30,7 +30,7 @@
 							<!--<suiteXmlFile>testng-suites/APITestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/AzureDevops.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/BrowserStack.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/CompatibilityTestSuite.xml</suiteXmlFile>-->							
+							<!--<suiteXmlFile>testng-suites/CompatibilityTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/DataDriven TestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/EndToEndTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/FunctionalTestSuite.xml</suiteXmlFile>-->
@@ -39,10 +39,10 @@
 							<!--<suiteXmlFile>testng-suites/GridDocker.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/Grouping.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/IntegrationTestSuite.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/Jenkins.xml</suiteXmlFile>-->							
+							<!--<suiteXmlFile>testng-suites/Jenkins.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/MySQLTestSuite.xml</suiteXmlFile>-->
-							<!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->														
-							<!--<suiteXmlFile>testng-suites/PerformanceTestSuite.xml</suiteXmlFile>-->							
+							<!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->
+							<!--<suiteXmlFile>testng-suites/PerformanceTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SanityTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SecurityTestSuite.xml</suiteXmlFile>-->
 							<!--<suiteXmlFile>testng-suites/SmokeTestSuite.xml</suiteXmlFile>-->
@@ -68,7 +68,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.27.0</version>
+			<version>4.28.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -173,6 +173,15 @@
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<!--Jackson library to parse JSON-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.18.3</version>
 		</dependency>
 
 

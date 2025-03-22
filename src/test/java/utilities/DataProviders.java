@@ -7,6 +7,8 @@ import java.util.List;
 
 import org.testng.annotations.DataProvider;
 
+import com.fasterxml.jackson.databind.JsonNode;
+
 public class DataProviders
 {
 	// data provider 1
@@ -64,6 +66,26 @@ public class DataProviders
 
 		// Convert List to Object[][]
 		return testData.toArray(new Object[testData.size()][]);
+	}
+
+	// data provider 3
+	@DataProvider(name = "variableSal")
+	public static Object[][] getLoginData()
+	{
+		JsonNode jsonData = JsonDataReader.readJsonData();
+		JsonNode users = jsonData.get("createVariableSal");
+
+		Object[][] data = new Object[users.size()][5];
+
+		for (int i = 0; i < users.size(); i++)
+		{
+			data[i][0] = users.get(i).get("employee").asText();
+			data[i][1] = users.get(i).get("remarks").asText();
+			data[i][2] = users.get(i).get("effectiveDate").asText();
+			data[i][3] = users.get(i).get("salComponent").asText();
+			data[i][4] = users.get(i).get("amt").asText();
+		}
+		return data;
 	}
 
 }

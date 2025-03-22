@@ -1,0 +1,12 @@
+{
+    "createVariableSal":[
+        {
+            "employee":"Vaibhav Chavan",
+            "remarks":"test",
+            "effectiveDate": "22-03-2025",
+            "salComponent":"SC001 | Basic Salary",
+            "amt":"100"
+        }
+
+    ]
+}
