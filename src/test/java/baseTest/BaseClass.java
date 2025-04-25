@@ -148,9 +148,9 @@ public class BaseClass
 			/* for docker container on selenium grid */
 //			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
-			driver = new RemoteWebDriver(
-					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
-					capabilities);
+//			driver = new RemoteWebDriver(
+//					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
+//					capabilities);
 			// driver = SelfHealingDriver.create(_driver);
 		}
 
