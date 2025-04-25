@@ -22,7 +22,7 @@ jobs:
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
         testRunTitle: 'Automation Enginner (SDET)- Vaibhav Chavan'
         javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.21'
+        jdkVersionOption: '1.17'
         mavenVersionOption: 'Default'
         mavenAuthenticateFeed: false
         effectivePomSkip: false
