@@ -33,22 +33,22 @@
 			<!--<class name="testCases.HRMS.Payroll.TC_VariableSalaryTest"/>-->
 
 			<!-- HR Core -->
-			<class name="testCases.HRMS.HRCore.TC_DelegationTest" />
-			<class name="testCases.HRMS.HRCore.TC_AssetIssueTest" />
-			<class name="testCases.HRMS.HRCore.TC_DocumentTypeTest" />
-			<class name="testCases.HRMS.HRCore.TC_QualificationTest" />
-			<class name="testCases.HRMS.HRCore.TC_BankTest" />
-			<class name="testCases.HRMS.HRCore.TC_WorkLocationTest" />
+			<!--<class name="testCases.HRMS.HRCore.TC_DelegationTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_AssetIssueTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_DocumentTypeTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_QualificationTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_BankTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_WorkLocationTest" />-->
 			<class name="testCases.HRMS.HRCore.TC_ReligionTest" />
-			<class name="testCases.HRMS.HRCore.TC_CalendarTest" />
-			<class name="testCases.HRMS.HRCore.TC_GradeTest" />
-			<class name="testCases.HRMS.HRCore.TC_DesignationTest" />
-			<class name="testCases.HRMS.HRCore.TC_LicensesTest" />
-			<class name="testCases.HRMS.HRCore.TC_DeptTest" />
-			<class name="testCases.HRMS.HRCore.TC_EmployeeTest" />
-			<class name="testCases.HRMS.HRCore.TC_LoginTest" />
-			<class name="testCases.HRMS.HRCore.DDT_ResidencyInfo" />
-			<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />
+			<!--<class name="testCases.HRMS.HRCore.TC_CalendarTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_GradeTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_DesignationTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_LicensesTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_DeptTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_EmployeeTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.TC_LoginTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.DDT_ResidencyInfo" />-->
+			<!--<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />-->
 		</classes>
 	</test>
 

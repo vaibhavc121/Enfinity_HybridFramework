@@ -166,7 +166,7 @@ public class BaseClass
 			case "chrome":
 				// driver = new ChromeDriver(options);
 				driver = new ChromeDriver();
-//				driver = SelfHealingDriver.create(_driver);
+				// driver = SelfHealingDriver.create(_driver);
 //				logger.info("Chrome browser opened with Healenium");
 				// logger.info("browser opened");
 
@@ -174,13 +174,13 @@ public class BaseClass
 
 			case "edge":
 				driver = new EdgeDriver();
-//				driver = SelfHealingDriver.create(_driver);
+				// driver = SelfHealingDriver.create(_driver);
 //				logger.info("Edge browser opened with Healenium");
 				// logger.info("browser opened");
 
 			case "firefox":
 				driver = new FirefoxDriver();
-//				driver = SelfHealingDriver.create(_driver);
+				// driver = SelfHealingDriver.create(_driver);
 //				logger.info("Firefox browser opened with Healenium");
 				// logger.info("browser opened");
 

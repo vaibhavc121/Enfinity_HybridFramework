@@ -22059,3 +22059,40 @@ Session ID: c9e03a4e90c4f8228a16806ceacbed16
 2025-04-25 16:23:21.669 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided religion
 2025-04-25 16:23:22.139 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on save button
 2025-04-25 16:23:22.198 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - test case passed
+2025-04-25 17:04:35.949 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-04-25 17:04:36.222 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-04-25 17:04:36.222 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - --test execution started--
+2025-04-25 17:04:39.534 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - browser maximized
+2025-04-25 17:04:45.300 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - provided app URL in browser
+2025-04-25 17:04:46.443 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - provided username
+2025-04-25 17:04:46.893 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - provided password
+2025-04-25 17:04:52.877 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - clicked on sign in button
+2025-04-25 17:04:53.915 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - clicked on hr core link
+2025-04-25 17:04:55.983 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - clicked on setup form
+2025-04-25 17:04:59.540 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - clicked on delegation
+2025-04-25 17:04:59.761 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - clicked on new btn
+2025-04-25 17:05:04.387 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - clicked on delegatee dropdown
+2025-04-25 17:05:04.692 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - selected delegatee
+2025-04-25 17:05:08.911 [main] INFO  testCases.HRMS.HRCore.TC_DelegationTest - clicked on save btn
+2025-04-25 17:05:09.474 [main] INFO  testCases.HRMS.HRCore.TC_AssetIssueTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-04-25 17:05:09.475 [main] INFO  testCases.HRMS.HRCore.TC_AssetIssueTest - --test execution started--
+2025-04-25 17:05:10.711 [main] INFO  testCases.HRMS.HRCore.TC_AssetIssueTest - browser maximized
+2025-04-25 17:07:08.543 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-04-25 17:07:08.745 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-04-25 17:07:08.745 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - --test execution started--
+2025-04-25 17:07:10.511 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - browser maximized
+2025-04-25 17:07:25.326 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided app URL in browser
+2025-04-25 17:07:26.037 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided username
+2025-04-25 17:07:26.400 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided password
+2025-04-25 17:07:37.073 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on sign in button
+2025-04-25 17:07:38.244 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on hr core link
+2025-04-25 17:07:40.280 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on setup form
+2025-04-25 17:07:43.667 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on religion
+2025-04-25 17:07:43.932 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on new button
+2025-04-25 17:07:45.386 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided religion
+2025-04-25 17:07:45.755 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on save button
+2025-04-25 17:07:45.837 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - test case passed
