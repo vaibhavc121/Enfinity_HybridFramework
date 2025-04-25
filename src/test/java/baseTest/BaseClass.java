@@ -35,8 +35,8 @@ import pageObjects.HRMS.HRCore.LoginPage;
 
 public class BaseClass
 {
-	public static WebDriver _driver;
-	public static SelfHealingDriver driver; // updated to SelfHealingDriver
+	public static WebDriver driver;
+	// public static SelfHealingDriver driver; // updated to SelfHealingDriver
 	public Properties p;
 	public Logger logger; // log4j
 
@@ -148,10 +148,10 @@ public class BaseClass
 			/* for docker container on selenium grid */
 //			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
-			_driver = new RemoteWebDriver(
+			driver = new RemoteWebDriver(
 					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
 					capabilities);
-			driver = SelfHealingDriver.create(_driver);
+			// driver = SelfHealingDriver.create(_driver);
 		}
 
 		if (p.getProperty("execution_env").equals("local"))
@@ -165,23 +165,23 @@ public class BaseClass
 			{
 			case "chrome":
 				// driver = new ChromeDriver(options);
-				_driver = new ChromeDriver();
-				driver = SelfHealingDriver.create(_driver);
-				logger.info("Chrome browser opened with Healenium");
+				driver = new ChromeDriver();
+//				driver = SelfHealingDriver.create(_driver);
+//				logger.info("Chrome browser opened with Healenium");
 				// logger.info("browser opened");
 
 				break;
 
 			case "edge":
-				_driver = new EdgeDriver();
-				driver = SelfHealingDriver.create(_driver);
-				logger.info("Edge browser opened with Healenium");
+				driver = new EdgeDriver();
+//				driver = SelfHealingDriver.create(_driver);
+//				logger.info("Edge browser opened with Healenium");
 				// logger.info("browser opened");
 
 			case "firefox":
-				_driver = new FirefoxDriver();
-				driver = SelfHealingDriver.create(_driver);
-				logger.info("Firefox browser opened with Healenium");
+				driver = new FirefoxDriver();
+//				driver = SelfHealingDriver.create(_driver);
+//				logger.info("Firefox browser opened with Healenium");
 				// logger.info("browser opened");
 
 				break;

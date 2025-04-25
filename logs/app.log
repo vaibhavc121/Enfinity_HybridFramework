@@ -22042,3 +22042,20 @@ Session ID: c9e03a4e90c4f8228a16806ceacbed16
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-04-25 16:22:48.526 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-04-25 16:22:48.828 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-04-25 16:22:48.828 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - --test execution started--
+2025-04-25 16:22:53.241 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - browser maximized
+2025-04-25 16:22:59.808 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided app URL in browser
+2025-04-25 16:23:00.072 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided username
+2025-04-25 16:23:00.250 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided password
+2025-04-25 16:23:09.084 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on sign in button
+2025-04-25 16:23:09.888 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on hr core link
+2025-04-25 16:23:16.053 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on setup form
+2025-04-25 16:23:19.517 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on religion
+2025-04-25 16:23:19.735 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on new button
+2025-04-25 16:23:21.669 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided religion
+2025-04-25 16:23:22.139 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on save button
+2025-04-25 16:23:22.198 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - test case passed

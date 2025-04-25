@@ -72,3 +72,32 @@
 2025-04-25 10:24:57.682  INFO 1 - [       main] .s.b.a.e.w.EndpointLinksResolver : Exposing 1 endpoint beneath base path '/actuator' 
 2025-04-25 10:24:57.912  INFO 1 - [       main] o.s.b.w.e.t.TomcatWebServer      : Tomcat started on port 7878 (http) with context path '/' 
 2025-04-25 10:24:58.086  INFO 1 - [       main] c.epam.healenium.Application     : Started Application in 16.027 seconds (process running for 17.285) 
+2025-04-25 10:31:24.353  INFO 1 - [7878-exec-1] o.a.c.c.C.[.[localhost].[/]      : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2025-04-25 10:31:24.356  INFO 1 - [7878-exec-1] o.s.w.s.DispatcherServlet        : Initializing Servlet 'dispatcherServlet' 
+2025-04-25 10:31:24.361  INFO 1 - [7878-exec-1] o.s.w.s.DispatcherServlet        : Completed initialization in 4 ms 
+2025-04-25 11:10:19.765  INFO 1 - [7878-exec-7] healenium                        : [Save Elements] Request: By.xpath(/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]) 
+2025-04-25 11:11:34.859  INFO 1 - [7878-exec-1] healenium                        : [Save Elements] Request: By.xpath(/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]) 
+2025-04-25 11:11:35.098  INFO 1 - [7878-exec-2] healenium                        : [Save Elements] Request: By.xpath(/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]) 
+2025-04-25 11:11:35.334  INFO 1 - [7878-exec-3] healenium                        : [Save Elements] Request: By.xpath(/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]) 
+2025-04-25 11:11:35.573  INFO 1 - [7878-exec-4] healenium                        : [Save Elements] Request: By.xpath(/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]) 
+2025-04-25 11:11:35.784  INFO 1 - [7878-exec-5] healenium                        : [Save Elements] Request: By.xpath(/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]) 
+2025-04-25 11:11:36.138  INFO 1 - [7878-exec-6] healenium                        : [Save Elements] Request: By.xpath(/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]) 
+2025-04-25 11:11:36.264  INFO 1 - [7878-exec-7] healenium                        : [Save Elements] Request: By.xpath(//div[@aria-label='Sign In']//div[@class='dx-button-content']) 
+2025-04-25 11:11:36.368  INFO 1 - [7878-exec-8] healenium                        : [Save Elements] Request: By.xpath(//div[@aria-label='Sign In']//div[@class='dx-button-content']) 
+2025-04-25 11:12:26.912  INFO 1 - [878-exec-10] healenium                        : [Save Elements] Request: By.xpath(//span[normalize-space()='Payroll']) 
+2025-04-25 11:12:42.617  INFO 1 - [7878-exec-1] healenium                        : [Save Elements] Request: By.xpath(//span[@class='dxnb-ghtext']) 
+2025-04-25 11:12:54.741  INFO 1 - [7878-exec-2] healenium                        : [Save Elements] Request: By.xpath(//span[normalize-space()='Benefit Scheme Encashment']) 
+2025-04-25 11:13:03.380  INFO 1 - [7878-exec-3] healenium                        : [Save Elements] Request: By.xpath(//span[normalize-space()='New']) 
+2025-04-25 11:13:26.383  INFO 1 - [7878-exec-4] healenium                        : [Save Elements] Request: By.xpath(//img[@id='BenefitSchemeEncashment.EffectiveDate_B-1Img']) 
+2025-04-25 11:13:26.710  INFO 1 - [7878-exec-5] healenium                        : [Save Elements] Request: By.xpath(//input[@id='BenefitSchemeEncashment.EffectiveDate_I']) 
+2025-04-25 11:13:26.883  INFO 1 - [7878-exec-6] healenium                        : [Save Elements] Request: By.xpath(//input[@id='BenefitSchemeEncashment.EffectiveDate_I']) 
+2025-04-25 11:13:27.163  INFO 1 - [7878-exec-7] healenium                        : [Save Elements] Request: By.xpath(//img[@id='BenefitSchemeEncashment.EmployeeIdLookup_B-1Img']) 
+2025-04-25 11:13:31.640  INFO 1 - [7878-exec-8] healenium                        : [Save Elements] Request: By.xpath(//div[contains(text(),'001 | Vaibhav Chavan')]) 
+2025-04-25 11:13:34.030  INFO 1 - [7878-exec-9] healenium                        : [Save Elements] Request: By.xpath(//img[@id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_B-1Img']) 
+2025-04-25 11:13:36.307  INFO 1 - [878-exec-10] healenium                        : [Save Elements] Request: By.cssSelector(td[id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_DDD_gv_tcrow0'] div[class='lookup-text']) 
+2025-04-25 11:13:38.644  INFO 1 - [7878-exec-1] healenium                        : [Save Elements] Request: By.xpath(//input[@id='BenefitSchemeEncashment.RequestedAmount_I']) 
+2025-04-25 11:13:38.874  INFO 1 - [7878-exec-2] healenium                        : [Save Elements] Request: By.xpath(//input[@id='BenefitSchemeEncashment.RequestedAmount_I']) 
+2025-04-25 11:13:39.195  INFO 1 - [7878-exec-3] healenium                        : [Save Elements] Request: By.xpath(//input[@id='BenefitSchemeEncashment.ApprovedAmount_I']) 
+2025-04-25 11:13:39.372  INFO 1 - [7878-exec-4] healenium                        : [Save Elements] Request: By.xpath(//input[@id='BenefitSchemeEncashment.ApprovedAmount_I']) 
+2025-04-25 11:13:39.590  INFO 1 - [7878-exec-5] healenium                        : [Save Elements] Request: By.xpath(//span[normalize-space()='View']) 
+2025-04-25 11:13:41.132  INFO 1 - [7878-exec-6] healenium                        : [Save Elements] Request: By.xpath(//span[normalize-space()='Approve']) 

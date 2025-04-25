@@ -214,8 +214,7 @@ public class CommonActions
 	public static void WaitUntil(By locator)
 	{
 		// Creating FluentWait instance
-		FluentWait<SelfHealingDriver> fluentWait = new FluentWait<>(BaseClass.driver)
-				.withTimeout(Duration.ofSeconds(10)) // Maximum
+		FluentWait<WebDriver> fluentWait = new FluentWait<>(BaseClass.driver).withTimeout(Duration.ofSeconds(10)) // Maximum
 				// wait
 				// time
 				// of
