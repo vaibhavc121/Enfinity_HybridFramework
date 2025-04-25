@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonDataReader
 {
-	private static final String JSON_FILE_PATH = ".\\testdata\\payroll.json";
+	private static final String JSON_FILE_PATH = ".\\testdata\\Payroll.json";
 
 	public static JsonNode readJsonData()
 	{

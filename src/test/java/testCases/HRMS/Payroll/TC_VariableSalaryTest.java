@@ -51,11 +51,11 @@ public class TC_VariableSalaryTest extends BaseClass
 			logger.info("clicked on approved button");
 			vs.clkVariableSalLabel();
 			logger.info("clicked on variable sal label");
-		}
-		catch (Exception e)
+		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
 		}
 	}
+
 }

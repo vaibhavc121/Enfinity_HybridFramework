@@ -29,19 +29,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import com.epam.healenium.SelfHealingDriver;
+
 import pageObjects.HRMS.HRCore.LoginPage;
 
 public class BaseClass
 {
-	public static WebDriver driver;
+	public static WebDriver _driver;
+	public static SelfHealingDriver driver; // updated to SelfHealingDriver
 	public Properties p;
 	public Logger logger; // log4j
 
 	@SuppressWarnings("deprecation")
-	@BeforeClass(groups =
-	{ "regression", "datadriven" })
-	@Parameters(
-	{ "os", "browser" })
+	@BeforeClass(groups = { "regression", "datadriven" })
+	@Parameters({ "os", "browser" })
 	public void setup(String os, String browser) throws IOException
 	{
 		// Loading config.properties file
@@ -64,12 +65,10 @@ public class BaseClass
 			if (os.equalsIgnoreCase("windows"))
 			{
 				capabilities.setPlatform(Platform.WIN11);
-			}
-			else if (os.equalsIgnoreCase("linux"))
+			} else if (os.equalsIgnoreCase("linux"))
 			{
 				capabilities.setPlatform(Platform.LINUX);
-			}
-			else if (os.equalsIgnoreCase("mac"))
+			} else if (os.equalsIgnoreCase("mac"))
 			{
 				capabilities.setPlatform(Platform.MAC);
 			}
@@ -77,8 +76,7 @@ public class BaseClass
 			else if (os.equalsIgnoreCase("android"))
 			{
 				capabilities.setPlatform(Platform.ANDROID);
-			}
-			else
+			} else
 			{
 				System.out.println("no matching os");
 				return; // It will automatically exit
@@ -122,24 +120,24 @@ public class BaseClass
 			// It will automatically exit from switch case statement
 			}
 
-//			if (br.equalsIgnoreCase("chrome")) 
+//			if (br.equalsIgnoreCase("chrome"))
 //			{
 //			    ChromeOptions options = new ChromeOptions();
 //			    options.setCapability("browserVersion", "129");
 //			    driver = new ChromeDriver(options);
-//			} 
-//			else if (br.equalsIgnoreCase("firefox")) 
+//			}
+//			else if (br.equalsIgnoreCase("firefox"))
 //			{
 //			    FirefoxOptions options = new FirefoxOptions();
 //			    options.setCapability("browserVersion", "131");
 //			    driver = new FirefoxDriver(options);
-//			} 
-//			else if (br.equalsIgnoreCase("edge")) 
+//			}
+//			else if (br.equalsIgnoreCase("edge"))
 //			{
 //			    EdgeOptions options = new EdgeOptions();
 //			    options.setCapability("browserVersion", "130");
 //			    driver = new EdgeDriver(options);
-//			} else 
+//			} else
 //			{
 //			    throw new IllegalArgumentException("Unsupported browser: " + br);
 //			}
@@ -150,13 +148,13 @@ public class BaseClass
 			/* for docker container on selenium grid */
 //			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			/* for browserstack */
-			driver = new RemoteWebDriver(
+			_driver = new RemoteWebDriver(
 					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
 					capabilities);
+			driver = SelfHealingDriver.create(_driver);
 		}
 
 		if (p.getProperty("execution_env").equals("local"))
-
 		{
 //			ChromeOptions options = new ChromeOptions();
 //			options.addArguments("--headless"); // Run in headless mode
@@ -167,18 +165,24 @@ public class BaseClass
 			{
 			case "chrome":
 				// driver = new ChromeDriver(options);
-				driver = new ChromeDriver();
-				logger.info("browser opened");
+				_driver = new ChromeDriver();
+				driver = SelfHealingDriver.create(_driver);
+				logger.info("Chrome browser opened with Healenium");
+				// logger.info("browser opened");
 
 				break;
 
 			case "edge":
-				driver = new EdgeDriver();
-				logger.info("browser opened");
+				_driver = new EdgeDriver();
+				driver = SelfHealingDriver.create(_driver);
+				logger.info("Edge browser opened with Healenium");
+				// logger.info("browser opened");
 
 			case "firefox":
-				driver = new FirefoxDriver();
-				logger.info("browser opened");
+				_driver = new FirefoxDriver();
+				driver = SelfHealingDriver.create(_driver);
+				logger.info("Firefox browser opened with Healenium");
+				// logger.info("browser opened");
 
 				break;
 
@@ -202,8 +206,7 @@ public class BaseClass
 		logger.info("provided app URL in browser");
 	}
 
-	@BeforeMethod(groups =
-	{ "regression", "datadriven" })
+	@BeforeMethod(groups = { "regression", "datadriven" })
 	public void login()
 	{
 		// login page
@@ -216,15 +219,13 @@ public class BaseClass
 		logger.info("clicked on sign in button");
 	}
 
-	@AfterMethod(groups =
-	{ "regression", "datadriven" })
+	@AfterMethod(groups = { "regression", "datadriven" })
 	public void afterMethod()
 	{
 		System.out.println("--test execution completed--");
 	}
 
-	@AfterClass(groups =
-	{ "regression", "datadriven" })
+	@AfterClass(groups = { "regression", "datadriven" })
 	public void teardown()
 	{
 		driver.quit();
@@ -299,8 +300,7 @@ public class BaseClass
 		{
 			// Add a red border to highlight the element
 			js.executeScript("arguments[0].style.border='3px solid red'", element);
-		}
-		else
+		} else
 		{
 			// Remove the border to unhighlight the element
 			js.executeScript("arguments[0].style.border=''", element);

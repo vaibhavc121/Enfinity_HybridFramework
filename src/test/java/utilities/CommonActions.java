@@ -1,12 +1,20 @@
 package utilities;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.function.Function;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
+
+import com.epam.healenium.SelfHealingDriver;
 
 import baseTest.BaseClass;
 
@@ -49,12 +57,14 @@ public class CommonActions
 				}
 			}
 			BaseClass.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
-			Thread.sleep(3000);		}
+			Thread.sleep(3000);
+		}
 	}
-	
+
 	public static void setDropdownValueOffice365(String value)
 	{
-		List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//tr[@class='dxeListBoxItemRow_Office365']"));
+		List<WebElement> valueslist = BaseClass.driver
+				.findElements(By.xpath("//tr[@class='dxeListBoxItemRow_Office365']"));
 		for (WebElement valuenm : valueslist)
 		{
 			String actvalue = valuenm.getText();
@@ -65,8 +75,6 @@ public class CommonActions
 			}
 		}
 	}
-	
-	
 
 	public static String formattedDateMMM()
 	{
@@ -196,12 +204,53 @@ public class CommonActions
 		if (message.contains("created successfully"))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 
 		}
 	}
 
+	public static void WaitUntil(By locator)
+	{
+		// Creating FluentWait instance
+		FluentWait<SelfHealingDriver> fluentWait = new FluentWait<>(BaseClass.driver)
+				.withTimeout(Duration.ofSeconds(10)) // Maximum
+				// wait
+				// time
+				// of
+				// 10
+				// seconds
+				.pollingEvery(Duration.ofMillis(500)) // Poll every 500ms
+				.ignoring(NoSuchElementException.class, StaleElementReferenceException.class); // Ignore these
+																								// exceptions
+
+		// Applying FluentWait
+		WebElement element = fluentWait.until(new Function<WebDriver, WebElement>()
+		{
+			@Override
+			public WebElement apply(WebDriver driver)
+			{
+				try
+				{
+					WebElement el = driver.findElement(locator);
+
+					// Check if the element is visible and enabled
+					if (el.isDisplayed() && el.isEnabled())
+					{
+						return el; // Return the element if it's ready
+					} else
+					{
+						return null; // Keep polling if conditions aren't met
+					}
+				} catch (StaleElementReferenceException e)
+				{
+					return null; // If element is stale, return null so FluentWait retries
+				}
+			}
+		});
+
+		// Click after ensuring element is ready
+		element.click();
+	}
 }
