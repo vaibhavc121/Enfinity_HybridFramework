@@ -1,42 +1,26 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
 trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest  # Use Ubuntu agent for Docker support
+  vmImage: windows-latest
 
 jobs:
   - job: Regression_Test
     displayName: "Regression testcase execution"
     steps:
-
-    # Checkout code
-    - checkout: self
-
-    # Install Docker Compose (if needed)
-    - script: |
-        sudo apt-get update
-        sudo apt-get install docker-compose -y
-      displayName: 'Install Docker Compose'
-
-    # Start Healenium backend & DB
-    - script: |
-        docker-compose -f helenium/docker-compose.yml up -d
-      displayName: 'Start Healenium Services'
-
-    # Wait for Healenium to be ready (optional but recommended)
-    - script: |
-        echo "Waiting for Healenium backend to be ready..."
-        sleep 30
-      displayName: 'Wait for Healenium to start'
-
-    # Run Maven tests
     - task: Maven@4
       inputs:
+        azureSubscription: 'Azure for Students(da8c3d3e-cbc0-4f8a-891e-e96747df3a30)'
         mavenPomFile: 'pom.xml'
         goals: 'test'
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        testRunTitle: 'Automation Engineer (SDET) - Vaibhav Chavan'
+        testRunTitle: 'Automation Enginner (SDET)- Vaibhav Chavan'
         javaHomeOption: 'JDKVersion'
         jdkVersionOption: '1.17'
         mavenVersionOption: 'Default'
@@ -46,13 +30,6 @@ jobs:
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
         findBugsRunAnalysis: true
-
-    # Stop Docker containers after tests
-    - script: |
-        docker-compose -f helenium/docker-compose.yml down
-      displayName: 'Stop Healenium Services'
-
-    # Publish artifacts
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
