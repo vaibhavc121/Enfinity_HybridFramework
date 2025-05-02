@@ -22096,3 +22096,17 @@ Session ID: c9e03a4e90c4f8228a16806ceacbed16
 2025-04-25 17:07:45.386 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided religion
 2025-04-25 17:07:45.755 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on save button
 2025-04-25 17:07:45.837 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - test case passed
+2025-05-02 12:46:11.378 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-02 12:46:11.382 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - --test execution started--
+2025-05-02 12:46:16.292 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - browser maximized
+2025-05-02 12:46:30.290 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided app URL in browser
+2025-05-02 12:46:30.581 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided username
+2025-05-02 12:46:30.876 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided password
+2025-05-02 12:46:39.829 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on sign in button
+2025-05-02 12:46:41.768 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on hr core link
+2025-05-02 12:46:43.114 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on setup form
+2025-05-02 12:46:46.439 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on religion
+2025-05-02 12:46:46.569 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on new button
+2025-05-02 12:46:48.469 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - provided religion
+2025-05-02 12:46:48.855 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - clicked on save button
+2025-05-02 12:46:48.943 [main] INFO  testCases.HRMS.HRCore.TC_ReligionTest - test case passed

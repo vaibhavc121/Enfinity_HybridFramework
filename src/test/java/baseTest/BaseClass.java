@@ -29,8 +29,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import com.epam.healenium.SelfHealingDriver;
-
 import pageObjects.HRMS.HRCore.LoginPage;
 
 public class BaseClass
