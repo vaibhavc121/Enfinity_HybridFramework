@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import pageObjects.HRMS.HRCore.BasePage;
+import base.BasePage;
 
 public class VariableSalaryPage extends BasePage
 {
@@ -83,7 +83,7 @@ public class VariableSalaryPage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
-		save.click();
+		clickOnSave();
 		Thread.sleep(2000);
 	}
 

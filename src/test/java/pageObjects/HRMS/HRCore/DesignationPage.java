@@ -4,12 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
 import utilities.CommonActions;
 
 public class DesignationPage extends BasePage
 {
-	BaseClass bc = new BaseClass();
 
 	public DesignationPage(WebDriver driver)
 	{
@@ -49,14 +48,14 @@ public class DesignationPage extends BasePage
 		newbtn.click();
 	}
 
-	String num = bc.randomNumber();
+	String num = randomNumber();
 
 	public void setDesigCode()
 	{
 		code.sendKeys(num);
 	}
 
-	String temp = bc.randomString();
+	String temp = randomString();
 
 	public void setDesignation()
 	{
@@ -80,7 +79,7 @@ public class DesignationPage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
-		CommonActions.clkSave();
+		clickOnSave();
 	}
 
 	public boolean isDesgCreated() throws InterruptedException
@@ -92,8 +91,7 @@ public class DesignationPage extends BasePage
 		if (temp.equals(hrasset))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

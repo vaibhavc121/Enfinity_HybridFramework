@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
 
 public class MySQL_EmployeePage extends BasePage
 {
@@ -17,8 +17,6 @@ public class MySQL_EmployeePage extends BasePage
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-
-	BaseClass bc = new BaseClass();
 
 	@FindBy(css = "#MainMenu_DXI0_Img")
 	WebElement newbtn;
@@ -100,52 +98,52 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void clkBtnNew()
 	{
-		bc.highlightElement(driver, newbtn, true);
+		highlightElement(driver, newbtn, true);
 		newbtn.click();
-		bc.highlightElement(driver, newbtn, false); // Remove highlight
+		highlightElement(driver, newbtn, false); // Remove highlight
 	}
 
 	public void setWorkEmail(String email)
 	{
-		bc.highlightElement(driver, workEmail, true);
+		highlightElement(driver, workEmail, true);
 		workEmail.sendKeys(email);
-		bc.highlightElement(driver, workEmail, false); // Remove highlight
+		highlightElement(driver, workEmail, false); // Remove highlight
 	}
 
 	public void setName(String ename)
 	{
-		bc.highlightElement(driver, name, true);
+		highlightElement(driver, name, true);
 		name.sendKeys(ename);
-		bc.highlightElement(driver, name, false); // Remove highlight
+		highlightElement(driver, name, false); // Remove highlight
 	}
 
 	public void clkMgrDropdown()
 	{
-		bc.highlightElement(driver, clkmgr, true);
+		highlightElement(driver, clkmgr, true);
 		clkmgr.click();
-		bc.highlightElement(driver, clkmgr, false); // Remove highlight
+		highlightElement(driver, clkmgr, false); // Remove highlight
 	}
 
 	public void slctMgr()
 	{
-		bc.highlightElement(driver, slctmgr, true);
+		highlightElement(driver, slctmgr, true);
 		slctmgr.click();
-		bc.highlightElement(driver, slctmgr, false); // Remove highlight
+		highlightElement(driver, slctmgr, false); // Remove highlight
 	}
 
 	public void setMblNum(String mbl)
 	{
-		bc.highlightElement(driver, mobileNumber, true);
+		highlightElement(driver, mobileNumber, true);
 		mobileNumber.sendKeys(mbl);
-		bc.highlightElement(driver, mobileNumber, false); // Remove highlight
+		highlightElement(driver, mobileNumber, false); // Remove highlight
 	}
 
 	public void setDOJ(String DOJ)
 	{
-		bc.highlightElement(driver, joiningDate, true);
+		highlightElement(driver, joiningDate, true);
 		joiningDate.clear();
 		joiningDate.sendKeys(DOJ);
-		bc.highlightElement(driver, joiningDate, false); // Remove highlight
+		highlightElement(driver, joiningDate, false); // Remove highlight
 	}
 
 	public void clkDept()
@@ -264,7 +262,7 @@ public class MySQL_EmployeePage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
-		bc.highlightElement(driver, save, true);
+		highlightElement(driver, save, true);
 		save.click();
 		driver.navigate().back();
 		Thread.sleep(3000);
@@ -272,16 +270,15 @@ public class MySQL_EmployeePage extends BasePage
 
 	public boolean isEmployeeCreated(String emp) throws InterruptedException
 	{
-		bc.highlightElement(driver, filterCell, true);
+		highlightElement(driver, filterCell, true);
 		filterCell.sendKeys(emp);
 		Thread.sleep(2000);
-		bc.highlightElement(driver, result, true);
+		highlightElement(driver, result, true);
 		String employee = result.getText();
 		if (employee.contains(emp))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

@@ -3,10 +3,10 @@ package testCases.HRMS.Payroll;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import baseTest.BaseClass;
+import base.BaseTest;
 import pageObjects.HRMS.Payroll.PayrollPage;
 
-public class PromotionTest extends BaseClass
+public class PromotionTest extends BaseTest
 {
 	@Test(groups = "regression")
 	public void verifyPromotion()

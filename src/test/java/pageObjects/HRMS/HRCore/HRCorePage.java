@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
 
 public class HRCorePage extends BasePage
 {
@@ -15,8 +15,6 @@ public class HRCorePage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseClass bc = new BaseClass();
-
 	@FindBy(xpath = "//span[normalize-space()='HR Core']")
 	WebElement hRCore;
 
@@ -25,16 +23,16 @@ public class HRCorePage extends BasePage
 
 	public void clkHRCore()
 	{
-		bc.highlightElement(driver, hRCore, true);
+		highlightElement(driver, hRCore, true);
 		hRCore.click();
-		bc.highlightElement(driver, hRCore, false); // Remove highlight
+		highlightElement(driver, hRCore, false); // Remove highlight
 	}
 
 	public void clkSetupForm()
 	{
-		bc.highlightElement(driver, setups, true);
+		highlightElement(driver, setups, true);
 		setups.click();
-		bc.highlightElement(driver, setups, false); // Remove highlight
+		highlightElement(driver, setups, false); // Remove highlight
 	}
 
 }

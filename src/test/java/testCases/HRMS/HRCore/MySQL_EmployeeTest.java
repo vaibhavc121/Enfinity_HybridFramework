@@ -3,13 +3,13 @@ package testCases.HRMS.HRCore;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import baseTest.BaseClass;
+import base.BaseTest;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.MySQL_EmployeePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import utilities.DataProviders;
 
-public class MySQL_EmployeeTest extends BaseClass
+public class MySQL_EmployeeTest extends BaseTest
 {
 	@Test(groups = "regression", dataProvider = "employeeinfo", dataProviderClass = DataProviders.class)
 	public void verifyEmpCreation(String email, String name, String mobile, String DOJ, String dept, String designation,

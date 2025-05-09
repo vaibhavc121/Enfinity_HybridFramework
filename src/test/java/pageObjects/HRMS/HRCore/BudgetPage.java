@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
+import base.BaseTest;
 import utilities.CommonActions;
 
 public class BudgetPage extends BasePage
@@ -16,7 +17,7 @@ public class BudgetPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseClass bc = new BaseClass();
+	BaseTest bc = new BaseTest();
 
 	@FindBy(xpath = "//span[normalize-space()='New']")
 	WebElement newbtn;
@@ -44,7 +45,7 @@ public class BudgetPage extends BasePage
 		newbtn.click();
 	}
 
-	String temp = bc.randomString();
+	String temp = randomString();
 
 	public void setName()
 	{
@@ -75,8 +76,7 @@ public class BudgetPage extends BasePage
 		if (temp.equals(budget))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

@@ -4,12 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
 import utilities.CommonActions;
 
 public class ReligionPage extends BasePage
 {
-	BaseClass bc = new BaseClass();
 
 	public ReligionPage(WebDriver driver)
 	{
@@ -37,7 +36,7 @@ public class ReligionPage extends BasePage
 		newbtn.click();
 	}
 
-	String temp = bc.randomString();
+	String temp = randomString();
 
 	public void setReligionName()
 	{
@@ -58,8 +57,7 @@ public class ReligionPage extends BasePage
 		if (religion.equals(temp))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

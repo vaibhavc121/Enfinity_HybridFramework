@@ -8,6 +8,11 @@ import java.sql.Statement;
 public class DatabaseUtility
 {
 
+	private DatabaseUtility()
+	{
+
+	}
+
 //		Add the below dependency in the project-
 //		https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/9.0.0
 

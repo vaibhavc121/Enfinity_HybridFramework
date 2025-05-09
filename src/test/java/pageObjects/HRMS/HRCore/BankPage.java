@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
+import base.BaseTest;
 import utilities.CommonActions;
 
 public class BankPage extends BasePage
@@ -16,7 +17,7 @@ public class BankPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseClass bc = new BaseClass();
+	BaseTest bc = new BaseTest();
 
 	@FindBy(xpath = "//span[normalize-space()='New']")
 	WebElement newbtn;
@@ -41,7 +42,7 @@ public class BankPage extends BasePage
 		newbtn.click();
 	}
 
-	String temp = bc.randomString();
+	String temp = randomString();
 
 	public void setName()
 	{
@@ -55,7 +56,7 @@ public class BankPage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
-		CommonActions.clkSave();
+		clickOnSave();
 	}
 
 	public boolean isBankCreated() throws InterruptedException
@@ -66,8 +67,7 @@ public class BankPage extends BasePage
 		if (temp.equals(bank))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

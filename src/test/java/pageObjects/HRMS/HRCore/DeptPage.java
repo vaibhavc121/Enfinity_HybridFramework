@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
+import base.BaseTest;
 import utilities.CommonActions;
 
 public class DeptPage extends BasePage
@@ -16,7 +17,7 @@ public class DeptPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseClass bc = new BaseClass();
+	BaseTest bc = new BaseTest();
 
 	@FindBy(css = "#MainMenu_DXI0_Img")
 	WebElement newbtn;
@@ -53,7 +54,7 @@ public class DeptPage extends BasePage
 		newbtn.click();
 	}
 
-	String temp = bc.randomString();
+	String temp = randomString();
 
 	public void setDeptName()
 	{
@@ -82,7 +83,7 @@ public class DeptPage extends BasePage
 
 	public void clkSave() throws InterruptedException
 	{
-		CommonActions.clkSave();
+		clickOnSave();
 	}
 
 	public boolean isDeptCreated() throws InterruptedException
@@ -94,8 +95,7 @@ public class DeptPage extends BasePage
 		if (temp.equals(hrasset))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

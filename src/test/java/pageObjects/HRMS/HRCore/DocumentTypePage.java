@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
 import utilities.CommonActions;
 
 public class DocumentTypePage extends BasePage
@@ -17,8 +17,6 @@ public class DocumentTypePage extends BasePage
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-
-	BaseClass bc = new BaseClass();
 
 	@FindBy(xpath = "//i[@class='dx-icon dx-icon-add']")
 	WebElement addIcon;
@@ -59,7 +57,7 @@ public class DocumentTypePage extends BasePage
 
 	}
 
-	String temp = bc.randomString();
+	String temp = randomString();
 
 	public void setName()
 	{

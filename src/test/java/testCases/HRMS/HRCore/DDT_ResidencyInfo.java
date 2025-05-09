@@ -3,13 +3,13 @@ package testCases.HRMS.HRCore;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import baseTest.BaseClass;
+import base.BaseTest;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import utilities.DataProviders;
 
-public class DDT_ResidencyInfo extends BaseClass
+public class DDT_ResidencyInfo extends BaseTest
 {
 	@Test(groups = "datadriven", dataProvider = "ResidencyInfo", dataProviderClass = DataProviders.class)
 	public void verifyResidencyInfo(String sname, String tname, String fname, String lname)

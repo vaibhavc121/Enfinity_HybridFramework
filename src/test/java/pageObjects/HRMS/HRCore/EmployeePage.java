@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
 
 public class EmployeePage extends BasePage
 {
@@ -16,8 +16,6 @@ public class EmployeePage extends BasePage
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-
-	BaseClass bc = new BaseClass();
 
 	@FindBy(css = "#MainMenu_DXI0_Img")
 	WebElement newbtn;
@@ -83,7 +81,7 @@ public class EmployeePage extends BasePage
 
 	public void setWorkEmail()
 	{
-		workEmail.sendKeys(bc.randomEmail());
+		workEmail.sendKeys(randomEmail());
 	}
 
 	public void setName()
@@ -103,7 +101,7 @@ public class EmployeePage extends BasePage
 
 	public void setMblNum()
 	{
-		mobileNumber.sendKeys(bc.randomMblNum());
+		mobileNumber.sendKeys(randomMblNum());
 	}
 
 	public void clkDept()
@@ -128,7 +126,7 @@ public class EmployeePage extends BasePage
 
 	public void clkSave()
 	{
-		save.click();
+		clickOnSave();
 	}
 
 	public boolean verifyEmp()
@@ -137,8 +135,7 @@ public class EmployeePage extends BasePage
 		if (empname.isDisplayed())
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

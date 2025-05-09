@@ -14,37 +14,37 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 
-import baseTest.BaseClass;
+import base.BaseTest;
 
 public class CommonActions
 {
 
 	public static void clkSave()
 	{
-		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='Save']")).click();
+		BaseTest.driver.findElement(By.xpath("//span[normalize-space()='Save']")).click();
 	}
 
 	public static void clkView()
 	{
-		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='View']")).click();
+		BaseTest.driver.findElement(By.xpath("//span[normalize-space()='View']")).click();
 	}
 
 	public static void clkApprove()
 	{
-		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='Approve']")).click();
-		BaseClass.driver.navigate().back();
+		BaseTest.driver.findElement(By.xpath("//span[normalize-space()='Approve']")).click();
+		BaseTest.driver.navigate().back();
 	}
 
 	public static void clkNew()
 	{
-		BaseClass.driver.findElement(By.xpath("//span[normalize-space()='New']")).click();
+		BaseTest.driver.findElement(By.xpath("//span[normalize-space()='New']")).click();
 	}
 
 	public static void setDropdownValue(String value) throws InterruptedException
 	{
 		while (true)
 		{
-			List<WebElement> valueslist = BaseClass.driver.findElements(By.xpath("//div[@class='grid-row-template']"));
+			List<WebElement> valueslist = BaseTest.driver.findElements(By.xpath("//div[@class='grid-row-template']"));
 			for (WebElement valuenm : valueslist)
 			{
 				String actvalue = valuenm.getText();
@@ -54,14 +54,14 @@ public class CommonActions
 					return;
 				}
 			}
-			BaseClass.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
+			BaseTest.driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
 			Thread.sleep(3000);
 		}
 	}
 
 	public static void setDropdownValueOffice365(String value)
 	{
-		List<WebElement> valueslist = BaseClass.driver
+		List<WebElement> valueslist = BaseTest.driver
 				.findElements(By.xpath("//tr[@class='dxeListBoxItemRow_Office365']"));
 		for (WebElement valuenm : valueslist)
 		{
@@ -94,62 +94,62 @@ public class CommonActions
 
 	public static void filterCell2(String name)
 	{
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(name);
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(Keys.ENTER);
 	}
 
 	public static void filterCell5(String name)
 	{
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(name);
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[5]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(Keys.ENTER);
 	}
 
 	public static void filterCell6(String name)
 	{
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[6]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(name);
 	}
 
 	public static void filterCell7(String name)
 	{
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[7]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(name);
 	}
 
 	public static void filterCell8(String name)
 	{
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[8]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(name);
 	}
 
 	public static void filterCell9(String name)
 	{
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[9]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(name);
 	}
 
 	public static void filterCell10(String name)
 	{
-		BaseClass.driver.findElement(By.xpath(
+		BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[10]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"))
 				.sendKeys(name);
 	}
 
 	public static String result5()
 	{
-		String result = BaseClass.driver.findElement(By.xpath(
+		String result = BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[5]"))
 				.getText();
 		return result;
@@ -157,7 +157,7 @@ public class CommonActions
 
 	public static String result6()
 	{
-		String result = BaseClass.driver.findElement(By.xpath(
+		String result = BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/a[1]"))
 				.getText();
 		return result;
@@ -165,7 +165,7 @@ public class CommonActions
 
 	public static String result7()
 	{
-		String result = BaseClass.driver.findElement(By.xpath(
+		String result = BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/span[1]/a[1]"))
 				.getText();
 		return result;
@@ -173,7 +173,7 @@ public class CommonActions
 
 	public static String result8()
 	{
-		String result = BaseClass.driver.findElement(By.xpath(
+		String result = BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[8]"))
 				.getText();
 		return result;
@@ -181,7 +181,7 @@ public class CommonActions
 
 	public static String result9()
 	{
-		String result = BaseClass.driver.findElement(By.xpath(
+		String result = BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[9]"))
 				.getText();
 		return result;
@@ -189,7 +189,7 @@ public class CommonActions
 
 	public static String result10()
 	{
-		String result = BaseClass.driver.findElement(By.xpath(
+		String result = BaseTest.driver.findElement(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[10]"))
 				.getText();
 		return result;
@@ -197,7 +197,7 @@ public class CommonActions
 
 	public static boolean IsTxnCreated()
 	{
-		String message = BaseClass.driver.findElement(By.xpath("//div[@class='dx-toast-message']")).getText();
+		String message = BaseTest.driver.findElement(By.xpath("//div[@class='dx-toast-message']")).getText();
 		// return message;
 		if (message.contains("created successfully"))
 		{
@@ -212,7 +212,7 @@ public class CommonActions
 	public static void WaitUntil(By locator)
 	{
 		// Creating FluentWait instance
-		FluentWait<WebDriver> fluentWait = new FluentWait<>(BaseClass.driver).withTimeout(Duration.ofSeconds(10)) // Maximum
+		FluentWait<WebDriver> fluentWait = new FluentWait<>(BaseTest.driver).withTimeout(Duration.ofSeconds(10)) // Maximum
 				// wait
 				// time
 				// of

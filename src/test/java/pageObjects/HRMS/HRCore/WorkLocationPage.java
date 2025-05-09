@@ -4,12 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.BaseClass;
+import base.BasePage;
 import utilities.CommonActions;
 
 public class WorkLocationPage extends BasePage
 {
-	BaseClass bc = new BaseClass();
 
 	public WorkLocationPage(WebDriver driver)
 	{
@@ -37,7 +36,7 @@ public class WorkLocationPage extends BasePage
 		newbtn.click();
 	}
 
-	String wc = bc.randomString();
+	String wc = randomString();
 
 	public void setName()
 	{
@@ -57,8 +56,7 @@ public class WorkLocationPage extends BasePage
 		if (wc.equals(workloc))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}

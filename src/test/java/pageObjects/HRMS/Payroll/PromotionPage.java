@@ -2,7 +2,7 @@ package pageObjects.HRMS.Payroll;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjects.HRMS.HRCore.BasePage;
+import base.BasePage;
 
 public class PromotionPage extends BasePage
 {
