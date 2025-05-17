@@ -13,10 +13,9 @@ public class FileUtils
 
 	}
 
-	public static String getDataFile(String product, String module, String subFolder, String filename)
+	public static String getDataFile(String module, String subFolder, String filename)
 	{
-		String baseDirectory = System.getProperty("user.dir").substring(0, 1)
-				+ ":\\Enfinity.Online\\Enfinity.Web.Test\\Enfinity." + product + ".Test.UI\\Models\\" + module + "\\";
+		String baseDirectory = System.getProperty("user.dir") + "\\src\\test\\java\\models\\" + module + "\\";
 
 		if (subFolder != null && !subFolder.isEmpty())
 		{
@@ -59,4 +58,20 @@ public class FileUtils
 
 		return result;
 	}
+
+//	public static String getDataFile(String product, String module, String subFolder, String filename)
+//	{
+//		String baseDirectory = System.getProperty("user.dir").substring(0, 1)
+//				+ ":\\Enfinity.Online\\Enfinity.Web.Test\\Enfinity." + product + ".Test.UI\\Models\\" + module + "\\";
+//
+//		if (subFolder != null && !subFolder.isEmpty())
+//		{
+//			baseDirectory += subFolder + "\\";
+//		}
+//
+//		baseDirectory += filename + ".json";
+//
+//		return getFile(baseDirectory);
+//	}
+
 }

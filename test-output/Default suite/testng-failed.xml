@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.HRMS.HRCore.GoogleLogin">
+      <class name="testCases.HRMS.Global.BrokenLinksTest">
         <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="findBrokenLinks"/>
+          <include name="teardown"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.HRMS.HRCore.GoogleLogin -->
+      </class> <!-- testCases.HRMS.Global.BrokenLinksTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,17 +21,18 @@
 		<classes>
 
 			
-			
+			<!-- Payroll -->
 			<!--<class name="testCases.HRMS.Payroll.LoanTest"/>
 			<class name="testCases.HRMS.Payroll.OvertimeTest"/>
 			<class name="testCases.HRMS.Payroll.TicketAdjustmentTest"/>-->
-			<class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>
+			<!--<class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.BenefitEncashmentTest"/>
 			<class name="testCases.HRMS.Payroll.IndemnityAdjustmentTest"/>
 			<class name="testCases.HRMS.Payroll.LeaveEncashmentTest"/>
 			<class name="testCases.HRMS.Payroll.LeaveAdjustmentTest"/>
 			<class name="testCases.HRMS.Payroll.LeaveTest"/>
 			<class name="testCases.HRMS.Payroll.VariableSalaryTest"/>-->
+			<!--<class name="testCases.HRMS.Payroll.VariableSalaryTest_Lambok"/>-->
 			
 
 			<!-- HR Core -->
@@ -51,6 +52,10 @@
 			<class name="testCases.HRMS.HRCore.LoginTest" />
 			<class name="testCases.HRMS.HRCore.DDT_ResidencyInfo" />
 			<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />-->
+			
+			<!-- Global -->
+			<class name="testCases.HRMS.Global.BrokenLinksTest"/>
+			
 		</classes>
 	</test>
 
