@@ -22,8 +22,6 @@ public class VariableSalaryPage extends BasePage
 	@FindBy(xpath = "//input[@id='VariableSalary.EmployeeIdLookup_I']")
 	WebElement empdd;
 
-	private By empdd1 = By.xpath("//input[@id='VariableSalary.EmployeeIdLookup_I']");
-
 	@FindBy(id = "VariableSalary.Description_I")
 	WebElement remarks;
 
@@ -63,7 +61,7 @@ public class VariableSalaryPage extends BasePage
 
 	public void slctEmp(String value)
 	{
-		clearAndProvide1(empdd1, value);
+		clearAndProvide1(empdd, value);
 
 	}
 

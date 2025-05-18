@@ -268,7 +268,7 @@ public class BasePage
 		element.sendKeys(value);
 	}
 
-	public static void clearAndProvide1(By locator, String value)
+	public static void clearAndProvide1(WebElement locator, String value)
 	{
 		WebElement element = waitForElement(locator);
 		element.click();
@@ -691,7 +691,7 @@ public class BasePage
 		element.click();
 	}
 
-	public static WebElement waitForElement(By locator)
+	public static WebElement waitForElement(WebElement locator)
 	{
 		Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
 				.pollingEvery(Duration.ofMillis(500))
@@ -699,7 +699,7 @@ public class BasePage
 
 		return fluentWait.until(driver ->
 		{
-			WebElement el = driver.findElement(locator);
+			WebElement el = locator;
 			return (el.isDisplayed() && el.isEnabled()) ? el : null;
 		});
 	}
