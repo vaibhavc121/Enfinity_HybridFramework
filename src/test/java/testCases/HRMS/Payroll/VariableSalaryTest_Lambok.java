@@ -41,8 +41,6 @@ public class VariableSalaryTest_Lambok extends BaseTest
 				logger.info("clicked on variable sal");
 				vs.clkNewBtn();
 				logger.info("clicked on new btn");
-				vs.clkEmpDD();
-				logger.info("clicked on emp dd");
 				vs.slctEmp();
 				logger.info("employee selected");
 				vs.provideRemarks(varSal.remarks);
