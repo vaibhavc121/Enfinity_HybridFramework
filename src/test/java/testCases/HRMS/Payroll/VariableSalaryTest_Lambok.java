@@ -41,27 +41,23 @@ public class VariableSalaryTest_Lambok extends BaseTest
 				logger.info("clicked on variable sal");
 				vs.clkNewBtn();
 				logger.info("clicked on new btn");
-				vs.slctEmp();
+				vs.provideEmp(varSal.employee);
 				logger.info("employee selected");
+				vs.provideEffectiveDate(varSal.effectiveDate);
 				vs.provideRemarks(varSal.remarks);
 				vs.clkSave();
 				logger.info("clicked on save button");
 				vs.clkNewline();
 				logger.info("clicked on new line");
-				vs.clkSalaryCompDD();
-				logger.info("clicked on sal component dd");
-				vs.slctSalComp();
+				vs.provideSalaryComp(varSal.salComponent);
 				logger.info("selected sal component");
-				vs.clkAmt();
-				logger.info("clicked on amt textbox");
 				vs.provideAmt(varSal.amt);
 				logger.info("amt provided");
 				vs.clkViewBtn();
 				logger.info("clicked on view btn");
-				vs.clkApproveBtn();
+				vs.clkApproveBack();
 				logger.info("clicked on approved button");
-				vs.clkVariableSalLabel();
-				logger.info("clicked on variable sal label");
+
 			}
 
 		} catch (Exception e)

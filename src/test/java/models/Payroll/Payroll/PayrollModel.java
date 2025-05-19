@@ -12,8 +12,8 @@ public class PayrollModel
 	public static class VariableSalModel
 	{
 		public String employee;
-		public String remarks;
 		public String effectiveDate;
+		public String remarks;
 		public String salComponent;
 		public String amt;
 

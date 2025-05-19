@@ -691,7 +691,7 @@ public class BasePage
 		element.click();
 	}
 
-	public static WebElement waitForElement(WebElement locator)
+	public static WebElement waitForElement(WebElement element)
 	{
 		Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
 				.pollingEvery(Duration.ofMillis(500))
@@ -699,7 +699,7 @@ public class BasePage
 
 		return fluentWait.until(driver ->
 		{
-			WebElement el = locator;
+			WebElement el = element;
 			return (el.isDisplayed() && el.isEnabled()) ? el : null;
 		});
 	}

@@ -22,6 +22,9 @@ public class VariableSalaryPage extends BasePage
 	@FindBy(xpath = "//input[@id='VariableSalary.EmployeeIdLookup_I']")
 	WebElement empdd;
 
+	@FindBy(xpath = "//input[@id='VariableSalary.EffectiveDate_I']")
+	WebElement effectiveDate;
+
 	@FindBy(id = "VariableSalary.Description_I")
 	WebElement remarks;
 
@@ -31,13 +34,10 @@ public class VariableSalaryPage extends BasePage
 	@FindBy(xpath = "//i[@class='dx-icon dx-icon-new-icon']")
 	WebElement newLine;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[5]/td[2]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/img[1]")
-	WebElement clksalcompdd;
+	@FindBy(xpath = "//input[@id='VariableSalaryLine_SalaryComponentId_I']")
+	WebElement SalaryCompo;
 
-	@FindBy(xpath = "//div[normalize-space()='SC001 | Basic Salary']")
-	WebElement basic;
-
-	@FindBy(xpath = "//td[@class=' grid-cell dx-wrap dxgv dx-ellipsis dx-ar']//div[@class='dxgBCTC dx-ellipsis'][normalize-space()='0']")
+	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[4]")
 	WebElement amtfield;
 
 	@FindBy(xpath = "//span[normalize-space()='View']")
@@ -59,10 +59,15 @@ public class VariableSalaryPage extends BasePage
 		clickOnNew();
 	}
 
-	public void slctEmp(String value)
+	public void provideEmp(String value)
 	{
 		clearAndProvide1(empdd, value);
 
+	}
+
+	public void provideEffectiveDate(String value)
+	{
+		clearAndProvide1(effectiveDate, value);
 	}
 
 	public void provideRemarks(String value)
@@ -78,28 +83,17 @@ public class VariableSalaryPage extends BasePage
 
 	public void clkNewline()
 	{
-		newLine.click();
+		clickOnNewLine();
 	}
 
-	public void clkSalaryCompDD()
+	public void provideSalaryComp(String value)
 	{
-		clksalcompdd.click();
-	}
-
-	public void slctSalComp()
-	{
-		basic.click();
-	}
-
-	public void clkAmt()
-	{
-		amtfield.click();
-		// amtfield.clear();
+		clearAndProvide1(SalaryCompo, value);
 	}
 
 	public void provideAmt(String value)
 	{
-		amtfield.sendKeys(value);
+		clearAndProvide1(amtfield, value);
 	}
 
 	public void clkViewBtn()
@@ -107,14 +101,9 @@ public class VariableSalaryPage extends BasePage
 		viewbtn.click();
 	}
 
-	public void clkApproveBtn()
+	public void clkApproveBack()
 	{
-		approvebtn.click();
-	}
-
-	public void clkVariableSalLabel()
-	{
-		variablesal.click();
+		clickApproveAndBack();
 	}
 
 }
