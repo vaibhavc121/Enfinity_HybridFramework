@@ -80,22 +80,22 @@ public class BasePage
 	{
 		// I expect the index to change dynamically
 		String xpath = "(//input[@class='dx-texteditor-input'])[" + columnIndex + "]";
-		waitForElement(By.xpath(xpath)).clear();
-		waitForElement(By.xpath(xpath)).sendKeys(value);
+		waitForElement1(By.xpath(xpath)).clear();
+		waitForElement1(By.xpath(xpath)).sendKeys(value);
 	}
 
 	// other approach
 	public static void filterValue(int columnIndex, String value)
 	{
 		String xpath = "(//tbody//tr)[11]//td[" + columnIndex + "]";
-		waitForElement(By.xpath(xpath)).sendKeys(value);
+		waitForElement1(By.xpath(xpath)).sendKeys(value);
 	}
 
 	public static void filterDateByIndex(int columnIndex, String value)
 	{
 		String xpath = "(//input[@class='dx-texteditor-input'])[" + columnIndex + "]";
-		waitForElement(By.xpath(xpath)).clear();
-		waitForElement(By.xpath(xpath)).sendKeys(value);
+		waitForElement1(By.xpath(xpath)).clear();
+		waitForElement1(By.xpath(xpath)).sendKeys(value);
 		pressEnter();
 	}
 
@@ -131,7 +131,7 @@ public class BasePage
 	public static void selectRow()
 	{
 		// driver.findElement(By.xpath("(//tr)[12]//td[2]")).click();
-		waitForElement(By.xpath("(//tr)[12]//td[2]")).click();
+		waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
 	}
 
 	public static String resultValue(int columnIndex)
@@ -140,45 +140,45 @@ public class BasePage
 		// driver.findElement(By.xpath("(//tbody//tr)[12]//td[2]")).getText();
 		// return result;
 		String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
-		String result = waitForElement(By.xpath(xpath)).getText();
+		String result = waitForElement1(By.xpath(xpath)).getText();
 		return result;
 	}
 
 	// Transaction form related Action Methods
 	public static void clickOnOk()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='OK']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='OK']")).click();
 	}
 
 	public static void clickOnSave()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='Save']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
 	}
 
 	public void clickSaveSubmit()
 	{
-		waitForElement(By.xpath("//span[text()='Save and Submit']")).click();
+		waitForElement1(By.xpath("//span[text()='Save and Submit']")).click();
 	}
 
 	public static void clickSaveAndBack()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='Save']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
 		driver.navigate().back();
 	}
 
 	public static void clickOnView()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='View']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
 	}
 
 	public static void clickOnApprove()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='Approve']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
 	}
 
 	public static void clickViewAndBack()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='View']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
 		try
 		{
 			Thread.sleep(2000);
@@ -193,18 +193,18 @@ public class BasePage
 
 	public static void clickOnEdit()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='Edit']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Edit']")).click();
 	}
 
 	public static void clickApproveAndBack()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='Approve']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
 		driver.navigate().back();
 	}
 
 	public static void clickOnNew()
 	{
-		waitForElement(By.xpath("//span[normalize-space()='New']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
 	}
 
 	public static void selectDropdownOption(String expectedValue)
@@ -262,7 +262,7 @@ public class BasePage
 
 	public static void clearAndProvide(By locator, String value)
 	{
-		WebElement element = waitForElement(locator);
+		WebElement element = waitForElement1(locator);
 		element.click();
 		element.clear();
 		element.sendKeys(value);
@@ -291,7 +291,16 @@ public class BasePage
 		element.sendKeys(value);
 	}
 
-	public static void provideAndEnter(By locator, String value)
+	public static void clearAndProvide2(WebElement locator, String value) throws InterruptedException
+	{
+		WebElement element = waitForElement(locator);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).click().doubleClick().sendKeys(value).build().perform();
+
+		Thread.sleep(1000);
+	}
+
+	public static void provideAndEnter(WebElement locator, String value)
 	{
 		WebElement element = waitForElement(locator);
 		element.click();
@@ -308,7 +317,7 @@ public class BasePage
 		element.sendKeys(Keys.ENTER);
 	}
 
-	public static void provideValue(By locator, String value)
+	public static void provideValue(WebElement locator, String value)
 	{
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		WebElement element = waitForElement(locator);
@@ -318,14 +327,14 @@ public class BasePage
 	public void provideDescription(String value)
 	{
 		By description = By.xpath("//textarea[contains(@id,'Description')]");
-		clearAndProvide1(description, value);
+		clearAndProvide(description, value);
 	}
 
 	public static void globalSearch(String value)
 	{
-		WebElement globalSearchInput = waitForElement(By.id("GlobalSearch"));
+		WebElement globalSearchInput = waitForElement1(By.id("GlobalSearch"));
 		globalSearchInput.click();
-		WebElement comboBoxInput = waitForElement(By.xpath("//input[@role='combobox']"));
+		WebElement comboBoxInput = waitForElement1(By.xpath("//input[@role='combobox']"));
 		comboBoxInput.sendKeys(value);
 		try
 		{
@@ -340,11 +349,11 @@ public class BasePage
 	public static void scrollDownWebPageSample()
 	{
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		WebElement element = waitForElement(By.xpath("//input[contains(@id,'OldContractSalary')]"));
+		WebElement element = waitForElement1(By.xpath("//input[contains(@id,'OldContractSalary')]"));
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
-	public static void scrollDownWebPage(By locator)
+	public static void scrollDownWebPage(WebElement locator)
 	{
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		WebElement element = waitForElement(locator);
@@ -353,10 +362,10 @@ public class BasePage
 
 	public static void clickOnNewLine()
 	{
-		waitForElement(By.xpath("//i[@class='dx-icon dx-icon-new-icon']")).click();
+		waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-new-icon']")).click();
 	}
 
-	public static void hoverAndClick(By locator, By locator1)
+	public static void hoverAndClick(WebElement locator, WebElement locator1)
 	{
 		WebElement elementToHover = waitForElement(locator);
 		Actions actions = new Actions(driver);
@@ -376,7 +385,7 @@ public class BasePage
 		}
 		try
 		{
-			waitForElement(By.xpath("(//tr)[12]//td[2]")).click();
+			waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
 		} catch (Exception e)
 		{
 			Assert.fail("Vaibhav- There is no active records..");
@@ -396,8 +405,8 @@ public class BasePage
 		{
 			e.printStackTrace();
 		}
-		waitForElement(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
-		waitForElement(By.xpath("//span[normalize-space()='Delete']")).click();
+		waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
 		try
 		{
 			Thread.sleep(1000);
@@ -423,10 +432,10 @@ public class BasePage
 		{
 			if (ColumnIndex == 2)
 			{
-				waitForElement(By.xpath("(//tr)[12]//td[1]")).click();
+				waitForElement1(By.xpath("(//tr)[12]//td[1]")).click();
 			} else
 			{
-				waitForElement(By.xpath("(//tr)[12]//td[2]")).click();
+				waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
 			}
 		} catch (Exception e)
 		{
@@ -447,8 +456,8 @@ public class BasePage
 		{
 			e.printStackTrace();
 		}
-		waitForElement(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
-		waitForElement(By.xpath("//span[normalize-space()='Delete']")).click();
+		waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
 		try
 		{
 			Thread.sleep(1000);
@@ -462,21 +471,21 @@ public class BasePage
 
 	public static void clickOnContextMenu()
 	{
-		waitForElement(By.id("MainMenu_DXI11_P")).click();
+		waitForElement1(By.id("MainMenu_DXI11_P")).click();
 	}
 
 	// Employee listing
 	public static void filterEmployee(String value)
 	{
 		// driver.findElement(By.id("//input[@aria-describedby='dx-col-4']")).sendKeys(value);
-		waitForElement(By.id("//input[@aria-describedby='dx-col-4']")).sendKeys(value);
+		waitForElement1(By.id("//input[@aria-describedby='dx-col-4']")).sendKeys(value);
 	}
 
 	public static String resultEmployee()
 	{
 		// String result = driver.findElement(By.xpath(
 		// "/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/p[1]/span[1]/a[1]")).getText();
-		String result = waitForElement(By.xpath(
+		String result = waitForElement1(By.xpath(
 				"/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/p[1]/span[1]/a[1]"))
 				.getText();
 		return result;
@@ -486,7 +495,7 @@ public class BasePage
 	{
 		// String result = driver.findElement(By.xpath("//td[@class='list-hyperlink
 		// dx-cell-focus-disabled']")).getText();
-		String result = waitForElement(By.xpath("//td[@class='list-hyperlink dx-cell-focus-disabled']")).getText();
+		String result = waitForElement1(By.xpath("//td[@class='list-hyperlink dx-cell-focus-disabled']")).getText();
 		return result;
 	}
 
@@ -495,7 +504,7 @@ public class BasePage
 		// WebElement employee =
 		// driver.findElement(By.xpath("//td[@class='list-hyperlink
 		// dx-cell-focus-disabled']"));
-		WebElement employee = waitForElement(By.xpath("//td[@class='list-hyperlink dx-cell-focus-disabled']"));
+		WebElement employee = waitForElement1(By.xpath("//td[@class='list-hyperlink dx-cell-focus-disabled']"));
 
 		String result = employee.getText();
 
@@ -704,6 +713,19 @@ public class BasePage
 		});
 	}
 
+	public static WebElement waitForElement1(By locator)
+	{
+		Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofMillis(500))
+				.ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
+
+		return fluentWait.until(driver ->
+		{
+			WebElement el = driver.findElement(locator);
+			return (el.isDisplayed() && el.isEnabled()) ? el : null;
+		});
+	}
+
 	public static void wait(int seconds)
 	{
 		try
@@ -744,7 +766,7 @@ public class BasePage
 
 	public static boolean isTransactionCreated()
 	{
-		String message = waitForElement(By.xpath("//div[@class='dx-toast-message']")).getText();
+		String message = waitForElement1(By.xpath("//div[@class='dx-toast-message']")).getText();
 
 		if (message.contains("created successfully"))
 		{
@@ -757,7 +779,7 @@ public class BasePage
 
 	public static boolean isEmployeeDeleted()
 	{
-		String message = waitForElement(By.xpath("//div[@class='dx-toast-message']")).getText();
+		String message = waitForElement1(By.xpath("//div[@class='dx-toast-message']")).getText();
 
 		if (message.contains("deleted successfully"))
 		{
@@ -770,7 +792,7 @@ public class BasePage
 
 	public static void validation(String expectedMessage)
 	{
-		WebElement element = waitForElement(By.className("dx-toast-message"));
+		WebElement element = waitForElement1(By.className("dx-toast-message"));
 
 		String actualMessage = element.getText();
 		Assert.assertTrue(actualMessage.contains(expectedMessage));
@@ -986,13 +1008,13 @@ public class BasePage
 	}
 
 	// Mouse Actions
-	public void hoverOverElement(By locator)
+	public void hoverOverElement(WebElement locator)
 	{
 		Actions actions = new Actions(driver);
 		actions.moveToElement(waitForElement(locator)).perform();
 	}
 
-	public void dragAndDrop(By sourceLocator, By targetLocator)
+	public void dragAndDrop1(WebElement sourceLocator, WebElement targetLocator)
 	{
 		Actions actions = new Actions(driver);
 		actions.dragAndDrop(waitForElement(sourceLocator), waitForElement(targetLocator)).perform();
@@ -1040,7 +1062,7 @@ public class BasePage
 		actions.dragAndDropBy(element, xOffset, yOffset).perform();
 	}
 
-	public static void moveSliderByOffset(By locator, int xOffset)
+	public static void moveSliderByOffset(WebElement locator, int xOffset)
 	{
 		Actions move = new Actions(driver);
 
@@ -1076,7 +1098,7 @@ public class BasePage
 	}
 
 	// File Upload
-	public void uploadFile(By locator, String filePath)
+	public void uploadFile(WebElement locator, String filePath)
 	{
 		waitForElement(locator).sendKeys(filePath);
 	}

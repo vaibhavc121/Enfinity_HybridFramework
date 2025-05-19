@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.Global.BrokenLinksTest">
+      <class name="testCases.HRMS.Payroll.VariableSalaryTest_Lambok">
         <methods>
           <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="findBrokenLinks"/>
           <include name="teardown"/>
           <include name="login"/>
+          <include name="verifyVariableSalary"/>
         </methods>
-      </class> <!-- testCases.HRMS.Global.BrokenLinksTest -->
+      </class> <!-- testCases.HRMS.Payroll.VariableSalaryTest_Lambok -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->

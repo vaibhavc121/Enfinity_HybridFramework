@@ -23367,3 +23367,284 @@ java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to cl
 2025-05-17 10:43:19.054 [main] INFO  testCases.HRMS.Global.BrokenLinksTest - provided username
 2025-05-17 10:43:19.370 [main] INFO  testCases.HRMS.Global.BrokenLinksTest - provided password
 2025-05-17 10:43:28.377 [main] INFO  testCases.HRMS.Global.BrokenLinksTest - clicked on sign in button
+2025-05-19 23:33:42.197 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:33:42.513 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:33:42.513 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:34:26.831 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:34:43.635 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:34:44.085 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:34:44.449 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:35:15.892 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:35:16.097 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:35:16.097 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:35:25.264 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:35:25.494 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:35:25.494 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:35:31.978 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:35:45.913 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:35:46.301 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:35:46.556 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:35:55.432 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:36:01.279 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:36:06.347 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:36:23.586 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:36:28.110 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:36:51.389 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:37:21.645 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:37:24.947 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:37:40.974 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:43:23.467 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:43:23.696 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:43:23.697 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:43:25.166 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:43:39.165 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:43:39.486 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:43:39.678 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:43:48.932 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:43:49.727 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:43:51.950 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:43:53.463 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:43:53.670 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:44:04.254 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:44:09.455 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:44:09.621 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:44:11.994 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:44:13.357 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - amt provided
+2025-05-19 23:45:35.519 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:45:35.709 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:45:35.709 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:45:37.062 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:45:50.934 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:45:51.365 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:45:51.584 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:46:01.883 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:46:02.638 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:46:04.903 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:46:06.820 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:46:07.233 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:46:17.932 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:46:23.095 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:46:23.405 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:46:25.854 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:46:27.159 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - amt provided
+2025-05-19 23:46:27.891 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on view btn
+2025-05-19 23:46:34.315 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on approved button
+2025-05-19 23:48:13.887 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:48:14.081 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:48:14.081 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:48:15.522 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:48:29.021 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:48:29.426 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:48:29.676 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:48:38.014 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:48:38.830 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:48:40.839 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:48:42.350 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:48:42.718 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:48:53.200 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:48:59.315 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:48:59.579 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:49:01.985 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:49:18.313 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - amt provided
+2025-05-19 23:49:18.984 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on view btn
+2025-05-19 23:49:20.853 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on approved button
+2025-05-19 23:50:05.982 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:50:06.168 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:50:06.168 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:50:07.593 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:50:21.083 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:50:21.457 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:50:21.727 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:50:31.118 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:50:32.108 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:50:34.100 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:50:35.788 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:50:36.056 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:50:47.091 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:50:52.521 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:50:52.759 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:50:55.137 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:51:11.883 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - amt provided
+2025-05-19 23:51:11.905 [main] ERROR testCases.HRMS.Payroll.VariableSalaryTest_Lambok - Test failed due to exception: 
+org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e845706b74f75cc67c967ef4e9e5c314, findElement {value=//span[normalize-space()='View'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61462}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61462/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e845706b74f75cc67c967ef4e9e5c314
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.VariableSalaryPage.clkViewBtn(VariableSalaryPage.java:103) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.VariableSalaryTest_Lambok.verifyVariableSalary(VariableSalaryTest_Lambok.java:56) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-05-19 23:51:55.591 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:51:55.784 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:51:55.784 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:51:57.086 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:52:10.552 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:52:10.939 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:52:11.217 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:52:19.791 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:52:20.609 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:52:22.720 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:52:24.297 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:52:24.713 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:52:35.127 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:52:40.841 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:52:41.081 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:52:43.540 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:53:00.512 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - amt provided
+2025-05-19 23:53:01.154 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on view btn
+2025-05-19 23:53:02.059 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on approved button
+2025-05-19 23:54:05.551 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:54:05.749 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:54:05.749 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:54:07.101 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:54:20.624 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:54:21.013 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:54:21.250 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:54:29.806 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:54:30.568 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:54:32.637 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:54:34.266 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:54:34.507 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:54:44.969 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:54:50.437 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:54:50.607 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:54:53.008 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:55:12.149 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - amt provided
+2025-05-19 23:55:12.771 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on view btn
+2025-05-19 23:55:17.594 [main] ERROR testCases.HRMS.Payroll.VariableSalaryTest_Lambok - Test failed due to exception: 
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53c80e0df7823d18893a7722a17e1840, goBack {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62109/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53c80e0df7823d18893a7722a17e1840
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:1086) ~[selenium-remote-driver-4.31.0.jar:?]
+	at base.BasePage.clickApproveAndBack(BasePage.java:202) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.VariableSalaryPage.clkApproveBack(VariableSalaryPage.java:110) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.VariableSalaryTest_Lambok.verifyVariableSalary(VariableSalaryTest_Lambok.java:58) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-05-19 23:56:14.708 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-19 23:56:14.915 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-19 23:56:14.915 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - --test execution started--
+2025-05-19 23:56:16.260 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - browser maximized
+2025-05-19 23:56:30.605 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided app URL in browser
+2025-05-19 23:56:30.977 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided username
+2025-05-19 23:56:31.228 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - provided password
+2025-05-19 23:56:39.453 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on sign in button
+2025-05-19 23:56:40.250 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on payroll link
+2025-05-19 23:56:42.832 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on txn
+2025-05-19 23:56:44.496 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on variable sal
+2025-05-19 23:56:44.702 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new btn
+2025-05-19 23:56:55.647 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - employee selected
+2025-05-19 23:57:01.008 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on save button
+2025-05-19 23:57:01.272 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on new line
+2025-05-19 23:57:06.039 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - selected sal component
+2025-05-19 23:57:23.043 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - amt provided
+2025-05-19 23:57:23.987 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on view btn
+2025-05-19 23:57:24.949 [main] INFO  testCases.HRMS.Payroll.VariableSalaryTest_Lambok - clicked on approved button

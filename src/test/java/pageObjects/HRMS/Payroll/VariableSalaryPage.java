@@ -88,12 +88,17 @@ public class VariableSalaryPage extends BasePage
 
 	public void provideSalaryComp(String value)
 	{
-		clearAndProvide1(SalaryCompo, value);
+		waitTS(2);
+		provideAndEnter(SalaryCompo, value);
 	}
 
-	public void provideAmt(String value)
+	public void provideAmt(String value) throws InterruptedException
 	{
-		clearAndProvide1(amtfield, value);
+
+		clearAndProvide2(amtfield, value);
+		clickOnSave();
+		// clickOnNewLine();
+		waitTS(15);
 	}
 
 	public void clkViewBtn()
