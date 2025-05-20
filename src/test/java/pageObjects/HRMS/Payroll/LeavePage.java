@@ -21,47 +21,23 @@ public class LeavePage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseTest bc = new BaseTest();
-	Faker fk = new Faker();
-
-	@FindBy(css = "a[id='TxnInstanceView_I0i3_T'] span[class='dx-vam']")
+	@FindBy(xpath = "(//span[text()='Leave'])[2]")
 	WebElement leave;
 
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/img[1]")
-	WebElement clkempdd;
+	@FindBy(xpath = "//input[@id='Leave.EmployeeIdLookup_I']")
+	WebElement empdd;
 
 	@FindBy(xpath = "//input[@id='Leave.EffectiveDate_I']")
 	WebElement effectiveDate;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/img[1]")
-	WebElement leavetypedd;
-
-	@FindBy(xpath = "//div[contains(text(),'Absent leave')]")
-	WebElement absentLeave;
+	@FindBy(xpath = "//input[@id='Leave.LeaveTypeIdLookup_I']")
+	WebElement leaveTypeDD;
 
 	@FindBy(xpath = "//input[@id='Leave.FromDate_I']")
 	WebElement fromDate;
 
 	@FindBy(xpath = "//input[@id='Leave.UptoDate_I']")
 	WebElement uptoDate;
-
-	@FindBy(xpath = "//span[normalize-space()='View']")
-	WebElement view;
-
-	@FindBy(xpath = "//span[normalize-space()='Approve']")
-	WebElement approve;
-
-	@FindBy(xpath = "//a[normalize-space()='Leave']")
-	WebElement leavelink;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[9]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filterCell;
-
-	@FindBy(xpath = "//body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[9]")
-	WebElement result;
 
 	public void clkLeave()
 	{
@@ -70,58 +46,37 @@ public class LeavePage extends BasePage
 
 	public void clkNewBtn()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	public void clkEmpDD()
+	public void provideEmp(String value)
 	{
-		clkempdd.click();
+		clearAndProvide1(empdd, value);
 	}
 
-	public void slctEmp()
+	public void provideEffectiveDt(String value)
 	{
-		List<WebElement> emplist = driver.findElements(By.xpath("//div[@class='lookup-text']"));
-
-		for (WebElement empnm : emplist)
-		{
-			String actemp = empnm.getText();
-			if (actemp.contains("alka"))
-			{
-				empnm.click();
-				break;
-			}
-		}
-
+		clearAndProvide1(effectiveDate, value);
 	}
 
-	// DateAndTime date=fk.date();
-	public void provideEffectiveDt()
+	public void provideLeaveType(String value)
 	{
-		effectiveDate.clear();
-		effectiveDate.sendKeys("08-11-2024");
+		clearAndProvide1(leaveTypeDD, value);
 	}
 
-	public void clkLeaveTypeDD()
+	public void provideFromDt(String value)
 	{
-		leavetypedd.click();
+		clearAndProvide1(fromDate, value);
 	}
 
-	public void slctLeaveType() throws InterruptedException
+	public void provideUpToDt(String value)
 	{
-		absentLeave.click();
-		Thread.sleep(2000);
+		clearAndProvide1(uptoDate, value);
 	}
 
-	public void provideFromDt()
+	public void providePaymentType(String value)
 	{
-		fromDate.clear();
-		fromDate.sendKeys("08-11-2024");
-	}
-
-	public void provideUpToDt()
-	{
-		uptoDate.clear();
-		uptoDate.sendKeys("08-11-2024");
+		selectDropdownValueOffice365(value);
 	}
 
 	public void clkView()
@@ -129,14 +84,9 @@ public class LeavePage extends BasePage
 		clickOnView();
 	}
 
-	public void clkApprove()
+	public void clkApproveBack()
 	{
-		clickOnApprove();
-	}
-
-	public void clkLeaveLink()
-	{
-		leavelink.click();
+		clickApproveAndBack();
 	}
 
 	public boolean isLeaveCreated() throws InterruptedException

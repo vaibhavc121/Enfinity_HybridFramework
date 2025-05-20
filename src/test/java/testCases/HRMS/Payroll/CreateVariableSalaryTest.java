@@ -8,7 +8,7 @@ import pageObjects.HRMS.Payroll.PayrollPage;
 import pageObjects.HRMS.Payroll.VariableSalaryPage;
 import utilities.DataProviders;
 
-public class VariableSalaryTest extends BaseTest
+public class CreateVariableSalaryTest extends BaseTest
 {
 	@Test(groups = "regression", dataProvider = "variableSal", dataProviderClass = DataProviders.class)
 	public void verifyVariableSalary(String emp, String remarks, String effectiveDate, String salComponent, String amt) // ,

@@ -5,6 +5,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import base.BasePage;
 import base.BaseTest;
 
 import models.Payroll.Payroll.PayrollModel.VariableSalModel;
@@ -14,9 +15,9 @@ import pageObjects.HRMS.Payroll.VariableSalaryPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 
-public class VariableSalaryTest_Lambok extends BaseTest
+public class CreateVariableSalaryTest_Lambok extends BaseTest
 {
-	@Test(groups = "regression")
+	@Test(groups = "regression", priority = 1)
 	public void verifyVariableSalary()
 	{
 		try
@@ -57,6 +58,8 @@ public class VariableSalaryTest_Lambok extends BaseTest
 				logger.info("clicked on view btn");
 				vs.clkApproveBack();
 				logger.info("clicked on approved button");
+
+				Assert.assertTrue(BasePage.validateListing2Fields(varSal.employee, 6, 6, varSal.amt, 7, 7));
 
 			}
 

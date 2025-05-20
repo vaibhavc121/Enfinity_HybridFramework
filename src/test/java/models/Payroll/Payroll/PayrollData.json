@@ -2,11 +2,25 @@
     "createVariableSal":[
         {
             "employee":"Vaibhav Chavan",
-			"effectiveDate": "22-03-2025",
+			"effectiveDate": "01-01-2025",
             "remarks":"test",            
-            "salComponent":"SC001 | Basic Salary",
+            "salComponent":"SC04001 | Basic",
             "amt":"100"
+			
         }
 
-    ]
+    ],
+	
+	"createLeave":[
+		{			
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",
+			"leaveType": "Unpaid Leave",
+			"fromDate":"01-01-2025",            
+			"uptoDate":"01-01-2025",
+			"paymentType":"Pay With Payroll"
+		}
+	]
+	
+	
 }

@@ -97,13 +97,12 @@ public class VariableSalaryPage extends BasePage
 
 		clearAndProvide2(amtfield, value);
 		clickOnSave();
-		// clickOnNewLine();
-		waitTS(15);
 	}
 
 	public void clkViewBtn()
 	{
 		viewbtn.click();
+		waitTS(2);
 	}
 
 	public void clkApproveBack()

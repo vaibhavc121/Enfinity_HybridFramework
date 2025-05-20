@@ -19,4 +19,16 @@ public class PayrollModel
 
 	}
 
+	@Data
+	public static class LeaveModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String leaveType;
+		public String fromDate;
+		public String uptoDate;
+		public String paymentType;
+
+	}
+
 }

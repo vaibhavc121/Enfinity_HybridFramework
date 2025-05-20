@@ -22,6 +22,8 @@ import org.testng.Assert;
 
 import com.github.javafaker.Faker;
 
+import utilities.BrowserUtils;
+
 public class BasePage
 {
 	public static WebDriver driver;
@@ -139,9 +141,21 @@ public class BasePage
 		// String result =
 		// driver.findElement(By.xpath("(//tbody//tr)[12]//td[2]")).getText();
 		// return result;
+
 		String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
-		String result = waitForElement1(By.xpath(xpath)).getText();
-		return result;
+		try
+		{
+			String result = waitForElement1(By.xpath(xpath)).getText();
+			return result;
+		} catch (Exception e)
+		{
+			return "No matching record found";
+		}
+
+//		String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
+//		String result = driver.findElement(By.xpath(xpath)).getText();
+//		return result;
+
 	}
 
 	// Transaction form related Action Methods
@@ -416,6 +430,48 @@ public class BasePage
 		}
 		pressKey("enter");
 		driver.navigate().back();
+	}
+
+	public static void performAction(int index, String value, String action)
+	{
+		filterByIndex(index, value);
+		waitTS(2);
+
+		try
+		{
+			// Need to select row to click on view
+			waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
+		} catch (Exception e)
+		{
+			Assert.fail("Vaibhav - There are no active records.");
+			System.exit(1); // Exit application
+		}
+
+		try
+		{
+			clickOnView();
+		} catch (Exception e)
+		{
+			clickOnEdit();
+		}
+
+		waitTS(5);
+
+		// Click on menu image icon
+		waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+
+		// Click the action (e.g., Delete, View, Edit)
+		waitForElement1(By.xpath("//span[normalize-space()='" + action + "']")).click();
+		waitTS(1);
+
+		pressKey("enter");
+
+		// Delete the transaction again (possibly confirm step)
+		waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+		driver.findElement(By.xpath("//span[normalize-space()='Delete']")).click();
+		waitTS(1);
+		pressKey("enter");
+		BrowserUtils.navigateBack(driver);
 	}
 
 	public static void deleteHrCoreTxn(int ColumnIndex, String value)
@@ -818,6 +874,28 @@ public class BasePage
 		{
 			return false;
 		}
+	}
+
+	public static boolean validateListing2Fields(String value1, int filterIndex1, int resultIndex1, String value2,
+			int filterIndex2, int resultIndex2)
+	{
+		// Apply first filter
+		filterByIndex(filterIndex1, value1);
+		waitTS(2);
+
+		// Apply second filter
+		filterByIndex(filterIndex2, value2);
+		waitTS(2);
+
+		// Get results
+		String actualValue1 = resultValue(resultIndex1);
+		String actualValue2 = resultValue(resultIndex2);
+
+		// Validate results
+		boolean isValid1 = actualValue1.contains(value1);
+		boolean isValid2 = actualValue2.contains(value2);
+
+		return isValid1 && isValid2;
 	}
 
 	public static boolean validateListing1(String expDate, String expEmp, String expStatus)

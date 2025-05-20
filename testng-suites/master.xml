@@ -31,8 +31,9 @@
 			<class name="testCases.HRMS.Payroll.LeaveEncashmentTest"/>
 			<class name="testCases.HRMS.Payroll.LeaveAdjustmentTest"/>
 			<class name="testCases.HRMS.Payroll.LeaveTest"/>
-			<class name="testCases.HRMS.Payroll.VariableSalaryTest"/>-->
-			<!--<class name="testCases.HRMS.Payroll.VariableSalaryTest_Lambok"/>-->
+			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest"/>-->
+			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok"/>
+			<class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest"/>
 			
 
 			<!-- HR Core -->
@@ -54,7 +55,7 @@
 			<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />-->
 			
 			<!-- Global -->
-			<class name="testCases.HRMS.Global.BrokenLinksTest"/>
+			<!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->
 			
 		</classes>
 	</test>

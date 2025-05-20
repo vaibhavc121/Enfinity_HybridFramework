@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.HRMS.Global.BrokenLinksTest">
+      <class name="testCases.HRMS.Payroll.VariableSalaryTest_Lambok">
         <methods>
-          <include name="setup"/>
           <include name="afterMethod"/>
-          <include name="findBrokenLinks"/>
+          <include name="setup"/>
           <include name="teardown"/>
           <include name="login"/>
+          <include name="verifyVariableSalary"/>
         </methods>
-      </class> <!-- testCases.HRMS.Global.BrokenLinksTest -->
+      </class> <!-- testCases.HRMS.Payroll.VariableSalaryTest_Lambok -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
