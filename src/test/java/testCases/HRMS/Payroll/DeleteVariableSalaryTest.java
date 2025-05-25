@@ -15,7 +15,7 @@ import utilities.JsonUtils;
 
 public class DeleteVariableSalaryTest extends BaseTest
 {
-	@Test(groups = "regression", priority = 2)
+	@Test(groups = "regression")
 	public void deleteVariableSalary()
 	{
 		try

@@ -17,7 +17,7 @@ import utilities.JsonUtils;
 
 public class CreateVariableSalaryTest_Lambok extends BaseTest
 {
-	@Test(groups = "regression", priority = 1)
+	@Test(groups = "regression")
 	public void verifyVariableSalary()
 	{
 		try

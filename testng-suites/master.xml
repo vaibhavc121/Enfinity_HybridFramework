@@ -34,6 +34,8 @@
 			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest"/>-->
 			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok"/>
 			<class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest"/>
+			<class name="testCases.HRMS.Payroll.CreateLeaveTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveTest"/>
 			
 
 			<!-- HR Core -->

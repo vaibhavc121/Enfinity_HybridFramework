@@ -89,19 +89,4 @@ public class LeavePage extends BasePage
 		clickApproveAndBack();
 	}
 
-	public boolean isLeaveCreated() throws InterruptedException
-	{
-		filterCell.sendKeys("08-11-2024");
-		String actdt = "08-Nov-2024";
-		Thread.sleep(2000);
-		String dt = result.getText();
-		if (actdt.equals(dt))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-	}
-
 }

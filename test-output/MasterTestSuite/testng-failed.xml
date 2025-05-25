@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest">
+      <class name="testCases.HRMS.Payroll.DeleteLeaveTest">
         <methods>
-          <include name="setup"/>
           <include name="afterMethod"/>
+          <include name="setup"/>
           <include name="teardown"/>
-          <include name="deleteVariableSalary"/>
+          <include name="deleteLeave"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.HRMS.Payroll.DeleteVariableSalaryTest -->
+      </class> <!-- testCases.HRMS.Payroll.DeleteLeaveTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->

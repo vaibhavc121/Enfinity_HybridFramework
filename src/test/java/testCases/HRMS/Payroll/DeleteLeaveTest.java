@@ -8,16 +8,15 @@ import org.testng.annotations.Test;
 import base.BasePage;
 import base.BaseTest;
 import models.Payroll.Payroll.PayrollModel.LeaveModel;
-import models.Payroll.Payroll.PayrollModel.VariableSalModel;
 import pageObjects.HRMS.Payroll.LeavePage;
 import pageObjects.HRMS.Payroll.PayrollPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 
-public class CreateLeaveTest extends BaseTest
+public class DeleteLeaveTest extends BaseTest
 {
 	@Test(groups = "regression")
-	public void createLeave()
+	public void deleteLeave()
 	{
 		try
 		{
@@ -39,25 +38,8 @@ public class CreateLeaveTest extends BaseTest
 			{
 				lp.clkLeave();
 				logger.info("clicked on leave");
-				lp.clkNewBtn();
-				logger.info("clicked on new btn");
-				lp.provideEmp(leave.employee);
-				logger.info("emp selected");
-				lp.provideEffectiveDt(leave.effectiveDate);
-				logger.info("provided effective date");
-				lp.provideLeaveType(leave.leaveType);
-				logger.info("leave type selected");
-				lp.provideFromDt(leave.fromDate);
-				logger.info("provided from date");
-				lp.provideUpToDt(leave.uptoDate);
-				logger.info("provided upto date");
-				lp.providePaymentType(leave.paymentType);
-				lp.clkView();
-				logger.info("clicked on view btn");
-				lp.clkApproveBack();
-				logger.info("clicked on approve btn");
-
-				Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveType, 9, 9));
+				BasePage.performAction(5, leave.employee, "Amend");
+				Assert.assertFalse(BasePage.validateListing(leave.employee, 5, 5));
 
 			}
 
