@@ -10,19 +10,19 @@ import pageObjects.HRMS.Payroll.PayrollPage;
 public class LeaveAdjustmentTest extends BaseTest
 {
 	@Test(groups = "regression")
-	public void verifyLeaveAdjustment()
+	public void createLeaveAdjustment()
 	{
-		try 
+		try
 		{
-			//payroll pg
-			PayrollPage pp=new PayrollPage(driver);
+			// payroll pg
+			PayrollPage pp = new PayrollPage(driver);
 			pp.clkPayroll();
 			logger.info("clicked on payroll link");
 			pp.clkTxn();
 			logger.info("clicked on txn");
-			
-			//leave adjustment pg
-			LeaveAdjustmentPage la=new LeaveAdjustmentPage(driver);
+
+			// leave adjustment pg
+			LeaveAdjustmentPage la = new LeaveAdjustmentPage(driver);
 			la.clkLeaveAdj();
 			logger.info("clicked on leave adj");
 			la.clkNewBtn();
@@ -45,16 +45,14 @@ public class LeaveAdjustmentTest extends BaseTest
 			logger.info("clicked on view btn");
 			la.clkApproveBtn();
 			logger.info("clicked on approve btn");
-			
+
 			Assert.assertTrue(la.isTxnCreated());
-			
-			
-		} 
-		catch (Exception e) 
+
+		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
 		}
 	}
-	
+
 }
