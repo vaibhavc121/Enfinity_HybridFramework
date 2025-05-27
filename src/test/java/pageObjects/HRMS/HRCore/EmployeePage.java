@@ -74,6 +74,43 @@ public class EmployeePage extends BasePage
 	@FindBy(name = "LastName")
 	WebElement lastName;
 
+	// Tab Page Objects
+	@FindBy(xpath = "//span[normalize-space()='Time Off']")
+	WebElement timeOff;
+
+	// Tab Action Methods
+	public void clkTimeOff()
+	{
+		timeOff.click();
+	}
+
+	// Time off Page Objects
+	@FindBy(xpath = "(//p[@class='leave-balance'])[3]")
+	WebElement annualLeaveBal;
+
+	// Time off Action Methods
+	public double getAnnualLeaveBalBeforeUpdate()
+	{
+		String bal = annualLeaveBal.getText();
+		// String number = bal.replaceAll("[^0-9.]", "").trim();
+		String numberPart = bal.substring(0, 5);
+		double expBal = Double.parseDouble(numberPart);
+		// expBal += 1;
+		return expBal;
+
+	}
+
+	public double getAnnualLeaveBalAfterUpdate()
+	{
+		String bal = annualLeaveBal.getText();
+		// String number = bal.replaceAll("[^0-9.]", "").trim();
+		String numberPart = bal.substring(0, 5);
+		double expBal = Double.parseDouble(numberPart);
+		expBal += 1;
+		return expBal;
+
+	}
+
 	public void clkBtnNew()
 	{
 		newbtn.click();

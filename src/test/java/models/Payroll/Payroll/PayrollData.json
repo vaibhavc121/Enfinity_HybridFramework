@@ -20,7 +20,19 @@
 			"uptoDate":"01-01-2025",
 			"paymentType":"Pay With Payroll"
 		}
+	],
+	
+	"createLeaveAdjustment":[
+		{			
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",
+			"leaveType": "Annual Leave",
+			"paidDays":"1",            
+			"unpaidDays":"01-01-2025",
+			"remarks":"test"
+		}
 	]
+
 	
 	
 }

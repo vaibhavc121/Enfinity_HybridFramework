@@ -32,10 +32,11 @@
 			<class name="testCases.HRMS.Payroll.LeaveAdjustmentTest"/>
 			<class name="testCases.HRMS.Payroll.LeaveTest"/>
 			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest"/>-->
-			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok"/>
+			<!--<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok"/>
 			<class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest"/>
 			<class name="testCases.HRMS.Payroll.CreateLeaveTest"/>
-			<class name="testCases.HRMS.Payroll.DeleteLeaveTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveTest"/>-->
+			<class name="testCases.HRMS.Payroll.LeaveAdjustmentTest"/>
 			
 
 			<!-- HR Core -->

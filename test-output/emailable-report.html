@@ -9,13 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MasterTestSuite</th></tr>
-<tr><td><a href="#t0">Master Tests</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">145,157</td><td>datadriven, regression</td><td></td></tr>
+<tr><td><a href="#t0">Master Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">45,588</td><td>datadriven, regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Master Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveTest</td><td><a href="#m0">createLeave</a></td><td rowspan="1">1748174660637</td><td rowspan="1">25300</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok</td><td><a href="#m1">verifyVariableSalary</a></td><td rowspan="1">1748174584438</td><td rowspan="1">33922</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveTest</td><td><a href="#m2">deleteLeave</a></td><td rowspan="1">1748174693281</td><td rowspan="1">27944</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteVariableSalaryTest</td><td><a href="#m3">deleteVariableSalary</a></td><td rowspan="1">1748174625941</td><td rowspan="1">27105</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Master Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.Payroll.LeaveAdjustmentTest</td><td><a href="#m0">createLeaveAdjustment</a></td><td rowspan="1">1748353010439</td><td rowspan="1">36956</td></tr></tbody>
 </table>
-<h2>Master Tests</h2><h3 id="m0">testCases.HRMS.Payroll.CreateLeaveTest#createLeave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok#verifyVariableSalary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.HRMS.Payroll.DeleteLeaveTest#deleteLeave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCases.HRMS.Payroll.DeleteVariableSalaryTest#deleteVariableSalary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Master Tests</h2><h3 id="m0">testCases.HRMS.Payroll.LeaveAdjustmentTest#createLeaveAdjustment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x0000017d013f64e8@93824eb (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: unknown
+	at testCases.HRMS.Payroll.LeaveAdjustmentTest.createLeaveAdjustment(LeaveAdjustmentTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

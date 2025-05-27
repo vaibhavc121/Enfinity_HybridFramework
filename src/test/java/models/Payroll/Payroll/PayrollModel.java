@@ -31,4 +31,15 @@ public class PayrollModel
 
 	}
 
+	public static class LeaveAdjustmentModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String leaveType;
+		public String paidDays;
+		public String unpaidDays;
+		public String remarks;
+
+	}
+
 }

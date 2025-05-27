@@ -18,13 +18,13 @@ public class LeaveAdjustmentPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Leave Adjustment']")
 	WebElement leaveAdjustment;
 
-	@FindBy(css = "img[id='LeaveAdjustment.EmployeeIdLookup_B-1Img']")
+	@FindBy(xpath = "//input[@id='LeaveAdjustment.EmployeeIdLookup_I']")
 	WebElement empdd;
 
 	@FindBy(xpath = "//input[@id='LeaveAdjustment.EffectiveDate_I']")
 	WebElement effectiveDate;
 
-	@FindBy(css = "img[id='LeaveAdjustment.LeaveTypeIdLookup_B-1Img']")
+	@FindBy(xpath = "//input[@id='LeaveAdjustment.LeaveTypeIdLookup_I']")
 	WebElement leavetypedd;
 
 	@FindBy(xpath = "//input[@id='LeaveAdjustment.PaidDays_I']")
@@ -80,9 +80,9 @@ public class LeaveAdjustmentPage extends BasePage
 		clearAndProvide1(unpaidDaysTB, value);
 	}
 
-	public void provideRemarks()
+	public void provideRemarks(String value)
 	{
-		remarks.sendKeys("remarks");
+		remarks.sendKeys(value);
 	}
 
 	public void clkViewBtn()

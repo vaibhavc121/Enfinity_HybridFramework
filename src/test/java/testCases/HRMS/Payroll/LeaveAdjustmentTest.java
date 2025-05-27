@@ -1,11 +1,19 @@
 package testCases.HRMS.Payroll;
 
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import base.BasePage;
 import base.BaseTest;
+import models.Payroll.Payroll.PayrollModel.LeaveAdjustmentModel;
+import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.Payroll.LeaveAdjustmentPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
+import utilities.FileUtils;
+import utilities.JsonUtils;
 
 public class LeaveAdjustmentTest extends BaseTest
 {
@@ -14,6 +22,20 @@ public class LeaveAdjustmentTest extends BaseTest
 	{
 		try
 		{
+			String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+			List<LeaveAdjustmentModel> leaveAdjData = JsonUtils.convertJsonListDataModel(payrollFile,
+					"createLeaveAdjustment", LeaveAdjustmentModel.class);
+
+			// hr core pg
+			HRCorePage hc = new HRCorePage(driver);
+			hc.clkHRCore();
+			hc.clkEmployee();
+			BasePage.navigateToEmployee("001");
+
+			EmployeePage ep = new EmployeePage(driver);
+			ep.clkTimeOff();
+			double expLeaveBal = ep.getAnnualLeaveBalBeforeUpdate();
+
 			// payroll pg
 			PayrollPage pp = new PayrollPage(driver);
 			pp.clkPayroll();
@@ -23,30 +45,47 @@ public class LeaveAdjustmentTest extends BaseTest
 
 			// leave adjustment pg
 			LeaveAdjustmentPage la = new LeaveAdjustmentPage(driver);
-			la.clkLeaveAdj();
-			logger.info("clicked on leave adj");
-			la.clkNewBtn();
-			logger.info("clicked on new btn");
-			la.clkEmpDD();
-			logger.info("clicked on txn");
-			la.slctEmp();
-			logger.info("employee selected");
-			la.clkLeaveTypeDD();
-			logger.info("clicked on leave type dd");
-			la.slctLeaveType();
-			logger.info("leave type selected");
-			la.providePaidDaysValue();
-			logger.info("provided paid days value");
-			la.provideUnpaidDaysValue();
-			logger.info("provided unpaid days value");
-			la.provideRemarks();
-			logger.info("provided remarks");
-			la.clkViewBtn();
-			logger.info("clicked on view btn");
-			la.clkApproveBtn();
-			logger.info("clicked on approve btn");
 
-			Assert.assertTrue(la.isTxnCreated());
+			for (LeaveAdjustmentModel LeaveAdjustment : leaveAdjData)
+			{
+				la.clkLeaveAdj();
+				logger.info("clicked on leave adj");
+
+				la.clkNewBtn();
+				logger.info("clicked on new btn");
+
+				la.provideEmp(LeaveAdjustment.employee);
+				logger.info("employee selected");
+
+				la.provideEffectiveDate(LeaveAdjustment.effectiveDate);
+				logger.info("provied effective date");
+
+				la.provideLeaveType(LeaveAdjustment.leaveType);
+				logger.info("leave type selected");
+
+				la.providePaidDaysValue(LeaveAdjustment.paidDays);
+				logger.info("provided paid days value");
+
+//				la.provideUnpaidDaysValue();
+//				logger.info("provided unpaid days value");
+
+				la.provideRemarks(LeaveAdjustment.remarks);
+				logger.info("provided remarks");
+
+				la.clkViewBtn();
+				logger.info("clicked on view btn");
+
+				la.clkApproveBtn();
+				logger.info("clicked on approve btn");
+
+				hc.clkHRCore();
+				hc.clkEmployee();
+				BasePage.navigateToEmployee("001");
+				ep.clkTimeOff();
+
+				Assert.assertEquals(ep.getAnnualLeaveBalAfterUpdate(), expLeaveBal);
+
+			}
 
 		} catch (Exception e)
 		{

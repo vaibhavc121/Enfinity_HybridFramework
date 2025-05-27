@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MasterTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">MasterTestSuite</span>
+              <span class="suite-name border-failed">MasterTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,36 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-MasterTestSuite" class="hide-methods passed suite-MasterTestSuite"> (hide)</a> <!-- hide-methods passed suite-MasterTestSuite -->
-                      <a href="#" panel-name="suite-MasterTestSuite" class="show-methods passed suite-MasterTestSuite"> (show)</a> <!-- show-methods passed suite-MasterTestSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MasterTestSuite" class="hide-methods failed suite-MasterTestSuite"> (hide)</a> <!-- hide-methods failed suite-MasterTestSuite -->
+                      <a href="#" panel-name="suite-MasterTestSuite" class="show-methods failed suite-MasterTestSuite"> (show)</a> <!-- show-methods failed suite-MasterTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-MasterTestSuite">
+                    <div class="method-list-content failed suite-MasterTestSuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterTestSuite" title="testCases.HRMS.Payroll.CreateLeaveTest" class="method navigator-link" hash-for-method="createLeave">createLeave</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterTestSuite" title="testCases.HRMS.Payroll.LeaveAdjustmentTest" class="method navigator-link" hash-for-method="createLeaveAdjustment">createLeaveAdjustment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterTestSuite" title="testCases.HRMS.Payroll.DeleteLeaveTest" class="method navigator-link" hash-for-method="deleteLeave">deleteLeave</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterTestSuite" title="testCases.HRMS.Payroll.DeleteVariableSalaryTest" class="method navigator-link" hash-for-method="deleteVariableSalary">deleteVariableSalary</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterTestSuite" title="testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok" class="method navigator-link" hash-for-method="verifyVariableSalary">verifyVariableSalary</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-MasterTestSuite -->
+                    </div> <!-- method-list-content failed suite-MasterTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -133,66 +118,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MasterTestSuite" class="panel MasterTestSuite">
-          <div class="suite-MasterTestSuite-class-passed">
+          <div class="suite-MasterTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.HRMS.Payroll.CreateLeaveTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.HRMS.Payroll.LeaveAdjustmentTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createLeave">
-                  </a> <!-- createLeave -->
-                  <span class="method-name">createLeave</span>
+                  <a name="createLeaveAdjustment">
+                  </a> <!-- createLeaveAdjustment -->
+                  <span class="method-name">createLeaveAdjustment</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test case failed: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x0000017d013f64e8@93824eb (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: unknown
+	at testCases.HRMS.Payroll.LeaveAdjustmentTest.createLeaveAdjustment(LeaveAdjustmentTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MasterTestSuite-class-passed -->
-          <div class="suite-MasterTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.HRMS.Payroll.DeleteLeaveTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteLeave">
-                  </a> <!-- deleteLeave -->
-                  <span class="method-name">deleteLeave</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MasterTestSuite-class-passed -->
-          <div class="suite-MasterTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.HRMS.Payroll.DeleteVariableSalaryTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteVariableSalary">
-                  </a> <!-- deleteVariableSalary -->
-                  <span class="method-name">deleteVariableSalary</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MasterTestSuite-class-passed -->
-          <div class="suite-MasterTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyVariableSalary">
-                  </a> <!-- verifyVariableSalary -->
-                  <span class="method-name">verifyVariableSalary</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MasterTestSuite-class-passed -->
+          </div> <!-- suite-MasterTestSuite-class-failed -->
         </div> <!-- panel MasterTestSuite -->
         <div panel-name="test-xml-MasterTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -222,10 +170,7 @@
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok&quot;/&gt;
-      &lt;class name=&quot;testCases.HRMS.Payroll.DeleteVariableSalaryTest&quot;/&gt;
-      &lt;class name=&quot;testCases.HRMS.Payroll.CreateLeaveTest&quot;/&gt;
-      &lt;class name=&quot;testCases.HRMS.Payroll.DeleteLeaveTest&quot;/&gt;
+      &lt;class name=&quot;testCases.HRMS.Payroll.LeaveAdjustmentTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Master Tests --&gt;
 &lt;/suite&gt; &lt;!-- MasterTestSuite --&gt;
@@ -239,7 +184,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Master Tests (4 classes)</span>
+                <span class="test-name">Master Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,19 +198,7 @@
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">createLeave</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">deleteLeave</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">deleteVariableSalary</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyVariableSalary</span>
+                <span class="method-in-group-name">createLeaveAdjustment</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -285,28 +218,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyVariableSalary')
-data.setCell(0, 2, 'testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok')
-data.setCell(0, 3, 33922);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteLeave')
-data.setCell(1, 2, 'testCases.HRMS.Payroll.DeleteLeaveTest')
-data.setCell(1, 3, 27944);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteVariableSalary')
-data.setCell(2, 2, 'testCases.HRMS.Payroll.DeleteVariableSalaryTest')
-data.setCell(2, 3, 27105);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createLeave')
-data.setCell(3, 2, 'testCases.HRMS.Payroll.CreateLeaveTest')
-data.setCell(3, 3, 25300);
+data.setCell(0, 1, 'createLeaveAdjustment')
+data.setCell(0, 2, 'testCases.HRMS.Payroll.LeaveAdjustmentTest')
+data.setCell(0, 3, 36956);
 window.suiteTableData['MasterTestSuite']= { tableData: data, tableDiv: 'times-div-MasterTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-MasterTestSuite">
               </div> <!-- times-div-MasterTestSuite -->
             </div> <!-- times-div -->
@@ -332,95 +253,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.HRMS.Payroll.LeaveAdjustmentTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">3390 ms</span>
+                <span class="method-start">3658 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyVariableSalary</span>
-                <span class="method-start">8009 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createLeaveAdjustment</span>
+                <span class="method-start">8195 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">41940 ms</span>
+                <span class="method-start">45277 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">41943 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.HRMS.Payroll.DeleteVariableSalaryTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(windows, chrome)</span>
-                <span class="method-start">42083 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">45305 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">deleteVariableSalary</span>
-                <span class="method-start">49512 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">76622 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">76623 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.HRMS.Payroll.CreateLeaveTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(windows, chrome)</span>
-                <span class="method-start">76814 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">79880 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createLeave</span>
-                <span class="method-start">84208 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">109510 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">109511 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.HRMS.Payroll.DeleteLeaveTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(windows, chrome)</span>
-                <span class="method-start">109669 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">112627 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">deleteLeave</span>
-                <span class="method-start">116852 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">144798 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">144800 ms</span>
+                <span class="method-start">45280 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -25307,3 +25307,334 @@ Driver info: driver.version: unknown
 2025-05-25 17:34:53.360 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on payroll link
 2025-05-25 17:34:54.804 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on txn
 2025-05-25 17:34:55.888 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on leave
+2025-05-27 17:55:01.871 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 17:55:02.138 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 17:55:02.138 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 17:55:05.085 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 17:55:07.612 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 17:55:07.813 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 17:55:07.913 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 17:55:18.228 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 17:55:18.364 [main] ERROR testCases.HRMS.Payroll.LeaveAdjustmentTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.LeaveAdjustmentTest.createLeaveAdjustment(LeaveAdjustmentTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 38, column: 1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2660) ~[jackson-core-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:741) ~[jackson-core-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName(ReaderBasedJsonParser.java:1909) ~[jackson-core-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextFieldName(ReaderBasedJsonParser.java:939) ~[jackson-core-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer._deserializeContainerNoRecursion(JsonNodeDeserializer.java:536) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:100) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:25) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4973) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3281) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:26) ~[test-classes/:?]
+	... 27 more
+2025-05-27 17:55:56.394 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 17:55:56.597 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 17:55:56.597 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 17:55:57.987 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 17:56:00.006 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 17:56:00.170 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 17:56:00.270 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 17:56:05.243 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 17:56:41.063 [main] ERROR testCases.HRMS.Payroll.LeaveAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Time Off']"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [608e4d19565156395f8a10a5f974b957, findElement {value=//span[normalize-space()='Time Off'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60615}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60615/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 608e4d19565156395f8a10a5f974b957
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.HRCore.EmployeePage.clkTimeOff(EmployeePage.java:84) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.LeaveAdjustmentTest.createLeaveAdjustment(LeaveAdjustmentTest.java:36) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-05-27 18:14:29.275 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 18:14:29.472 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 18:14:29.473 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 18:14:30.786 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 18:14:33.595 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 18:14:33.748 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 18:14:33.848 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 18:14:38.470 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 18:21:30.628 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 18:21:30.807 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 18:21:30.807 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 18:21:32.584 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 18:21:34.596 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 18:21:34.758 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 18:21:34.870 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 18:21:39.546 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 18:42:43.090 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 18:42:43.292 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 18:42:43.292 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 18:42:45.175 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 18:42:47.741 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 18:42:47.928 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 18:42:48.042 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 18:42:52.580 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 18:52:07.128 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 18:52:07.320 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 18:52:07.320 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 18:52:08.680 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 18:52:11.123 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 18:52:11.295 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 18:52:11.394 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 18:52:15.908 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 18:55:38.980 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 18:55:39.174 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 18:55:39.174 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 18:55:40.936 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 18:55:43.354 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 18:55:43.524 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 18:55:43.624 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 18:55:47.962 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 18:55:57.840 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on payroll link
+2025-05-27 18:55:59.118 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on txn
+2025-05-27 18:56:29.581 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on leave adj
+2025-05-27 18:56:32.325 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on new btn
+2025-05-27 18:57:23.740 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 18:57:23.933 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 18:57:23.933 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 18:57:25.261 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 18:57:27.917 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 18:57:28.083 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 18:57:28.182 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 18:57:28.268 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 18:57:42.928 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on payroll link
+2025-05-27 18:57:44.088 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on txn
+2025-05-27 18:57:45.653 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on leave adj
+2025-05-27 18:57:45.740 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on new btn
+2025-05-27 18:58:47.246 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 18:58:47.431 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 18:58:47.431 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 18:58:48.779 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 18:58:50.804 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 18:58:50.964 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 18:58:51.073 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 18:58:55.358 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 18:59:06.313 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on payroll link
+2025-05-27 18:59:07.536 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on txn
+2025-05-27 18:59:08.685 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on leave adj
+2025-05-27 18:59:08.771 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on new btn
+2025-05-27 19:03:00.487 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 19:03:00.694 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 19:03:00.694 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 19:03:02.532 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 19:03:05.697 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 19:03:05.871 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 19:03:05.971 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 19:03:10.545 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 19:03:21.530 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on payroll link
+2025-05-27 19:03:22.791 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on txn
+2025-05-27 19:03:23.851 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on leave adj
+2025-05-27 19:03:23.939 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on new btn
+2025-05-27 19:03:42.579 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - employee selected
+2025-05-27 19:03:51.649 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provied effective date
+2025-05-27 19:05:06.037 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 19:05:06.226 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 19:05:06.226 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 19:05:07.474 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 19:05:09.934 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 19:05:10.099 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 19:05:10.193 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 19:05:14.509 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 19:05:25.113 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on payroll link
+2025-05-27 19:05:26.142 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on txn
+2025-05-27 19:05:27.176 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on leave adj
+2025-05-27 19:05:27.277 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on new btn
+2025-05-27 19:05:33.559 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - employee selected
+2025-05-27 19:05:35.789 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provied effective date
+2025-05-27 19:05:37.986 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - leave type selected
+2025-05-27 19:05:40.159 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided paid days value
+2025-05-27 19:05:40.217 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided remarks
+2025-05-27 19:05:41.400 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on view btn
+2025-05-27 19:05:51.615 [main] ERROR testCases.HRMS.Payroll.LeaveAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000001a9053de4e8@93824eb (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement1(BasePage.java:778) ~[test-classes/:?]
+	at base.BasePage.clickOnApprove(BasePage.java:190) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LeaveAdjustmentPage.clkApproveBtn(LeaveAdjustmentPage.java:95) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.LeaveAdjustmentTest.createLeaveAdjustment(LeaveAdjustmentTest.java:78) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-05-27 19:06:42.079 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-27 19:06:42.256 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-27 19:06:42.256 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-27 19:06:43.529 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-27 19:06:45.890 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-27 19:06:46.044 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-27 19:06:46.136 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-27 19:06:50.439 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-27 19:07:01.405 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on payroll link
+2025-05-27 19:07:02.522 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on txn
+2025-05-27 19:07:03.881 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on leave adj
+2025-05-27 19:07:04.007 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on new btn
+2025-05-27 19:07:10.142 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - employee selected
+2025-05-27 19:07:12.338 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provied effective date
+2025-05-27 19:07:14.560 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - leave type selected
+2025-05-27 19:07:16.749 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided paid days value
+2025-05-27 19:07:16.809 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided remarks
+2025-05-27 19:07:17.112 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on view btn
+2025-05-27 19:07:27.379 [main] ERROR testCases.HRMS.Payroll.LeaveAdjustmentTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x0000017d013f64e8@93824eb (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement1(BasePage.java:778) ~[test-classes/:?]
+	at base.BasePage.clickOnApprove(BasePage.java:190) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LeaveAdjustmentPage.clkApproveBtn(LeaveAdjustmentPage.java:95) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.LeaveAdjustmentTest.createLeaveAdjustment(LeaveAdjustmentTest.java:78) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
