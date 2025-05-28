@@ -12,10 +12,11 @@ import pageObjects.HRMS.Payroll.LeavePage;
 import pageObjects.HRMS.Payroll.PayrollPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
+import utilities.RetryAnalyzer;
 
 public class DeleteLeaveTest extends BaseTest
 {
-	@Test(groups = "regression")
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void deleteLeave()
 	{
 		try

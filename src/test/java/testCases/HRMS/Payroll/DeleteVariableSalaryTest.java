@@ -12,10 +12,11 @@ import pageObjects.HRMS.Payroll.PayrollPage;
 import pageObjects.HRMS.Payroll.VariableSalaryPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
+import utilities.RetryAnalyzer;
 
 public class DeleteVariableSalaryTest extends BaseTest
 {
-	@Test(groups = "regression")
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void deleteVariableSalary()
 	{
 		try

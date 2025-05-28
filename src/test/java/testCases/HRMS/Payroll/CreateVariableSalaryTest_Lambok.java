@@ -14,10 +14,11 @@ import pageObjects.HRMS.Payroll.VariableSalaryPage;
 
 import utilities.FileUtils;
 import utilities.JsonUtils;
+import utilities.RetryAnalyzer;
 
 public class CreateVariableSalaryTest_Lambok extends BaseTest
 {
-	@Test(groups = "regression")
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyVariableSalary()
 	{
 		try

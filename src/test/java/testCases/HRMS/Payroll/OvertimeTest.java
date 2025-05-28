@@ -6,23 +6,24 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pageObjects.HRMS.Payroll.OvertimePage;
 import pageObjects.HRMS.Payroll.PayrollPage;
+import utilities.RetryAnalyzer;
 
 public class OvertimeTest extends BaseTest
 {
-	@Test(groups = "regression")
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyOvertime()
 	{
 		try
 		{
-			//payroll pg
-			PayrollPage pp=new PayrollPage(driver);
+			// payroll pg
+			PayrollPage pp = new PayrollPage(driver);
 			pp.clkPayroll();
 			logger.info("clicked on payroll link");
 			pp.clkTxn();
 			logger.info("clicked on txn");
-			
-			//overtime pg
-			OvertimePage op= new OvertimePage(driver);
+
+			// overtime pg
+			OvertimePage op = new OvertimePage(driver);
 			op.clkOvertime();
 			logger.info("clicked on overtime");
 			op.clkNew();
@@ -37,17 +38,16 @@ public class OvertimeTest extends BaseTest
 			logger.info("overtime selected");
 			op.provideHrs();
 			logger.info("provided hrs");
-			//op.clkPayBenefitDD();
-			//op.slctPayBenefit();
-			//op.clkLeaveType();
-			//op.slctLeaveType();
+			// op.clkPayBenefitDD();
+			// op.slctPayBenefit();
+			// op.clkLeaveType();
+			// op.slctLeaveType();
 			op.clkView();
 			logger.info("clicked on view");
 			op.clkApprove();
 			logger.info("clicked on approve");
-			
-		}
-		catch (Exception e)
+
+		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);

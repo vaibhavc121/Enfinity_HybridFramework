@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
+import utilities.DataUtils;
 
 public class EmployeePage extends BasePage
 {
@@ -89,7 +90,7 @@ public class EmployeePage extends BasePage
 	WebElement annualLeaveBal;
 
 	// Time off Action Methods
-	public double getAnnualLeaveBalBeforeUpdate()
+	public double getAnnualLeaveBal()
 	{
 		String bal = annualLeaveBal.getText();
 		// String number = bal.replaceAll("[^0-9.]", "").trim();
@@ -100,15 +101,9 @@ public class EmployeePage extends BasePage
 
 	}
 
-	public double getAnnualLeaveBalAfterUpdate()
+	public double extractValueFromText()
 	{
-		String bal = annualLeaveBal.getText();
-		// String number = bal.replaceAll("[^0-9.]", "").trim();
-		String numberPart = bal.substring(0, 5);
-		double expBal = Double.parseDouble(numberPart);
-		expBal += 1;
-		return expBal;
-
+		return DataUtils.extractNumericValueFromText(annualLeaveBal);
 	}
 
 	public void clkBtnNew()

@@ -6,23 +6,24 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pageObjects.HRMS.Payroll.BenefitEncashmentPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
+import utilities.RetryAnalyzer;
 
 public class BenefitEncashmentTest extends BaseTest
 {
-	@Test(groups = "regression")
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyBenefitEncashment()
 	{
 		try
 		{
-			//payroll pg
-			PayrollPage pp=new PayrollPage(driver);
+			// payroll pg
+			PayrollPage pp = new PayrollPage(driver);
 			pp.clkPayroll();
 			logger.info("clicked on payroll link");
 			pp.clkTxn();
 			logger.info("clicked on txn");
-			
-			//Benefit Encashment pg
-			BenefitEncashmentPage be=new BenefitEncashmentPage(driver);
+
+			// Benefit Encashment pg
+			BenefitEncashmentPage be = new BenefitEncashmentPage(driver);
 			be.clkBenefitEncashment();
 			logger.info("clicked on benefit encashment");
 			be.clkNew();
@@ -48,10 +49,8 @@ public class BenefitEncashmentTest extends BaseTest
 			be.clkApprove();
 			logger.info("clicked on approve");
 			be.isTxnCreated();
-			
-			
-		}
-		catch (Exception e)
+
+		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);

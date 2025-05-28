@@ -12,32 +12,20 @@ import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.Payroll.LeaveAdjustmentPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
-import utilities.DataUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
-public class LeaveAdjustmentTest extends BaseTest
+public class DeleteLeaveAdjustmentTest extends BaseTest
 {
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createLeaveAdjustment()
+	public void deleteLeaveAdjustment()
 	{
 		try
 		{
 			String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
 			List<LeaveAdjustmentModel> leaveAdjData = JsonUtils.convertJsonListDataModel(payrollFile,
 					"createLeaveAdjustment", LeaveAdjustmentModel.class);
-
-			// hr core pg
-			HRCorePage hc = new HRCorePage(driver);
-			hc.clkHRCore();
-			hc.clkEmployee();
-			BasePage.navigateToEmployee("001");
-
-			EmployeePage ep = new EmployeePage(driver);
-			ep.clkTimeOff();
-			double LeaveBal = ep.extractValueFromText();
-			double expLeaveBal = LeaveBal + 1;
 
 			// payroll pg
 			PayrollPage pp = new PayrollPage(driver);
@@ -54,40 +42,8 @@ public class LeaveAdjustmentTest extends BaseTest
 				la.clkLeaveAdj();
 				logger.info("clicked on leave adj");
 
-				la.clkNewBtn();
-				logger.info("clicked on new btn");
-
-				la.provideEmp(LeaveAdjustment.employee);
-				logger.info("employee selected");
-
-				la.provideEffectiveDate(LeaveAdjustment.effectiveDate);
-				logger.info("provied effective date");
-
-				la.provideLeaveType(LeaveAdjustment.leaveType);
-				logger.info("leave type selected");
-
-				la.providePaidDaysValue(LeaveAdjustment.paidDays);
-				logger.info("provided paid days value");
-
-//				la.provideUnpaidDaysValue();
-//				logger.info("provided unpaid days value");
-
-				la.provideRemarks(LeaveAdjustment.remarks);
-				logger.info("provided remarks");
-
-				la.clkViewBtn();
-				logger.info("clicked on view btn");
-
-				la.clkApproveBtn();
-				logger.info("clicked on approve btn");
-
-				hc.clkHRCore();
-				hc.clkEmployee();
-				BasePage.navigateToEmployee("001");
-				ep.clkTimeOff();
-
-				Assert.assertEquals(ep.extractValueFromText(), expLeaveBal);
-
+				BasePage.performAction(6, LeaveAdjustment.employee, "Amend");
+				Assert.assertFalse(BasePage.validateListing(LeaveAdjustment.employee, 6, 6));
 			}
 
 		} catch (Exception e)
