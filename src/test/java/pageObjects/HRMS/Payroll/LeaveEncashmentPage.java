@@ -85,24 +85,24 @@ public class LeaveEncashmentPage extends BasePage
 		Thread.sleep(2000);
 	}
 
-	public boolean isTxnCreated()
-	{
-		String expemp = "rohit";
-		String paidDays = "1";
-		String actemp = result.getText();
-		String actPaidDays = resultPaidDays.getText();
-
-		filterCell.sendKeys(expemp);
-		filterCellPaidDays.sendKeys(paidDays);
-
-		if (actemp.contains(expemp) && paidDays.equals(actPaidDays))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
-	}
+//	public boolean isTxnCreated()
+//	{
+//		String expemp = "rohit";
+//		String paidDays = "1";
+//		String actemp = result.getText();
+//		String actPaidDays = resultPaidDays.getText();
+//
+//		filterCell.sendKeys(expemp);
+//		filterCellPaidDays.sendKeys(paidDays);
+//
+//		if (actemp.contains(expemp) && paidDays.equals(actPaidDays))
+//		{
+//			return true;
+//		} else
+//		{
+//			return false;
+//		}
+//
+//	}
 
 }

@@ -17,7 +17,7 @@ import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
-public class LeaveAdjustmentTest extends BaseTest
+public class CreateLeaveAdjustmentTest extends BaseTest
 {
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void createLeaveAdjustment()

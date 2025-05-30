@@ -25835,3 +25835,34 @@ java.lang.RuntimeException: VRC- No matching record found
 2025-05-28 18:07:56.343 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on payroll link
 2025-05-28 18:07:57.405 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on txn
 2025-05-28 18:07:58.128 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on leave adj
+2025-05-30 19:21:33.835 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-05-30 19:21:34.170 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-30 19:21:34.170 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - --test execution started--
+2025-05-30 19:21:40.451 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - browser maximized
+2025-05-30 19:21:55.226 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided app URL in browser
+2025-05-30 19:21:55.615 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided username
+2025-05-30 19:21:55.935 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided password
+2025-05-30 19:22:10.695 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on sign in button
+2025-05-30 19:22:23.042 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on payroll link
+2025-05-30 19:22:24.483 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on txn
+2025-05-30 19:22:26.320 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on leave adj
+2025-05-30 19:22:26.520 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on new btn
+2025-05-30 19:22:37.475 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - employee selected
+2025-05-30 19:22:39.976 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provied effective date
+2025-05-30 19:22:42.425 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - leave type selected
+2025-05-30 19:22:44.891 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided paid days value
+2025-05-30 19:22:45.058 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - provided remarks
+2025-05-30 19:22:45.653 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on view btn
+2025-05-30 19:22:46.106 [main] INFO  testCases.HRMS.Payroll.LeaveAdjustmentTest - clicked on approve btn
+2025-05-30 19:22:53.680 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-05-30 19:22:53.680 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - --test execution started--
+2025-05-30 19:22:54.791 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - browser maximized
+2025-05-30 19:23:08.364 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - provided app URL in browser
+2025-05-30 19:23:08.501 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - provided username
+2025-05-30 19:23:08.605 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - provided password
+2025-05-30 19:23:16.505 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on sign in button
+2025-05-30 19:23:16.625 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on payroll link
+2025-05-30 19:23:19.055 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on txn
+2025-05-30 19:23:20.193 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on leave adj
