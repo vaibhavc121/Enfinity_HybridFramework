@@ -12,24 +12,34 @@ pool:
 jobs:
   - job: Regression_Test
     displayName: "Regression testcase execution"
+
     steps:
     - task: Maven@4
       inputs:
-        azureSubscription: 'Azure for Students(da8c3d3e-cbc0-4f8a-891e-e96747df3a30)'
         mavenPomFile: 'pom.xml'
         goals: 'test'
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        testRunTitle: 'Automation Enginner (SDET)- Vaibhav Chavan'
+        testRunTitle: 'Automation Engineer (SDET) - Vaibhav Chavan'
         javaHomeOption: 'JDKVersion'
         jdkVersionOption: '1.17'
         mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
-        effectivePomSkip: false
-        sonarQubeRunAnalysis: false
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
         findBugsRunAnalysis: true
+
+    - task: PublishTestResults@2
+      condition: succeededOrFailed()
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(System.DefaultWorkingDirectory)/target/ExtentReports'
+        artifact: 'ExtentReport'
+        publishLocation: 'pipeline'
+
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
