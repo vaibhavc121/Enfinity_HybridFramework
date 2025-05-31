@@ -36,6 +36,12 @@ public class ExtentReportsUtils implements ITestListener
 
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
+
+		File reportsDir = new File("reports");
+		if (!reportsDir.exists())
+		{
+			reportsDir.mkdirs();
+		}
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 
 		sparkReporter.config().setDocumentTitle("Test Execution Report"); // Title of report
