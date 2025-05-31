@@ -36,7 +36,7 @@ jobs:
 
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '$(System.DefaultWorkingDirectory)/target/ExtentReports'
+        targetPath: '(System.DefaultWorkingDirectory)/reports'
         artifact: 'ExtentReport'
         publishLocation: 'pipeline'
 
