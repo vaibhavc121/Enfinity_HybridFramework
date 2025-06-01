@@ -62,9 +62,9 @@ public class LeaveEncashmentPage extends BasePage
 		clearAndProvide1(leaveTypeDD, value);
 	}
 
-	public void providePaidDays()
+	public void providePaidDays(String value)
 	{
-		clearAndProvide1(paidDaysTB, null);
+		clearAndProvide1(paidDaysTB, value);
 	}
 
 	public void selectPaymentType(String value)
@@ -72,37 +72,19 @@ public class LeaveEncashmentPage extends BasePage
 		selectDropdownValueOffice365(value);
 	}
 
+	public void provideRemarks(String value)
+	{
+		provideDescription(value);
+	}
+
 	public void clkViewBtn()
 	{
-		CommonActions.clkView();
+		clickOnView();
 	}
 
 	public void clkApproveBtn() throws InterruptedException
 	{
-		CommonActions.clkApprove();
-		;
-		driver.navigate().back();
-		Thread.sleep(2000);
+		clickOnApprove();
 	}
-
-//	public boolean isTxnCreated()
-//	{
-//		String expemp = "rohit";
-//		String paidDays = "1";
-//		String actemp = result.getText();
-//		String actPaidDays = resultPaidDays.getText();
-//
-//		filterCell.sendKeys(expemp);
-//		filterCellPaidDays.sendKeys(paidDays);
-//
-//		if (actemp.contains(expemp) && paidDays.equals(actPaidDays))
-//		{
-//			return true;
-//		} else
-//		{
-//			return false;
-//		}
-//
-//	}
 
 }

@@ -45,9 +45,9 @@ public class DataUtils
 	public static double extractNumericValueFromText(WebElement element)
 	{
 		String bal = element.getText();
-		// String number = bal.replaceAll("[^0-9.]", "").trim();
-		String numberPart = bal.substring(0, 5);
-		double expBal = Double.parseDouble(numberPart);
+		String number = bal.replaceAll("[^0-9.]", "").trim();
+		// String numberPart = bal.substring(0, 5);
+		double expBal = Double.parseDouble(number);
 		// expBal += 1;
 		return expBal;
 

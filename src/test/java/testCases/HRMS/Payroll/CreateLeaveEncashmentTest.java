@@ -8,25 +8,25 @@ import org.testng.annotations.Test;
 import base.BasePage;
 import base.BaseTest;
 import models.Payroll.Payroll.PayrollModel.LeaveAdjustmentModel;
+import models.Payroll.Payroll.PayrollModel.LeaveEncashmentModel;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
-import pageObjects.HRMS.Payroll.LeaveAdjustmentPage;
+import pageObjects.HRMS.Payroll.LeaveEncashmentPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
-import utilities.DataUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
-public class CreateLeaveAdjustmentTest extends BaseTest
+public class CreateLeaveEncashmentTest extends BaseTest
 {
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createLeaveAdjustment()
+	public void createLeaveEncashment()
 	{
 		try
 		{
 			String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-			List<LeaveAdjustmentModel> leaveAdjData = JsonUtils.convertJsonListDataModel(payrollFile,
-					"createLeaveAdjustment", LeaveAdjustmentModel.class);
+			List<LeaveEncashmentModel> leaveEncashData = JsonUtils.convertJsonListDataModel(payrollFile,
+					"createLeaveEncashment", LeaveEncashmentModel.class);
 
 			// hr core pg
 			HRCorePage hc = new HRCorePage(driver);
@@ -36,8 +36,8 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 
 			EmployeePage ep = new EmployeePage(driver);
 			ep.clkTimeOff();
-			double LeaveBal = ep.getAnnualLeaveBal(3);
-			double expLeaveBal = LeaveBal + 1;
+			double LeaveBal = ep.getAnnualLeaveBal(2);
+			double expLeaveBal = LeaveBal - 1;
 
 			// payroll pg
 			PayrollPage pp = new PayrollPage(driver);
@@ -46,39 +46,27 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 			pp.clkTxn();
 			logger.info("clicked on txn");
 
-			// leave adjustment pg
-			LeaveAdjustmentPage la = new LeaveAdjustmentPage(driver);
-
-			for (LeaveAdjustmentModel LeaveAdjustment : leaveAdjData)
+			// Leave Encashment pg
+			LeaveEncashmentPage le = new LeaveEncashmentPage(driver);
+			for (LeaveEncashmentModel LeaveEncashment : leaveEncashData)
 			{
-				la.clkLeaveAdj();
-				logger.info("clicked on leave adj");
-
-				la.clkNewBtn();
+				le.clkLeaveEncashment();
+				logger.info("clicked on leave incashment");
+				le.clkNewBtn();
 				logger.info("clicked on new btn");
-
-				la.provideEmp(LeaveAdjustment.employee);
+				le.provideEffectiveDate(LeaveEncashment.effectiveDate);
+				logger.info("provided effective date");
+				le.provideEmp(LeaveEncashment.employee);
 				logger.info("employee selected");
-
-				la.provideEffectiveDate(LeaveAdjustment.effectiveDate);
-				logger.info("provied effective date");
-
-				la.provideLeaveType(LeaveAdjustment.leaveType);
-				logger.info("leave type selected");
-
-				la.providePaidDaysValue(LeaveAdjustment.paidDays);
-				logger.info("provided paid days value");
-
-//				la.provideUnpaidDaysValue();
-//				logger.info("provided unpaid days value");
-
-				la.provideRemarks(LeaveAdjustment.remarks);
-				logger.info("provided remarks");
-
-				la.clkViewBtn();
+				le.provideLeaveType(LeaveEncashment.leaveType);
+				logger.info("selected leave type");
+				le.providePaidDays(LeaveEncashment.paidDays);
+				logger.info("provided paid days");
+				le.selectPaymentType(LeaveEncashment.paymentType);
+				logger.info("provided payment type");
+				le.clkViewBtn();
 				logger.info("clicked on view btn");
-
-				la.clkApproveBtn();
+				le.clkApproveBtn();
 				logger.info("clicked on approve btn");
 
 				hc.clkHRCore();
@@ -86,8 +74,7 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 				BasePage.navigateToEmployee("001");
 				ep.clkTimeOff();
 
-				Assert.assertEquals(ep.extractValueFromText(), expLeaveBal);
-
+				Assert.assertEquals(ep.getAnnualLeaveBal(2), expLeaveBal);
 			}
 
 		} catch (Exception e)
@@ -96,5 +83,4 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 			Assert.fail("Test case failed: " + e);
 		}
 	}
-
 }

@@ -42,4 +42,23 @@ public class PayrollModel
 
 	}
 
+	public static class LeaveEncashmentModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String leaveType;
+		public String paidDays;
+		public String paymentType;
+		public String remarks;
+	}
+
+	public static class LeaveOpeningBalanceModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String leaveType;
+		public String paidDays;
+		public String remarks;
+	}
+
 }

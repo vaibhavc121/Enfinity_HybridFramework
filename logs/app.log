@@ -25866,3 +25866,615 @@ java.lang.RuntimeException: VRC- No matching record found
 2025-05-30 19:23:16.625 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on payroll link
 2025-05-30 19:23:19.055 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on txn
 2025-05-30 19:23:20.193 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest - clicked on leave adj
+2025-06-01 15:15:01.685 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 15:15:01.967 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 15:15:01.967 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 15:15:04.577 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 15:15:07.078 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 15:15:07.263 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 15:15:07.370 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 15:15:12.310 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 15:47:38.852 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 15:47:39.078 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 15:47:39.079 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 15:47:41.031 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 15:47:43.031 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 15:47:43.215 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 15:47:43.331 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 15:47:48.037 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 15:50:59.438 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 15:50:59.648 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 15:50:59.648 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 15:51:01.105 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 15:51:04.143 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 15:51:04.351 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 15:51:04.455 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 15:51:09.125 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 15:52:57.010 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 15:52:57.217 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 15:52:57.217 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 15:52:58.704 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 15:53:00.741 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 15:53:00.937 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 15:53:01.055 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 15:53:05.906 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 15:54:02.936 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 15:54:04.297 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 15:54:05.562 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 15:54:05.722 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 15:54:13.206 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 15:54:15.562 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 15:54:17.916 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 15:54:20.233 [main] ERROR testCases.HRMS.Payroll.CreateLeaveEncashmentTest - Test failed due to exception: 
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:305) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LeaveEncashmentPage.providePaidDays(LeaveEncashmentPage.java:67) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveEncashmentTest.createLeaveEncashment(CreateLeaveEncashmentTest.java:63) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-01 15:54:55.447 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 15:54:56.774 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 15:54:57.663 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 15:55:01.223 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 15:55:03.538 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 15:55:05.740 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 15:55:07.957 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 15:55:10.095 [main] ERROR testCases.HRMS.Payroll.CreateLeaveEncashmentTest - Test failed due to exception: 
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:305) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LeaveEncashmentPage.providePaidDays(LeaveEncashmentPage.java:67) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveEncashmentTest.createLeaveEncashment(CreateLeaveEncashmentTest.java:63) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-01 15:57:12.013 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 15:57:12.249 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 15:57:12.250 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 15:57:13.650 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 15:57:16.131 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 15:57:16.350 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 15:57:16.470 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 15:57:21.175 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 15:57:40.984 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 15:57:42.447 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 15:57:43.734 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 15:57:43.819 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 15:57:50.929 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 15:57:53.164 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 15:57:55.378 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 15:57:57.618 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided paid days
+2025-06-01 15:57:57.680 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided payment type
+2025-06-01 15:57:58.205 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on view btn
+2025-06-01 15:57:58.525 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on approve btn
+2025-06-01 16:02:53.190 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 16:02:53.381 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:02:53.381 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 16:02:54.842 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 16:02:57.178 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:02:57.350 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 16:02:57.442 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 16:03:02.220 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:03:24.537 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:03:25.681 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 16:03:26.886 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 16:03:26.977 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 16:03:33.702 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 16:03:35.933 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 16:03:38.141 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 16:03:40.475 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided paid days
+2025-06-01 16:03:40.534 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided payment type
+2025-06-01 16:03:41.136 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on view btn
+2025-06-01 16:03:41.410 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on approve btn
+2025-06-01 16:07:54.429 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 16:07:54.651 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:07:54.651 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 16:07:56.152 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 16:07:58.566 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:07:58.799 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 16:07:58.950 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 16:08:03.679 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:08:29.600 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:08:30.818 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 16:08:32.022 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 16:08:32.127 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 16:08:39.049 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 16:08:41.324 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 16:08:43.552 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 16:08:45.880 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided paid days
+2025-06-01 16:08:45.939 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided payment type
+2025-06-01 16:08:46.410 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on view btn
+2025-06-01 16:08:46.733 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on approve btn
+2025-06-01 16:10:43.034 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 16:10:43.260 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:10:43.260 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 16:10:44.875 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 16:10:47.246 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:10:47.419 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 16:10:47.536 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 16:10:52.095 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:11:04.015 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:11:05.362 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 16:11:06.755 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 16:11:06.869 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 16:11:13.663 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 16:11:15.924 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 16:11:18.188 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 16:11:20.517 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided paid days
+2025-06-01 16:11:20.589 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided payment type
+2025-06-01 16:11:21.166 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on view btn
+2025-06-01 16:11:21.483 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on approve btn
+2025-06-01 16:11:29.379 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:11:29.379 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - --test execution started--
+2025-06-01 16:11:30.303 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - browser maximized
+2025-06-01 16:11:32.260 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:11:32.365 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided username
+2025-06-01 16:11:32.473 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided password
+2025-06-01 16:11:36.862 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:11:36.978 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:11:39.122 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on txn
+2025-06-01 16:11:40.494 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on leave adj
+2025-06-01 16:12:03.692 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:12:04.762 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on txn
+2025-06-01 16:12:05.563 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on leave adj
+2025-06-01 16:16:01.082 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 16:16:01.306 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:16:01.306 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 16:16:03.342 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 16:16:05.752 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:16:05.908 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 16:16:06.005 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 16:16:10.590 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:16:22.757 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:16:24.518 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 16:16:25.692 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 16:16:25.795 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 16:16:32.822 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 16:16:35.037 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 16:16:37.272 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 16:16:39.509 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided paid days
+2025-06-01 16:16:39.565 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided payment type
+2025-06-01 16:16:40.088 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on view btn
+2025-06-01 16:16:40.402 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on approve btn
+2025-06-01 16:16:48.132 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:16:48.132 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - --test execution started--
+2025-06-01 16:16:49.028 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - browser maximized
+2025-06-01 16:16:51.511 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:16:51.596 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided username
+2025-06-01 16:16:51.703 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided password
+2025-06-01 16:16:56.419 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:16:56.508 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:16:58.114 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on txn
+2025-06-01 16:16:59.429 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on leave adj
+2025-06-01 16:17:25.667 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:17:26.787 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on txn
+2025-06-01 16:17:27.548 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on leave adj
+2025-06-01 16:18:24.817 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 16:18:25.036 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:18:25.037 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - --test execution started--
+2025-06-01 16:18:26.561 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - browser maximized
+2025-06-01 16:18:28.552 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:18:28.735 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided username
+2025-06-01 16:18:28.846 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided password
+2025-06-01 16:18:33.682 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:18:46.250 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:18:47.659 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on txn
+2025-06-01 16:18:48.855 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on leave incashment
+2025-06-01 16:18:48.958 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on new btn
+2025-06-01 16:18:55.620 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided effective date
+2025-06-01 16:18:57.837 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - employee selected
+2025-06-01 16:19:00.275 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - selected leave type
+2025-06-01 16:19:02.463 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided paid days
+2025-06-01 16:19:02.519 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - provided payment type
+2025-06-01 16:19:02.970 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on view btn
+2025-06-01 16:19:03.270 [main] INFO  testCases.HRMS.Payroll.CreateLeaveEncashmentTest - clicked on approve btn
+2025-06-01 16:19:11.404 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 16:19:11.405 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - --test execution started--
+2025-06-01 16:19:12.287 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - browser maximized
+2025-06-01 16:19:14.668 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided app URL in browser
+2025-06-01 16:19:14.784 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided username
+2025-06-01 16:19:14.899 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - provided password
+2025-06-01 16:19:19.377 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on sign in button
+2025-06-01 16:19:19.500 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on payroll link
+2025-06-01 16:19:21.629 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on txn
+2025-06-01 16:19:22.929 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveEncashmentTest - clicked on leave adj
+2025-06-01 18:32:29.300 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 18:32:29.520 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 18:32:29.520 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-01 18:32:31.992 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-01 18:32:34.388 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-01 18:32:34.588 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-01 18:32:34.709 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-01 18:32:42.120 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-01 18:32:42.346 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "unpaidDays" (class models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel), not marked as ignorable (5 known properties: "leaveType", "paidDays", "effectiveDate", "employee", "remarks"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel["unpaidDays"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2245) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1821) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1799) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4904) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3036) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:3500) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:38) ~[test-classes/:?]
+	... 27 more
+2025-06-01 18:32:52.431 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "unpaidDays" (class models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel), not marked as ignorable (5 known properties: "leaveType", "paidDays", "effectiveDate", "employee", "remarks"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel["unpaidDays"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2245) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1821) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1799) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4904) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3036) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:3500) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:38) ~[test-classes/:?]
+	... 27 more
+2025-06-01 18:32:52.568 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 18:32:52.568 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - --test execution started--
+2025-06-01 18:32:53.538 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - browser maximized
+2025-06-01 18:32:55.564 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-01 18:32:55.698 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided username
+2025-06-01 18:32:55.857 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided password
+2025-06-01 18:33:00.645 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-01 18:33:00.650 [main] ERROR testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest.deleteLeaveOpeningBalance(DeleteLeaveOpeningBalanceTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "unpaidDays" (class models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel), not marked as ignorable (5 known properties: "leaveType", "paidDays", "effectiveDate", "employee", "remarks"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel["unpaidDays"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2245) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1821) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1799) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4904) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3036) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:3500) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:38) ~[test-classes/:?]
+	... 27 more
+2025-06-01 18:33:10.718 [main] ERROR testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest.deleteLeaveOpeningBalance(DeleteLeaveOpeningBalanceTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "unpaidDays" (class models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel), not marked as ignorable (5 known properties: "leaveType", "paidDays", "effectiveDate", "employee", "remarks"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: models.Payroll.Payroll.PayrollModel$LeaveOpeningBalanceModel["unpaidDays"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2245) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1821) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1799) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4904) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3036) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:3500) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:38) ~[test-classes/:?]
+	... 27 more
+2025-06-01 18:34:18.114 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-01 18:34:18.319 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 18:34:18.319 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-01 18:34:19.697 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-01 18:34:22.061 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-01 18:34:22.264 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-01 18:34:22.384 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-01 18:34:27.044 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-01 18:34:58.056 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@class='leave-balance'])[2]"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a1d525eaae7b86c67cbef3e4fd61df, findElement {using=xpath, value=(//p[@class='leave-balance'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33a1d525eaae7b86c67cbef3e4fd61df
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at pageObjects.HRMS.HRCore.EmployeePage.getAnnualLeaveBal(EmployeePage.java:96) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:38) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-01 18:35:18.294 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a1d525eaae7b86c67cbef3e4fd61df, clickElement {id=f.AA3BD64F07486C772314883DC492A8F0.d.9BA16602597E9694D11868297E823E27.e.392}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33a1d525eaae7b86c67cbef3e4fd61df)] -> xpath: (//span[text()='Employee'])[2]]
+Session ID: 33a1d525eaae7b86c67cbef3e4fd61df
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.HRCore.HRCorePage.clkEmployee(HRCorePage.java:36) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:33) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-01 18:35:18.448 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-01 18:35:18.448 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - --test execution started--
+2025-06-01 18:35:19.347 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - browser maximized
+2025-06-01 18:35:22.247 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-01 18:35:22.382 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided username
+2025-06-01 18:35:22.487 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided password
+2025-06-01 18:35:27.463 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-01 18:35:29.195 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-01 18:35:30.713 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
+2025-06-01 18:35:55.398 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-01 18:35:56.375 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn

@@ -31,6 +31,29 @@
 			"unpaidDays":"01-01-2025",
 			"remarks":"test"
 		}
+	],
+	
+	"createLeaveEncashment":[
+		{
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",	
+			"leaveType": "Sick Leave",	
+			"paidDays":"1",   
+			"paymentType":"Pay Now",
+			"remarks":"test"			
+				
+		}
+	],	
+
+	"createLeaveOpeningBalance":[
+		{			
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",	
+			"leaveType": "Sick Leave",
+			"paidDays":"1",  
+			
+			"remarks":"test"	
+		}
 	]
 
 	

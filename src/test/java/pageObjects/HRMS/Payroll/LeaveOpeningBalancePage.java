@@ -6,17 +6,18 @@ import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
 
-public class LeaveAdjustmentPage extends BasePage
+public class LeaveOpeningBalancePage extends BasePage
 {
 
-	public LeaveAdjustmentPage(WebDriver driver)
+	public LeaveOpeningBalancePage(WebDriver driver)
 	{
 		super(driver);
-		// TODO Auto-generated constructor stub
+
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='Leave Adjustment']")
-	WebElement leaveAdjustment;
+	// Locators
+	@FindBy(xpath = "//span[normalize-space()='Leave Opening Balance']")
+	WebElement leaveOpeningBalance;
 
 	@FindBy(xpath = "//input[@id='LeaveAdjustment.EmployeeIdLookup_I']")
 	WebElement empdd;
@@ -25,26 +26,21 @@ public class LeaveAdjustmentPage extends BasePage
 	WebElement effectiveDate;
 
 	@FindBy(xpath = "//input[@id='LeaveAdjustment.LeaveTypeIdLookup_I']")
-	WebElement leavetypedd;
+	WebElement leaveType;
 
 	@FindBy(xpath = "//input[@id='LeaveAdjustment.PaidDays_I']")
-	WebElement paidDaysTB;
+	WebElement paidDays;
 
 	@FindBy(xpath = "//input[@id='LeaveAdjustment.UnpaidDays_I']")
-	WebElement unpaidDaysTB;
+	WebElement unpaidDays;
 
-	@FindBy(xpath = "//textarea[@id='LeaveAdjustment.Description_I']")
-	WebElement remarks;
-
-	@FindBy(xpath = "//span[normalize-space()='Approve']")
-	WebElement approve;
-
-	public void clkLeaveAdj()
+	// Action Methods
+	public void clickLeaveOpeningBalance()
 	{
-		leaveAdjustment.click();
+		leaveOpeningBalance.click();
 	}
 
-	public void clkNewBtn()
+	public void clickNew()
 	{
 		clickOnNew();
 	}
@@ -61,30 +57,30 @@ public class LeaveAdjustmentPage extends BasePage
 
 	public void provideLeaveType(String value)
 	{
-		clearAndProvide1(leavetypedd, value);
+		clearAndProvide1(leaveType, value);
 	}
 
-	public void providePaidDaysValue(String value)
+	public void providePaidDays(String value)
 	{
-		clearAndProvide1(paidDaysTB, value);
+		clearAndProvide1(paidDays, value);
 	}
 
-	public void provideUnpaidDaysValue(String value)
+	public void provideUnpaidDays(String value)
 	{
-		clearAndProvide1(unpaidDaysTB, value);
+		clearAndProvide1(unpaidDays, value);
 	}
 
 	public void provideRemarks(String value)
 	{
-		remarks.sendKeys(value);
+		provideDescription(value);
 	}
 
-	public void clkViewBtn()
+	public void clickView()
 	{
 		clickOnView();
 	}
 
-	public void clkApproveBtn() throws InterruptedException
+	public void clickApprove()
 	{
 		clickOnApprove();
 	}

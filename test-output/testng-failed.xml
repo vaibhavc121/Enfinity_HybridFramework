@@ -14,15 +14,24 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest">
+      <class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest">
         <methods>
           <include name="afterMethod"/>
           <include name="setup"/>
           <include name="teardown"/>
           <include name="login"/>
-          <include name="deleteLeaveAdjustment"/>
+          <include name="deleteLeaveOpeningBalance"/>
         </methods>
-      </class> <!-- testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest -->
+      </class> <!-- testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest -->
+      <class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+          <include name="login"/>
+          <include name="createLeaveOpeningBalance"/>
+        </methods>
+      </class> <!-- testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest -->
     </classes>
   </test> <!-- Master Tests(failed) -->
 </suite> <!-- Failed suite [MasterTestSuite] -->
