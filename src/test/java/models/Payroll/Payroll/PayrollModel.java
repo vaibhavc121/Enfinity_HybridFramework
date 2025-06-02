@@ -61,4 +61,15 @@ public class PayrollModel
 		public String remarks;
 	}
 
+	public static class BenefitSchemeEncashmentModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String employeeBenefitScheme;
+		public String requestedAmount;
+		public String approvedAmount;
+		public String paymentType;
+		public String remarks;
+	}
+
 }

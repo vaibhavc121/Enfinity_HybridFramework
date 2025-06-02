@@ -18,8 +18,8 @@ public class BenefitEncashmentPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Benefit Scheme Encashment']")
 	WebElement benefitSchemeEncashment;
 
-	@FindBy(xpath = "//img[@id='BenefitSchemeEncashment.EffectiveDate_B-1Img']")
-	WebElement effectiveDateDD;
+	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EffectiveDate_I']")
+	WebElement effectiveDate;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[5]/span[1]")
 	WebElement monthYear;
@@ -27,20 +27,11 @@ public class BenefitEncashmentPage extends BasePage
 	@FindBy(xpath = "//img[@id='BenefitSchemeEncashment.EffectiveDate_DDD_C_PMCImg']")
 	WebElement previousMonth;
 
-	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EffectiveDate_I']")
-	WebElement effectiveDate;
-
-	@FindBy(xpath = "//img[@id='BenefitSchemeEncashment.EmployeeIdLookup_B-1Img']")
+	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EmployeeIdLookup_I']")
 	WebElement empdd;
 
-	@FindBy(xpath = "//div[contains(text(),'001 | Vaibhav Chavan')]")
-	WebElement emp;
-
-	@FindBy(xpath = "//img[@id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_B-1Img']")
-	WebElement benefitScemedd;
-
-	@FindBy(css = "td[id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_DDD_gv_tcrow0'] div[class='lookup-text']")
-	WebElement benefitSceme;
+	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_I']")
+	WebElement benefitSchemeDD;
 
 	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.RequestedAmount_I']")
 	WebElement requestedAmount;
@@ -48,11 +39,8 @@ public class BenefitEncashmentPage extends BasePage
 	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.ApprovedAmount_I']")
 	WebElement approvedAmount;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[8]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filterCellReqAmt;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[8]")
-	WebElement resultReqAmt;
+	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.PaymentType_I']")
+	WebElement paymentType;
 
 	public void clkBenefitEncashment()
 	{
@@ -64,9 +52,9 @@ public class BenefitEncashmentPage extends BasePage
 		clickOnNew();
 	}
 
-	public void clkEffectiveDateDD()
+	public void provideEffectiveDate(String value)
 	{
-		effectiveDateDD.click();
+		clearAndProvide1(effectiveDate, value);
 	}
 
 //	public void slctEffectiveDate()
@@ -97,48 +85,35 @@ public class BenefitEncashmentPage extends BasePage
 //
 //
 //	}
-	public String effectivedt = "20-11-2024";
 
-	public void slctEffectiveDate()
+	public void provideEmp(String value) throws InterruptedException
 	{
-		effectiveDate.clear();
-		effectiveDate.sendKeys(effectivedt);
+		clearAndProvide1(empdd, value);
 	}
 
-	public void clkEmpDD() throws InterruptedException
+	public void provideBenefitScheme(String value) throws InterruptedException
 	{
-		empdd.click();
-		Thread.sleep(4000);
+		clearAndProvide1(benefitSchemeDD, value);
 	}
 
-	public void slctEmp() throws InterruptedException
+	public void provideReqAmt(String value)
 	{
-		emp.click();
-		Thread.sleep(2000);
+		clearAndProvide1(requestedAmount, value);
 	}
 
-	public void clkBenefitScemeDD() throws InterruptedException
+	public void provideApprovedAmt(String value)
 	{
-		benefitScemedd.click();
-		Thread.sleep(2000);
+		clearAndProvide1(approvedAmount, value);
 	}
 
-	public void slctBenefitSceme() throws InterruptedException
+	public void selectPaymentType(String value)
 	{
-		benefitSceme.click();
-		Thread.sleep(2000);
+		selectDropdownValueOffice365(value);
 	}
 
-	public void provideReqAmt()
+	public void provideRemarks(String value)
 	{
-		requestedAmount.clear();
-		requestedAmount.sendKeys("100");
-	}
-
-	public void provideApprovedAmt()
-	{
-		approvedAmount.clear();
-		approvedAmount.sendKeys("100");
+		provideDescription(value);
 	}
 
 	public void clkView()
@@ -146,10 +121,9 @@ public class BenefitEncashmentPage extends BasePage
 		clickOnView();
 	}
 
-	public void clkApprove() throws InterruptedException
+	public void clkApproveBack() throws InterruptedException
 	{
-		clickOnApprove();
-		Thread.sleep(2000);
+		clickApproveAndBack();
 	}
 
 	public boolean isTxnCreated()

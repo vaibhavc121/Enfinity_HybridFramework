@@ -50,8 +50,19 @@
 			"employee":"Vaibhav Chavan",
 			"effectiveDate": "01-01-2025",	
 			"leaveType": "Sick Leave",
-			"paidDays":"1",  
-			
+			"paidDays":"1",  			
+			"remarks":"test"	
+		}
+	],
+	
+	"createBenefitSchemeEncashment":[
+		{			
+			"effectiveDate": "01-01-2025",		
+			"employee":"Vaibhav Chavan",
+			"employeeBenefitScheme":"Self | Health Insurance",
+			"requestedAmount":"10",
+			"approvedAmount":"10",
+			"paymentType":"Pay Out Side Payroll",
 			"remarks":"test"	
 		}
 	]
