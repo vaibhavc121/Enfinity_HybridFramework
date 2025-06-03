@@ -26478,3 +26478,131 @@ Session ID: 33a1d525eaae7b86c67cbef3e4fd61df
 2025-06-01 18:35:30.713 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
 2025-06-01 18:35:55.398 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
 2025-06-01 18:35:56.375 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
+2025-06-03 18:28:08.670 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-03 18:28:08.905 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-03 18:28:08.905 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - --test execution started--
+2025-06-03 18:28:11.735 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - browser maximized
+2025-06-03 18:28:13.800 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided app URL in browser
+2025-06-03 18:28:13.957 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided username
+2025-06-03 18:28:14.052 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided password
+2025-06-03 18:28:19.292 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on sign in button
+2025-06-03 18:28:20.001 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on payroll link
+2025-06-03 18:28:21.457 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on txn
+2025-06-03 18:28:22.767 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on benefit encashment
+2025-06-03 18:28:22.858 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on new btn
+2025-06-03 18:28:34.607 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - slctd effective dt
+2025-06-03 18:28:36.775 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - employee slctd
+2025-06-03 18:28:39.044 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - benefit sceme slctd
+2025-06-03 18:28:41.301 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - req amt provided
+2025-06-03 18:28:43.475 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - approved amt provided
+2025-06-03 18:28:44.390 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on view
+2025-06-03 18:28:46.417 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on approve and came on listing
+2025-06-03 18:28:51.375 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-03 18:28:51.375 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - --test execution started--
+2025-06-03 18:28:52.266 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - browser maximized
+2025-06-03 18:28:54.676 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided app URL in browser
+2025-06-03 18:28:54.769 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided username
+2025-06-03 18:28:54.849 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided password
+2025-06-03 18:28:58.912 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on sign in button
+2025-06-03 18:28:58.989 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on payroll link
+2025-06-03 18:29:00.817 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on txn
+2025-06-03 18:29:02.070 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on benefit encashment
+2025-06-03 18:29:27.070 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on payroll link
+2025-06-03 18:29:28.094 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on txn
+2025-06-03 18:29:28.742 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on benefit encashment
+2025-06-03 18:29:47.899 [main] ERROR testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2fc9c3d421c1935cfe7d1524dd25c740, clickElement {id=f.54993EAA15B9E6FDC6454915188AB4DE.d.286C9EA46D9EBE6FFD9C721549EF25A2.e.695}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56286}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56286/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2fc9c3d421c1935cfe7d1524dd25c740)] -> xpath: //span[normalize-space()='Delete']]
+Session ID: 2fc9c3d421c1935cfe7d1524dd25c740
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at base.BasePage.performAction(BasePage.java:471) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.DeleteBenefitEncashmentTest.deleteBenefitEncashment(DeleteBenefitEncashmentTest.java:44) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-03 18:30:08.161 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-03 18:30:08.333 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-03 18:30:08.334 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - --test execution started--
+2025-06-03 18:30:09.591 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - browser maximized
+2025-06-03 18:30:11.601 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided app URL in browser
+2025-06-03 18:30:11.754 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided username
+2025-06-03 18:30:11.856 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided password
+2025-06-03 18:30:16.475 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on sign in button
+2025-06-03 18:30:16.687 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on payroll link
+2025-06-03 18:30:18.661 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on txn
+2025-06-03 18:30:19.792 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on benefit encashment
+2025-06-03 18:34:32.823 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\master.xml
+
+2025-06-03 18:34:33.004 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-03 18:34:33.004 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - --test execution started--
+2025-06-03 18:34:34.173 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - browser maximized
+2025-06-03 18:34:36.553 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided app URL in browser
+2025-06-03 18:34:36.700 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided username
+2025-06-03 18:34:36.793 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided password
+2025-06-03 18:34:41.795 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on sign in button
+2025-06-03 18:34:42.446 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on payroll link
+2025-06-03 18:34:44.074 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on txn
+2025-06-03 18:34:46.267 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on benefit encashment
+2025-06-03 18:34:46.360 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on new btn
+2025-06-03 18:34:52.771 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - slctd effective dt
+2025-06-03 18:34:54.960 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - employee slctd
+2025-06-03 18:34:57.146 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - benefit sceme slctd
+2025-06-03 18:34:59.292 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - req amt provided
+2025-06-03 18:35:01.552 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - approved amt provided
+2025-06-03 18:35:02.267 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on view
+2025-06-03 18:35:02.539 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on approve and came on listing
+2025-06-03 18:35:08.339 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-03 18:35:08.339 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - --test execution started--
+2025-06-03 18:35:09.164 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - browser maximized
+2025-06-03 18:35:11.148 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided app URL in browser
+2025-06-03 18:35:11.245 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided username
+2025-06-03 18:35:11.343 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - provided password
+2025-06-03 18:35:15.532 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on sign in button
+2025-06-03 18:35:15.606 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on payroll link
+2025-06-03 18:35:16.986 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on txn
+2025-06-03 18:35:18.123 [main] INFO  testCases.HRMS.Payroll.DeleteBenefitEncashmentTest - clicked on benefit encashment

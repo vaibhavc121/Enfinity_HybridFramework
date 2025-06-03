@@ -40,8 +40,10 @@
 			<class name="testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest"/>-->
 			<!--<class name="testCases.HRMS.Payroll.CreateLeaveEncashmentTest"/>
 			<class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/>-->
-			<class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest"/>
-			<class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/>
+			<!--<class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/>-->
+			<class name="testCases.HRMS.Payroll.CreateBenefitEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>
 			
 			
 
