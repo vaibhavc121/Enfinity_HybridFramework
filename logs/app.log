@@ -27279,3 +27279,18 @@ Session ID: 4e2999478cf6849604d003f19e8bb9e7
 	at base.BasePage.lambda$1(BasePage.java:768) ~[test-classes/:?]
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.31.0.jar:?]
 	... 30 more
+2025-06-06 01:32:36.860 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-06 01:32:37.140 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-06 01:32:37.140 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - --test execution started--
+2025-06-06 01:32:41.876 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - browser maximized
+2025-06-06 01:32:55.424 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided app URL in browser
+2025-06-06 01:32:55.799 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided username
+2025-06-06 01:32:56.069 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - provided password
+2025-06-06 01:33:06.792 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on sign in button
+2025-06-06 01:33:07.604 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on payroll link
+2025-06-06 01:33:09.589 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - clicked on txn
+2025-06-06 01:33:32.633 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-06 01:33:32.639 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - --test execution started--
+2025-06-06 01:33:34.012 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - browser maximized

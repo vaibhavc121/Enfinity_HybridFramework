@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="RegressionTestSuite">
+<suite name="NewTestCaseSuite">
 
 	<groups>
 		<run>
@@ -10,7 +10,7 @@
 	</groups>
 
 	<listeners>
-		<listener class-name="utilities.ExtentReportManager"></listener>
+		<listener class-name="utilities.ExtentReportsUtils"></listener>
 	</listeners>
 
 
@@ -40,10 +40,10 @@
 			<class name="testCases.HRMS.Payroll.CreateLeaveEncashmentTest"/>
 			<class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/>
 			<class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest"/>
-			<class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/>-->
 			<class name="testCases.HRMS.Payroll.CreateBenefitEncashmentTest"/>
-			<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>-->
-			<class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>
+			<!--<class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest"/>-->
 			
 			
 
