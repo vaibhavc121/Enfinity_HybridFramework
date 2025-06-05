@@ -20,35 +20,54 @@
 
 		<classes>
 
-			<class name="testCases.HRMS.Payroll.TC_LoanTest"/>
-			<class name="testCases.HRMS.Payroll.TC_OvertimeTest"/>
-			<class name="testCases.HRMS.Payroll.TC_TicketAdjustmentTest"/>
-			<class name="testCases.HRMS.Payroll.TC_TicketEncashmentTest"/>
-			<class name="testCases.HRMS.Payroll.TC_BenefitEncashmentTest"/>
-			<class name="testCases.HRMS.Payroll.TC_IndemnityAdjustmentTest"/>
-			<class name="testCases.HRMS.Payroll.TC_LeaveEncashmentTest"/>
-			<class name="testCases.HRMS.Payroll.TC_LeaveAdjustmentTest"/>
-			<class name="testCases.HRMS.Payroll.TC_LeaveTest"/>
-			<class name="testCases.HRMS.Payroll.TC_VariableSalaryTest"/>
-
+			<!-- Payroll -->
+			<!--<class name="testCases.HRMS.Payroll.LoanTest"/>
+			<class name="testCases.HRMS.Payroll.OvertimeTest"/>
+			<class name="testCases.HRMS.Payroll.TicketAdjustmentTest"/>-->
+			<!--<class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>-->
+			<!--<class name="testCases.HRMS.Payroll.BenefitEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.IndemnityAdjustmentTest"/>
+			<class name="testCases.HRMS.Payroll.LeaveEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.LeaveAdjustmentTest"/>
+			<class name="testCases.HRMS.Payroll.LeaveTest"/>
+			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest"/>-->
+			<class name="testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok"/>
+			<class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest"/>
+			<class name="testCases.HRMS.Payroll.CreateLeaveTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveTest"/>
+			<class name="testCases.HRMS.Payroll.CreateLeaveAdjustmentTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest"/>
+			<class name="testCases.HRMS.Payroll.CreateLeaveEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/>
+			<class name="testCases.HRMS.Payroll.CreateBenefitEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>
+			<!--<class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest"/>-->
 			
+			
+
 			<!-- HR Core -->
-			<class name="testCases.HRMS.HRCore.TC_LicensesTest" />
-			<class name="testCases.HRMS.HRCore.TC_DelegationTest" />
-			<class name="testCases.HRMS.HRCore.TC_AssetIssueTest" />
-			<class name="testCases.HRMS.HRCore.TC_DocumentTypeTest" />
-			<class name="testCases.HRMS.HRCore.TC_QualificationTest" />
-			<class name="testCases.HRMS.HRCore.TC_BankTest" />
-			<class name="testCases.HRMS.HRCore.TC_WorkLocationTest" />
-			<class name="testCases.HRMS.HRCore.TC_ReligionTest" />
-			<class name="testCases.HRMS.HRCore.TC_CalendarTest" />
-			<class name="testCases.HRMS.HRCore.TC_GradeTest" />
-			<class name="testCases.HRMS.HRCore.TC_DesignationTest" />
-			<class name="testCases.HRMS.HRCore.TC_DeptTest" />
-			<class name="testCases.HRMS.HRCore.TC_EmployeeTest" />
-			<class name="testCases.HRMS.HRCore.TC_LoginTest" />
+			<!--<class name="testCases.HRMS.HRCore.DelegationTest" />
+			<class name="testCases.HRMS.HRCore.AssetIssueTest" />
+			<class name="testCases.HRMS.HRCore.DocumentTypeTest" />
+			<class name="testCases.HRMS.HRCore.QualificationTest" />
+			<class name="testCases.HRMS.HRCore.BankTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.WorkLocationTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.ReligionTest" />-->
+			<!--<class name="testCases.HRMS.HRCore.CalendarTest" />
+			<class name="testCases.HRMS.HRCore.GradeTest" />
+			<class name="testCases.HRMS.HRCore.DesignationTest" />
+			<class name="testCases.HRMS.HRCore.LicensesTest" />
+			<class name="testCases.HRMS.HRCore.DeptTest" />
+			<class name="testCases.HRMS.HRCore.EmployeeTest" />
+			<class name="testCases.HRMS.HRCore.LoginTest" />
 			<class name="testCases.HRMS.HRCore.DDT_ResidencyInfo" />
-			<!--<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />-->
+			<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />-->
+			
+			<!-- Global -->
+			<!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->
+			
 		</classes>
 	</test>
 
