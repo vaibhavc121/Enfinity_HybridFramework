@@ -27294,3 +27294,7 @@ Session ID: 4e2999478cf6849604d003f19e8bb9e7
 2025-06-06 01:33:32.633 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
 2025-06-06 01:33:32.639 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - --test execution started--
 2025-06-06 01:33:34.012 [main] INFO  testCases.HRMS.Payroll.CreateBenefitEncashmentTest - browser maximized
+2025-06-06 01:56:01.988 [main] WARN  org.testng.TestNG - Ignoring duplicate listener : utilities.ExtentReportsUtils
+2025-06-06 01:56:02.557 [main] INFO  testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-06 01:56:02.558 [main] INFO  testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok - --test execution started--
+2025-06-06 01:56:04.955 [main] INFO  testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok - browser maximized
