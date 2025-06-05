@@ -37,7 +37,10 @@ public class VariableSalaryPage extends BasePage
 	@FindBy(xpath = "//input[@id='VariableSalaryLine_SalaryComponentId_I']")
 	WebElement SalaryCompo;
 
-	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[4]")
+//	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[4]")
+//	WebElement amtfield;
+
+	@FindBy(xpath = "//td[@class=' grid-cell dx-wrap dxgv dx-ellipsis dx-ar']//div[@class='dxgBCTC dx-ellipsis'][normalize-space()='0']")
 	WebElement amtfield;
 
 	@FindBy(xpath = "//span[normalize-space()='View']")

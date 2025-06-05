@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BasePage;
+import groovyjarjarantlr4.v4.parse.ANTLRParser.throwsSpec_return;
 import utilities.CommonActions;
 
 public class TicketEncashmentPage extends BasePage
@@ -27,45 +28,45 @@ public class TicketEncashmentPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Ticket Encashment']")
 	WebElement ticketEncashment;
 
-	@FindBy(xpath = "//img[@id='TicketEncashment.EmployeeIdLookup_B-1Img']")
+	@FindBy(xpath = "//input[@id='TicketEncashment.EmployeeIdLookup_I']")
 	WebElement empdd;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]")
-	WebElement issueTicket;
 
 	@FindBy(xpath = "//input[@id='TicketEncashment.EffectiveDate_I']")
 	WebElement effectiveDate;
 
-	public void clkTicketEncashment()
+	@FindBy(xpath = "//input[@id='TicketEncashment.PaymentType_I']")
+	WebElement paymentType;
+	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[6]")
+	WebElement issueTicket;
+
+	public void clickTicketEncashment()
 	{
 		ticketEncashment.click();
 	}
 
-	public void clkNew()
+	public void clickNew()
 	{
 		clickOnNew();
 	}
 
-	public void clkEmpDD()
+	public void provideEmp(String value)
 	{
-		empdd.click();
+		clearAndProvide1(empdd, value);
 	}
 
-	public void slctEmp() throws InterruptedException
+	public void provideEffectiveDate(String value)
 	{
-		CommonActions.setDropdownValue("Vaibhav Chavan");
+		clearAndProvide1(effectiveDate, value);
 	}
 
-	String effectiveDt = CommonActions.formattedDateMM();
-
-	public void provideEffectiveDate() throws InterruptedException
+	public void providePaymentType(String value)
 	{
-		effectiveDate.clear();
-		// Thread.sleep(2000);
-		effectiveDate.sendKeys(effectiveDt);
+		paymentType.click();
+		selectDropdownValueOffice365(value);
+		waitTS(2);
 	}
 
-	public void clkSave()
+	public void clickSave()
 	{
 		clickOnSave();
 	}
@@ -76,8 +77,11 @@ public class TicketEncashmentPage extends BasePage
 				"/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[5]"))
 				.getText();
 
+		// String availableTicket = driver.findElement(By.xpath("(//div[@class='dxgBCTC
+		// dx-ellipsis'])[4]")).getText();
+
 		double availableTicketDouble = Double.parseDouble(availableTicket);
-		if (availableTicketDouble < 1)
+		if (availableTicketDouble > 1)
 		{
 			return true;
 		} else
@@ -86,47 +90,31 @@ public class TicketEncashmentPage extends BasePage
 		}
 	}
 
-	public void provideIssueTicket()
+	public void provideIssueTickets(String value) throws Exception
 	{
-		// issueTicket.click();
-		// issueTicket.sendKeys("1");
-
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-//				"/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]")));
-//
-//		if (element.isDisplayed() && element.isEnabled())
-//		{
-//			try
-//			{
-//				element.click(); // Clear existing text, if any
-//				element.sendKeys("1"); // Send value to the textbox
-//			} catch (ElementNotInteractableException e)
-//			{
-//				JavascriptExecutor js = (JavascriptExecutor) driver;
-//				js.executeScript("arguments[0].value='1';", element); // Set value using JavaScript
-//			}
-//		} else
-//		{
-//			System.out.println("Element is either not visible or not enabled.");
-//		}
-
-		WebElement inputField = driver.findElement(By.xpath(
-				"/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]"));
-
-		Actions actions = new Actions(driver);
-		actions.moveToElement(inputField).click().doubleClick().sendKeys("1").build().perform();
-
+		if (checkAvailableTicket())
+		{
+			// clearAndProvide2(issueTicket, value);
+			clearAndProvide1(issueTicket, value);
+		} else
+		{
+			throw new Exception("VRC- ticket balance is less than 1");
+		}
 	}
 
-	public void clkView()
+	public void clickSave1()
+	{
+		clickOnSave();
+	}
+
+	public void clickView()
 	{
 		clickOnView();
 	}
 
-	public void clkApprove()
+	public void clickApproveBack()
 	{
-		clickOnApprove();
+		clickApproveAndBack();
 	}
 
 	public boolean isTicketIssued()

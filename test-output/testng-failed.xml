@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MasterTestSuite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utilities.ExtentReportsUtils"/>
-  </listeners>
-  <test thread-count="5" name="Master Tests(failed)">
-    <parameter name="os" value="windows"/>
-    <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-        <include name="datadriven"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest">
+      <class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest">
         <methods>
           <include name="afterMethod"/>
           <include name="setup"/>
           <include name="teardown"/>
           <include name="login"/>
-          <include name="deleteBenefitEncashment"/>
+          <include name="verifyTicketEncashment"/>
         </methods>
-      </class> <!-- testCases.HRMS.Payroll.DeleteBenefitEncashmentTest -->
+      </class> <!-- testCases.HRMS.Payroll.CreateTicketEncashmentTest -->
     </classes>
-  </test> <!-- Master Tests(failed) -->
-</suite> <!-- Failed suite [MasterTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

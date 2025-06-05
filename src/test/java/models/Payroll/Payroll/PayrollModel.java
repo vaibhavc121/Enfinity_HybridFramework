@@ -72,4 +72,12 @@ public class PayrollModel
 		public String remarks;
 	}
 
+	public static class TicketEncashmentModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String paymentType;
+		public String issueTickets;
+	}
+
 }

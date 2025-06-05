@@ -65,6 +65,16 @@
 			"paymentType":"Pay Out Side Payroll",
 			"remarks":"test"	
 		}
+	],
+	
+	"createTicketEncashment":[
+		{
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",	
+			"paymentType":"Pay With Payroll",	
+			"issueTickets":"1"	
+				
+		}
 	]
 
 	
