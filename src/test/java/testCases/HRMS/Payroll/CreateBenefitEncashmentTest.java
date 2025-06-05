@@ -17,7 +17,7 @@ import utilities.RetryAnalyzer;
 public class CreateBenefitEncashmentTest extends BaseTest
 {
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void verifyBenefitEncashment()
+	public void createBenefitEncashment()
 	{
 		try
 		{
