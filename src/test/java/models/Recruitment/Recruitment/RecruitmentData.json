@@ -1,0 +1,26 @@
+{
+  "createJob": [
+    {
+
+      "jobTitle": "Developer",
+      "department": "prod",
+      "designation": "Systems Analyst",
+      "numberOfPosition": "2",
+      "employmentType": "Full Time",
+      "Industry": "IT",
+      "TargetDate": "01-Apr-2025",
+      "MonthlySal": "500",
+      "assignedManager": "001",
+      "assignedRecruiter": "001",
+      "workExperience": "1",
+      "skills": "Accounting Software",
+      "city": "pune",
+      "state": "maharashtra",
+      "country": "India",
+      "postalCode": "416418",
+      "gender": "male",
+      "maritalStatus": "Married",
+      "nationality": "India"
+    }
+  ]
+}

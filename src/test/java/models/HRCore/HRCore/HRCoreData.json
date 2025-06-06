@@ -1,0 +1,117 @@
+{
+	"createBank": [
+	  {
+	    "bankName": "HDFC"
+
+	  }
+	],	
+	"deleteBank": [
+	  {
+	    "bankName": "HDFC"
+
+	  }
+	],
+	
+	"createCalendar": [
+	  {
+	    "calendarName": "Test",
+	    "fromDate": "01-Jan-2025"
+	  }
+	],
+	"deleteCalendar": [
+	  {
+	    "calendarName": "Test"
+	  }
+	 
+	],
+	
+	"createDepartment": [
+	  {
+	    "deptname": "IT"
+	  }
+	],
+
+	"deleteDepartment": [
+	  {
+	    "deptname": "IT"
+	  }
+	],
+	
+	"createDesignation": [
+	  {
+	    "designationName": "SDET"
+	  }
+	],
+	"deleteDesignation": [
+	  {
+	    "designationName": "SDET"
+	  }
+	],
+	
+	"createDocumentType": [
+	  {
+	    "documentTypeName": "Emp Document"
+
+	  }
+	],
+	"deleteDocumentType": [
+	  {
+	    "documentTypeName": "Emp Document"
+
+	  }
+	],
+	
+	"createGrade": [
+	  {
+	    "gradeName": "CEO",
+	    "minSal": "100",
+	    "maxSal": "200"
+	  }
+	],
+	"deleteGrade": [
+	  {
+	    "gradeName": "CEO"
+	  }
+	],
+	
+	"createQualification": [
+	  {
+	    "qualificationName": "MBBS"
+
+	  }
+	],
+	"deleteQualification": [
+	  {
+	    "qualificationName": "MBBS"
+
+	  }
+	],
+	
+	"createReligion": [
+	  {
+	    "religionName": "Jain"
+
+	  }
+	],
+	"deleteReligion": [
+	  {
+	    "religionName": "Jain"
+
+	  }
+	],
+	
+	"createWorkLocation": [
+	  {
+	    "workLocationName": "NIBM Pune"
+
+	  }
+	],
+	"deleteWorkLocation": [
+	  {
+	    "workLocationName": "NIBM Pune"
+
+	  }
+	]
+	
+	
+}

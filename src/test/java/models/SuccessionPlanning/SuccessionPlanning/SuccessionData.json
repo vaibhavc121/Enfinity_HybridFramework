@@ -1,0 +1,17 @@
+{
+  "createSuccessionPlan": [
+    {
+      "name": "Systems Analyst",
+      "designation": "Systems Analyst",
+      "employee": "001 | Vaibhav Chavan",
+      "minimumPercentage": "40",
+      "qualificationPercentage": "20",
+      "experiencePercentage": "20",
+      "skillsPercentage": "20",
+      "appraisalPercentage": "20",
+      "coursePercentage": "20",
+      "description": "test"
+    }
+    
+  ]
+}

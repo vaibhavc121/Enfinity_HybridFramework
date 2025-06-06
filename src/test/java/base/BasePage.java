@@ -965,7 +965,7 @@ public class BasePage
 	}
 
 	// Alert Handling
-	public void acceptAlert(WebDriver driver)
+	public static void acceptAlert(WebDriver driver)
 	{
 		driver.switchTo().alert().accept();
 	}

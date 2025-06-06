@@ -16,55 +16,22 @@ public class ReligionPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
-
 	@FindBy(xpath = "//input[@id='Religion.Name_I']")
-	WebElement name;
+	WebElement religionName;
 
-	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement save;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filter;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
-	WebElement result;
-
-	public void clkBtnNew()
+	public void clickNew()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String temp = randomString();
-
-	public void setReligionName()
+	public void provideReligionName(String value)
 	{
-
-		name.sendKeys(temp);
+		religionName.sendKeys(value);
 	}
 
-	public void clkSaveBtn() throws InterruptedException
+	public void clickSaveBack()
 	{
-		CommonActions.clkSave();
-	}
-
-	public boolean isReligionCreated() throws InterruptedException
-	{
-		filter.sendKeys(temp);
-		Thread.sleep(2000);
-		String religion = result.getText();
-		if (religion.equals(temp))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
-//		filter.sendKeys(temp);
-//		String religion = result.getText();
-//		return religion.equals(temp);
+		clickSaveAndBack();
 	}
 
 }

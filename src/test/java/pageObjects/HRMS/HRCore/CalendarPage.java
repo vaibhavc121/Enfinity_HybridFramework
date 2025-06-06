@@ -17,16 +17,11 @@ public class CalendarPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseTest bc = new BaseTest();
-
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
-
 	@FindBy(name = "Name")
 	WebElement calname;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
-	WebElement caldate;
+	@FindBy(xpath = "//input[contains(@id,'FromDate')]")
+	WebElement fromDate;
 
 	@FindBy(xpath = "//div[@id='SundayAsWeeklyoff']//span[@class='dx-checkbox-icon']")
 	WebElement weekoffcheckbox;
@@ -34,31 +29,25 @@ public class CalendarPage extends BasePage
 	@FindBy(xpath = "//div[@id='SaturdayAsRestDay']//span[@class='dx-checkbox-icon']")
 	WebElement restdaycheckbox;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]")
-	WebElement save;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filterCell;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
-	WebElement result;
-
-	public void clkNewBtn()
+	public void clickNewButton()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String temp = randomString();
-
-	public void setCalName()
+	public void provideCalendarName()
 	{
-		calname.sendKeys(temp);
+		calname.sendKeys(randomString());
 	}
 
-	public void setCalDate()
+	public void provideCalendarName(String value)
 	{
-		caldate.clear();
-		caldate.sendKeys("01-Jan-2024");
+		calname.sendKeys(value);
+	}
+
+	public void provideFromDate(String value)
+	{
+		fromDate.clear();
+		fromDate.sendKeys(value);
 	}
 
 	public void setWeekoff()
@@ -69,28 +58,11 @@ public class CalendarPage extends BasePage
 	public void setRestday()
 	{
 		restdaycheckbox.click();
-
 	}
 
-	public void clkSave() throws InterruptedException
+	public void clickSaveBack()
 	{
-		clickOnSave();
-	}
-
-	public boolean isCalendarCreated() throws InterruptedException
-	{
-		filterCell.sendKeys(temp);
-		Thread.sleep(2000);
-		String cal = result.getText();
-
-		if (temp.equals(cal))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
+		clickSaveAndBack();
 	}
 
 }

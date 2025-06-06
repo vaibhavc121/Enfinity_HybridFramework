@@ -17,89 +17,68 @@ public class DeptPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseTest bc = new BaseTest();
-
-	@FindBy(css = "#MainMenu_DXI0_Img")
-	WebElement newbtn;
-
 	@FindBy(xpath = "//input[@id='Department.Name_I']")
-	WebElement deptname;
+	WebElement deptName;
 
 	@FindBy(xpath = "//img[@id='EmployeeSelfService_CBImg']")
-	WebElement selfservice;
+	WebElement selfService;
 
-	@FindBy(xpath = "//input[@id='Department.ManagerEmployeeIdLookup_I']")
-	WebElement deptmgrdd;
+	@FindBy(xpath = "//img[@id='Department.ManagerEmployeeIdLookup_B-1Img']")
+	WebElement deptMgrDD;
 
 	@FindBy(xpath = "//div[@class='lookup-text']")
-	WebElement deptmgrname;
+	WebElement deptMgrName;
 
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
 
-//	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-//	WebElement filterCell;
-
-	@FindBy(css = "input[aria-describedby='dx-col-4']")
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
 	WebElement filterCell;
 
-//	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
-//	WebElement result;
-
-	@FindBy(css = "td[role='gridcell'][aria-describedby='dx-col-4'][shn-nav='2']")
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
 	WebElement result;
 
-	public void clkNewbtn()
+	public String deptNm = randomString();
+
+	public void clickNew()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String temp = randomString();
-
-	public void setDeptName()
+	public void provideDepartmentName(String value)
 	{
-		deptname.sendKeys(temp);
+		deptName.sendKeys(value);
 	}
 
-	public void clkSelfServiceDD()
+	public void selfServiceDD()
 	{
-		selfservice.click();
+		selfService.click();
 	}
 
-	public void clkDeptMgrDD()
+	public void clickDeptMgrDD()
 	{
-		deptmgrdd.click();
+		deptMgrDD.click();
 	}
 
-	public void setDeptMgrName()
+	public void selectDeptMgrName()
 	{
-		deptmgrdd.sendKeys("vaibhav chavan");
+		selectDropdownValue("Mary Kom");
 	}
 
-	public void slctDeptMgr()
+	public void selectDeptMgr()
 	{
-		deptmgrname.click();
+		deptMgrName.click();
 	}
 
-	public void clkSave() throws InterruptedException
+	public void clickSaveBack()
 	{
-		clickOnSave();
+		clickSaveAndBack();
+		// or save.click(); if you prefer direct click
 	}
 
-	public boolean isDeptCreated() throws InterruptedException
+	public boolean isDeptCreated()
 	{
-		filterCell.sendKeys(temp);
-		Thread.sleep(2000);
-		String hrasset = result.getText();
-
-		if (temp.equals(hrasset))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
+		return resultValue(2).contains(deptNm);
 	}
 
 }

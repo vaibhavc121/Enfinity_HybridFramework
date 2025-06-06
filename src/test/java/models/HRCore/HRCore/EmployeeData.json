@@ -1,0 +1,300 @@
+{
+  "newEmployee": [
+    {
+      "email": "abc121@gmail.com",
+      "name": "Mohan Patil",
+      "Name(Arabic)": null,
+      "manager": null,
+      "mobile": "7769765434",
+      "DOJ": "01-Jan-2024",
+      "department": "Finance",
+      "designation": "SR Accountant",
+      "payrollSet": "PS0- Calendar days",
+      "calendar": "Default Calendar",
+      "indemnity": "Indemnity",
+      "grade": "Contributor",
+      "gender": "Male",
+      "religion": "Hindu",
+      "maritalStatus": "Married"
+    }
+  ],
+
+  "personal": [
+    {
+      "nameL2": "موهان",
+      "displayName": "Priti",
+      "displayNameL2": "موهان",
+      "DOB": "01-Jan-2000",
+      "nationality": "India",
+      "bloodGroup": "O+",
+      "photoVisibility": "Public",
+      "mobileNumberVisibility": "Public",
+      "emailVisibility": "Public"
+    }
+  ],
+
+  "job": [
+    {
+      "manager": "Rohit Chavan",
+      "substituteEmployee": "Mary Kom",
+      "category": "CAT 2",
+      "workLocation": "AfhXad",
+      "employmentType": "Part Time",
+      "probationPeriod": "50",
+      "noticePeriod": "50",
+      "priorCompany": "TCS",
+      "startDate": "01-Jan-2023",
+      "qualification": "BCA",
+      "university": "Pune",
+      "YearOfPassing": "2018"
+    }
+  ],
+
+  "payroll": [
+    {
+      "payrollset": "Test",
+      "paymentMode": "Bank",
+      "employeebank": "Ahli United Bank",
+      "bankAccountType": "Saving",
+      "govtRecruitmentContractLicense": "Demo Govt Recruitment Contract Lincese",
+      "basicSalary": "500",
+      "salaryComponents": [
+        {
+          "salaryComponent": "Food Allowance",
+          "amount": "500",
+          "effectiveFromDate": "10-Nov-2024"
+
+        },
+        {
+          "salaryComponent": "Housing Allowance",
+          "amount": "500",
+          "effectiveFromDate": "10-Nov-2024"
+        }
+
+      ],
+
+      "overtimeTypes": [
+        {
+          "overtimeType": "Normal Overtime"
+        },
+        {
+          "overtimeType": "Holiday Overtime"
+        }
+
+      ],
+
+      "relationshipType": "Spouse",
+      "description": "desc",
+      "ticketAccrual": "Four Ticket Per Year",
+      "ticketDestination": "Kolkata",
+      "ticketEffectiveFromDate": "10-Nov-2024",
+      "accrualType": "Education",
+      "accrualAmount": "500",
+      "resetAvailedDaysMethod": "On Calender Month",
+      "BSrelationshipType": "Children",
+      "benefitScheme": "Health Insurance",
+      "BSeffectiveFromDate": "10-Nov-2024",
+      "BSeffectiveToDate": "10-Nov-2025"
+
+    }
+  ],
+
+  "timeOff": [
+    {
+      "leaveTypes": [
+        {
+          "leaveType": "Annual Leave",
+          "LTeffectiveFromDate": "01-Jan-2024"
+        },
+        {
+          "leaveType": "Sick Leave",
+          "LTeffectiveFromDate": "01-Jan-2024"
+        }
+
+      ]
+
+    }
+  ],
+
+  "attendance": [
+    {
+      "calendar": "cal1",
+      "checkInType": "Accept Always",
+      "defaultShift": "VRC",
+      "policy": "VRC",
+      "shiftPreference": "Two Shift"
+    }
+  ],
+
+  "documents": [
+    {
+      "documentType": "Agreement",
+      "dateOfExpiry": "01-Jan-2030",
+      "placeOfDocument": "Company"
+    },
+    {
+      "documentType": "Civil Id",
+      "dateOfExpiry": "01-Jan-2030",
+      "placeOfDocument": "Company"
+    }
+  ],
+
+  "performance": [
+    {
+      "KRA": [
+        {
+          "KeyResultAreaName": "Market Insights",
+          "weightage": "100"
+        },
+        {
+          "KeyResultAreaName": "project sign off",
+          "weightage": "100"
+        }
+      ],
+
+      "Competencies": [
+        {
+          "competencyName": "Communication with clients",
+          "competenciesWeightage": "100"
+        },
+        {
+          "competencyName": "Initiative",
+          "competenciesWeightage": "100"
+        }
+      ],
+
+      "SkillSets": [
+        {
+          "skillSetName": "API design",
+          "level": "Intermidiate",
+          "skillSetWeightage": "100"
+        },
+        {
+          "skillSetName": "Accounting Software",
+          "level": "Intermidiate",
+          "skillSetWeightage": "100"
+        }
+      ],
+
+      "Goals": [
+        {
+          "goalName": "HRMS Automation",
+          "startDate": "01-Jan-2024",
+          "dueDate": "01-Jan-2030",
+          "priority": "Medium",
+          "goalsWeightage": "100"
+        },
+        {
+          "goalName": "ERP Automation",
+          "startDate": "01-Jan-2024",
+          "dueDate": "01-Jan-2030",
+          "priority": "Medium",
+          "goalsWeightage": "100"
+        }
+      ]
+
+
+    }
+
+
+  ],
+
+  "integration": [
+    {
+      "financialIntegrationGroup": "Hawalley Store WorkLocation",
+      "division": "01",
+      "department": "02",
+      "project": "03",
+      "segmentWorkLocation": "04",
+      "FromPeriod": "Jan-2025",
+      "ToPeriod": "Jun-2025",
+      "sdivision": "05",
+      "sdepartment": "06",
+      "sproject": "07",
+      "sWorkLocation": "08",
+      "Projects": [
+        {
+          "Project": "Project0",
+
+          "EffectiveFromDate": "01-Jan-2024",
+          "EffectiveToDate": "30-Jun-2024"
+        },
+        {
+          "Project": "project1",
+          "EffectiveFromDate": "01-Jan-2025",
+          "EffectiveToDate": "30-Jun-2025"
+        }
+      ]
+
+    }
+  ],
+
+  "dependents": [
+    {
+      "spouseName": "Mahesh",
+      "birthDate": "01-Jan-1975",
+      "marriageDate": "01-Jan-1990",
+      "childrenName": "Nitin",
+      "childrenBirthDate": "01-Jan-1999",
+      "dependentName": "Dhiraj",
+      "dependentBirthDate": "01-Jan-1970"
+
+    }
+  ],
+
+  "residencyInfo": [
+    {
+      "secondName": "secondName",
+      "thirdName": "thirdName",
+      "fourthName": "fourthName",
+      "lastName": "lastName",
+      "birthPlace": "pune",
+      "dateOfEntry": "01-Jan-2024",
+      "VisaNumber": "1234",
+      "WorkPermitNumber": "1234",
+      "ResidenceNumber": "1234",
+      "ContractQualification": "BCA",
+      "NewResidencyPeriod": "Four Years",
+      "NewGovtDesignation": "PSI",
+      "GovtLicense": "Demo Govt Recruitment Contract Lincese",
+      "NewContractSalary": "1000",
+      "OldContractSalary": "500",
+      "Block": "Block1",
+      "BuildingNumber": "1",
+      "FlatNumber": "1",
+      "FloorNumber": "1",
+      "Lane": "1",
+      "TypeOfBuilding": "House",
+      "Street": "Street1",
+      "Qasima": "Qasima",
+      "Area": "Area1",
+      "PaciNumber": "PaciNumber1",
+      "PreviousSponsorName": "CTPL",
+      "PreviousCompanyAuthorizedSign": "SIGN",
+      "PreviousCompanyName": "CTPL",
+      "OldGovtDesignation": "IPS",
+      "OldFileNumber": "1234",
+      "OldGovernmentLicense": "1234"
+
+
+    }
+  ],
+
+  "deleteEmployee": [
+    {
+      //"EMPID": "219"
+      "empName": "Mohan Patil"
+      
+    }
+  ],
+
+  "updateEmployee": [
+    {
+      "EMPID": "205"
+    }
+  ]
+
+
+
+
+}

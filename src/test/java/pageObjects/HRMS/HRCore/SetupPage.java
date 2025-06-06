@@ -16,9 +16,10 @@ public class SetupPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseTest bc = new BaseTest();
+	@FindBy(xpath = "//a[@class='dxnb-link']//span[@class='dx-vam'][normalize-space()='Employee']")
+	WebElement employee;
 
-	@FindBy(xpath = "//span[normalize-space()='Department']")
+	@FindBy(xpath = "//span[text()='Department']")
 	WebElement department;
 
 	@FindBy(xpath = "//span[normalize-space()='Designation']")
@@ -29,9 +30,6 @@ public class SetupPage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='Calendar']")
 	WebElement calendar;
-
-	@FindBy(xpath = "//a[@class='dxnb-link']//span[@class='dx-vam'][normalize-space()='Employee']")
-	WebElement employee;
 
 	@FindBy(xpath = "//span[normalize-space()='Religion']")
 	WebElement religion;
@@ -45,11 +43,8 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Qualification']")
 	WebElement qualification;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[5]/ul[1]/li[1]/ul[1]/li[5]/span[1]")
-	WebElement documentIssue;
-
-	@FindBy(xpath = "//span[normalize-space()='Budget']")
-	WebElement budget;
+	@FindBy(xpath = "//span[normalize-space()='Document Type']")
+	WebElement documentType;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[5]/ul[1]/li[1]/ul[1]/li[4]/span[1]")
 	WebElement assetIssue;
@@ -60,74 +55,67 @@ public class SetupPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='License']")
 	WebElement license;
 
-	public void clkDept()
+	public void clickEmployee()
+	{
+		employee.click();
+	}
+
+	public void clickDepartment()
 	{
 		department.click();
 	}
 
-	public void clkDesignation()
+	public void clickDesignation()
 	{
 		designation.click();
 	}
 
-	public void clkGrade()
+	public void clickGrade()
 	{
 		grade.click();
 	}
 
-	public void clkCalendar()
+	public void clickCalendar()
 	{
 		calendar.click();
 	}
 
-	public void clkEmployee()
-	{
-		highlightElement(driver, employee, true);
-		employee.click();
-		// bc.highlightElement(driver, employee, false); // Remove highlight
-	}
-
-	public void clkReligion()
+	public void clickReligion()
 	{
 		religion.click();
 	}
 
-	public void clkWorkLocation()
+	public void clickWorkLocation()
 	{
 		workLocation.click();
 	}
 
-	public void clkBank()
+	public void clickBank()
 	{
 		bank.click();
 	}
 
-	public void clkQualification()
+	public void clickQualification()
 	{
 		qualification.click();
 	}
 
-	public void clkDocIsuue()
+	public void clickDocumentType()
 	{
-		documentIssue.click();
+		documentType.click();
 	}
 
-	public void clkBudget()
-	{
-		budget.click();
-	}
-
-	public void clkAsset()
+	public void clickAssetIssue()
 	{
 		assetIssue.click();
 	}
 
-	public void clkDelegation()
+	public void clickDelegation()
 	{
 		delegation.click();
 	}
 
-	public void clkLicense()
+	public void clickLicense()
 	{
 		license.click();
 	}

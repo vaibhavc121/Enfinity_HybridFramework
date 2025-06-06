@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import base.BasePage;
 import base.BaseTest;
 import models.Payroll.Payroll.PayrollModel.LeaveAdjustmentModel;
-import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.EmployeePage1;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.Payroll.LeaveAdjustmentPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
@@ -34,7 +34,7 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 			hc.clkEmployee();
 			BasePage.navigateToEmployee("001");
 
-			EmployeePage ep = new EmployeePage(driver);
+			EmployeePage1 ep = new EmployeePage1(driver);
 			ep.clkTimeOff();
 			double LeaveBal = ep.getAnnualLeaveBal(3);
 			double expLeaveBal = LeaveBal + 1;

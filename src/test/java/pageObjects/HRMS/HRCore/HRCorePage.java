@@ -24,23 +24,31 @@ public class HRCorePage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Setups']")
 	WebElement setups;
 
-	public void clkHRCore()
+	@FindBy(xpath = "//span[normalize-space()='Asset Issue']")
+	WebElement assetIssue;
+
+	public void clickHRCore()
 	{
 		highlightElement(driver, hRCore, true);
 		hRCore.click();
 		highlightElement(driver, hRCore, false); // Remove highlight
 	}
 
-	public void clkEmployee()
+	public void clickEmployee()
 	{
 		employee.click();
 	}
 
-	public void clkSetupForm()
+	public void clickSetupForm()
 	{
 		highlightElement(driver, setups, true);
 		setups.click();
 		highlightElement(driver, setups, false); // Remove highlight
+	}
+
+	public void ClickAssetIssue()
+	{
+		assetIssue.click();
 	}
 
 }

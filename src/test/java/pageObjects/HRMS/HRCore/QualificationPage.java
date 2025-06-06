@@ -15,67 +15,32 @@ public class QualificationPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
-
 	@FindBy(xpath = "//input[@id='Qualification.Name_I']")
-	WebElement name;
+	WebElement qualificationName;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/img[1]")
-	WebElement QualificationType;
-
-	@FindBy(xpath = "//div[normalize-space()='Diploma']")
-	WebElement diploma;
-
-	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement save;
-
-	@FindBy(xpath = "//input[@aria-label='Filter cell']")
-	WebElement filter;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/span[1]/a[1]")
-	WebElement result;
-
-	public void clkNewBtn()
+	public void clickNew()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String temp = randomString();
-
-	public void setName()
+	public void provideQualificationName(String value)
 	{
-		name.sendKeys(temp);
+		qualificationName.sendKeys(value);
 	}
 
-	public void clickQualificationDD()
+	public void provideQualificationName()
 	{
-		QualificationType.click();
+		qualificationName.sendKeys(randomString());
 	}
 
-	public void slctType()
+	public void clickSaveBack()
 	{
-		QualificationType.click();
+		clickSaveAndBack();
 	}
 
-	public void clkSaveBtn() throws InterruptedException
+	public boolean isTxnCreated()
 	{
-		CommonActions.clkSave();
+		return isTransactionCreated();
 	}
 
-	public boolean isQualificationCreated() throws InterruptedException
-	{
-		filter.sendKeys(temp);
-		Thread.sleep(2000);
-		String qualification = result.getText();
-
-		if (temp.equals(qualification))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
-	}
 }

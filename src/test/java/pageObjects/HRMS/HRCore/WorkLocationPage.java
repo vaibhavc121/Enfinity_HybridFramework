@@ -16,50 +16,32 @@ public class WorkLocationPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
-
 	@FindBy(xpath = "//input[@id='WorkLocation.Name_I']")
-	WebElement name;
+	WebElement workLocationName;
 
-	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement save;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filter;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
-	WebElement result;
-
-	public void clkNewBtn()
+	public void clickNew()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String wc = randomString();
-
-	public void setName()
+	public void provideWorkLocName(String value)
 	{
-		name.sendKeys(wc);
+		workLocationName.sendKeys(value);
 	}
 
-	public void clkSaveBtn() throws InterruptedException
+	public void provideWorkLocName()
 	{
-		CommonActions.clkSave();
+		workLocationName.sendKeys(randomString());
 	}
 
-	public boolean isWorkLocCreated() throws InterruptedException
+	public void clickSaveBack()
 	{
-		filter.sendKeys(wc);
-		Thread.sleep(2000);
-		String workloc = result.getText();
-		if (wc.equals(workloc))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
+		clickSaveAndBack();
+	}
+
+	public boolean isTxnCreated()
+	{
+		return isTransactionCreated();
 	}
 
 }

@@ -17,60 +17,32 @@ public class BankPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseTest bc = new BaseTest();
-
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
-
 	@FindBy(xpath = "//input[@id='Bank.Name_I']")
-	WebElement name;
+	WebElement bankName;
 
-	@FindBy(xpath = "//span[@id='Bank.CheckIbanValidation_S_D']")
-	WebElement toggle;
-
-	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement save;
-
-	@FindBy(xpath = "//input[@aria-label='Filter cell']")
-	WebElement filter;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/span[1]/a[1]")
-	WebElement result;
-
-	public void clkNewBtn()
+	public void clickNew()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String temp = randomString();
-
-	public void setName()
+	public void provideBankName(String value)
 	{
-		name.sendKeys(temp);
+		bankName.sendKeys(value);
 	}
 
-	public void checkToggle()
+	public void provideBankName()
 	{
-		toggle.click();
+		bankName.sendKeys(randomString());
 	}
 
-	public void clkSave() throws InterruptedException
+	public void clickSaveBack()
 	{
-		clickOnSave();
+		clickSaveAndBack();
 	}
 
-	public boolean isBankCreated() throws InterruptedException
+	public boolean isTxnCreated()
 	{
-		filter.sendKeys(temp);
-		Thread.sleep(2000);
-		String bank = result.getText();
-		if (temp.equals(bank))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
+		return isTransactionCreated();
 	}
 
 }

@@ -1,0 +1,263 @@
+{
+	
+	"createAdminSupport": [
+	  {
+	    "supportRequestCategory": "Salary Certificate",
+	    "priority": "High",
+	    "remarks": "test"
+
+
+
+	  }
+	],
+	
+	"createBusinessTripClaim": [
+	  {
+	    "expenseDate": "17-02-2025",
+	    "remarks": "Business",
+	    "claimCategory": "Accommodation",
+	    "currency": "KWD",
+	    "amount": "100"
+
+	  }
+	],
+	
+	"createExpenseClaim": [
+	  {
+	    "expenseDate": "17-02-2025",
+	    "remarks": "Business",
+	    "claimCategory": "Accommodation",
+	    "currency": "KWD",
+	    "amount": "100"
+
+	  }
+	],
+	
+	"createHRAssetRequest": [
+	  {
+	    "txnDate": "01-01-2025",
+	    "txnDate1": "01-Jan-2025",
+	    "effectiveDate": "01-01-2025",
+	    "HRAsset": "Headphone",
+	    "expReturnDate": "31-01-2025",
+	    "status": "Approved",
+	    "emp": "Vaibhav Chavan"
+	  }
+	],
+	
+	"createHRAssetReturn": [
+	  {
+	    "txnDate": "01-01-2025",
+	    "effectiveDate": "01-01-2025",
+	    "HRAsset": "Headphone",
+	    "expReturnDate": "31-01-2025",
+	    "status": "Approved",
+	    "emp": "Vaibhav Chavan"
+	  }
+	],
+	
+	"createITSupport": [
+	  {
+	    "subject": "setup issue",
+	    "priority": "High",
+	    "description": "test",
+	    "employee": "Vaibhav Chavan",
+	    "recordDesc": "Setup computer"
+	  }
+	],
+	
+	"createLeaveRequest": [
+	  {
+	    "leaveType": "Sick Leave",
+	    "fromDate": "01-Jan-2025",
+	    "toDate": "01-Jan-2025",
+	    "expFromDate": "01-Jan-25",
+	    "expToDate": "01-Jan-25"
+	  }
+	],
+	
+	"checkWorkflow": [
+	  {
+	    "leaveType": "Sick Leave",
+	    "expEmpName": "Rohit Chavan",
+	    "fromDate": "01-Jan-2025",
+	    "toDate": "01-Jan-2025",
+	    "expFromDate": "01-Jan-25",
+	    "expToDate": "01-Jan-25"
+	  }
+	],
+	
+	"createTimeOff": [
+	  {
+	    "permisionDate": "01-Jan-2025",
+	    "expPermisionDate": "01-Jan-25",
+	    "hrs": "09",
+	    "minutes": "00",
+	    "upTohrs": "03",
+	    "upToMinutes": "00"
+
+	  }
+	]
+	
+	
+  "createLoanRequest": [
+    {
+      "repaymentStartPeriod": "Jan-2023",
+      "loanAmt": "10.0",
+      "loanType": "Car Loan",
+      "installmentAmt": "5",
+      "remarks": "test"
+
+    }
+  ],
+
+  "createBenefitClaim": [
+    {
+      "claimDate": "02-01-2025",
+      "benefitScheme": "Self | Health Insurance",
+      "claimAmount": "20",
+      "paymentType": "Pay Out Side Payroll",
+      "remarks": "test",
+      "empName": "Vaibhav Chavan"
+    }
+  ],
+
+  "createExceptionRequest": [
+    {
+      "exceptionDate": "01-Jan-2025",
+      "loginTime": "1000am",
+      "logotTime": "0200pm",
+      "remarks": "test"
+    }
+  ],
+
+  "createTravelRequest": [
+    {
+      "fromDate": "01-01-2025",
+      "uptoDate": "05-01-2025",
+      "category": "B",
+      "country": "Kuwait",
+      "city": "Kuwait",
+      "ticketDestination": "Kolkata",
+      "ticketAmt": "10",
+      "purpose": "Business",
+      "paymentType": "Pay With Payroll",
+      "remarks": "test",
+      "empName": "Vaibhav Chavan"
+
+    }
+  ],
+
+  "createPromotionRequest": [
+    {
+      //type- Promotion
+      "txnDate": "01-01-2025",
+      "effectiveDate": "01-01-2025",
+      "effectiveDate1": "01-Jan-2025",
+      "type": "Promotion",
+      "newDepartment": "QC",
+      "newDesignation": "Sales Executive",
+      "newWorkLocation": "Salmiya City",
+      "newProject": "Timesheet Entry Testing",
+      "description": "test",
+      "salaryComponent": "SC001 | Basic Salary",
+      "incrementAmount": "100",
+      "effectiveFromDate": "01-02-2025",
+      "effectiveToDate": "31-03-2025"
+
+    }
+  ],
+
+  "createPromotionReq": [
+
+    {
+      //type- Promotion
+      "txnDate": "01-01-2025",
+      "effectiveDate": "01-01-2025",
+      "effectiveDate1": "01-Jan-2025",
+      "type": "Promotion",
+      "newDepartment": "QC",
+      "newDesignation": "Sales Executive",
+      "newWorkLocation": "Salmiya City",
+      "newProject": "Timesheet Entry Testing",
+      "description": "test",
+      "salaryComponent": "SC001 | Basic Salary",
+      "incrementAmount": "100",
+      "effectiveFromDate": "01-02-2025",
+      "effectiveToDate": "31-03-2025"
+
+    },
+    {
+      //type- change in status
+      "txnDate": "02-02-2025",
+      "effectiveDate": "01-04-2025",
+      "effectiveDate1": "01-Apr-2025",
+      "type": "Change In Status",
+      "newDepartment": "004 | marketing",
+      "newDesignation": "Senior Optimization Agent",
+      "newWorkLocation": "Suleman House",
+      "newProject": "004 | Project1",
+      "description": "test",
+      "salaryComponent": "SC001 | Basic Salary",
+      "incrementAmount": "100",
+      "effectiveFromDate": "01-02-2025",
+      "effectiveToDate": "31-03-2025"
+
+    },
+    {
+      //type- Work Location Change
+      "txnDate": "02-02-2025",
+      "effectiveDate": "01-05-2025",
+      "effectiveDate1": "01-May-2025",
+      "type": "Work Location Change",
+      "newDepartment": "004 | marketing",
+      "newDesignation": "Senior Optimization Agent",
+      "newWorkLocation": "Suleman House",
+      "newProject": "004 | Project2",
+      "description": "test",
+      "salaryComponent": "SC001 | Basic Salary",
+      "incrementAmount": "100",
+      "effectiveFromDate": "01-02-2025",
+      "effectiveToDate": "31-03-2025"
+
+    }
+  ],
+
+  "createOvertimeRequest": [
+    {
+      "overtimeDate": "01-01-2025",
+      "overtimeType": "Normal Overtime",
+      "hrs": "1.00",
+      "remarks": "test"
+    }
+  ],
+
+  "createResignation": [
+    {
+      "submittedDate": "01-01-2025",
+      "remarks": "test"
+    }
+  ],
+  "createSupportRequestCategory": [
+    {
+      "categoryName": "Performance Issue",
+      "requestedTo": "IT",
+      "priority": "High",
+      "workflow": "Self Approval",
+      "attachment": "Submit",
+      "desc": "Performance Issue Category"
+    }
+  ],
+  "deleteSupportRequestCategory": [
+    {
+      "categoryName": "Performance Issue"
+
+    }
+  ]
+
+
+
+
+
+
+}

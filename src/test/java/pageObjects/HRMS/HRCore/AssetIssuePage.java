@@ -18,96 +18,52 @@ public class AssetIssuePage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
+	@FindBy(xpath = "//img[@id='MainMenu_DXI19_PImg']")
+	WebElement contextMenu;
 
-	@FindBy(xpath = "//i[@class='dx-icon dx-icon-add']")
-	WebElement addIcon;
+	@FindBy(xpath = "//span[normalize-space()='Return']")
+	WebElement returnBtn;
 
-	@FindBy(xpath = "//input[@id='HrAsset.Name_I']")
-	WebElement name;
+	@FindBy(xpath = "//input[@id='HrAssetIssue.ActualReturnDate_I']")
+	WebElement actualReturnDate;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/img[1]")
-	WebElement assetcatdd;
+	@FindBy(xpath = "//iframe[contains(@id,'PopupWindow')]")
+	WebElement iframe;
 
-	@FindBy(xpath = "//div[normalize-space()='Accessories']")
-	WebElement accessories;
+	@FindBy(xpath = "//input[@id='HrAssetIssue.ActualReturnDate_I']")
+	WebElement actualReturnDt;
 
-	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement save;
+	@FindBy(xpath = "//span[normalize-space()='Cancel Return']")
+	WebElement cancelReturn;
 
-	@FindBy(xpath = "//a[normalize-space()='Asset']")
-	WebElement asset;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filterCell;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/span[1]/a[1]")
-	WebElement result;
-
-	public void clkNewBtn()
+	public void filterAndOpenTxn(String value)
 	{
-		newbtn.click();
+		filterAndOpenTransaction(9, 9, value, "view");
 	}
 
-	public void clkAddIcon() throws InterruptedException
+	public void clickContextMenu()
 	{
-		addIcon.click();
-		Thread.sleep(10000);
-		String originalWindow = driver.getWindowHandle();
-		Set<String> allWindows = driver.getWindowHandles();
-		for (String windowHandle : allWindows)
-		{
-			if (!windowHandle.equals(originalWindow))
-			{
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-
+		contextMenu.click();
 	}
 
-	String temp = randomString();
-
-	public void setName()
+	public void clickReturn()
 	{
-		name.sendKeys(temp);
+		returnBtn.click();
+		waitTS(2);
 	}
 
-	public void clkAssetCatDD()
+	public void provideReturnDate(String value)
 	{
-		assetcatdd.click();
+		switchToFrameByElement(iframe);
+		actualReturnDt.sendKeys(value);
+		clickOnSave();
+		switchToDefaultContent();
 	}
 
-	public void slctDDValue()
+	public boolean returnDate()
 	{
-		accessories.click();
-	}
-
-	public void clkSaveBtn() throws InterruptedException
-	{
-		CommonActions.clkSave();
-	}
-
-	public void clkAsset()
-	{
-		asset.click();
-	}
-
-	public boolean isHrAssetCreated() throws InterruptedException
-	{
-		filterCell.sendKeys(temp);
-		Thread.sleep(2000);
-		String hrasset = result.getText();
-
-		if (temp.equals(hrasset))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
+		contextMenu.click();
+		return cancelReturn.isDisplayed();
 	}
 
 }

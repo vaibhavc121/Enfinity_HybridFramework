@@ -1,0 +1,34 @@
+{
+  "createCourse": [
+    {
+      "courseName": "AI",
+      "category": "Business Management",
+      "mode": "Blended",
+      "courseTrainer": "Tom Harry",
+      "type": "Event",
+      "enroller": "HR/Manager ",
+      "skills": [
+        {
+          "skillName": "CMS Tools",
+          "level": "Beginner",
+          "weightage": "100"
+        },
+        {
+          "skillName": "Interpersonal skills",
+          "level": "Intermidiate",
+          "weightage": "100"
+        },
+        {
+          "skillName": "Acute care",
+          "level": "Expert",
+          "weightage": "100"
+        }
+      ],
+      "batchName": "AI batch",
+      "startDate": "01-Apr-2025",
+      "endDate": "30-Apr-2025"
+
+
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "createCandidate": [
+    {
+      "name": "John Doe",
+      "nameArabic": "جون دو",
+      "email": "johndoe@example.com",
+      "mobileNumber": "+971501234567",
+      "dateOfBirth": "01-Jan-2000",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "United Arab Emirates",
+      "postalCode": "00000",
+      "workExperienceInYear": "5",
+      "currentJobTitle": "Software Engineer",
+      "currentEmployer": "Tech Solutions LLC",
+      "skills": "API design",
+      "currentSalary": "150",
+      "expectedSalary": "180",
+      "noticePeriodInDays": "30",
+      "passportNumber": "A1234567",
+      "passportIssueDate": "01-Jan-2021",
+      "passportExpiryDate": "01-Jan-2022",
+      "visaType": "Employment",
+      "civilIdNumber": "987654321",
+      "university": "University of Dubai",
+      "academicDegree": "Bachelor",
+      "majorDegree": "Computer Science",
+      "yearOfPassing": "2012",
+      "jobTitle": "QA Engineer",
+      "company": "ABC Technologies",
+      "startDate": "01-Jan-2023",
+      "endDate": "01-Jan-2024",
+      "workProfile": "Worked on automation testing, API testing, and performance testing"
+
+    }
+  ]
+}

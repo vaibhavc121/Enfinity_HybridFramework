@@ -16,86 +16,69 @@ public class DesignationPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
+	@FindBy(css = "#MainMenu_DXI0_Img")
+	private WebElement newBtnCss;
+
 	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
+	private WebElement newBtnXpath;
 
 	@FindBy(name = "Code")
-	WebElement code;
+	private WebElement code;
 
 	@FindBy(name = "Name")
-	WebElement desgname;
+	private WebElement desgName;
 
-	@FindBy(id = "dx_dx-be8794c6-5fd6-a4cd-4fc5-18a13967b6ab_GradeId")
-	WebElement clkgrade;
+	@FindBy(xpath = "//input[contains(@id,'GradeId')]")
+	private WebElement clickGrade;
 
 	@FindBy(xpath = "//div[contains(text(),'Contributor')]")
-	WebElement slctgrade;
+	private WebElement selectGrade;
 
 	@FindBy(xpath = "//div[@aria-label='Editor content']")
-	WebElement jobdesc;
+	private WebElement jobDescription;
 
 	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement save;
+	private WebElement save;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filterCell;
+	private WebElement filterCell;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
-	WebElement result;
+	private WebElement result;
 
-	public void clkNewBtn()
+	public void clickNewButton()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String num = randomNumber();
-
-	public void setDesigCode()
+	public void setDesignationCode()
 	{
-		code.sendKeys(num);
+		code.sendKeys(randomNumber());
 	}
 
-	String temp = randomString();
-
-	public void setDesignation()
+	public void setDesignation(String value)
 	{
-		desgname.sendKeys(temp);
+		desgName.sendKeys(value);
 	}
 
-	public void clkGrade()
+	public void clickGrade()
 	{
-		clkgrade.click();
+		clickGrade.click();
 	}
 
-	public void slctGrade()
+	public void selectGrade()
 	{
-		slctgrade.click();
+		selectGrade.click();
 	}
 
-	public void setJobDesc()
+	public void setJobDescription()
 	{
-		jobdesc.sendKeys("job desc");
+		jobDescription.sendKeys(randomString());
 	}
 
-	public void clkSave() throws InterruptedException
+	public void clickSaveBack()
 	{
-		clickOnSave();
-	}
-
-	public boolean isDesgCreated() throws InterruptedException
-	{
-		filterCell.sendKeys(temp);
-		Thread.sleep(2000);
-		String hrasset = result.getText();
-
-		if (temp.equals(hrasset))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
+		clickSaveAndBack();
 	}
 
 }

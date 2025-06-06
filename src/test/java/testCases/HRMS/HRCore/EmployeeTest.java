@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
-import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.EmployeePage1;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 
@@ -29,7 +29,7 @@ public class EmployeeTest extends BaseTest
 			logger.info("clicked on employee");
 
 			// employee pg
-			EmployeePage ep = new EmployeePage(driver);
+			EmployeePage1 ep = new EmployeePage1(driver);
 			ep.clkBtnNew();
 			logger.info("clicked on new button");
 			ep.setWorkEmail();

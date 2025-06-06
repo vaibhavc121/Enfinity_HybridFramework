@@ -16,86 +16,38 @@ public class GradePage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='New']")
-	WebElement newbtn;
-
 	@FindBy(xpath = "//input[@id='Grade.Name_I']")
-	WebElement gradename;
+	private WebElement gradeName;
 
 	@FindBy(xpath = "//input[@id='Grade.MinimumSalary_I']")
-	WebElement minsal;
+	private WebElement minimumSalary;
 
 	@FindBy(xpath = "//input[@id='Grade.MaximumSalary_I']")
-	WebElement maxsal;
+	private WebElement maximumSalary;
 
-	@FindBy(css = "img[id='Grade.GratuityIdLookup_B-1Img']")
-	WebElement indemnitydd;
-
-	@FindBy(css = "td[id='Grade.GratuityIdLookup_DDD_gv_tcrow0'] div[class='lookup-text']")
-	WebElement slctindemnity;
-
-	@FindBy(xpath = "//span[normalize-space()='Save']")
-	WebElement save;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-	WebElement filterCell;
-
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/span[1]/a[1]")
-	WebElement result;
-
-	public void clkNewBtn()
+	public void clickNew()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
-	String temp = randomString();
-
-	public void setGrade()
+	public void provideGradeName(String value)
 	{
-		gradename.sendKeys(temp);
+		gradeName.sendKeys(value);
 	}
 
-	public void setMinSal()
+	public void provideMinSal(String value)
 	{
-		minsal.clear();
-		minsal.sendKeys("100");
+		clearAndProvide(minimumSalary, value);
 	}
 
-	public void setMaxSal()
+	public void provideMaxSal(String value)
 	{
-		maxsal.clear();
-		maxsal.sendKeys("1000");
+		clearAndProvide(maximumSalary, value);
 	}
 
-	public void clkIndemnityDD()
+	public void clickSaveBack()
 	{
-		indemnitydd.click();
-	}
-
-	public void slctIndemnity()
-	{
-		slctindemnity.click();
-	}
-
-	public void btnSave() throws InterruptedException
-	{
-		CommonActions.clkSave();
-	}
-
-	public boolean isGradeCreated() throws InterruptedException
-	{
-		filterCell.sendKeys(temp);
-		Thread.sleep(2000);
-		String hrasset = result.getText();
-
-		if (temp.equals(hrasset))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
+		clickSaveAndBack();
 	}
 
 }
