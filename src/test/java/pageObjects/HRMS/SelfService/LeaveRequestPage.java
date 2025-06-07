@@ -26,10 +26,16 @@ public class LeaveRequestPage extends BasePage
 	@FindBy(xpath = "(//i[@class='dx-icon dx-icon-new-icon'])[2]")
 	WebElement plusBtn;
 
-	@FindBy(xpath = "//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']")
+//	@FindBy(xpath = "//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']")
+//	WebElement fromDate;
+
+//	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/input[1]")
+//	WebElement toDate;
+
+	@FindBy(xpath = "(//input[@class='dx-texteditor-input'])[3]")
 	WebElement fromDate;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "(//input[@class='dx-texteditor-input'])[4]")
 	WebElement toDate;
 
 	@FindBy(xpath = "//span[normalize-space()='Save and Submit']")

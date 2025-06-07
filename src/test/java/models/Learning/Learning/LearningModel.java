@@ -20,12 +20,12 @@ public class LearningModel
 		public String courseTrainer;
 		public String type;
 		public String enroller;
-		public List<Skill> Skills;
+		public List<SkillModel> Skills;
 		public String batchName;
 		public String startDate;
 		public String endDate;
 
-		public static class Skill
+		public static class SkillModel
 		{
 			public String SkillName;
 			public String Level;

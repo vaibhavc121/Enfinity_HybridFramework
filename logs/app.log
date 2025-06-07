@@ -30458,3 +30458,996 @@ Session ID: ae84ec1ba1dad957a9a868f01d37163f
 2025-06-07 17:51:02.288 [main] INFO  testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest - provided username
 2025-06-07 17:51:02.400 [main] INFO  testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest - provided password
 2025-06-07 17:51:10.295 [main] INFO  testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest - clicked on sign in button
+2025-06-07 21:31:14.344 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\test-output\testng-failed.xml
+
+2025-06-07 21:31:14.591 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:31:14.591 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - --test execution started--
+2025-06-07 21:31:19.178 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - browser maximized
+2025-06-07 21:31:34.508 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided app URL in browser
+2025-06-07 21:31:34.924 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided username
+2025-06-07 21:31:35.198 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided password
+2025-06-07 21:31:45.122 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - clicked on sign in button
+2025-06-07 21:32:33.648 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:32:33.648 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - --test execution started--
+2025-06-07 21:32:34.778 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - browser maximized
+2025-06-07 21:32:53.440 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - provided app URL in browser
+2025-06-07 21:32:53.581 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - provided username
+2025-06-07 21:32:53.771 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - provided password
+2025-06-07 21:33:02.057 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - clicked on sign in button
+2025-06-07 21:33:35.136 [main] ERROR testCases.HRMS.SelfService.VerifyReviseWorkflowTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a30a33907ee99ea30dc0010c55be4b1, findElement {using=xpath, value=//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57693/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a30a33907ee99ea30dc0010c55be4b1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:322) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LeaveRequestPage.provideFromDate(LeaveRequestPage.java:70) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.VerifyReviseWorkflowTest.verifyReviseWorkflow(VerifyReviseWorkflowTest.java:45) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:34:16.954 [main] ERROR testCases.HRMS.SelfService.VerifyReviseWorkflowTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a30a33907ee99ea30dc0010c55be4b1, findElement {using=xpath, value=//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57693/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a30a33907ee99ea30dc0010c55be4b1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:322) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LeaveRequestPage.provideFromDate(LeaveRequestPage.java:70) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.VerifyReviseWorkflowTest.verifyReviseWorkflow(VerifyReviseWorkflowTest.java:45) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:34:17.120 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:34:17.120 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - --test execution started--
+2025-06-07 21:34:18.214 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - browser maximized
+2025-06-07 21:34:37.512 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - provided app URL in browser
+2025-06-07 21:34:37.703 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - provided username
+2025-06-07 21:34:37.950 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - provided password
+2025-06-07 21:34:46.100 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - clicked on sign in button
+2025-06-07 21:35:18.381 [main] ERROR testCases.HRMS.SelfService.VerifyApproveWorkflowTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b80a0950a56e2df7f5ad343a1d1a279f, findElement {using=xpath, value=//div[@class='dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable']//input[@role='combobox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57963/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b80a0950a56e2df7f5ad343a1d1a279f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:322) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LeaveRequestPage.provideFromDate(LeaveRequestPage.java:70) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.VerifyApproveWorkflowTest.verifyApproveWorkflow(VerifyApproveWorkflowTest.java:45) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:45:24.628 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-07 21:45:24.838 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:45:24.838 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - --test execution started--
+2025-06-07 21:45:26.222 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - browser maximized
+2025-06-07 21:45:42.690 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided app URL in browser
+2025-06-07 21:45:43.010 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided username
+2025-06-07 21:45:43.263 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided password
+2025-06-07 21:45:55.884 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - clicked on sign in button
+2025-06-07 21:48:16.256 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\test-output\testng-failed.xml
+
+2025-06-07 21:48:16.432 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:48:16.433 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - --test execution started--
+2025-06-07 21:48:17.805 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - browser maximized
+2025-06-07 21:48:34.139 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided app URL in browser
+2025-06-07 21:48:34.483 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided username
+2025-06-07 21:48:34.721 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided password
+2025-06-07 21:48:44.376 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - clicked on sign in button
+2025-06-07 21:49:31.475 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:49:31.475 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - --test execution started--
+2025-06-07 21:49:32.550 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - browser maximized
+2025-06-07 21:49:54.078 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - provided app URL in browser
+2025-06-07 21:49:54.229 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - provided username
+2025-06-07 21:49:54.432 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - provided password
+2025-06-07 21:50:06.407 [main] INFO  testCases.HRMS.SelfService.VerifyReviseWorkflowTest - clicked on sign in button
+2025-06-07 21:50:28.263 [main] ERROR testCases.HRMS.SelfService.VerifyReviseWorkflowTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7bc01d0adfb909293fcbc79664bf8972, clickElement {id=f.8E36A25BDAA9790F48CD609267354BBA.d.631811760D4C42B09CA2277BD9EA2324.e.398}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60536}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60536/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7bc01d0adfb909293fcbc79664bf8972)] -> xpath: (//input[@class='dx-texteditor-input'])[3]]
+Session ID: 7bc01d0adfb909293fcbc79664bf8972
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:305) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LeaveRequestPage.provideFromDate(LeaveRequestPage.java:76) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.VerifyReviseWorkflowTest.verifyReviseWorkflow(VerifyReviseWorkflowTest.java:45) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:51:37.375 [main] ERROR testCases.HRMS.SelfService.VerifyReviseWorkflowTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7bc01d0adfb909293fcbc79664bf8972, clickElement {id=f.F891BBE1BB15A94A7A95FEB5F30D2A8D.d.3433DB1AE0BADAF57B7F92EFFD35795E.e.1399}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60536}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60536/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7bc01d0adfb909293fcbc79664bf8972)] -> xpath: (//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]]
+Session ID: 7bc01d0adfb909293fcbc79664bf8972
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at base.BasePage.performAction(BasePage.java:487) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.VerifyReviseWorkflowTest.verifyReviseWorkflow(VerifyReviseWorkflowTest.java:70) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:51:37.523 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:51:37.523 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - --test execution started--
+2025-06-07 21:51:38.682 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - browser maximized
+2025-06-07 21:51:53.325 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - provided app URL in browser
+2025-06-07 21:51:53.483 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - provided username
+2025-06-07 21:51:53.714 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - provided password
+2025-06-07 21:52:02.624 [main] INFO  testCases.HRMS.SelfService.VerifyApproveWorkflowTest - clicked on sign in button
+2025-06-07 21:53:00.037 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:53:00.038 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - --test execution started--
+2025-06-07 21:53:01.045 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - browser maximized
+2025-06-07 21:53:18.329 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided app URL in browser
+2025-06-07 21:53:18.479 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided username
+2025-06-07 21:53:18.732 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided password
+2025-06-07 21:53:27.221 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - clicked on sign in button
+2025-06-07 21:53:27.224 [main] ERROR testCases.HRMS.SelfService.DeleteTimeOffTest - Test failed due to exception: 
+java.lang.RuntimeException: Invalid path or file: D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\src\test\java\models\SelfService\SelfService\TimeOffData.json does not exist
+	at utilities.FileUtils.getFile(FileUtils.java:37) ~[test-classes/:?]
+	at utilities.FileUtils.getDataFile(FileUtils.java:27) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteTimeOffTest.deleteTimeOff(DeleteTimeOffTest.java:23) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:53:37.295 [main] ERROR testCases.HRMS.SelfService.DeleteTimeOffTest - Test failed due to exception: 
+java.lang.RuntimeException: Invalid path or file: D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\src\test\java\models\SelfService\SelfService\TimeOffData.json does not exist
+	at utilities.FileUtils.getFile(FileUtils.java:37) ~[test-classes/:?]
+	at utilities.FileUtils.getDataFile(FileUtils.java:27) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteTimeOffTest.deleteTimeOff(DeleteTimeOffTest.java:23) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:53:37.434 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:53:37.434 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-07 21:53:38.534 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-07 21:53:57.864 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-07 21:53:58.010 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-07 21:53:58.201 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-07 21:54:08.841 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-07 21:54:20.546 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-07 21:54:21.822 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on txn
+2025-06-07 21:54:56.036 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:54:56.036 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - --test execution started--
+2025-06-07 21:54:57.062 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - browser maximized
+2025-06-07 21:55:14.814 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided app URL in browser
+2025-06-07 21:55:14.953 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided username
+2025-06-07 21:55:15.148 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided password
+2025-06-07 21:55:24.036 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - clicked on sign in button
+2025-06-07 21:55:24.059 [main] ERROR testCases.HRMS.HRCore.CreateEmployeeTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.HRCore.CreateEmployeeTest.createEmployee(CreateEmployeeTest.java:25) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "Name(Arabic)" (class models.HRCore.HRCore.EmployeeModel$EmpModel), not marked as ignorable (14 known properties: "gender", "mobile", "maritalStatus", "indemnity", "name", "religion", "department", "designation", "email", "payrollSet", "calendar", "DOJ", "grade", "doj"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: models.HRCore.HRCore.EmployeeModel$EmpModel["Name(Arabic)"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2245) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1821) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1799) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4904) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3036) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:3500) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:38) ~[test-classes/:?]
+	... 27 more
+2025-06-07 21:55:34.144 [main] ERROR testCases.HRMS.HRCore.CreateEmployeeTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.HRCore.CreateEmployeeTest.createEmployee(CreateEmployeeTest.java:25) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "Name(Arabic)" (class models.HRCore.HRCore.EmployeeModel$EmpModel), not marked as ignorable (14 known properties: "gender", "mobile", "maritalStatus", "indemnity", "name", "religion", "department", "designation", "email", "payrollSet", "calendar", "DOJ", "grade", "doj"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: models.HRCore.HRCore.EmployeeModel$EmpModel["Name(Arabic)"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2245) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1821) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1799) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4904) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3036) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:3500) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:38) ~[test-classes/:?]
+	... 27 more
+2025-06-07 21:55:34.288 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:55:34.288 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - --test execution started--
+2025-06-07 21:55:35.372 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - browser maximized
+2025-06-07 21:55:55.520 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided app URL in browser
+2025-06-07 21:55:55.676 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided username
+2025-06-07 21:55:55.880 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided password
+2025-06-07 21:56:05.859 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - clicked on sign in button
+2025-06-07 21:56:31.109 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:56:31.109 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - --test execution started--
+2025-06-07 21:56:32.195 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - browser maximized
+2025-06-07 21:56:48.792 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided app URL in browser
+2025-06-07 21:56:48.938 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided username
+2025-06-07 21:56:49.210 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided password
+2025-06-07 21:56:59.187 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - clicked on sign in button
+2025-06-07 21:57:14.388 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:57:14.388 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-07 21:57:15.433 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-07 21:57:33.869 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-07 21:57:34.079 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-07 21:57:34.333 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-07 21:57:43.070 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-07 21:58:25.140 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:58:25.141 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - --test execution started--
+2025-06-07 21:58:26.173 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - browser maximized
+2025-06-07 21:58:43.458 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided app URL in browser
+2025-06-07 21:58:43.600 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided username
+2025-06-07 21:58:43.781 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided password
+2025-06-07 21:58:57.531 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - clicked on sign in button
+2025-06-07 21:59:14.865 [main] ERROR testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - Test failed due to exception: 
+java.lang.RuntimeException: Vaibhav- There is no active records..
+	at pageObjects.HRMS.SelfService.SupportRequestCategoryPage.deleteTransaction(SupportRequestCategoryPage.java:175) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:32) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:59:40.991 [main] ERROR testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - Test failed due to exception: 
+java.lang.RuntimeException: Vaibhav- There is no active records..
+	at pageObjects.HRMS.SelfService.SupportRequestCategoryPage.deleteTransaction(SupportRequestCategoryPage.java:175) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:32) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 21:59:41.145 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 21:59:41.146 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - --test execution started--
+2025-06-07 21:59:42.190 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - browser maximized
+2025-06-07 22:00:00.760 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-07 22:00:00.915 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided username
+2025-06-07 22:00:01.133 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided password
+2025-06-07 22:00:13.523 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-07 22:00:16.508 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-07 22:00:17.866 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
+2025-06-07 22:00:56.206 [main] INFO  testCases.HRMS.Attendance.CreateRosterTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 22:00:56.206 [main] INFO  testCases.HRMS.Attendance.CreateRosterTest - --test execution started--
+2025-06-07 22:00:57.329 [main] INFO  testCases.HRMS.Attendance.CreateRosterTest - browser maximized
+2025-06-07 22:01:13.670 [main] INFO  testCases.HRMS.Attendance.CreateRosterTest - provided app URL in browser
+2025-06-07 22:01:13.794 [main] INFO  testCases.HRMS.Attendance.CreateRosterTest - provided username
+2025-06-07 22:01:14.062 [main] INFO  testCases.HRMS.Attendance.CreateRosterTest - provided password
+2025-06-07 22:01:25.582 [main] INFO  testCases.HRMS.Attendance.CreateRosterTest - clicked on sign in button
+2025-06-07 22:01:56.375 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 22:01:56.375 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - --test execution started--
+2025-06-07 22:01:57.438 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - browser maximized
+2025-06-07 22:02:17.617 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - provided app URL in browser
+2025-06-07 22:02:17.783 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - provided username
+2025-06-07 22:02:17.997 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - provided password
+2025-06-07 22:02:29.532 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on sign in button
+2025-06-07 22:02:31.738 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on payroll link
+2025-06-07 22:02:33.969 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on txn
+2025-06-07 22:02:35.569 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on leave
+2025-06-07 22:02:59.605 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on payroll link
+2025-06-07 22:03:01.006 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on txn
+2025-06-07 22:03:02.260 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveTest - clicked on leave
+2025-06-07 22:03:15.874 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 22:03:15.875 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-07 22:03:17.000 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-07 22:03:35.023 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-07 22:03:35.160 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-07 22:03:35.430 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-07 22:03:47.329 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-07 22:04:12.448 [main] ERROR testCases.HRMS.SelfService.CreateLoanRequestTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000002914d403a20@394c77e2 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement(BasePage.java:793) ~[test-classes/:?]
+	at base.BasePage.hoverOverElement(BasePage.java:1120) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LoanRequestPage.clickPlusBtn(LoanRequestPage.java:52) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateLoanRequestTest.createLoanRequest(CreateLoanRequestTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 22:04:23.668 [main] ERROR testCases.HRMS.SelfService.CreateLoanRequestTest - Test failed due to exception: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (407, 25). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1600px; height: 713px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e23e71a8225a63593f21735871c3635, clickElement {id=f.7C305CC9FF04D40752F5C6BA8C03001B.d.1F5031EA995CD19FFFCDDD4EFD43184B.e.277}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63143}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63143/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9e23e71a8225a63593f21735871c3635)] -> xpath: //span[normalize-space()='Self Service']]
+Session ID: 9e23e71a8225a63593f21735871c3635
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.SelfService.SelfServicePage.clickSelfService(SelfServicePage.java:33) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateLoanRequestTest.createLoanRequest(CreateLoanRequestTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 22:04:23.864 [main] INFO  testCases.HRMS.SelfService.VerifyRejectWorkflowTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 22:04:23.864 [main] INFO  testCases.HRMS.SelfService.VerifyRejectWorkflowTest - --test execution started--
+2025-06-07 22:04:25.018 [main] INFO  testCases.HRMS.SelfService.VerifyRejectWorkflowTest - browser maximized
+2025-06-07 22:04:48.292 [main] INFO  testCases.HRMS.SelfService.VerifyRejectWorkflowTest - provided app URL in browser
+2025-06-07 22:04:48.456 [main] INFO  testCases.HRMS.SelfService.VerifyRejectWorkflowTest - provided username
+2025-06-07 22:04:48.668 [main] INFO  testCases.HRMS.SelfService.VerifyRejectWorkflowTest - provided password
+2025-06-07 22:05:00.646 [main] INFO  testCases.HRMS.SelfService.VerifyRejectWorkflowTest - clicked on sign in button
+2025-06-07 22:05:25.309 [main] ERROR testCases.HRMS.SelfService.VerifyRejectWorkflowTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [620ced3146f09afa73eb45795e697262, clickElement {id=f.D29430216C9A8469CE665EBE33386C88.d.F94A79922940C493FF827F377BA65D2A.e.342}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63363/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (620ced3146f09afa73eb45795e697262)] -> xpath: (//input[@class='dx-texteditor-input'])[3]]
+Session ID: 620ced3146f09afa73eb45795e697262
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:305) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LeaveRequestPage.provideFromDate(LeaveRequestPage.java:76) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.VerifyRejectWorkflowTest.verifyRejectWorkflow(VerifyRejectWorkflowTest.java:46) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 22:06:29.744 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 22:06:29.745 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-07 22:06:31.045 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-07 22:06:46.884 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-07 22:06:47.016 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-07 22:06:47.244 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-07 22:06:58.083 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-07 22:07:16.880 [main] ERROR testCases.HRMS.SelfService.CreateSupportRequestTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000002914d403a20@5546a9e0 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement(BasePage.java:793) ~[test-classes/:?]
+	at base.BasePage.hoverOverElement(BasePage.java:1120) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.ITSupportRequestPage.clickPlusBtn(ITSupportRequestPage.java:63) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateSupportRequestTest.createSupportRequest(CreateSupportRequestTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 22:07:28.075 [main] ERROR testCases.HRMS.SelfService.CreateSupportRequestTest - Test failed due to exception: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (407, 25). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper create-support-request-popup dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1600px; height: 713px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28f1d25ee87e1c15906b190be66c806b, clickElement {id=f.E1D0A844CF7A045CCEC031F087DC0BDF.d.1FCC102D2997225AEB6431FBC0625887.e.279}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63764/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (28f1d25ee87e1c15906b190be66c806b)] -> xpath: //span[normalize-space()='Self Service']]
+Session ID: 28f1d25ee87e1c15906b190be66c806b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.SelfService.SelfServicePage.clickSelfService(SelfServicePage.java:33) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateSupportRequestTest.createSupportRequest(CreateSupportRequestTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 22:07:28.267 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-07 22:07:28.267 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - --test execution started--
+2025-06-07 22:07:29.348 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - browser maximized
+2025-06-07 22:07:51.824 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - provided app URL in browser
+2025-06-07 22:07:51.959 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - provided username
+2025-06-07 22:07:52.178 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - provided password
+2025-06-07 22:08:02.564 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - clicked on sign in button
+2025-06-07 22:08:04.986 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - clicked on payroll link
+2025-06-07 22:08:06.708 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - clicked on txn
+2025-06-07 22:08:08.796 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - clicked on leave
+2025-06-07 22:08:09.303 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - clicked on new btn
+2025-06-07 22:08:22.449 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - emp selected
+2025-06-07 22:08:24.810 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - provided effective date
+2025-06-07 22:08:27.292 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - leave type selected
+2025-06-07 22:08:29.752 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - provided from date
+2025-06-07 22:08:32.300 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - provided upto date
+2025-06-07 22:08:32.844 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - clicked on view btn
+2025-06-07 22:08:43.015 [main] ERROR testCases.HRMS.Payroll.CreateLeaveTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000002914d3f7310@47cf41d7 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement1(BasePage.java:806) ~[test-classes/:?]
+	at base.BasePage.clickApproveAndBack(BasePage.java:232) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LeavePage.clkApproveBack(LeavePage.java:89) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveTest.createLeave(CreateLeaveTest.java:58) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-07 22:08:53.212 [main] INFO  testCases.HRMS.Payroll.CreateLeaveTest - clicked on payroll link
+2025-06-07 22:09:03.337 [main] ERROR testCases.HRMS.Payroll.CreateLeaveTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a8eb1b25d05e334282a15d2be584886b, clickElement {id=f.AA925E48CE88FD0E8E74AE0D8656E1CD.d.7C02A2F115E7A330BC8C43813ACD3BD3.e.516}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63949}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63949/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a8eb1b25d05e334282a15d2be584886b)] -> xpath: //span[@class='dxnb-ghtext']]
+Session ID: a8eb1b25d05e334282a15d2be584886b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkTxn(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveTest.createLeave(CreateLeaveTest.java:33) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
