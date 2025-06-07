@@ -1,0 +1,55 @@
+package testCases.HRMS.HRCore;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import base.BaseTest;
+import models.HRCore.HRCore.HRCoreModel.CreateBankModel;
+import base.BasePage;
+import pageObjects.HRMS.HRCore.BankPage;
+import pageObjects.HRMS.HRCore.HRCorePage;
+import pageObjects.HRMS.HRCore.SetupPage;
+import pageObjects.HRMS.SelfService.SelfServicePage;
+import utilities.FileUtils;
+import utilities.JsonUtils;
+import utilities.RetryAnalyzer;
+import java.util.List;
+
+public class CreateBankTest extends BaseTest
+{
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+	public void createBank()
+	{
+		try
+		{
+			String bankFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
+			List<CreateBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "createBank",
+					CreateBankModel.class);
+
+			HRCorePage hc = new HRCorePage(driver);
+			hc.clickHRCore();
+			hc.clickSetupForm();
+
+			SetupPage sp = new SetupPage(driver);
+			sp.clickBank();
+			Thread.sleep(2000);
+
+			BankPage bp = new BankPage(driver);
+
+			for (CreateBankModel bank : bankData)
+			{
+				bp.clickNew();
+				bp.provideBankName(bank.bankName);
+				bp.clickSaveBack();
+
+				BasePage.validateListing(bank.bankName, 2, 1);
+			}
+			// ClassicAssert.isTrue(bp.isTxnCreated());
+
+		} catch (Exception e)
+		{
+			logger.error("Test failed due to exception: ", e);
+			Assert.fail("Test case failed: " + e);
+		}
+	}
+
+}

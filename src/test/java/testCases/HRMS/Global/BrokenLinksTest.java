@@ -22,7 +22,7 @@ public class BrokenLinksTest extends BaseTest
 	{
 
 		HRCorePage hc = new HRCorePage(driver);
-		hc.clkHRCore();
+		hc.clickHRCore();
 
 		// capture all the links from website
 		List<WebElement> links = driver.findElements(By.tagName("a"));

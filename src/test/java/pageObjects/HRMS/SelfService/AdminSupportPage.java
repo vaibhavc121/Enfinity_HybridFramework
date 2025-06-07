@@ -77,17 +77,17 @@ public class AdminSupportPage extends BasePage
 	{
 		clickSaveAndBack();
 	}
-
-	public boolean isTxnCreated(String value)
-	{
-		if (result6().contains(value))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-	}
+//
+//	public boolean isTxnCreated(String value)
+//	{
+//		if (result6().contains(value))
+//		{
+//			return true;
+//		} else
+//		{
+//			return false;
+//		}
+//	}
 	// endregion
 
 }

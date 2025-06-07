@@ -18,14 +18,14 @@ public class DDT_ResidencyInfo extends BaseTest
 		{
 			// hr core
 			HRCorePage hc = new HRCorePage(driver);
-			hc.clkHRCore();
+			hc.clickHRCore();
 			logger.info("clicked on hr core link");
-			hc.clkSetupForm();
+			hc.clickSetupForm();
 			logger.info("clicked on setup form");
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkEmployee();
+			sp.clickEmployee();
 			Thread.sleep(2000);
 			logger.info("clicked on employee");
 
@@ -48,13 +48,11 @@ public class DDT_ResidencyInfo extends BaseTest
 			ep.setLastName(lname);
 			logger.info("provided last nm");
 
-		}
-		catch (Exception e)
+		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);
-			
-			
+
 		}
 	}
 }

@@ -30,8 +30,8 @@ public class CreateLeaveEncashmentTest extends BaseTest
 
 			// hr core pg
 			HRCorePage hc = new HRCorePage(driver);
-			hc.clkHRCore();
-			hc.clkEmployee();
+			hc.clickHRCore();
+			hc.clickEmployee();
 			BasePage.navigateToEmployee("001");
 
 			EmployeePage1 ep = new EmployeePage1(driver);
@@ -69,8 +69,8 @@ public class CreateLeaveEncashmentTest extends BaseTest
 				le.clkApproveBtn();
 				logger.info("clicked on approve btn");
 
-				hc.clkHRCore();
-				hc.clkEmployee();
+				hc.clickHRCore();
+				hc.clickEmployee();
 				BasePage.navigateToEmployee("001");
 				ep.clkTimeOff();
 

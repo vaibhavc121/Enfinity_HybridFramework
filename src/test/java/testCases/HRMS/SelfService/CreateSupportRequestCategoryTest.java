@@ -37,7 +37,7 @@ public class CreateSupportRequestCategoryTest extends BaseTest
 				sr.provideDesc(src.desc);
 				sr.clickSaveBack();
 
-				Assert.assertTrue(sr.isTransactionCreated(src.categoryName));
+				Assert.assertTrue(sr.isTransactionCreated(null, src.categoryName, null));
 			}
 
 		} catch (Exception e)

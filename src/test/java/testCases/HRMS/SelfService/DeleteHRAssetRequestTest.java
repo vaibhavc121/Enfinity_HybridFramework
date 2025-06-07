@@ -15,7 +15,7 @@ import java.util.List;
 
 public class DeleteHRAssetRequestTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, description = "dont check delete bcos i am checking asset return so txn cannot keep active for delete")
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, description = "dont check delete bcos i am checking asset return so txn cannot keep active for delete", enabled = false)
 	public void deleteHRAssetRequest()
 	{
 		try

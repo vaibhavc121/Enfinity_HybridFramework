@@ -29,8 +29,8 @@ public class CreateLeaveOpeningBalanceTest extends BaseTest
 
 			// hr core pg
 			HRCorePage hc = new HRCorePage(driver);
-			hc.clkHRCore();
-			hc.clkEmployee();
+			hc.clickHRCore();
+			hc.clickEmployee();
 			BasePage.navigateToEmployee("001");
 
 			EmployeePage1 ep = new EmployeePage1(driver);
@@ -60,8 +60,8 @@ public class CreateLeaveOpeningBalanceTest extends BaseTest
 				ob.clickView();
 				ob.clickApprove();
 
-				hc.clkHRCore();
-				hc.clkEmployee();
+				hc.clickHRCore();
+				hc.clickEmployee();
 				BasePage.navigateToEmployee("001");
 				ep.clkTimeOff();
 

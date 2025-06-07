@@ -19,6 +19,29 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
+		
+			<!-- HR Core -->
+			<class name="testCases.HRMS.HRCore.CreateBankTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteBankTest"/>
+			<class name="testCases.HRMS.HRCore.CreateCalendarTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteCalendarTest"/>
+			<class name="testCases.HRMS.HRCore.CreateDeptTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteDeptTest"/>
+			<class name="testCases.HRMS.HRCore.CreateDesignationTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteDesignationTest"/>
+			<class name="testCases.HRMS.HRCore.CreateDocumentTypeTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteDocumentTypeTest"/>
+			<class name="testCases.HRMS.HRCore.CreateEmployeeTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteEmployeeTest"/>
+			<class name="testCases.HRMS.HRCore.CreateGradeTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteGradeTest"/>
+			<class name="testCases.HRMS.HRCore.CreateQualificationTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteQualificationTest"/>
+			<class name="testCases.HRMS.HRCore.CreateReligionTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteReligionTest"/>
+			<class name="testCases.HRMS.HRCore.CreateWorkLocationTest"/>
+			<class name="testCases.HRMS.HRCore.DeleteWorkLocationTest"/>
+
 
 			<!-- Payroll -->
 			<!--<class name="testCases.HRMS.Payroll.LoanTest"/>
@@ -45,25 +68,57 @@
 			<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>
 			
 			
-			
+			<!-- Self Service -->
+			<class name="testCases.HRMS.SelfService.CreateBenefitClaimTest" />
+			<class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest" />
+			<class name="testCases.HRMS.SelfService.CreateExceptionRequestTest" />
+			<class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest" />
+			<class name="testCases.HRMS.SelfService.CreateHRAssetRequest" />
+			<class name="testCases.HRMS.SelfService.CreateHRAssetReturnTest" />
+			<class name="testCases.HRMS.SelfService.DeleteHRAssetRequestTest" />
+			<class name="testCases.HRMS.SelfService.CreateLeaveRequestTest" />
+			<class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest" />
+			<class name="testCases.HRMS.SelfService.CreateLoanRequestTest" />
+			<class name="testCases.HRMS.SelfService.DeleteLoanRequestTest" />
+			<class name="testCases.HRMS.SelfService.CreateOvertimeApplicationTest" />
+			<class name="testCases.HRMS.SelfService.DeleteOvertimeApplicationTest" />
+			<class name="testCases.HRMS.SelfService.CreatePromotionRequestTest" />
+			<class name="testCases.HRMS.SelfService.DeletePromotionRequestTest" />
+			<class name="testCases.HRMS.SelfService.CreateResignationTest" />
+			<class name="testCases.HRMS.SelfService.DeleteResignationTest" />
+			<class name="testCases.HRMS.SelfService.CreateSupportRequestCategoryTest" />
+			<class name="testCases.HRMS.SelfService.DeleteSupportReqCategoryTest" />
+			<class name="testCases.HRMS.SelfService.CreateSupportRequestTest" />
+			<class name="testCases.HRMS.SelfService.DeleteITSupportRequestTest" />
+			<class name="testCases.HRMS.SelfService.CreateTimeOffTest" />
+			<class name="testCases.HRMS.SelfService.DeleteTimeOffTest" />
+			<class name="testCases.HRMS.SelfService.CreateTravelRequestTest" />
+			<class name="testCases.HRMS.SelfService.DeleteTravelRequestTest" />
+			<class name="testCases.HRMS.SelfService.VerifyApproveWorkflowTest" />
+			<class name="testCases.HRMS.SelfService.VerifyRejectWorkflowTest" />
+			<class name="testCases.HRMS.SelfService.VerifyReviseWorkflowTest" />
+			<class name="testCases.HRMS.SelfService.CreateBusinessTripClaimTest" />
+			<class name="testCases.HRMS.SelfService.DeleteLeaveExtensionTest" />
 
-			<!-- HR Core -->
-			<!--<class name="testCases.HRMS.HRCore.DelegationTest" />
-			<class name="testCases.HRMS.HRCore.AssetIssueTest" />
-			<class name="testCases.HRMS.HRCore.DocumentTypeTest" />
-			<class name="testCases.HRMS.HRCore.QualificationTest" />
-			<class name="testCases.HRMS.HRCore.BankTest" />-->
-			<!--<class name="testCases.HRMS.HRCore.WorkLocationTest" />-->
-			<!--<class name="testCases.HRMS.HRCore.ReligionTest" />-->
-			<!--<class name="testCases.HRMS.HRCore.CalendarTest" />
-			<class name="testCases.HRMS.HRCore.GradeTest" />
-			<class name="testCases.HRMS.HRCore.DesignationTest" />
-			<class name="testCases.HRMS.HRCore.LicensesTest" />
-			<class name="testCases.HRMS.HRCore.DeptTest" />
-			<class name="testCases.HRMS.HRCore.EmployeeTest" />
-			<class name="testCases.HRMS.HRCore.LoginTest" />
-			<class name="testCases.HRMS.HRCore.DDT_ResidencyInfo" />
-			<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />-->
+
+			<!-- Attendance -->
+			<class name="testCases.HRMS.Attendance.CreateLenientShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.DeleteLenientShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.CreateNightShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.DeleteNightShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.CreateRosterTest" />
+			<class name="testCases.HRMS.Attendance.DeleteRosterTest" />
+			<class name="testCases.HRMS.Attendance.CreateShiftTest" />
+			<class name="testCases.HRMS.Attendance.DeleteShiftTest" />
+			<class name="testCases.HRMS.Attendance.CreateStrictDayShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.DeleteStrictDayShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.CreateTwoShiftDayShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.CreateTwoShiftNightShiftTimetableTest" />
+			<class name="testCases.HRMS.Attendance.DeleteTwoShiftNightShiftTimetableTest" />
+
+
+			
 			
 			<!-- Global -->
 			<!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->

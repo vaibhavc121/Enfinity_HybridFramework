@@ -1,5 +1,7 @@
 package pageObjects.HRMS.Learning;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -79,7 +81,7 @@ public class CoursePage extends BasePage
 	WebElement endDate;
 
 	@FindBy(xpath = "//h4[@class='course-title']")
-	WebElement courses;
+	List<WebElement> courses;
 
 	public void clickNew()
 	{
@@ -157,7 +159,7 @@ public class CoursePage extends BasePage
 
 	public void provideWeightage2(String value)
 	{
-		clearAndProvide(weightage2, value);
+		clearAndProvide1(weightage2, value);
 	}
 
 	public void provideSkillName3(String value)

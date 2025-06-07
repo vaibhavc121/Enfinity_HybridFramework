@@ -192,6 +192,21 @@ public class BasePage
 		waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
 	}
 
+	public static void clickReject()
+	{
+		waitForElement1(By.xpath("//span[normalize-space()='Reject']")).click();
+	}
+
+	public static void clickRevise()
+	{
+		waitForElement1(By.xpath("//span[normalize-space()='Revise']")).click();
+	}
+
+	public static void clickAttachFile()
+	{
+		waitForElement1(By.xpath("//span[normalize-space()='Attach Files']")).click();
+	}
+
 	public static void clickViewAndBack()
 	{
 		waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
@@ -818,9 +833,9 @@ public class BasePage
 	}
 
 	// Validations
-	public static boolean isValuePresent(By locator, String value)
+	public static boolean isValuePresent(List<WebElement> element, String value)
 	{
-		List<WebElement> valuesList = driver.findElements(locator);
+		List<WebElement> valuesList = element;
 
 		for (WebElement valueElement : valuesList)
 		{
@@ -1082,9 +1097,9 @@ public class BasePage
 		driver.switchTo().frame(nameOrId);
 	}
 
-	public void switchToFrameByElement(By locator)
+	public void switchToFrameByElement(WebElement element)
 	{
-		WebElement frameElement = driver.findElement(locator);
+		WebElement frameElement = element;
 		driver.switchTo().frame(frameElement);
 	}
 

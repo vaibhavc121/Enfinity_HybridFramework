@@ -87,7 +87,7 @@ public class TimetablePage extends BasePage
 
 	public void provideMaximumWorkedHourPerDay(String value)
 	{
-		clearAndProvide(maximumWorkedHourPerDay, value);
+		clearAndProvide1(maximumWorkedHourPerDay, value);
 	}
 
 	public void clickWorkInTwoShift()

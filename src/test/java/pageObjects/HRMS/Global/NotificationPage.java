@@ -57,7 +57,7 @@ public class NotificationPage extends BasePage
 				throw new IllegalArgumentException("Invalid leave status: " + status);
 			}
 
-			BasePage.acceptAlert(driver)
+			BasePage.acceptAlert(driver);
 			// BasePage.closeCurrentTab();
 			// BasePage.closeTab();
 		} else

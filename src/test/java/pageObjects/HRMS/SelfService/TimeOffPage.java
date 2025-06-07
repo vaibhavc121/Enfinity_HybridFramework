@@ -100,7 +100,7 @@ public class TimeOffPage extends BasePage
 
 	public void providePermissonDate(String value)
 	{
-		clearAndProvide(permissionDate, value);
+		clearAndProvide1(permissionDate, value);
 	}
 
 	public void clickPersoanl()

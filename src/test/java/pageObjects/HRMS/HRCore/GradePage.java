@@ -37,12 +37,12 @@ public class GradePage extends BasePage
 
 	public void provideMinSal(String value)
 	{
-		clearAndProvide(minimumSalary, value);
+		clearAndProvide1(minimumSalary, value);
 	}
 
 	public void provideMaxSal(String value)
 	{
-		clearAndProvide(maximumSalary, value);
+		clearAndProvide1(maximumSalary, value);
 	}
 
 	public void clickSaveBack()

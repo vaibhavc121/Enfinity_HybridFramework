@@ -68,7 +68,7 @@ public class VerifyRejectWorkflowTest extends BaseTest
 			lr.clickLeaveRequest();
 			for (LeaveRequestModel leaveRequest : leaveRequestData)
 			{
-				BasePage.validateListing1(DateUtils.currentDateInCustomFormat(), "Rejected");
+				BasePage.validateListing1(DateUtils.currentDateInCustomFormat(), null, "Rejected");
 			}
 
 		} catch (Exception e)

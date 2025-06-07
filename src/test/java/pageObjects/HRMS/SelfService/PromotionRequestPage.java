@@ -143,7 +143,7 @@ public class PromotionRequestPage extends BasePage
 
 	public void provideIncrementAmount(String value)
 	{
-		clearAndProvide(incrementAmount, value);
+		clearAndProvide1(incrementAmount, value);
 	}
 
 	public void provideEffectiveFromDate(String value)
@@ -173,9 +173,9 @@ public class PromotionRequestPage extends BasePage
 		return isTransactionCreated();
 	}
 
-	public boolean isTxnCreated(String effectiveDate)
-	{
-		return result5().contains(effectiveDate);
-	}
+//	public boolean isTxnCreated(String effectiveDate)
+//	{
+//		return result5().contains(effectiveDate);
+//	}
 
 }

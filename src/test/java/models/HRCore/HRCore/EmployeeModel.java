@@ -13,7 +13,7 @@ public class EmployeeModel
 	@NoArgsConstructor
 	@AllArgsConstructor
 
-	public static class NewEmployeeModel
+	public static class EmpModel
 	{
 		public String email;
 		public String name;

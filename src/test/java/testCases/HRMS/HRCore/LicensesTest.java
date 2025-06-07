@@ -2,12 +2,17 @@ package testCases.HRMS.HRCore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import base.BaseTest;
+import base.BasePage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.LicensesPage;
 import pageObjects.HRMS.HRCore.SetupPage;
+import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.CommonActions;
+import utilities.FileUtils;
+import utilities.JsonUtils;
+import utilities.RetryAnalyzer;
+import java.util.List;
 
 public class LicensesTest extends BaseTest
 {
@@ -18,14 +23,14 @@ public class LicensesTest extends BaseTest
 		{
 			// hr core
 			HRCorePage hc = new HRCorePage(driver);
-			hc.clkHRCore();
+			hc.clickHRCore();
 			logger.info("clicked on hr core link");
-			hc.clkSetupForm();
+			hc.clickSetupForm();
 			logger.info("clicked on setup form");
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkLicense();
+			sp.clickLicense();
 			Thread.sleep(2000);
 			logger.info("clicked on license");
 
@@ -40,8 +45,7 @@ public class LicensesTest extends BaseTest
 			// Assert.assertEquals(lp.isLicenseCreated(), true);
 			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
-		}
-		catch (Exception e)
+		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);

@@ -18,14 +18,14 @@ public class DelegationTest extends BaseTest
 		{
 			// hr core
 			HRCorePage hc = new HRCorePage(driver);
-			hc.clkHRCore();
+			hc.clickHRCore();
 			logger.info("clicked on hr core link");
-			hc.clkSetupForm();
+			hc.clickSetupForm();
 			logger.info("clicked on setup form");
 
 			// setup page
 			SetupPage sp = new SetupPage(driver);
-			sp.clkDelegation();
+			sp.clickDelegation();
 			Thread.sleep(2000);
 			logger.info("clicked on delegation");
 
@@ -43,8 +43,7 @@ public class DelegationTest extends BaseTest
 			Assert.assertTrue(CommonActions.IsTxnCreated());
 			logger.info("test case passed");
 
-		}
-		catch (Exception e)
+		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
 			Assert.fail("Test case failed: " + e);

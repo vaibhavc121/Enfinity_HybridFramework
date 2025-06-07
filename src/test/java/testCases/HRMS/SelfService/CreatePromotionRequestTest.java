@@ -2,6 +2,8 @@ package testCases.HRMS.SelfService;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import base.BasePage;
 import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel.PromotionRequestModel;
 import pageObjects.HRMS.SelfService.PromotionRequestPage;
@@ -44,7 +46,7 @@ public class CreatePromotionRequestTest extends BaseTest
 				pr.provideDescription(promotionRequest.description);
 				pr.saveAndBack();
 
-				Assert.assertTrue(pr.isTxnCreated(promotionRequest.effectiveDate1));
+				Assert.assertTrue(BasePage.validateListing("Vaibhav Chavan", 6, 6));
 			}
 
 		} catch (Exception e)
