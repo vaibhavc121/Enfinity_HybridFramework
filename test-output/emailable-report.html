@@ -8,22 +8,974 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">MasterTestSuite</th></tr>
-<tr><td><a href="#t0">Master Tests</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">473,846</td><td>datadriven, regression</td><td></td></tr>
+<tr><th colspan="8">RegressionTestSuite</th></tr>
+<tr><td><a href="#t0">Regression Tests</a></td><td class="num">45</td><td class="num">0</td><td class="num attn">17</td><td class="num attn">16</td><td class="num">3,399,742</td><td>datadriven, regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Master Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateBenefitEncashmentTest</td><td><a href="#m0">verifyBenefitEncashment</a></td><td rowspan="1">1749125846916</td><td rowspan="1">30176</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveAdjustmentTest</td><td><a href="#m1">createLeaveAdjustment</a></td><td rowspan="1">1749125608848</td><td rowspan="1">39340</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveEncashmentTest</td><td><a href="#m2">createLeaveEncashment</a></td><td rowspan="1">1749125692996</td><td rowspan="1">34564</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest</td><td><a href="#m3">createLeaveOpeningBalance</a></td><td rowspan="1">1749125770414</td><td rowspan="1">33890</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveTest</td><td><a href="#m4">createLeave</a></td><td rowspan="1">1749125531078</td><td rowspan="1">32826</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok</td><td><a href="#m5">verifyVariableSalary</a></td><td rowspan="1">1749125448768</td><td rowspan="1">38616</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteBenefitEncashmentTest</td><td><a href="#m6">deleteBenefitEncashment</a></td><td rowspan="1">1749125884899</td><td rowspan="1">27619</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest</td><td><a href="#m7">deleteLeaveAdjustment</a></td><td rowspan="1">1749125656363</td><td rowspan="1">28393</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveEncashmentTest</td><td><a href="#m8">deleteLeaveEncashment</a></td><td rowspan="1">1749125735250</td><td rowspan="1">27387</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest</td><td><a href="#m9">deleteLeaveOpeningBalance</a></td><td rowspan="1">1749125811689</td><td rowspan="1">27964</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveTest</td><td><a href="#m10">deleteLeave</a></td><td rowspan="1">1749125572267</td><td rowspan="1">29030</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteVariableSalaryTest</td><td><a href="#m11">deleteVariableSalary</a></td><td rowspan="1">1749125495401</td><td rowspan="1">27841</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.Attendance.CreateRosterTest</td><td><a href="#m0">login</a></td><td rowspan="1">1749298520414</td><td rowspan="1">10011</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.HRCore.CreateEmployeeTest</td><td><a href="#m1">login</a></td><td rowspan="1">1749295929822</td><td rowspan="1">10088</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest</td><td><a href="#m2">login</a></td><td rowspan="1">1749296787886</td><td rowspan="1">10087</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveTest</td><td><a href="#m3">login</a></td><td rowspan="1">1749296421084</td><td rowspan="1">10044</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest</td><td><a href="#m4">login</a></td><td rowspan="1">1749296848899</td><td rowspan="1">10013</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveTest</td><td><a href="#m5">login</a></td><td rowspan="1">1749296481159</td><td rowspan="1">10061</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateLeaveRequestTest</td><td><a href="#m6">login</a></td><td rowspan="1">1749297386766</td><td rowspan="1">10050</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.CreateLoanRequestTest</td><td><a href="#m7">login</a></td><td rowspan="1">1749297516830</td><td rowspan="1">10019</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateSupportRequestTest</td><td><a href="#m8">login</a></td><td rowspan="1">1749297798320</td><td rowspan="1">10054</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteITSupportRequestTest</td><td><a href="#m9">login</a></td><td rowspan="1">1749297865938</td><td rowspan="1">10023</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteLeaveRequestTest</td><td><a href="#m10">login</a></td><td rowspan="1">1749297447025</td><td rowspan="1">10013</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteLoanRequestTest</td><td><a href="#m11">login</a></td><td rowspan="1">1749297568481</td><td rowspan="1">10016</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest</td><td><a href="#m12">login</a></td><td rowspan="1">1749297732601</td><td rowspan="1">10053</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteTimeOffTest</td><td><a href="#m13">login</a></td><td rowspan="1">1749297959021</td><td rowspan="1">10067</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.VerifyApproveWorkflowTest</td><td><a href="#m14">login</a></td><td rowspan="1">1749298083605</td><td rowspan="1">10016</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.VerifyRejectWorkflowTest</td><td><a href="#m15">login</a></td><td rowspan="1">1749298180640</td><td rowspan="1">10042</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.VerifyReviseWorkflowTest</td><td><a href="#m16">login</a></td><td rowspan="1">1749298277944</td><td rowspan="1">10054</td></tr><tr><th colspan="4">Regression Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.HRCore.CreateEmployeeTest</td><td><a href="#m17">createEmployee</a></td><td rowspan="1">1749295939916</td><td rowspan="1">11</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest</td><td><a href="#m18">createLeaveOpeningBalance</a></td><td rowspan="1">1749296797975</td><td rowspan="1">10203</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveTest</td><td><a href="#m19">createLeave</a></td><td rowspan="1">1749296431129</td><td rowspan="1">10125</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest</td><td><a href="#m20">deleteLeaveOpeningBalance</a></td><td rowspan="1">1749296858914</td><td rowspan="1">14606</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveTest</td><td><a href="#m21">deleteLeave</a></td><td rowspan="1">1749296491222</td><td rowspan="1">14516</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.CreateLeaveRequestTest</td><td><a href="#m22">createLeaveRequest</a></td><td rowspan="1">1749297396817</td><td rowspan="1">10190</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateLoanRequestTest</td><td><a href="#m23">createLoanRequest</a></td><td rowspan="1">1749297526851</td><td rowspan="1">1136</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.CreateSupportRequestTest</td><td><a href="#m24">createSupportRequest</a></td><td rowspan="1">1749297808375</td><td rowspan="1">15448</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteITSupportRequestTest</td><td><a href="#m25">deleteITSupportRequest</a></td><td rowspan="1">1749297875962</td><td rowspan="1">17444</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteLeaveRequestTest</td><td><a href="#m26">deleteLeaveRequest</a></td><td rowspan="1">1749297457040</td><td rowspan="1">14643</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteLoanRequestTest</td><td><a href="#m27">deleteLoanRequest</a></td><td rowspan="1">1749297578498</td><td rowspan="1">14290</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest</td><td><a href="#m28">deleteSupportReqCategory</a></td><td rowspan="1">1749297742655</td><td rowspan="1">15531</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteTimeOffTest</td><td><a href="#m29">deleteTimeOff</a></td><td rowspan="1">1749297969089</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.VerifyApproveWorkflowTest</td><td><a href="#m30">verifyApproveWorkflow</a></td><td rowspan="1">1749298093622</td><td rowspan="1">31707</td></tr><tr class="failedeven"><td rowspan="1">testCases.HRMS.SelfService.VerifyRejectWorkflowTest</td><td><a href="#m31">verifyRejectWorkflow</a></td><td rowspan="1">1749298190683</td><td rowspan="1">31445</td></tr><tr class="failedodd"><td rowspan="1">testCases.HRMS.SelfService.VerifyReviseWorkflowTest</td><td><a href="#m32">verifyReviseWorkflow</a></td><td rowspan="1">1749298287999</td><td rowspan="1">31446</td></tr><tr><th colspan="4">Regression Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.Attendance.CreateRosterTest</td><td><a href="#m33">afterMethod</a></td><td rowspan="1">1749298556435</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m34">teardown</a></td><td rowspan="1">1749298556436</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.HRCore.CreateEmployeeTest</td><td><a href="#m35">afterMethod</a></td><td rowspan="1">1749295940051</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m36">teardown</a></td><td rowspan="1">1749295940052</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest</td><td><a href="#m37">afterMethod</a></td><td rowspan="1">1749296808332</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m38">teardown</a></td><td rowspan="1">1749296808333</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.Payroll.CreateLeaveTest</td><td><a href="#m39">afterMethod</a></td><td rowspan="1">1749296441378</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m40">teardown</a></td><td rowspan="1">1749296441378</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest</td><td><a href="#m41">afterMethod</a></td><td rowspan="1">1749296873643</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m42">teardown</a></td><td rowspan="1">1749296873644</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.Payroll.DeleteLeaveTest</td><td><a href="#m43">afterMethod</a></td><td rowspan="1">1749296505885</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m44">teardown</a></td><td rowspan="1">1749296505886</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.SelfService.CreateLeaveRequestTest</td><td><a href="#m45">afterMethod</a></td><td rowspan="1">1749297407132</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m46">teardown</a></td><td rowspan="1">1749297407133</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.SelfService.CreateLoanRequestTest</td><td><a href="#m47">afterMethod</a></td><td rowspan="1">1749297528108</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m48">teardown</a></td><td rowspan="1">1749297528108</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.SelfService.CreateSupportRequestTest</td><td><a href="#m49">afterMethod</a></td><td rowspan="1">1749297823933</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m50">teardown</a></td><td rowspan="1">1749297823934</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.SelfService.DeleteITSupportRequestTest</td><td><a href="#m51">afterMethod</a></td><td rowspan="1">1749297893531</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m52">teardown</a></td><td rowspan="1">1749297893532</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.SelfService.DeleteLeaveRequestTest</td><td><a href="#m53">afterMethod</a></td><td rowspan="1">1749297471825</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m54">teardown</a></td><td rowspan="1">1749297471825</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.SelfService.DeleteLoanRequestTest</td><td><a href="#m55">afterMethod</a></td><td rowspan="1">1749297592895</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m56">teardown</a></td><td rowspan="1">1749297592895</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest</td><td><a href="#m57">afterMethod</a></td><td rowspan="1">1749297758308</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m58">teardown</a></td><td rowspan="1">1749297758308</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.SelfService.DeleteTimeOffTest</td><td><a href="#m59">afterMethod</a></td><td rowspan="1">1749297969204</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m60">teardown</a></td><td rowspan="1">1749297969204</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.SelfService.VerifyApproveWorkflowTest</td><td><a href="#m61">afterMethod</a></td><td rowspan="1">1749298125473</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m62">teardown</a></td><td rowspan="1">1749298125473</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testCases.HRMS.SelfService.VerifyRejectWorkflowTest</td><td><a href="#m63">afterMethod</a></td><td rowspan="1">1749298222255</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m64">teardown</a></td><td rowspan="1">1749298222255</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">testCases.HRMS.SelfService.VerifyReviseWorkflowTest</td><td><a href="#m65">afterMethod</a></td><td rowspan="1">1749298319575</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m66">teardown</a></td><td rowspan="1">1749298319576</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression Tests &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.Attendance.CreateRosterTest</td><td><a href="#m67">createRoster</a></td><td rowspan="1">1749298498060</td><td rowspan="1">22352</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.HRCore.CreateEmployeeTest</td><td><a href="#m68">createEmployee</a></td><td rowspan="1">1749295929800</td><td rowspan="1">18</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest</td><td><a href="#m69">createLeaveOpeningBalance</a></td><td rowspan="1">1749296770152</td><td rowspan="1">17731</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveTest</td><td><a href="#m70">createLeave</a></td><td rowspan="1">1749296388238</td><td rowspan="1">32844</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest</td><td><a href="#m71">deleteLeaveOpeningBalance</a></td><td rowspan="1">1749296831499</td><td rowspan="1">17399</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveTest</td><td><a href="#m72">deleteLeave</a></td><td rowspan="1">1749296464185</td><td rowspan="1">16971</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateLeaveRequestTest</td><td><a href="#m73">createLeaveRequest</a></td><td rowspan="1">1749297354248</td><td rowspan="1">32515</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.SelfService.CreateLoanRequestTest</td><td><a href="#m74">createLoanRequest</a></td><td rowspan="1">1749297494602</td><td rowspan="1">22223</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateSupportRequestTest</td><td><a href="#m75">createSupportRequest</a></td><td rowspan="1">1749297781715</td><td rowspan="1">16602</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteITSupportRequestTest</td><td><a href="#m76">deleteITSupportRequest</a></td><td rowspan="1">1749297846807</td><td rowspan="1">19128</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteLeaveRequestTest</td><td><a href="#m77">deleteLeaveRequest</a></td><td rowspan="1">1749297430174</td><td rowspan="1">16850</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteLoanRequestTest</td><td><a href="#m78">deleteLoanRequest</a></td><td rowspan="1">1749297551272</td><td rowspan="1">17206</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest</td><td><a href="#m79">deleteSupportReqCategory</a></td><td rowspan="1">1749297716635</td><td rowspan="1">15963</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteTimeOffTest</td><td><a href="#m80">deleteTimeOff</a></td><td rowspan="1">1749297959017</td><td rowspan="1">2</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.SelfService.VerifyApproveWorkflowTest</td><td><a href="#m81">verifyApproveWorkflow</a></td><td rowspan="1">1749298051228</td><td rowspan="1">32374</td></tr><tr class="retriedodd"><td rowspan="1">testCases.HRMS.SelfService.VerifyRejectWorkflowTest</td><td><a href="#m82">verifyRejectWorkflow</a></td><td rowspan="1">1749298148586</td><td rowspan="1">32051</td></tr><tr class="retriedeven"><td rowspan="1">testCases.HRMS.SelfService.VerifyReviseWorkflowTest</td><td><a href="#m83">verifyReviseWorkflow</a></td><td rowspan="1">1749298245456</td><td rowspan="1">32483</td></tr><tr><th colspan="4">Regression Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Attendance.CreateLenientShiftTimetableTest</td><td><a href="#m84">createLenientShiftTimetable</a></td><td rowspan="1">1749298342216</td><td rowspan="1">31038</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Attendance.CreateNightShiftTimetableTest</td><td><a href="#m85">createNightShiftTimetable</a></td><td rowspan="1">1749298450593</td><td rowspan="1">24183</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Attendance.CreateRosterTest</td><td><a href="#m86">createRoster</a></td><td rowspan="1">1749298530427</td><td rowspan="1">26008</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Attendance.CreateShiftTest</td><td><a href="#m87">createShift</a></td><td rowspan="1">1749298631483</td><td rowspan="1">13305</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Attendance.CreateStrictDayShiftTimetableTest</td><td><a href="#m88">createStrictDayShiftTimetable</a></td><td rowspan="1">1749298716403</td><td rowspan="1">23763</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Attendance.CreateTwoShiftDayShiftTimetableTest</td><td><a href="#m89">createTwoShiftDayShiftTimetable</a></td><td rowspan="1">1749298815898</td><td rowspan="1">30829</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Attendance.DeleteLenientShiftTimetableTest</td><td><a href="#m90">deleteLenientShiftTimetable</a></td><td rowspan="1">1749298397017</td><td rowspan="1">28951</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Attendance.DeleteRosterTest</td><td><a href="#m91">deleteRoster</a></td><td rowspan="1">1749298579583</td><td rowspan="1">28419</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Attendance.DeleteShiftTest</td><td><a href="#m92">deleteShift</a></td><td rowspan="1">1749298667635</td><td rowspan="1">25588</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Attendance.DeleteStrictDayShiftTimetableTest</td><td><a href="#m93">deleteStrictDayShiftTimetable</a></td><td rowspan="1">1749298763080</td><td rowspan="1">28646</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest</td><td><a href="#m94">deleteTwoShiftDayShiftTimetable</a></td><td rowspan="1">1749298870295</td><td rowspan="1">31425</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.CreateBankTest</td><td><a href="#m95">createBank</a></td><td rowspan="1">1749295526937</td><td rowspan="1">11216</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.CreateCalendarTest</td><td><a href="#m96">createCalendar</a></td><td rowspan="1">1749295613805</td><td rowspan="1">10209</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.CreateDeptTest</td><td><a href="#m97">createDepartment</a></td><td rowspan="1">1749295708438</td><td rowspan="1">17428</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.CreateDesignationTest</td><td><a href="#m98">createDesignation</a></td><td rowspan="1">1749295806758</td><td rowspan="1">10538</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.CreateDocumentTypeTest</td><td><a href="#m99">createDocumentType</a></td><td rowspan="1">1749295896379</td><td rowspan="1">10237</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.CreateGradeTest</td><td><a href="#m100">createGrade</a></td><td rowspan="1">1749295963949</td><td rowspan="1">20364</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.CreateQualificationTest</td><td><a href="#m101">createQualification</a></td><td rowspan="1">1749296064370</td><td rowspan="1">10299</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.CreateReligionTest</td><td><a href="#m102">createReligion</a></td><td rowspan="1">1749296106045</td><td rowspan="1">9787</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.CreateWorkLocationTest</td><td><a href="#m103">createWorkLocation</a></td><td rowspan="1">1749296191148</td><td rowspan="1">10191</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.DeleteBankTest</td><td><a href="#m104">deleteBank</a></td><td rowspan="1">1749295561928</td><td rowspan="1">28416</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.DeleteCalendarTest</td><td><a href="#m105">deleteCalendar</a></td><td rowspan="1">1749295647226</td><td rowspan="1">37559</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.DeleteDeptTest</td><td><a href="#m106">deleteDepartment</a></td><td rowspan="1">1749295748826</td><td rowspan="1">34955</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.DeleteDesignationTest</td><td><a href="#m107">deleteDesignation</a></td><td rowspan="1">1749295840282</td><td rowspan="1">32691</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.DeleteGradeTest</td><td><a href="#m108">deleteGrade</a></td><td rowspan="1">1749296007371</td><td rowspan="1">33226</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.HRCore.DeleteReligionTest</td><td><a href="#m109">deleteReligion</a></td><td rowspan="1">1749296139403</td><td rowspan="1">28031</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.HRCore.DeleteWorkLocationTest</td><td><a href="#m110">deleteWorkLocation</a></td><td rowspan="1">1749296224798</td><td rowspan="1">28141</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateBenefitEncashmentTest</td><td><a href="#m111">createBenefitEncashment</a></td><td rowspan="1">1749296897716</td><td rowspan="1">30035</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveAdjustmentTest</td><td><a href="#m112">createLeaveAdjustment</a></td><td rowspan="1">1749296530163</td><td rowspan="1">39938</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.CreateLeaveEncashmentTest</td><td><a href="#m113">createLeaveEncashment</a></td><td rowspan="1">1749296647216</td><td rowspan="1">38805</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok</td><td><a href="#m114">verifyVariableSalary</a></td><td rowspan="1">1749296276571</td><td rowspan="1">34062</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteBenefitEncashmentTest</td><td><a href="#m115">deleteBenefitEncashment</a></td><td rowspan="1">1749296950907</td><td rowspan="1">38175</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest</td><td><a href="#m116">deleteLeaveAdjustment</a></td><td rowspan="1">1749296593266</td><td rowspan="1">30984</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.Payroll.DeleteLeaveEncashmentTest</td><td><a href="#m117">deleteLeaveEncashment</a></td><td rowspan="1">1749296709080</td><td rowspan="1">37795</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.Payroll.DeleteVariableSalaryTest</td><td><a href="#m118">deleteVariableSalary</a></td><td rowspan="1">1749296333906</td><td rowspan="1">30605</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.SelfService.CreateBenefitClaimTest</td><td><a href="#m119">createBenefitClaim</a></td><td rowspan="1">1749297013873</td><td rowspan="1">25857</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateExceptionRequestTest</td><td><a href="#m120">createExceptionRequest</a></td><td rowspan="1">1749297129450</td><td rowspan="1">16841</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.SelfService.CreateHRAssetRequest</td><td><a href="#m121">createHRAssetRequest</a></td><td rowspan="1">1749297219066</td><td rowspan="1">50722</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateHRAssetReturnTest</td><td><a href="#m122">createHRAssetReturn</a></td><td rowspan="1">1749297293273</td><td rowspan="1">30833</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.SelfService.CreatePromotionRequestTest</td><td><a href="#m123">createPromotionRequest</a></td><td rowspan="1">1749297615752</td><td rowspan="1">37330</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateSupportRequestCategoryTest</td><td><a href="#m124">createSupportRequestCategory</a></td><td rowspan="1">1749297676352</td><td rowspan="1">17102</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.SelfService.CreateTimeOffTest</td><td><a href="#m125">createTimeOff</a></td><td rowspan="1">1749297919669</td><td rowspan="1">15604</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.SelfService.CreateTravelRequestTest</td><td><a href="#m126">createTravelRequest</a></td><td rowspan="1">1749297995464</td><td rowspan="1">32724</td></tr><tr class="passedodd"><td rowspan="1">testCases.HRMS.SelfService.DeleteBenefitClaimTest</td><td><a href="#m127">deleteBenefitClaim</a></td><td rowspan="1">1749297065172</td><td rowspan="1">37650</td></tr><tr class="passedeven"><td rowspan="1">testCases.HRMS.SelfService.DeleteExceptionRequestTest</td><td><a href="#m128">deleteExceptionRequest</a></td><td rowspan="1">1749297169620</td><td rowspan="1">26843</td></tr></tbody>
 </table>
-<h2>Master Tests</h2><h3 id="m0">testCases.HRMS.Payroll.CreateBenefitEncashmentTest#verifyBenefitEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.HRMS.Payroll.CreateLeaveAdjustmentTest#createLeaveAdjustment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.HRMS.Payroll.CreateLeaveEncashmentTest#createLeaveEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest#createLeaveOpeningBalance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testCases.HRMS.Payroll.CreateLeaveTest#createLeave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok#verifyVariableSalary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testCases.HRMS.Payroll.DeleteBenefitEncashmentTest#deleteBenefitEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest#deleteLeaveAdjustment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testCases.HRMS.Payroll.DeleteLeaveEncashmentTest#deleteLeaveEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest#deleteLeaveOpeningBalance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">testCases.HRMS.Payroll.DeleteLeaveTest#deleteLeave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">testCases.HRMS.Payroll.DeleteVariableSalaryTest#deleteVariableSalary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression Tests</h2><h3 id="m0">testCases.HRMS.Attendance.CreateRosterTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae84ec1ba1dad957a9a868f01d37163f, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51612/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae84ec1ba1dad957a9a868f01d37163f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.HRMS.HRCore.CreateEmployeeTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a211efbf83b0caf063e87eee53f7e4f, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60468/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a211efbf83b0caf063e87eee53f7e4f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af36d03ccf9d93452ebc554264af4297, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62828/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af36d03ccf9d93452ebc554264af4297
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.HRMS.Payroll.CreateLeaveTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ca1256e8f9f826c3451ff14f886d3e6, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61774}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61774/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ca1256e8f9f826c3451ff14f886d3e6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac2257869290ff68858fcf0ad9210ca9, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62996/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac2257869290ff68858fcf0ad9210ca9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.HRMS.Payroll.DeleteLeaveTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f7b553929e2b534a9e3f57839cff2557, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61978/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7b553929e2b534a9e3f57839cff2557
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.HRMS.SelfService.CreateLeaveRequestTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8724aeca5f29d2ac3b6f5600dd1d20b3, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64438/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8724aeca5f29d2ac3b6f5600dd1d20b3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.HRMS.SelfService.CreateLoanRequestTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1f19829c509dd908df9b9eeabd7b467, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64833/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1f19829c509dd908df9b9eeabd7b467
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.HRMS.SelfService.CreateSupportRequestTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d89e2de82fb95069b01a628700a9ba6f, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49250/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d89e2de82fb95069b01a628700a9ba6f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testCases.HRMS.SelfService.DeleteITSupportRequestTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9868235a1eddb54dc5faf960437c9bd0, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49723}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49723/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9868235a1eddb54dc5faf960437c9bd0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testCases.HRMS.SelfService.DeleteLeaveRequestTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d763d2d0eef165d5ed60964bfea364b7, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64654}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64654/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d763d2d0eef165d5ed60964bfea364b7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testCases.HRMS.SelfService.DeleteLoanRequestTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27c9b3a471c5c76a1d8a454a56a07bd0, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64990}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64990/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27c9b3a471c5c76a1d8a454a56a07bd0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adb7394ef3fab7be6511d838f23c298d, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65458}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65458/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: adb7394ef3fab7be6511d838f23c298d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testCases.HRMS.SelfService.DeleteTimeOffTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8bd0131719b48b9238ef407e5197a72, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50112/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8bd0131719b48b9238ef407e5197a72
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testCases.HRMS.SelfService.VerifyApproveWorkflowTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [acbba815f4989a5986d46ca6e5a907fa, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50385/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: acbba815f4989a5986d46ca6e5a907fa
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">testCases.HRMS.SelfService.VerifyRejectWorkflowTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [138bf001973d3d9f816f03e7813dcd1f, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50649/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 138bf001973d3d9f816f03e7813dcd1f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">testCases.HRMS.SelfService.VerifyReviseWorkflowTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d8262f7d66d664e84826cc1990c928, findElement {value=/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50908}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d8262f7d66d664e84826cc1990c928
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
+	at base.BasePage.highlightElement(BasePage.java:1071)
+	at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+	at base.BaseTest.login(BaseTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">testCases.HRMS.HRCore.CreateEmployeeTest#createEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: java.lang.RuntimeException: Failed to parse JSON list data model
+	at testCases.HRMS.HRCore.CreateEmployeeTest.createEmployee(CreateEmployeeTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest#createLeaveOpeningBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=137.0.7151.69)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af36d03ccf9d93452ebc554264af4297, clickElement {id=f.3384F0DE695F3F97948FF39E065A8167.d.13759D05C306A9EFB72E664ECE2F78A5.e.409}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62828/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (af36d03ccf9d93452ebc554264af4297)] -&gt; xpath: (//span[text()=&apos;Employee&apos;])[2]]
+Session ID: af36d03ccf9d93452ebc554264af4297
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">testCases.HRMS.Payroll.CreateLeaveTest#createLeave</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=137.0.7151.69)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ca1256e8f9f826c3451ff14f886d3e6, clickElement {id=f.37730CC2D3B0AC92851957686EB5A7D8.d.AC8C4071C325AAE2D3A41CFE600C9F0D.e.516}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61774}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61774/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9ca1256e8f9f826c3451ff14f886d3e6)] -&gt; xpath: //span[@class=&apos;dxnb-ghtext&apos;]]
+Session ID: 9ca1256e8f9f826c3451ff14f886d3e6
+	at testCases.HRMS.Payroll.CreateLeaveTest.createLeave(CreateLeaveTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest#deleteLeaveOpeningBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav - There are no active records.
+	at base.BasePage.performAction(BasePage.java:463)
+	at testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest.deleteLeaveOpeningBalance(DeleteLeaveOpeningBalanceTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">testCases.HRMS.Payroll.DeleteLeaveTest#deleteLeave</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav - There are no active records.
+	at base.BasePage.performAction(BasePage.java:463)
+	at testCases.HRMS.Payroll.DeleteLeaveTest.deleteLeave(DeleteLeaveTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">testCases.HRMS.SelfService.CreateLeaveRequestTest#createLeaveRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=137.0.7151.69)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8724aeca5f29d2ac3b6f5600dd1d20b3, clickElement {id=f.F539FC0F6C9CEAB684DF4C7641E43EA3.d.23FDC72C89A5640135C2805FB0348265.e.444}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64438/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8724aeca5f29d2ac3b6f5600dd1d20b3)] -&gt; xpath: //span[text()=&apos;Transactions&apos;]]
+Session ID: 8724aeca5f29d2ac3b6f5600dd1d20b3
+	at testCases.HRMS.SelfService.CreateLeaveRequestTest.createLeaveRequest(CreateLeaveRequestTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">testCases.HRMS.SelfService.CreateLoanRequestTest#createLoanRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;dx-vam dxm-contentText&quot;&gt;...&lt;/span&gt; is not clickable at point (407, 25). Other element would receive the click: &lt;div class=&quot;dx-overlay-wrapper dx-popup-wrapper dx-overlay-shader&quot; data-bind=&quot;dxControlsDescendantBindings: true&quot; style=&quot;z-index: 1501; position: fixed; width: 1600px; height: 713px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=137.0.7151.69)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1f19829c509dd908df9b9eeabd7b467, clickElement {id=f.A9B14E82A754E72978B41D76E61CFB9A.d.E10A971312D5A223657A1091C0B3C00A.e.309}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64833/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a1f19829c509dd908df9b9eeabd7b467)] -&gt; xpath: //span[normalize-space()=&apos;Self Service&apos;]]
+Session ID: a1f19829c509dd908df9b9eeabd7b467
+	at testCases.HRMS.SelfService.CreateLoanRequestTest.createLoanRequest(CreateLoanRequestTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">testCases.HRMS.SelfService.CreateSupportRequestTest#createSupportRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000001f2104178c0@8fd4fac (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: driver.version: unknown
+	at testCases.HRMS.SelfService.CreateSupportRequestTest.createSupportRequest(CreateSupportRequestTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">testCases.HRMS.SelfService.DeleteITSupportRequestTest#deleteITSupportRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav- There is no active records..
+	at base.BasePage.deleteTxn(BasePage.java:422)
+	at testCases.HRMS.SelfService.DeleteITSupportRequestTest.deleteITSupportRequest(DeleteITSupportRequestTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">testCases.HRMS.SelfService.DeleteLeaveRequestTest#deleteLeaveRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav- There is no active records..
+	at base.BasePage.deleteTxn(BasePage.java:422)
+	at testCases.HRMS.SelfService.DeleteLeaveRequestTest.deleteLeaveRequest(DeleteLeaveRequestTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">testCases.HRMS.SelfService.DeleteLoanRequestTest#deleteLoanRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav- There is no active records..
+	at base.BasePage.deleteTxn(BasePage.java:422)
+	at testCases.HRMS.SelfService.DeleteLoanRequestTest.deleteLoanRequest(DeleteLoanRequestTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest#deleteSupportReqCategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: VRC- Test case failed: java.lang.RuntimeException: Vaibhav- There is no active records..
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">testCases.HRMS.SelfService.DeleteTimeOffTest#deleteTimeOff</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: java.lang.RuntimeException: Invalid path or file: D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\src\test\java\models\SelfService\SelfService\TimeOffData.json does not exist
+	at testCases.HRMS.SelfService.DeleteTimeOffTest.deleteTimeOff(DeleteTimeOffTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">testCases.HRMS.SelfService.VerifyApproveWorkflowTest#verifyApproveWorkflow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [acbba815f4989a5986d46ca6e5a907fa, findElement {value=//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50385/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: acbba815f4989a5986d46ca6e5a907fa
+	at testCases.HRMS.SelfService.VerifyApproveWorkflowTest.verifyApproveWorkflow(VerifyApproveWorkflowTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">testCases.HRMS.SelfService.VerifyRejectWorkflowTest#verifyRejectWorkflow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [138bf001973d3d9f816f03e7813dcd1f, findElement {value=//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50649/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 138bf001973d3d9f816f03e7813dcd1f
+	at testCases.HRMS.SelfService.VerifyRejectWorkflowTest.verifyRejectWorkflow(VerifyRejectWorkflowTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">testCases.HRMS.SelfService.VerifyReviseWorkflowTest#verifyReviseWorkflow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d8262f7d66d664e84826cc1990c928, findElement {value=//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50908}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d8262f7d66d664e84826cc1990c928
+	at testCases.HRMS.SelfService.VerifyReviseWorkflowTest.verifyReviseWorkflow(VerifyReviseWorkflowTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">testCases.HRMS.Attendance.CreateRosterTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">testCases.HRMS.Attendance.CreateRosterTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">testCases.HRMS.HRCore.CreateEmployeeTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">testCases.HRMS.HRCore.CreateEmployeeTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">testCases.HRMS.Payroll.CreateLeaveTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">testCases.HRMS.Payroll.CreateLeaveTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">testCases.HRMS.Payroll.DeleteLeaveTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">testCases.HRMS.Payroll.DeleteLeaveTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">testCases.HRMS.SelfService.CreateLeaveRequestTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">testCases.HRMS.SelfService.CreateLeaveRequestTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">testCases.HRMS.SelfService.CreateLoanRequestTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">testCases.HRMS.SelfService.CreateLoanRequestTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">testCases.HRMS.SelfService.CreateSupportRequestTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">testCases.HRMS.SelfService.CreateSupportRequestTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">testCases.HRMS.SelfService.DeleteITSupportRequestTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">testCases.HRMS.SelfService.DeleteITSupportRequestTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">testCases.HRMS.SelfService.DeleteLeaveRequestTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">testCases.HRMS.SelfService.DeleteLeaveRequestTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">testCases.HRMS.SelfService.DeleteLoanRequestTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">testCases.HRMS.SelfService.DeleteLoanRequestTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">testCases.HRMS.SelfService.DeleteTimeOffTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">testCases.HRMS.SelfService.DeleteTimeOffTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">testCases.HRMS.SelfService.VerifyApproveWorkflowTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">testCases.HRMS.SelfService.VerifyApproveWorkflowTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">testCases.HRMS.SelfService.VerifyRejectWorkflowTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m64">testCases.HRMS.SelfService.VerifyRejectWorkflowTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m65">testCases.HRMS.SelfService.VerifyReviseWorkflowTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m66">testCases.HRMS.SelfService.VerifyReviseWorkflowTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m67">testCases.HRMS.Attendance.CreateRosterTest#createRoster</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000001f2104178c0@5165013 (tried for 10 second(s) with 500 milliseconds interval)
+	at testCases.HRMS.Attendance.CreateRosterTest.createRoster(CreateRosterTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m68">testCases.HRMS.HRCore.CreateEmployeeTest#createEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: java.lang.RuntimeException: Failed to parse JSON list data model
+	at testCases.HRMS.HRCore.CreateEmployeeTest.createEmployee(CreateEmployeeTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m69">testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest#createLeaveOpeningBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@class=&apos;leave-balance&apos;])[2]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af36d03ccf9d93452ebc554264af4297, findElement {value=(//p[@class=&apos;leave-balance&apos;])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62828/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af36d03ccf9d93452ebc554264af4297
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m70">testCases.HRMS.Payroll.CreateLeaveTest#createLeave</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000001f2103ffa90@32fa7ff0 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: driver.version: unknown
+	at testCases.HRMS.Payroll.CreateLeaveTest.createLeave(CreateLeaveTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m71">testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest#deleteLeaveOpeningBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav - There are no active records.
+	at base.BasePage.performAction(BasePage.java:463)
+	at testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest.deleteLeaveOpeningBalance(DeleteLeaveOpeningBalanceTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m72">testCases.HRMS.Payroll.DeleteLeaveTest#deleteLeave</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav - There are no active records.
+	at base.BasePage.performAction(BasePage.java:463)
+	at testCases.HRMS.Payroll.DeleteLeaveTest.deleteLeave(DeleteLeaveTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m73">testCases.HRMS.SelfService.CreateLeaveRequestTest#createLeaveRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8724aeca5f29d2ac3b6f5600dd1d20b3, findElement {value=//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64438/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8724aeca5f29d2ac3b6f5600dd1d20b3
+	at testCases.HRMS.SelfService.CreateLeaveRequestTest.createLeaveRequest(CreateLeaveRequestTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m74">testCases.HRMS.SelfService.CreateLoanRequestTest#createLoanRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000001f2104178c0@59e97f75 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: driver.version: unknown
+	at testCases.HRMS.SelfService.CreateLoanRequestTest.createLoanRequest(CreateLoanRequestTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m75">testCases.HRMS.SelfService.CreateSupportRequestTest#createSupportRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000001f2104178c0@3047c35a (tried for 10 second(s) with 500 milliseconds interval)
+	at testCases.HRMS.SelfService.CreateSupportRequestTest.createSupportRequest(CreateSupportRequestTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m76">testCases.HRMS.SelfService.DeleteITSupportRequestTest#deleteITSupportRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav- There is no active records..
+	at base.BasePage.deleteTxn(BasePage.java:422)
+	at testCases.HRMS.SelfService.DeleteITSupportRequestTest.deleteITSupportRequest(DeleteITSupportRequestTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m77">testCases.HRMS.SelfService.DeleteLeaveRequestTest#deleteLeaveRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav- There is no active records..
+	at base.BasePage.deleteTxn(BasePage.java:422)
+	at testCases.HRMS.SelfService.DeleteLeaveRequestTest.deleteLeaveRequest(DeleteLeaveRequestTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m78">testCases.HRMS.SelfService.DeleteLoanRequestTest#deleteLoanRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vaibhav- There is no active records..
+	at base.BasePage.deleteTxn(BasePage.java:422)
+	at testCases.HRMS.SelfService.DeleteLoanRequestTest.deleteLoanRequest(DeleteLoanRequestTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m79">testCases.HRMS.SelfService.DeleteSupportReqCategoryTest#deleteSupportReqCategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: VRC- Test case failed: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adb7394ef3fab7be6511d838f23c298d, clearElement {id=f.6F42B47CB0FD700DB051CCD962C8E094.d.5B8C7F413D0682D976DBAB6DF1227F37.e.218}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65458}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65458/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (adb7394ef3fab7be6511d838f23c298d)] -&gt; xpath: (//input[@class=&apos;dx-texteditor-input&apos;])[2]]
+Session ID: adb7394ef3fab7be6511d838f23c298d
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m80">testCases.HRMS.SelfService.DeleteTimeOffTest#deleteTimeOff</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: java.lang.RuntimeException: Invalid path or file: D:\1. Projects\_Testing\AutomationTesting\CompanyProjects\EBS\Enfinity_HybridFramework\src\test\java\models\SelfService\SelfService\TimeOffData.json does not exist
+	at testCases.HRMS.SelfService.DeleteTimeOffTest.deleteTimeOff(DeleteTimeOffTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m81">testCases.HRMS.SelfService.VerifyApproveWorkflowTest#verifyApproveWorkflow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [acbba815f4989a5986d46ca6e5a907fa, findElement {value=//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50385/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: acbba815f4989a5986d46ca6e5a907fa
+	at testCases.HRMS.SelfService.VerifyApproveWorkflowTest.verifyApproveWorkflow(VerifyApproveWorkflowTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m82">testCases.HRMS.SelfService.VerifyRejectWorkflowTest#verifyRejectWorkflow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [138bf001973d3d9f816f03e7813dcd1f, findElement {value=//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50649/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 138bf001973d3d9f816f03e7813dcd1f
+	at testCases.HRMS.SelfService.VerifyRejectWorkflowTest.verifyRejectWorkflow(VerifyRejectWorkflowTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m83">testCases.HRMS.SelfService.VerifyReviseWorkflowTest#verifyReviseWorkflow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d8262f7d66d664e84826cc1990c928, findElement {value=//div[@class=&apos;dx-start-datebox dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-auto-width dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-dropdowneditor-field-clickable&apos;]//input[@role=&apos;combobox&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50908}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d8262f7d66d664e84826cc1990c928
+	at testCases.HRMS.SelfService.VerifyReviseWorkflowTest.verifyReviseWorkflow(VerifyReviseWorkflowTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m84">testCases.HRMS.Attendance.CreateLenientShiftTimetableTest#createLenientShiftTimetable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m85">testCases.HRMS.Attendance.CreateNightShiftTimetableTest#createNightShiftTimetable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m86">testCases.HRMS.Attendance.CreateRosterTest#createRoster</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m87">testCases.HRMS.Attendance.CreateShiftTest#createShift</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m88">testCases.HRMS.Attendance.CreateStrictDayShiftTimetableTest#createStrictDayShiftTimetable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m89">testCases.HRMS.Attendance.CreateTwoShiftDayShiftTimetableTest#createTwoShiftDayShiftTimetable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m90">testCases.HRMS.Attendance.DeleteLenientShiftTimetableTest#deleteLenientShiftTimetable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m91">testCases.HRMS.Attendance.DeleteRosterTest#deleteRoster</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m92">testCases.HRMS.Attendance.DeleteShiftTest#deleteShift</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m93">testCases.HRMS.Attendance.DeleteStrictDayShiftTimetableTest#deleteStrictDayShiftTimetable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m94">testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest#deleteTwoShiftDayShiftTimetable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m95">testCases.HRMS.HRCore.CreateBankTest#createBank</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m96">testCases.HRMS.HRCore.CreateCalendarTest#createCalendar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m97">testCases.HRMS.HRCore.CreateDeptTest#createDepartment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m98">testCases.HRMS.HRCore.CreateDesignationTest#createDesignation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m99">testCases.HRMS.HRCore.CreateDocumentTypeTest#createDocumentType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m100">testCases.HRMS.HRCore.CreateGradeTest#createGrade</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m101">testCases.HRMS.HRCore.CreateQualificationTest#createQualification</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m102">testCases.HRMS.HRCore.CreateReligionTest#createReligion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m103">testCases.HRMS.HRCore.CreateWorkLocationTest#createWorkLocation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m104">testCases.HRMS.HRCore.DeleteBankTest#deleteBank</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m105">testCases.HRMS.HRCore.DeleteCalendarTest#deleteCalendar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m106">testCases.HRMS.HRCore.DeleteDeptTest#deleteDepartment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m107">testCases.HRMS.HRCore.DeleteDesignationTest#deleteDesignation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m108">testCases.HRMS.HRCore.DeleteGradeTest#deleteGrade</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m109">testCases.HRMS.HRCore.DeleteReligionTest#deleteReligion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m110">testCases.HRMS.HRCore.DeleteWorkLocationTest#deleteWorkLocation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m111">testCases.HRMS.Payroll.CreateBenefitEncashmentTest#createBenefitEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m112">testCases.HRMS.Payroll.CreateLeaveAdjustmentTest#createLeaveAdjustment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m113">testCases.HRMS.Payroll.CreateLeaveEncashmentTest#createLeaveEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m114">testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok#verifyVariableSalary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m115">testCases.HRMS.Payroll.DeleteBenefitEncashmentTest#deleteBenefitEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m116">testCases.HRMS.Payroll.DeleteLeaveAdjustmentTest#deleteLeaveAdjustment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m117">testCases.HRMS.Payroll.DeleteLeaveEncashmentTest#deleteLeaveEncashment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m118">testCases.HRMS.Payroll.DeleteVariableSalaryTest#deleteVariableSalary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m119">testCases.HRMS.SelfService.CreateBenefitClaimTest#createBenefitClaim</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m120">testCases.HRMS.SelfService.CreateExceptionRequestTest#createExceptionRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m121">testCases.HRMS.SelfService.CreateHRAssetRequest#createHRAssetRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m122">testCases.HRMS.SelfService.CreateHRAssetReturnTest#createHRAssetReturn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m123">testCases.HRMS.SelfService.CreatePromotionRequestTest#createPromotionRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m124">testCases.HRMS.SelfService.CreateSupportRequestCategoryTest#createSupportRequestCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m125">testCases.HRMS.SelfService.CreateTimeOffTest#createTimeOff</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m126">testCases.HRMS.SelfService.CreateTravelRequestTest#createTravelRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m127">testCases.HRMS.SelfService.DeleteBenefitClaimTest#deleteBenefitClaim</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m128">testCases.HRMS.SelfService.DeleteExceptionRequestTest#deleteExceptionRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -65,6 +65,8 @@
 			<class name="testCases.HRMS.HRCore.DDT_ResidencyInfo" />
 			<class name="testCases.HRMS.HRCore.MySQL_EmployeeTest" />-->
 			
+			
+			
 			<!-- Global -->
 			<!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->
 			
