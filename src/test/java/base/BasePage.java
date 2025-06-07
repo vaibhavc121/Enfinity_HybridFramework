@@ -22,6 +22,8 @@ import org.testng.Assert;
 
 import com.github.javafaker.Faker;
 
+import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.LoginPage;
 import utilities.BrowserUtils;
 
 public class BasePage
@@ -626,6 +628,17 @@ public class BasePage
 				break;
 			}
 		}
+	}
+
+	// Common Actions
+	// Logout And Login
+	public static void logoutAndLogin(String username, String pwd)
+	{
+		EmployeePage ep = new EmployeePage(driver);
+		ep.clickRightAreaMenu();
+		ep.clicklogOff();
+		LoginPage lp = new LoginPage(driver);
+		lp.login(username, pwd);
 	}
 
 	// Keyboard Actions

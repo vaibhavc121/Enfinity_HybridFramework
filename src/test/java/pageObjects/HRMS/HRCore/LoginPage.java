@@ -1,5 +1,6 @@
 package pageObjects.HRMS.HRCore;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -48,4 +49,16 @@ public class LoginPage extends BasePage
 		signIn.click();
 		// bc.highlightElement(driver, signIn, false); // Remove highlight
 	}
+
+	public void login(String uname, String pwd)
+	{
+		WebElement usernameField = driver.findElement(By.name("Username"));
+		WebElement passwordField = driver.findElement(By.name("Password"));
+		WebElement loginButton = driver.findElement(By.className("login-btn"));
+
+		usernameField.sendKeys(uname);
+		passwordField.sendKeys(pwd);
+		loginButton.click();
+	}
+
 }

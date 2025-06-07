@@ -46,7 +46,7 @@ public class HRCorePage extends BasePage
 		highlightElement(driver, setups, false); // Remove highlight
 	}
 
-	public void ClickAssetIssue()
+	public void clickAssetIssue()
 	{
 		assetIssue.click();
 	}
