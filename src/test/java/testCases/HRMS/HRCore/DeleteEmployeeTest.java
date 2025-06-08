@@ -16,6 +16,7 @@ import java.util.List;
 
 public class DeleteEmployeeTest extends BaseTest
 {
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void deleteEmployee()
 	{
 		try
@@ -23,7 +24,7 @@ public class DeleteEmployeeTest extends BaseTest
 			// instead of for loop you can use repeat attribute
 			for (int i = 1; i <= 1; i++)
 			{
-				String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
+				String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
 				List<DeleteEmpModel> deleteEmployee = JsonUtils.convertJsonListDataModel(employeeFile, "deleteEmployee",
 						DeleteEmpModel.class);
 

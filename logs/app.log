@@ -31451,3 +31451,158 @@ Session ID: a8eb1b25d05e334282a15d2be584886b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-08 18:31:24.135 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:31:24.370 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:31:24.371 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - --test execution started--
+2025-06-08 18:31:27.196 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - browser maximized
+2025-06-08 18:31:29.750 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided app URL in browser
+2025-06-08 18:31:29.910 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided username
+2025-06-08 18:31:30.001 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided password
+2025-06-08 18:31:35.132 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - clicked on sign in button
+2025-06-08 18:32:16.325 [main] ERROR testCases.HRMS.HRCore.CreateEmployeeTest - Test failed due to exception: 
+java.lang.RuntimeException: Failed to parse JSON list data model
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:45) ~[test-classes/:?]
+	at testCases.HRMS.HRCore.CreateEmployeeTest.createEmployee(CreateEmployeeTest.java:25) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "NameArabic" (class models.HRCore.HRCore.EmployeeModel$EmpModel), not marked as ignorable (13 known properties: "gender", "mobile", "maritalStatus", "indemnity", "name", "religion", "department", "designation", "email", "payrollSet", "calendar", "DOJ", "grade"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: models.HRCore.HRCore.EmployeeModel$EmpModel["NameArabic"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2245) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1821) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1799) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4904) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3036) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:3500) ~[jackson-databind-2.18.3.jar:2.18.3]
+	at utilities.JsonUtils.convertJsonListDataModel(JsonUtils.java:38) ~[test-classes/:?]
+	... 27 more
+2025-06-08 18:32:56.770 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:32:56.956 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:32:56.956 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - --test execution started--
+2025-06-08 18:32:58.282 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - browser maximized
+2025-06-08 18:33:00.665 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided app URL in browser
+2025-06-08 18:33:00.814 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided username
+2025-06-08 18:33:00.908 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided password
+2025-06-08 18:33:05.203 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - clicked on sign in button
+2025-06-08 18:46:13.678 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:46:13.856 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:46:13.856 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - --test execution started--
+2025-06-08 18:46:15.171 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - browser maximized
+2025-06-08 18:46:17.178 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided app URL in browser
+2025-06-08 18:46:17.332 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided username
+2025-06-08 18:46:17.433 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided password
+2025-06-08 18:46:22.372 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - clicked on sign in button
+2025-06-08 18:47:58.676 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:47:58.853 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:47:58.853 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - --test execution started--
+2025-06-08 18:48:00.083 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - browser maximized
+2025-06-08 18:48:02.051 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided app URL in browser
+2025-06-08 18:48:02.201 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided username
+2025-06-08 18:48:02.311 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - provided password
+2025-06-08 18:48:07.037 [main] INFO  testCases.HRMS.HRCore.CreateEmployeeTest - clicked on sign in button
+2025-06-08 18:49:51.456 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:49:51.633 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:49:51.633 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - --test execution started--
+2025-06-08 18:49:52.887 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - browser maximized
+2025-06-08 18:49:54.864 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided app URL in browser
+2025-06-08 18:49:54.998 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
+2025-06-08 18:49:55.083 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
+2025-06-08 18:50:02.679 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
+2025-06-08 18:50:56.388 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:50:56.549 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:50:56.549 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - --test execution started--
+2025-06-08 18:50:57.787 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - browser maximized
+2025-06-08 18:51:00.107 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided app URL in browser
+2025-06-08 18:51:00.254 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
+2025-06-08 18:51:00.355 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
+2025-06-08 18:51:05.444 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
+2025-06-08 18:54:02.307 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:54:02.522 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:54:02.522 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - --test execution started--
+2025-06-08 18:54:04.217 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - browser maximized
+2025-06-08 18:54:07.175 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided app URL in browser
+2025-06-08 18:54:07.331 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
+2025-06-08 18:54:07.436 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
+2025-06-08 18:54:12.323 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
+2025-06-08 18:55:59.984 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:56:00.160 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:56:00.160 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - --test execution started--
+2025-06-08 18:56:01.462 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - browser maximized
+2025-06-08 18:56:03.445 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided app URL in browser
+2025-06-08 18:56:03.595 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
+2025-06-08 18:56:03.697 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
+2025-06-08 18:56:07.995 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
+2025-06-08 18:58:39.428 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:58:39.621 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:58:39.622 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - --test execution started--
+2025-06-08 18:58:40.871 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - browser maximized
+2025-06-08 18:58:43.144 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided app URL in browser
+2025-06-08 18:58:43.301 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
+2025-06-08 18:58:43.404 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
+2025-06-08 18:58:47.670 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
+2025-06-08 18:59:52.082 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 18:59:52.264 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 18:59:52.264 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - --test execution started--
+2025-06-08 18:59:53.575 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - browser maximized
+2025-06-08 18:59:56.194 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided app URL in browser
+2025-06-08 18:59:56.348 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
+2025-06-08 18:59:56.431 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
+2025-06-08 19:00:02.526 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
+2025-06-08 19:01:10.640 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-08 19:01:10.840 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-08 19:01:10.840 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - --test execution started--
+2025-06-08 19:01:12.154 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - browser maximized
+2025-06-08 19:01:14.646 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided app URL in browser
+2025-06-08 19:01:14.800 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
+2025-06-08 19:01:14.896 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
+2025-06-08 19:01:19.095 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
