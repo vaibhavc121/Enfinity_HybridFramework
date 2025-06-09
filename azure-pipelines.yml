@@ -15,7 +15,7 @@ jobs:
     steps:
     - task: Maven@4
       inputs:
-        azureSubscription: 'Azure for Students(da8c3d3e-cbc0-4f8a-891e-e96747df3a30)'
+        
         mavenPomFile: 'pom.xml'
         goals: 'test'
         options: '-DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml'
