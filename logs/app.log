@@ -33065,3 +33065,15 @@ java.lang.RuntimeException: Invalid path or file: D:\Vaibhav\Automation\Enfinity
 2025-06-10 17:43:40.854 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - went back to listing
 2025-06-10 17:43:41.877 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - value cleared in filter box
 2025-06-10 17:43:41.941 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided filter value
+2025-06-10 18:07:31.544 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 18:07:31.739 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 18:07:31.739 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - --test execution started--
+2025-06-10 18:07:32.931 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - browser maximized
+2025-06-10 18:07:35.320 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - provided app URL in browser
+2025-06-10 18:07:35.492 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - provided username
+2025-06-10 18:07:35.580 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - provided password
+2025-06-10 18:07:41.363 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - clicked on sign in button
+2025-06-10 18:07:43.870 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - clicked on payroll link
+2025-06-10 18:07:45.333 [main] INFO  testCases.HRMS.Payroll.CreateTicketEncashmentTest - clicked on txn
