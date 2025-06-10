@@ -19,13 +19,13 @@ public class LoginPage extends BasePage
 
 	BaseTest bc = new BaseTest();
 
-	@FindBy(xpath = "/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(name = "Username")
 	WebElement username;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[1]/section[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+	@FindBy(name = "Password")
 	WebElement password;
 
-	@FindBy(xpath = "//div[@aria-label='Sign In']//div[@class='dx-button-content']")
+	@FindBy(className = "login-btn")
 	WebElement signIn;
 
 	// Locate, highlight, enter data, and remove highlight for "Username" field

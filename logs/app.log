@@ -31879,3 +31879,20 @@ Session ID: 68f346efea409c38d66d3fb392e56905
 2025-06-10 12:37:11.608 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
 2025-06-10 12:37:11.701 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
 2025-06-10 12:37:16.651 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:44:51.904 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:44:52.079 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:44:52.079 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:44:53.780 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:44:56.057 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:44:56.209 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:44:56.304 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:45:00.998 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:45:22.177 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:45:22.177 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:45:22.999 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:45:30.243 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:45:30.333 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:45:30.429 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:45:35.242 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
