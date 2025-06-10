@@ -589,6 +589,7 @@ public class BasePage
 
 	public static void navigateToEmployee(String value)
 	{
+		// selectFilterAll();
 		filterByIndex(2, value);
 		try
 		{
@@ -654,6 +655,17 @@ public class BasePage
 		ep.clicklogOff();
 		LoginPage lp = new LoginPage(driver);
 		lp.login(username, pwd);
+	}
+
+	public static void selectFilterAll()
+	{
+		// driver.findElement(By.id("//img[@id='ListingViews_B-1Img']")).click();
+//		WebElement element = driver.findElement(By.id("//input[@name='ListingViews']"));
+//		clickElementByJavaScript(driver, element);
+
+		By locator = By.id("//img[@id='ListingViews_B-1Img']");
+		waitForElement1(locator).click();
+		selectDropdownValueOffice365("All");
 	}
 
 	// Keyboard Actions
@@ -1014,7 +1026,7 @@ public class BasePage
 	}
 
 	// JavaScript Executor
-	public void executeScript(WebDriver driver, String script, Object... args)
+	public static void executeScript(WebDriver driver, String script, Object... args)
 	{
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript(script, args);
@@ -1041,7 +1053,7 @@ public class BasePage
 		executeScript(driver, "arguments[0].scrollIntoView(true);", element);
 	}
 
-	public void clickElementByJavaScript(WebDriver driver, WebElement element)
+	public static void clickElementByJavaScript(WebDriver driver, WebElement element)
 	{
 		executeScript(driver, "arguments[0].click();", element);
 	}

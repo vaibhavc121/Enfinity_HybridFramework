@@ -31913,3 +31913,287 @@ Session ID: 68f346efea409c38d66d3fb392e56905
 2025-06-10 12:59:39.033 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided username
 2025-06-10 12:59:39.130 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided password
 2025-06-10 12:59:43.539 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - clicked on sign in button
+2025-06-10 13:16:38.925 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 13:16:39.108 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:16:39.109 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:16:40.273 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:16:42.904 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:16:43.059 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 13:16:43.158 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 13:16:49.126 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 13:17:03.771 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x00000258083f6dc0@11eed657 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement1(BasePage.java:806) ~[test-classes/:?]
+	at base.BasePage.filterByIndex(BasePage.java:87) ~[test-classes/:?]
+	at base.BasePage.navigateToEmployee(BasePage.java:592) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 13:42:52.379 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 13:42:52.562 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:42:52.562 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:42:53.882 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:42:55.865 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:42:56.035 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 13:42:56.129 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 13:43:02.547 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 13:43:44.646 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x00000299b83f5df8@360e9c06 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement1(BasePage.java:815) ~[test-classes/:?]
+	at base.BasePage.selectFilterAll(BasePage.java:664) ~[test-classes/:?]
+	at base.BasePage.navigateToEmployee(BasePage.java:592) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/img\[\@id\=\'ListingViews_B\-1Img\'\]"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [448a4564b54135ad03504687a91f3f0a, findElement {using=id, value=//img[@id='ListingViews_B-1Img']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59127}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59127/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 448a4564b54135ad03504687a91f3f0a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at base.BasePage.lambda$2(BasePage.java:817) ~[test-classes/:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.31.0.jar:?]
+	... 30 more
+2025-06-10 13:44:43.180 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 13:44:43.380 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:44:43.380 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:44:45.067 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:44:47.394 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:44:47.580 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 13:44:47.681 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 13:44:52.156 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 13:45:24.084 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/img\[\@id\=\'ListingViews_B\-1Img\'\]"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a18552ef313cb929bb69eda897170b5, findElement {value=//img[@id='ListingViews_B-1Img'], using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59412}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59412/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a18552ef313cb929bb69eda897170b5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at base.BasePage.selectFilterAll(BasePage.java:662) ~[test-classes/:?]
+	at base.BasePage.navigateToEmployee(BasePage.java:592) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 13:49:05.996 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 13:49:06.190 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:49:06.190 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:49:07.937 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:49:10.252 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:49:10.423 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 13:49:10.510 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 13:49:15.032 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 13:55:14.926 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 13:55:15.116 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:55:15.116 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:55:16.356 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:55:18.366 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:55:18.528 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 13:55:18.623 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 13:55:23.089 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 13:55:53.630 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/input\[\@name\=\'ListingViews\'\]"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74aa3af645491570e3f98564b0d0615a, findElement {value=//input[@name='ListingViews'], using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60977/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74aa3af645491570e3f98564b0d0615a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.31.0.jar:?]
+	at base.BasePage.selectFilterAll(BasePage.java:663) ~[test-classes/:?]
+	at base.BasePage.navigateToEmployee(BasePage.java:592) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 13:57:00.611 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 13:57:00.801 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:57:00.802 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:57:02.061 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:57:04.040 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:57:04.210 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 13:57:04.315 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 13:57:08.796 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 13:58:26.346 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 13:58:26.526 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:58:26.526 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:58:27.847 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:58:30.596 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:58:30.761 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 13:58:30.846 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 13:58:35.637 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 13:59:17.914 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-10 13:59:19.323 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on txn
+2025-06-10 13:59:54.308 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 13:59:54.308 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 13:59:55.131 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - browser maximized
+2025-06-10 13:59:57.877 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 13:59:57.982 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided username
+2025-06-10 13:59:58.075 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided password
+2025-06-10 14:00:02.576 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 14:00:02.658 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-10 14:00:04.715 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
