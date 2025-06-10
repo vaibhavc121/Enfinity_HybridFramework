@@ -85,7 +85,9 @@ public class BasePage
 		// I expect the index to change dynamically
 		String xpath = "(//input[@class='dx-texteditor-input'])[" + columnIndex + "]";
 		waitForElement1(By.xpath(xpath)).clear();
+		BaseTest.log("value cleared in filter box");
 		waitForElement1(By.xpath(xpath)).sendKeys(value);
+		BaseTest.log("provided filter value");
 	}
 
 	// other approach
@@ -417,6 +419,7 @@ public class BasePage
 		try
 		{
 			waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
+			BaseTest.log("row selected");
 		} catch (Exception e)
 		{
 			Assert.fail("Vaibhav- There is no active records..");
@@ -425,9 +428,11 @@ public class BasePage
 		try
 		{
 			clickOnView();
+			BaseTest.log("clickOnView");
 		} catch (Exception e)
 		{
 			clickOnEdit();
+			BaseTest.log("clickOnEdit");
 		}
 		try
 		{
@@ -437,7 +442,9 @@ public class BasePage
 			e.printStackTrace();
 		}
 		waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+		BaseTest.log("clciked on setting");
 		waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
+		BaseTest.log("clicked on delete");
 		try
 		{
 			Thread.sleep(1000);
@@ -446,7 +453,9 @@ public class BasePage
 			e.printStackTrace();
 		}
 		pressKey("enter");
+		BaseTest.log("enter pressed");
 		driver.navigate().back();
+		BaseTest.log("went back to listing");
 	}
 
 	public static void performAction(int index, String value, String action)
