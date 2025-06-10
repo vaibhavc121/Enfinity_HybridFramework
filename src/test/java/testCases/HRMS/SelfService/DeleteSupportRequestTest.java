@@ -13,7 +13,7 @@ import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 import java.util.List;
 
-public class DeleteITSupportRequestTest extends BaseTest
+public class DeleteSupportRequestTest extends BaseTest
 {
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void deleteITSupportRequest()

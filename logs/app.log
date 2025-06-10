@@ -32678,3 +32678,267 @@ java.lang.RuntimeException: Vaibhav- There is no active records..
 2025-06-10 15:59:33.309 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided username
 2025-06-10 15:59:33.402 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided password
 2025-06-10 15:59:37.846 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - clicked on sign in button
+2025-06-10 16:10:16.394 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:10:16.563 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:10:16.563 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:10:17.729 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:10:20.067 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:10:20.226 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:10:20.318 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:10:26.922 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:10:43.938 [main] ERROR testCases.HRMS.SelfService.CreateSupportRequestTest - Test failed due to exception: 
+org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0e1a3562fa108c301bce19c282bfc41, actions {actions=[org.openqa.selenium.interactions.Sequence@2da66a44]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63765/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0e1a3562fa108c301bce19c282bfc41
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204) ~[selenium-json-4.33.0.jar:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222) ~[selenium-json-4.33.0.jar:?]
+	at java.base/java.util.Map.forEach(Map.java:733) ~[?:?]
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.Json.toJson(Json.java:133) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.json.Json.toJson(Json.java:119) ~[selenium-json-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:236) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:109) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:203) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616) ~[selenium-api-4.33.0.jar:?]
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581) ~[selenium-api-4.33.0.jar:?]
+	at base.BasePage.hoverOverElement(BasePage.java:1134) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.ITSupportRequestPage.clickPlusBtn(ITSupportRequestPage.java:63) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateSupportRequestTest.createSupportRequest(CreateSupportRequestTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431) ~[selenium-json-4.33.0.jar:?]
+		at org.openqa.selenium.json.Json.toJson(Json.java:131) ~[selenium-json-4.33.0.jar:?]
+		at org.openqa.selenium.json.Json.toJson(Json.java:119) ~[selenium-json-4.33.0.jar:?]
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:236) ~[selenium-remote-driver-4.33.0.jar:?]
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:109) ~[selenium-remote-driver-4.33.0.jar:?]
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:203) ~[selenium-remote-driver-4.33.0.jar:?]
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630) ~[selenium-remote-driver-4.33.0.jar:?]
+		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616) ~[selenium-api-4.33.0.jar:?]
+		at org.openqa.selenium.interactions.Actions.perform(Actions.java:581) ~[selenium-api-4.33.0.jar:?]
+		at base.BasePage.hoverOverElement(BasePage.java:1134) ~[test-classes/:?]
+		at pageObjects.HRMS.SelfService.ITSupportRequestPage.clickPlusBtn(ITSupportRequestPage.java:63) ~[test-classes/:?]
+		at testCases.HRMS.SelfService.CreateSupportRequestTest.createSupportRequest(CreateSupportRequestTest.java:37) ~[test-classes/:?]
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+		at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+		at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+		at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+		at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+		at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+		at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+		at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+		at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+		at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+		at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+		at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+		at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+		at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+		at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+		at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+		at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+		at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+		at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+		at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+		at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+		at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+		at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+		at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516) ~[selenium-json-4.33.0.jar:?]
+	... 60 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//i[@class='dx-icon dx-icon-new-icon'])[1]"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0e1a3562fa108c301bce19c282bfc41, findElement {using=xpath, value=(//i[@class='dx-icon dx-icon-new-icon'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63765/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0e1a3562fa108c301bce19c282bfc41
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:262) ~[selenium-api-4.33.0.jar:?]
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:211) ~[selenium-api-4.33.0.jar:?]
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:74) ~[selenium-api-4.33.0.jar:?]
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:83) ~[selenium-api-4.33.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516) ~[selenium-json-4.33.0.jar:?]
+	... 60 more
+2025-06-10 16:11:03.663 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:11:03.664 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - --test execution started--
+2025-06-10 16:11:04.374 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - browser maximized
+2025-06-10 16:11:06.671 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided app URL in browser
+2025-06-10 16:11:06.760 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided username
+2025-06-10 16:11:06.847 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - provided password
+2025-06-10 16:11:11.239 [main] INFO  testCases.HRMS.SelfService.DeleteITSupportRequestTest - clicked on sign in button
+2025-06-10 16:12:13.327 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:12:13.508 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:12:13.508 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:12:14.606 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:12:19.936 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:12:20.076 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:12:20.178 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:12:25.817 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:13:10.192 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:13:10.376 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:13:10.377 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:13:11.486 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:13:13.625 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:13:13.794 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:13:13.886 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:13:21.417 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:28:24.122 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:28:24.291 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:28:24.291 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:28:26.283 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:28:28.584 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:28:28.742 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:28:28.841 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:28:33.586 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:29:03.284 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:29:03.285 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - --test execution started--
+2025-06-10 16:29:04.060 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - browser maximized
+2025-06-10 16:29:06.081 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided app URL in browser
+2025-06-10 16:29:06.176 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided username
+2025-06-10 16:29:06.265 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided password
+2025-06-10 16:29:10.683 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - clicked on sign in button
+2025-06-10 16:31:59.870 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:32:00.046 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:32:00.046 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:32:01.217 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:32:03.525 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:32:03.721 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:32:03.822 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:32:08.728 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:39:38.990 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:39:39.180 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:39:39.180 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:39:40.408 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:39:42.390 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:39:42.555 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:39:42.651 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:39:47.331 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:41:02.821 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:41:03.010 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:41:03.010 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:41:04.137 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:41:06.440 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:41:06.613 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:41:06.701 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:41:11.190 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:45:53.735 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:45:53.906 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:45:53.906 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:45:55.050 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:45:57.372 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:45:57.531 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:45:57.634 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:46:02.223 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:47:00.599 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:47:00.773 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:47:00.773 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:47:01.870 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:47:03.888 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:47:04.047 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:47:04.145 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:47:08.522 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:47:19.533 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:47:19.533 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - --test execution started--
+2025-06-10 16:47:20.246 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - browser maximized
+2025-06-10 16:47:22.392 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided app URL in browser
+2025-06-10 16:47:22.483 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided username
+2025-06-10 16:47:22.575 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided password
+2025-06-10 16:47:26.948 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - clicked on sign in button

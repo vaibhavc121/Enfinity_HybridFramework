@@ -31,7 +31,7 @@ public class ITSupportRequestPage extends BasePage
 	@FindBy(xpath = "//div[@aria-label='Editor content']")
 	WebElement desc;
 
-	@FindBy(xpath = "(//i[@class='dx-icon dx-icon-new-icon'])[1]")
+	@FindBy(xpath = "(//i[@class='dx-icon dx-icon-new-icon'])[5]")
 	WebElement plusBtn;
 
 	@FindBy(xpath = "Low")
