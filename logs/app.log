@@ -32942,3 +32942,20 @@ Session ID: d0e1a3562fa108c301bce19c282bfc41
 2025-06-10 16:47:22.483 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided username
 2025-06-10 16:47:22.575 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided password
 2025-06-10 16:47:26.948 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - clicked on sign in button
+2025-06-10 16:57:45.246 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 16:57:45.419 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:57:45.419 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - --test execution started--
+2025-06-10 16:57:46.531 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - browser maximized
+2025-06-10 16:57:48.823 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided app URL in browser
+2025-06-10 16:57:48.968 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided username
+2025-06-10 16:57:49.060 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - provided password
+2025-06-10 16:57:53.124 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestTest - clicked on sign in button
+2025-06-10 16:58:03.622 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 16:58:03.622 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - --test execution started--
+2025-06-10 16:58:04.343 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - browser maximized
+2025-06-10 16:58:06.609 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided app URL in browser
+2025-06-10 16:58:06.713 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided username
+2025-06-10 16:58:06.802 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided password
+2025-06-10 16:58:11.088 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - clicked on sign in button
