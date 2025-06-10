@@ -36,7 +36,10 @@ public class TicketEncashmentPage extends BasePage
 
 	@FindBy(xpath = "//input[@id='TicketEncashment.PaymentType_I']")
 	WebElement paymentType;
-	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[6]")
+//	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[6]")
+//	WebElement issueTicket;
+
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]")
 	WebElement issueTicket;
 
 	public void clickTicketEncashment()
@@ -95,7 +98,7 @@ public class TicketEncashmentPage extends BasePage
 		if (checkAvailableTicket())
 		{
 			// clearAndProvide2(issueTicket, value);
-			clearAndProvide1(issueTicket, value);
+			clearAndProvide2(issueTicket, value);
 		} else
 		{
 			throw new Exception("VRC- ticket balance is less than 1");

@@ -14,10 +14,10 @@ import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
-public class CreateTicketEncashmentTest extends BaseTest
+public class DeleteTicketEncashmentTest extends BaseTest
 {
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createTicketEncashment()
+	public void deleteTicketEncashment()
 	{
 		try
 		{
@@ -38,17 +38,10 @@ public class CreateTicketEncashmentTest extends BaseTest
 			for (TicketEncashmentModel ticketEncashment : ticketEncashmentData)
 			{
 				te.clickTicketEncashment();
-				te.clickNew();
-				te.provideEmp(ticketEncashment.employee);
-				// te.provideEffectiveDate(ticketEncashment.effectiveDate);
-				te.providePaymentType(ticketEncashment.paymentType);
-				te.clickSave();
-				te.provideIssueTickets(ticketEncashment.issueTickets);
-				te.clickSave1();
-				te.clickView();
-				te.clickApproveBack();
 
-				Assert.assertTrue(BasePage.validateListing(ticketEncashment.employee, 6, 6));
+				BasePage.performAction(6, ticketEncashment.employee, "Amend");
+				// Assert.assertFalse(BasePage.validateListing(benefitEncashment.employee, 6,
+				// 6));
 			}
 
 		} catch (Exception e)
