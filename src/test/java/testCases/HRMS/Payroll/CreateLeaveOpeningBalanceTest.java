@@ -51,17 +51,38 @@ public class CreateLeaveOpeningBalanceTest extends BaseTest
 			for (LeaveOpeningBalanceModel leaveOpBal : leaveOpeningData)
 			{
 				ob.clickLeaveOpeningBalance();
+				log("clicked on LeaveOpening Balance");
+
 				ob.clickNew();
+				log("clicked on New");
+
 				ob.provideEmp(leaveOpBal.employee);
+				log("provided Emp");
+
 				ob.provideEffectiveDate(leaveOpBal.effectiveDate);
+				log("provided Effective Date");
+
 				ob.provideLeaveType(leaveOpBal.leaveType);
+				log("provided LeaveType");
+
 				ob.providePaidDays(leaveOpBal.paidDays);
+				log("provided PaidDays");
+
 				ob.provideRemarks(leaveOpBal.remarks);
+				log("provided Remarks");
+
 				ob.clickView();
+				log("clicked on View");
+
 				ob.clickApprove();
+				log("clickApprove");
 
 				hc.clickHRCore();
+				log("clickHRCore");
+
 				hc.clickEmployee();
+				log("clickEmployee");
+
 				BasePage.navigateToEmployee("001");
 				ep.clkTimeOff();
 

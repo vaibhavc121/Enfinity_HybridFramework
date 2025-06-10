@@ -26,7 +26,12 @@ public class BaseTest
 	public static WebDriver driver;
 	// public static SelfHealingDriver driver; // updated to SelfHealingDriver
 	public Properties p;
-	public Logger logger; // log4j
+	public static Logger logger; // log4j
+
+	public static void log(String message)
+	{
+		logger.info(message);
+	}
 
 	@SuppressWarnings("deprecation")
 	@BeforeClass(groups = { "regression", "datadriven" })
