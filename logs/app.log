@@ -32959,3 +32959,109 @@ Session ID: d0e1a3562fa108c301bce19c282bfc41
 2025-06-10 16:58:06.713 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided username
 2025-06-10 16:58:06.802 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - provided password
 2025-06-10 16:58:11.088 [main] INFO  testCases.HRMS.SelfService.DeleteSupportRequestTest - clicked on sign in button
+2025-06-10 17:36:20.824 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 17:36:21.037 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 17:36:21.037 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - --test execution started--
+2025-06-10 17:36:23.078 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - browser maximized
+2025-06-10 17:36:25.059 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - provided app URL in browser
+2025-06-10 17:36:25.205 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - provided username
+2025-06-10 17:36:25.307 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - provided password
+2025-06-10 17:36:29.948 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - clicked on sign in button
+2025-06-10 17:36:39.771 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 17:36:39.771 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - --test execution started--
+2025-06-10 17:36:40.562 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - browser maximized
+2025-06-10 17:36:42.875 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided app URL in browser
+2025-06-10 17:36:42.972 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided username
+2025-06-10 17:36:43.072 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided password
+2025-06-10 17:36:47.470 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - clicked on sign in button
+2025-06-10 17:36:47.472 [main] ERROR testCases.HRMS.SelfService.DeleteTimeOffTest - Test failed due to exception: 
+java.lang.RuntimeException: Invalid path or file: D:\Vaibhav\Automation\Enfinity_HybridFramework\src\test\java\models\SelfService\SelfService\TimeOffData.json does not exist
+	at utilities.FileUtils.getFile(FileUtils.java:37) ~[test-classes/:?]
+	at utilities.FileUtils.getDataFile(FileUtils.java:27) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteTimeOffTest.deleteTimeOff(DeleteTimeOffTest.java:23) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 17:36:57.555 [main] ERROR testCases.HRMS.SelfService.DeleteTimeOffTest - Test failed due to exception: 
+java.lang.RuntimeException: Invalid path or file: D:\Vaibhav\Automation\Enfinity_HybridFramework\src\test\java\models\SelfService\SelfService\TimeOffData.json does not exist
+	at utilities.FileUtils.getFile(FileUtils.java:37) ~[test-classes/:?]
+	at utilities.FileUtils.getDataFile(FileUtils.java:27) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteTimeOffTest.deleteTimeOff(DeleteTimeOffTest.java:23) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 17:42:58.421 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 17:42:58.594 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 17:42:58.594 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - --test execution started--
+2025-06-10 17:42:59.733 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - browser maximized
+2025-06-10 17:43:03.085 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - provided app URL in browser
+2025-06-10 17:43:03.251 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - provided username
+2025-06-10 17:43:03.358 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - provided password
+2025-06-10 17:43:09.873 [main] INFO  testCases.HRMS.SelfService.CreateTimeOffTest - clicked on sign in button
+2025-06-10 17:43:20.146 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 17:43:20.146 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - --test execution started--
+2025-06-10 17:43:20.954 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - browser maximized
+2025-06-10 17:43:22.955 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided app URL in browser
+2025-06-10 17:43:23.044 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided username
+2025-06-10 17:43:23.143 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided password
+2025-06-10 17:43:27.466 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - clicked on sign in button
+2025-06-10 17:43:31.405 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - value cleared in filter box
+2025-06-10 17:43:31.472 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided filter value
+2025-06-10 17:43:33.621 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - row selected
+2025-06-10 17:43:33.699 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - clickOnView
+2025-06-10 17:43:38.780 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - clciked on setting
+2025-06-10 17:43:39.481 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - clicked on delete
+2025-06-10 17:43:40.838 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - enter pressed
+2025-06-10 17:43:40.854 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - went back to listing
+2025-06-10 17:43:41.877 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - value cleared in filter box
+2025-06-10 17:43:41.941 [main] INFO  testCases.HRMS.SelfService.DeleteTimeOffTest - provided filter value

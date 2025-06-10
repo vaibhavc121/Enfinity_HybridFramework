@@ -20,7 +20,7 @@ public class DeleteTimeOffTest extends BaseTest
 	{
 		try
 		{
-			String timeOffFile = FileUtils.getDataFile("SelfService", "SelfService", "TimeOffData");
+			String timeOffFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
 			List<TimeOffModel> timeOffData = JsonUtils.convertJsonListDataModel(timeOffFile, "createTimeOff",
 					TimeOffModel.class);
 
@@ -37,7 +37,9 @@ public class DeleteTimeOffTest extends BaseTest
 			// to.clickContextMenu();
 			// to.clickDelete();
 			// to.clickOk();
-			BasePage.deleteTxn(8, "active");
+			// BasePage.deleteTxn(8, "active");
+			BasePage.deleteTxn(8, "Active");
+			Assert.assertFalse(BasePage.validateListing("Active", 8, 8));
 
 		} catch (Exception e)
 		{

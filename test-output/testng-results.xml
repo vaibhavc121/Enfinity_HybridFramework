@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T16:57:45 IST" name="NewTestCaseSuite" finished-at="2025-06-10T16:58:30 IST" duration-ms="44859">
+  <suite started-at="2025-06-10T17:42:58 IST" name="NewTestCaseSuite" finished-at="2025-06-10T17:43:44 IST" duration-ms="45764">
     <groups>
       <group name="regression">
-        <method signature="CreateSupportRequestTest.createSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@502f1f4c]" name="createSupportRequest" class="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
-        <method signature="DeleteSupportRequestTest.deleteITSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@7446d8d5]" name="deleteITSupportRequest" class="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
+        <method signature="CreateTimeOffTest.createTimeOff()[pri:0, instance:testCases.HRMS.SelfService.CreateTimeOffTest@502f1f4c]" name="createTimeOff" class="testCases.HRMS.SelfService.CreateTimeOffTest"/>
+        <method signature="DeleteTimeOffTest.deleteTimeOff()[pri:0, instance:testCases.HRMS.SelfService.DeleteTimeOffTest@7446d8d5]" name="deleteTimeOff" class="testCases.HRMS.SelfService.DeleteTimeOffTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-06-10T16:57:45 IST" name="Regression Tests" finished-at="2025-06-10T16:58:30 IST" duration-ms="44859">
-      <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@7446d8d5]" started-at="2025-06-10T16:58:03 IST" name="setup" finished-at="2025-06-10T16:58:06 IST" duration-ms="2988" status="PASS">
+    <test started-at="2025-06-10T17:42:58 IST" name="Regression Tests" finished-at="2025-06-10T17:43:44 IST" duration-ms="45764">
+      <class name="testCases.HRMS.SelfService.DeleteTimeOffTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.DeleteTimeOffTest@7446d8d5]" started-at="2025-06-10T17:43:20 IST" name="setup" finished-at="2025-06-10T17:43:22 IST" duration-ms="2810" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,25 +27,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@7446d8d5]" started-at="2025-06-10T16:58:06 IST" name="login" finished-at="2025-06-10T16:58:11 IST" duration-ms="4479" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.SelfService.DeleteTimeOffTest@7446d8d5]" started-at="2025-06-10T17:43:22 IST" name="login" finished-at="2025-06-10T17:43:27 IST" duration-ms="4510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="deleteITSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@7446d8d5]" started-at="2025-06-10T16:58:11 IST" name="deleteITSupportRequest" finished-at="2025-06-10T16:58:29 IST" duration-ms="18868" status="PASS">
+        <test-method signature="deleteTimeOff()[pri:0, instance:testCases.HRMS.SelfService.DeleteTimeOffTest@7446d8d5]" started-at="2025-06-10T17:43:27 IST" name="deleteTimeOff" finished-at="2025-06-10T17:43:44 IST" duration-ms="16540" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteITSupportRequest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@7446d8d5]" started-at="2025-06-10T16:58:29 IST" name="afterMethod" finished-at="2025-06-10T16:58:29 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- deleteTimeOff -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.SelfService.DeleteTimeOffTest@7446d8d5]" started-at="2025-06-10T17:43:44 IST" name="afterMethod" finished-at="2025-06-10T17:43:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@7446d8d5]" started-at="2025-06-10T16:58:29 IST" name="teardown" finished-at="2025-06-10T16:58:30 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.DeleteTimeOffTest@7446d8d5]" started-at="2025-06-10T17:43:44 IST" name="teardown" finished-at="2025-06-10T17:43:44 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.SelfService.DeleteSupportRequestTest -->
-      <class name="testCases.HRMS.SelfService.CreateSupportRequestTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@502f1f4c]" started-at="2025-06-10T16:57:45 IST" name="setup" finished-at="2025-06-10T16:57:48 IST" duration-ms="3415" status="PASS">
+      </class> <!-- testCases.HRMS.SelfService.DeleteTimeOffTest -->
+      <class name="testCases.HRMS.SelfService.CreateTimeOffTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.CreateTimeOffTest@502f1f4c]" started-at="2025-06-10T17:42:58 IST" name="setup" finished-at="2025-06-10T17:43:03 IST" duration-ms="4503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,23 +61,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@502f1f4c]" started-at="2025-06-10T16:57:48 IST" name="login" finished-at="2025-06-10T16:57:53 IST" duration-ms="4293" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.SelfService.CreateTimeOffTest@502f1f4c]" started-at="2025-06-10T17:43:03 IST" name="login" finished-at="2025-06-10T17:43:09 IST" duration-ms="6780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@502f1f4c]" started-at="2025-06-10T16:57:53 IST" name="createSupportRequest" finished-at="2025-06-10T16:58:03 IST" duration-ms="10338" status="PASS">
+        <test-method signature="createTimeOff()[pri:0, instance:testCases.HRMS.SelfService.CreateTimeOffTest@502f1f4c]" started-at="2025-06-10T17:43:09 IST" name="createTimeOff" finished-at="2025-06-10T17:43:19 IST" duration-ms="10088" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createSupportRequest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@502f1f4c]" started-at="2025-06-10T16:58:03 IST" name="afterMethod" finished-at="2025-06-10T16:58:03 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- createTimeOff -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.SelfService.CreateTimeOffTest@502f1f4c]" started-at="2025-06-10T17:43:19 IST" name="afterMethod" finished-at="2025-06-10T17:43:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@502f1f4c]" started-at="2025-06-10T16:58:03 IST" name="teardown" finished-at="2025-06-10T16:58:03 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.CreateTimeOffTest@502f1f4c]" started-at="2025-06-10T17:43:19 IST" name="teardown" finished-at="2025-06-10T17:43:20 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.SelfService.CreateSupportRequestTest -->
+      </class> <!-- testCases.HRMS.SelfService.CreateTimeOffTest -->
     </test> <!-- Regression Tests -->
   </suite> <!-- NewTestCaseSuite -->
 </testng-results>
