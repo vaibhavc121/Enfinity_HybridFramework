@@ -32433,3 +32433,248 @@ Session ID: 1c2dbadbb1e393966d344cbe1eed642e
 2025-06-10 15:42:18.055 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
 2025-06-10 15:42:18.134 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
 2025-06-10 15:42:22.289 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 15:47:58.247 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:47:58.422 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:47:58.422 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - --test execution started--
+2025-06-10 15:47:59.543 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - browser maximized
+2025-06-10 15:48:01.859 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided app URL in browser
+2025-06-10 15:48:02.010 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided username
+2025-06-10 15:48:02.097 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided password
+2025-06-10 15:48:02.184 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - clicked on sign in button
+2025-06-10 15:48:24.002 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:48:24.002 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - --test execution started--
+2025-06-10 15:48:24.790 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - browser maximized
+2025-06-10 15:48:27.068 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided app URL in browser
+2025-06-10 15:48:27.167 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided username
+2025-06-10 15:48:27.258 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided password
+2025-06-10 15:48:31.784 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - clicked on sign in button
+2025-06-10 15:48:47.122 [main] ERROR testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d5e285e4ea90e315124b38332cb2dc2, clearElement {id=f.F89D197CB83FBA3E7553EF80EAFD2F9C.d.09E8BA2E07C9CF546881BDB7716490AD.e.218}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60644}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60644/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2d5e285e4ea90e315124b38332cb2dc2)] -> xpath: (//input[@class='dx-texteditor-input'])[2]]
+Session ID: 2d5e285e4ea90e315124b38332cb2dc2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129) ~[selenium-remote-driver-4.33.0.jar:?]
+	at base.BasePage.filterByIndex(BasePage.java:87) ~[test-classes/:?]
+	at base.BasePage.validateListing(BasePage.java:901) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 15:49:12.716 [main] ERROR testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - Test failed due to exception: 
+java.lang.RuntimeException: Vaibhav- There is no active records..
+	at pageObjects.HRMS.SelfService.SupportRequestCategoryPage.deleteTransaction(SupportRequestCategoryPage.java:175) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:32) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 15:50:03.470 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:50:03.653 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:50:03.653 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - --test execution started--
+2025-06-10 15:50:04.703 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - browser maximized
+2025-06-10 15:50:07.130 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided app URL in browser
+2025-06-10 15:50:07.294 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided username
+2025-06-10 15:50:07.388 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided password
+2025-06-10 15:50:11.552 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - clicked on sign in button
+2025-06-10 15:50:24.141 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:50:24.141 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - --test execution started--
+2025-06-10 15:50:24.914 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - browser maximized
+2025-06-10 15:50:26.888 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided app URL in browser
+2025-06-10 15:50:26.980 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided username
+2025-06-10 15:50:27.067 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided password
+2025-06-10 15:50:31.474 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - clicked on sign in button
+2025-06-10 15:50:46.139 [main] ERROR testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c1b00c94cfa53078d868109b9241ea29, sendKeysToElement {value=[Ljava.lang.CharSequence;@ed2f2f6, id=f.23CA7F228C0F73AAC63E042D3F7E48BA.d.6ACB7A26B3FDD68141576FA18A6D5330.e.228}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60963/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c1b00c94cfa53078d868109b9241ea29)] -> xpath: (//input[@class='dx-texteditor-input'])[2]]
+Session ID: c1b00c94cfa53078d868109b9241ea29
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110) ~[selenium-remote-driver-4.33.0.jar:?]
+	at base.BasePage.filterByIndex(BasePage.java:88) ~[test-classes/:?]
+	at base.BasePage.validateListing(BasePage.java:901) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 15:51:11.501 [main] ERROR testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - Test failed due to exception: 
+java.lang.RuntimeException: Vaibhav- There is no active records..
+	at pageObjects.HRMS.SelfService.SupportRequestCategoryPage.deleteTransaction(SupportRequestCategoryPage.java:175) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.DeleteSupportReqCategoryTest.deleteSupportReqCategory(DeleteSupportReqCategoryTest.java:32) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 15:51:46.937 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:51:47.140 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:51:47.141 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - --test execution started--
+2025-06-10 15:51:48.308 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - browser maximized
+2025-06-10 15:51:51.022 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided app URL in browser
+2025-06-10 15:51:51.178 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided username
+2025-06-10 15:51:51.275 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided password
+2025-06-10 15:51:55.812 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - clicked on sign in button
+2025-06-10 15:53:17.902 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:53:18.076 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:53:18.077 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - --test execution started--
+2025-06-10 15:53:19.205 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - browser maximized
+2025-06-10 15:53:22.040 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided app URL in browser
+2025-06-10 15:53:22.232 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided username
+2025-06-10 15:53:22.329 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided password
+2025-06-10 15:53:27.615 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - clicked on sign in button
+2025-06-10 15:55:43.100 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:55:43.300 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:55:43.300 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - --test execution started--
+2025-06-10 15:55:44.528 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - browser maximized
+2025-06-10 15:55:46.840 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided app URL in browser
+2025-06-10 15:55:47.023 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided username
+2025-06-10 15:55:47.125 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided password
+2025-06-10 15:55:51.335 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - clicked on sign in button
+2025-06-10 15:59:10.939 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:59:11.107 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:59:11.107 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - --test execution started--
+2025-06-10 15:59:12.159 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - browser maximized
+2025-06-10 15:59:14.478 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided app URL in browser
+2025-06-10 15:59:14.631 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided username
+2025-06-10 15:59:14.723 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - provided password
+2025-06-10 15:59:14.813 [main] INFO  testCases.HRMS.SelfService.CreateSupportRequestCategoryTest - clicked on sign in button
+2025-06-10 15:59:30.212 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:59:30.212 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - --test execution started--
+2025-06-10 15:59:30.924 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - browser maximized
+2025-06-10 15:59:33.211 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided app URL in browser
+2025-06-10 15:59:33.309 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided username
+2025-06-10 15:59:33.402 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - provided password
+2025-06-10 15:59:37.846 [main] INFO  testCases.HRMS.SelfService.DeleteSupportReqCategoryTest - clicked on sign in button

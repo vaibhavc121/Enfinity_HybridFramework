@@ -14,24 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest">
+      <class name="testCases.HRMS.SelfService.DeleteSupportReqCategoryTest">
         <methods>
           <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="deleteLeaveRequest"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.DeleteLeaveRequestTest -->
-      <class name="testCases.HRMS.SelfService.CreateLeaveRequestTest">
-        <methods>
-          <include name="setup"/>
+          <include name="deleteSupportReqCategory"/>
           <include name="afterMethod"/>
           <include name="teardown"/>
           <include name="login"/>
-          <include name="createLeaveRequest"/>
         </methods>
-      </class> <!-- testCases.HRMS.SelfService.CreateLeaveRequestTest -->
+      </class> <!-- testCases.HRMS.SelfService.DeleteSupportReqCategoryTest -->
     </classes>
   </test> <!-- Regression Tests(failed) -->
 </suite> <!-- Failed suite [NewTestCaseSuite] -->
