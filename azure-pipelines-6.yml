@@ -11,7 +11,7 @@ pool:
 
 jobs:
   - job: Regression_Test
-    timeoutInMinutes: 120
+    
     displayName: "Nightly Regression Suite"
     steps:
     - task: Maven@4
