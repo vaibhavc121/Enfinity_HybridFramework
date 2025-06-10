@@ -147,7 +147,7 @@ public class BasePage
 		String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
 		try
 		{
-			String result = waitForElement1(By.xpath(xpath)).getText();
+			String result = driver.findElement(By.xpath(xpath)).getText();
 			return result;
 		} catch (Exception e)
 		{
@@ -1117,7 +1117,7 @@ public class BasePage
 	public void hoverOverElement(WebElement locator)
 	{
 		Actions actions = new Actions(driver);
-		actions.moveToElement(waitForElement(locator)).perform();
+		actions.moveToElement(locator).perform();
 	}
 
 	public void dragAndDrop1(WebElement sourceLocator, WebElement targetLocator)

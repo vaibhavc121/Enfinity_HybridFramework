@@ -54,8 +54,8 @@
 			<!-- <class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/> -->
 			<!-- <class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest"/> -->
 			<!-- <class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/> -->
-			 <class name="testCases.HRMS.Payroll.CreateBenefitEncashmentTest"/> 
-			 <class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/> 
+			 <!--<class name="testCases.HRMS.Payroll.CreateBenefitEncashmentTest"/>--> 
+			 <!--<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>--> 
 			<!--<class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest"/>-->
 			
 			<!-- Self Service -->
@@ -68,8 +68,8 @@
 			<!-- <class name="testCases.HRMS.SelfService.DeleteHRAssetRequestTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.CreateLeaveRequestTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest" /> -->
-			<!-- <class name="testCases.HRMS.SelfService.CreateLoanRequestTest" /> -->
-			<!-- <class name="testCases.HRMS.SelfService.DeleteLoanRequestTest" /> -->
+			 <class name="testCases.HRMS.SelfService.CreateLoanRequestTest" /> 
+			 <class name="testCases.HRMS.SelfService.DeleteLoanRequestTest" /> 
 			<!-- <class name="testCases.HRMS.SelfService.CreateOvertimeApplicationTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.DeleteOvertimeApplicationTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.CreatePromotionRequestTest" /> -->

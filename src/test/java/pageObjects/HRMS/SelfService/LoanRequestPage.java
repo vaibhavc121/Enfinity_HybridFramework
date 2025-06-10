@@ -81,7 +81,7 @@ public class LoanRequestPage extends BasePage
 
 	public boolean isTxnCreated(String loanType, String loanAmt)
 	{
-		return resultValue(7).contains(loanType) && resultValue(7).contains(loanAmt);
+		return resultValue(6).contains(loanType) && resultValue(6).contains(loanAmt);
 	}
 
 }

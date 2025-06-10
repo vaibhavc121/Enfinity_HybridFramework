@@ -31606,3 +31606,276 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 2025-06-08 19:01:14.800 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided username
 2025-06-08 19:01:14.896 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - provided password
 2025-06-08 19:01:19.095 [main] INFO  testCases.HRMS.HRCore.DeleteEmployeeTest - clicked on sign in button
+2025-06-10 11:39:23.769 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 11:39:24.012 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 11:39:24.012 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 11:39:26.890 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 11:39:29.329 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 11:39:29.504 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 11:39:29.609 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 11:39:34.374 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 11:39:56.370 [main] ERROR testCases.HRMS.SelfService.CreateLoanRequestTest - Test failed due to exception: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for base.BasePage$$Lambda/0x000001f3203f7c88@6ca372ef (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265) ~[selenium-support-4.31.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.31.0.jar:?]
+	at base.BasePage.waitForElement(BasePage.java:793) ~[test-classes/:?]
+	at base.BasePage.hoverOverElement(BasePage.java:1120) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LoanRequestPage.clickPlusBtn(LoanRequestPage.java:52) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateLoanRequestTest.createLoanRequest(CreateLoanRequestTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 11:40:07.603 [main] ERROR testCases.HRMS.SelfService.CreateLoanRequestTest - Test failed due to exception: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (352, 25). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1366px; height: 589px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68f346efea409c38d66d3fb392e56905, clickElement {id=f.7B885F1ED204569891CD455B138567F3.d.0A135BCFE617EB5C5BC42C98C1E1ABBF.e.267}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57499/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (68f346efea409c38d66d3fb392e56905)] -> xpath: //span[normalize-space()='Self Service']]
+Session ID: 68f346efea409c38d66d3fb392e56905
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.SelfService.SelfServicePage.clickSelfService(SelfServicePage.java:33) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateLoanRequestTest.createLoanRequest(CreateLoanRequestTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 11:40:07.735 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 11:40:07.735 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 11:40:08.636 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 11:40:11.066 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 11:40:11.170 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 11:40:11.271 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 11:40:15.541 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 11:42:24.584 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 11:42:24.781 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 11:42:24.781 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 11:42:26.022 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 11:42:28.016 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 11:42:28.172 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 11:42:28.285 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 11:42:33.055 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 11:57:09.665 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 11:57:09.838 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 11:57:09.838 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 11:57:11.470 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 11:57:13.459 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 11:57:13.600 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 11:57:13.696 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 11:57:18.486 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 11:58:09.328 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 11:58:09.329 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 11:58:10.217 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 11:58:12.529 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 11:58:12.627 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 11:58:12.717 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 11:58:17.711 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:04:21.964 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:04:22.164 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:04:22.164 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:04:23.532 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:04:26.373 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:04:26.524 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:04:26.622 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:04:32.947 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:04:53.712 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:04:53.713 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:04:54.524 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:04:56.932 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:04:57.034 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:04:57.122 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:05:01.684 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:06:30.853 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:06:31.030 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:06:31.031 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:06:32.246 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:06:34.406 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:06:34.560 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:06:34.661 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:06:39.155 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:07:49.118 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:07:49.328 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:07:49.328 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:07:50.707 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:07:53.060 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:07:53.220 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:07:53.311 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:07:57.668 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:08:18.030 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:08:18.031 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:08:19.103 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:08:21.412 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:08:21.504 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:08:21.603 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:08:25.967 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:09:17.183 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:09:17.380 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:09:17.380 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:09:18.656 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:09:20.972 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:09:21.143 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:09:21.231 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:09:25.577 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:09:46.451 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:09:46.451 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:09:47.806 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:09:49.790 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:09:49.887 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:09:49.979 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:09:54.662 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:14:27.671 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:14:27.856 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:14:27.856 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:14:29.119 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:14:31.137 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:14:31.310 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:14:31.407 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:14:36.524 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:15:16.398 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:15:16.582 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:15:16.582 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:15:17.819 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:15:19.798 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:15:19.943 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:15:20.041 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:15:20.135 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:17:10.198 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:17:10.369 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:17:10.369 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:17:11.582 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:17:14.148 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:17:14.276 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:17:14.353 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:17:14.434 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:18:42.274 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:18:42.448 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:18:42.448 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:18:43.646 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:18:45.650 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:18:45.807 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:18:45.914 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:18:50.891 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:28:34.706 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:28:34.877 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:28:34.877 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:28:36.516 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:28:38.502 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:28:38.654 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:28:38.748 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:28:43.504 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:29:28.565 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:29:28.746 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:29:28.746 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:29:30.012 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:29:31.968 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:29:32.141 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:29:32.243 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:29:37.086 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:36:34.867 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:36:35.045 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:36:35.045 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - --test execution started--
+2025-06-10 12:36:36.300 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - browser maximized
+2025-06-10 12:36:38.581 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided app URL in browser
+2025-06-10 12:36:38.729 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided username
+2025-06-10 12:36:38.820 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - provided password
+2025-06-10 12:36:43.425 [main] INFO  testCases.HRMS.SelfService.CreateLoanRequestTest - clicked on sign in button
+2025-06-10 12:37:03.911 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:37:03.911 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - --test execution started--
+2025-06-10 12:37:04.717 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - browser maximized
+2025-06-10 12:37:11.510 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided app URL in browser
+2025-06-10 12:37:11.608 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
+2025-06-10 12:37:11.701 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
+2025-06-10 12:37:16.651 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button

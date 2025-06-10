@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DeleteLoanRequestTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, invocationCount = 3)
 	public void deleteLoanRequest()
 	{
 		try
@@ -28,8 +28,8 @@ public class DeleteLoanRequestTest extends BaseTest
 			LoanRequestPage lr = new LoanRequestPage(driver);
 			lr.clickLoanRequest();
 
-			BasePage.deleteTxn(6, "active");
-			Assert.assertFalse(BasePage.validateListing("active", 6, 6));
+			BasePage.deleteTxn(7, "active");
+			Assert.assertFalse(BasePage.validateListing("active", 7, 7));
 		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
