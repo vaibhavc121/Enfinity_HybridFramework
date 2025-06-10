@@ -27,14 +27,14 @@ public class DeleteSupportRequestTest extends BaseTest
 			// self service page
 			SelfServicePage ss = new SelfServicePage(driver);
 			ss.clickSelfService();
-			log("");
+			log("clickSelfService");
 			ss.clickTransactions();
-			log("");
+			log("clickSelfService");
 
 			// ITSupport page
 			ITSupportRequestPage it = new ITSupportRequestPage(driver);
 			it.clickITSupport();
-			log("");
+			log("clickSelfService");
 
 			BasePage.deleteTxn(7, "Active");
 			Assert.assertFalse(BasePage.validateListing("Active", 7, 7));
