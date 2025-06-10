@@ -69,6 +69,7 @@ public class LeaveRequestPage extends BasePage
 	{
 		WebElement dynamicLeaveType = driver.findElement(By.xpath("//p[@title='" + leaveType + "']"));
 		hoverAndClick(dynamicLeaveType, plusBtn);
+		waitTS(5);
 	}
 
 	public void provideFromDate(String value)

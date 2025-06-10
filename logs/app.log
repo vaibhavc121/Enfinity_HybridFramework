@@ -32272,3 +32272,147 @@ java.lang.RuntimeException: VRC- No matching record found
 2025-06-10 15:17:47.827 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on sign in button
 2025-06-10 15:17:47.903 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
 2025-06-10 15:17:49.612 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
+2025-06-10 15:28:12.828 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:28:13.004 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:28:13.004 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - --test execution started--
+2025-06-10 15:28:14.205 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - browser maximized
+2025-06-10 15:28:16.100 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided app URL in browser
+2025-06-10 15:28:16.242 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided username
+2025-06-10 15:28:16.340 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided password
+2025-06-10 15:28:21.548 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - clicked on sign in button
+2025-06-10 15:28:39.605 [main] ERROR testCases.HRMS.SelfService.CreateLeaveRequestTest - Test failed due to exception: 
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c2dbadbb1e393966d344cbe1eed642e, clickElement {id=f.0482E839363E95041D790E654CE9A759.d.9C7F56A66D00B056A03261BBBB70B324.e.296}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56962/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1c2dbadbb1e393966d344cbe1eed642e)] -> xpath: (//input[@class='dx-texteditor-input'])[3]]
+Session ID: 1c2dbadbb1e393966d344cbe1eed642e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at base.BasePage.clearAndProvide1(BasePage.java:305) ~[test-classes/:?]
+	at pageObjects.HRMS.SelfService.LeaveRequestPage.provideFromDate(LeaveRequestPage.java:76) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateLeaveRequestTest.createLeaveRequest(CreateLeaveRequestTest.java:39) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 15:28:59.793 [main] ERROR testCases.HRMS.SelfService.CreateLeaveRequestTest - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c2dbadbb1e393966d344cbe1eed642e, clickElement {id=f.0482E839363E95041D790E654CE9A759.d.0EA407089F6B99FEA58A34A793A55E75.e.375}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56962/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1c2dbadbb1e393966d344cbe1eed642e)] -> xpath: //span[text()='Transactions']]
+Session ID: 1c2dbadbb1e393966d344cbe1eed642e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.31.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.31.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.31.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.SelfService.SelfServicePage.clickTransactions(SelfServicePage.java:43) ~[test-classes/:?]
+	at testCases.HRMS.SelfService.CreateLeaveRequestTest.createLeaveRequest(CreateLeaveRequestTest.java:28) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 15:28:59.920 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:28:59.920 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - --test execution started--
+2025-06-10 15:29:00.739 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - browser maximized
+2025-06-10 15:29:02.730 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided app URL in browser
+2025-06-10 15:29:02.823 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided username
+2025-06-10 15:29:02.910 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided password
+2025-06-10 15:29:07.269 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - clicked on sign in button
+2025-06-10 15:33:22.729 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:33:22.912 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:33:22.912 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - --test execution started--
+2025-06-10 15:33:24.194 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - browser maximized
+2025-06-10 15:33:26.536 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided app URL in browser
+2025-06-10 15:33:26.684 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided username
+2025-06-10 15:33:26.785 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided password
+2025-06-10 15:33:32.327 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - clicked on sign in button
+2025-06-10 15:33:59.535 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:33:59.535 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - --test execution started--
+2025-06-10 15:34:00.432 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - browser maximized
+2025-06-10 15:34:02.714 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided app URL in browser
+2025-06-10 15:34:02.812 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided username
+2025-06-10 15:34:02.897 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided password
+2025-06-10 15:34:07.265 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - clicked on sign in button

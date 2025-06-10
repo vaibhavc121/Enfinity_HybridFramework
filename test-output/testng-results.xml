@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T15:16:53 IST" name="NewTestCaseSuite" finished-at="2025-06-10T15:18:06 IST" duration-ms="72936">
+  <suite started-at="2025-06-10T15:33:22 IST" name="NewTestCaseSuite" finished-at="2025-06-10T15:34:21 IST" duration-ms="58679">
     <groups>
       <group name="regression">
-        <method signature="CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance()[pri:0, instance:testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest@502f1f4c]" name="createLeaveOpeningBalance" class="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest"/>
-        <method signature="DeleteLeaveOpeningBalanceTest.deleteLeaveOpeningBalance()[pri:0, instance:testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest@7446d8d5]" name="deleteLeaveOpeningBalance" class="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/>
+        <method signature="CreateLeaveRequestTest.createLeaveRequest()[pri:0, instance:testCases.HRMS.SelfService.CreateLeaveRequestTest@502f1f4c]" name="createLeaveRequest" class="testCases.HRMS.SelfService.CreateLeaveRequestTest"/>
+        <method signature="DeleteLeaveRequestTest.deleteLeaveRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteLeaveRequestTest@7446d8d5]" name="deleteLeaveRequest" class="testCases.HRMS.SelfService.DeleteLeaveRequestTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-06-10T15:16:53 IST" name="Regression Tests" finished-at="2025-06-10T15:18:06 IST" duration-ms="72936">
-      <class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest@7446d8d5]" started-at="2025-06-10T15:17:39 IST" name="setup" finished-at="2025-06-10T15:17:43 IST" duration-ms="4017" status="PASS">
+    <test started-at="2025-06-10T15:33:22 IST" name="Regression Tests" finished-at="2025-06-10T15:34:21 IST" duration-ms="58679">
+      <class name="testCases.HRMS.SelfService.CreateLeaveRequestTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.CreateLeaveRequestTest@502f1f4c]" started-at="2025-06-10T15:33:22 IST" name="setup" finished-at="2025-06-10T15:33:26 IST" duration-ms="3634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,25 +27,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest@7446d8d5]" started-at="2025-06-10T15:17:43 IST" name="login" finished-at="2025-06-10T15:17:47 IST" duration-ms="4500" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.SelfService.CreateLeaveRequestTest@502f1f4c]" started-at="2025-06-10T15:33:26 IST" name="login" finished-at="2025-06-10T15:33:32 IST" duration-ms="5784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="deleteLeaveOpeningBalance()[pri:0, instance:testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest@7446d8d5]" started-at="2025-06-10T15:17:47 IST" name="deleteLeaveOpeningBalance" finished-at="2025-06-10T15:18:06 IST" duration-ms="18248" status="PASS">
+        <test-method signature="createLeaveRequest()[pri:0, instance:testCases.HRMS.SelfService.CreateLeaveRequestTest@502f1f4c]" started-at="2025-06-10T15:33:32 IST" name="createLeaveRequest" finished-at="2025-06-10T15:33:59 IST" duration-ms="27039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteLeaveOpeningBalance -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest@7446d8d5]" started-at="2025-06-10T15:18:06 IST" name="afterMethod" finished-at="2025-06-10T15:18:06 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- createLeaveRequest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.SelfService.CreateLeaveRequestTest@502f1f4c]" started-at="2025-06-10T15:33:59 IST" name="afterMethod" finished-at="2025-06-10T15:33:59 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest@7446d8d5]" started-at="2025-06-10T15:18:06 IST" name="teardown" finished-at="2025-06-10T15:18:06 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.CreateLeaveRequestTest@502f1f4c]" started-at="2025-06-10T15:33:59 IST" name="teardown" finished-at="2025-06-10T15:33:59 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest -->
-      <class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest@502f1f4c]" started-at="2025-06-10T15:16:53 IST" name="setup" finished-at="2025-06-10T15:16:56 IST" duration-ms="3521" status="PASS">
+      </class> <!-- testCases.HRMS.SelfService.CreateLeaveRequestTest -->
+      <class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.DeleteLeaveRequestTest@7446d8d5]" started-at="2025-06-10T15:33:59 IST" name="setup" finished-at="2025-06-10T15:34:02 IST" duration-ms="3181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,23 +61,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest@502f1f4c]" started-at="2025-06-10T15:16:56 IST" name="login" finished-at="2025-06-10T15:17:01 IST" duration-ms="4425" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.SelfService.DeleteLeaveRequestTest@7446d8d5]" started-at="2025-06-10T15:34:02 IST" name="login" finished-at="2025-06-10T15:34:07 IST" duration-ms="4550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createLeaveOpeningBalance()[pri:0, instance:testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest@502f1f4c]" started-at="2025-06-10T15:17:01 IST" name="createLeaveOpeningBalance" finished-at="2025-06-10T15:17:39 IST" duration-ms="37687" status="PASS">
+        <test-method signature="deleteLeaveRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteLeaveRequestTest@7446d8d5]" started-at="2025-06-10T15:34:07 IST" name="deleteLeaveRequest" finished-at="2025-06-10T15:34:21 IST" duration-ms="13994" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createLeaveOpeningBalance -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest@502f1f4c]" started-at="2025-06-10T15:17:39 IST" name="afterMethod" finished-at="2025-06-10T15:17:39 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- deleteLeaveRequest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.SelfService.DeleteLeaveRequestTest@7446d8d5]" started-at="2025-06-10T15:34:21 IST" name="afterMethod" finished-at="2025-06-10T15:34:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest@502f1f4c]" started-at="2025-06-10T15:17:39 IST" name="teardown" finished-at="2025-06-10T15:17:39 IST" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.DeleteLeaveRequestTest@7446d8d5]" started-at="2025-06-10T15:34:21 IST" name="teardown" finished-at="2025-06-10T15:34:21 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest -->
+      </class> <!-- testCases.HRMS.SelfService.DeleteLeaveRequestTest -->
     </test> <!-- Regression Tests -->
   </suite> <!-- NewTestCaseSuite -->
 </testng-results>
