@@ -591,6 +591,8 @@ public class BasePage
 	{
 		// selectFilterAll();
 		filterByIndex(2, value);
+		BaseTest.log("value filtered");
+
 		try
 		{
 			Thread.sleep(2000);

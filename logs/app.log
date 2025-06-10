@@ -32197,3 +32197,78 @@ Session ID: 74aa3af645491570e3f98564b0d0615a
 2025-06-10 14:00:02.576 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on sign in button
 2025-06-10 14:00:02.658 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
 2025-06-10 14:00:04.715 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
+2025-06-10 15:16:17.561 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:16:17.792 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:16:17.793 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 15:16:20.655 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 15:16:23.204 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 15:16:23.386 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 15:16:23.479 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 15:16:27.976 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 15:16:37.102 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - value filtered
+2025-06-10 15:16:39.138 [main] ERROR testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - Test failed due to exception: 
+java.lang.RuntimeException: VRC- No matching record found
+	at base.BasePage.navigateToEmployee(BasePage.java:612) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest.createLeaveOpeningBalance(CreateLeaveOpeningBalanceTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-10 15:16:53.285 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 15:16:53.482 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:16:53.482 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 15:16:54.767 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - browser maximized
+2025-06-10 15:16:56.989 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 15:16:57.153 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided username
+2025-06-10 15:16:57.239 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided password
+2025-06-10 15:17:01.421 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 15:17:05.085 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - value filtered
+2025-06-10 15:17:14.878 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-10 15:17:16.270 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on txn
+2025-06-10 15:17:17.344 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on LeaveOpening Balance
+2025-06-10 15:17:17.428 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on New
+2025-06-10 15:17:24.111 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided Emp
+2025-06-10 15:17:26.393 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided Effective Date
+2025-06-10 15:17:28.585 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided LeaveType
+2025-06-10 15:17:30.763 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided PaidDays
+2025-06-10 15:17:30.907 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - provided Remarks
+2025-06-10 15:17:31.500 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clicked on View
+2025-06-10 15:17:31.889 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clickApprove
+2025-06-10 15:17:32.881 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clickHRCore
+2025-06-10 15:17:33.552 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - clickEmployee
+2025-06-10 15:17:34.360 [main] INFO  testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest - value filtered
+2025-06-10 15:17:39.310 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 15:17:39.311 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - --test execution started--
+2025-06-10 15:17:40.756 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - browser maximized
+2025-06-10 15:17:43.326 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided app URL in browser
+2025-06-10 15:17:43.432 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided username
+2025-06-10 15:17:43.524 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - provided password
+2025-06-10 15:17:47.827 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on sign in button
+2025-06-10 15:17:47.903 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on payroll link
+2025-06-10 15:17:49.612 [main] INFO  testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest - clicked on txn
