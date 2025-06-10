@@ -31896,3 +31896,20 @@ Session ID: 68f346efea409c38d66d3fb392e56905
 2025-06-10 12:45:30.333 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided username
 2025-06-10 12:45:30.429 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - provided password
 2025-06-10 12:45:35.242 [main] INFO  testCases.HRMS.SelfService.DeleteLoanRequestTest - clicked on sign in button
+2025-06-10 12:58:59.815 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-10 12:59:00.021 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:59:00.021 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - --test execution started--
+2025-06-10 12:59:01.211 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - browser maximized
+2025-06-10 12:59:03.850 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided app URL in browser
+2025-06-10 12:59:03.999 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided username
+2025-06-10 12:59:04.098 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - provided password
+2025-06-10 12:59:08.686 [main] INFO  testCases.HRMS.SelfService.CreateLeaveRequestTest - clicked on sign in button
+2025-06-10 12:59:35.399 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-10 12:59:35.399 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - --test execution started--
+2025-06-10 12:59:36.207 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - browser maximized
+2025-06-10 12:59:38.933 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided app URL in browser
+2025-06-10 12:59:39.033 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided username
+2025-06-10 12:59:39.130 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - provided password
+2025-06-10 12:59:43.539 [main] INFO  testCases.HRMS.SelfService.DeleteLeaveRequestTest - clicked on sign in button

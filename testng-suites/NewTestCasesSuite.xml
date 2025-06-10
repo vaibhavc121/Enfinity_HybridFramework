@@ -66,10 +66,10 @@
 			<!-- <class name="testCases.HRMS.SelfService.CreateHRAssetRequest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.CreateHRAssetReturnTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.DeleteHRAssetRequestTest" /> -->
-			<!-- <class name="testCases.HRMS.SelfService.CreateLeaveRequestTest" /> -->
-			<!-- <class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest" /> -->
-			 <class name="testCases.HRMS.SelfService.CreateLoanRequestTest" /> 
-			 <class name="testCases.HRMS.SelfService.DeleteLoanRequestTest" /> 
+			 <class name="testCases.HRMS.SelfService.CreateLeaveRequestTest" /> 
+			 <class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest" /> 
+			<!--<class name="testCases.HRMS.SelfService.CreateLoanRequestTest" />--> 
+			<!-- <class name="testCases.HRMS.SelfService.DeleteLoanRequestTest" />--> 
 			<!-- <class name="testCases.HRMS.SelfService.CreateOvertimeApplicationTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.DeleteOvertimeApplicationTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.CreatePromotionRequestTest" /> -->
