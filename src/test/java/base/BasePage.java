@@ -801,7 +801,7 @@ public class BasePage
 		WebElement element = fluentWait.until(driver ->
 		{
 			WebElement el = driver.findElement(locator);
-			return (el.isDisplayed() && el.isEnabled()) ? el : null;
+			return (el.isDisplayed() || el.isEnabled()) ? el : null;
 		});
 
 		element.click();
@@ -816,7 +816,7 @@ public class BasePage
 		return fluentWait.until(driver ->
 		{
 			WebElement el = element;
-			return (el.isDisplayed() && el.isEnabled()) ? el : null;
+			return (el.isDisplayed() || el.isEnabled()) ? el : null;
 		});
 	}
 
@@ -829,7 +829,7 @@ public class BasePage
 		return fluentWait.until(driver ->
 		{
 			WebElement el = driver.findElement(locator);
-			return (el.isDisplayed() && el.isEnabled()) ? el : null;
+			return (el.isDisplayed() || el.isEnabled()) ? el : null;
 		});
 	}
 

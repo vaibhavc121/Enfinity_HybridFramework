@@ -56,7 +56,7 @@ public class LeavePage extends BasePage
 
 	public void provideEffectiveDt(String value)
 	{
-		clearAndProvide1(effectiveDate, value);
+		selectDropdownValue(value);
 	}
 
 	public void provideLeaveType(String value)
