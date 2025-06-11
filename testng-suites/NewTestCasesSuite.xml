@@ -56,13 +56,13 @@
 			<!-- <class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/> -->
 			 <!--<class name="testCases.HRMS.Payroll.CreateBenefitEncashmentTest"/>--> 
 			 <!--<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>--> 
-			<!--<class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest"/>-->
-			<!--<class name="testCases.HRMS.Payroll.DeleteTicketEncashmentTest"/>-->
+			<class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest"/>
+			<class name="testCases.HRMS.Payroll.DeleteTicketEncashmentTest"/>
 			
 			
 			<!-- Self Service -->
-			<!-- <class name="testCases.HRMS.SelfService.CreateBenefitClaimTest" /> -->
-			<!-- <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest" /> -->
+			 <!--<class name="testCases.HRMS.SelfService.CreateBenefitClaimTest" /> -->
+		<!--	 <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest" /> -->
 			<!-- <class name="testCases.HRMS.SelfService.CreateHRAssetRequest" /> -->

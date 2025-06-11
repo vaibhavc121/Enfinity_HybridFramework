@@ -44,8 +44,8 @@ public class CreateLeaveTest extends BaseTest
 				logger.info("clicked on new btn");
 				lp.provideEmp(leave.employee);
 				logger.info("emp selected");
-				lp.provideEffectiveDt(leave.effectiveDate);
-				logger.info("provided effective date");
+//				lp.provideEffectiveDt(leave.effectiveDate);
+//				logger.info("provided effective date");
 				lp.provideLeaveType(leave.leaveType);
 				logger.info("leave type selected");
 				lp.provideFromDt(leave.fromDate);
