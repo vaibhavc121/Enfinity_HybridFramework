@@ -14,15 +14,15 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.Payroll.DeleteTicketEncashmentTest">
+      <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest">
         <methods>
           <include name="setup"/>
           <include name="afterMethod"/>
           <include name="teardown"/>
-          <include name="deleteTicketEncashment"/>
+          <include name="deleteBenefitClaim"/>
           <include name="login"/>
         </methods>
-      </class> <!-- testCases.HRMS.Payroll.DeleteTicketEncashmentTest -->
+      </class> <!-- testCases.HRMS.SelfService.DeleteBenefitClaimTest -->
     </classes>
   </test> <!-- Regression Tests(failed) -->
 </suite> <!-- Failed suite [NewTestCaseSuite] -->

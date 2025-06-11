@@ -34329,3 +34329,201 @@ Session ID: 2e38dee6e97820d3d9c8ce60a680e3f7
 2025-06-10 19:03:12.292 [main] INFO  testCases.HRMS.Payroll.DeleteTicketEncashmentTest - clicked on txn
 2025-06-10 19:03:14.204 [main] INFO  testCases.HRMS.Payroll.DeleteTicketEncashmentTest - value cleared in filter box
 2025-06-10 19:03:14.283 [main] INFO  testCases.HRMS.Payroll.DeleteTicketEncashmentTest - provided filter value
+2025-06-11 18:00:29.071 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-11 18:00:29.314 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-11 18:00:29.314 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - --test execution started--
+2025-06-11 18:00:32.829 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - browser maximized
+2025-06-11 18:00:34.864 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided app URL in browser
+2025-06-11 18:00:35.939 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:00:36.030 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:00:40.423 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:00:46.896 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:00:46.964 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:00:49.106 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:00:49.183 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:00:54.338 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:00:54.538 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:00:56.001 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:00:56.644 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:02:04.927 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-11 18:02:05.144 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-11 18:02:05.144 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - --test execution started--
+2025-06-11 18:02:06.858 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - browser maximized
+2025-06-11 18:02:08.915 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided app URL in browser
+2025-06-11 18:02:09.069 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:02:09.189 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:02:14.879 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:02:20.786 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:02:20.849 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:02:22.958 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:02:23.047 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:02:28.155 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:02:28.343 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:02:29.639 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:02:29.654 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:02:30.621 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:02:30.689 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:10:47.891 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-11 18:10:48.098 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-11 18:10:48.098 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - --test execution started--
+2025-06-11 18:10:49.749 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - browser maximized
+2025-06-11 18:10:51.723 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided app URL in browser
+2025-06-11 18:10:51.872 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:10:51.966 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:10:56.479 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:11:02.349 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:11:02.410 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:11:04.557 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:11:04.634 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:11:09.714 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:11:09.889 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:11:35.632 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-11 18:11:35.807 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-11 18:11:35.807 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - --test execution started--
+2025-06-11 18:11:36.893 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - browser maximized
+2025-06-11 18:11:38.945 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided app URL in browser
+2025-06-11 18:11:39.103 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:11:39.195 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:11:43.849 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:11:50.866 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:11:50.931 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:11:53.023 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:11:53.096 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:11:58.179 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:11:58.353 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:11:59.669 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:12:00.397 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:15:39.543 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-11 18:15:39.736 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-11 18:15:39.736 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - --test execution started--
+2025-06-11 18:15:40.897 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - browser maximized
+2025-06-11 18:15:43.067 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided app URL in browser
+2025-06-11 18:15:43.228 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:15:43.313 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:15:47.710 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:15:52.298 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:15:52.357 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:15:54.536 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:15:54.642 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:15:59.733 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:15:59.907 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:16:01.384 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:16:02.113 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:16:03.767 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:16:03.830 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:19:21.426 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-11 18:19:21.603 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-11 18:19:21.603 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - --test execution started--
+2025-06-11 18:19:22.750 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - browser maximized
+2025-06-11 18:19:25.314 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided app URL in browser
+2025-06-11 18:19:25.459 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:19:25.557 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:19:30.014 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:19:35.328 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:19:35.397 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:19:37.544 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:19:37.651 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:19:42.744 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:19:42.923 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:19:44.350 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:19:44.962 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:19:47.342 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:19:47.428 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:19:49.522 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:19:54.559 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:19:54.624 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:19:56.802 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:19:56.861 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:20:02.076 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:20:02.238 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:20:03.512 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:20:04.192 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:20:06.765 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:20:06.848 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:20:08.038 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:20:12.058 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:20:12.123 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:20:14.238 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:20:14.310 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:20:19.430 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:20:19.601 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:20:20.835 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:20:20.849 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:20:24.770 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:20:24.848 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:20:27.043 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:20:32.302 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:20:32.369 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:20:34.458 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:20:34.525 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:20:39.608 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:20:39.781 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:20:41.162 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:20:41.873 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:20:44.991 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:20:45.073 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:20:47.642 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:20:51.801 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:20:51.865 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:20:53.942 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:20:54.012 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:20:59.095 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:20:59.264 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:21:00.488 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:21:01.137 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:21:05.694 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:21:05.778 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:21:06.949 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:21:11.454 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:21:11.518 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:21:13.663 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:21:13.736 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:21:18.898 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:21:19.079 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:21:20.304 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:21:20.919 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:21:24.488 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:21:24.572 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:21:26.630 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:21:31.146 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:21:31.219 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:21:33.374 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:21:33.442 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:21:38.517 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:21:38.683 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:21:39.962 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:21:39.981 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:21:43.388 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:21:43.463 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:21:44.689 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:21:48.880 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:21:48.942 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:21:51.060 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:21:51.132 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:21:56.267 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:21:56.427 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:21:57.935 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:21:58.566 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
+2025-06-11 18:22:02.388 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided username
+2025-06-11 18:22:02.468 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided password
+2025-06-11 18:22:04.355 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on sign in button
+2025-06-11 18:22:08.448 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - value cleared in filter box
+2025-06-11 18:22:08.512 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - provided filter value
+2025-06-11 18:22:10.689 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - row selected
+2025-06-11 18:22:10.760 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clickOnView
+2025-06-11 18:22:15.825 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clciked on setting
+2025-06-11 18:22:15.987 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - clicked on delete
+2025-06-11 18:22:17.346 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - enter pressed
+2025-06-11 18:22:17.957 [main] INFO  testCases.HRMS.SelfService.DeleteBenefitClaimTest - went back to listing
