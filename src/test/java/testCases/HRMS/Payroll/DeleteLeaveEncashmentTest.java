@@ -43,7 +43,7 @@ public class DeleteLeaveEncashmentTest extends BaseTest
 				logger.info("clicked on leave adj");
 
 				BasePage.performAction(6, LeaveEncashment.employee, "Amend");
-				Assert.assertFalse(BasePage.validateListing(LeaveEncashment.employee, 6, 6));
+				Assert.assertFalse(BasePage.validateListing("Approved", 6, 6));
 			}
 
 		} catch (Exception e)

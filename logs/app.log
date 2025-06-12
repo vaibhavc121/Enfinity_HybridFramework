@@ -35204,3 +35204,158 @@ Session ID: 66defd71c02f1bff506bb992206a5d91
 2025-06-11 23:26:07.792 [main] INFO  testCases.HRMS.Payroll.DeleteVariableSalaryTest - provided filter value
 2025-06-11 23:27:50.254 [main] INFO  testCases.HRMS.Payroll.DeleteVariableSalaryTest - value cleared in filter box
 2025-06-11 23:27:50.490 [main] INFO  testCases.HRMS.Payroll.DeleteVariableSalaryTest - provided filter value
+2025-06-12 18:17:31.659 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-12 18:17:31.838 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-12 18:17:31.839 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - --test execution started--
+2025-06-12 18:17:33.323 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - browser maximized
+2025-06-12 18:17:35.836 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provided app URL in browser
+2025-06-12 18:17:36.011 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provided username
+2025-06-12 18:17:36.110 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provided password
+2025-06-12 18:17:41.188 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - clicked on sign in button
+2025-06-12 18:17:41.412 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - clicked on payroll link
+2025-06-12 18:17:43.459 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - clicked on txn
+2025-06-12 18:17:44.718 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - clicked on overtime
+2025-06-12 18:17:44.807 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - clicked on new
+2025-06-12 18:17:51.171 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - employee selected
+2025-06-12 18:17:53.416 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provideEffectiveDate
+2025-06-12 18:17:55.598 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provideOvertimeDate
+2025-06-12 18:17:57.891 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provideOvertimeType
+2025-06-12 18:18:00.217 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provideHrs
+2025-06-12 18:18:04.232 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - clicked on approve
+2025-06-12 18:18:04.627 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - value cleared in filter box
+2025-06-12 18:18:04.708 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provided filter value
+2025-06-12 18:18:06.817 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - value cleared in filter box
+2025-06-12 18:18:06.929 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest - provided filter value
+2025-06-12 18:18:09.142 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-12 18:18:09.142 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - --test execution started--
+2025-06-12 18:18:09.846 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - browser maximized
+2025-06-12 18:18:11.836 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided app URL in browser
+2025-06-12 18:18:11.921 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided username
+2025-06-12 18:18:12.010 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided password
+2025-06-12 18:18:16.432 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on sign in button
+2025-06-12 18:18:16.507 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on payroll link
+2025-06-12 18:18:18.477 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on txn
+2025-06-12 18:18:19.720 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on overtime
+2025-06-12 18:18:20.527 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - value cleared in filter box
+2025-06-12 18:18:20.595 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided filter value
+2025-06-12 18:18:30.022 [main] ERROR testCases.HRMS.Payroll.DeleteOvertimeTest - Test failed due to exception: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="dxWeb_mAdaptiveMenu_Office365 dxm-pImage" src="/DXR.axd?r=1_87-BPe0u" alt="..." id="MainMenu_DXI18_PImg" style="margin-top: 6.28125px;"> is not clickable at point (1351, 70). Other element would receive the click: <div id="Timeline_DXPWMB-1" class="dxpcModalBackLite_Office365" style="z-index: 11999; inset: 0px; opacity: 0.7; visibility: visible;">...</div>
+  (Session info: chrome=137.0.7151.70)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa7aa8b82344974298a538ac760a1ec4, clickElement {id=f.E51727D0D2F24430D718AD52D35E8303.d.FBA5BCC2912BDF48E2FF4A12B07BF625.e.373}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.70, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53571}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53571/devtoo..., se:cdpVersion: 137.0.7151.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aa7aa8b82344974298a538ac760a1ec4)] -> xpath: (//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]]
+Session ID: aa7aa8b82344974298a538ac760a1ec4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.33.0.jar:?]
+	at base.BasePage.performAction(BasePage.java:511) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.DeleteOvertimeTest.verifyOvertime(DeleteOvertimeTest.java:43) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-12 18:18:41.199 [main] ERROR testCases.HRMS.Payroll.DeleteOvertimeTest - Test failed due to exception: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (252, 25). Other element would receive the click: <span class="dxpc-headerText dx-vam" id="Timeline_PWH-1T">...</span>
+  (Session info: chrome=137.0.7151.70)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa7aa8b82344974298a538ac760a1ec4, clickElement {id=f.E51727D0D2F24430D718AD52D35E8303.d.FBA5BCC2912BDF48E2FF4A12B07BF625.e.409}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.70, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53571}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53571/devtoo..., se:cdpVersion: 137.0.7151.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aa7aa8b82344974298a538ac760a1ec4)] -> xpath: //span[normalize-space()='Payroll']]
+Session ID: aa7aa8b82344974298a538ac760a1ec4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.33.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkPayroll(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.DeleteOvertimeTest.verifyOvertime(DeleteOvertimeTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-06-12 18:18:58.644 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Vaibhav\Automation\Enfinity_HybridFramework\testng-suites\NewTestCasesSuite.xml
+
+2025-06-12 18:18:58.826 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-12 18:18:58.826 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - --test execution started--
+2025-06-12 18:18:59.961 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - browser maximized
+2025-06-12 18:19:02.019 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided app URL in browser
+2025-06-12 18:19:02.186 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided username
+2025-06-12 18:19:02.300 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided password
+2025-06-12 18:19:06.542 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on sign in button
+2025-06-12 18:19:07.217 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on payroll link
+2025-06-12 18:19:08.764 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on txn
+2025-06-12 18:19:10.041 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - clicked on overtime
+2025-06-12 18:19:10.929 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - value cleared in filter box
+2025-06-12 18:19:10.995 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest - provided filter value

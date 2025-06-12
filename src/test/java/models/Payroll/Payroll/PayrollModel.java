@@ -80,4 +80,24 @@ public class PayrollModel
 		public String issueTickets;
 	}
 
+	public static class TicketAdjustmentModel
+	{
+		public String reportName;
+		public String employee;
+		public String effectiveDate;
+		public String paymentType;
+		public String issueTickets;
+	}
+
+	public static class OvertimeModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String overtimeDate;
+		public String overtimeType;
+		public String overtimeHrs;
+		public String expectedOvertimeAmt;
+
+	}
+
 }

@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-11T23:25:08 IST" name="NewTestCaseSuite" finished-at="2025-06-11T23:27:52 IST" duration-ms="164065">
+  <suite started-at="2025-06-12T18:18:58 IST" name="NewTestCaseSuite" finished-at="2025-06-12T18:19:21 IST" duration-ms="23010">
     <groups>
       <group name="regression">
-        <method signature="DeleteVariableSalaryTest.deleteVariableSalary()[pri:0, instance:testCases.HRMS.Payroll.DeleteVariableSalaryTest@62f87c44]" name="deleteVariableSalary" class="testCases.HRMS.Payroll.DeleteVariableSalaryTest"/>
+        <method signature="DeleteOvertimeTest.verifyOvertime()[pri:0, instance:testCases.HRMS.Payroll.DeleteOvertimeTest@27305e6]" name="verifyOvertime" class="testCases.HRMS.Payroll.DeleteOvertimeTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-06-11T23:25:08 IST" name="Regression Tests" finished-at="2025-06-11T23:27:52 IST" duration-ms="164065">
-      <class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.Payroll.DeleteVariableSalaryTest@62f87c44]" started-at="2025-06-11T23:25:09 IST" name="setup" finished-at="2025-06-11T23:25:24 IST" duration-ms="15876" status="PASS">
+    <test started-at="2025-06-12T18:18:58 IST" name="Regression Tests" finished-at="2025-06-12T18:19:21 IST" duration-ms="23010">
+      <class name="testCases.HRMS.Payroll.DeleteOvertimeTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.Payroll.DeleteOvertimeTest@27305e6]" started-at="2025-06-12T18:18:58 IST" name="setup" finished-at="2025-06-12T18:19:02 IST" duration-ms="3203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,23 +26,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.Payroll.DeleteVariableSalaryTest@62f87c44]" started-at="2025-06-11T23:25:24 IST" name="login" finished-at="2025-06-11T23:25:33 IST" duration-ms="9051" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.HRMS.Payroll.DeleteOvertimeTest@27305e6]" started-at="2025-06-12T18:19:02 IST" name="login" finished-at="2025-06-12T18:19:06 IST" duration-ms="4508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="deleteVariableSalary()[pri:0, instance:testCases.HRMS.Payroll.DeleteVariableSalaryTest@62f87c44]" started-at="2025-06-11T23:25:33 IST" name="deleteVariableSalary" finished-at="2025-06-11T23:27:52 IST" duration-ms="138597" status="PASS">
+        <test-method signature="verifyOvertime()[pri:0, instance:testCases.HRMS.Payroll.DeleteOvertimeTest@27305e6]" started-at="2025-06-12T18:19:06 IST" name="verifyOvertime" finished-at="2025-06-12T18:19:21 IST" duration-ms="14978" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteVariableSalary -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.Payroll.DeleteVariableSalaryTest@62f87c44]" started-at="2025-06-11T23:27:52 IST" name="afterMethod" finished-at="2025-06-11T23:27:52 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- verifyOvertime -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.HRMS.Payroll.DeleteOvertimeTest@27305e6]" started-at="2025-06-12T18:19:21 IST" name="afterMethod" finished-at="2025-06-12T18:19:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.Payroll.DeleteVariableSalaryTest@62f87c44]" started-at="2025-06-11T23:27:52 IST" name="teardown" finished-at="2025-06-11T23:27:52 IST" duration-ms="292" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.Payroll.DeleteOvertimeTest@27305e6]" started-at="2025-06-12T18:19:21 IST" name="teardown" finished-at="2025-06-12T18:19:21 IST" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.Payroll.DeleteVariableSalaryTest -->
+      </class> <!-- testCases.HRMS.Payroll.DeleteOvertimeTest -->
     </test> <!-- Regression Tests -->
   </suite> <!-- NewTestCaseSuite -->
 </testng-results>

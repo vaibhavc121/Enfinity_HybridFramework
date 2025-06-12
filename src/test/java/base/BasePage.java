@@ -163,6 +163,11 @@ public class BasePage
 	}
 
 	// Transaction form related Action Methods
+	public static void clickOnHamburgerMenu()
+	{
+		waitForElement1(By.id("leftAreaMenu_DXI0_")).click();
+	}
+
 	public static void clickOnOk()
 	{
 		waitForElement1(By.xpath("//span[normalize-space()='OK']")).click();
@@ -192,6 +197,16 @@ public class BasePage
 	public static void clickOnApprove()
 	{
 		waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
+	}
+
+	public static void clickOnViewApproveBack()
+	{
+		waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
+		waitTS(1);
+		waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
+		waitTS(1);
+		driver.navigate().back();
+
 	}
 
 	public static void clickReject()

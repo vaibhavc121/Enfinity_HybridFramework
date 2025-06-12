@@ -1,5 +1,6 @@
 package pageObjects.HRMS.Payroll;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +20,7 @@ public class TicketAdjustmentPage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Ticket Adjustment']")
 	WebElement ticketAdjustment;
 
-	@FindBy(xpath = "//img[@id='TicketEncashment.EmployeeIdLookup_B-1Img']")
+	@FindBy(xpath = "//input[@id='TicketEncashment.EmployeeIdLookup_I']")
 	WebElement empdd;
 
 	@FindBy(xpath = "//td[@id='TicketEncashment.PaymentType_B-1']")
@@ -31,43 +32,42 @@ public class TicketAdjustmentPage extends BasePage
 	@FindBy(xpath = "//i[@class='dx-icon dx-icon-new-icon']")
 	WebElement newLine;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[5]/td[7]")
+	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]/div[1]")
 	WebElement issueTicket;
 
 	@FindBy(xpath = "//tbody/tr[@id='TicketEncashmentLine_DXDataRow-1']/td[7]/div[1]")
 	WebElement issueTicket1;
 
-	public void clkTicketAdjustment()
+	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[6]")
+	WebElement issueTicket2;
+
+	@FindBy(xpath = "//td[@class='dx-ellipsis']")
+	WebElement grid;
+
+	public void clickTicketAdjustment()
 	{
 		ticketAdjustment.click();
 	}
 
-	public void clkNew()
+	public void clickNew()
 	{
 		clickOnNew();
 	}
 
-	public void clkEmpDD()
+	public void provideEmployee(String value)
 	{
-		empdd.click();
+		clearAndProvide1(empdd, value);
+		waitTS(2);
 	}
 
-	public void slctEmp() throws InterruptedException
-	{
-		CommonActions.setDropdownValue("Vaibhav Chavan");
-	}
-
-	public void clkPaymentTypeDD()
+	public void selectPaymentType(String value)
 	{
 		paymentTypeDD.click();
+		selectDropdownValueOffice365(value);
+		waitTS(2);
 	}
 
-	public void slctPaymentType()
-	{
-		payWithPayroll.click();
-	}
-
-	public void clkSave()
+	public void clickSave()
 	{
 		clickOnSave();
 	}
@@ -76,21 +76,50 @@ public class TicketAdjustmentPage extends BasePage
 //	{
 //		newLine.click();
 //	}
-
-	public void provideIssueTicket()
+	public boolean checkAvailableTicket()
 	{
-		issueTicket1.click();
-		issueTicket1.sendKeys("2");
+		String availableTicket = driver.findElement(By.xpath(
+				"/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[5]"))
+				.getText();
+
+		// String availableTicket = driver.findElement(By.xpath("(//div[@class='dxgBCTC
+		// dx-ellipsis'])[4]")).getText();
+
+		double availableTicketDouble = Double.parseDouble(availableTicket);
+		if (availableTicketDouble > 1)
+		{
+			return true;
+		} else
+		{
+			return false;
+		}
 	}
 
-	public void clkView()
+	public void provideIssueTickets(String value) throws Exception
+	{
+		if (checkAvailableTicket())
+		{
+			// clearAndProvide2(issueTicket, value);
+			// clearAndProvide2(issueTicket, value);
+			grid.click();
+			clearAndProvide2(issueTicket1, value);
+			issueTicket.sendKeys(value);
+
+			// clearAndProvide1(issueTicket, value);
+		} else
+		{
+			throw new Exception("VRC- ticket balance is less than 1");
+		}
+	}
+
+	public void clickView()
 	{
 		clickOnView();
 	}
 
-	public void clkApprove()
+	public void clickApproveBack()
 	{
-		clickOnApprove();
+		clickApproveAndBack();
 	}
 
 	public boolean isTxnCreated()

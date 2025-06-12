@@ -75,7 +75,28 @@
 			"issueTickets":"1"	
 				
 		}
-	]
+	],
+	
+	"createTicketAdjustment":[
+		{
+			"reportName": "Ticket Balance",				
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",	
+			"paymentType":"Pay Now",	
+			"issueTickets":"1"	
+		}
+	],
+	
+	"createOvertime":[
+		{					
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",	
+			"overtimeDate": "01-01-2025",	
+			"overtimeType":"Normal Overtime",	
+			"overtimeHrs":"1",
+			"expectedOvertimeAmt":"2.016"	
+			}
+		]
 
 	
 	

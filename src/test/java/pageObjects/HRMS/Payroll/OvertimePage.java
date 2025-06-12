@@ -21,8 +21,17 @@ public class OvertimePage extends BasePage
 	@FindBy(xpath = "//span[normalize-space()='Overtime']")
 	WebElement overtime;
 
-	@FindBy(xpath = "//img[@id='Overtime.EmployeeIdLookup_B-1Img']")
+	@FindBy(xpath = "//input[@id='Overtime.EmployeeIdLookup_I']")
 	WebElement empdd;
+
+	@FindBy(xpath = "//input[@id='Overtime.EffectiveDate_I']")
+	WebElement effectiveDate;
+
+	@FindBy(xpath = "//input[@id='Overtime.OvertimeDate_I']")
+	WebElement overtimeDate;
+
+	@FindBy(xpath = "//input[@id='Overtime.OvertimeTypeIdLookup_I']")
+	WebElement overtimeType;
 
 	@FindBy(xpath = "//img[@id='Overtime.OvertimeTypeIdLookup_B-1Img']")
 	WebElement overtimeTypeDD;
@@ -38,97 +47,78 @@ public class OvertimePage extends BasePage
 
 	BaseTest bc = new BaseTest();
 
-	public void clkOvertime()
+	public void clickOvertime()
 	{
 		overtime.click();
 
 	}
 
-	public void clkNew()
+	public void clickNew()
 	{
 		clickOnNew();
 	}
 
-	public void clkEmpDD()
+	public void provideEmp(String value)
 	{
-		empdd.click();
+		clearAndProvide1(empdd, value);
 	}
 
-	public void slctEmp() throws InterruptedException
+	public void provideEffectiveDate(String value)
 	{
-		CommonActions.setDropdownValue("Vaibhav Chavan");
+		clearAndProvide1(effectiveDate, value);
 	}
 
-	public void clickOverTimeDD() throws InterruptedException
+	public void provideOvertimeDate(String value)
 	{
-		overtimeTypeDD.click();
-		Thread.sleep(2000);
+		clearAndProvide1(overtimeDate, value);
 	}
 
-	String overtimeType = "Normal Overtime";
-
-	public void slctOvertime() throws InterruptedException
+	public void provideOvertimeType(String value)
 	{
-		CommonActions.setDropdownValue("Normal Overtime");
+		clearAndProvide1(overtimeType, value);
 	}
 
-	public void provideHrs()
+	public void provideHrs(String value)
 	{
-		hours.click();
-		hours.clear();
-		hours.sendKeys("1");
+		clearAndProvide1(hours, value);
 	}
 
-	public void clkPayBenefitDD()
+	public void selectPayBenefit()
 	{
 		payBenefitDD.click();
-
-	}
-
-	public void slctPayBenefit()
-	{
-		CommonActions.setDropdownValueOffice365("Leave Balance Days");
-	}
-
-	public void clkLeaveType()
-	{
-		leaveTypeDD.click();
+		selectDropdownValueOffice365("Leave Balance Days");
 	}
 
 	public void slctLeaveType() throws InterruptedException
 	{
-		CommonActions.setDropdownValue("Annual Leave");
+		leaveTypeDD.click();
+		selectDropdownValue("Annual Leave");
 	}
 
-	public void clkView()
+	public void clickApproveBack()
 	{
-		clickOnView();
+		clickOnViewApproveBack();
 	}
 
-	public void clkApprove()
-	{
-		clickOnApprove();
-	}
-
-	public boolean isTxnCreated()
-	{
-		String expEffectiveDt = CommonActions.formattedDateMMM();
-		String expOvertimeType = overtimeType;
-		String expAmt = driver.findElement(By.xpath("//input[@id='Overtime.AmountFC_I']")).getText();
-
-		CommonActions.filterCell5(expEffectiveDt);
-		CommonActions.filterCell7(expOvertimeType);
-		CommonActions.filterCell8(expAmt);
-
-		if (CommonActions.result5().contains(expEffectiveDt) && CommonActions.result7().contains(expOvertimeType)
-				&& CommonActions.result8().contains(expAmt))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-
-	}
+//	public boolean isTxnCreated()
+//	{
+//		String expEffectiveDt = CommonActions.formattedDateMMM();
+//		String expOvertimeType = overtimeType;
+//		String expAmt = driver.findElement(By.xpath("//input[@id='Overtime.AmountFC_I']")).getText();
+//
+//		CommonActions.filterCell5(expEffectiveDt);
+//		CommonActions.filterCell7(expOvertimeType);
+//		CommonActions.filterCell8(expAmt);
+//
+//		if (CommonActions.result5().contains(expEffectiveDt) && CommonActions.result7().contains(expOvertimeType)
+//				&& CommonActions.result8().contains(expAmt))
+//		{
+//			return true;
+//		} else
+//		{
+//			return false;
+//		}
+//
+//	}
 
 }

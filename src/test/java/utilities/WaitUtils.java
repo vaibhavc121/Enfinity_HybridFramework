@@ -58,7 +58,7 @@ public class WaitUtils
 		}
 	}
 
-	public static void waitTs(int seconds)
+	public static void waitTS(int seconds)
 	{
 		try
 		{
