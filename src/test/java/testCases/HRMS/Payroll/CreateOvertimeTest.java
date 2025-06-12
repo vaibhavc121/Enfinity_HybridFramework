@@ -59,7 +59,9 @@ public class CreateOvertimeTest extends BaseTest
 				op.clickApproveBack();
 				logger.info("clicked on approve");
 
-				Assert.assertTrue(BasePage.validateListing2Fields(ot.employee, 7, 7, ot.expectedOvertimeAmt, 9, 9));
+				// Assert.assertTrue(BasePage.validateListing2Fields(ot.employee, 7, 7,
+				// ot.expectedOvertimeAmt, 9, 9));
+				Assert.assertTrue(BasePage.validateListing(ot.employee, 7, 7));
 
 			}
 

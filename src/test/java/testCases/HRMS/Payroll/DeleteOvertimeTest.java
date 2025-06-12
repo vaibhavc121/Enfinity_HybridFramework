@@ -41,7 +41,7 @@ public class DeleteOvertimeTest extends BaseTest
 				logger.info("clicked on overtime");
 
 				BasePage.performAction(10, "Approved", "Amend");
-				// Assert.assertFalse(BasePage.validateListing("Approved", 10, 10));
+				Assert.assertFalse(BasePage.validateListing("Approved", 10, 10));
 
 			}
 
