@@ -16,39 +16,37 @@ import utilities.RetryAnalyzer;
 
 public class DeleteOvertimeTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void verifyOvertime()
-	{
-		try
-		{
-			String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-			List<OvertimeModel> overtimeData = JsonUtils.convertJsonListDataModel(payrollFile, "createOvertime",
-					OvertimeModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void deleteOvertime()
+    {
+        try
+        {
+            String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+            List<OvertimeModel> overtimeData = JsonUtils.convertJsonListDataModel(payrollFile, "createOvertime",
+                    OvertimeModel.class);
 
-			// payroll pg
-			PayrollPage pp = new PayrollPage(driver);
-			pp.clkPayroll();
-			logger.info("clicked on payroll link");
-			pp.clkTxn();
-			logger.info("clicked on txn");
+            // payroll pg
+            PayrollPage pp = new PayrollPage(driver);
+            pp.clkPayroll();
+            logger.info("clicked on payroll link");
+            pp.clkTxn();
+            logger.info("clicked on txn");
 
-			// overtime pg
-			OvertimePage op = new OvertimePage(driver);
+            // overtime pg
+            OvertimePage op = new OvertimePage(driver);
 
-			for (OvertimeModel ot : overtimeData)
-			{
-				op.clickOvertime();
-				logger.info("clicked on overtime");
+            for (OvertimeModel ot : overtimeData)
+            {
+                op.clickOvertime();
+                logger.info("clicked on overtime");
 
-				BasePage.performAction(7, ot.employee, "Amend");
-				Assert.assertFalse(BasePage.validateListing(ot.employee, 7, 7));
-
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
+                BasePage.performAction(7, ot.employee, "Amend");
+                Assert.assertFalse(BasePage.validateListing(ot.employee, 7, 7));
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

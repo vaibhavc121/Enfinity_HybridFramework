@@ -35846,3 +35846,118 @@ Session ID: cdd42bb77c3c010268e97d18a2ba6e7f
 2025-06-14 16:43:40.652 [main] INFO  testCases.HRMS.Attendance.AttendanceTest - value cleared in filter box
 2025-06-14 16:43:40.852 [main] INFO  testCases.HRMS.Attendance.AttendanceTest - provided filter value
 2025-06-14 16:43:42.908 [main] INFO  testCases.HRMS.Attendance.AttendanceTest - --test execution completed--
+2025-06-14 22:07:52.397 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 22:07:52.403 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - --test execution started--
+2025-06-14 22:07:56.618 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser opened
+2025-06-14 22:07:56.679 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser maximized
+2025-06-14 22:08:15.425 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided app URL in browser
+2025-06-14 22:08:15.797 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided username
+2025-06-14 22:08:16.021 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided password
+2025-06-14 22:08:16.221 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - clicked on sign in button
+2025-06-14 22:08:28.797 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - clicked on payroll link
+2025-06-14 22:08:30.678 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - clicked on txn
+2025-06-14 22:08:32.529 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - clicked on overtime
+2025-06-14 22:08:32.719 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - clicked on new
+2025-06-14 22:08:46.035 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - employee selected
+2025-06-14 22:08:48.460 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - provideEffectiveDate
+2025-06-14 22:08:50.783 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - provideOvertimeDate
+2025-06-14 22:08:53.181 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - provideOvertimeType
+2025-06-14 22:08:55.535 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - provideHrs
+2025-06-14 22:08:59.665 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.verifyOvertime - clicked on approve
+2025-06-14 22:09:00.191 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - value cleared in filter box
+2025-06-14 22:09:00.421 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - provided filter value
+2025-06-14 22:09:02.546 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.teardown - --test execution completed--
+2025-06-14 22:09:02.874 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 22:09:02.874 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - --test execution started--
+2025-06-14 22:09:03.738 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser opened
+2025-06-14 22:09:03.792 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser maximized
+2025-06-14 22:09:20.545 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided app URL in browser
+2025-06-14 22:09:20.695 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided username
+2025-06-14 22:09:20.950 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided password
+2025-06-14 22:09:31.716 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - clicked on sign in button
+2025-06-14 22:09:31.844 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.verifyOvertime - clicked on payroll link
+2025-06-14 22:09:36.445 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.verifyOvertime - clicked on txn
+2025-06-14 22:09:38.312 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.verifyOvertime - clicked on overtime
+2025-06-14 22:09:39.336 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - value cleared in filter box
+2025-06-14 22:09:39.457 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - provided filter value
+2025-06-14 22:10:05.236 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - value cleared in filter box
+2025-06-14 22:10:05.401 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - provided filter value
+2025-06-14 22:10:07.477 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.teardown - --test execution completed--
+2025-06-14 22:32:47.226 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 22:32:47.232 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - --test execution started--
+2025-06-14 22:32:48.617 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser opened
+2025-06-14 22:32:48.672 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser maximized
+2025-06-14 22:33:06.203 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided app URL in browser
+2025-06-14 22:33:06.514 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided username
+2025-06-14 22:33:06.791 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided password
+2025-06-14 22:33:16.243 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - clicked on sign in button
+2025-06-14 22:33:17.143 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on payroll link
+2025-06-14 22:33:19.124 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on txn
+2025-06-14 22:33:20.522 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on overtime
+2025-06-14 22:33:20.692 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on new
+2025-06-14 22:33:32.748 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - employee selected
+2025-06-14 22:33:35.050 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideEffectiveDate
+2025-06-14 22:33:37.299 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideOvertimeDate
+2025-06-14 22:33:39.685 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideOvertimeType
+2025-06-14 22:33:41.946 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideHrs
+2025-06-14 22:33:45.286 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on approve
+2025-06-14 22:33:46.625 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - value cleared in filter box
+2025-06-14 22:33:46.755 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - provided filter value
+2025-06-14 22:33:48.880 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.teardown - --test execution completed--
+2025-06-14 22:33:49.220 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 22:33:49.221 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - --test execution started--
+2025-06-14 22:33:50.107 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser opened
+2025-06-14 22:33:50.171 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser maximized
+2025-06-14 22:34:06.429 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided app URL in browser
+2025-06-14 22:34:06.550 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided username
+2025-06-14 22:34:06.666 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided password
+2025-06-14 22:34:16.232 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - clicked on sign in button
+2025-06-14 22:34:16.322 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on payroll link
+2025-06-14 22:34:18.129 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on txn
+2025-06-14 22:34:19.398 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on overtime
+2025-06-14 22:34:20.220 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - value cleared in filter box
+2025-06-14 22:34:20.358 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - provided filter value
+2025-06-14 22:34:37.623 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - value cleared in filter box
+2025-06-14 22:34:37.710 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - provided filter value
+2025-06-14 22:34:39.740 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.teardown - --test execution completed--
+2025-06-14 22:50:45.340 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 22:50:45.347 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - --test execution started--
+2025-06-14 22:50:47.409 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - browser opened
+2025-06-14 22:50:47.469 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - browser maximized
+2025-06-14 22:51:07.323 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - provided app URL in browser
+2025-06-14 22:51:07.650 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - provided username
+2025-06-14 22:51:07.872 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - provided password
+2025-06-14 22:51:17.469 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.setup - clicked on sign in button
+2025-06-14 22:51:20.867 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - 
+2025-06-14 22:51:22.624 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - clickNew
+2025-06-14 22:51:26.689 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - provideTimetableName
+2025-06-14 22:51:27.065 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - selectDayType
+2025-06-14 22:51:27.237 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - clickNightShift
+2025-06-14 22:51:29.664 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - selectMode
+2025-06-14 22:51:32.019 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - provideMaximumWorkedHourPerDay
+2025-06-14 22:51:34.317 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - provideMaximumWorkedHourPerDay
+2025-06-14 22:51:36.693 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - provideMaximumWorkedHourPerDay
+2025-06-14 22:51:40.418 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - provideMaximumWorkedHourPerDay
+2025-06-14 22:51:40.774 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - value cleared in filter box
+2025-06-14 22:51:40.955 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - provided filter value
+2025-06-14 22:51:43.024 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.log - assertion completed
+2025-06-14 22:51:43.060 [main] INFO  testCases.HRMS.Attendance.CreateNightShiftTimetableTest.teardown - --test execution completed--
+2025-06-14 22:51:43.415 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 22:51:43.415 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - --test execution started--
+2025-06-14 22:51:44.252 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - browser opened
+2025-06-14 22:51:44.303 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - browser maximized
+2025-06-14 22:51:59.187 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - provided app URL in browser
+2025-06-14 22:51:59.304 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - provided username
+2025-06-14 22:51:59.417 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - provided password
+2025-06-14 22:52:10.230 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.setup - clicked on sign in button
+2025-06-14 22:52:15.640 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - value cleared in filter box
+2025-06-14 22:52:15.745 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - provided filter value
+2025-06-14 22:52:17.890 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - row selected
+2025-06-14 22:52:17.969 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - clickOnView
+2025-06-14 22:52:23.072 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - clciked on setting
+2025-06-14 22:52:23.213 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - clicked on delete
+2025-06-14 22:52:24.507 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - enter pressed
+2025-06-14 22:52:25.158 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - went back to listing
+2025-06-14 22:52:25.450 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - value cleared in filter box
+2025-06-14 22:52:25.538 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - provided filter value
+2025-06-14 22:52:27.617 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.teardown - --test execution completed--
