@@ -24,6 +24,7 @@ import pageObjects.HRMS.HRCore.LoginPage;
 
 public class BaseTest
 {
+    //region Global Variables and Logger Initialization
     public static WebDriver driver;
     // public static SelfHealingDriver driver; // updated to SelfHealingDriver
     public Properties p;
@@ -33,7 +34,9 @@ public class BaseTest
     {
         logger.info(message);
     }
+    //endregion
 
+    //region Setup
     @SuppressWarnings("deprecation")
     @BeforeClass(groups = {"regression", "datadriven"})
     @Parameters({"os", "browser"})
@@ -53,21 +56,26 @@ public class BaseTest
         Configuration.timeout = 5000;
         //endregion
 
+        //region config.properties file setup
         // Loading config.properties file
         // read- e- input stream
         FileReader file = new FileReader("./src//test//resources//config.properties");
         p = new Properties();
         p.load(file);
+        //endregion
 
+        //region Logger Setup
         logger = LogManager.getLogger(this.getClass()); // log4j2
-
         logger.info(">>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<");
         logger.info("--test execution started--");
+        //endregion
 
-        // code for execution on selenium grid
+        //region If execution on selenium grid or Remote Env
         if (p.getProperty("execution_env").equals("remote"))
         {
             DesiredCapabilities capabilities = new DesiredCapabilities();
+
+            //region Set Platform
 
             // OS (we are getting os from xml file)
             if (os.equalsIgnoreCase("windows"))
@@ -87,7 +95,9 @@ public class BaseTest
                 System.out.println("no matching os");
                 return; // It will automatically exit
             }
+            //endregion
 
+            //region Set Browser
             // browser (we are getting browser from xml file)
             switch (browser.toLowerCase())
             {
@@ -125,8 +135,11 @@ public class BaseTest
                     return;
                 // It will automatically exit from switch case statement
             }
+            //endregion
 
-//			if (br.equalsIgnoreCase("chrome"))
+            //region Browser setup using if_else condition (Optional)
+
+            //			if (br.equalsIgnoreCase("chrome"))
 //			{
 //			    ChromeOptions options = new ChromeOptions();
 //			    options.setCapability("browserVersion", "129");
@@ -148,46 +161,60 @@ public class BaseTest
 //			    throw new IllegalArgumentException("Unsupported browser: " + br);
 //			}
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            //endregion
 
-            /* for selenium grid standalone */
-//			driver = new RemoteWebDriver(new URL("http://192.168.102.117:4444/wd/hub"), capabilities);
-            /* for docker container on selenium grid */
-//			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-            /* for browserstack */
-//			driver = new RemoteWebDriver(
-//					new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
-//					capabilities);
+            //region For selenium grid standalone
+            // driver = new RemoteWebDriver(new URL("http://192.168.102.117:4444/wd/hub"), capabilities);
             // driver = SelfHealingDriver.create(_driver);
-        }
+            //endregion
 
+            //region For docker container on selenium grid
+            // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            // driver = SelfHealingDriver.create(_driver);
+            //endregion
+
+            //region For browserstack
+//            driver = new RemoteWebDriver(
+//                    new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
+//                    capabilities);
+            // driver = SelfHealingDriver.create(_driver);
+            //endregion
+
+        }
+        //endregion
+
+        //region If execution on Local
         if (p.getProperty("execution_env").equals("local"))
         {
-//			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("--headless"); // Run in headless mode
-//			options.addArguments("--no-sandbox"); // Required for CI environments
-//			options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
+            // ChromeOptions options = new ChromeOptions();
+            // options.addArguments("--headless"); // Run in headless mode
+            // options.addArguments("--no-sandbox"); // Required for CI environments
+            // options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
 
             switch (browser.toLowerCase())
             {
                 case "chrome":
                     // driver = new ChromeDriver(options);
                     driver = new ChromeDriver();
+                    logger.info("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
-//				logger.info("Chrome browser opened with Healenium");
+                    // logger.info("Chrome browser opened with Healenium");
                     // logger.info("browser opened");
 
                     break;
 
                 case "edge":
                     driver = new EdgeDriver();
+                    logger.info("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
-//				logger.info("Edge browser opened with Healenium");
+                    // logger.info("Edge browser opened with Healenium");
                     // logger.info("browser opened");
 
                 case "firefox":
                     driver = new FirefoxDriver();
+                    logger.info("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
-//				logger.info("Firefox browser opened with Healenium");
+                    // logger.info("Firefox browser opened with Healenium");
                     // logger.info("browser opened");
 
                     break;
@@ -197,25 +224,20 @@ public class BaseTest
                     return; // return- totally exit from the execution
             }
         }
+        // region Browser Setup
 
-//		driver = new ChromeDriver();
-//		logger.info("browser opened");
+        // driver = new ChromeDriver();
+        // logger.info("browser opened");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         logger.info("browser maximized");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(p.getProperty("appurl")); // Reading
-        // URL
-        // from
-        // properties
-        // file
+        driver.get(p.getProperty("appurl")); // Readin URL from properties file
         logger.info("provided app URL in browser");
-    }
 
-    @BeforeMethod(groups = {"regression", "datadriven"})
-    public void login()
-    {
-        // login page
+        //endregion
+
+        //region Login
         LoginPage lp = new LoginPage(driver);
         lp.setUsername(p.getProperty("username"));
         logger.info("provided username");
@@ -223,23 +245,26 @@ public class BaseTest
         logger.info("provided password");
         lp.clkSignin();
         logger.info("clicked on sign in button");
-    }
+        //endregion
+        //endregion
 
-    @AfterMethod(groups = {"regression", "datadriven"})
-    public void afterMethod()
-    {
-        System.out.println("--test execution completed--");
     }
+    //endregion
 
+    //region TearDown
     @AfterClass(groups = {"regression", "datadriven"})
     public void teardown()
     {
+        logger.info("--test execution completed--");
         driver.quit();
     }
+    //endregion
 
+    //region Additional Code
     // used in extent report manager class
     public WebDriver getDriver()
     {
         return driver;
     }
+    //endregion
 }
