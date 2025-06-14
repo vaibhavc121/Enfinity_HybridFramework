@@ -59,8 +59,8 @@
             <!--<class name="testCases.HRMS.Payroll.DeleteBenefitEncashmentTest"/>-->
             <!--<class name="testCases.HRMS.Payroll.CreateTicketEncashmentTest"/>-->
             <!--<class name="testCases.HRMS.Payroll.DeleteTicketEncashmentTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.CreateOvertimeTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.DeleteOvertimeTest"/>-->
+            <!--<class name="testCases.HRMS.Payroll.CreateOvertimeTest"/>-->
+            <!--<class name="testCases.HRMS.Payroll.DeleteOvertimeTest"/>-->
 
 
             <!-- Self Service -->

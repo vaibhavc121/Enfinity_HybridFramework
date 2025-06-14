@@ -35961,3 +35961,157 @@ Session ID: cdd42bb77c3c010268e97d18a2ba6e7f
 2025-06-14 22:52:25.450 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - value cleared in filter box
 2025-06-14 22:52:25.538 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.log - provided filter value
 2025-06-14 22:52:27.617 [main] INFO  testCases.HRMS.Attendance.DeleteNightShiftTimetableTest.teardown - --test execution completed--
+2025-06-14 23:05:02.357 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 23:05:02.364 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - --test execution started--
+2025-06-14 23:05:04.335 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - browser opened
+2025-06-14 23:05:04.392 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - browser maximized
+2025-06-14 23:05:26.965 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided app URL in browser
+2025-06-14 23:05:27.191 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided username
+2025-06-14 23:05:27.285 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided password
+2025-06-14 23:05:36.825 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - clicked on sign in button
+2025-06-14 23:06:05.185 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:06:05.391 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:06:13.131 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:06:13.254 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:06:15.464 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - row selected
+2025-06-14 23:06:15.620 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clickOnView
+2025-06-14 23:06:20.822 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clciked on setting
+2025-06-14 23:06:21.030 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clicked on delete
+2025-06-14 23:06:22.276 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - enter pressed
+2025-06-14 23:06:22.302 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - went back to listing
+2025-06-14 23:06:23.151 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:06:23.331 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:06:56.950 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:06:57.170 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:06:59.343 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - row selected
+2025-06-14 23:06:59.554 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clickOnView
+2025-06-14 23:07:04.902 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clciked on setting
+2025-06-14 23:07:05.223 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clicked on delete
+2025-06-14 23:07:06.521 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - enter pressed
+2025-06-14 23:07:08.034 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - went back to listing
+2025-06-14 23:07:08.454 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:07:08.629 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:07:25.816 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:07:25.987 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:07:28.233 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - row selected
+2025-06-14 23:07:28.433 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clickOnView
+2025-06-14 23:07:33.663 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clciked on setting
+2025-06-14 23:07:33.832 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clicked on delete
+2025-06-14 23:07:35.107 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - enter pressed
+2025-06-14 23:07:36.464 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - went back to listing
+2025-06-14 23:07:36.910 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:07:37.077 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:08:03.628 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:08:03.763 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:08:12.770 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:08:13.021 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:08:15.270 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - row selected
+2025-06-14 23:08:15.414 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clickOnView
+2025-06-14 23:08:20.612 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clciked on setting
+2025-06-14 23:08:20.950 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clicked on delete
+2025-06-14 23:08:22.189 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - enter pressed
+2025-06-14 23:08:23.712 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - went back to listing
+2025-06-14 23:08:24.236 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:08:24.446 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:08:57.211 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:08:57.383 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:09:04.993 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:09:05.183 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:09:07.353 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - row selected
+2025-06-14 23:09:07.498 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clickOnView
+2025-06-14 23:09:12.638 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clciked on setting
+2025-06-14 23:09:12.908 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clicked on delete
+2025-06-14 23:09:14.172 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - enter pressed
+2025-06-14 23:09:15.405 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - went back to listing
+2025-06-14 23:09:15.853 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:09:16.042 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:09:49.638 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:09:49.783 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:09:58.809 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:09:58.938 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:10:01.173 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - row selected
+2025-06-14 23:10:01.364 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clickOnView
+2025-06-14 23:10:06.546 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clciked on setting
+2025-06-14 23:10:06.839 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clicked on delete
+2025-06-14 23:10:08.074 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - enter pressed
+2025-06-14 23:10:09.525 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - went back to listing
+2025-06-14 23:10:09.998 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:10:10.172 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:10:36.552 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:10:36.703 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:10:45.531 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:10:45.664 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:10:47.887 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - row selected
+2025-06-14 23:10:48.025 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clickOnView
+2025-06-14 23:10:53.230 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clciked on setting
+2025-06-14 23:10:53.474 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - clicked on delete
+2025-06-14 23:10:54.731 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - enter pressed
+2025-06-14 23:10:55.970 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - went back to listing
+2025-06-14 23:10:56.410 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - value cleared in filter box
+2025-06-14 23:10:56.619 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - provided filter value
+2025-06-14 23:10:58.659 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.teardown - --test execution completed--
+2025-06-14 23:24:31.792 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 23:24:31.798 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - --test execution started--
+2025-06-14 23:24:35.340 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser opened
+2025-06-14 23:24:35.399 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser maximized
+2025-06-14 23:25:09.858 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 23:25:09.862 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - --test execution started--
+2025-06-14 23:25:11.066 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser opened
+2025-06-14 23:25:11.104 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser maximized
+2025-06-14 23:25:31.552 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 23:25:31.556 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - --test execution started--
+2025-06-14 23:25:32.658 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser opened
+2025-06-14 23:25:32.706 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser maximized
+2025-06-14 23:25:47.391 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided app URL in browser
+2025-06-14 23:25:47.582 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided username
+2025-06-14 23:25:47.735 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided password
+2025-06-14 23:25:58.668 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - clicked on sign in button
+2025-06-14 23:26:02.730 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on payroll link
+2025-06-14 23:26:06.638 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on txn
+2025-06-14 23:26:08.742 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on overtime
+2025-06-14 23:26:09.219 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on new
+2025-06-14 23:26:21.279 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - employee selected
+2025-06-14 23:26:23.705 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideEffectiveDate
+2025-06-14 23:26:26.086 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideOvertimeDate
+2025-06-14 23:26:28.559 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideOvertimeType
+2025-06-14 23:26:30.899 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideHrs
+2025-06-14 23:26:36.283 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on approve
+2025-06-14 23:26:37.004 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - filterByIndex - value cleared in filter box
+2025-06-14 23:26:37.206 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - filterByIndex - provided filter value
+2025-06-14 23:26:39.308 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.teardown - --test execution completed--
+2025-06-14 23:26:39.551 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 23:26:39.551 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - --test execution started--
+2025-06-14 23:26:40.371 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser opened
+2025-06-14 23:26:40.423 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser maximized
+2025-06-14 23:26:56.996 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided app URL in browser
+2025-06-14 23:26:57.142 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided username
+2025-06-14 23:26:57.392 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided password
+2025-06-14 23:27:06.810 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - clicked on sign in button
+2025-06-14 23:27:06.960 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on payroll link
+2025-06-14 23:27:10.234 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on txn
+2025-06-14 23:27:11.566 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on overtime
+2025-06-14 23:27:12.363 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - value cleared in filter box
+2025-06-14 23:27:12.548 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - provided filter value
+2025-06-14 23:27:35.619 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - value cleared in filter box
+2025-06-14 23:27:35.851 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - provided filter value
+2025-06-14 23:27:37.921 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.teardown - --test execution completed--
+2025-06-14 23:28:21.230 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-14 23:28:21.235 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - --test execution started--
+2025-06-14 23:28:22.402 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - browser opened
+2025-06-14 23:28:22.457 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - browser maximized
+2025-06-14 23:28:38.041 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided app URL in browser
+2025-06-14 23:28:38.377 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided username
+2025-06-14 23:28:38.570 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided password
+2025-06-14 23:28:49.184 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - clicked on sign in button
+2025-06-14 23:29:17.047 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - value cleared in filter box
+2025-06-14 23:29:17.221 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - provided filter value
+2025-06-14 23:29:25.036 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - value cleared in filter box
+2025-06-14 23:29:25.168 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - provided filter value
+2025-06-14 23:29:27.369 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - deleteTxn - row selected
+2025-06-14 23:29:27.522 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - deleteTxn - clickOnView
+2025-06-14 23:29:32.707 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - deleteTxn - clciked on setting
+2025-06-14 23:29:32.889 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - deleteTxn - clicked on delete
+2025-06-14 23:29:34.117 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - deleteTxn - enter pressed
+2025-06-14 23:29:34.709 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - deleteTxn - went back to listing
+2025-06-14 23:29:35.098 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - value cleared in filter box
+2025-06-14 23:29:35.293 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - provided filter value

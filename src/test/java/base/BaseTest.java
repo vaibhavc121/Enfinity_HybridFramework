@@ -30,9 +30,14 @@ public class BaseTest
     public Properties p;
     public static Logger logger; // log4j
 
+    //    public static void log(String message)
+//    {
+//        logger.info(message);
+//    }
     public static void log(String message)
     {
-        logger.info(message);
+        String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
+        logger.info(methodName + " - " + message);
     }
     //endregion
 
