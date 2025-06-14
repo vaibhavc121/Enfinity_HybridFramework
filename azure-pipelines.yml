@@ -10,8 +10,8 @@ pool:
   vmImage: windows-latest
 
 jobs:
-  - job: Regression_Test
-    displayName: "Regression testcase execution"
+  - job: Regression_NewTestCases
+    displayName: "Regression(New) testcase execution"
     steps:
     - task: Maven@4
       inputs:
