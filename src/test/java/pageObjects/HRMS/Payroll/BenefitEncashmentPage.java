@@ -10,52 +10,52 @@ import utilities.CommonActions;
 public class BenefitEncashmentPage extends BasePage
 {
 
-	public BenefitEncashmentPage(WebDriver driver)
-	{
-		super(driver);
-	}
+    public BenefitEncashmentPage(WebDriver driver)
+    {
+        super(driver);
+    }
 
-	@FindBy(xpath = "//span[normalize-space()='Benefit Scheme Encashment']")
-	WebElement benefitSchemeEncashment;
+    @FindBy(xpath = "//span[normalize-space()='Benefit Scheme Encashment']")
+    WebElement benefitSchemeEncashment;
 
-	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EffectiveDate_I']")
-	WebElement effectiveDate;
+    @FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EffectiveDate_I']")
+    WebElement effectiveDate;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[5]/span[1]")
-	WebElement monthYear;
+    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[5]/span[1]")
+    WebElement monthYear;
 
-	@FindBy(xpath = "//img[@id='BenefitSchemeEncashment.EffectiveDate_DDD_C_PMCImg']")
-	WebElement previousMonth;
+    @FindBy(xpath = "//img[@id='BenefitSchemeEncashment.EffectiveDate_DDD_C_PMCImg']")
+    WebElement previousMonth;
 
-	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EmployeeIdLookup_I']")
-	WebElement empdd;
+    @FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EmployeeIdLookup_I']")
+    WebElement empdd;
 
-	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_I']")
-	WebElement benefitSchemeDD;
+    @FindBy(xpath = "//input[@id='BenefitSchemeEncashment.EmployeeBenefitSchemeIdLookup_I']")
+    WebElement benefitSchemeDD;
 
-	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.RequestedAmount_I']")
-	WebElement requestedAmount;
+    @FindBy(xpath = "//input[@id='BenefitSchemeEncashment.RequestedAmount_I']")
+    WebElement requestedAmount;
 
-	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.ApprovedAmount_I']")
-	WebElement approvedAmount;
+    @FindBy(xpath = "//input[@id='BenefitSchemeEncashment.ApprovedAmount_I']")
+    WebElement approvedAmount;
 
-	@FindBy(xpath = "//input[@id='BenefitSchemeEncashment.PaymentType_I']")
-	WebElement paymentType;
+    @FindBy(xpath = "//input[@id='BenefitSchemeEncashment.PaymentType_I']")
+    WebElement paymentType;
 
-	public void clkBenefitEncashment()
-	{
-		benefitSchemeEncashment.click();
-	}
+    public void clkBenefitEncashment()
+    {
+        benefitSchemeEncashment.click();
+    }
 
-	public void clkNew()
-	{
-		clickOnNew();
-	}
+    public void clkNew()
+    {
+        clickOnNew();
+    }
 
-	public void provideEffectiveDate(String value)
-	{
-		clearAndProvide1(effectiveDate, value);
-	}
+    public void provideEffectiveDate(String value)
+    {
+        clearAndProvide1(effectiveDate, value);
+    }
 
 //	public void slctEffectiveDate()
 //	{
@@ -86,68 +86,67 @@ public class BenefitEncashmentPage extends BasePage
 //
 //	}
 
-	public void provideEmp(String value) throws InterruptedException
-	{
-		clearAndProvide1(empdd, value);
-	}
+    public void provideEmp(String value) throws InterruptedException
+    {
+        clearAndProvide1(empdd, value);
+    }
 
-	public void provideBenefitScheme(String value) throws InterruptedException
-	{
-		clearAndProvide1(benefitSchemeDD, value);
-	}
+    public void provideBenefitScheme(String value) throws InterruptedException
+    {
+        clearAndProvide1(benefitSchemeDD, value);
+    }
 
-	public void provideReqAmt(String value)
-	{
-		clearAndProvide1(requestedAmount, value);
-	}
+    public void provideReqAmt(String value)
+    {
+        clearAndProvide1(requestedAmount, value);
+    }
 
-	public void provideApprovedAmt(String value)
-	{
-		clearAndProvide1(approvedAmount, value);
-	}
+    public void provideApprovedAmt(String value)
+    {
+        clearAndProvide1(approvedAmount, value);
+    }
 
-	public void selectPaymentType(String value)
-	{
-		selectDropdownValueOffice365(value);
-	}
+    public void selectPaymentType(String value)
+    {
+        selectDropdownValueOffice365(value);
+    }
 
-	public void provideRemarks(String value)
-	{
-		provideDescription(value);
-	}
+    public void provideRemarks(String value)
+    {
+        provideDescription(value);
+    }
 
-	public void clkView()
-	{
-		clickOnView();
-	}
+    public void clkView()
+    {
+        clickOnView();
+    }
 
-	public void clkApproveBack() throws InterruptedException
-	{
-		clickApproveAndBack();
-	}
+    public void clkApproveBack() throws InterruptedException
+    {
+        clickApproveAndBack();
+    }
 
-	public boolean isTxnCreated()
-	{
-		String expemp = "Vaibhav Chavan";
-		String expBenefitSceme = "Health Insurance";
-		String expapprovedAmt = "100";
-		String expEffectiveDate = "20-Nov-2024"; // can replace effectivedt
-		CommonActions.filterCell5(expEffectiveDate);
-		CommonActions.filterCell6(expemp);
-		CommonActions.filterCell7(expBenefitSceme);
-		CommonActions.filterCell9(expapprovedAmt);
+    public boolean isTxnCreated()
+    {
+        String expemp = "Vaibhav Chavan";
+        String expBenefitSceme = "Health Insurance";
+        String expapprovedAmt = "100";
+        String expEffectiveDate = "20-Nov-2024"; // can replace effectivedt
+        CommonActions.filterCell5(expEffectiveDate);
+        CommonActions.filterCell6(expemp);
+        CommonActions.filterCell7(expBenefitSceme);
+        CommonActions.filterCell9(expapprovedAmt);
 
-		if (CommonActions.result5().contains(expEffectiveDate) && CommonActions.result6().contains(expemp)
-				&& CommonActions.result7().contains(expBenefitSceme)
-				&& CommonActions.result9().contains(expapprovedAmt))
-		// if(CommonActions.result6().contains(expemp) &&
-		// CommonActions.result7().equals(expBenefitSceme))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-	}
-
+        if (CommonActions.result5().contains(expEffectiveDate) && CommonActions.result6().contains(expemp)
+                && CommonActions.result7().contains(expBenefitSceme)
+                && CommonActions.result9().contains(expapprovedAmt))
+        // if(CommonActions.result6().contains(expemp) &&
+        // CommonActions.result7().equals(expBenefitSceme))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
 }
