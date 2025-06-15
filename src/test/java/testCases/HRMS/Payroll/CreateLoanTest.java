@@ -8,7 +8,7 @@ import pageObjects.HRMS.Payroll.LoanPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
 import utilities.RetryAnalyzer;
 
-public class LoanTest extends BaseTest
+public class CreateLoanTest extends BaseTest
 {
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyLoan()
