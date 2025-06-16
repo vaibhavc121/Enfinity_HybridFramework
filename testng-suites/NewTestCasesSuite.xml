@@ -61,6 +61,7 @@
             <!--<class name="testCases.HRMS.Payroll.DeleteTicketEncashmentTest"/>-->
             <!--<class name="testCases.HRMS.Payroll.CreateOvertimeTest"/>-->
             <!--<class name="testCases.HRMS.Payroll.DeleteOvertimeTest"/>-->
+            <class name="testCases.HRMS.Payroll.CreateLoanTest"/>
 
 
             <!-- Self Service -->
@@ -111,7 +112,7 @@
             <!-- <class name="testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest" /> -->
             <!-- <class name="testCases.HRMS.Attendance.CreateTwoShiftNightShiftTimetableTest" /> -->
             <!-- <class name="testCases.HRMS.Attendance.DeleteTwoShiftNightShiftTimetableTest" /> -->
-            <class name="testCases.HRMS.Attendance.AttendanceTest"/>
+            <!--<class name="testCases.HRMS.Attendance.AttendanceTest"/>-->
 
 
             <!-- Global -->

@@ -36115,3 +36115,816 @@ Session ID: cdd42bb77c3c010268e97d18a2ba6e7f
 2025-06-14 23:29:34.709 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - deleteTxn - went back to listing
 2025-06-14 23:29:35.098 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - value cleared in filter box
 2025-06-14 23:29:35.293 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.log - filterByIndex - provided filter value
+2025-06-16 17:32:00.825 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 17:32:00.830 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 17:32:03.480 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 17:32:03.514 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 17:32:05.595 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 17:32:05.761 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 17:32:05.857 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 17:32:12.105 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 17:32:12.190 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:32:14.566 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:32:14.569 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:15) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:32:14.650 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:32:15.840 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:32:15.842 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:15) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:32:15.976 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-16 17:32:16.136 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 17:32:16.136 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - --test execution started--
+2025-06-16 17:32:16.883 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - browser opened
+2025-06-16 17:32:16.933 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - browser maximized
+2025-06-16 17:32:19.287 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided app URL in browser
+2025-06-16 17:32:19.388 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided username
+2025-06-16 17:32:19.483 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - provided password
+2025-06-16 17:32:23.854 [main] INFO  testCases.HRMS.Attendance.AttendanceTest.setup - clicked on sign in button
+2025-06-16 17:32:46.624 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 17:32:46.629 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 17:32:47.827 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 17:32:47.867 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 17:32:49.898 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 17:32:50.049 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 17:32:50.140 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 17:32:54.567 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 17:32:54.656 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:32:56.427 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:32:56.433 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:15) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:32:56.538 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:32:57.631 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:32:57.632 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:15) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:32:57.790 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-16 17:35:16.909 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 17:35:16.913 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 17:35:18.156 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 17:35:18.202 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 17:35:20.799 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 17:35:20.946 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 17:35:21.037 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 17:35:25.681 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 17:35:25.762 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:35:27.479 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:35:27.484 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:16) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:35:27.578 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:35:28.632 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:35:28.633 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:16) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:35:28.771 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-16 17:56:03.605 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 17:56:03.609 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 17:56:04.754 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 17:56:04.786 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 17:56:06.819 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 17:56:06.966 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 17:56:07.057 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 17:56:14.167 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 17:56:14.261 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:56:16.200 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:56:16.203 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:16) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:56:16.289 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 17:56:17.751 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 17:56:17.753 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalArgumentException: Can not set com.codeborne.selenide.SelenideElement field pageObjects.HRMS.Payroll.LoanPage.loan to jdk.proxy2.$Proxy28
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228) ~[?:?]
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232) ~[?:?]
+	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.set(MethodHandleObjectFieldAccessorImpl.java:115) ~[?:?]
+	at java.base/java.lang.reflect.Field.set(Field.java:836) ~[?:?]
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76) ~[selenium-support-4.33.0.jar:?]
+	at base.BasePage.<init>(BasePage.java:38) ~[test-classes/:?]
+	at pageObjects.HRMS.Payroll.LoanPage.<init>(LoanPage.java:16) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:26) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 17:56:17.875 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-16 18:26:14.199 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 18:26:14.203 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 18:26:15.409 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 18:26:15.450 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 18:26:17.446 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 18:26:17.601 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 18:26:17.695 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 18:26:22.460 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 18:26:22.535 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 18:26:24.444 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 18:30:54.438 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.lambda$currentThreadDriver$1(WebDriverThreadLocalContainer.java:156) ~[selenide-7.9.3.jar:7.9.3]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.currentThreadDriver(WebDriverThreadLocalContainer.java:155) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:122) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:83) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.StaticDriver.getWebDriver(StaticDriver.java:31) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.getSearchContext(WebElementSelector.java:49) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 18:31:00.248 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 18:31:00.253 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 18:31:01.542 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 18:31:01.592 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 18:31:13.505 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 18:31:13.659 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 18:31:13.748 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 18:31:19.294 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 18:31:19.422 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 18:31:21.477 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 18:31:56.600 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.lambda$currentThreadDriver$1(WebDriverThreadLocalContainer.java:156) ~[selenide-7.9.3.jar:7.9.3]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.currentThreadDriver(WebDriverThreadLocalContainer.java:155) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:122) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:83) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.StaticDriver.getWebDriver(StaticDriver.java:31) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.getSearchContext(WebElementSelector.java:49) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 18:32:05.994 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 18:32:05.998 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 18:32:07.652 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 18:32:07.690 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 18:32:09.715 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 18:32:09.870 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 18:32:09.963 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 18:32:14.483 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 18:32:14.575 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 18:32:16.350 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 18:35:35.085 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.lambda$currentThreadDriver$1(WebDriverThreadLocalContainer.java:156) ~[selenide-7.9.3.jar:7.9.3]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.currentThreadDriver(WebDriverThreadLocalContainer.java:155) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:122) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:83) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.StaticDriver.getWebDriver(StaticDriver.java:31) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.getSearchContext(WebElementSelector.java:49) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 18:35:48.857 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 18:35:48.861 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 18:35:50.086 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 18:35:50.126 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 18:35:53.096 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 18:35:53.251 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 18:35:53.341 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 18:35:58.551 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 18:35:58.637 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 18:36:00.609 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 18:38:17.931 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 18:38:17.936 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 18:38:19.050 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 18:38:19.094 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 18:38:21.453 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 18:38:21.605 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 18:38:21.687 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 18:38:25.961 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 18:38:26.045 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 18:38:27.931 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 18:39:17.871 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.lambda$currentThreadDriver$1(WebDriverThreadLocalContainer.java:156) ~[selenide-7.9.3.jar:7.9.3]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.currentThreadDriver(WebDriverThreadLocalContainer.java:155) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:122) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:83) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.StaticDriver.getWebDriver(StaticDriver.java:31) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.getSearchContext(WebElementSelector.java:49) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 18:40:24.654 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 18:40:24.658 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 18:40:25.822 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 18:40:25.863 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 18:40:28.167 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 18:40:28.327 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 18:40:28.402 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 18:40:34.472 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 18:40:34.555 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 18:40:37.947 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 18:55:48.764 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 18:55:48.768 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 18:55:50.019 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 18:55:50.064 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 18:55:52.075 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 18:55:52.219 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 18:55:52.312 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 18:55:57.444 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 18:55:57.531 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 18:55:59.326 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 19:04:07.100 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.lambda$currentThreadDriver$1(WebDriverThreadLocalContainer.java:156) ~[selenide-7.9.3.jar:7.9.3]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.currentThreadDriver(WebDriverThreadLocalContainer.java:155) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:122) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:83) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.StaticDriver.getWebDriver(StaticDriver.java:31) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.getSearchContext(WebElementSelector.java:49) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:30) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 19:04:16.083 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 19:04:16.088 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 19:04:17.272 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 19:04:17.312 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 19:04:19.319 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 19:04:19.480 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 19:04:19.578 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 19:04:31.363 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 19:04:31.441 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 19:04:33.253 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 19:06:38.966 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.lambda$currentThreadDriver$1(WebDriverThreadLocalContainer.java:156) ~[selenide-7.9.3.jar:7.9.3]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.currentThreadDriver(WebDriverThreadLocalContainer.java:155) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:122) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:83) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.StaticDriver.getWebDriver(StaticDriver.java:31) ~[selenide-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.getSearchContext(WebElementSelector.java:49) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:30) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-16 19:09:05.938 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-16 19:09:05.941 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - --test execution started--
+2025-06-16 19:09:06.672 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser opened
+2025-06-16 19:09:06.725 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - browser maximized
+2025-06-16 19:09:08.731 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided app URL in browser
+2025-06-16 19:09:08.899 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided username
+2025-06-16 19:09:09.022 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - provided password
+2025-06-16 19:09:14.285 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setup - clicked on sign in button
+2025-06-16 19:09:14.399 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-16 19:09:16.340 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-16 19:12:08.420 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [652e5c3ec5a2a42b486122a453911898, findElement {value=//span[normalize-space()='Loan'], using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60915}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60915/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 652e5c3ec5a2a42b486122a453911898
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361) ~[selenium-remote-driver-4.33.0.jar:?]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:67) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:38) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:30) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]

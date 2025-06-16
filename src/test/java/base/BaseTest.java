@@ -22,6 +22,8 @@ import org.testng.annotations.Parameters;
 
 import pageObjects.HRMS.HRCore.LoginPage;
 
+import static com.codeborne.selenide.Selenide.open;
+
 public class BaseTest
 {
     //region Global Variables and Logger Initialization
@@ -59,6 +61,9 @@ public class BaseTest
 
         //region Selenide Setup
         Configuration.timeout = 5000;
+        //Configuration.browser = "chrome";
+        //Configuration.startMaximized = true;
+        //open("https://testhrms.onenfinity.com");
         //endregion
 
         //region config.properties file setup

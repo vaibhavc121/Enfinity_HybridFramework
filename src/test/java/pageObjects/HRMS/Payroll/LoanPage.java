@@ -1,127 +1,83 @@
 package pageObjects.HRMS.Payroll;
 
-import org.openqa.selenium.Keys;
+import base.SelenideBasePage;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
-import utilities.CommonActions;
 
-public class LoanPage extends BasePage
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
+
+public class LoanPage extends SelenideBasePage
 {
 
-	public LoanPage(WebDriver driver)
-	{
-		super(driver);
 
-	}
 
-	@FindBy(xpath = "//span[normalize-space()='Overtime']//following::span[@class='dx-vam'][normalize-space()='Loan']")
-	WebElement loan;
+	SelenideElement loan = $("//span[normalize-space()='Loan']");
+	SelenideElement empdd = $x("//input[@id='Loan.EmployeeIdLookup_I']");
+	SelenideElement effectiveDate = $x("//input[@id='Loan.EffectiveDate_I']");
+	SelenideElement loanTypeDD = $x("//input[@id='Loan.LoanTypeIdLookup_I']");
+	SelenideElement repaymentStartPeriod = $x("//input[@id='Loan.RepaymentStartPeriodIdLookup_I']");
+	SelenideElement loanAmount = $x("//input[@id='Loan.LoanAmountFC_I']");
+	SelenideElement amountOfInstallments = $x("//input[@id='Loan.AmountOfInstallments_I']");
+	SelenideElement remarks = $x("//textarea[@id='Loan.Description_I']");
 
-	@FindBy(xpath = "//img[@id='Loan.EmployeeIdLookup_B-1Img']")
-	WebElement empdd;
 
-	@FindBy(xpath = "//img[@id='Loan.LoanTypeIdLookup_B-1Img']")
-	WebElement loanTypeDD;
 
-	@FindBy(xpath = "//input[@id='Loan.RepaymentStartPeriodIdLookup_I']")
-	WebElement repaymentStartPeriod;
-
-	@FindBy(xpath = "//img[@id='Loan.RepaymentStartPeriodIdLookup_B-1Img']")
-	WebElement loanRepaymentStartPeriod;
-
-	@FindBy(xpath = "//input[@id='Loan.LoanAmountFC_I']")
-	WebElement loanAmount;
-
-	@FindBy(xpath = "//input[@id='Loan.AmountOfInstallments_I']")
-	WebElement amountOfInstallments;
-
-	public String expEmp = "002";
-	public String expLoanAmt = "50";
-	public String expInstallment = "2";
-	public String expLoanType = "Car Loan";
-
-	public void clkLoan()
+	public void clickLoan()
 	{
 		loan.click();
 	}
 
-	public void clkNew()
+	public void clickNew()
 	{
-		clickOnNew();
+		SelenideBasePage.clickOnNew();
 	}
 
-	public void clkEmpDD()
+	public void provideEmp(String value)
 	{
-		empdd.click();
+		SelenideBasePage.clearAndProvide1(empdd, value);
 	}
 
-	public void slctEmp() throws InterruptedException
+	public void provideEffectiveDate(String value)
 	{
-		CommonActions.setDropdownValue(expEmp);
+		SelenideBasePage.clearAndProvide1(effectiveDate, value);
 	}
 
-	public void clkLoanTypeDD() throws InterruptedException
+	public void provideLoanType(String value)
 	{
-		loanTypeDD.click();
-		Thread.sleep(2000);
+		SelenideBasePage.clearAndProvide1(loanTypeDD, value);
 	}
 
-	public void slctLoanType() throws InterruptedException
+	public void provideRepaymentStartPeriod(String value)
 	{
-		CommonActions.setDropdownValue(expLoanType);
+		SelenideBasePage.clearAndProvide1(repaymentStartPeriod, value);
 	}
 
-	public void clkloanRepaymentStartPeriodDD()
+	public void provideLoanAmt(String value)
 	{
-		loanRepaymentStartPeriod.click();
+		SelenideBasePage.clearAndProvide1(loanAmount,value);
 	}
 
-	public void setLoanRepaymentStartPeriod() throws InterruptedException
+	public void provideAmountOfInstallments(String value)
 	{
-		repaymentStartPeriod.click();
-		repaymentStartPeriod.clear();
-		repaymentStartPeriod.sendKeys("Jan-2025");
-		Thread.sleep(2000);
-		repaymentStartPeriod.sendKeys(Keys.ENTER);
-
+		SelenideBasePage.clearAndProvide1(amountOfInstallments, value);
 	}
 
-	public void provideLoanAmt()
+	public void provideRemarks(String value)
 	{
-		loanAmount.sendKeys(expLoanAmt);
+		SelenideBasePage.clearAndProvide1(remarks, value);
 	}
 
-	public void provideAmountOfInstallments()
+	public void clickViewApproveBack()
 	{
-		amountOfInstallments.sendKeys(expInstallment);
+		SelenideBasePage.clickOnViewApproveBack();
 	}
 
-	public void clkView()
-	{
-		clickOnView();
-	}
 
-	public void clkApprove()
-	{
-		CommonActions.clkApprove();
-	}
 
-	public boolean isTxnCreated()
-	{
-//		String expEmp="Prachi Rawat";
-//		String expLoanAmt="50";
-//		String expInstallment="2";
-		if (CommonActions.result6().contains(expEmp) && CommonActions.result8().contains(expLoanAmt))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
 
-	}
+
 
 }

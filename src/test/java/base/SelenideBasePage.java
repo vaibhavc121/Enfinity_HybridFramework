@@ -32,11 +32,11 @@ public class SelenideBasePage
     Robot robot;
 
     //region Constructor
-    public SelenideBasePage(WebDriver driver)
-    {
-        SelenideBasePage.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
+//    public SelenideBasePage(WebDriver driver)
+//    {
+//        SelenideBasePage.driver = driver;
+//        PageFactory.initElements(driver, this);
+//    }
     //endregion
 
     //region Listing Filters (Relative xpath)
