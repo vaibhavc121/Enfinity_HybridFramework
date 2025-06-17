@@ -100,4 +100,16 @@ public class PayrollModel
 
 	}
 
+	public static class LoanModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String loanType;
+		public String repaymentStartPeriod;
+		public String loanAmt;
+		public String amountOfInstallments;
+		public String remarks;
+
+	}
+
 }

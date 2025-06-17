@@ -1,0 +1,768 @@
+<html><head><script type="text/javascript">
+    function OnForgotPasswordClick(s, e) {
+        var url = '/global/User/ForgotPassword';
+        window.open(url, '_blank');
+    }
+    function screenByWidth(width) {
+        return width < 720 ? "sm" : "md";
+    }
+</script>
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+    <title>Login Enfinity</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/Content/Styles/Layout.css">
+
+    <link href="/Content/Styles/site.css" rel="stylesheet">
+<link href="/Content/Styles/dx.common.css" rel="stylesheet">
+<link href="/Content/Styles/dx.light.css" rel="stylesheet">
+
+
+    <script src="/Content/Scripts/jquery-3.6.3.min.js"></script>
+<script src="/Content/Scripts/jquery.validate.min.js"></script>
+<script src="/Content/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="/Content/Scripts/dx.all.js"></script>
+    <script src="/Content/Scripts/aspnet/dx.aspnet.mvc.js"></script>
+<script src="/Content/Scripts/aspnet/dx.aspnet.data.js"></script>
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            display: unset;
+            width: 100%;
+            height: 100%;
+            position: unset !important;
+        }
+
+        .background-image {
+            background-image: url(../../Content/Images/stock-vector.jpg);
+            height: 100%;
+            background-size: 50%;
+            background-position: 4%;
+            background-repeat: no-repeat;
+        }
+
+        .login-window {
+            max-width: 50%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /*top: 0;*/
+            /* left: 0; */
+            /*padding: 0;
+            margin: 0;
+            padding: 30px 45px 0px 45px;*/
+            /* height: 420px; */
+            /*width: 500px;
+            box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+            position: absolute;*/
+            /* margin: auto; */
+            /*top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;*/
+            /* left: 0; */
+            /*background-color: white;*/
+        }
+
+        .copyright-layout {
+            /*background-color: lightgray;*/
+            padding: 4px;
+            width: 100%;
+            font-size: xx-small;
+            color: grey;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        .login-button {
+            height: 36px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            background-color: #fff;
+            color: rgba(0,0,0,.87);
+            box-shadow: 0 1px 3px rgba(0,0,0,.24);
+        }
+
+        .dx-button {
+            height: 36px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            background-color: #fff;
+            color: rgba(0,0,0,.87);
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.24);
+            box-shadow: 0 1px 3px rgba(0,0,0,.24);
+        }
+
+        .copyright-notice {
+            padding: 4px;
+            margin: 4px;
+            font-size: x-small;
+            color: lightslategrey;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        .app-version {
+            padding: 0;
+            margin: 0;
+            font-size: x-small;
+            color: lightslategrey;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        .error {
+            text-align: center;
+        }
+
+            .error .dx-field-item-label-text {
+                color: red;
+            }
+
+        .external-table {
+            position: absolute !important;
+            bottom: 3.5em !important;
+        }
+
+        .external-button {
+            position: absolute !important;
+            padding: 3px 3px;
+            border: 1px dotted transparent;
+            display: table-cell;
+            cursor: pointer;
+            background: url(../../Content/Images/signin_icons.png) no-repeat;
+            background-position: -38px -10px;
+            height: 20px;
+            width: 20px;
+        }
+
+        .login-window .dx-field-item-label-text {
+        }
+
+        /*  .login-window .dx-button {
+            color: white !important;
+            background-color: rgb(47, 163, 230) !important;
+            font-weight: 500 !important;
+        }*/
+        .sec-form .login-btn, .sec-form .externallogin-btn {
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin: 4px 0 8px;
+            height: fit-content;
+            box-shadow: none;
+            font-weight: 500;
+        }
+
+        .sec-form .login-btn {
+            background: #0b4e8c;
+            color: white;
+        }
+
+        .sec-form .externallogin-btn {
+            color: lightslategrey;
+        }
+        .main-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        .sec-animation, .sec-form {
+            width: 50%;
+            height: 100%;
+        }
+
+        .sec-animation {
+            background-color: #0b4e86;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+
+        @media screen and (max-width: 786px) {
+            .sec-animation {
+                display: none;
+            }
+
+            .sec-form {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main-container">
+        
+
+<style>
+    #circle-1 {
+        display: none;
+        min-width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: black;
+        filter: opacity(0.1);
+        position: absolute;
+        top: -9%;
+        right: -13%;
+        animation: floating 3s infinite;
+    }
+
+    #circle-2 {
+        min-width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: black;
+        filter: opacity(0.1);
+        position: absolute;
+        bottom: -9%;
+        right: -13%;
+        animation: floating 3s infinite;
+    }
+
+    #oval {
+        min-width: 100px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: black;
+        filter: opacity(0.1);
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        animation: floating 3s infinite;
+    }
+
+    #oval-small-1 {
+        display: none;
+        min-width: 27px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: black;
+        filter: opacity(0.05);
+        position: absolute;
+        top: 4%;
+        right: 17%;
+        animation: floating 3s infinite;
+    }
+
+    #oval-small-2 {
+        min-width: 27px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: black;
+        filter: opacity(0.1);
+        position: absolute;
+        top: 4%;
+        left: 27%;
+        rotate: 208deg;
+        animation: floating 3s infinite;
+    }
+
+    #oval-small-3 {
+        min-width: 20px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: black;
+        filter: opacity(0.05);
+        position: absolute;
+        top: 7%;
+        left: 31%;
+        rotate: 312deg;
+        animation: floating 3s infinite;
+    }
+
+
+    #rectangle-1 {
+        min-width: 200px;
+        height: 59px;
+        border-radius: 5%;
+        background-color: black;
+        filter: opacity(0.05);
+        position: absolute;
+        bottom: 12%;
+        left: -19%;
+        animation: floating 3s infinite;
+    }
+
+    #rectangle-2 {
+        min-width: 200px;
+        height: 78px;
+        border-radius: 5%;
+        background-color: black;
+        filter: opacity(0.1);
+        position: absolute;
+        bottom: 3%;
+        left: -13%;
+        animation: floating 3s infinite;
+    }
+
+    #cloud {
+        background-color: #fff;
+        background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, .1));
+        border-radius: 3em;
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .5);
+        display: inline-block;
+        height: 4.5rem;
+        right: -10%;
+        margin-left: -1.5em;
+        position: absolute;
+        top: 7%;
+        width: 12.4em;
+        opacity: 0.2;
+        -webkit-filter: drop-shadow(0 2px 3px hsla(0, 0%, 0%, .25));
+        animation: floating 3s infinite;
+    }
+
+        #cloud:after,
+        #cloud:before {
+            background-color: #fff;
+            content: '';
+            border-radius: 100%;
+            position: absolute;
+        }
+
+        #cloud:after {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .025));
+            height: 4.2rem;
+            right: 1.4em;
+            top: -1.6em;
+            width: 4.2rem;
+        }
+
+        #cloud:before {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .075));
+            height: 6.4em;
+            left: 1em;
+            top: -3em;
+            width: 6.4em;
+        }
+
+    #cloud-1 {
+        display: none !important;
+        background-color: #fff;
+        background-image: -webkit-linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+        border-radius: 1em;
+        box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.5);
+        display: inline-block;
+        height: 2rem;
+        left: 20%;
+        margin-left: -1.5em;
+        position: absolute;
+        bottom: 14%;
+        width: 6em;
+        opacity: 0.2;
+        -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+        animation: floating 3s infinite;
+    }
+
+        #cloud-1:after,
+        #cloud-1:before {
+            background-color: #fff;
+            content: '';
+            border-radius: 100%;
+            position: absolute;
+        }
+
+        #cloud-1:after {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .025));
+            height: 2rem;
+            right: 0.7em;
+            top: -1em;
+            width: 2rem;
+        }
+
+        #cloud-1:before {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .075));
+            height: 3.2em;
+            left: .6em;
+            top: -1.75em;
+            width: 3.2em;
+        }
+
+    #cloud-2 {
+        background-color: #fff;
+        background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, .1));
+        border-radius: 2em;
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .5);
+        display: inline-block;
+        height: 3rem;
+        right: 19%;
+        margin-left: -1.5em;
+        position: absolute;
+        top: 16%;
+        width: 9em;
+        opacity: 0.2;
+        -webkit-filter: drop-shadow(0 2px 3px hsla(0, 0%, 0%, .25));
+        animation: floating 3s infinite;
+    }
+
+        #cloud-2:after,
+        #cloud-2:before {
+            background-color: #fff;
+            content: '';
+            border-radius: 100%;
+            position: absolute;
+        }
+
+        #cloud-2:after {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .025));
+            height: 3rem;
+            right: 0.8em;
+            top: -1.5em;
+            width: 3rem;
+        }
+
+        #cloud-2:before {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .075));
+            height: 5em;
+            left: .6em;
+            top: -3em;
+            width: 5em;
+        }
+
+    #cloud-3 {
+        display: none !important;
+        background-color: #fff;
+        background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, .1));
+        border-radius: 1em;
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .5);
+        display: inline-block;
+        height: 1rem;
+        right: 5%;
+        margin-left: -1.5em;
+        position: absolute;
+        top: 15%;
+        width: 3em;
+        opacity: 0.2;
+        -webkit-filter: drop-shadow(0 2px 3px hsla(0, 0%, 0%, .25));
+        animation: floating 3s infinite;
+    }
+
+        #cloud-3:after,
+        #cloud-3:before {
+            background-color: #fff;
+            content: '';
+            border-radius: 100%;
+            position: absolute;
+        }
+
+        #cloud-3:after {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .025));
+            height: 1rem;
+            right: 0.5em;
+            top: -0.5em;
+            width: 1rem;
+        }
+
+        #cloud-3:before {
+            background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .075));
+            height: 1.2em;
+            left: 0.4em;
+            top: -0.75em;
+            width: 1.2em;
+        }
+
+    .shape {
+        background-color: white !important;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translate(0, 0px);
+        }
+
+        50% {
+            transform: translate(0, 15px);
+        }
+
+        100% {
+            transform: translate(0, -0px);
+        }
+    }
+
+    .slider {
+        width: 500px;
+        height: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .slider .list {
+            position: absolute;
+            width: max-content;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            transition: 1s;
+        }
+
+            .slider .list .item {
+                width: 500px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 2rem;
+                box-sizing: border-box;
+            }
+
+            .slider .list img {
+                height: auto;
+                width: 500px;
+            }
+
+            .slider .list .item-content-container {
+                color: white;
+                margin-top: 8px;
+                text-align: center;
+            }
+
+        .slider .dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+            .slider .dots li {
+                list-style: none;
+                width: 10px;
+                height: 10px;
+                opacity: 0.3;
+                background-color: #fff;
+                margin: 10px;
+                border-radius: 20px;
+                transition: 0.5s;
+            }
+
+                .slider .dots li.active {
+                    width: 30px;
+                    opacity: 1;
+                }
+
+    @media screen and (max-width: 1028px) {
+        .slider, .slider .list .item, .slider .list img {
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 1180px) {
+        .login-window {
+            max-width: 80%;
+        }
+    }
+
+    .sec-form h1, .sec-form p {
+        margin: 0;
+    }
+
+    .sec-form .login-title {
+        font-size: 2rem;
+        /*text-transform:capitalize;*/
+        font-weight: 500;
+        margin: 4px 0;
+    }
+
+    .sec-form .login-desc {
+        font-size: 0.8rem;
+        margin: 8px 0;
+        color: lightslategrey;
+    }
+
+
+    .forgot-password-text {
+        text-align: right;
+        display: block;
+        text-decoration: none;
+        font-weight: 500;
+        color: #0b4e8c;
+    }
+
+    .copyright-container {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .dx-icon-microsoft {
+        display: inline-block;
+        background: url('../../../Content/Images/microsoft.svg') no-repeat center;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+
+<section class="sec-animation">
+    <div class="slider">
+        <div class="list" style="left: 0px;">
+            <div class="item">
+                <img src="../../../Content/Images/login_animation_one.gif" alt="">
+
+            </div>
+            <div class="item">
+                <img src="../../../Content/Images/login_animation_two.gif" alt="">
+            </div>
+            <div class="item">
+                <img src="../../../Content/Images/login_animation_three.gif" alt="">
+            </div>
+        </div>
+
+        <ul class="dots">
+            <li class="active"></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ul>
+    </div>
+    <div id="circle-1" class="shape"></div>
+    <div id="circle-2" class="shape"></div>
+    <div id="oval" class="shape"></div>
+    <div id="oval-small-1" class="shape"></div>
+    <div id="oval-small-2" class="shape"></div>
+    <div id="oval-small-3" class="shape"></div>
+    <div id="rectangle-1" class="shape"></div>
+    <div id="rectangle-2" class="shape"></div>
+    <div id="cloud" class="shape"></div>
+    <div id="cloud-1" class="shape"></div>
+    <div id="cloud-2" class="shape"></div>
+    <div id="cloud-3" class="shape"></div>
+</section>
+
+<script type="text/javascript">
+    let slider = document.querySelector(".slider .list");
+    let items = document.querySelectorAll(".slider .list .item");
+    let dots = document.querySelectorAll(".slider .dots li");
+
+    if (slider && items.length > 0 && dots.length > 0) {
+        let lengthItems = items.length - 1;
+        let active = 0;
+
+        function nextSlide() {
+            active = active + 1 <= lengthItems ? active + 1 : 0;
+            reloadSlider();
+        }
+
+        let refreshInterval = setInterval(() => {
+            nextSlide();
+        }, 6000);
+
+        function reloadSlider() {
+            slider.style.left = -items[active].offsetLeft + "px";
+            let last_active_dot = document.querySelector(".slider .dots li.active");
+            if (last_active_dot) {
+                last_active_dot.classList.remove("active");
+            }
+            dots[active].classList.add("active");
+
+            clearInterval(refreshInterval);
+            refreshInterval = setInterval(() => {
+                nextSlide();
+            }, 6000);
+        }
+
+        dots.forEach((li, key) => {
+            li.addEventListener("click", () => {
+                active = key;
+                reloadSlider();
+            });
+        });
+
+        window.onresize = function () {
+            reloadSlider();
+        };
+    } else {
+        console.warn("Required elements are not present in the DOM.");
+    }
+</script>
+
+        <section class="sec-form">
+            <div class="login-window">
+                <div style="text-align: center;">
+                    <a href="https://www.onenfinity.com" target="_blank">
+                        <img src="../../Content/Images/enfinity-icononly.png" style="height: 134px;" oncontextmenu="return false;">
+                    </a>
+                    <h1 class="login-title">Welcome to Enfinity!</h1>
+                    <p class="login-desc">The #1 Choice for Cloud HRMS, ERP &amp; Business Software in MENA</p>
+                </div>
+                <div class="loginWindow" style="margin: 10px;width: 99%;">
+<form action="/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F" method="post"><script>
+DevExpress.config({"serverDecimalSeparator":"."});
+DevExpress.aspnet.setTemplateEngine();
+DevExpress.assertDevExtremeVersion('DevExtreme.AspNet.Mvc', '24.2.3');
+DevExpress.config({ "licenseKey": window.atob("ZXdvZ0lDSm1iM0p0WVhRaU9pQXhMQW9nSUNKcGJuUmxjbTVoYkZWellXZGxTV1FpT2lBaWFIaHFVV1ZWV0RGWFJVZFJTM1ZrTFU1bVQxbE5aeUlLZlE9PS5VMEV0VjZRMUNKaDR1WDIzbXZzcEl1d1prYVhDbzZKQittWFJqQTNZZ3pHOWxIL3dCQ2hNeDJ3RFdxdG1BQnpzYXdJc3hqME0yN2FDaFRCMTlJamR2L2ozRzE2Rk9zQTdJampEOTZjcGpWS29VZnkvS1I4K2dVcDFHSTEybnF3czZDWGNFdz09") });
+</script>
+<div id="form" class="dx-form dx-widget dx-visibility-change-handler" role="form" style="width: 100%;"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-root-simple-item" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-c2f5adeb-5d4c-9495-331c-5b5e8e44c1bf_Username"><span class="dx-field-item-label-content"><span class="dx-field-item-label-text">Username</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-show-invalid-badge dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-validator dx-visibility-change-handler" style="width: 100%;"><div class="dx-texteditor-container"><div class="dx-texteditor-input-container"><input autocomplete="off" id="dx_dx-c2f5adeb-5d4c-9495-331c-5b5e8e44c1bf_Username" class="dx-texteditor-input" type="text" spellcheck="false" name="Username" tabindex="0" role="textbox" aria-required="true" style="border: none;"><div data-dx_placeholder="" class="dx-placeholder dx-state-invisible"></div></div><div class="dx-texteditor-buttons-container"><div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-root-simple-item" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-c2f5adeb-5d4c-9495-331c-5b5e8e44c1bf_Password"><span class="dx-field-item-label-content"><span class="dx-field-item-label-text">Password</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-show-invalid-badge dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-validator dx-visibility-change-handler" style="width: 100%;"><div class="dx-texteditor-container"><div class="dx-texteditor-input-container"><input autocomplete="off" id="dx_dx-c2f5adeb-5d4c-9495-331c-5b5e8e44c1bf_Password" class="dx-texteditor-input" type="password" spellcheck="false" name="Password" tabindex="0" role="textbox" aria-required="true" style="border: none;"><div data-dx_placeholder="" class="dx-placeholder dx-state-invisible"></div></div><div class="dx-texteditor-buttons-container"><div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-root-simple-item" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-bottom">    <a class="forgot-password-text" tabindex="-1" href="/User/ForgotPassword" target="_blank">Forgot Password?</a>
+</div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column; justify-content: flex-start;"><div class="dx-first-col dx-last-col dx-last-row dx-field-item dx-col-0 dx-field-button-item" style="text-align: center;"><div role="button" aria-label="Sign In" class="dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text login-btn dx-state-focused" tabindex="0" style="width: 100%; border: 2px solid red;"><div class="dx-button-content"><span class="dx-button-text">Sign In</span><input class="dx-button-submit-input" type="submit" tabindex="-1"></div></div></div></div></div></div></div></div></div><script>
+DevExpress.utils.readyCallbacks.add((function($){$("#form").dxForm({"width":"100%","colCount":1,"formData":null,"labelLocation":"top","readOnly":false,"showRequiredMark":false,"showColonAfterLabel":false,"items":[{"itemType":"simple","dataField":"Username","editorOptions":{"name":"Username","width":"100%"},"editorType":"dxTextBox","validationRules":[{"type":"required","message":"Username is required."}],"label":{"text":"Username"}},{"itemType":"simple","dataField":"Password","editorOptions":{"mode":"password","name":"Password","width":"100%"},"editorType":"dxTextBox","validationRules":[{"type":"required","message":"Password is required."}],"label":{"text":"Password"}},{"itemType":"simple","template":$("#ForgotPasswordTemplate")},{"itemType":"button","horizontalAlignment":"center","buttonOptions":{"text":"Sign In","type":"normal","useSubmitBehavior":true,"width":"100%","elementAttr":{"class":"login-btn"}}}]});}).bind(this, jQuery));</script></form>
+                    <form action="/User/ExternalLogin" method="post"><div id="devextreme6" role="button" aria-label="Sign in with Microsoft" class="dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text dx-button-has-icon externallogin-btn" tabindex="0" style="width: 100%;"><div class="dx-button-content"><i class="dx-icon dx-icon-microsoft"></i><span class="dx-button-text">Sign in with Microsoft</span><input class="dx-button-submit-input" type="submit" tabindex="-1"></div></div><script>
+DevExpress.utils.readyCallbacks.add((function($){$("#devextreme6").dxButton({"text":"Sign in with Microsoft","type":"normal","elementAttr":{"class":"externallogin-btn"},"stylingMode":"contained","icon":"microsoft","width":"100%","useSubmitBehavior":true});}).bind(this, jQuery));</script></form>
+                                                                                             
+                </div>
+                <div class="copyright-container">
+                    <p class="copyright-notice">
+                        Copyright  2025 <a style="color:inherit;" href="https://www.onenfinity.com" target="_blank">Expert Business Solutions</a>. All rights reserved.
+                    </p>
+                    <p class="app-version">(version  8.4.25.115)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("form input:visible:enabled:first").focus();
+        var localStorageList = [];
+        for (var i = 0; i < localStorage.length; i++) {
+            var key = localStorage.key(i);
+            if (key.startsWith('crn_')) {
+                localStorageList.push(key);
+            }
+        }
+        if (localStorageList.length > 0) {
+            localStorageList.forEach(function (element) {
+                localStorage.removeItem(element);
+            });
+        }
+    });
+
+</script>
+
+
+<script type="text/html" id="ForgotPasswordTemplate">    <a class="forgot-password-text" tabindex="-1" href="/User/ForgotPassword" target="_blank">Forgot Password?</a>
+</script></body></html>

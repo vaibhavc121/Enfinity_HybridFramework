@@ -36928,3 +36928,656 @@ Session ID: 652e5c3ec5a2a42b486122a453911898
 	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 13:49:22.657 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 13:49:22.661 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 13:49:31.643 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 13:49:31.654 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 13:49:31.918 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 13:49:32.035 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 13:51:53.799 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 13:51:53.804 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 13:51:57.382 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 13:51:57.395 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 13:52:29.440 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 13:52:43.329 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 13:52:56.185 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 13:53:29.659 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkPayroll(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:20) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 13:53:29.771 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkPayroll(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:20) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 13:53:29.818 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 13:57:46.040 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 13:57:46.056 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 13:57:50.092 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 13:57:50.105 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 14:00:07.745 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 14:00:07.749 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 14:00:10.979 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 14:00:10.993 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:02:21.626 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:02:21.630 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:13:10.679 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:13:10.683 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:13:49.283 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:13:49.286 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:13:53.825 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:13:53.836 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:17:55.331 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:17:55.335 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:17:58.568 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:17:58.581 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:18:09.992 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:18:12.962 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:20:13.021 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:20:13.037 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:20:16.744 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:20:16.756 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:20:16.995 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:20:17.125 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:23:14.201 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:23:14.205 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:23:17.745 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:23:17.758 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:24:04.288 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:26:05.591 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:47:00.629 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:47:00.633 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:49:16.697 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:49:16.701 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:49:19.897 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:49:19.911 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:49:51.808 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:49:54.554 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:50:47.803 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:50:47.807 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:50:51.231 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:50:51.244 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:51:11.296 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:51:13.906 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:52:46.862 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:52:46.866 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:52:50.259 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:52:50.272 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:52:50.501 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:52:50.628 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:54:52.391 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:54:52.395 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:54:55.959 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:54:55.972 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:55:06.751 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:55:10.377 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:56:20.241 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 15:56:20.245 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 15:56:23.664 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 15:56:23.675 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 15:56:29.996 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 15:56:31.860 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 15:56:46.103 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 15:57:15.228 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 15:57:21.714 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 16:00:56.885 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=137.0.7151.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [877f31dbb3e37be69131a6b6fd91a6a7, findElement {value=//span[normalize-space()='Loan'], using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65346}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65346/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 877f31dbb3e37be69131a6b6fd91a6a7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361) ~[selenium-remote-driver-4.33.0.jar:?]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:67) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:38) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:113) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:169) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:53) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Click.execute(Click.java:39) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131) ~[selenide-core-7.9.3.jar:7.9.3]
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83) ~[selenide-core-7.9.3.jar:7.9.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.LoanPage.clickLoan(LoanPage.java:30) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:29) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 16:01:15.702 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 16:01:15.702 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 16:01:19.393 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 16:01:19.403 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 16:01:24.642 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 16:01:24.760 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 16:01:29.604 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 16:01:32.320 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 16:01:33.926 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 16:01:56.206 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 16:03:47.625 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 16:04:00.191 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 16:04:06.103 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 16:04:54.835 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 16:04:54.852 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 16:44:34.611 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 16:44:34.614 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setupSelenide - -- test execution started --
+2025-06-17 16:44:40.271 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 16:44:40.283 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setupSelenide - Cookies cleared
+2025-06-17 16:44:40.512 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setupSelenide - Username entered
+2025-06-17 16:44:40.642 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setupSelenide - Password entered
+2025-06-17 16:44:45.988 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setupSelenide - Clicked on Sign In
+2025-06-17 16:44:46.219 [main] ERROR testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - Test failed due to exception: 
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkPayroll(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime(CreateOvertimeTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 16:44:46.244 [main] ERROR testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - Test failed due to exception: 
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkPayroll(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime(CreateOvertimeTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 16:44:46.257 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.teardown - --test execution completed--
+2025-06-17 16:44:46.262 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 16:44:46.262 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setupSelenide - -- test execution started --
+2025-06-17 16:44:47.566 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 16:44:47.572 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setupSelenide - Cookies cleared
+2025-06-17 16:44:47.680 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setupSelenide - Username entered
+2025-06-17 16:44:47.790 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setupSelenide - Password entered
+2025-06-17 16:44:47.873 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setupSelenide - Clicked on Sign In
+2025-06-17 16:44:47.877 [main] ERROR testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - Test failed due to exception: 
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkPayroll(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime(DeleteOvertimeTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 16:44:47.883 [main] ERROR testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - Test failed due to exception: 
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.33.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkPayroll(PayrollPage.java:29) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime(DeleteOvertimeTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 16:44:47.888 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.teardown - --test execution completed--
+2025-06-17 16:48:07.573 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-17 16:48:07.573 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - --test execution started--
+2025-06-17 16:48:08.752 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser opened
+2025-06-17 16:48:08.791 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - browser maximized
+2025-06-17 16:48:10.761 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided app URL in browser
+2025-06-17 16:48:10.899 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided username
+2025-06-17 16:48:10.991 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - provided password
+2025-06-17 16:48:17.085 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.setup - clicked on sign in button
+2025-06-17 16:48:17.801 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on payroll link
+2025-06-17 16:48:19.527 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on txn
+2025-06-17 16:48:20.943 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on overtime
+2025-06-17 16:48:21.033 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on new
+2025-06-17 16:48:32.715 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - employee selected
+2025-06-17 16:48:35.043 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideEffectiveDate
+2025-06-17 16:48:37.285 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideOvertimeDate
+2025-06-17 16:48:39.516 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideOvertimeType
+2025-06-17 16:48:41.759 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - provideHrs
+2025-06-17 16:48:51.064 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.createOvertime - clicked on approve
+2025-06-17 16:48:52.374 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - filterByIndex - value cleared in filter box
+2025-06-17 16:48:52.449 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.log - filterByIndex - provided filter value
+2025-06-17 16:48:54.549 [main] INFO  testCases.HRMS.Payroll.CreateOvertimeTest.teardown - --test execution completed--
+2025-06-17 16:48:54.704 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - >>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<
+2025-06-17 16:48:54.704 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - --test execution started--
+2025-06-17 16:48:55.378 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser opened
+2025-06-17 16:48:55.414 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - browser maximized
+2025-06-17 16:48:57.390 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided app URL in browser
+2025-06-17 16:48:57.467 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided username
+2025-06-17 16:48:57.572 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - provided password
+2025-06-17 16:49:02.082 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.setup - clicked on sign in button
+2025-06-17 16:49:02.160 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on payroll link
+2025-06-17 16:49:04.090 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on txn
+2025-06-17 16:49:05.389 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.deleteOvertime - clicked on overtime
+2025-06-17 16:49:06.200 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - value cleared in filter box
+2025-06-17 16:49:06.274 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - provided filter value
+2025-06-17 16:49:17.962 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - value cleared in filter box
+2025-06-17 16:49:18.031 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.log - filterByIndex - provided filter value
+2025-06-17 16:49:20.096 [main] INFO  testCases.HRMS.Payroll.DeleteOvertimeTest.teardown - --test execution completed--
+2025-06-17 16:51:10.282 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 16:51:10.286 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 16:51:13.357 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 16:51:13.373 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 16:51:13.612 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 16:51:13.727 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 16:52:35.284 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 16:52:35.287 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 16:52:38.876 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 16:52:38.886 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 16:52:39.117 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 16:52:39.233 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 16:52:44.694 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 16:52:44.814 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 16:52:53.657 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 16:52:57.189 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 16:52:57.268 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 16:53:12.291 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 16:53:14.521 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 16:53:16.795 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 16:53:16.859 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 16:53:16.882 [main] ERROR testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - Test failed due to exception: 
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [038e18e6bd14e23bd0d23cc8d99850c2, clickElement {id=f.8C1E3896A8E8C67C42DB241A99794448.d.16643FA9CF2A03D26A64D07DC51C4591.e.397}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56490}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56490/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (038e18e6bd14e23bd0d23cc8d99850c2)] -> xpath: //span[@class='dxnb-ghtext']]
+Session ID: 038e18e6bd14e23bd0d23cc8d99850c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.33.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.33.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.33.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source) ~[?:?]
+	at pageObjects.HRMS.Payroll.PayrollPage.clkTxn(PayrollPage.java:34) ~[test-classes/:?]
+	at testCases.HRMS.Payroll.CreateLoanTest.verifyLoan(CreateLoanTest.java:24) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-06-17 16:53:16.997 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 17:13:33.441 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 17:13:33.444 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 17:13:37.317 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 17:13:37.326 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 17:13:37.592 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 17:13:37.726 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 17:14:17.929 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 17:14:17.929 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 17:14:21.673 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 17:14:21.683 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 17:16:00.441 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 17:16:00.445 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 17:16:56.490 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 17:16:56.494 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 17:16:59.797 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 17:16:59.812 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 17:17:20.427 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 17:17:20.432 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 17:20:49.910 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 17:20:49.932 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 18:27:35.347 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 18:27:35.353 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 18:27:50.269 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Browser opened
+2025-06-17 18:27:50.305 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - browser maximised
+2025-06-17 18:27:50.306 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 18:27:50.326 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 18:28:02.910 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 18:28:03.043 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 18:28:08.275 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 18:28:12.996 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 18:28:19.737 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 18:28:21.379 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 18:28:21.461 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 18:28:28.439 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 18:28:30.879 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 18:28:33.073 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 18:28:35.302 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provided loan repayment start period
+2025-06-17 18:28:37.622 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan amt entered
+2025-06-17 18:28:40.009 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - entered amt of installment
+2025-06-17 18:28:42.306 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - verifyLoan - provideRemarks
+2025-06-17 18:29:08.424 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:29:08.628 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:29:10.887 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:29:11.054 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:30:19.406 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 18:30:39.417 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 18:30:39.420 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 18:30:42.658 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Browser opened
+2025-06-17 18:30:42.693 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - browser maximised
+2025-06-17 18:30:42.693 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 18:30:42.709 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 18:30:42.959 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 18:30:43.099 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 18:30:47.743 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 18:30:47.859 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 18:30:49.799 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 18:30:51.118 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 18:30:51.207 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 18:30:58.512 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 18:31:00.922 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 18:31:03.177 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 18:31:05.526 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provided loan repayment start period
+2025-06-17 18:31:07.835 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan amt entered
+2025-06-17 18:31:10.048 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - entered amt of installment
+2025-06-17 18:31:12.366 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - verifyLoan - provideRemarks
+2025-06-17 18:31:16.743 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:31:16.848 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:31:18.985 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:31:19.076 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:31:21.141 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 18:34:02.394 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 18:34:02.398 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 18:34:05.617 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Browser opened
+2025-06-17 18:34:05.654 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - browser maximised
+2025-06-17 18:34:05.655 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 18:34:05.670 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 18:34:05.931 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 18:34:06.048 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 18:34:10.737 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 18:34:10.867 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 18:34:12.905 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 18:34:14.248 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 18:34:14.335 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 18:34:21.256 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 18:34:23.512 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 18:34:25.818 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 18:34:28.061 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provided loan repayment start period
+2025-06-17 18:34:30.347 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan amt entered
+2025-06-17 18:34:32.673 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - entered amt of installment
+2025-06-17 18:34:34.950 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - verifyLoan - provideRemarks
+2025-06-17 18:34:58.741 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:34:58.965 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:35:01.187 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:35:01.399 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:35:40.194 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 18:35:47.139 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 18:35:47.144 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 18:35:50.699 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Browser opened
+2025-06-17 18:35:50.738 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - browser maximised
+2025-06-17 18:35:50.738 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 18:35:50.752 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 18:35:51.025 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 18:35:51.157 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 18:35:55.743 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 18:35:55.874 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 18:35:57.616 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 18:35:58.946 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 18:35:59.037 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 18:36:06.132 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 18:36:08.484 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 18:36:10.885 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 18:36:13.197 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provided loan repayment start period
+2025-06-17 18:36:15.544 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan amt entered
+2025-06-17 18:36:17.817 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - entered amt of installment
+2025-06-17 18:36:20.015 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - verifyLoan - provideRemarks
+2025-06-17 18:36:33.261 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:36:33.497 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:36:35.779 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:36:35.956 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:37:21.691 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 18:37:27.675 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 18:37:27.680 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 18:37:31.440 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Browser opened
+2025-06-17 18:37:31.477 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - browser maximised
+2025-06-17 18:37:31.477 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 18:37:31.491 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 18:37:31.780 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 18:37:31.915 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 18:37:36.847 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 18:37:36.977 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 18:37:38.981 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 18:37:40.310 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 18:37:40.401 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 18:37:47.366 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 18:37:49.906 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 18:37:52.140 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 18:37:54.351 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provided loan repayment start period
+2025-06-17 18:37:56.531 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan amt entered
+2025-06-17 18:37:58.792 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - entered amt of installment
+2025-06-17 18:38:01.012 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - verifyLoan - provideRemarks
+2025-06-17 18:39:00.757 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:39:00.956 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:43:49.949 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:43:50.197 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:46:17.099 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--
+2025-06-17 18:46:38.282 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - >>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<
+2025-06-17 18:46:38.287 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - -- test execution started --
+2025-06-17 18:46:41.893 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Browser opened
+2025-06-17 18:46:41.922 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - browser maximised
+2025-06-17 18:46:41.922 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - App launched: https://testlogin.onenfinity.com/User/Login?returnUrl=https%3A%2F%2Ftesthrms.onenfinity.com%2F
+2025-06-17 18:46:41.933 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Cookies cleared
+2025-06-17 18:46:42.209 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Username entered
+2025-06-17 18:46:42.340 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Password entered
+2025-06-17 18:46:47.249 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.setupSelenide - Clicked on Sign In
+2025-06-17 18:46:47.377 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on payroll link
+2025-06-17 18:46:49.607 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on txn
+2025-06-17 18:46:51.235 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on loan
+2025-06-17 18:46:51.310 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - clicked on new btn
+2025-06-17 18:46:58.414 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - emp selected
+2025-06-17 18:47:00.680 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provideEffectiveDate
+2025-06-17 18:47:02.897 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan type selected
+2025-06-17 18:47:05.145 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - provided loan repayment start period
+2025-06-17 18:47:07.402 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - loan amt entered
+2025-06-17 18:47:09.709 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.verifyLoan - entered amt of installment
+2025-06-17 18:47:11.971 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - verifyLoan - provideRemarks
+2025-06-17 18:48:04.336 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:48:04.529 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:48:06.806 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - value cleared in filter box
+2025-06-17 18:48:07.062 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.log - filterByIndex - provided filter value
+2025-06-17 18:50:52.338 [main] INFO  testCases.HRMS.Payroll.CreateLoanTest.teardown - --test execution completed--

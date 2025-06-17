@@ -14,7 +14,7 @@ public class LoanPage extends SelenideBasePage
 
 
 
-	SelenideElement loan = $("//span[normalize-space()='Loan']");
+	SelenideElement loan = $x("//span[normalize-space()='Loan']");
 	SelenideElement empdd = $x("//input[@id='Loan.EmployeeIdLookup_I']");
 	SelenideElement effectiveDate = $x("//input[@id='Loan.EffectiveDate_I']");
 	SelenideElement loanTypeDD = $x("//input[@id='Loan.LoanTypeIdLookup_I']");
@@ -25,6 +25,7 @@ public class LoanPage extends SelenideBasePage
 
 
 
+
 	public void clickLoan()
 	{
 		loan.click();
@@ -32,47 +33,47 @@ public class LoanPage extends SelenideBasePage
 
 	public void clickNew()
 	{
-		SelenideBasePage.clickOnNew();
+		clickOnNew();
 	}
 
 	public void provideEmp(String value)
 	{
-		SelenideBasePage.clearAndProvide1(empdd, value);
+		clearAndProvide1(empdd, value);
 	}
 
 	public void provideEffectiveDate(String value)
 	{
-		SelenideBasePage.clearAndProvide1(effectiveDate, value);
+		clearAndProvide1(effectiveDate, value);
 	}
 
 	public void provideLoanType(String value)
 	{
-		SelenideBasePage.clearAndProvide1(loanTypeDD, value);
+		clearAndProvide1(loanTypeDD, value);
 	}
 
 	public void provideRepaymentStartPeriod(String value)
 	{
-		SelenideBasePage.clearAndProvide1(repaymentStartPeriod, value);
+		clearAndProvide1(repaymentStartPeriod, value);
 	}
 
 	public void provideLoanAmt(String value)
 	{
-		SelenideBasePage.clearAndProvide1(loanAmount,value);
+		clearAndProvide1(loanAmount,value);
 	}
 
 	public void provideAmountOfInstallments(String value)
 	{
-		SelenideBasePage.clearAndProvide1(amountOfInstallments, value);
+		clearAndProvide1(amountOfInstallments, value);
 	}
 
 	public void provideRemarks(String value)
 	{
-		SelenideBasePage.clearAndProvide1(remarks, value);
+		clearAndProvide1(remarks, value);
 	}
 
 	public void clickViewApproveBack()
 	{
-		SelenideBasePage.clickOnViewApproveBack();
+		clickOnViewApproveBack();
 	}
 
 

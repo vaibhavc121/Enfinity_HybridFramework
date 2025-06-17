@@ -1,11 +1,13 @@
 package base;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.Platform;
@@ -21,8 +23,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import pageObjects.HRMS.HRCore.LoginPage;
+import pageObjects.HRMS.Login.LoginPageSelenide;
 
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest
 {
@@ -44,6 +47,7 @@ public class BaseTest
     //endregion
 
     //region Setup
+    /*
     @SuppressWarnings("deprecation")
     @BeforeClass(groups = {"regression", "datadriven"})
     @Parameters({"os", "browser"})
@@ -60,7 +64,7 @@ public class BaseTest
         //endregion
 
         //region Selenide Setup
-        Configuration.timeout = 5000;
+        //Configuration.timeout = 5000;
         //Configuration.browser = "chrome";
         //Configuration.startMaximized = true;
         //open("https://testhrms.onenfinity.com");
@@ -258,7 +262,103 @@ public class BaseTest
         //endregion
         //endregion
 
+    } */
+    //endregion
+
+    //region Setup Selenide
+
+    @BeforeClass(groups = {"regression", "datadriven"})
+    @Parameters({"os", "browser"})
+    public void setupSelenide(String os, String browser) throws IOException
+    {
+        // region Shutdown Hook (Selenide manages this internally, so skip driver.quit() manually)
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            closeWebDriver();
+        }));
+
+        // region config.properties setup
+        FileReader file = new FileReader("./src/test/resources/config.properties");
+        p = new Properties();
+        p.load(file);
+        // endregion
+
+        // region Logger setup
+        logger = LogManager.getLogger(this.getClass());
+        logger.info(">>======>> Automation Engineer (SDET) - Vaibhav Chavan <<======<<");
+        logger.info("-- test execution started --");
+        // endregion
+
+        // region Environment Setup
+        String env = p.getProperty("execution_env");
+
+        if (env.equalsIgnoreCase("remote")) {
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+
+            // OS setup
+            switch (os.toLowerCase()) {
+                case "windows": capabilities.setPlatform(Platform.WIN11); break;
+                case "linux": capabilities.setPlatform(Platform.LINUX); break;
+                case "mac": capabilities.setPlatform(Platform.MAC); break;
+                case "android": capabilities.setPlatform(Platform.ANDROID); break;
+                default: logger.error("Invalid OS name"); return;
+            }
+
+            // Browser setup
+            switch (browser.toLowerCase()) {
+                case "chrome": capabilities.setBrowserName("chrome"); capabilities.setVersion("129"); break;
+                case "edge": capabilities.setBrowserName("MicrosoftEdge"); capabilities.setVersion("130"); break;
+                case "firefox": capabilities.setBrowserName("firefox"); capabilities.setVersion("131"); break;
+                case "safari": capabilities.setBrowserName("safari"); break;
+                default: logger.error("Invalid browser name"); return;
+            }
+
+            // region BrowserStack (adjust if needed)
+//            RemoteWebDriver remoteWebDriver = new RemoteWebDriver(
+//                    new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
+//                    capabilities
+//            );
+//            WebDriverRunner.setWebDriver(remoteWebDriver);
+            // endregion
+
+        } else if (env.equalsIgnoreCase("local")) {
+            Configuration.browser = browser.toLowerCase();
+            Configuration.timeout = 10000;
+            Configuration.pageLoadTimeout = 20000;
+            Configuration.headless = os.equalsIgnoreCase("linux");
+        } else {
+            logger.error("Invalid execution_env in properties file.");
+            return;
+        }
+        // endregion
+
+        // region Browser Setup
+
+        open(p.getProperty("appurl"));
+        logger.info("Browser opened");
+
+        WebDriverRunner.getWebDriver().manage().window().maximize();
+        logger.info("browser maximised");
+
+        logger.info("App launched: " + p.getProperty("appurl"));
+
+        clearBrowserCookies();
+        logger.info("Cookies cleared");
+        // endregion
+
+        // region Login
+        LoginPageSelenide lp = new LoginPageSelenide();
+        lp.setUsername(p.getProperty("username"));
+        logger.info("Username entered");
+
+        lp.setPwd(p.getProperty("pwd"));
+        logger.info("Password entered");
+
+        lp.clkSignin();
+        logger.info("Clicked on Sign In");
+        // endregion
     }
+
+
     //endregion
 
     //region TearDown
