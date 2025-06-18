@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -23,6 +24,8 @@ public class DeleteBankTest extends BaseTest
 			String bankFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
 			List<DeleteBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "deleteBank",
 					DeleteBankModel.class);
+
+			driver = WebDriverRunner.getWebDriver();
 
 			HRCorePage hc = new HRCorePage(driver);
 			hc.clickHRCore();

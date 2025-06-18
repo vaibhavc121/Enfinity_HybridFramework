@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -24,6 +25,8 @@ public class CreateBankTest extends BaseTest
 			String bankFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
 			List<CreateBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "createBank",
 					CreateBankModel.class);
+
+			driver = WebDriverRunner.getWebDriver();
 
 			HRCorePage hc = new HRCorePage(driver);
 			hc.clickHRCore();
