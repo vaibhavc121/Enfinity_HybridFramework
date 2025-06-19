@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -11,36 +12,38 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class DeleteDocumentTypeTest extends BaseTest
 {
-	public void deleteDocumentType()
-	{
-		try
-		{
-			String documentTypeFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
-			List<DeleteDocumentTypeModel> documentTypeData = JsonUtils.convertJsonListDataModel(documentTypeFile,
-					"createDocumentType", DeleteDocumentTypeModel.class);
+    public void deleteDocumentType()
+    {
+        try
+        {
+            String documentTypeFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
+            List<DeleteDocumentTypeModel> documentTypeData = JsonUtils.convertJsonListDataModel(documentTypeFile,
+                    "createDocumentType", DeleteDocumentTypeModel.class);
 
-			HRCorePage hc = new HRCorePage(driver);
-			hc.clickHRCore();
-			hc.clickSetupForm();
+            driver = WebDriverRunner.getWebDriver();
 
-			SetupPage sp = new SetupPage(driver);
-			for (DeleteDocumentTypeModel doc : documentTypeData)
-			{
-				sp.clickDocumentType();
-				Thread.sleep(2000);
-				BasePage.deleteHrCoreTxn(2, doc.documentTypeName);
+            HRCorePage hc = new HRCorePage(driver);
+            hc.clickHRCore();
+            hc.clickSetupForm();
 
-				Assert.assertFalse(BasePage.validateListing(doc.documentTypeName, 2, 1));
-			}
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
+            SetupPage sp = new SetupPage(driver);
+            for (DeleteDocumentTypeModel doc : documentTypeData)
+            {
+                sp.clickDocumentType();
+                Thread.sleep(2000);
+                BasePage.deleteHrCoreTxn(2, doc.documentTypeName);
 
+                Assert.assertFalse(BasePage.validateListing(doc.documentTypeName, 2, 1));
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

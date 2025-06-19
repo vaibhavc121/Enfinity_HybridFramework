@@ -13,46 +13,47 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class CreateBankTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createBank()
-	{
-		try
-		{
-			String bankFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
-			List<CreateBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "createBank",
-					CreateBankModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createBank()
+    {
+        try
+        {
+            String bankFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
+            List<CreateBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "createBank",
+                    CreateBankModel.class);
 
-			driver = WebDriverRunner.getWebDriver();
+            driver = WebDriverRunner.getWebDriver();
 
-			HRCorePage hc = new HRCorePage(driver);
-			hc.clickHRCore();
-			hc.clickSetupForm();
+            HRCorePage hc = new HRCorePage(driver);
+            hc.clickHRCore();
+            hc.clickSetupForm();
 
-			SetupPage sp = new SetupPage(driver);
-			sp.clickBank();
-			Thread.sleep(2000);
+            SetupPage sp = new SetupPage(driver);
+            sp.clickBank();
+            Thread.sleep(2000);
 
-			BankPage bp = new BankPage(driver);
+            BankPage bp = new BankPage(driver);
 
-			for (CreateBankModel bank : bankData)
-			{
-				bp.clickNew();
-				bp.provideBankName(bank.bankName);
-				bp.clickSaveBack();
+            for (CreateBankModel bank : bankData)
+            {
+                bp.clickNew();
+                BasePage.waitTS(2);
+                bp.provideBankName(bank.bankName);
+                bp.clickSaveBack();
 
-				BasePage.validateListing(bank.bankName, 2, 1);
-			}
-			// ClassicAssert.isTrue(bp.isTxnCreated());
+                BasePage.validateListing(bank.bankName, 2, 1);
+            }
+            // ClassicAssert.isTrue(bp.isTxnCreated());
 
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

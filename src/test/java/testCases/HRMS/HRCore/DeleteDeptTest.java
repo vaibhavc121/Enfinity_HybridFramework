@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -11,39 +12,41 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class DeleteDeptTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void deleteDepartment() throws InterruptedException
-	{
-		try
-		{
-			String departmentFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
-			List<DeleteDepartmentModel> departmentData = JsonUtils.convertJsonListDataModel(departmentFile,
-					"deleteDepartment", DeleteDepartmentModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void deleteDepartment() throws InterruptedException
+    {
+        try
+        {
+            String departmentFile = FileUtils.getDataFile("HRCore", "HRCore", "HRCoreData");
+            List<DeleteDepartmentModel> departmentData = JsonUtils.convertJsonListDataModel(departmentFile,
+                    "deleteDepartment", DeleteDepartmentModel.class);
 
-			HRCorePage hc = new HRCorePage(driver);
-			Thread.sleep(5000);
-			hc.clickHRCore();
-			hc.clickSetupForm();
+            driver = WebDriverRunner.getWebDriver();
 
-			SetupPage sp = new SetupPage(driver);
+            HRCorePage hc = new HRCorePage(driver);
+            Thread.sleep(5000);
+            hc.clickHRCore();
+            hc.clickSetupForm();
 
-			for (DeleteDepartmentModel dept : departmentData)
-			{
-				sp.clickDepartment();
-				Thread.sleep(2000);
-				BasePage.deleteHrCoreTxn(3, dept.deptname);
+            SetupPage sp = new SetupPage(driver);
 
-				Assert.assertFalse(BasePage.validateListing(dept.deptname, 3, 2));
-			}
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
+            for (DeleteDepartmentModel dept : departmentData)
+            {
+                sp.clickDepartment();
+                Thread.sleep(2000);
+                BasePage.deleteHrCoreTxn(3, dept.deptname);
 
+                Assert.assertFalse(BasePage.validateListing(dept.deptname, 3, 2));
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }
