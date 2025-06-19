@@ -62,6 +62,7 @@
             <!--<class name="testCases.HRMS.Payroll.CreateOvertimeTest"/>-->
             <!--<class name="testCases.HRMS.Payroll.DeleteOvertimeTest"/>-->
             <class name="testCases.HRMS.Payroll.CreateLoanTest"/>
+            <class name="testCases.HRMS.Payroll.DeleteLoanTest"/>
 
 
             <!-- Self Service -->
