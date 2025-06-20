@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
+import base.SelenideBasePage;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -63,7 +64,7 @@ public class CreateVariableSalaryTest_Lambok extends BaseTest
                 vs.clkApproveBack();
                 logger.info("clicked on approved button");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(varSal.employee, 6, 6, varSal.amt, 7, 7));
+                Assert.assertTrue(SelenideBasePage.validateListing2Fields(varSal.employee, 6, 6, varSal.amt, 7, 7));
             }
         } catch (Exception e)
         {
