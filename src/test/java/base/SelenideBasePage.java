@@ -47,6 +47,7 @@ public class SelenideBasePage
         SelenideElement element = $(By.xpath(xpath)).shouldBe(visible);
         element.clear();
         BaseTest.log("value cleared in filter box");
+
         element.setValue(value);
         BaseTest.log("provided filter value");
     }
@@ -365,6 +366,7 @@ public class SelenideBasePage
         {
             // Need to select row to click on view
             $x("(//tr)[12]//td[2]").click();
+            BaseTest.log("clicked on row");
         } catch (Exception e)
         {
             Assert.fail("Vaibhav - There are no active records.");
