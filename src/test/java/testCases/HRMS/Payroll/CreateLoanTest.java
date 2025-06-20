@@ -17,66 +17,64 @@ import java.util.List;
 
 public class CreateLoanTest extends BaseTest
 {
-	String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-	List<PayrollModel.LoanModel> loanData = JsonUtils.convertJsonListDataModel(payrollFile,
-			"createLoan", PayrollModel.LoanModel.class);
+    String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+    List<PayrollModel.LoanModel> loanData = JsonUtils.convertJsonListDataModel(payrollFile,
+            "createLoan", PayrollModel.LoanModel.class);
 
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void verifyLoan()
-	{
-		try
-		{
-			driver= WebDriverRunner.getWebDriver();
-			// payroll pg
-			PayrollPage pp = new PayrollPage(driver);
-			pp.clkPayroll();
-			logger.info("clicked on payroll link");
-			pp.clkTxn();
-			logger.info("clicked on txn");
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void verifyLoan()
+    {
+        try
+        {
+            driver = WebDriverRunner.getWebDriver();
 
-			// loan pg
-			LoanPage lp = new LoanPage();
+            // payroll pg
+            PayrollPage pp = new PayrollPage(driver);
+            pp.clkPayroll();
+            logger.info("clicked on payroll link");
+            pp.clkTxn();
+            logger.info("clicked on txn");
 
-			for(PayrollModel.LoanModel loan:loanData)
-			{
-				lp.clickLoan();
-				logger.info("clicked on loan");
+            // loan pg
+            LoanPage lp = new LoanPage();
 
-				lp.clickNew();
-				logger.info("clicked on new btn");
+            for (PayrollModel.LoanModel loan : loanData)
+            {
+                lp.clickLoan();
+                logger.info("clicked on loan");
 
-				lp.provideEmp(loan.employee);
-				logger.info("emp selected");
+                lp.clickNew();
+                logger.info("clicked on new btn");
 
-				lp.provideEffectiveDate(loan.effectiveDate);
-				logger.info("provideEffectiveDate");
+                lp.provideEmp(loan.employee);
+                logger.info("emp selected");
 
-				lp.provideLoanType(loan.loanType);
-				logger.info("loan type selected");
+                lp.provideEffectiveDate(loan.effectiveDate);
+                logger.info("provideEffectiveDate");
 
-				lp.provideRepaymentStartPeriod(loan.repaymentStartPeriod);
-				logger.info("provided loan repayment start period");
+                lp.provideLoanType(loan.loanType);
+                logger.info("loan type selected");
 
-				lp.provideLoanAmt(loan.loanAmt);
-				logger.info("loan amt entered");
+                lp.provideRepaymentStartPeriod(loan.repaymentStartPeriod);
+                logger.info("provided loan repayment start period");
 
-				lp.provideAmountOfInstallments(loan.amountOfInstallments);
-				logger.info("entered amt of installment");
+                lp.provideLoanAmt(loan.loanAmt);
+                logger.info("loan amt entered");
 
-				lp.provideRemarks(loan.remarks);
-				log("provideRemarks");
+                lp.provideAmountOfInstallments(loan.amountOfInstallments);
+                logger.info("entered amt of installment");
 
-				lp.clickViewApproveBack();
+                lp.provideRemarks(loan.remarks);
+                log("provideRemarks");
 
-				Assert.assertTrue(SelenideBasePage.validateListing2Fields(loan.employee, 6,6,loan.loanAmt, 8,8));
-			}
+                lp.clickViewApproveBack();
 
-
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
+                Assert.assertTrue(SelenideBasePage.validateListing2Fields(loan.employee, 6, 6, loan.loanAmt, 8, 8));
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

@@ -27,8 +27,6 @@ public class CreateCalendarTest extends BaseTest
             List<CreateCalendarModel> calendarData = JsonUtils.convertJsonListDataModel(calendarFile, "createCalendar",
                     CreateCalendarModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
             hc.clickSetupForm();

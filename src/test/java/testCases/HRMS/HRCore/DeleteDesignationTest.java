@@ -26,8 +26,6 @@ public class DeleteDesignationTest extends BaseTest
             List<DeleteDesignationModel> designationData = JsonUtils.convertJsonListDataModel(designationFile,
                     "deleteDesignation", DeleteDesignationModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             Thread.sleep(5000);
             hc.clickHRCore();

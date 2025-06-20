@@ -27,8 +27,6 @@ public class CreateDeptTest extends BaseTest
             List<CreateDepartmentModel> departmentData = JsonUtils.convertJsonListDataModel(departmentFile,
                     "createDepartment", CreateDepartmentModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             Thread.sleep(5000);
             hc.clickHRCore();

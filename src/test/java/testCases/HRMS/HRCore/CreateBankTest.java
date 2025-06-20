@@ -27,8 +27,6 @@ public class CreateBankTest extends BaseTest
             List<CreateBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "createBank",
                     CreateBankModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
             hc.clickSetupForm();
@@ -42,7 +40,6 @@ public class CreateBankTest extends BaseTest
             for (CreateBankModel bank : bankData)
             {
                 bp.clickNew();
-                BasePage.waitTS(2);
                 bp.provideBankName(bank.bankName);
                 bp.clickSaveBack();
 

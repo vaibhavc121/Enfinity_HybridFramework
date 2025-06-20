@@ -11,38 +11,38 @@ import utilities.CommonActions;
 public class BankPage extends BasePage
 {
 
-	public BankPage(WebDriver driver)
-	{
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+    public BankPage(WebDriver driver)
+    {
+        super(driver);
+        // TODO Auto-generated constructor stub
+    }
 
-	@FindBy(xpath = "//input[@id='Bank.Name_I']")
-	WebElement bankName;
+    @FindBy(xpath = "//input[@id='Bank.Name_I']")
+    WebElement bankName;
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
-	public void provideBankName(String value)
-	{
-		bankName.sendKeys(value);
-	}
+    public void provideBankName(String value)
+    {
+       
+        bankName.sendKeys(value);
+    }
 
-	public void provideBankName()
-	{
-		bankName.sendKeys(randomString());
-	}
+    public void provideBankName()
+    {
+        bankName.sendKeys(randomString());
+    }
 
-	public void clickSaveBack()
-	{
-		clickSaveAndBack();
-	}
+    public void clickSaveBack()
+    {
+        clickSaveAndBack();
+    }
 
-	public boolean isTxnCreated()
-	{
-		return isTransactionCreated();
-	}
-
+    public boolean isTxnCreated()
+    {
+        return isTransactionCreated();
+    }
 }

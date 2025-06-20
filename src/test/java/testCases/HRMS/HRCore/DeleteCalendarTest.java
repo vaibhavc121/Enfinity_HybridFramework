@@ -26,8 +26,6 @@ public class DeleteCalendarTest extends BaseTest
             List<DeleteCalendarModel> calendarData = JsonUtils.convertJsonListDataModel(calendarFile, "deleteCalendar",
                     DeleteCalendarModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
             hc.clickSetupForm();

@@ -2,6 +2,8 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
+import base.SelenideBasePage;
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,47 +11,46 @@ import base.BasePage;
 import base.BaseTest;
 import models.Payroll.Payroll.PayrollModel.VariableSalModel;
 import pageObjects.HRMS.Payroll.PayrollPage;
-import pageObjects.HRMS.Payroll.VariableSalaryPage;
+import pages.HRMS.VariableSalaryPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
 public class DeleteVariableSalaryTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void deleteVariableSalary()
-	{
-		try
-		{
-			String variableSalFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-			List<VariableSalModel> leaveRequestData = JsonUtils.convertJsonListDataModel(variableSalFile,
-					"createVariableSal", VariableSalModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void deleteVariableSalary()
+    {
+        try
+        {
+            String variableSalFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+            List<VariableSalModel> leaveRequestData = JsonUtils.convertJsonListDataModel(variableSalFile,
+                    "createVariableSal", VariableSalModel.class);
 
-			// payroll pg
-			PayrollPage pp = new PayrollPage(driver);
-			pp.clkPayroll();
-			logger.info("clicked on payroll link");
-			pp.clkTxn();
-			logger.info("clicked on txn");
+            driver = WebDriverRunner.getWebDriver();
 
-			// variable sal pg
-			VariableSalaryPage vs = new VariableSalaryPage(driver);
+            // payroll pg
+            PayrollPage pp = new PayrollPage(driver);
+            pp.clkPayroll();
+            logger.info("clicked on payroll link");
+            pp.clkTxn();
+            logger.info("clicked on txn");
 
-			for (VariableSalModel varSal : leaveRequestData)
-			{
-				vs.clkVariableSal();
-				logger.info("clicked on variable sal");
+            // variable sal pg
+            pages.HRMS.VariableSalaryPage vs = new VariableSalaryPage();
 
-				BasePage.performAction(6, varSal.employee, "Amend");
-				Assert.assertFalse(BasePage.validateListing("Approved", 11, 11));
-			}
+            for (VariableSalModel varSal : leaveRequestData)
+            {
+                vs.clkVariableSal();
+                logger.info("clicked on variable sal");
 
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-
-	}
-
+                SelenideBasePage.performAction(6, varSal.employee, "Amend");
+                Assert.assertFalse(SelenideBasePage.validateListing("Approved", 11, 11));
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

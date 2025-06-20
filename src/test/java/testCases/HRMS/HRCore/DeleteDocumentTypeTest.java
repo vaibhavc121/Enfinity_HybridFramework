@@ -25,8 +25,6 @@ public class DeleteDocumentTypeTest extends BaseTest
             List<DeleteDocumentTypeModel> documentTypeData = JsonUtils.convertJsonListDataModel(documentTypeFile,
                     "createDocumentType", DeleteDocumentTypeModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
             hc.clickSetupForm();

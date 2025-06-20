@@ -28,8 +28,6 @@ public class CreateDesignationTest extends BaseTest
             List<CreateDesignationModel> designationData = JsonUtils.convertJsonListDataModel(designationFile,
                     "createDesignation", CreateDesignationModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
             hc.clickSetupForm();

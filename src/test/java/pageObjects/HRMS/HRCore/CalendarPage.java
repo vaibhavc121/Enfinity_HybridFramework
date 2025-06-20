@@ -11,58 +11,59 @@ import utilities.CommonActions;
 public class CalendarPage extends BasePage
 {
 
-	public CalendarPage(WebDriver driver)
-	{
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+    public CalendarPage(WebDriver driver)
+    {
+        super(driver);
+        // TODO Auto-generated constructor stub
+    }
 
-	@FindBy(name = "Name")
-	WebElement calname;
+    @FindBy(name = "Name")
+    WebElement calname;
 
-	@FindBy(xpath = "//input[contains(@id,'FromDate')]")
-	WebElement fromDate;
+    @FindBy(xpath = "//input[contains(@id,'FromDate')]")
+    WebElement fromDate;
 
-	@FindBy(xpath = "//div[@id='SundayAsWeeklyoff']//span[@class='dx-checkbox-icon']")
-	WebElement weekoffcheckbox;
+    @FindBy(xpath = "//div[@id='SundayAsWeeklyoff']//span[@class='dx-checkbox-icon']")
+    WebElement weekoffcheckbox;
 
-	@FindBy(xpath = "//div[@id='SaturdayAsRestDay']//span[@class='dx-checkbox-icon']")
-	WebElement restdaycheckbox;
+    @FindBy(xpath = "//div[@id='SaturdayAsRestDay']//span[@class='dx-checkbox-icon']")
+    WebElement restdaycheckbox;
 
-	public void clickNewButton()
-	{
-		clickOnNew();
-	}
+    public void clickNewButton()
+    {
+        clickOnNew();
+    }
 
-	public void provideCalendarName()
-	{
-		calname.sendKeys(randomString());
-	}
+    public void provideCalendarName()
+    {
+        calname.sendKeys(randomString());
+    }
 
-	public void provideCalendarName(String value)
-	{
-		calname.sendKeys(value);
-	}
+    public void provideCalendarName(String value)
+    {
 
-	public void provideFromDate(String value)
-	{
-		fromDate.clear();
-		fromDate.sendKeys(value);
-	}
+        calname.sendKeys(value);
+    }
 
-	public void setWeekoff()
-	{
-		weekoffcheckbox.click();
-	}
+    public void provideFromDate(String value)
+    {
 
-	public void setRestday()
-	{
-		restdaycheckbox.click();
-	}
+        fromDate.clear();
+        fromDate.sendKeys(value);
+    }
 
-	public void clickSaveBack()
-	{
-		clickSaveAndBack();
-	}
+    public void setWeekoff()
+    {
+        weekoffcheckbox.click();
+    }
 
+    public void setRestday()
+    {
+        restdaycheckbox.click();
+    }
+
+    public void clickSaveBack()
+    {
+        clickSaveAndBack();
+    }
 }

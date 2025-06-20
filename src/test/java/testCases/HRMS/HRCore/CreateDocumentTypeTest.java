@@ -27,8 +27,6 @@ public class CreateDocumentTypeTest extends BaseTest
             List<CreateDocumentTypeModel> documentTypeData = JsonUtils.convertJsonListDataModel(documentTypeFile,
                     "createDocumentType", CreateDocumentTypeModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
             hc.clickSetupForm();
