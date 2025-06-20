@@ -367,10 +367,8 @@ public class SelenideBasePage
             $x("(//tr)[12]//td[2]").click();
         } catch (Exception e)
         {
-//            Assert.fail("Vaibhav - There are no active records.");
-//            System.exit(1); // Exit application
-
-            throw new RuntimeException("Vaibhav - There are no active records.");
+            Assert.fail("Vaibhav - There are no active records.");
+            System.exit(1); // Exit application
         }
         try
         {

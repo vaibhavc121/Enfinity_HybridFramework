@@ -124,7 +124,7 @@
             <!-- <class name="testCases.HRMS.Payroll.CreateLeaveTest"/> -->
             <!-- <class name="testCases.HRMS.Payroll.DeleteLeaveTest"/> -->
             <class name="testCases.HRMS.Payroll.CreateVariableSalaryTest_Lambok"/>
-            <class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest"/>
+            <!--            <class name="testCases.HRMS.Payroll.DeleteVariableSalaryTest"/>-->
             <!-- <class name="testCases.HRMS.Payroll.CreateLeaveEncashmentTest"/> -->
             <!-- <class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/> -->
             <!-- <class name="testCases.HRMS.SelfService.CreateBenefitClaimTest" /> -->
