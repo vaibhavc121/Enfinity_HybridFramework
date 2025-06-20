@@ -45,7 +45,7 @@ public class DeleteVariableSalaryTest extends BaseTest
                 logger.info("clicked on variable sal");
 
                 SelenideBasePage.performAction(6, varSal.employee, "Amend");
-                Assert.assertFalse(SelenideBasePage.validateListing("Approved", 11, 11));
+                Assert.assertFalse(SelenideBasePage.validateListing(varSal.employee, 6, 6));
             }
         } catch (Exception e)
         {
