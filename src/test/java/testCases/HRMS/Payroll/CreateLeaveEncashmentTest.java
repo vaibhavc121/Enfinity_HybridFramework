@@ -2,7 +2,6 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
-import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

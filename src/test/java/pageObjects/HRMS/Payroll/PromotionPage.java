@@ -1,12 +1,10 @@
 package pageObjects.HRMS.Payroll;
 
 import base.BasePage;
-import com.codeborne.selenide.SelenideElement;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import static com.codeborne.selenide.Selenide.$x;
 
 public class PromotionPage extends BasePage
 {
