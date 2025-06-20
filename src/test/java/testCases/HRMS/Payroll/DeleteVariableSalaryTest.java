@@ -2,16 +2,14 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
-import base.SelenideBasePage;
-import com.codeborne.selenide.WebDriverRunner;
+import base.BasePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BasePage;
 import base.BaseTest;
 import models.Payroll.Payroll.PayrollModel.VariableSalModel;
 import pageObjects.HRMS.Payroll.PayrollPage;
-import pages.HRMS.VariableSalaryPage;
+import pageObjects.HRMS.Payroll.VariableSalaryPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -27,8 +25,6 @@ public class DeleteVariableSalaryTest extends BaseTest
             List<VariableSalModel> leaveRequestData = JsonUtils.convertJsonListDataModel(variableSalFile,
                     "createVariableSal", VariableSalModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
             pp.clkPayroll();
@@ -37,15 +33,15 @@ public class DeleteVariableSalaryTest extends BaseTest
             logger.info("clicked on txn");
 
             // variable sal pg
-            pages.HRMS.VariableSalaryPage vs = new VariableSalaryPage();
+            VariableSalaryPage vs = new VariableSalaryPage(driver);
 
             for (VariableSalModel varSal : leaveRequestData)
             {
                 vs.clkVariableSal();
                 logger.info("clicked on variable sal");
 
-                SelenideBasePage.performAction(6, varSal.employee, "Amend");
-                Assert.assertFalse(SelenideBasePage.validateListing(varSal.employee, 6, 6));
+                BasePage.performAction(6, varSal.employee, "Amend");
+                Assert.assertFalse(BasePage.validateListing(varSal.employee, 6, 6));
             }
         } catch (Exception e)
         {

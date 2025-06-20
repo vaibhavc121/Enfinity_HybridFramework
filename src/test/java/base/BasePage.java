@@ -151,10 +151,12 @@ public class BasePage
         String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
         try
         {
+            BaseTest.log("extracting text from the result");
             String result = driver.findElement(By.xpath(xpath)).getText();
             return result;
         } catch (Exception e)
         {
+            BaseTest.log("No matching record found");
             return "No matching record found";
         }
         //		String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
@@ -480,6 +482,7 @@ public class BasePage
         {
             // Need to select row to click on view
             waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
+            BaseTest.log("clicked on row");
         } catch (Exception e)
         {
             Assert.fail("Vaibhav - There are no active records.");
@@ -488,23 +491,40 @@ public class BasePage
         try
         {
             clickOnView();
+            BaseTest.log("clicked on view");
         } catch (Exception e)
         {
             clickOnEdit();
+            BaseTest.log("clicked on edit");
         }
         waitTS(5);
+
         // Click on menu image icon
         waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        BaseTest.log("Clicked on menu image icon");
+
         // Click the action (e.g., Delete, View, Edit)
         waitForElement1(By.xpath("//span[normalize-space()='" + action + "']")).click();
+        BaseTest.log("Clicked on " + action);
+
         waitTS(1);
         pressKey("enter");
-        // Delete the transaction again (possibly confirm step)
+        BaseTest.log("pressed enter");
+
+        // Delete the transaction
         waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        BaseTest.log("clicked on menu/setting");
+
         driver.findElement(By.xpath("//span[normalize-space()='Delete']")).click();
+        BaseTest.log("clicked on delete");
+
         waitTS(1);
+
         pressKey("enter");
+        BaseTest.log("pressed enter button");
+
         BrowserUtils.navigateBack(driver);
+        BaseTest.log("navigate back to listing");
     }
 
     public static void deleteHrCoreTxn(int ColumnIndex, String value)

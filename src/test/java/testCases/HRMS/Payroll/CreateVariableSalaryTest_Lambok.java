@@ -2,18 +2,17 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
-import base.SelenideBasePage;
+import base.BasePage;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BasePage;
 import base.BaseTest;
 
 import models.Payroll.Payroll.PayrollModel.VariableSalModel;
 import pageObjects.HRMS.Payroll.PayrollPage;
 
-import pages.HRMS.VariableSalaryPage;
+import pageObjects.HRMS.Payroll.VariableSalaryPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -29,8 +28,6 @@ public class CreateVariableSalaryTest_Lambok extends BaseTest
             List<VariableSalModel> leaveRequestData = JsonUtils.convertJsonListDataModel(variableSalFile,
                     "createVariableSal", VariableSalModel.class);
 
-            driver = WebDriverRunner.getWebDriver();
-
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
             pp.clkPayroll();
@@ -39,7 +36,7 @@ public class CreateVariableSalaryTest_Lambok extends BaseTest
             logger.info("clicked on txn");
 
             // variable sal pg
-            pages.HRMS.VariableSalaryPage vs = new VariableSalaryPage();
+            VariableSalaryPage vs = new VariableSalaryPage(driver);
 
             for (VariableSalModel varSal : leaveRequestData)
             {
@@ -64,7 +61,7 @@ public class CreateVariableSalaryTest_Lambok extends BaseTest
                 vs.clkApproveBack();
                 logger.info("clicked on approved button");
 
-                Assert.assertTrue(SelenideBasePage.validateListing2Fields(varSal.employee, 6, 6, varSal.amt, 7, 7));
+                Assert.assertTrue(BasePage.validateListing2Fields(varSal.employee, 6, 6, varSal.amt, 7, 7));
             }
         } catch (Exception e)
         {

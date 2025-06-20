@@ -1,29 +1,36 @@
 package pageObjects.HRMS.Payroll;
 
-import base.SelenideBasePage;
+import base.BasePage;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
-
-import base.BasePage;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-public class PromotionPage extends SelenideBasePage
+public class PromotionPage extends BasePage
 {
-	//region Locators
-	SelenideElement promotion = $x("(//span[text()='Promotion'])[2]");
-	//endregion
+    public PromotionPage(WebDriver driver)
+    {
+        super(driver);
+    }
 
-	//region Action Methods
-	public void clickPromotion()
-	{
-		promotion.click();
-	}
+    //region Locators
+    @FindBy(xpath = "(//span[text()='Promotion'])[2]")
+    private WebElement promotion;
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    //endregion
+
+    //region Action Methods
+    public void clickPromotion()
+    {
+        promotion.click();
+    }
+
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
 //	public void a()
 //	{
@@ -64,6 +71,5 @@ public class PromotionPage extends SelenideBasePage
 //	public void a()
 //	{
 //	}
-	//endregion
-
+    //endregion
 }

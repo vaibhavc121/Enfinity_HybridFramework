@@ -2,13 +2,11 @@ package testCases.HRMS.Payroll;
 
 import base.BasePage;
 import base.BaseTest;
-import base.SelenideBasePage;
 import com.codeborne.selenide.WebDriverRunner;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.Payroll.LoanPage;
-import pageObjects.HRMS.Payroll.OvertimePage;
 import pageObjects.HRMS.Payroll.PayrollPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
@@ -27,8 +25,6 @@ public class DeleteLoanTest extends BaseTest
             List<PayrollModel.LoanModel> loanData = JsonUtils.convertJsonListDataModel(payrollFile, "createLoan",
                     PayrollModel.LoanModel.class);
 
-            driver= WebDriverRunner.getWebDriver();
-
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
             pp.clkPayroll();
@@ -37,15 +33,15 @@ public class DeleteLoanTest extends BaseTest
             logger.info("clicked on txn");
 
             // Loan pg
-            LoanPage lp = new LoanPage();
+            LoanPage lp = new LoanPage(driver);
 
             for (PayrollModel.LoanModel loan : loanData)
             {
                 lp.clickLoan();
                 logger.info("clicked on loan");
 
-                SelenideBasePage.performAction(6, loan.employee, "Amend");
-                Assert.assertFalse(SelenideBasePage.validateListing(loan.employee, 6, 6));
+                BasePage.performAction(6, loan.employee, "Amend");
+                Assert.assertFalse(BasePage.validateListing(loan.employee, 6, 6));
             }
         } catch (Exception e)
         {
@@ -53,5 +49,4 @@ public class DeleteLoanTest extends BaseTest
             Assert.fail("Test case failed: " + e);
         }
     }
-
 }

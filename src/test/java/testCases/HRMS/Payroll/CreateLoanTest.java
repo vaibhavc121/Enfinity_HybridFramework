@@ -1,6 +1,6 @@
 package testCases.HRMS.Payroll;
 
-import base.SelenideBasePage;
+import base.BasePage;
 import com.codeborne.selenide.WebDriverRunner;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
@@ -22,11 +22,10 @@ public class CreateLoanTest extends BaseTest
             "createLoan", PayrollModel.LoanModel.class);
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-    public void verifyLoan()
+    public void createLoan()
     {
         try
         {
-            driver = WebDriverRunner.getWebDriver();
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
@@ -36,7 +35,7 @@ public class CreateLoanTest extends BaseTest
             logger.info("clicked on txn");
 
             // loan pg
-            LoanPage lp = new LoanPage();
+            LoanPage lp = new LoanPage(driver);
 
             for (PayrollModel.LoanModel loan : loanData)
             {
@@ -69,7 +68,7 @@ public class CreateLoanTest extends BaseTest
 
                 lp.clickViewApproveBack();
 
-                Assert.assertTrue(SelenideBasePage.validateListing2Fields(loan.employee, 6, 6, loan.loanAmt, 8, 8));
+                Assert.assertTrue(BasePage.validateListing2Fields(loan.employee, 6, 6, loan.loanAmt, 8, 8));
             }
         } catch (Exception e)
         {
