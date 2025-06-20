@@ -103,9 +103,11 @@ public class SelenideBasePage
         String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
         try
         {
+            BaseTest.log("extracting text from the result");
             return $x(xpath).getText();
         } catch (Exception e)
         {
+            BaseTest.log("No matching record found");
             return "No matching record found";
         }
         //		String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
@@ -375,27 +377,40 @@ public class SelenideBasePage
         try
         {
             clickOnView();
+            BaseTest.log("clicked on view");
         } catch (Exception e)
         {
             clickOnEdit();
+            BaseTest.log("clicked on edit");
         }
         waitSS(5);
 
         // Click on menu image icon
         $x("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]").click();
+        BaseTest.log("Clicked on menu image icon");
 
         // Click the action (e.g., Delete, View, Edit)
         $x("//span[normalize-space()='" + action + "']").click();
+        BaseTest.log("Clicked on " + action);
 
         waitSS(1);
         actions().sendKeys(Keys.ENTER).perform();
+        BaseTest.log("pressed enter");
 
-        // Delete the transaction again (possibly confirm step)
+        // Delete the transaction
         $x("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]").click();
+        BaseTest.log("clicked on menu/setting");
+
         $x("//span[normalize-space()='Delete']").click();
+        BaseTest.log("clicked on delete");
+
         waitSS(1);
+
         actions().sendKeys(Keys.ENTER).perform();
+        BaseTest.log("pressed enter button");
+
         back(); // or BrowserUtils.navigateBack(driver);
+        BaseTest.log("navigate back to listing");
     }
 
     public static void deleteHrCoreTxn(int ColumnIndex, String value)
