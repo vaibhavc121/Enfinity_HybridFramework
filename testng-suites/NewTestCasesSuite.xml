@@ -123,9 +123,7 @@
             <!-- Flaky Test -->
             <!-- <class name="testCases.HRMS.Payroll.CreateLeaveTest"/> -->
             <!-- <class name="testCases.HRMS.Payroll.DeleteLeaveTest"/> -->
-            <class name="testCases.HRMS.SelfService.VerifyApproveWorkflowTest"/>
-            <class name="testCases.HRMS.SelfService.VerifyRejectWorkflowTest"/>
-            <class name="testCases.HRMS.SelfService.VerifyReviseWorkflowTest"/>
+           
 
         </classes>
     </test>

@@ -687,7 +687,11 @@ public class BasePage
     {
         EmployeePage ep = new EmployeePage(driver);
         ep.clickRightAreaMenu();
+        BaseTest.log("");
+
         ep.clicklogOff();
+        BaseTest.log("");
+
         LoginPage lp = new LoginPage(driver);
         lp.login(username, pwd);
     }
