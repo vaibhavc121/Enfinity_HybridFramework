@@ -11,42 +11,42 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class CreateLenientShiftTimetableTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createLenientShiftTimetable()
-	{
-		try
-		{
-			String attendanceFile = FileUtils.getDataFile("Attendance", "Attendance", "AttendanceData");
-			List<LenientShiftModel> attendanceData = JsonUtils.convertJsonListDataModel(attendanceFile,
-					"createLenientShiftTimetable", LenientShiftModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createLenientShiftTimetable()
+    {
+        try
+        {
+            String attendanceFile = FileUtils.getDataFile("Attendance", "Attendance", "AttendanceData");
+            List<LenientShiftModel> attendanceData = JsonUtils.convertJsonListDataModel(attendanceFile,
+                    "createLenientShiftTimetable", LenientShiftModel.class);
 
-			BasePage.globalSearch("Timetable");
+            BasePage.globalSearch("Timetable");
 
-			TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage(driver);
 
-			for (LenientShiftModel strict : attendanceData)
-			{
-				tp.clickNew();
-				tp.provideTimetableName(strict.name);
-				tp.selectDayType(strict.dayType);
-				tp.selectMode(strict.mode);
-				tp.provideMaximumWorkedHourPerDay(strict.maximumWorkedHourPerDay);
-				tp.provideWorkedHourPerDay(strict.workedHourPerDay);
-				tp.provideHourlyMinCheckInTime(strict.hourlyMinCheckInTime);
-				tp.provideHourlyMaxCheckOutTime(strict.hourlyMaxCheckOutTime);
-				tp.clickViewBack();
+            for (LenientShiftModel strict : attendanceData)
+            {
+                tp.clickNew();
+                tp.provideTimetableName(strict.name);
+                tp.selectDayType(strict.dayType);
+                tp.selectMode(strict.mode);
+                tp.provideMaximumWorkedHourPerDay(strict.maximumWorkedHourPerDay);
+                tp.provideWorkedHourPerDay(strict.workedHourPerDay);
+                tp.provideHourlyMinCheckInTime(strict.hourlyMinCheckInTime);
+                tp.provideHourlyMaxCheckOutTime(strict.hourlyMaxCheckOutTime);
+                tp.clickViewBack();
 
-				Assert.assertTrue(BasePage.validateListing(strict.name, 2, 1));
-			}
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+                Assert.assertTrue(BasePage.validateListing(strict.name, 3, 2));
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

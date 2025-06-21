@@ -42,7 +42,7 @@ public class AttendanceTest extends BaseTest
                 tp.provideHourlyMaxCheckOutTime(strict.hourlyMaxCheckOutTime);
                 tp.clickViewBack();
 
-                Assert.assertTrue(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertTrue(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -66,7 +66,7 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.LenientShiftModel strict : attendanceData)
             {
                 BasePage.deleteTxn(2, strict.name);
-                Assert.assertFalse(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -191,7 +191,7 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.ShiftModel shift : shiftData)
             {
                 BasePage.deleteTxn(2, shift.shiftName);
-                Assert.assertFalse(BasePage.validateListing(shift.shiftName, 2, 1));
+                Assert.assertFalse(BasePage.validateListing(shift.shiftName, 3, 2));
             }
         } catch (Exception e)
         {
@@ -224,7 +224,7 @@ public class AttendanceTest extends BaseTest
                 tp.provideFirstOutTime(strict.firstOutTime);
                 tp.clickViewBack();
 
-                Assert.assertTrue(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertTrue(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -248,7 +248,7 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.StrictDayShiftModel strict : attendanceData)
             {
                 BasePage.deleteTxn(2, strict.name);
-                Assert.assertFalse(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -284,7 +284,7 @@ public class AttendanceTest extends BaseTest
                 tp.provideSecondOutTime(strict.secondOutTime);
                 tp.clickViewBack();
 
-                Assert.assertTrue(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertTrue(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -308,7 +308,7 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.TwoShiftDayShiftModel strict : attendanceData)
             {
                 BasePage.deleteTxn(2, strict.name);
-                Assert.assertFalse(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -346,7 +346,7 @@ public class AttendanceTest extends BaseTest
                 tp.selectShiftNextDayStartFrom(strict.shiftNextDayStartFrom);
                 tp.clickViewBack();
 
-                Assert.assertTrue(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertTrue(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -368,7 +368,7 @@ public class AttendanceTest extends BaseTest
         for (AttendanceModel.TwoShiftNightShiftModel strict : attendanceData)
         {
             BasePage.deleteTxn(2, strict.name);
-            Assert.assertFalse(BasePage.validateListing(strict.name, 2, 1));
+            Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
         }
     }
 
@@ -397,7 +397,7 @@ public class AttendanceTest extends BaseTest
                 tp.provideFirstOutTime(shift.firstOutTime);
                 tp.clickViewBack();
 
-                Assert.assertTrue(BasePage.validateListing(shift.name, 2, 1));
+                Assert.assertTrue(BasePage.validateListing(shift.name, 3, 2));
             }
         } catch (Exception e)
         {
@@ -421,7 +421,7 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.NightShiftModel strict : attendanceData)
             {
                 BasePage.deleteTxn(2, strict.name);
-                Assert.assertFalse(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {

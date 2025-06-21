@@ -45,7 +45,7 @@ public class CreateTwoShiftNightShiftTimetableTest extends BaseTest
                 tp.selectShiftNextDayStartFrom(strict.shiftNextDayStartFrom);
                 tp.clickViewBack();
 
-                Assert.assertTrue(BasePage.validateListing(strict.name, 2, 1));
+                Assert.assertTrue(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
         {
