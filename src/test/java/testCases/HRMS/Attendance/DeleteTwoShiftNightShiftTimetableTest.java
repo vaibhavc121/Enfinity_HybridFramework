@@ -27,7 +27,7 @@ public class DeleteTwoShiftNightShiftTimetableTest extends BaseTest
 
         for (TwoShiftNightShiftModel strict : attendanceData)
         {
-            BasePage.deleteTxn(2, strict.name);
+            BasePage.deleteTxn(3, strict.name);
             Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
         }
     }

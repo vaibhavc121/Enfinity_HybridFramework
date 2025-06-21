@@ -29,7 +29,7 @@ public class DeleteLenientShiftTimetableTest extends BaseTest
 
             for (LenientShiftModel strict : attendanceData)
             {
-                BasePage.deleteTxn(2, strict.name);
+                BasePage.deleteTxn(3, strict.name);
                 Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
             }
         } catch (Exception e)
