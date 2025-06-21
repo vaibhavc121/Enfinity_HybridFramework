@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DeleteSupportRequestTest extends BaseTest
 {
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, invocationCount = 3)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
     public void deleteITSupportRequest()
     {
         try

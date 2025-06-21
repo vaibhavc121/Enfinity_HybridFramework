@@ -123,14 +123,8 @@
             <!-- Flaky Test -->
             <!-- <class name="testCases.HRMS.Payroll.CreateLeaveTest"/> -->
             <!-- <class name="testCases.HRMS.Payroll.DeleteLeaveTest"/> -->
-            <class name="testCases.HRMS.Payroll.CreateLeaveEncashmentTest"/>
-            <class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/>
-            <class name="testCases.HRMS.SelfService.CreateBenefitClaimTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest"/>
-            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
-            <class name="testCases.HRMS.Attendance.CreateNightShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteNightShiftTimetableTest"/>
+            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>
+            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>
 
 
         </classes>
