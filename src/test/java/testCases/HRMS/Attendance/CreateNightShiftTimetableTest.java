@@ -51,15 +51,15 @@ public class CreateNightShiftTimetableTest extends BaseTest
                 log("provideMaximumWorkedHourPerDay");
 
                 tp.provideFirstInTime(shift.firstInTime);
-                log("provideMaximumWorkedHourPerDay");
+                log("provideFirstInTime");
 
                 tp.provideFirstOutTime(shift.firstOutTime);
-                log("provideMaximumWorkedHourPerDay");
+                log("provideFirstOutTime");
 
                 tp.clickViewBack();
-                log("provideMaximumWorkedHourPerDay");
+                log("clickViewBack");
 
-                Assert.assertTrue(BasePage.validateListing(shift.name, 2, 1));
+                Assert.assertTrue(BasePage.validateListing(shift.name, 3, 2));
                 log("assertion completed");
             }
         } catch (Exception e)

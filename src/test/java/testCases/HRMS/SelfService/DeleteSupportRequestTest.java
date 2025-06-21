@@ -11,39 +11,38 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class DeleteSupportRequestTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void deleteITSupportRequest()
-	{
-		try
-		{
-			String itSupportFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-			List<ITSupportModel> itSupportData = JsonUtils.convertJsonListDataModel(itSupportFile, "createITSupport",
-					ITSupportModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, invocationCount = 3)
+    public void deleteITSupportRequest()
+    {
+        try
+        {
+            String itSupportFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<ITSupportModel> itSupportData = JsonUtils.convertJsonListDataModel(itSupportFile, "createITSupport",
+                    ITSupportModel.class);
 
-			// self service page
-			SelfServicePage ss = new SelfServicePage(driver);
-			ss.clickSelfService();
-			log("clickSelfService");
-			ss.clickTransactions();
-			log("clickTransactions");
+            // self service page
+            SelfServicePage ss = new SelfServicePage(driver);
+            ss.clickSelfService();
+            log("clickSelfService");
+            ss.clickTransactions();
+            log("clickTransactions");
 
-			// ITSupport page
-			ITSupportRequestPage it = new ITSupportRequestPage(driver);
-			it.clickITSupport();
-			log("clickITSupport");
+            // ITSupport page
+            ITSupportRequestPage it = new ITSupportRequestPage(driver);
+            it.clickITSupport();
+            log("clickITSupport");
 
-			BasePage.deleteTxn(7, "Active");
-			Assert.assertFalse(BasePage.validateListing("Active", 7, 7));
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+            BasePage.deleteTxn(5, "001");
+            Assert.assertFalse(BasePage.validateListing("001", 5, 5));
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }
