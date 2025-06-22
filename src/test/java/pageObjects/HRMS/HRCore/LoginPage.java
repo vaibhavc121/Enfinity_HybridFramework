@@ -57,12 +57,12 @@ public class LoginPage extends BasePage
         WebElement loginButton = driver.findElement(By.className("login-btn"));
 
         usernameField.sendKeys(uname);
-        BaseTest.log("");
+        BaseTest.log("provided username: " + uname);
 
         passwordField.sendKeys(pwd);
-        BaseTest.log("");
+        BaseTest.log("provided password: " + pwd);
 
         loginButton.click();
-        BaseTest.log("");
+        BaseTest.log("clicked on login button");
     }
 }

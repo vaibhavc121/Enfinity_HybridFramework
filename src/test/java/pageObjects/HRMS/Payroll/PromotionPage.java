@@ -15,7 +15,12 @@ public class PromotionPage extends BasePage
 
     //region Locators
     @FindBy(xpath = "(//span[text()='Promotion'])[2]")
-    private WebElement promotion;
+    WebElement promotion;
+
+    @FindBy(xpath="//input[@id='EmployeePromotion.EmployeeIdLookup_I']") WebElement empdd;
+    @FindBy(xpath="//input[@id='EmployeePromotion.EffectiveDate_I']") WebElement effectiveDate;
+    @FindBy(xpath="//input[@id='EmployeePromotion.Type_I']") WebElement type;
+    @FindBy(xpath="//span[text()='Salaries']") WebElement salaries;
 
     //endregion
 
@@ -30,21 +35,25 @@ public class PromotionPage extends BasePage
         clickOnNew();
     }
 
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
+	public void provideEmployee(String value)
+	{
+        clearAndProvide1(empdd, value);
+    }
+
+	public void provideEffectiveDate(String value)
+	{
+        clearAndProvide1(effectiveDate, value);
+	}
+
+	public void selectPromotionType(String value)
+	{
+        selectDropdownValueOffice365(value);
+	}
+
+	public void clickSalaries()
+	{
+        salaries.click();
+	}
 //
 //	public void a()
 //	{

@@ -30,7 +30,10 @@ public class VerifyReviseWorkflowTest extends BaseTest
 			// self service module
 			SelfServicePage ss = new SelfServicePage(driver);
 			ss.clickSelfService();
+			log("clickSelfService");
+
 			ss.clickTransactions();
+			log("clickTransactions");
 
 			// Leave Request page
 			LeaveRequestPage lr = new LeaveRequestPage(driver);
@@ -39,12 +42,24 @@ public class VerifyReviseWorkflowTest extends BaseTest
 			for (LeaveRequestModel leaveRequest : leaveRequestData)
 			{
 				lr.clickLeaveRequest();
+				log("clickLeaveRequest");
+
 				Thread.sleep(5000);
+
 				lr.clickNew();
+				log("clickNew");
+
 				lr.hoverAndClick(leaveRequest.leaveType);
+				log("hoverAndClick");
+
 				lr.provideFromDate(leaveRequest.fromDate);
+				log("provideFromDate");
+
 				lr.provideToDate(leaveRequest.toDate);
+				log("provideToDate");
+
 				lr.clickSaveAndSubmit();
+				log("clickSaveAndSubmit");
 				// lr.clickSave();
 
 				// ClassicAssert.isTrue(lr.isTxnCreated(leaveRequest.expFromDate,
@@ -57,14 +72,21 @@ public class VerifyReviseWorkflowTest extends BaseTest
 			for (LeaveRequestModel leaveRequest : leaveRequestData)
 			{
 				np.clickBellIcon();
+				log("");
 				np.isLeaveDataCorrect(leaveRequest.expEmpName, "Revise");
 			}
 
 			// Amend & Delete the txn
 			BasePage.logoutAndLogin("rohitc@test.com", "123");
 			ss.clickSelfService();
+			log("clickSelfService");
+
 			ss.clickTransactions();
+			log("clickTransactions");
+
 			lr.clickLeaveRequest();
+			log("clickLeaveRequest");
+
 			for (LeaveRequestModel leaveRequest : leaveRequestData)
 			{
 				BasePage.performAction(7, "Active", "Delete");

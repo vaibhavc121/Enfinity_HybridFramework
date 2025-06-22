@@ -22,14 +22,19 @@ public class DeleteExceptionRequestTest extends BaseTest
 			// self service page
 			SelfServicePage ss = new SelfServicePage(driver);
 			ss.clickSelfService();
+			log("clickSelfService");
+
 			ss.clickTransactions();
+			log("clickTransactions");
 
 			// ExceptionRequest page
 			ExceptionRequestPage er = new ExceptionRequestPage(driver);
 			er.createExceptionRequest();
+			log("createExceptionRequest");
 
 			BasePage.deleteTxn(6, "001");
 			Assert.assertFalse(BasePage.validateListing("001", 6, 6));
+			log("assertion successful");
 		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);

@@ -26,7 +26,10 @@ public class CreateExceptionRequestTest extends BaseTest
 			// self service page
 			SelfServicePage ss = new SelfServicePage(driver);
 			ss.clickSelfService();
+			log("clickSelfService");
+
 			ss.clickTransactions();
+			log("clickTransactions");
 
 			// ExceptionRequest page
 			ExceptionRequestPage er = new ExceptionRequestPage(driver);
@@ -34,14 +37,26 @@ public class CreateExceptionRequestTest extends BaseTest
 			for (ExceptionRequestModel exception : exceptionRequestData)
 			{
 				er.createExceptionRequest();
+				log("createExceptionRequest");
+
 				er.clickNew();
+				log("clickNew");
+
 				er.provideExceptionDate(exception.exceptionDate);
+				log("provideExceptionDate");
+
 				er.provideLoginTime(exception.loginTime);
+				log("provideLoginTime");
+
 				// er.provideLogoutTime(exception.loginTime);
 				er.provideRemarks(exception.remarks);
+				log("provideRemarks");
+
 				er.clickSaveBack();
+				log("clickSaveBack");
 
 				Assert.assertTrue(er.isTxnCreated(exception.exceptionDate));
+				log("assertion successful");
 			}
 
 		} catch (Exception e)
