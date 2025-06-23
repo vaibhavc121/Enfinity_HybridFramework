@@ -511,6 +511,11 @@ public class BasePage
         pressKey("enter");
         BaseTest.log("pressed enter");
 
+        if (action.equalsIgnoreCase("Delete"))
+        {
+            return;
+        }
+
         // Delete the transaction
         waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
         BaseTest.log("clicked on menu/setting");

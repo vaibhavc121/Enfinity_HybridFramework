@@ -21,6 +21,9 @@ public class PromotionPage extends BasePage
     @FindBy(xpath="//input[@id='EmployeePromotion.EffectiveDate_I']") WebElement effectiveDate;
     @FindBy(xpath="//input[@id='EmployeePromotion.Type_I']") WebElement type;
     @FindBy(xpath="//span[text()='Salaries']") WebElement salaries;
+    @FindBy(xpath="//input[@id='EmployeePromotionLine_SalaryComponentId_I']") WebElement salcompdd;
+    @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[3]") WebElement incrementAmt;
+    @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[5]") WebElement effectiveFromDate;
 
     //endregion
 
@@ -50,33 +53,51 @@ public class PromotionPage extends BasePage
         selectDropdownValueOffice365(value);
 	}
 
+    public void clickSave()
+    {
+        clickOnSave();
+    }
+
+    public void scrollToElement()
+    {
+        scrollIntoView(driver, salaries);
+    }
+
 	public void clickSalaries()
 	{
         salaries.click();
 	}
-//
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
-//
-//	public void a()
-//	{
-//	}
+
+    public void clickNew1()
+    {
+        clickOnNewLine();
+    }
+
+	public void provideSalComp(String value)
+	{
+        clearAndProvide1(salcompdd,value);
+	}
+
+    public void provideIncrementAmt(String value) throws InterruptedException
+    {
+        clearAndProvide2(incrementAmt, value);
+    }
+
+    public void provideEffectiveFromDate(String value) throws InterruptedException
+    {
+        clearAndProvide2(effectiveFromDate, value);
+    }
+
+    public void clicViewApproveBack()
+    {
+        clickOnViewApproveBack();
+    }
+    //todo: validate from emp sal component
+
+
+
+
+
+
     //endregion
 }
