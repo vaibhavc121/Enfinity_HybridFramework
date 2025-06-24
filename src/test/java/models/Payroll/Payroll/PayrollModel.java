@@ -112,4 +112,16 @@ public class PayrollModel
 
 	}
 
+	public static class PromotionModel
+	{
+		public String employee;
+		public String effectiveDate;
+		public String promotionType;
+		public String salComp;
+		public String incrementAmt;
+		public String salCompEffectiveFromDate;
+		public String expectedSal;
+
+	}
+
 }

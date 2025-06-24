@@ -61,8 +61,8 @@
             <!--<class name="testCases.HRMS.Payroll.DeleteTicketEncashmentTest"/>-->
             <!--<class name="testCases.HRMS.Payroll.CreateOvertimeTest"/>-->
             <!--<class name="testCases.HRMS.Payroll.DeleteOvertimeTest"/>-->
-<!--            <class name="testCases.HRMS.Payroll.CreateLoanTest"/>-->
-<!--            <class name="testCases.HRMS.Payroll.DeleteLoanTest"/>-->
+            <class name="testCases.HRMS.Payroll.CreateLoanTest"/>
+            <class name="testCases.HRMS.Payroll.DeleteLoanTest"/>
 
 
             <!-- Self Service -->
@@ -123,8 +123,7 @@
             <!-- Flaky Test -->
             <!-- <class name="testCases.HRMS.Payroll.CreateLeaveTest"/> -->
             <!-- <class name="testCases.HRMS.Payroll.DeleteLeaveTest"/> -->
-            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>
+
 
 
         </classes>

@@ -5,6 +5,9 @@ import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.EmployeePage1;
+import utilities.DataUtils;
 
 public class PromotionPage extends BasePage
 {
@@ -24,6 +27,9 @@ public class PromotionPage extends BasePage
     @FindBy(xpath="//input[@id='EmployeePromotionLine_SalaryComponentId_I']") WebElement salcompdd;
     @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[3]") WebElement incrementAmt;
     @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[5]") WebElement effectiveFromDate;
+    @FindBy(xpath = "(//span[text()='Employee'])[2]")
+    WebElement employee;
+    @FindBy(xpath = "//div[@class='salary-component-info']//p") WebElement salCompInfo;
 
     //endregion
 
@@ -88,11 +94,19 @@ public class PromotionPage extends BasePage
         clearAndProvide2(effectiveFromDate, value);
     }
 
-    public void clicViewApproveBack()
+    public void clickViewApproveBack()
     {
         clickOnViewApproveBack();
     }
-    //todo: validate from emp sal component
+
+    public double getSalary(String empname)
+    {
+        employee.click();
+        navigateToEmployee(empname);
+        EmployeePage ep=new EmployeePage(driver);
+        ep.clickPayroll();
+        return DataUtils.extractNumericValueFromText(salCompInfo);
+    }
 
 
 

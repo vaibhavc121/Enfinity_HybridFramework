@@ -108,6 +108,18 @@
 			"amountOfInstallments":"10",
 			"remarks":"10"
 		}
+	],
+
+	"createPromotion":[
+		{
+			"employee":"Vaibhav Chavan",
+			"effectiveDate": "01-01-2025",
+			"promotionType":"Promotion",
+			"salComp":"SC04001 | Basic",
+			"incrementAmt":"100",
+			"salCompEffectiveFromDate":"01-02-2025",
+			"expectedSal":"600"
+		}
 	]
 
 
