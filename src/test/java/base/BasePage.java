@@ -346,7 +346,7 @@ public class BasePage
         WebElement element = waitForElement(locator);
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().doubleClick().sendKeys(value).build().perform();
-        Thread.sleep(1000);
+        waitTS(2);
     }
 
     public static void provideAndEnter(WebElement locator, String value)

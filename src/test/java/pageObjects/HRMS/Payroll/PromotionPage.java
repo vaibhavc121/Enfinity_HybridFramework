@@ -22,7 +22,7 @@ public class PromotionPage extends BasePage
 
     @FindBy(xpath="//input[@id='EmployeePromotion.EmployeeIdLookup_I']") WebElement empdd;
     @FindBy(xpath="//input[@id='EmployeePromotion.EffectiveDate_I']") WebElement effectiveDate;
-    @FindBy(xpath="//input[@id='EmployeePromotion.Type_I']") WebElement type;
+    @FindBy(xpath="//input[@id='EmployeePromotion.Type_I']") WebElement promotionTypeDD;
     @FindBy(xpath="//span[text()='Salaries']") WebElement salaries;
     @FindBy(xpath="//input[@id='EmployeePromotionLine_SalaryComponentId_I']") WebElement salcompdd;
     @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[3]") WebElement incrementAmt;
@@ -56,6 +56,7 @@ public class PromotionPage extends BasePage
 
 	public void selectPromotionType(String value)
 	{
+        promotionTypeDD.click();
         selectDropdownValueOffice365(value);
 	}
 
@@ -66,7 +67,9 @@ public class PromotionPage extends BasePage
 
     public void scrollToElement()
     {
-        scrollIntoView(driver, salaries);
+        waitTS(2);
+        //scrollIntoView(driver, salaries);
+        scrollToBottom(driver);
     }
 
 	public void clickSalaries()
@@ -81,16 +84,18 @@ public class PromotionPage extends BasePage
 
 	public void provideSalComp(String value)
 	{
-        clearAndProvide1(salcompdd,value);
+        provideAndEnter(salcompdd,value);
 	}
 
     public void provideIncrementAmt(String value) throws InterruptedException
     {
+        waitTS(2);
         clearAndProvide2(incrementAmt, value);
     }
 
     public void provideEffectiveFromDate(String value) throws InterruptedException
     {
+        waitTS(2);
         clearAndProvide2(effectiveFromDate, value);
     }
 
