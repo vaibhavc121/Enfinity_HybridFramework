@@ -11,6 +11,8 @@ import pageObjects.HRMS.SelfService.SupportRequestCategoryPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
+import javax.sound.sampled.Line;
 import java.util.List;
 
 public class DeleteSupportReqCategoryTest extends BaseTest
@@ -29,9 +31,13 @@ public class DeleteSupportReqCategoryTest extends BaseTest
 			for (DeleteSupportRequestCategoryModel SRC : supportRequestCategoryData)
 			{
 				sr.globalSearch1("support request category");
+				logger.info("searched for support request category");
+
 				sr.deleteTransaction(2, SRC.categoryName);
+				logger.info("deleted support request category: " + SRC.categoryName);
 
 				Assert.assertFalse(BasePage.validateListing(SRC.categoryName, 2, 1));
+				log("assertion passed: Support Request Category deleted successfully: " + SRC.categoryName);
 			}
 
 		} catch (Exception e)

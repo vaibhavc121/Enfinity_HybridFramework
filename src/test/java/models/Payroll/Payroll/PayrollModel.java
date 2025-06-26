@@ -121,6 +121,7 @@ public class PayrollModel
 		public String incrementAmt;
 		public String salCompEffectiveFromDate;
 		public String expectedSal;
+		public String newDesignation;
 
 	}
 

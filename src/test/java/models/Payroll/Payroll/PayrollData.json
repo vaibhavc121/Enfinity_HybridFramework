@@ -118,7 +118,8 @@
 			"salComp":"SC04001 | Basic",
 			"incrementAmt":"100",
 			"salCompEffectiveFromDate":"01-02-2025",
-			"expectedSal":"600"
+			"expectedSal":"600",
+			"newDesignation":"Sales Manager",
 		}
 	]
 

@@ -28,16 +28,35 @@ public class CreateSupportRequestCategoryTest extends BaseTest
 			for (SupportRequestCategoryModel src : supportRequestCategoryData)
 			{
 				sr.globalSearch1("support request category");
+				logger.info("searched for support request category");
+
 				sr.clickNew();
+				logger.info("clicked on new button");
+
 				sr.provideCategoryname(src.categoryName);
+				logger.info("provided category name: " + src.categoryName);
+
 				sr.selectRequestedTo(src.requestedTo);
+				logger.info("selected requested to: " + src.requestedTo);
+
 				sr.selectPriority(src.priority);
+				logger.info("selected priority: " + src.priority);
+
+
 				sr.selectWorkflow(src.workflow);
+				logger.info("selected workflow: " + src.workflow);
+
 				sr.requireAttachment(src.attachment);
+				logger.info("set require attachment: " + src.attachment);
+
 				sr.provideDesc(src.desc);
+				logger.info("provided description: " + src.desc);
+
 				sr.clickSaveBack();
+				logger.info("clicked on save and navigate back");
 
 				Assert.assertTrue(sr.isTransactionCreated(null, src.categoryName, null));
+				logger.info("Support Request Category created successfully: " + src.categoryName);
 			}
 
 		} catch (Exception e)

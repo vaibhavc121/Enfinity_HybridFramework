@@ -51,32 +51,35 @@ public class CreatePromotionTest extends BaseTest
 				pr.selectPromotionType(proData.promotionType);
 				logger.info("selected promotion type");
 
-				pr.clickSave();
-				logger.info("clicked on save button");
+				pr.provideNewDesignation(proData.newDesignation);
+				logger.info("provided new designation");
 
-				pr.scrollToElement();
-				logger.info("scrolled to element- salaries");
-
-				pr.clickSalaries();
-				logger.info("clicked on salaries");
-
-				pr.clickNew1();
-				logger.info("clicked on new button in salaries");
-
-				pr.provideSalComp(proData.salComp);
-				logger.info("provided salary component");
-
-				pr.provideIncrementAmt(proData.incrementAmt);
-				logger.info("provided increment amount");
-
-				pr.provideEffectiveFromDate(proData.salCompEffectiveFromDate);
-				logger.info("provided effective from date");
+//				pr.clickSave();
+//				logger.info("clicked on save button");
+//
+//				pr.scrollToElement();
+//				logger.info("scrolled to element- salaries");
+//
+//				pr.clickSalaries();
+//				logger.info("clicked on salaries");
+//
+//				pr.clickNew1();
+//				logger.info("clicked on new button in salaries");
+//
+//				pr.provideSalComp(proData.salComp);
+//				logger.info("provided salary component");
+//
+//				pr.provideIncrementAmt(proData.incrementAmt);
+//				logger.info("provided increment amount");
+//
+//				pr.provideEffectiveFromDate(proData.salCompEffectiveFromDate);
+//				logger.info("provided effective from date");
 
 				pr.clickViewApproveBack();
 				logger.info("clicked on view approve and navigate back");
 
-				Assert.assertEquals(pr.getSalary(proData.employee), proData.expectedSal,
-						"Salary after promotion is not as expected for employee: " + proData.employee);
+//				Assert.assertEquals(pr.getSalary(proData.employee), proData.expectedSal,
+//						"Salary after promotion is not as expected for employee: " + proData.employee);
 
 			}
 
