@@ -1,128 +1,111 @@
 {
-    "createVariableSal":[
-        {
-            "employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-            "remarks":"test",
-            "salComponent":"SC04001 | Basic",
-            "amt":"100"
-
-        }
-
-    ],
-
-	"createLeave":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"leaveType": "Unpaid Leave",
-			"fromDate":"01-01-2025",
-			"uptoDate":"01-01-2025",
-			"paymentType":"Pay With Payroll"
-		}
-	],
-
-	"createLeaveAdjustment":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"leaveType": "Annual Leave",
-			"paidDays":"1",
-			"unpaidDays":"01-01-2025",
-			"remarks":"test"
-		}
-	],
-
-	"createLeaveEncashment":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"leaveType": "Sick Leave",
-			"paidDays":"1",
-			"paymentType":"Pay Now",
-			"remarks":"test"
-
-		}
-	],
-
-	"createLeaveOpeningBalance":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"leaveType": "Sick Leave",
-			"paidDays":"1",
-			"remarks":"test"
-		}
-	],
-
-	"createBenefitSchemeEncashment":[
-		{
-			"effectiveDate": "01-01-2025",
-			"employee":"Vaibhav Chavan",
-			"employeeBenefitScheme":"Self | Health Insurance",
-			"requestedAmount":"10",
-			"approvedAmount":"10",
-			"paymentType":"Pay Out Side Payroll",
-			"remarks":"test"
-		}
-	],
-
-	"createTicketEncashment":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"paymentType":"Pay With Payroll",
-			"issueTickets":"1"
-
-		}
-	],
-
-	"createTicketAdjustment":[
-		{
-			"reportName": "Ticket Balance",
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"paymentType":"Pay Now",
-			"issueTickets":"1"
-		}
-	],
-
-	"createOvertime":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"overtimeDate": "01-01-2025",
-			"overtimeType":"Normal Overtime",
-			"overtimeHrs":"1",
-			"expectedOvertimeAmt":"2.016"
-			}
-		],
-
-	"createLoan":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"loanType":"Car Loan",
-			"repaymentStartPeriod":"Feb-2023",
-			"loanAmt":"100",
-			"amountOfInstallments":"10",
-			"remarks":"10"
-		}
-	],
-
-	"createPromotion":[
-		{
-			"employee":"Vaibhav Chavan",
-			"effectiveDate": "01-01-2025",
-			"promotionType":"Promotion",
-			"salComp":"SC04001 | Basic",
-			"incrementAmt":"100",
-			"salCompEffectiveFromDate":"01-02-2025",
-			"expectedSal":"600",
-			"newDesignation":"Sales Manager",
-		}
-	]
-
-
-
+  "createVariableSal": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "remarks": "test",
+      "salComponent": "SC04001 | Basic",
+      "amt": "100"
+    }
+  ],
+  "createLeave": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "leaveType": "Unpaid Leave",
+      "fromDate": "01-01-2025",
+      "uptoDate": "01-01-2025",
+      "paymentType": "Pay With Payroll"
+    }
+  ],
+  "createLeaveAdjustment": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "leaveType": "Annual Leave",
+      "paidDays": "1",
+      "unpaidDays": "01-01-2025",
+      "remarks": "test"
+    }
+  ],
+  "createLeaveEncashment": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "leaveType": "Sick Leave",
+      "paidDays": "1",
+      "paymentType": "Pay Now",
+      "remarks": "test"
+    }
+  ],
+  "createLeaveOpeningBalance": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "leaveType": "Sick Leave",
+      "paidDays": "1",
+      "remarks": "test"
+    }
+  ],
+  "createBenefitSchemeEncashment": [
+    {
+      "effectiveDate": "01-01-2025",
+      "employee": "Vaibhav Chavan",
+      "employeeBenefitScheme": "Self | Health Insurance",
+      "requestedAmount": "10",
+      "approvedAmount": "10",
+      "paymentType": "Pay Out Side Payroll",
+      "remarks": "test"
+    }
+  ],
+  "createTicketEncashment": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "paymentType": "Pay With Payroll",
+      "issueTickets": "1"
+    }
+  ],
+  "createTicketAdjustment": [
+    {
+      "reportName": "Ticket Balance",
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "paymentType": "Pay Now",
+      "issueTickets": "1"
+    }
+  ],
+  "createOvertime": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "overtimeDate": "01-01-2025",
+      "overtimeType": "Normal Overtime",
+      "overtimeHrs": "1",
+      "expectedOvertimeAmt": "2.016"
+    }
+  ],
+  "createLoan": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "loanType": "Car Loan",
+      "repaymentStartPeriod": "Feb-2023",
+      "loanAmt": "100",
+      "amountOfInstallments": "10",
+      "remarks": "10"
+    }
+  ],
+  "createPromotion": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "promotionType": "Promotion",
+      "salComp": "SC04001 | Basic",
+      "incrementAmt": "100",
+      "salCompEffectiveFromDate": "01-02-2025",
+      "expectedSal": "600",
+      "newDesignation": "Sales Manager"
+    }
+  ]
 }
