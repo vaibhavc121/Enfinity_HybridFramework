@@ -4,6 +4,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import utilities.AppiumServerUtils;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -37,6 +38,8 @@ public class BaseTest
 
         // Appium server URL
         URL appiumServerUrl = new URL("http://127.0.0.1:4723");
+
+        AppiumServerUtils.startAppiumServer();
 
         // Initialize AndroidDriver
         driver = new AndroidDriver(appiumServerUrl, dc);
@@ -83,5 +86,6 @@ public class BaseTest
     public void tearDown()
     {
         //driver.quit();
+        AppiumServerUtils.stopAppiumServer();
     }
 }
