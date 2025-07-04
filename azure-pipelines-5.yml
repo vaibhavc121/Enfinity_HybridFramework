@@ -32,8 +32,20 @@ jobs:
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
         findBugsRunAnalysis: true
-    - task: PublishBuildArtifacts@1
+
+    - task: CopyFiles@2
+      displayName: 'Copy ExtentReports + Linked Assets'
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: |
+          reports/**
+          screenshots/**
+          logs/**
+        TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish ExtentReports Artifact with Assets'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+        ArtifactName: 'ExtentReport'
         publishLocation: 'Container'
