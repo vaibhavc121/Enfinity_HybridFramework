@@ -22,7 +22,7 @@ public class PromotionPage extends BasePage
 
     @FindBy(xpath="//input[@id='EmployeePromotion.EmployeeIdLookup_I']") WebElement empdd;
     @FindBy(xpath="//input[@id='EmployeePromotion.EffectiveDate_I']") WebElement effectiveDate;
-    @FindBy(xpath="//input[@id='EmployeePromotion.Type_I']") WebElement promotionTypeDD;
+    @FindBy(xpath="//input[@id='']") WebElement promotionTypeDD;
     @FindBy(xpath="//input[@id='EmployeePromotion.NewDesignationIdLookup_I']") WebElement newDesignation;
     @FindBy(xpath="//span[text()='Salaries']") WebElement salaries;
     @FindBy(xpath="//input[@id='EmployeePromotionLine_SalaryComponentId_I']") WebElement salcompdd;

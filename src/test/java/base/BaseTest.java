@@ -143,32 +143,6 @@ public class BaseTest
             }
             //endregion
 
-            //region Browser setup using if_else condition (Optional)
-
-            //			if (br.equalsIgnoreCase("chrome"))
-//			{
-//			    ChromeOptions options = new ChromeOptions();
-//			    options.setCapability("browserVersion", "129");
-//			    driver = new ChromeDriver(options);
-//			}
-//			else if (br.equalsIgnoreCase("firefox"))
-//			{
-//			    FirefoxOptions options = new FirefoxOptions();
-//			    options.setCapability("browserVersion", "131");
-//			    driver = new FirefoxDriver(options);
-//			}
-//			else if (br.equalsIgnoreCase("edge"))
-//			{
-//			    EdgeOptions options = new EdgeOptions();
-//			    options.setCapability("browserVersion", "130");
-//			    driver = new EdgeDriver(options);
-//			} else
-//			{
-//			    throw new IllegalArgumentException("Unsupported browser: " + br);
-//			}
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-            //endregion
-
             //region For selenium grid standalone
             // driver = new RemoteWebDriver(new URL("http://192.168.102.117:4444/wd/hub"), capabilities);
             // driver = SelfHealingDriver.create(_driver);

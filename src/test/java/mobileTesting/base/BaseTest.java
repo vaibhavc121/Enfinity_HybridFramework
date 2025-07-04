@@ -2,8 +2,12 @@ package mobileTesting.base;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import utilities.AppiumServerUtils;
 
 import java.net.MalformedURLException;
@@ -11,14 +15,20 @@ import java.net.URL;
 
 public class BaseTest
 {
+    //region Global Variables and Logger Initialization
     public static AndroidDriver driver;
+    public static Logger logger; // log4j
 
-    public static void main(String[] args) throws MalformedURLException, InterruptedException
+    public static void log(String message)
     {
-        setup();
+        String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
+        logger.info(methodName + " - " + message);
     }
+    //endregion
 
-    public static void setup() throws MalformedURLException, InterruptedException
+    //region Setup
+    @BeforeClass
+    public void setup() throws MalformedURLException, InterruptedException
     {
         DesiredCapabilities dc = new DesiredCapabilities();
         dc.setCapability("platformName", "Android");
@@ -44,6 +54,13 @@ public class BaseTest
         // Initialize AndroidDriver
         driver = new AndroidDriver(appiumServerUrl, dc);
 
+        //region Logger Setup
+        logger = LogManager.getLogger(this.getClass()); // log4j2
+        logger.info(">>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<");
+        logger.info("--test execution started--");
+        //endregion
+
+        //region Login
 //        Thread.sleep(10000);
 //        driver.findElement(By.xpath("//android.widget.EditText[@resource-id=\"ion-input-0\"]")).sendKeys("vaibhavc121@demo.com#test");
 //        Thread.sleep(10000);
@@ -58,34 +75,22 @@ public class BaseTest
         driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-1\")")).sendKeys("123");
         driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Login\")")).click();
         Thread.sleep(5000);
-
-        //region loan request
-//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(5)")).click();
-//        Thread.sleep(2000);
-//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.Image\").instance(5)")).click();
-//        Thread.sleep(5000);
-//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-2\")")).click();
-//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-2\")")).sendKeys("1");
-//        Thread.sleep(2000);
-//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-3\")")).sendKeys("1");
-//        Thread.sleep(2000);
-//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-4\")")).sendKeys("1");
-//        Thread.sleep(2000);
-//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"SUBMIT\")")).click();
         //endregion
 
-        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.view.View\").instance(36)")).click();
-        Thread.sleep(5000);
-        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Select one\")")).click();
-        Thread.sleep(5000);
-        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"001 | Vaibhav Chavan\")")).click();
-        Thread.sleep(5000);
-        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"SUBMIT\")")).click();
-    }
 
+
+
+
+
+    }
+    //endregion
+
+    //region TearDown
+    @AfterClass
     public void tearDown()
     {
         //driver.quit();
         AppiumServerUtils.stopAppiumServer();
     }
+    //endregion
 }
