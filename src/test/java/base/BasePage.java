@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -174,6 +175,12 @@ public class BasePage
     public static void clickOnOk()
     {
         waitForElement1(By.xpath("//span[normalize-space()='OK']")).click();
+    }
+
+    public static void clickOnElement(By locator)
+    {
+        WebElement element = waitForElement1(locator);
+        element.click();
     }
 
     public static void clickOnSave()

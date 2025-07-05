@@ -49,7 +49,7 @@ public class BaseTest
         // Appium server URL
         URL appiumServerUrl = new URL("http://127.0.0.1:4723");
 
-        AppiumServerUtils.startAppiumServer();
+        //AppiumServerUtils.startAppiumServer();
 
         // Initialize AndroidDriver
         driver = new AndroidDriver(appiumServerUrl, dc);
@@ -90,7 +90,7 @@ public class BaseTest
     public void tearDown()
     {
         //driver.quit();
-        AppiumServerUtils.stopAppiumServer();
+        //AppiumServerUtils.stopAppiumServer();
     }
     //endregion
 }
