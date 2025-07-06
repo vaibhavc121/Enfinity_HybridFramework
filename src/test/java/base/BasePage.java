@@ -508,7 +508,9 @@ public class BasePage
 
         // Click on menu image icon
         waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        waitTS(2);
         BaseTest.log("Clicked on menu image icon");
+
 
         // Click the action (e.g., Delete, View, Edit)
         waitForElement1(By.xpath("//span[normalize-space()='" + action + "']")).click();
@@ -525,6 +527,7 @@ public class BasePage
 
         // Delete the transaction
         waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        waitTS(2);
         BaseTest.log("clicked on menu/setting");
 
         driver.findElement(By.xpath("//span[normalize-space()='Delete']")).click();

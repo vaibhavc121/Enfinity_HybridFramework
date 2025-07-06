@@ -33,19 +33,39 @@ public class CreateHRAssetRequest extends BaseTest
 			for (HRAssetRequestModel HRAssetRequest : hrAssetRequestData)
 			{
 				ar.clickHRAssetRequest();
+				log("clicked on HR Asset Request");
+
 				ar.clickNew();
+				log("clicked on New");
+
 				ar.provideTxnDate(HRAssetRequest.txnDate);
+				log("provided Transaction Date: " + HRAssetRequest.txnDate);
+
 				ar.provideEffectiveDate(HRAssetRequest.effectiveDate);
+				log("provided Effective Date: " + HRAssetRequest.effectiveDate);
+
 				ar.clickSave();
+				log("clicked on Save");
+
 				ar.clickNewLine();
+				log("clicked on New Line");
+
 				ar.clickHRAssetDD();
+				log("clicked on HR Asset dropdown");
+
 				ar.selectHRAsset(HRAssetRequest.HRAsset);
+				log("selected HR Asset: " + HRAssetRequest.HRAsset);
 				// ar.provideExpReturnDate(HRAssetRequest.expReturnDate);
 				ar.clickView();
+				log("clicked on View");
+
 				ar.clickOnApproveBack();
+				log("clicked on Approve Back");
 
 				Assert.assertTrue(HRAssetRequestPage.isTransactionCreated(HRAssetRequest.txnDate1, HRAssetRequest.emp,
 						HRAssetRequest.status));
+				log("Transaction created successfully with date: " + HRAssetRequest.txnDate1 + ", Employee: " + HRAssetRequest.emp
+						+ ", Status: " + HRAssetRequest.status);
 			}
 		} catch (Exception e)
 		{

@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -166,15 +167,15 @@ public class BaseTest
         //region If execution on Local
         if (p.getProperty("execution_env").equals("local"))
         {
-            // ChromeOptions options = new ChromeOptions();
-            // options.addArguments("--headless"); // Run in headless mode
+//             ChromeOptions options = new ChromeOptions();
+//             options.addArguments("--headless"); // Run in headless mode
             // options.addArguments("--no-sandbox"); // Required for CI environments
             // options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
 
             switch (browser.toLowerCase())
             {
                 case "chrome":
-                    // driver = new ChromeDriver(options);
+//                     driver = new ChromeDriver(options);
                     driver = new ChromeDriver();
                     logger.info("browser opened");
                     // driver = SelfHealingDriver.create(_driver);

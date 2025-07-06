@@ -15,7 +15,7 @@ import java.util.List;
 
 public class DeleteHRAssetRequestTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, description = "dont check delete bcos i am checking asset return so txn cannot keep active for delete", enabled = false)
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, description = "dont check delete bcos i am checking asset return so txn cannot keep active for delete", enabled = true)
 	public void deleteHRAssetRequest()
 	{
 		try
@@ -33,7 +33,7 @@ public class DeleteHRAssetRequestTest extends BaseTest
 			HRAssetRequestPage ar = new HRAssetRequestPage(driver);
 			ar.clickHRAssetRequest();
 			ar.test();
-			BasePage.deleteTxn(7, "active");
+			BasePage.performAction(7, "Approved", "Amend");
 		} catch (Exception e)
 		{
 			logger.error("Test failed due to exception: ", e);
