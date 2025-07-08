@@ -1,5 +1,6 @@
 package testCases.HRMS.Payroll;
 
+import base.BasePage;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -37,22 +38,22 @@ public class CreatePromotionTest extends BaseTest
 			for(PayrollModel.PromotionModel proData : promotionData)
 			{
 				pr.clickPromotion();
-				logger.info("clicked on promotion link");
+				log("clicked on promotion link");
 
 				pr.clickNew();
-				logger.info("clicked on new button");
+				log("clicked on new button");
 
 				pr.provideEmployee(proData.employee);
-				logger.info("provided employee");
+				log("provided employee");
 
 				pr.provideEffectiveDate(proData.effectiveDate);
-				logger.info("provided effective date");
+				log("provided effective date");
 
 				pr.selectPromotionType(proData.promotionType);
-				logger.info("selected promotion type");
+				log("selected promotion type");
 
 				pr.provideNewDesignation(proData.newDesignation);
-				logger.info("provided new designation");
+				log("provided new designation");
 
 //				pr.clickSave();
 //				logger.info("clicked on save button");
@@ -76,7 +77,10 @@ public class CreatePromotionTest extends BaseTest
 //				logger.info("provided effective from date");
 
 				pr.clickViewApproveBack();
-				logger.info("clicked on view approve and navigate back");
+				log("clicked on view approve and navigate back");
+
+				Assert.assertTrue(BasePage.validateListing(proData.employee, 6, 6),
+						"Promotion for employee: " + proData.employee + " is not created successfully");
 
 //				Assert.assertEquals(pr.getSalary(proData.employee), proData.expectedSal,
 //						"Salary after promotion is not as expected for employee: " + proData.employee);

@@ -40,6 +40,7 @@ public class DeletePromotionTest extends BaseTest
                 lp.clickPromotion();
                 logger.info("clicked on promotion");
 
+
                 BasePage.performAction(10, "Approved", "Amend");
                 Assert.assertFalse(BasePage.validateListing("Approved", 10, 10));
             }
