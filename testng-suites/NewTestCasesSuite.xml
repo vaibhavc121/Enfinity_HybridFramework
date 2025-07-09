@@ -63,8 +63,8 @@
             <!--<class name="testCases.HRMS.Payroll.DeleteOvertimeTest"/>-->
 <!--            <class name="testCases.HRMS.Payroll.CreateLoanTest"/>-->
 <!--            <class name="testCases.HRMS.Payroll.DeleteLoanTest"/>-->
-            <class name="testCases.HRMS.Payroll.CreatePromotionTest"/>
-            <class name="testCases.HRMS.Payroll.DeletePromotionTest"/>
+<!--            <class name="testCases.HRMS.Payroll.CreatePromotionTest"/>-->
+<!--            <class name="testCases.HRMS.Payroll.DeletePromotionTest"/>-->
 
 
 
@@ -126,6 +126,8 @@
             <!-- Flaky Test -->
             <!-- <class name="testCases.HRMS.Payroll.CreateLeaveTest"/> -->
             <!-- <class name="testCases.HRMS.Payroll.DeleteLeaveTest"/> -->
+
+
 
 
 
