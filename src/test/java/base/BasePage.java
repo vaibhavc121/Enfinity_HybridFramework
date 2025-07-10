@@ -183,6 +183,12 @@ public class BasePage
         element.click();
     }
 
+    public static void clickOnElement1(WebElement ele)
+    {
+        WebElement element = waitForElement(ele);
+        element.click();
+    }
+
     public static void clickOnSave()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
@@ -211,6 +217,17 @@ public class BasePage
 
     public static void clickOnViewApproveBack()
     {
+        waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
+        waitTS(1);
+        waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
+        waitTS(1);
+        driver.navigate().back();
+    }
+
+    public static void clickOnSaveViewApproveBack()
+    {
+        waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
+        waitTS(1);
         waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
         waitTS(1);
         waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
@@ -937,9 +954,9 @@ public class BasePage
         Assert.assertTrue(actualMessage.contains(expectedMessage));
     }
 
-    public static boolean validateListing(String value, int filterIndex, int resultIndex)
+    public static boolean validateListing(String filterValue, int filterIndex, int resultIndex)
     {
-        filterByIndex(filterIndex, value);
+        filterByIndex(filterIndex, filterValue);
         try
         {
             Thread.sleep(2000);
@@ -948,7 +965,7 @@ public class BasePage
             Thread.currentThread().interrupt();
         }
         String actualValue = resultValue(resultIndex);
-        if (actualValue.contains(value))
+        if (actualValue.contains(filterValue))
         {
             return true;
         } else

@@ -18,6 +18,7 @@ public class PenaltyPage extends BasePage
     @FindBy(xpath="//input[@id='Penalty.PenaltyDate_I']") WebElement penaltyDate;
     @FindBy(xpath="//input[@id='Penalty.PenaltyTypeIdLookup_I']") WebElement penaltyTypeDD;
     @FindBy(xpath="//input[@id='Penalty.PenaltyInDays_I']") WebElement penaltyInDays;
+    @FindBy(xpath="//input[@id='Penalty.PenaltyInAmount_I']") WebElement penaltyInAmount;
     //endregion
 
     //region Action Methods
@@ -47,10 +48,20 @@ public class PenaltyPage extends BasePage
     public void providePenaltyInDays(String days)
     {
         clearAndProvide1(penaltyInDays, days);
+        pressTab();
+        pressTab();
+
     }
-    public void clickViewApproveBack()
+    public void providePenaltyInAmount(String amount)
     {
-        clickOnViewApproveBack();
+        clearAndProvide1(penaltyInAmount, amount);
+        pressTab();
+        pressTab();
+    }
+
+    public void clickSaveViewApproveBack()
+    {
+        clickOnSaveViewApproveBack();
     }
     //endregion
 }

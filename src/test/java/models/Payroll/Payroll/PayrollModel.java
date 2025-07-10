@@ -122,6 +122,16 @@ public class PayrollModel
 		public String salCompEffectiveFromDate;
 		public String expectedSal;
 		public String newDesignation;
+	}
+
+	public static class PenaltyModel
+	{
+		public String employee;
+		public String penaltyDate;
+		public String penaltyType;
+		public String penaltyInDays;
+		public String penaltyInAmt;
+		public String expectedDeductionAmt;
 
 	}
 
