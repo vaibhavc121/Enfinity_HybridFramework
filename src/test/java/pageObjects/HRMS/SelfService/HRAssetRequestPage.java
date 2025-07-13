@@ -107,6 +107,11 @@ public class HRAssetRequestPage extends BasePage
 		clickApproveAndBack();
 	}
 
+	public void clickOnSubmitBack()
+	{
+		clickSubmitAndBack();
+	}
+
 	public static boolean isTransactionCreated(String expDate, String expEmp, String expStatus)
 			throws InterruptedException
 	{

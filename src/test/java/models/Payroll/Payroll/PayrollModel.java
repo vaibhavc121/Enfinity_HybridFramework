@@ -132,7 +132,15 @@ public class PayrollModel
 		public String penaltyInDays;
 		public String penaltyInAmt;
 		public String expectedDeductionAmt;
+	}
 
+	public static class SuspendModel
+	{
+		public String effectiveDate;
+		public String employee;
+		public String suspendType;
+		public String remarks;
+		public String releaseSuspendDate;
 	}
 
 }

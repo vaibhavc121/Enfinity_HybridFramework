@@ -116,7 +116,15 @@
       "penaltyInDays": "1",
       "penaltyInAmt": "16.667",
       "expectedDeductionAmt": "16.667"
-
+    }
+  ],
+  "createSuspend": [
+    {
+      "effectiveDate": "01-01-2025",
+      "employee": "Vaibhav Chavan",
+      "suspendType": "Legal Issue",
+      "remarks": "test",
+      "releaseSuspendDate": "01-01-2025"
     }
   ]
 

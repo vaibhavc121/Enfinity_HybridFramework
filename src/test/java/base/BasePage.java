@@ -276,6 +276,12 @@ public class BasePage
         driver.navigate().back();
     }
 
+    public static void clickSubmitAndBack()
+    {
+        waitForElement1(By.xpath("//span[normalize-space()='Submit']")).click();
+        driver.navigate().back();
+    }
+
     public static void clickOnNew()
     {
         waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
@@ -532,6 +538,11 @@ public class BasePage
         // Click the action (e.g., Delete, View, Edit)
         waitForElement1(By.xpath("//span[normalize-space()='" + action + "']")).click();
         BaseTest.log("Clicked on " + action);
+
+        if (action.equalsIgnoreCase("Edit Release"))
+        {
+            return;
+        }
 
         waitTS(1);
         pressKey("enter");
