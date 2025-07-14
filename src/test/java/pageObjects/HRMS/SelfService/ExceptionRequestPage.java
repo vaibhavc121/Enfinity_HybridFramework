@@ -54,8 +54,11 @@ public class ExceptionRequestPage extends BasePage
 	{
 		clearAndProvide1(loginTime, value);
 		waitTS(5);
+		pressTab();
+		clickOnElement1(loginTime);
 		// clickOnOk();
 		// loginCal.click();
+		pressTab();
 	}
 
 	public void provideLogoutTime(String value)

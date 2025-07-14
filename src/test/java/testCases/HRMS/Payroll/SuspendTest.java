@@ -93,20 +93,41 @@ public class SuspendTest extends BaseTest
                 log("clicked on suspend link");
 
                 BasePage.performAction(6, suspend.employee, "Edit Release");
+
                 BasePage.switchTab();
                 log("switched to release tab");
+
                 sp.provideReleaseSuspendDate(suspend.releaseSuspendDate);
                 log("provided release suspend date");
+
                 BasePage.clickOnView();
                 log("clicked on view button");
+
                 BasePage.waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[1]")).click();
                 BasePage.waitTS(2);
                 BaseTest.log("Clicked on menu image icon");
+
                 sp.clickRelease();
                 log("clicked on release button");
+                BasePage.waitTS(2);
+
                 BasePage.clickOnOk();
                 log("clicked on ok button");
 
+                BasePage.pressEnter();
+                log("pressed enter key");
+                BasePage.waitTS(1);
+
+                BasePage.waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[1]")).click();
+                BasePage.waitTS(2);
+                BaseTest.log("Clicked on menu image icon");
+
+                sp.clickRelease();
+                log("clicked on release button");
+                BasePage.waitTS(2);
+
+                Assert.assertTrue(sp.validateMsg());
+                log("Assertion passed: Suspend transaction released successfully for employee: " + suspend.employee);
             }
 
         } catch (Exception e)

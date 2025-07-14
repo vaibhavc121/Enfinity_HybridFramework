@@ -167,8 +167,16 @@ public class BaseTest
         //region If execution on Local
         if (p.getProperty("execution_env").equals("local"))
         {
-//             ChromeOptions options = new ChromeOptions();
-//             options.addArguments("--headless"); // Run in headless mode
+            ChromeOptions options = new ChromeOptions();
+
+            options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+            options.setExperimentalOption("useAutomationExtension", false);
+
+            options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>() {{
+                put("credentials_enable_service", false);
+                put("profile.password_manager_enabled", false);
+            }});
+            // options.addArguments("--headless"); // Run in headless mode
             // options.addArguments("--no-sandbox"); // Required for CI environments
             // options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
 
@@ -176,7 +184,7 @@ public class BaseTest
             {
                 case "chrome":
 //                     driver = new ChromeDriver(options);
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(options);
                     logger.info("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
                     // logger.info("Chrome browser opened with Healenium");
@@ -210,10 +218,12 @@ public class BaseTest
         // driver = new ChromeDriver();
         // logger.info("browser opened");
         driver.manage().deleteAllCookies();
+        logger.info("cookies deleted");
         driver.manage().window().maximize();
         logger.info("browser maximized");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(p.getProperty("appurl")); // Readin URL from properties file
+        logger.info("implicit wait applied for 10 seconds");
+        driver.get(p.getProperty("appurl")); // Reading URL from properties file
         logger.info("provided app URL in browser");
 
         //endregion

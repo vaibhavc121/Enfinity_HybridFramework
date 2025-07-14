@@ -20,6 +20,7 @@ public class SuspendPage extends BasePage
     @FindBy(xpath="//textarea[@id='Suspend.Description_I']") WebElement remarks;
     @FindBy(xpath="//input[@id='Suspend.ReleaseSuspendDate_I']") WebElement releaseSuspendDate;
     @FindBy(xpath="//span[normalize-space()='Release']") WebElement release;
+    @FindBy(xpath="//span[@id='ValidationSummary']") WebElement msg;
 
 
     //endregion
@@ -60,6 +61,18 @@ public class SuspendPage extends BasePage
     public void clickViewApproveBack()
     {
         clickOnViewApproveBack();
+    }
+    public boolean validateMsg()
+    {
+        String message= msg.getText();
+        if(message.contains("Suspend already resumed."))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     //endregion
 }

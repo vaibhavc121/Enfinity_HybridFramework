@@ -48,7 +48,9 @@ public class CreateExceptionRequestTest extends BaseTest
 				er.provideLoginTime(exception.loginTime);
 				log("provideLoginTime");
 
-				// er.provideLogoutTime(exception.loginTime);
+//				er.provideLogoutTime(exception.logotTime);
+//				log("provideLogoutTime");
+
 				er.provideRemarks(exception.remarks);
 				log("provideRemarks");
 
