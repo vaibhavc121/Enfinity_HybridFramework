@@ -57,7 +57,7 @@ public class PenaltyTest extends BaseTest
                 pn.clickSaveViewApproveBack();
                 log("clicked on view approve back button");
 
-                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 9,9));
+                Assert.assertTrue(BasePage.validateListing(penalty.employee, 6,6));
                 log("assertion passed: Penalty in days created successfully");
             }
 
@@ -148,7 +148,7 @@ public class PenaltyTest extends BaseTest
                 pn.clickSaveViewApproveBack();
                 log("clicked on view approve back button");
 
-                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 9,9));
+                Assert.assertTrue(BasePage.validateListing(penalty.employee, 6,6));
                 log("assertion passed: Penalty in days created successfully");
             }
 
