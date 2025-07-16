@@ -65,8 +65,8 @@
 <!--            <class name="testCases.HRMS.Payroll.DeleteLoanTest"/>-->
 <!--            <class name="testCases.HRMS.Payroll.CreatePromotionTest"/>-->
 <!--            <class name="testCases.HRMS.Payroll.DeletePromotionTest"/>-->
-<!--            <class name="testCases.HRMS.Payroll.PenaltyTest"/>-->
-            <class name="testCases.HRMS.Payroll.SuspendTest"/>
+            <class name="testCases.HRMS.Payroll.PenaltyTest"/>
+           <!-- <class name="testCases.HRMS.Payroll.SuspendTest"/>-->
 
 
 
