@@ -18,7 +18,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
-import pageObjects.HRMS.HRCore.LoginPage;
+import pageObjects.HRMS.Login.LoginPage;
 
 public class BaseTest
 {
@@ -42,7 +42,7 @@ public class BaseTest
     //region Setup
 
     @SuppressWarnings("deprecation")
-    @BeforeClass(groups = {"regression", "datadriven"})
+    @BeforeClass(groups = {"regression", "datadriven", "functional"})
     @Parameters({"os", "browser"})
     public void setup(String os, String browser) throws IOException
     {
@@ -243,7 +243,7 @@ public class BaseTest
     //endregion
 
     //region TearDown
-    @AfterClass(groups = {"regression", "datadriven"})
+    @AfterClass(groups = {"regression", "datadriven", "functional"})
     public void teardown()
     {
         logger.info("--test execution completed--");

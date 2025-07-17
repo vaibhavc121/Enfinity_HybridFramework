@@ -44,7 +44,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -99,7 +99,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -154,7 +154,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -209,7 +209,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -264,7 +264,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -319,7 +319,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -374,7 +374,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -429,7 +429,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -484,7 +484,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -539,7 +539,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>
@@ -594,7 +594,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)
 at base.BasePage.highlightElement(BasePage.java:1071)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:202)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames]]>

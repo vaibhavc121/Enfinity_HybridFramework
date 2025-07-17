@@ -82,7 +82,7 @@ at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:23
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:473)
 at base.BasePage.highlightElement(BasePage.java:1085)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:34)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:34)
 at base.BaseTest.login(BaseTest.java:207)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)

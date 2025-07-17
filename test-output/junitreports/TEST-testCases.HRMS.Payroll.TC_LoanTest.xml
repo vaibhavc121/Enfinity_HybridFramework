@@ -9,7 +9,7 @@
       <![CDATA[java.lang.reflect.UndeclaredThrowableException
 at jdk.proxy2/jdk.proxy2.$Proxy29.executeScript(Unknown Source)
 at baseTest.BaseClass.highlightElement(BaseClass.java:302)
-at pageObjects.HRMS.HRCore.LoginPage.setUsername(LoginPage.java:32)
+at pageObjects.HRMS.Login.LoginPage.setUsername(LoginPage.java:32)
 at baseTest.BaseClass.login(BaseClass.java:214)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)

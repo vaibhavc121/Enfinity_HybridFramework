@@ -11,8 +11,14 @@
   "createLeave": [
     {
       "employee": "Vaibhav Chavan",
+      "employee1": "Kavisha Tiwari",
       "effectiveDate": "01-01-2025",
-      "leaveType": "Unpaid Leave",
+      "leaveTypeUnpaid": "Unpaid Leave",
+      "leaveTypeCondolence": "Condolence Leave",
+      "leaveTypeSick": "Sick Leave",
+      "leaveTypeHaj": "Haj Leave",
+      "leaveTypeMaternity": "Maternity Leave",
+      "leaveTypeAnnual": "Annual Leave",
       "fromDate": "01-01-2025",
       "uptoDate": "01-01-2025",
       "paymentType": "Pay With Payroll"

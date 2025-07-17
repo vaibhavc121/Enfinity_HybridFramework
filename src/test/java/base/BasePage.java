@@ -5,7 +5,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
-import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -24,7 +23,7 @@ import org.testng.Assert;
 import com.github.javafaker.Faker;
 
 import pageObjects.HRMS.HRCore.EmployeePage;
-import pageObjects.HRMS.HRCore.LoginPage;
+import pageObjects.HRMS.Login.LoginPage;
 import utilities.BrowserUtils;
 
 public class BasePage

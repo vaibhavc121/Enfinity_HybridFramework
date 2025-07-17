@@ -35,7 +35,7 @@ public class CreateLeaveRequestTest extends BaseTest
 				lr.clickLeaveRequest();
 				Thread.sleep(5000);
 				lr.clickNew();
-				lr.hoverAndClick(leaveRequest.leaveType);
+				lr.hoverAndClick(leaveRequest.leaveType); //sick leave
 				lr.provideFromDate(leaveRequest.fromDate);
 				lr.provideToDate(leaveRequest.toDate);
 				// lr.clickOnSaveSubmit();

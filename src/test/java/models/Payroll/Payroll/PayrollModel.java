@@ -23,8 +23,14 @@ public class PayrollModel
 	public static class LeaveModel
 	{
 		public String employee;
+		public String employee1;
 		public String effectiveDate;
-		public String leaveType;
+		public String leaveTypeUnpaid;
+		public String leaveTypeCondolence;
+		public String leaveTypeSick;
+		public String leaveTypeHaj;
+		public String leaveTypeMaternity;
+		public String leaveTypeAnnual;
 		public String fromDate;
 		public String uptoDate;
 		public String paymentType;

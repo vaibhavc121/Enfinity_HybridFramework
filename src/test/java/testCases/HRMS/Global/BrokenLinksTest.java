@@ -2,18 +2,14 @@ package testCases.HRMS.Global;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pageObjects.HRMS.HRCore.HRCorePage;
-import pageObjects.HRMS.HRCore.LoginPage;
 
 public class BrokenLinksTest extends BaseTest
 {

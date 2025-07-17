@@ -46,7 +46,7 @@ public class CreateLeaveTest extends BaseTest
 				logger.info("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
 //				logger.info("provided effective date");
-				lp.provideLeaveType(leave.leaveType);
+				lp.provideLeaveType(leave.leaveType); //Unpaid Leave
 				logger.info("leave type selected");
 				lp.provideFromDt(leave.fromDate);
 				logger.info("provided from date");

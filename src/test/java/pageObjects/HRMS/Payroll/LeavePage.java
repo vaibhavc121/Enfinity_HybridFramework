@@ -33,6 +33,9 @@ public class LeavePage extends BasePage
 	@FindBy(xpath = "//input[@id='Leave.LeaveTypeIdLookup_I']")
 	WebElement leaveTypeDD;
 
+	@FindBy(xpath="//img[@id='Leave.LeaveTypeIdLookup_B-1Img']") WebElement leaveTypeDD1;
+
+
 	@FindBy(xpath = "//input[@id='Leave.FromDate_I']")
 	WebElement fromDate;
 
@@ -61,6 +64,7 @@ public class LeavePage extends BasePage
 
 	public void provideLeaveType(String value)
 	{
+		clickOnElement1(leaveTypeDD1);
 		selectDropdownValue(value);
 	}
 
