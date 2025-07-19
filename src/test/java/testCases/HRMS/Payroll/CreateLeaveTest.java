@@ -46,7 +46,7 @@ public class CreateLeaveTest extends BaseTest
 				logger.info("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
 //				logger.info("provided effective date");
-				lp.provideLeaveType(leave.leaveType); //Unpaid Leave
+				lp.provideLeaveType(leave.leaveTypeUnpaid); //Unpaid Leave
 				logger.info("leave type selected");
 				lp.provideFromDt(leave.fromDate);
 				logger.info("provided from date");
@@ -58,7 +58,7 @@ public class CreateLeaveTest extends BaseTest
 				lp.clkApproveBack();
 				logger.info("clicked on approve btn");
 
-				Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveType, 9, 9));
+				Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 9, 9));
 
 			}
 

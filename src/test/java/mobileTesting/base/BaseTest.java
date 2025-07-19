@@ -35,11 +35,11 @@ public class BaseTest
         dc.setCapability("appium:platformVersion", "16.0");
         dc.setCapability("appium:deviceName", "Android Emulator");
         dc.setCapability("appium:automationName", "UiAutomator2");
-        //dc.setCapability("appium:app", "C:\\apkfiles\\app-debug.apk"); // Use full path to avoid path issues
+        dc.setCapability("appium:app", "C:\\apkfiles\\mda-2.2.0-25.apk"); // Use full path to avoid path issues
 
         // App already installed - use appPackage and appActivity
-        dc.setCapability("appium:appPackage", "com.onenfinity.hrms8");
-        dc.setCapability("appium:appActivity", "com.onenfinity.hrms8.MainActivity");
+//        dc.setCapability("appium:appPackage", "com.onenfinity.hrms8");
+//        dc.setCapability("appium:appActivity", "com.onenfinity.hrms8.MainActivity");
 
         dc.setCapability("appium:autoGrantPermissions", true);
 
