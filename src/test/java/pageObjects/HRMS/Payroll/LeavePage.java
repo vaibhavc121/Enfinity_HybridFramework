@@ -65,7 +65,13 @@ public class LeavePage extends BasePage
 	public void provideLeaveType(String value)
 	{
 		clickOnElement1(leaveTypeDD1);
+		waitTS(1);
+		clickOnElement1(leaveTypeDD1);
+		waitTS(1);
+		clickOnElement1(leaveTypeDD1);
+		waitTS(1);
 		selectDropdownValue(value);
+		// clearAndProvide1(leaveTypeDD, value);
 	}
 
 	public void provideFromDt(String value)

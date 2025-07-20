@@ -35,7 +35,7 @@ public class CreateLeaveOpeningBalanceTest extends BaseTest
 
 			EmployeePage1 ep = new EmployeePage1(driver);
 			ep.clkTimeOff();
-			double LeaveBal = ep.getAnnualLeaveBal(2);
+			double LeaveBal = ep.getLeaveBal(2);
 			double expLeaveBal = LeaveBal + 1;
 
 			// payroll pg
@@ -86,7 +86,7 @@ public class CreateLeaveOpeningBalanceTest extends BaseTest
 				BasePage.navigateToEmployee("001");
 				ep.clkTimeOff();
 
-				Assert.assertEquals(ep.getAnnualLeaveBal(2), expLeaveBal);
+				Assert.assertEquals(ep.getLeaveBal(2), expLeaveBal);
 			}
 
 		} catch (Exception e)

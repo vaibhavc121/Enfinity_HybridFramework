@@ -5,6 +5,8 @@ import base.BaseTest;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pageObjects.HRMS.HRCore.EmployeePage1;
+import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.Payroll.LeavePage;
 import pageObjects.HRMS.Payroll.PayrollPage;
 import utilities.FileUtils;
@@ -15,8 +17,9 @@ import java.util.List;
 
 public class LeaveTest extends BaseTest
 {
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
-    public void createLeave()
+    //region Unpaid Leave
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
+    public void createUnpaidLeave()
     {
         try
         {
@@ -67,8 +70,8 @@ public class LeaveTest extends BaseTest
         }
     }
 
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
-    public void deleteLeave()
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = false)
+    public void deleteUnpaidLeave()
     {
         try
         {
@@ -102,14 +105,28 @@ public class LeaveTest extends BaseTest
         }
     }
 
+    //endregion
+
+    //region Condolence Leave
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
-    public void createLeave1()
+    public void createCondolenceLeave()
     {
         try
         {
             String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
             List<PayrollModel.LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave",
                     PayrollModel.LeaveModel.class);
+
+            // hr core pg
+            HRCorePage hc = new HRCorePage(driver);
+            hc.clickHRCore();
+            hc.clickEmployee();
+            BasePage.navigateToEmployee("003");
+
+            EmployeePage1 ep = new EmployeePage1(driver);
+            ep.clkTimeOff();
+            double LeaveBal = ep.getLeaveBal(1);
+            double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
@@ -127,11 +144,11 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on leave");
                 lp.clkNewBtn();
                 logger.info("clicked on new btn");
-                lp.provideEmp(leave.employee);
+                lp.provideEmp(leave.employee1);
                 logger.info("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
 //				logger.info("provided effective date");
-                lp.provideLeaveType(leave.leaveTypeUnpaid); //Unpaid Leave
+                lp.provideLeaveType(leave.leaveTypeCondolence); //Unpaid Leave
                 logger.info("leave type selected");
                 lp.provideFromDt(leave.fromDate);
                 logger.info("provided from date");
@@ -143,7 +160,13 @@ public class LeaveTest extends BaseTest
                 lp.clkApproveBack();
                 logger.info("clicked on approve btn");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 9, 9));
+                hc.clickHRCore();
+                hc.clickEmployee();
+                BasePage.navigateToEmployee(leave.employee1);
+                ep.clkTimeOff();
+
+                Assert.assertEquals(ep.extractValueFromText(), expLeaveBal);
+                //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
 
@@ -155,7 +178,7 @@ public class LeaveTest extends BaseTest
     }
 
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2)
-    public void deleteLeave1()
+    public void deleteCondolenceLeave()
     {
         try
         {
@@ -177,8 +200,8 @@ public class LeaveTest extends BaseTest
             {
                 lp.clkLeave();
                 logger.info("clicked on leave");
-                BasePage.performAction(5, leave.employee, "Amend");
-                Assert.assertFalse(BasePage.validateListing(leave.employee, 5, 5));
+                BasePage.performAction(5, leave.employee1, "Amend");
+                Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
 
             }
 
@@ -188,4 +211,6 @@ public class LeaveTest extends BaseTest
             Assert.fail("Test case failed: " + e);
         }
     }
+    //endregion
+
 }

@@ -70,6 +70,7 @@
 
 
 
+
             <!-- Self Service -->
             <!-- <class name="testCases.HRMS.SelfService.CreateBenefitClaimTest" /> -->
             <!-- <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest" /> -->
@@ -126,8 +127,7 @@
 
 
             <!-- Flaky Test -->
-            <!-- <class name="testCases.HRMS.Payroll.CreateLeaveTest"/> -->
-            <!-- <class name="testCases.HRMS.Payroll.DeleteLeaveTest"/> -->
+
 <!--            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>-->
 <!--            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>-->
 

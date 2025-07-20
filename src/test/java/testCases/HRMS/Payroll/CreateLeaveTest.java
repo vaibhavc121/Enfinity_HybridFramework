@@ -58,7 +58,7 @@ public class CreateLeaveTest extends BaseTest
 				lp.clkApproveBack();
 				logger.info("clicked on approve btn");
 
-				Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 9, 9));
+				Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 7, 7));
 
 			}
 

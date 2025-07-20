@@ -91,7 +91,7 @@ public class EmployeePage1 extends BasePage
 	WebElement annualLeaveBal;
 
 	// Time off Action Methods
-	public double getAnnualLeaveBal(int classIndex)
+	public double getLeaveBal(int classIndex)
 	{
 		String bal = driver.findElement(By.xpath("(//p[@class='leave-balance'])[" + classIndex + "]")).getText();
 		// String bal = annualLeaveBal.getText();
