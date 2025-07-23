@@ -103,8 +103,10 @@ public class EmployeePage1 extends BasePage
 
 	}
 
-	public double extractValueFromText()
+	public double extractValueFromText(int classIndex)
 	{
+		By leaveBalanceLocator = By.xpath("(//p[@class='leave-balance'])[" + classIndex + "]");
+		WebElement annualLeaveBal=waitForElement1(leaveBalanceLocator);
 		return DataUtils.extractNumericValueFromText(annualLeaveBal);
 	}
 

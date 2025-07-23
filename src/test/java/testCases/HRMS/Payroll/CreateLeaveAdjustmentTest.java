@@ -86,7 +86,7 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 				BasePage.navigateToEmployee("001");
 				ep.clkTimeOff();
 
-				Assert.assertEquals(ep.extractValueFromText(), expLeaveBal);
+				Assert.assertEquals(ep.extractValueFromText(3), expLeaveBal);
 
 			}
 

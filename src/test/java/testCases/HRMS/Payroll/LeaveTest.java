@@ -165,7 +165,7 @@ public class LeaveTest extends BaseTest
                 BasePage.navigateToEmployee(leave.employee1);
                 ep.clkTimeOff();
 
-                Assert.assertEquals(ep.extractValueFromText(), expLeaveBal);
+                Assert.assertEquals(ep.extractValueFromText(1), expLeaveBal);
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
