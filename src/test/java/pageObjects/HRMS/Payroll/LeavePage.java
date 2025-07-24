@@ -11,6 +11,7 @@ import com.github.javafaker.Faker;
 
 import base.BasePage;
 import base.BaseTest;
+import utilities.DateUtils;
 
 public class LeavePage extends BasePage
 {
@@ -82,6 +83,16 @@ public class LeavePage extends BasePage
 	public void provideUpToDt(String value)
 	{
 		clearAndProvide1(uptoDate, value);
+	}
+
+	public void provideFromDate()
+	{
+		clearAndProvide1(fromDate, DateUtils.getCurrentDate("dd-MM-yyyy"));
+	}
+
+	public void provideUpToDate()
+	{
+		clearAndProvide1(uptoDate, DateUtils.getCurrentDate("dd-MM-yyyy"));
 	}
 
 	public void providePaymentType(String value)
