@@ -22,6 +22,7 @@ public class LeavePage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
+	//region Locators
 	@FindBy(xpath = "(//span[text()='Leave'])[2]")
 	WebElement leave;
 
@@ -36,13 +37,18 @@ public class LeavePage extends BasePage
 
 	@FindBy(xpath="//img[@id='Leave.LeaveTypeIdLookup_B-1Img']") WebElement leaveTypeDD1;
 
-
 	@FindBy(xpath = "//input[@id='Leave.FromDate_I']")
 	WebElement fromDate;
 
 	@FindBy(xpath = "//input[@id='Leave.UptoDate_I']")
 	WebElement uptoDate;
 
+	@FindBy(xpath="//span[normalize-space()='Edit Resumption']") WebElement editResumption;
+	@FindBy(xpath="//span[normalize-space()='Resume']") WebElement resume;
+	//endregion
+
+
+	//region Action Methods
 	public void clkLeave()
 	{
 		leave.click();
@@ -109,5 +115,21 @@ public class LeavePage extends BasePage
 	{
 		clickApproveAndBack();
 	}
+
+	public void clickApprove()
+	{
+		clickOnApprove();
+	}
+	public void clickEditResumption()
+	{
+		clickOnElement1(editResumption);
+	}
+	public void clickResume()
+	{
+		clickOnElement1(resume);
+	}
+
+	//endregion
+
 
 }

@@ -21,6 +21,7 @@
 		<classes>
 
 			<class name="testCases.HRMS.Payroll.LeaveTest"/>
+			<class name="testCases.HRMS.Payroll.LeaveResumptionTest"/>
 
 		</classes>
 	</test>

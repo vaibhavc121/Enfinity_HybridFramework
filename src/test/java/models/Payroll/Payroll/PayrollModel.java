@@ -34,6 +34,11 @@ public class PayrollModel
 		public String fromDate;
 		public String uptoDate;
 		public String paymentType;
+		public String expActualResumptionDate;
+		public String expEarlyResumptionDate;
+		public String expLateResumptionDate;
+		public String paidDays;
+		public String grantDays;
 
 	}
 

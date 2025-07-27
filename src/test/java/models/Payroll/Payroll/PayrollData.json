@@ -21,7 +21,12 @@
       "leaveTypeAnnual": "Annual Leave",
       "fromDate": "01-01-2025",
       "uptoDate": "01-01-2025",
-      "paymentType": "Pay With Payroll"
+      "paymentType": "Pay With Payroll",
+      "expActualResumptionDate": "02-Jan-2025",
+      "expEarlyResumptionDate": "01-Jan-2025",
+      "expLateResumptionDate": "03-Jan-2025",
+      "paidDays": "1",
+      "grantDays": "1"
     }
   ],
   "createLeaveAdjustment": [

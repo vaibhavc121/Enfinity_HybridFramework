@@ -2,6 +2,7 @@ package base;
 
 import java.awt.Robot;
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -533,6 +534,17 @@ public class BasePage
         waitTS(2);
         BaseTest.log("Clicked on menu image icon");
 
+        if (action.equalsIgnoreCase("Cancel Resumption"))
+        {
+            waitForElement1(By.xpath("//span[normalize-space()='Cancel Resumption']")).click();
+            waitTS(1);
+            pressKey("enter");
+            BaseTest.log("pressed enter");
+            BrowserUtils.navigateBack(driver);
+            BaseTest.log("navigated back to listing");
+            return;
+        }
+
 
         // Click the action (e.g., Delete, View, Edit)
         waitForElement1(By.xpath("//span[normalize-space()='" + action + "']")).click();
@@ -703,6 +715,42 @@ public class BasePage
                 break;
             }
         }
+    }
+
+    public static void closeUnwantedTab()
+    {
+        // Step 1: Store all tab handles
+        Set<String> allTabs = driver.getWindowHandles();
+        Iterator<String> tabIterator = allTabs.iterator();
+
+        // Step 2: Get first and second tab handles
+        String firstTab = tabIterator.next();
+        String secondTab = tabIterator.next(); // This is the one currently focused (to be closed)
+
+        // Step 3: Close current (second) tab
+        driver.close(); // This will close the current focused tab
+
+        // Step 4: Switch back to the first tab
+        driver.switchTo().window(firstTab);
+
+        //region Alternative (Safe for Dynamic Handle Order):
+        //If you're not 100% sure about tab order (sometimes order varies), use:
+
+        String currentTab = driver.getWindowHandle(); // Current is 2nd tab
+
+        // Find the other tab (1st)
+        Set<String> handles = driver.getWindowHandles();
+        for (String handle : handles) {
+            if (!handle.equals(currentTab)) {
+                driver.close(); // Close current (2nd)
+                driver.switchTo().window(handle); // Switch to 1st
+                break;
+            }
+        }
+
+
+        //endregion
+
     }
 
     public static void closeTab()

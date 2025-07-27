@@ -13,12 +13,13 @@ import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class LeaveTest extends BaseTest
 {
     //region Unpaid Leave
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = true)
     public void createUnpaidLeave()
     {
         try
@@ -59,7 +60,7 @@ public class LeaveTest extends BaseTest
                 lp.clkApproveBack();
                 logger.info("clicked on approve btn");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 9, 9));
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 7, 7));
 
             }
 
@@ -70,7 +71,7 @@ public class LeaveTest extends BaseTest
         }
     }
 
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = false)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = true)
     public void deleteUnpaidLeave()
     {
         try
@@ -108,7 +109,7 @@ public class LeaveTest extends BaseTest
     //endregion
 
     //region Condolence Leave
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = true)
     public void createCondolenceLeave()
     {
         try
@@ -177,7 +178,7 @@ public class LeaveTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = true)
     public void deleteCondolenceLeave()
     {
         try
@@ -214,7 +215,7 @@ public class LeaveTest extends BaseTest
     //endregion
 
     //region Haj Leave
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 3, enabled = true)
     public void createHajLeave()
     {
         try
@@ -283,7 +284,7 @@ public class LeaveTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 4, enabled = true)
     public void deleteHajLeave()
     {
         try
@@ -320,7 +321,7 @@ public class LeaveTest extends BaseTest
     //endregion
 
     //region Maternity Leave
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false )
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 5, enabled = true )
     public void createMaternityLeave()
     {
         try
@@ -389,7 +390,7 @@ public class LeaveTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 6, enabled = true)
     public void deleteMaternityLeave()
     {
         try
@@ -426,7 +427,7 @@ public class LeaveTest extends BaseTest
     //endregion
 
     //region Sick Leave
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 7, enabled = true)
     public void createSickLeave()
     {
         try
@@ -495,7 +496,7 @@ public class LeaveTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 8, enabled = true)
     public void deleteSickLeave()
     {
         try
@@ -532,7 +533,7 @@ public class LeaveTest extends BaseTest
     //endregion
 
     //region Annual Leave
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 9)
     public void createAnnualLeave()
     {
         try
@@ -550,7 +551,10 @@ public class LeaveTest extends BaseTest
             EmployeePage1 ep = new EmployeePage1(driver);
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(6);
-            double expLeaveBal = LeaveBal - 1;
+            double expLeaveBal1 = LeaveBal - 1;
+            DecimalFormat df = new DecimalFormat("#.##");
+            String expLeaveBal = df.format(expLeaveBal1);
+            double expLeaveBalance = Double.parseDouble(expLeaveBal);
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
@@ -589,7 +593,7 @@ public class LeaveTest extends BaseTest
                 BasePage.navigateToEmployee(leave.employee1);
                 ep.clkTimeOff();
 
-                Assert.assertEquals(ep.extractValueFromText(6), expLeaveBal);
+                Assert.assertEquals(ep.extractValueFromText(6), expLeaveBalance);
                 BasePage.clickOnHamburgerMenu();
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
@@ -602,7 +606,7 @@ public class LeaveTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 10)
     public void deleteAnnualLeave()
     {
         try
