@@ -12,6 +12,7 @@ public class RecruitmentModel
 	@AllArgsConstructor
 	public static class JobModel
 	{
+		public String templateName;
 		public String jobTitle;
 		public String department;
 		public String designation;

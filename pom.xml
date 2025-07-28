@@ -52,8 +52,8 @@
                             <!--<suiteXmlFile>testng-suites/SequentialCrossBrowserTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/MasterTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/RegressionTestSuite.xml</suiteXmlFile>-->
-                            <!--<suiteXmlFile>testng-suites/NewTestCasesSuite.xml</suiteXmlFile>-->
-                            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                            <suiteXmlFile>testng-suites/NewTestCasesSuite.xml</suiteXmlFile>
+                            <!--<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
 
                         </suiteXmlFiles>
                         <!--<argLine>-Djava.awt.headless=true</argLine>  Headless mode for Surefire -->

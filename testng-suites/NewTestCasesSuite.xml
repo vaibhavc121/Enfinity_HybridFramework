@@ -123,6 +123,8 @@
             <!-- <class name="testCases.HRMS.Attendance.DeleteTwoShiftNightShiftTimetableTest" /> -->
             <!--<class name="testCases.HRMS.Attendance.AttendanceTest"/>-->
 
+            <!-- Recruitment -->
+<!--            <class name="testCases.HRMS.Recruitment.CreateJobTest"/>-->
 
             <!-- Global -->
             <!-- <class name="testCases.HRMS.Global.BrokenLinksTest"/> -->
@@ -132,6 +134,8 @@
 
 <!--            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>-->
 <!--            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>-->
+             <class name="testCases.HRMS.Attendance.CreateStrictDayShiftTimetableTest" />
+             <class name="testCases.HRMS.Attendance.DeleteStrictDayShiftTimetableTest" />
 
 
 

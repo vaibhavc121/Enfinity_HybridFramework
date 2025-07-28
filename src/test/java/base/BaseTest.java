@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import com.github.javafaker.Faker;
 import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.Platform;
@@ -27,6 +28,7 @@ public class BaseTest
     // public static SelfHealingDriver driver; // updated to SelfHealingDriver
     public Properties p;
     public static Logger logger; // log4j
+    public Faker faker = new Faker(); // for generating random data
 
     //    public static void log(String message)
 //    {

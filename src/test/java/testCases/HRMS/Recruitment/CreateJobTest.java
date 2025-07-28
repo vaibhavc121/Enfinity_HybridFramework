@@ -34,28 +34,78 @@ public class CreateJobTest extends BaseTest
 			for (JobModel job : jobData)
 			{
 				jp.clickNew();
-				jp.provideJobTitle(job.jobTitle);
+				log("clicked on New button to create a new job");
+
+				jp.selectJobTemplate(job.templateName);
+				log("Selected job template: " + job.templateName);
+
+				//jp.provideJobTitle(job.jobTitle);
+				String jobTitle = faker.job().title();
+				jp.provideJobTitle(jobTitle);
+				log("Provided job title: " + job.jobTitle);
+
 				jp.provideDepartment(job.department);
+				log("Provided department: " + job.department);
+
 				jp.provideDesignation(job.designation);
+				log("Provided designation: " + job.designation);
+
 				jp.provideNumberOfPosition(job.numberOfPosition);
+				log("Provided number of positions: " + job.numberOfPosition);
+
 				jp.provideEmploymentType(job.employmentType);
+				log("Provided employment type: " + job.employmentType);
+
 				jp.provideIndustry(job.Industry);
-				jp.provideTargetDate(job.TargetDate);
+				log("Provided industry: " + job.Industry);
+
+				jp.provideTargetDate();
+				log("Provided target date: " + job.TargetDate);
+
 				jp.provideMonthlySal(job.MonthlySal);
+				log("Provided monthly salary: " + job.MonthlySal);
+
 				jp.provideAssignedManager(job.assignedManager);
+				log("Provided assigned manager: " + job.assignedManager);
+
 				jp.provideAssignedRecruiter(job.assignedRecruiter);
+				log("Provided assigned recruiter: " + job.assignedRecruiter);
+
 				jp.provideWorkExperience(job.workExperience);
+				log("Provided work experience: " + job.workExperience);
+
 				jp.provideSkills(job.skills);
+				log("Provided skills: " + job.skills);
+
 				jp.provideCity(job.city);
+				log("Provided city: " + job.city);
+
 				jp.provideState(job.state);
+				log("Provided state: " + job.state);
+
 				jp.provideCountry(job.country);
+				log("Provided country: " + job.country);
+
 				jp.providePostalCode(job.postalCode);
+				log("Provided postal code: " + job.postalCode);
+
 				jp.provideGender(job.gender);
+				log("provided gender: " +job.gender);
+
 				jp.provideMaritalStatus(job.maritalStatus);
+				log("provided marital status: " + job.maritalStatus);
+
 				jp.provideNationality(job.nationality);
-				jp.clickSave();
+				log("provided nationality: " + job.nationality);
+
+//				jp.provideDescription(jobTitle);
+//				log("Provided description for the job: " + jobTitle);
+
+				//jp.clickSave();
+				log("Clicked on Save button to save the job details");
 
 				Assert.assertTrue(jp.isTxnCreated(job.jobTitle));
+				log("Job created successfully with title: " + job.jobTitle);
 			}
 		} catch (Exception e)
 		{

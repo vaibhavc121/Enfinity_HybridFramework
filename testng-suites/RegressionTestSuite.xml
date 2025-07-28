@@ -67,10 +67,10 @@
             <!-- Self Service -->
             <class name="testCases.HRMS.SelfService.CreateBenefitClaimTest"/>
             <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest"/>
-            <!--<class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>-->
-            <!--<class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>-->
-            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>
+            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
+            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
+            <!--<class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>-->
+           <!-- <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>-->
             <class name="testCases.HRMS.SelfService.CreateHRAssetRequest"/>
             <class name="testCases.HRMS.SelfService.CreateHRAssetReturnTest"/>
             <class name="testCases.HRMS.SelfService.DeleteHRAssetRequestTest"/>

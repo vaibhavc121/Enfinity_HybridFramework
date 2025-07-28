@@ -1,7 +1,7 @@
 {
   "createJob": [
     {
-
+      "templateName": "HRIS Administrator",
       "jobTitle": "Developer",
       "department": "prod",
       "designation": "Systems Analyst",
@@ -21,6 +21,16 @@
       "gender": "male",
       "maritalStatus": "Married",
       "nationality": "India"
+    }
+  ],
+
+  "createCandidate": [
+    {
+      "name": "HRIS Administrator",
+      "jobTitle": "Developer",
+      "department": "prod",
+      "designation": "Systems Analyst"
+
     }
   ]
 }

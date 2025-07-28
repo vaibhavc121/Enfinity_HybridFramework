@@ -41,7 +41,7 @@ public class BasePage
     //endregion
 
     //region For fake data generation
-    Faker faker = new Faker();
+    public Faker faker = new Faker();
     //endregion
 
     //region For Random data generation

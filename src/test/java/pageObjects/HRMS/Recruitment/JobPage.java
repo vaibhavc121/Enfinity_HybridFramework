@@ -1,10 +1,12 @@
 package pageObjects.HRMS.Recruitment;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
+import utilities.DateUtils;
 
 public class JobPage extends BasePage
 {
@@ -14,6 +16,11 @@ public class JobPage extends BasePage
 		super(driver);
 
 	}
+
+	//region Locators
+	@FindBy(xpath="//div[@class='jobTemplateUpload']") private WebElement templateUploadbutton;
+	@FindBy(xpath = "//input[contains(@id,'Template')]") private WebElement templateDD;
+	@FindBy(xpath="//span[normalize-space()='Select']") private WebElement select;
 
 	@FindBy(name = "JobTitle")
 	private WebElement jobTitle;
@@ -72,19 +79,28 @@ public class JobPage extends BasePage
 	@FindBy(xpath = "//input[contains(@id,'NationalityCountryId')]")
 	private WebElement nationality;
 
+	@FindBy(xpath="//div[@aria-label='To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings']") private WebElement description;
+
 	@FindBy(xpath = "//tr[@class='dx-row dx-data-row dx-row-lines dx-column-lines']//td[1]//span")
 	private WebElement col1;
+	//endregion
 
-	// Action Methods
-
+	//region Action Methods
 	public void clickNew()
 	{
 		clickOnNew();
 	}
 
+	public void selectJobTemplate(String templateName)
+	{
+		templateUploadbutton.click();
+		provideAndEnter(templateDD, templateName);
+		waitForElement(select).click();
+	}
+
 	public void provideJobTitle(String value)
 	{
-		jobTitle.sendKeys(value);
+		clearAndProvide1(jobTitle, value);
 	}
 
 	public void provideDepartment(String value)
@@ -113,9 +129,9 @@ public class JobPage extends BasePage
 		industry.sendKeys(value);
 	}
 
-	public void provideTargetDate(String value)
+	public void provideTargetDate()
 	{
-		clearAndProvide1(targetDate, value);
+		clearAndProvide1(targetDate, DateUtils.addDaysToCurrentDate(30,"dd-MMM-yyyy"));
 	}
 
 	public void provideMonthlySal(String value)
@@ -178,6 +194,11 @@ public class JobPage extends BasePage
 		provideAndEnter(nationality, value);
 	}
 
+	public void provideDescription(String jobTitle)
+	{
+		clearAndProvide1(description, "Job Opening for the position of: " + jobTitle +": "+ new Faker().lorem().paragraph());
+	}
+
 	public void clickSave()
 	{
 		clickSaveAndBack();
@@ -188,5 +209,10 @@ public class JobPage extends BasePage
 		String jobTitleText = col1.getText();
 		return jobTitleText.contains(value);
 	}
+	//endregion
+
+
+
+
 
 }
