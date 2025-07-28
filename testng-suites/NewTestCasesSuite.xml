@@ -6,6 +6,7 @@
         <run>
             <include name="regression"></include>
             <include name="datadriven"></include>
+            <include name="functional"></include>
         </run>
     </groups>
 
@@ -124,7 +125,8 @@
             <!--<class name="testCases.HRMS.Attendance.AttendanceTest"/>-->
 
             <!-- Recruitment -->
-            <class name="testCases.HRMS.Recruitment.CreateJobTest"/>
+<!--            <class name="testCases.HRMS.Recruitment.CreateJobTest"/>-->
+<!--            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>-->
 
             <!-- Global -->
             <!-- <class name="testCases.HRMS.Global.BrokenLinksTest"/> -->

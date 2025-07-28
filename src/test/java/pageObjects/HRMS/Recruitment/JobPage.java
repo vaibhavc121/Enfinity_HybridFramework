@@ -25,6 +25,8 @@ public class JobPage extends BasePage
 	@FindBy(name = "JobTitle")
 	private WebElement jobTitle;
 
+	@FindBy(xpath = "//input[contains(@id,'JobCompanyId')]") private WebElement company;
+
 	@FindBy(xpath = "//input[contains(@id,'DepartmentId')]")
 	private WebElement department;
 
@@ -83,6 +85,8 @@ public class JobPage extends BasePage
 
 	@FindBy(xpath = "//tr[@class='dx-row dx-data-row dx-row-lines dx-column-lines']//td[1]//span")
 	private WebElement col1;
+
+	@FindBy(xpath="//span[@class='bCardHover']") private WebElement jobName;
 	//endregion
 
 	//region Action Methods
@@ -101,6 +105,11 @@ public class JobPage extends BasePage
 	public void provideJobTitle(String value)
 	{
 		clearAndProvide1(jobTitle, value);
+	}
+
+	public void provideCompany(String value)
+	{
+		provideAndEnter(company, value);
 	}
 
 	public void provideDepartment(String value)
@@ -201,12 +210,12 @@ public class JobPage extends BasePage
 
 	public void clickSave()
 	{
-		clickSaveAndBack();
+		clickOnSave();
 	}
 
 	public boolean isTxnCreated(String value)
 	{
-		String jobTitleText = col1.getText();
+		String jobTitleText = jobName.getText();
 		return jobTitleText.contains(value);
 	}
 	//endregion

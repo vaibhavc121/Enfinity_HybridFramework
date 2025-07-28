@@ -3,7 +3,8 @@
     {
       "templateName": "HRIS Administrator",
       "jobTitle": "Developer",
-      "department": "prod",
+      "company": "Automation Testing",
+      "department": "QC",
       "designation": "Systems Analyst",
       "numberOfPosition": "2",
       "employmentType": "Full Time",
@@ -26,10 +27,31 @@
 
   "createCandidate": [
     {
-      "name": "HRIS Administrator",
-      "jobTitle": "Developer",
-      "department": "prod",
-      "designation": "Systems Analyst"
+      "mobile": "8888888888",
+      "dob": "01-Apr-2000",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "checkbox1": true,
+
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "100011",
+
+      "workExperienceInYear": 5,
+      "currentJobTitle": "Software Engineer",
+      "currentEmployer": "ABC Corp",
+      "skills": "Accounting Software",
+      "currentSalary": 100,
+      "expectedSalary": 500,
+      "noticePeriodInDays": 30,
+      "checkbox2": true,
+
+      "passportNumber": "P1234567",
+      "passportIssueDate": "14-Dec-2016",
+      "passportExpiryDate": "13-Dec-2026",
+      "visaType": "Work Visa",
+      "civilIdNumber": "CIV123456"
 
     }
   ]

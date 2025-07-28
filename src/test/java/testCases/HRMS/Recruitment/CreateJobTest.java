@@ -42,7 +42,10 @@ public class CreateJobTest extends BaseTest
 				//jp.provideJobTitle(job.jobTitle);
 				String jobTitle = faker.job().title();
 				jp.provideJobTitle(jobTitle);
-				log("Provided job title: " + job.jobTitle);
+				log("Provided job title: " + jobTitle);
+
+				jp.provideCompany(job.company);
+				log("Provided company: " + job.company);
 
 				jp.provideDepartment(job.department);
 				log("Provided department: " + job.department);
@@ -101,11 +104,11 @@ public class CreateJobTest extends BaseTest
 //				jp.provideDescription(jobTitle);
 //				log("Provided description for the job: " + jobTitle);
 
-				//jp.clickSave();
+				jp.clickSave();
 				log("Clicked on Save button to save the job details");
 
-				Assert.assertTrue(jp.isTxnCreated(job.jobTitle));
-				log("Job created successfully with title: " + job.jobTitle);
+				Assert.assertTrue(jp.isTxnCreated(jobTitle));
+				log("Job created successfully with title: " + jobTitle);
 			}
 		} catch (Exception e)
 		{
