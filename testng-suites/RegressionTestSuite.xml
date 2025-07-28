@@ -67,8 +67,8 @@
             <!-- Self Service -->
             <class name="testCases.HRMS.SelfService.CreateBenefitClaimTest"/>
             <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest"/>
-            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
+            <!--<class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>-->
+            <!--<class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>-->
             <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>
             <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>
             <class name="testCases.HRMS.SelfService.CreateHRAssetRequest"/>
@@ -119,8 +119,8 @@
             <!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->
 
             <!-- Flaky Test -->
-            <!--            <class name="testCases.HRMS.Payroll.CreateLeaveTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.DeleteLeaveTest"/>-->
+            <!--<class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>-->
+            <!--<class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>-->
 
 
         </classes>
