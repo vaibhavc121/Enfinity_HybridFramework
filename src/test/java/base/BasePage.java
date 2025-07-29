@@ -693,7 +693,14 @@ public class BasePage
         if (employee.contains(value))
         {
             selectRow();
-            clickOnView();
+            try
+            {
+                clickOnView();
+            } catch (Exception e)
+            {
+                clickOnEdit();
+            }
+
         } else
         {
             throw new RuntimeException("VRC- No matching record found");

@@ -54,5 +54,36 @@
       "civilIdNumber": "CIV123456"
 
     }
+  ],
+
+  "jobApplicationTracking": [
+    {
+      "jobName": "8888888888",
+      "dob": "01-Apr-2000",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "checkbox1": true,
+
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "100011",
+
+      "workExperienceInYear": 5,
+      "currentJobTitle": "Software Engineer",
+      "currentEmployer": "ABC Corp",
+      "skills": "Accounting Software",
+      "currentSalary": 100,
+      "expectedSalary": 500,
+      "noticePeriodInDays": 30,
+      "checkbox2": true,
+
+      "passportNumber": "P1234567",
+      "passportIssueDate": "14-Dec-2016",
+      "passportExpiryDate": "13-Dec-2026",
+      "visaType": "Work Visa",
+      "civilIdNumber": "CIV123456"
+
+    }
   ]
 }

@@ -127,7 +127,7 @@ public class CreateCandidateTest extends BaseTest
 
                 //endregion
 
-                //cp.clickSave();
+                cp.clickSave();
                 log("Clicked on Save button");
 
                 Assert.assertEquals(cp.getCandidateName(),candidateName);

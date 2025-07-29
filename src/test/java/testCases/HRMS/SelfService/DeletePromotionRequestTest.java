@@ -15,6 +15,7 @@ import java.util.List;
 
 public class DeletePromotionRequestTest extends BaseTest
 {
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void deletePromotionRequest()
 	{
 		String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");

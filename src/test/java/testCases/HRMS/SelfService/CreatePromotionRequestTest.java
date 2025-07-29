@@ -36,7 +36,7 @@ public class CreatePromotionRequestTest extends BaseTest
 
 			for (PromotionRequestModel promotionRequest : promotionRequestData)
 			{
-				pr.provideTxnDate(promotionRequest.txnDate);
+				//pr.provideTxnDate(promotionRequest.txnDate);
 				pr.provideEffectiveDate(promotionRequest.effectiveDate);
 				pr.provideType(promotionRequest.type);
 				pr.provideNewDepartment(promotionRequest.newDepartment);
@@ -46,7 +46,7 @@ public class CreatePromotionRequestTest extends BaseTest
 				pr.provideDescription(promotionRequest.description);
 				pr.saveAndBack();
 
-				Assert.assertTrue(BasePage.validateListing("Vaibhav Chavan", 6, 6));
+				Assert.assertTrue(BasePage.validateListing("Vaibhav Chavan", 6, 6), "Promotion Request not created.");
 			}
 
 		} catch (Exception e)
