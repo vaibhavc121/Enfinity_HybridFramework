@@ -58,32 +58,44 @@
 
   "jobApplicationTracking": [
     {
-      "jobName": "8888888888",
-      "dob": "01-Apr-2000",
-      "gender": "Male",
-      "maritalStatus": "Single",
-      "checkbox1": true,
+      "Advance Candidate Search": {
+        "skills": "Accounting Software",
 
-      "city": "Pune",
-      "state": "Maharashtra",
-      "country": "India",
-      "postalCode": "100011",
+        "minimumWorkExperience": "1",
+        "maximumWorkExperience": "5",
 
-      "workExperienceInYear": 5,
-      "currentJobTitle": "Software Engineer",
-      "currentEmployer": "ABC Corp",
-      "skills": "Accounting Software",
-      "currentSalary": 100,
-      "expectedSalary": 500,
-      "noticePeriodInDays": 30,
-      "checkbox2": true,
+        "minimumSalaryRange": "100",
+        "maximumSalaryRange": "500",
 
-      "passportNumber": "P1234567",
-      "passportIssueDate": "14-Dec-2016",
-      "passportExpiryDate": "13-Dec-2026",
-      "visaType": "Work Visa",
-      "civilIdNumber": "CIV123456"
+        "minimumNoticePeriodInDays": "30",
+        "maximumNoticePeriodInDays": "60",
 
+        "nationalityCountries": "India",
+        "visaType": "Work Visa",
+        "gender": "Female",
+        "drivingLicense": true,
+        "minimumAge": "18",
+        "maximumAge": "60"
+
+      }
+    },
+    {
+      "Another Candidate Search": {
+        "skills": "Python, Playwright",
+        "minimumWorkExperience": "3",
+        "maximumWorkExperience": "7",
+        "minimumSalaryRange": "60000",
+        "maximumSalaryRange": "120000",
+        "minimumNoticePeriodInDays": "30",
+        "maximumNoticePeriodInDays": "90",
+        "nationalityCountries": "American",
+        "visaType": "H1B",
+        "gender": "Female",
+        "drivingLicense": false,
+        "minimumAge": "28",
+        "maximumAge": "40",
+        "searchCandidates": true
+      }
     }
   ]
 }

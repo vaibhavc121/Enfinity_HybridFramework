@@ -30,27 +30,36 @@ public class DeleteEmployeeTest extends BaseTest
 
 				HRCorePage hc = new HRCorePage(driver);
 				hc.clickHRCore();
+				log("clicked on HR Core module");
 				hc.clickSetupForm();
+				log("clicked on Setup Form");
 
 				SetupPage sp = new SetupPage(driver);
 				sp.clickEmployee();
+				log("clicked on Employee");
 				Thread.sleep(2000);
 
 				for (DeleteEmpModel del : deleteEmployee)
 				{
 					BasePage.navigateToEmployee(del.empName);
 					BasePage.switchTab();
+					log("switched to Employee tab for " + del.empName);
 
 					EmployeePage ep = new EmployeePage(driver);
 					ep.clickSettingButton();
+					log("clicked on setting button");
+
 					ep.clickDelete();
+					log("clicked on delete button");
 					ep.clickOk();
+					log("clicked on OK button to confirm deletion");
 					// ClassicAssert.isTrue(BasePage.isEmployeeDeleted(), "Employee not deleted");
 					// ep.clickRightAreaMenu();
 					// ep.clickLogOff();
 					// BasePage.closeTab();
 
-					Assert.assertFalse(ep.validateEmpDelete(del.empName));
+					Assert.assertFalse(ep.validateEmpDelete(del.empName), "Employee " + del.empName + " is not deleted.");
+					log("Employee " + del.empName + " deleted successfully");
 				}
 			}
 		} catch (Exception e)

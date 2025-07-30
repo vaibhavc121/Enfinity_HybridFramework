@@ -273,6 +273,11 @@ public class RecruitmentTest extends BaseTest
             ja.openJobFromListing(JobTitle);
             log("Opened job from listing: " + JobTitle);
 
+            ja.clickAdvanceCandidateSearch();
+            log("Clicked on Advance Candidate Search");
+
+
+
 
 
 

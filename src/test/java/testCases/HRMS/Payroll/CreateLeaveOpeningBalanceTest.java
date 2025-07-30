@@ -30,11 +30,14 @@ public class CreateLeaveOpeningBalanceTest extends BaseTest
 			// hr core pg
 			HRCorePage hc = new HRCorePage(driver);
 			hc.clickHRCore();
+			logger.info("clicked on HRCore link");
 			hc.clickEmployee();
+			logger.info("clicked on Employee");
 			BasePage.navigateToEmployee("001");
 
 			EmployeePage1 ep = new EmployeePage1(driver);
 			ep.clkTimeOff();
+			logger.info("clicked on TimeOff");
 			double LeaveBal = ep.getLeaveBal(2);
 			double expLeaveBal = LeaveBal + 1;
 

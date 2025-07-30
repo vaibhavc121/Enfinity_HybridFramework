@@ -681,24 +681,21 @@ public class BasePage
         // selectFilterAll();
         filterByIndex(2, value);
         BaseTest.log("value filtered");
-        try
-        {
-            Thread.sleep(2000);
-        } catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
+        waitTS(2);
         String employee = resultValue(1);
         // Thread.sleep(2000);
         if (employee.contains(value))
         {
             selectRow();
+            BaseTest.log("row selected");
             try
             {
                 clickOnView();
+                BaseTest.log("clicked On View");
             } catch (Exception e)
             {
                 clickOnEdit();
+                BaseTest.log("clicked On Edit");
             }
 
         } else

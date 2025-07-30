@@ -62,8 +62,30 @@ public class RecruitmentModel
 		public String passportExpiryDate;
 		public String visaType;
 		public String civilIdNumber;
-
-
 	}
+
+	public static class AdvanceCandidateSearchModel
+	{
+		public String skills;
+
+		public String minimumWorkExperience;
+		public String maximumWorkExperience;
+
+		public String minimumSalaryRange;
+		public String maximumSalaryRange;
+
+		public String minimumNoticePeriodInDays;
+		public String maximumNoticePeriodInDays;
+
+		public String nationalityCountries;
+		public String visaType;
+		public String gender;
+		public boolean drivingLicense;
+
+		public String minimumAge;
+		public String maximumAge;
+	}
+
+
 
 }
