@@ -136,8 +136,8 @@
 
 <!--            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>-->
 <!--            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>-->
-            <class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest"/>
-            <class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest"/>
+            <class name="testCases.HRMS.SelfService.CreateSupportRequestCategoryTest"/>
+            <class name="testCases.HRMS.SelfService.DeleteSupportReqCategoryTest"/>
 
 
         </classes>
