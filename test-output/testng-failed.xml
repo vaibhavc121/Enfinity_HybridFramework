@@ -11,18 +11,17 @@
       <run>
         <include name="regression"/>
         <include name="datadriven"/>
+        <include name="functional"/>
       </run>
     </groups>
     <classes>
-      <class name="testCases.HRMS.Payroll.DeleteOvertimeTest">
+      <class name="testCases.HRMS.SelfService.DeleteSupportReqCategoryTest">
         <methods>
-          <include name="verifyOvertime"/>
-          <include name="afterMethod"/>
           <include name="setup"/>
+          <include name="deleteSupportReqCategory"/>
           <include name="teardown"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- testCases.HRMS.Payroll.DeleteOvertimeTest -->
+      </class> <!-- testCases.HRMS.SelfService.DeleteSupportReqCategoryTest -->
     </classes>
   </test> <!-- Regression Tests(failed) -->
 </suite> <!-- Failed suite [NewTestCaseSuite] -->
