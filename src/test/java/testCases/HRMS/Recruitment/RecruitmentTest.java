@@ -18,6 +18,7 @@ import java.util.List;
 public class RecruitmentTest extends BaseTest
 {
     private static String JobTitle;
+    private static String candidateName;
 
     //region Create Candidate
     @Test(groups="functional", retryAnalyzer = RetryAnalyzer.class)
@@ -43,7 +44,7 @@ public class RecruitmentTest extends BaseTest
                 log("Clicked on New button");
 
                 //region Personal Information
-                String candidateName = faker.name().firstName();
+                candidateName = faker.name().firstName();
                 cp.provideName(candidateName);
                 log("Provided Name");
 
@@ -259,7 +260,7 @@ public class RecruitmentTest extends BaseTest
         try
         {
             String recruitmentFile = FileUtils.getDataFile("Recruitment", "Recruitment", "RecruitmentData");
-            List<RecruitmentModel.JobModel> jobData = JsonUtils.convertJsonListDataModel(recruitmentFile, "createJob", RecruitmentModel.JobModel.class);
+            List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
             // Recruitment page
             RecruitmentPage rp = new RecruitmentPage(driver);
@@ -270,11 +271,71 @@ public class RecruitmentTest extends BaseTest
 
             // Job Application Tracking page
             JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
-            ja.openJobFromListing(JobTitle);
-            log("Opened job from listing: " + JobTitle);
 
-            ja.clickAdvanceCandidateSearch();
-            log("Clicked on Advance Candidate Search");
+            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            {
+                //ja.openJobFromListing(JobTitle);
+                ja.openJobFromListing("Customer Banking Architect");
+                log("Opened job from listing: " + JobTitle);
+
+                ja.clickAdvanceCandidateSearch();
+                log("Clicked on Advance Candidate Search");
+
+                ja.provideSkills(search.skills);
+                log("Provided skills: " + search.skills);
+
+                ja.provideMinimumWorkExperience(search.minimumWorkExperience);
+                log("Provided minimum work experience: " + search.minimumWorkExperience);
+
+                ja.provideMaximumWorkExperience(search.maximumWorkExperience);
+                log("Provided maximum work experience: " + search.maximumWorkExperience);
+
+                ja.provideMinimumSalaryRange(search.minimumSalaryRange);
+                log("Provided minimum salary range: " + search.minimumSalaryRange);
+
+                ja.provideMaximumSalaryRange(search.maximumSalaryRange);
+                log("Provided maximum salary range: " + search.maximumSalaryRange);
+
+                ja.provideMinimumNoticePeriodInDays(search.minimumNoticePeriodInDays);
+                log("Provided minimum notice period in days: " + search.minimumNoticePeriodInDays);
+
+                ja.provideMaximumNoticePeriodInDays(search.maximumNoticePeriodInDays);
+                log("Provided maximum notice period in days: " + search.maximumNoticePeriodInDays);
+
+                ja.provideNationality(search.nationalityCountries);
+                log("select nationality: " + search.nationalityCountries);
+
+                ja.provideVisaType(search.visaType);
+                log("Provided visa type: " + search.visaType);
+
+                ja.provideGender(search.gender);
+                log("Provided gender");
+
+                if(search.drivingLicense)
+                {
+                    ja.clickDrivingLicense();
+                    log("Clicked on Driving License checkbox");
+                }
+
+                ja.provideMinimumAge(search.minimumAge);
+                log("Provided minimum age: " + search.minimumAge);
+
+                ja.provideMaximumAge(search.maximumAge);
+                log("Provided maximum age: " + search.maximumAge);
+
+                ja.clickSearchCandidates();
+                log("Clicked on Search Candidates button");
+
+                // ja.selectCandidate(candidateName);
+                ja.selectCandidate("Lloyd");
+                log("Selected candidate: " + candidateName);
+
+                ja.clickAssign();
+                log("Clicked on Assign Job button");
+            }
+
+
+
 
 
 

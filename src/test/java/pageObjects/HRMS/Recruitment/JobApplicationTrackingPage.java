@@ -1,6 +1,7 @@
 package pageObjects.HRMS.Recruitment;
 
 import base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -54,6 +55,8 @@ public class JobApplicationTrackingPage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'MaximumAge')]") private WebElement maximumAge;
     @FindBy(xpath = "//span[normalize-space()='Search Candidates']") private WebElement searchCandidates;
     //endregion
+
+    @FindBy(xpath="//span[normalize-space()='Assign']") private WebElement assign;
 
     //endregion
 
@@ -165,6 +168,17 @@ public class JobApplicationTrackingPage extends BasePage
     }
 
     //endregion
+
+    public void selectCandidate(String candidateName)
+    {
+        waitTS(2);
+        waitForElement1(By.xpath("//span[normalize-space()='\" + candidateName + \"']/../../../../..//span[@class='dx-checkbox-icon']")).click();
+    }
+
+    public void clickAssign()
+    {
+        waitForElement(assign).click();
+    }
 
     //endregion
 

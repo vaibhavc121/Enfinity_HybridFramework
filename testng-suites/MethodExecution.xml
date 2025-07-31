@@ -22,10 +22,16 @@
         <classes>
 
 
-            <class name="testCases.HRMS.Payroll.LeaveTest">
+<!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
+<!--                <methods>-->
+<!--                    <include name="createUnpaidLeave"/>-->
+<!--                    <include name="deleteUnpaidLeave"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+            <class name="testCases.HRMS.Recruitment.RecruitmentTest">
                 <methods>
-                    <include name="createUnpaidLeave"/>
-                    <include name="deleteUnpaidLeave"/>
+                    <include name="assignJobToCandidate"/>
                 </methods>
             </class>
 

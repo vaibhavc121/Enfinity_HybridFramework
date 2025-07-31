@@ -58,7 +58,6 @@
 
   "jobApplicationTracking": [
     {
-      "Advance Candidate Search": {
         "skills": "Accounting Software",
 
         "minimumWorkExperience": "1",
@@ -76,26 +75,8 @@
         "drivingLicense": true,
         "minimumAge": "18",
         "maximumAge": "60"
-
       }
-    },
-    {
-      "Another Candidate Search": {
-        "skills": "Python, Playwright",
-        "minimumWorkExperience": "3",
-        "maximumWorkExperience": "7",
-        "minimumSalaryRange": "60000",
-        "maximumSalaryRange": "120000",
-        "minimumNoticePeriodInDays": "30",
-        "maximumNoticePeriodInDays": "90",
-        "nationalityCountries": "American",
-        "visaType": "H1B",
-        "gender": "Female",
-        "drivingLicense": false,
-        "minimumAge": "28",
-        "maximumAge": "40",
-        "searchCandidates": true
-      }
-    }
   ]
+
+
 }
