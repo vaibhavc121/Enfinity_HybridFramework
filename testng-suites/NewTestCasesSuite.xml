@@ -135,8 +135,8 @@
             <!-- Flaky Test -->
 <!--            <class name="testCases.HRMS.Payroll.CreatePromotionTest"/>-->
 <!--            <class name="testCases.HRMS.Payroll.DeletePromotionTest"/>-->
-<!--            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>-->
-<!--            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>-->
+            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
+            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
 
 
         </classes>
