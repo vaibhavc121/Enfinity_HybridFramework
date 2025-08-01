@@ -31,7 +31,9 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 			// hr core pg
 			HRCorePage hc = new HRCorePage(driver);
 			hc.clickHRCore();
+			log("clicked on HR Core module");
 			hc.clickEmployee();
+			log("clicked on Employee");
 			BasePage.navigateToEmployee("001");
 
 			EmployeePage1 ep = new EmployeePage1(driver);

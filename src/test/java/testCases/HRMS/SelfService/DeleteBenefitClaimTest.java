@@ -23,7 +23,7 @@ public class DeleteBenefitClaimTest extends BaseTest
         {
             String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
             List<BenefitClaimModel> benefitClaimData = JsonUtils.convertJsonListDataModel(selfServiceFile,
-                    "deleteBenefitClaim", BenefitClaimModel.class);
+                    "createBenefitClaim", BenefitClaimModel.class);
 
             // self service page
             SelfServicePage ss = new SelfServicePage(driver);

@@ -58,6 +58,7 @@ public class TimetablePage extends BasePage
 
     public void clickNew()
     {
+        waitTS(3);
         clickOnNew();
     }
 

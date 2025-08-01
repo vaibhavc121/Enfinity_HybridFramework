@@ -30,25 +30,25 @@ public class HRCorePage extends BasePage
 	public void clickHRCore()
 	{
 		highlightElement(driver, hRCore, true);
-		hRCore.click();
+		clickOnElement1(hRCore);
 		highlightElement(driver, hRCore, false); // Remove highlight
 	}
 
 	public void clickEmployee()
 	{
-		employee.click();
+		clickOnElement1(employee);
 	}
 
 	public void clickSetupForm()
 	{
 		highlightElement(driver, setups, true);
-		setups.click();
+		clickOnElement1(setups);
 		highlightElement(driver, setups, false); // Remove highlight
 	}
 
 	public void clickAssetIssue()
 	{
-		assetIssue.click();
+		clickOnElement1(assetIssue);
 	}
 
 }
