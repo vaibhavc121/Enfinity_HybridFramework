@@ -16,7 +16,48 @@ public class JsonUtils
 
 	}
 
-	public static <T> List<T> convertJsonListDataModel(String fileData, String section, Class<T> clazz)
+	//to Handle Nested Sections
+	public static <T> List<T> convertJsonListDataModel(String fileData, String sectionPath, Class<T> clazz)
+	{
+		try
+		{
+			ObjectMapper objectMapper = new ObjectMapper();
+			JsonNode rootNode = objectMapper.readTree(fileData);
+
+			// Split path by dot for nested access
+			String[] pathParts = sectionPath.split("\\.");
+			JsonNode currentNode = rootNode;
+
+			for (String part : pathParts)
+			{
+				currentNode = currentNode.get(part);
+				if (currentNode == null)
+				{
+					throw new RuntimeException("Section '" + sectionPath + "' not found in JSON.");
+				}
+			}
+
+			if (!currentNode.isArray())
+			{
+				return Collections.emptyList();
+			}
+
+			List<T> resultList = new ArrayList<>();
+			for (JsonNode node : currentNode)
+			{
+				T obj = objectMapper.treeToValue(node, clazz);
+				resultList.add(obj);
+			}
+
+			return resultList;
+		}
+		catch (Exception e)
+		{
+			throw new RuntimeException("Failed to parse JSON list data model", e);
+		}
+	}
+
+	public static <T> List<T> convertJsonListDataModel1(String fileData, String section, Class<T> clazz)
 	{
 		try
 		{
@@ -45,6 +86,9 @@ public class JsonUtils
 			throw new RuntimeException("Failed to parse JSON list data model", e);
 		}
 	}
+
+
+
 
 //	public static <T> List<T> convertJsonListDataModel(String fileData, String section)
 //	{

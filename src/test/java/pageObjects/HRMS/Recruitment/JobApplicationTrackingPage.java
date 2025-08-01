@@ -21,8 +21,11 @@ public class JobApplicationTrackingPage extends BasePage
     //endregion
 
     //region Advance Candidate Search
-
-    @FindBy(xpath="//span[normalize-space()='Advance Candidate Search']") private WebElement advanceCandidateSearch;
+    @FindBy(xpath="(//span[@class='dx-tab-text-span'])[1]") private WebElement description;
+    @FindBy(xpath="(//span[@class='dx-tab-text-span'])[2]") private WebElement candidates;
+    @FindBy(xpath="(//span[@class='dx-tab-text-span'])[3]") private WebElement edit;
+    @FindBy(xpath="(//span[@class='dx-tab-text-span'])[4]") private WebElement assesment;
+    @FindBy(xpath="(//span[@class='dx-tab-text-span'])[5]") private WebElement advanceCandidateSearch;
 
     //region Skills
     @FindBy(xpath = "//input[contains(@id,'Skills')]") private WebElement skills;

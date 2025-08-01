@@ -397,13 +397,7 @@ public class BasePage
 		Actions actions = new Actions(driver);
 		actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
 		element.sendKeys(value);
-		try
-		{
-			Thread.sleep(2000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(2);
 		element.sendKeys(Keys.ENTER);
 	}
 

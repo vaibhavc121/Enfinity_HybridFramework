@@ -260,7 +260,7 @@ public class RecruitmentTest extends BaseTest
         try
         {
             String recruitmentFile = FileUtils.getDataFile("Recruitment", "Recruitment", "RecruitmentData");
-            List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking", RecruitmentModel.AdvanceCandidateSearchModel.class);
+            List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
             // Recruitment page
             RecruitmentPage rp = new RecruitmentPage(driver);

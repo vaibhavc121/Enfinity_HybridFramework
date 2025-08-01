@@ -17,7 +17,7 @@ import java.util.List;
 public class CreatePromotionTest extends BaseTest
 {
 	String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-	List<PayrollModel.PromotionModel> promotionData = JsonUtils.convertJsonListDataModel(payrollFile,
+	List<PayrollModel.PromotionModel> promotionData = JsonUtils.convertJsonListDataModel1(payrollFile,
 			"createPromotion", PayrollModel.PromotionModel.class);
 
 	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)

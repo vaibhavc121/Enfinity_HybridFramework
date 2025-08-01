@@ -76,7 +76,38 @@
         "minimumAge": "18",
         "maximumAge": "60"
       }
-  ]
+  ],
+
+  "jobApplicationTracking1":
+  {
+    "description": {},
+    "candidates": {},
+    "edit": {},
+    "assessments": {},
+    "advanceCandidateSearch":
+    [
+      {
+        "skills": "Accounting Software",
+
+        "minimumWorkExperience": "1",
+        "maximumWorkExperience": "5",
+
+        "minimumSalaryRange": "100",
+        "maximumSalaryRange": "500",
+
+        "minimumNoticePeriodInDays": "30",
+        "maximumNoticePeriodInDays": "60",
+
+        "nationalityCountries": "India",
+        "visaType": "Work Visa",
+        "gender": "Female",
+        "drivingLicense": true,
+        "minimumAge": "18",
+        "maximumAge": "60"
+      }
+    ]
+
+  }
 
 
 }
