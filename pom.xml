@@ -204,11 +204,7 @@
         </dependency>
 
 
-        <dependency>
-        	<groupId>SeleniumWebdriver</groupId>
-        	<artifactId>SeleniumWebdriver</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
+       
     </dependencies>
 
 </project>
