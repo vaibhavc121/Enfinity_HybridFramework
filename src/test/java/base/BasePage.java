@@ -120,13 +120,7 @@ public class BasePage
 	public static void filterAndOpenTransaction(int filterIndex, int resultIndex, String expValue, String mode)
 	{
 		filterByIndex(filterIndex, expValue);
-		try
-		{
-			Thread.sleep(2000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(2);
 		String actValue = resultValue(resultIndex);
 		if (actValue.contains(expValue))
 		{
@@ -163,7 +157,7 @@ public class BasePage
 		try
 		{
 			BaseTest.log("extracting text from the result");
-			String result = driver.findElement(By.xpath(xpath)).getText();
+			String result = waitForElement1(By.xpath(xpath)).getText();
 			BaseTest.log("text extracted from the result");
 			return result;
 		} catch (Exception e)
@@ -264,13 +258,7 @@ public class BasePage
 	public static void clickViewAndBack()
 	{
 		waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
-		try
-		{
-			Thread.sleep(2000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(2);
 		clickOnEdit();
 		clickOnView();
 		driver.navigate().back();
@@ -295,12 +283,21 @@ public class BasePage
 
 	public static void clickOnNew()
 	{
-		waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
+		try
+		{
+			waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
+		}
+		catch (Exception e)
+		{
+			waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
+		}
+
+
 	}
 
 	public static void selectDropdownOption(String expectedValue)
 	{
-		List<WebElement> dropdownList = driver.findElements(By.xpath("//div[@class='dx-item dx-list-item']"));
+		List<WebElement> dropdownList = waitForElements2(By.xpath("//div[@class='dx-item dx-list-item']"));
 		for (WebElement dropdownElement : dropdownList)
 		{
 			String actualValue = dropdownElement.getText();
@@ -316,7 +313,7 @@ public class BasePage
 	{
 		while (true)
 		{
-			List<WebElement> valuesList = driver.findElements(By.xpath("//div[@class='grid-row-template']"));
+			List<WebElement> valuesList = waitForElements2(By.xpath("//div[@class='grid-row-template']"));
 			for (WebElement valueElement : valuesList)
 			{
 				String actualValue = valueElement.getText();
@@ -326,14 +323,8 @@ public class BasePage
 					return;
 				}
 			}
-			driver.findElement(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
-			try
-			{
-				Thread.sleep(3000);
-			} catch (InterruptedException e)
-			{
-				e.printStackTrace();
-			}
+			waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-next-icon']")).click();
+			waitTS(3);
 		}
 	}
 
@@ -364,21 +355,9 @@ public class BasePage
 		WebElement element = waitForElement(locator);
 		element.click();
 		Actions actions = new Actions(driver);
-		try
-		{
-			Thread.sleep(1000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(1);
 		actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
-		try
-		{
-			Thread.sleep(1000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(1);
 		element.sendKeys(value);
 	}
 
@@ -420,13 +399,7 @@ public class BasePage
 		globalSearchInput.click();
 		WebElement comboBoxInput = waitForElement1(By.xpath("//input[@role='combobox']"));
 		comboBoxInput.sendKeys(value);
-		try
-		{
-			Thread.sleep(2000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(2);
 		selectDropdownOption(value);
 	}
 
@@ -460,13 +433,7 @@ public class BasePage
 	public static void deleteTxn(int index, String value)
 	{
 		filterByIndex(index, value);
-		try
-		{
-			Thread.sleep(2000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(2);
 		try
 		{
 			waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
@@ -485,24 +452,12 @@ public class BasePage
 			clickOnEdit();
 			BaseTest.log("clickOnEdit");
 		}
-		try
-		{
-			Thread.sleep(5000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(5);
 		waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
 		BaseTest.log("clciked on setting");
 		waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
 		BaseTest.log("clicked on delete");
-		try
-		{
-			Thread.sleep(1000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(1);
 		pressKey("enter");
 		BaseTest.log("enter pressed");
 		driver.navigate().back();
@@ -573,7 +528,7 @@ public class BasePage
 		waitTS(2);
 		BaseTest.log("clicked on menu/setting");
 
-		driver.findElement(By.xpath("//span[normalize-space()='Delete']")).click();
+		waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
 		BaseTest.log("clicked on delete");
 
 		waitTS(1);
@@ -588,13 +543,7 @@ public class BasePage
 	public static void deleteHrCoreTxn(int ColumnIndex, String value)
 	{
 		filterByIndex(ColumnIndex, value);
-		try
-		{
-			Thread.sleep(2000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(2);
 		try
 		{
 			if (ColumnIndex == 2)
@@ -616,22 +565,10 @@ public class BasePage
 		{
 			clickOnEdit();
 		}
-		try
-		{
-			Thread.sleep(5000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(5);
 		waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
 		waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
-		try
-		{
-			Thread.sleep(1000);
-		} catch (InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		waitTS(1);
 		pressKey("enter");
 		driver.navigate().back();
 	}
@@ -1037,13 +974,7 @@ public class BasePage
 	public static boolean validateListing(String filterValue, int filterIndex, int resultIndex)
 	{
 		filterByIndex(filterIndex, filterValue);
-		try
-		{
-			Thread.sleep(2000);
-		} catch (InterruptedException e)
-		{
-			Thread.currentThread().interrupt();
-		}
+		waitTS(2);
 		String actualValue = resultValue(resultIndex);
 		if (actualValue.contains(filterValue))
 		{
@@ -1077,35 +1008,17 @@ public class BasePage
 		if (expDate != null && !expDate.isEmpty())
 		{
 			filterDateByIndex(2, expDate);
-			try
-			{
-				Thread.sleep(2000);
-			} catch (InterruptedException e)
-			{
-				Thread.currentThread().interrupt();
-			}
+			waitTS(2);
 		}
 		if (expEmp != null && !expEmp.isEmpty())
 		{
 			filterByIndex(2, expEmp);
-			try
-			{
-				Thread.sleep(2000);
-			} catch (InterruptedException e)
-			{
-				Thread.currentThread().interrupt();
-			}
+			waitTS(2);
 		}
 		if (expStatus != null && !expStatus.isEmpty())
 		{
 			filterByIndex(7, expStatus);
-			try
-			{
-				Thread.sleep(2000);
-			} catch (InterruptedException e)
-			{
-				Thread.currentThread().interrupt();
-			}
+			waitTS(2);
 		}
 		boolean isMatch = true;
 		if (expDate != null && !expDate.isEmpty())
