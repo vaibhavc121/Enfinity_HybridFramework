@@ -137,6 +137,7 @@
 <!--            <class name="testCases.HRMS.Payroll.DeletePromotionTest"/>-->
             <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
             <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
+            //test
 
 
         </classes>
