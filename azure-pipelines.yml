@@ -1,3 +1,9 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+
 trigger:
 - master
 
@@ -31,7 +37,7 @@ jobs:
       checkStyleRunAnalysis: true
       pmdRunAnalysis: true
       findBugsRunAnalysis: true
-    continueOnError: false
+    #continueOnError: true
 
   - task: PublishTestResults@2
     displayName: 'Publish Test Results'
@@ -39,7 +45,7 @@ jobs:
       testResultsFormat: 'JUnit'
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       testRunTitle: 'Automation Engineer - Vaibhav Chavan (New Cases)'
-      failTaskOnFailedTests: false
+      failTaskOnFailedTests: true
 
   - script: |
       if exist target/surefire-reports/testng-failed.xml (
