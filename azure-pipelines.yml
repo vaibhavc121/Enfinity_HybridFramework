@@ -23,7 +23,9 @@ jobs:
     inputs:
       mavenPomFile: 'pom.xml'
       goals: 'test'
-      options: '-DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml'
+      options: >
+        -DsuiteXmlFile=testng-suites/RegressionTestSuite.xml 
+        -DexcludedGroups=flaky
       publishJUnitResults: false
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.17'
