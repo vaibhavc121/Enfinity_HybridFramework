@@ -1,8 +1,3 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
 - master
 
@@ -24,8 +19,8 @@ jobs:
       mavenPomFile: 'pom.xml'
       goals: 'test'
       options: >
-        -DsuiteXmlFile=testng-suites/RegressionTestSuite.xml 
-        -DexcludedGroups=flaky
+        -DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml 
+        -DexcludedGroups=flaky      
       publishJUnitResults: false
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.17'
