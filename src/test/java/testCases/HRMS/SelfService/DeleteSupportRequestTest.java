@@ -38,8 +38,8 @@ public class DeleteSupportRequestTest extends BaseTest
             log("clickITSupport");
 
             BasePage.deleteTxn(5, "001");
-            //Assert.assertFalse(BasePage.validateListing("001", 5, 5));
-            Assert.assertTrue(false);
+            Assert.assertFalse(BasePage.validateListing("001", 5, 5));
+//            Assert.assertTrue(false);
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

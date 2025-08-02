@@ -43,8 +43,8 @@ public class CreateSupportRequestTest extends BaseTest
 				// it.clickView();
 				// it.clickOnApproveBack();
 
-//				Assert.assertTrue(it.isTxnCreated(itSupport.employee, itSupport.recordDesc));
-				Assert.assertTrue(false);
+				Assert.assertTrue(it.isTxnCreated(itSupport.employee, itSupport.recordDesc));
+//				Assert.assertTrue(false);
 			}
 
 		} catch (Exception e)
