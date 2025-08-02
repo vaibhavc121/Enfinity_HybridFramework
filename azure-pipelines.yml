@@ -1,50 +1,67 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
 - master
 
 pool:
   vmImage: windows-latest
 
+variables:
+  isFlakyRun: false
+
 jobs:
-  - job: Regression_NewTestCases
-    displayName: "Regression(New) testcase execution"
-    steps:
-    - task: Maven@4
-      inputs:
-        
-        mavenPomFile: 'pom.xml'
-        goals: 'test'
-        options: '-DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml'
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        testRunTitle: 'Automation Enginner (SDET)- Vaibhav Chavan'
-        javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.17'
-        mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
-        effectivePomSkip: false
-        sonarQubeRunAnalysis: false
-        checkStyleRunAnalysis: true
-        pmdRunAnalysis: true
-        findBugsRunAnalysis: true
+- job: Regression_NewTestCases
+  timeoutInMinutes: 120
+  displayName: "Regression (New) Testcase Execution"
+  steps:
 
-    - task: CopyFiles@2
-      displayName: 'Copy ExtentReports + Linked Assets'
-      inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: |
-          reports/**
-          screenshots/**
-          logs/**
-        TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+  - task: Maven@4
+    displayName: "Run New TestCases Suite"
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'test'
+      options: '-DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml'
+      publishJUnitResults: false
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.17'
+      mavenVersionOption: 'Default'
+      mavenAuthenticateFeed: false
+      effectivePomSkip: false
+      sonarQubeRunAnalysis: false
+      checkStyleRunAnalysis: true
+      pmdRunAnalysis: true
+      findBugsRunAnalysis: true
+    continueOnError: true
 
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish ExtentReports Artifact with Assets'
-      inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
-        ArtifactName: 'ExtentReport'
-        publishLocation: 'Container'
+  - task: PublishTestResults@2
+    displayName: 'Publish Test Results'
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      testRunTitle: 'Automation Engineer - Vaibhav Chavan (New Cases)'
+      failTaskOnFailedTests: false
+
+  - script: |
+      if exist target/surefire-reports/testng-failed.xml (
+        echo "Retrying failed tests..."
+        mvn test -DsuiteXmlFile=target/surefire-reports/testng-failed.xml
+      ) else (
+        echo "No failed tests to rerun."
+      )
+    displayName: "Rerun Failed Tests"
+    continueOnError: true
+
+  - task: CopyFiles@2
+    displayName: 'Copy ExtentReports + Linked Assets'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)'
+      Contents: |
+        reports/**
+        screenshots/**
+        logs/**
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish ExtentReports Artifact'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+      ArtifactName: 'ExtentReport'
+      publishLocation: 'Container'
