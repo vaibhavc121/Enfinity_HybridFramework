@@ -20,7 +20,7 @@ jobs:
       goals: 'test'
       options: >
         -DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml 
-        -DexcludedGroups=flaky      
+        -DexcludedGroups=flaky
       publishJUnitResults: false
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.17'
@@ -31,7 +31,7 @@ jobs:
       checkStyleRunAnalysis: true
       pmdRunAnalysis: true
       findBugsRunAnalysis: true
-    continueOnError: true
+    continueOnError: false
 
   - task: PublishTestResults@2
     displayName: 'Publish Test Results'
