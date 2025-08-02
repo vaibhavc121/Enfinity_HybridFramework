@@ -16,6 +16,7 @@ public class DelegationPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
+	//region Locators
 	@FindBy(xpath = "//span[normalize-space()='New']")
 	WebElement newbtn;
 
@@ -27,25 +28,32 @@ public class DelegationPage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	WebElement save;
+	//endregion
 
+	//region Action Methods
 	public void clkNewBtn()
 	{
-		newbtn.click();
+		clickOnNew();
 	}
 
 	public void clkDelegateeDD()
 	{
-		delegateedd.click();
+		clickOnElement1(delegateedd);
 	}
 
 	public void slctDelegatee()
 	{
-		delegatee.click();
+		clickOnElement1(delegatee);
 	}
 
 	public void clkSaveBtn()
 	{
 		CommonActions.clkSave();
 	}
+	//endregion
+
+
+
+
 
 }

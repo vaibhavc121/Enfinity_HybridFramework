@@ -17,6 +17,7 @@ public class CalendarPage extends BasePage
         // TODO Auto-generated constructor stub
     }
 
+    //region Locators
     @FindBy(name = "Name")
     WebElement calname;
 
@@ -28,7 +29,9 @@ public class CalendarPage extends BasePage
 
     @FindBy(xpath = "//div[@id='SaturdayAsRestDay']//span[@class='dx-checkbox-icon']")
     WebElement restdaycheckbox;
+    //endregion
 
+    //region Action Methods
     public void clickNewButton()
     {
         clickOnNew();
@@ -41,29 +44,31 @@ public class CalendarPage extends BasePage
 
     public void provideCalendarName(String value)
     {
-
-        calname.sendKeys(value);
+        clearAndProvide1(calname, value);
     }
 
     public void provideFromDate(String value)
     {
-
-        fromDate.clear();
-        fromDate.sendKeys(value);
+        clearAndProvide1(fromDate, value);
     }
 
     public void setWeekoff()
     {
-        weekoffcheckbox.click();
+        clickOnElement1(weekoffcheckbox);
     }
 
     public void setRestday()
     {
-        restdaycheckbox.click();
+        clickOnElement1(restdaycheckbox);
     }
 
     public void clickSaveBack()
     {
         clickSaveAndBack();
     }
+    //endregion
+
+
+
+
 }

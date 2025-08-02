@@ -47,13 +47,12 @@ public class DeptPage extends BasePage
 
     public void provideDepartmentName(String value)
     {
-        
-        deptName.sendKeys(value);
+        clearAndProvide1(deptName, value);
     }
 
     public void selfServiceDD()
     {
-        selfService.click();
+        clickOnElement1(selfService);
     }
 
     public void clickDeptMgrDD()

@@ -18,6 +18,7 @@ public class AssetIssuePage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
+	//region Locators
 	@FindBy(xpath = "//img[@id='MainMenu_DXI19_PImg']")
 	WebElement contextMenu;
 
@@ -35,7 +36,9 @@ public class AssetIssuePage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='Cancel Return']")
 	WebElement cancelReturn;
+	//endregion
 
+	//region Action Methods
 	public void filterAndOpenTxn(String value)
 	{
 		filterAndOpenTransaction(9, 9, value, "view");
@@ -43,27 +46,30 @@ public class AssetIssuePage extends BasePage
 
 	public void clickContextMenu()
 	{
-		contextMenu.click();
+		clickOnElement1(contextMenu);
 	}
 
 	public void clickReturn()
 	{
-		returnBtn.click();
+		clickOnElement1(returnBtn);
 		waitTS(2);
 	}
 
 	public void provideReturnDate(String value)
 	{
 		switchToFrameByElement(iframe);
-		actualReturnDt.sendKeys(value);
+		clearAndProvide1(actualReturnDt, value);
 		clickOnSave();
 		switchToDefaultContent();
 	}
 
 	public boolean returnDate()
 	{
-		contextMenu.click();
-		return cancelReturn.isDisplayed();
+		clickOnElement1(contextMenu);
+		return waitForElement(cancelReturn).isDisplayed();
 	}
+	//endregion
+
+
 
 }

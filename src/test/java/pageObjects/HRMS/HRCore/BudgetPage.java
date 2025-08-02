@@ -17,8 +17,6 @@ public class BudgetPage extends BasePage
 		// TODO Auto-generated constructor stub
 	}
 
-	BaseTest bc = new BaseTest();
-
 	@FindBy(xpath = "//span[normalize-space()='New']")
 	WebElement newbtn;
 

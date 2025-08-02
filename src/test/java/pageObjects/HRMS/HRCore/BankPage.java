@@ -17,9 +17,12 @@ public class BankPage extends BasePage
         // TODO Auto-generated constructor stub
     }
 
+    //region Locators
     @FindBy(xpath = "//input[@id='Bank.Name_I']")
     WebElement bankName;
+    //endregion
 
+    //region Action Methods
     public void clickNew()
     {
         clickOnNew();
@@ -27,8 +30,7 @@ public class BankPage extends BasePage
 
     public void provideBankName(String value)
     {
-       
-        bankName.sendKeys(value);
+        clearAndProvide1(bankName, value);
     }
 
     public void provideBankName()
@@ -45,4 +47,9 @@ public class BankPage extends BasePage
     {
         return isTransactionCreated();
     }
+    //endregion
+
+
+
+
 }
