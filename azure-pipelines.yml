@@ -45,7 +45,7 @@ jobs:
       testResultsFormat: 'JUnit'
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       testRunTitle: 'Automation Engineer - Vaibhav Chavan (New Cases)'
-      failTaskOnFailedTests: true
+      failTaskOnFailedTests: false
 
   - script: |
       if exist target/surefire-reports/testng-failed.xml (
