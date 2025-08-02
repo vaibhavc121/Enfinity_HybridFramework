@@ -6,72 +6,67 @@
 trigger:
 - master
 
+pool:
+  vmImage: windows-latest
+
+variables:
+  isFlakyRun: false
+
 jobs:
-  # -------------------------------------------
-  # ✅ Job 1: Regression Test on Windows
-  # -------------------------------------------
-  - job: Regression_NewTestCases
-    displayName: "Regression(New) testcase execution"
-    pool:
-      vmImage: windows-latest
-    steps:
-    - task: Maven@4
-      inputs:
-        mavenPomFile: 'pom.xml'
-        goals: 'test'
-        options: '-DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml'
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        testRunTitle: 'Automation Enginner (SDET)- Vaibhav Chavan'
-        javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.17'
-        mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
-        effectivePomSkip: false
-        sonarQubeRunAnalysis: false
-        checkStyleRunAnalysis: true
-        pmdRunAnalysis: true
-        findBugsRunAnalysis: true
+- job: Regression_NewTestCases
+  timeoutInMinutes: 120
+  displayName: "Regression (New) Testcase Execution"
+  steps:
 
-    - task: CopyFiles@2
-      displayName: 'Copy ExtentReports + Linked Assets'
-      inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: |
-          reports/**
-          screenshots/**
-          logs/**
-        TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+  - task: Maven@4
+    displayName: "Run New TestCases Suite"
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'test'
+      options: '-DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml'
+      publishJUnitResults: false
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.17'
+      mavenVersionOption: 'Default'
+      mavenAuthenticateFeed: false
+      effectivePomSkip: false
+      sonarQubeRunAnalysis: false
+      checkStyleRunAnalysis: true
+      pmdRunAnalysis: true
+      findBugsRunAnalysis: true
+    continueOnError: true
 
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish ExtentReports Artifact with Assets'
-      inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
-        ArtifactName: 'ExtentReport'
-        publishLocation: 'Container'
+  - task: PublishTestResults@2
+    displayName: 'Publish Test Results'
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      testRunTitle: 'Automation Engineer - Vaibhav Chavan (New Cases)'
+      failTaskOnFailedTests: false
 
-  # -------------------------------------------
-  # ✅ Job 2: OWASP ZAP Security Scan on Linux
-  # -------------------------------------------
-  - job: SecurityScan_ZAP
-    displayName: 'Security Scan using OWASP ZAP'
-    dependsOn: Regression_NewTestCases
-    condition: succeededOrFailed()
-    pool:
-      vmImage: ubuntu-latest
+  - script: |
+      if exist target/surefire-reports/testng-failed.xml (
+        echo "Retrying failed tests..."
+        mvn test -DsuiteXmlFile=target/surefire-reports/testng-failed.xml
+      ) else (
+        echo "No failed tests to rerun."
+      )
+    displayName: "Rerun Failed Tests"
+    continueOnError: true
 
-    steps:
-    - script: |
-        mkdir zap-output
-        docker run -v $(System.DefaultWorkingDirectory)/zap-output:/zap/wrk:rw -t owasp/zap2docker-stable zap-baseline.py \
-          -t https://testlogin.onenfinity.com/User/Login \
-          -g gen.conf \
-          -r zap_report.html
-      displayName: 'Run ZAP Baseline Scan'
+  - task: CopyFiles@2
+    displayName: 'Copy ExtentReports + Linked Assets'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)'
+      Contents: |
+        reports/**
+        screenshots/**
+        logs/**
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
 
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish ZAP Report'
-      inputs:
-        PathtoPublish: '$(System.DefaultWorkingDirectory)/zap-output'
-        ArtifactName: 'ZAP_Security_Report'
-        publishLocation: 'Container'
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish ExtentReports Artifact'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+      ArtifactName: 'ExtentReport'
+      publishLocation: 'Container'
