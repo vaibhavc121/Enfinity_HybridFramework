@@ -37,7 +37,7 @@ jobs:
       checkStyleRunAnalysis: true
       pmdRunAnalysis: true
       findBugsRunAnalysis: true
-    #continueOnError: true
+    continueOnError: true
 
   - task: PublishTestResults@2
     displayName: 'Publish Test Results'
