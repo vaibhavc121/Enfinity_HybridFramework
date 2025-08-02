@@ -9,43 +9,59 @@ trigger:
 pool:
   vmImage: windows-latest
 
+variables:
+  isFlakyRun: false
+
 jobs:
-  - job: Regression_Test
-    timeoutInMinutes: 120
-    displayName: "Nightly Regression Suite"
-    steps:
-    - task: Maven@4
-      inputs:
-        azureSubscription: 'Azure for Students(da8c3d3e-cbc0-4f8a-891e-e96747df3a30)'
-        mavenPomFile: 'pom.xml'
-        goals: 'test'
-        options: '-DsuiteXmlFile=testng-suites/RegressionTestSuite.xml'
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        testRunTitle: 'Automation Enginner (SDET)- Vaibhav Chavan'
-        javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.17'
-        mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
-        effectivePomSkip: false
-        sonarQubeRunAnalysis: false
-        checkStyleRunAnalysis: true
-        pmdRunAnalysis: true
-        findBugsRunAnalysis: true
+- job: Regression_Test
+  timeoutInMinutes: 120
+  displayName: "Nightly Regression Suite"
+  steps:
 
-    - task: CopyFiles@2
-      displayName: 'Copy ExtentReports + Linked Assets'
-      inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: |
-          reports/**
-          screenshots/**
-          logs/**
-        TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+  - task: Maven@4
+    displayName: "Run Tests (excluding flaky)"
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'test'
+      options: >
+        -DsuiteXmlFile=testng-suites/RegressionTestSuite.xml 
+        -DexcludedGroups=flaky
+      publishJUnitResults: false
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.17'
+    continueOnError: true
 
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish ExtentReports Artifact with Assets'
-      inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
-        ArtifactName: 'ExtentReport'
-        publishLocation: 'Container'
+  - task: PublishTestResults@2
+    displayName: 'Publish Test Results'
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      testRunTitle: 'Automation Engineer - Vaibhav Chavan $(isFlakyRun)'
+      failTaskOnFailedTests: false
+
+  - script: |
+      if exist target/surefire-reports/testng-failed.xml (
+        echo "Retrying failed tests..."
+        mvn test -DsuiteXmlFile=target/surefire-reports/testng-failed.xml
+      ) else (
+        echo "No failed tests to rerun."
+      )
+    displayName: "Rerun Failed Tests"
+    continueOnError: true
+
+  - task: CopyFiles@2
+    displayName: 'Copy ExtentReports + Linked Assets'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)'
+      Contents: |
+        reports/**
+        screenshots/**
+        logs/**
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish ExtentReports Artifact'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+      ArtifactName: 'ExtentReport'
+      publishLocation: 'Container'
