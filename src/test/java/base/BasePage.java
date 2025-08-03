@@ -92,12 +92,13 @@ public class BasePage
 		try
 		{
 			waitForElement1(By.xpath(xpath)).clear();
+			BaseTest.log("value cleared in filter box");
 		} catch (Exception e)
 		{
 			waitForElement1(By.xpath(xpath)).clear();
+			BaseTest.log("value cleared in filter box");
 		}
 
-		BaseTest.log("value cleared in filter box");
 		waitForElement1(By.xpath(xpath)).sendKeys(value);
 		BaseTest.log("provided filter value");
 	}

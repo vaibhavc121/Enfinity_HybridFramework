@@ -26,17 +26,19 @@ public class LeaveResumptionTest extends BaseTest
         try
         {
             String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-            List<PayrollModel.LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave",
-                    PayrollModel.LeaveModel.class);
+            List<PayrollModel.LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave", PayrollModel.LeaveModel.class);
 
             // hr core pg
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
+            log("clicked on hr core link");
             hc.clickEmployee();
+            log("clicked on employee link");
             BasePage.navigateToEmployee("003");
 
             EmployeePage1 ep = new EmployeePage1(driver);
             ep.clkTimeOff();
+            log("clicked on time off tab");
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 1;
 

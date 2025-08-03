@@ -2,6 +2,7 @@ package pageObjects.HRMS.HRCore;
 
 import java.util.Set;
 
+import base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -93,7 +94,9 @@ public class EmployeePage1 extends BasePage
 	// Time off Action Methods
 	public double getLeaveBal(int classIndex)
 	{
-		String bal = driver.findElement(By.xpath("(//p[@class='leave-balance'])[" + classIndex + "]")).getText();
+		BaseTest.log("Extracting leave balance for class index: " + classIndex);
+		String bal = waitForElement1(By.xpath("(//p[@class='leave-balance'])[" + classIndex + "]")).getText();
+		BaseTest.log("leave balance extracted: " + bal);
 		// String bal = annualLeaveBal.getText();
 		String number = bal.replaceAll("[^0-9.]", "").trim();
 		// String numberPart = bal.substring(0, 5);
