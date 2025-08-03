@@ -49,7 +49,7 @@ public class JobApplicationTrackingPage extends BasePage
     //region Personal
     @FindBy(xpath = "//input[contains(@id,'NationalityCountries')]") private WebElement nationalityCountries;
     @FindBy(xpath = "//input[contains(@id,'VisaType')]") private WebElement visaType;
-    @FindBy(xpath = "//input[contains(@id,'Gender')]") private WebElement gender;
+    @FindBy(xpath = "(//input[contains(@id,'Gender')])[2]") private WebElement gender;
     @FindBy(xpath="(//span[@class='dx-checkbox-icon'])[3]") private WebElement drivingLicense;
     //endregion
 
@@ -168,6 +168,11 @@ public class JobApplicationTrackingPage extends BasePage
     public void clickSearchCandidates()
     {
         waitForElement(searchCandidates).click();
+    }
+
+    public void scrollToTop()
+    {
+        scrollIntoView(driver,advanceCandidateSearch);
     }
 
     //endregion

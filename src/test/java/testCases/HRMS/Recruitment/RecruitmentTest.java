@@ -10,6 +10,7 @@ import pageObjects.HRMS.Recruitment.JobApplicationTrackingPage;
 import pageObjects.HRMS.Recruitment.JobPage;
 import pageObjects.HRMS.Recruitment.RecruitmentPage;
 import utilities.FileUtils;
+import utilities.JavaScriptUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
@@ -302,11 +303,13 @@ public class RecruitmentTest extends BaseTest
                 ja.provideMaximumNoticePeriodInDays(search.maximumNoticePeriodInDays);
                 log("Provided maximum notice period in days: " + search.maximumNoticePeriodInDays);
 
-                ja.provideNationality(search.nationalityCountries);
-                log("select nationality: " + search.nationalityCountries);
+//                ja.provideNationality(search.nationalityCountries);
+//                log("select nationality: " + search.nationalityCountries);
 
                 ja.provideVisaType(search.visaType);
                 log("Provided visa type: " + search.visaType);
+
+                JavaScriptUtils.scrollToBottom(driver);
 
                 ja.provideGender(search.gender);
                 log("Provided gender");
@@ -325,6 +328,9 @@ public class RecruitmentTest extends BaseTest
 
                 ja.clickSearchCandidates();
                 log("Clicked on Search Candidates button");
+
+                ja.scrollToTop();
+                log("Scrolled to top of the page");
 
                 // ja.selectCandidate(candidateName);
                 ja.selectCandidate("Lloyd");

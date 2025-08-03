@@ -126,7 +126,7 @@
 
             <!-- Recruitment -->
 <!--            <class name="testCases.HRMS.Recruitment.CreateJobTest"/>-->
-<!--            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>-->
+            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>
 
             <!-- Global -->
             <!-- <class name="testCases.HRMS.Global.BrokenLinksTest"/> -->
@@ -135,9 +135,9 @@
             <!-- Flaky Test -->
 <!--            <class name="testCases.HRMS.Payroll.CreatePromotionTest"/>-->
 <!--            <class name="testCases.HRMS.Payroll.DeletePromotionTest"/>-->
-            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
-<!--            test-->
+<!--            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>-->
+<!--            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>-->
+
 
 
         </classes>
