@@ -338,6 +338,8 @@ public class RecruitmentTest extends BaseTest
 
                 ja.clickAssign();
                 log("Clicked on Assign Job button");
+
+                Assert.assertTrue(ja.isScreeningLabelDisplay());
             }
 
 

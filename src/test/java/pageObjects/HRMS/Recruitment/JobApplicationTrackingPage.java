@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.text.MessageFormat;
+
 public class JobApplicationTrackingPage extends BasePage
 {
     public JobApplicationTrackingPage(WebDriver driver)
@@ -18,6 +20,10 @@ public class JobApplicationTrackingPage extends BasePage
     //region Job Listing
     @FindBy(xpath = "(//td[@class='list-hyperlink'])[1]") private WebElement jobName;
     @FindBy(xpath = "(//tr)[12]") private WebElement jobRow;
+    //endregion
+
+    //region Candidates
+    @FindBy(xpath="//h3[normalize-space()='Screening']") private WebElement screening;
     //endregion
 
     //region Advance Candidate Search
@@ -61,6 +67,7 @@ public class JobApplicationTrackingPage extends BasePage
 
     @FindBy(xpath="//span[normalize-space()='Assign']") private WebElement assign;
 
+
     //endregion
 
     //endregion
@@ -83,6 +90,21 @@ public class JobApplicationTrackingPage extends BasePage
     public void openJobFromListing(String jobNameValue)
     {
         BasePage.navigateToEmployee(jobNameValue);
+    }
+    //endregion
+
+    //region Candidates
+    public boolean isScreeningLabelDisplay()
+    {
+        String screeningText = waitForElement(screening).getText().trim();
+        if (screeningText.equals("Screening"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     //endregion
 
@@ -180,13 +202,15 @@ public class JobApplicationTrackingPage extends BasePage
     public void selectCandidate(String candidateName)
     {
         waitTS(2);
-        waitForElement1(By.xpath("//span[normalize-space()='\" + candidateName + \"']/../../../../..//span[@class='dx-checkbox-icon']")).click();
+        waitForElement1(By.xpath("//span[normalize-space()='" + candidateName + "']/../../../../..//span[@class='dx-checkbox-icon']")).click();
     }
 
     public void clickAssign()
     {
         waitForElement(assign).click();
     }
+
+
 
     //endregion
 
