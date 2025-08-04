@@ -94,6 +94,7 @@ public class EmployeePage1 extends BasePage
 	// Time off Action Methods
 	public double getLeaveBal(int classIndex)
 	{
+		waitTS(3);
 		BaseTest.log("Extracting leave balance for class index: " + classIndex);
 		String bal = waitForElement1(By.xpath("(//p[@class='leave-balance'])[" + classIndex + "]")).getText();
 		BaseTest.log("leave balance extracted: " + bal);

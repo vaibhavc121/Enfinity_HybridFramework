@@ -38,6 +38,7 @@ public class CreateLeaveAdjustmentTest extends BaseTest
 
 			EmployeePage1 ep = new EmployeePage1(driver);
 			ep.clkTimeOff();
+			log("clicked on Time Off");
 			double LeaveBal = ep.getLeaveBal(3);
 			double expLeaveBal = LeaveBal + 1;
 

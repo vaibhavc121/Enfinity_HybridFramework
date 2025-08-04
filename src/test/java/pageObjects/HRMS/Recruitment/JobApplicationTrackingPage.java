@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pageObjects.HRMS.HRCore.EmployeePage;
+import utilities.DateUtils;
 
 import java.text.MessageFormat;
 
@@ -67,6 +69,92 @@ public class JobApplicationTrackingPage extends BasePage
 
     @FindBy(xpath="//span[normalize-space()='Assign']") private WebElement assign;
 
+
+    //endregion
+
+    //region JAT Pipeline
+
+    //region Applied
+
+    //endregion
+
+    //region Screening
+    @FindBy(xpath="//span[normalize-space()='Screening']") private WebElement screening1;
+    @FindBy(xpath = "//input[contains(@id,'HiringTimeline')]") private WebElement statusDD;
+    @FindBy(xpath="//div[@id='StatusUpdateButton']//span[@class='dx-button-text'][normalize-space()='Update']") private WebElement update;
+    @FindBy(xpath = "(//div[@class='widget-icon pull-left animation-fadeIn'])[2]") private WebElement screeningCount;
+    @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[3]") private WebElement interviewPipeline;
+    //endregion
+
+    //region Interview
+    @FindBy(xpath="//i[@class='dx-icon dx-icon-event']") private WebElement intervieButton;
+    @FindBy(xpath="//span[normalize-space()='New']") private WebElement newButton;
+    @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[4]") private WebElement offeredPipeline;
+
+    //region Schedule Interview Popup
+    @FindBy(xpath = "//input[contains(@id,'InterviewType')]") private WebElement interviewType;
+    @FindBy(xpath = "//input[contains(@id,'InterviewDateTime')]") private WebElement interviewDateTime;
+    @FindBy(xpath = "//input[contains(@id,'Duration')]") private WebElement interviewDuration;
+    @FindBy(xpath = "//input[contains(@id,'Mode')]") private WebElement interviewMode;
+    @FindBy(xpath = "//input[contains(@id,'Location')]") private WebElement location;
+    @FindBy(xpath = "//input[contains(@id,'InterviewerEmployeeId')]") private WebElement interviewer;
+    @FindBy(xpath = "//input[contains(@id,'GuestInterviewerIds')]") private WebElement guestInterviewer;
+    @FindBy(xpath="//span[@class='dx-vam dxm-contentText'][normalize-space()='Save']") private WebElement save;
+    @FindBy(xpath="//span[normalize-space()='Ok']") private WebElement ok;
+    @FindBy(xpath="(//span[@class='dx-button-text'][normalize-space()='Cancel'])[3]") private WebElement cancel;
+    @FindBy(xpath="(//i[@class='dx-icon dx-icon-close'])[1]") private WebElement closeSchduledInterviewPopupIcon;
+    @FindBy(xpath="//label[normalize-space()='Scheduled']") private WebElement interviewStatus;
+    //endregion
+    //endregion
+
+    //region Offered
+    @FindBy(xpath="//td[normalize-space()='Not Generated']") private WebElement offerStatus;
+    @FindBy(xpath="//i[@class='dx-icon dx-icon-message']") private WebElement offerIcon;
+    @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[5]") private WebElement hiredPipeline;
+    //endregion
+
+    //region Hired
+
+    @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[6]") private WebElement rejectedPipeline;
+
+    //region Initiate Onboarding
+    @FindBy(xpath="//i[@class='dx-icon dx-icon-bolt-solid']") private WebElement initiateOnboardingIcon;
+    @FindBy(xpath="//span[normalize-space()='Next']") private WebElement next;
+
+    //region Initiate Onboarding Popup
+
+    @FindBy(xpath = "//input[contains(@id,'JoiningDate')]") private WebElement joiningDate;
+    @FindBy(xpath = "//input[contains(@id,'ArrivalTime')]") private WebElement arrivalTime;
+    @FindBy(xpath = "//input[contains(@id,'ContactEmployeeId')]") private WebElement contactPerson;
+    @FindBy(xpath = "//input[contains(@id,'DepartmentId')]") private WebElement department;
+    @FindBy(xpath = "//input[contains(@id,'DesignationId')]") private WebElement designation;
+    @FindBy(xpath = "//input[contains(@id,'WorkLocationId')]") private WebElement workLocation;
+    @FindBy(xpath="(//div[@aria-label='Editor content'])[2]") private WebElement welcome;
+    @FindBy(xpath = "//input[contains(@id,'WelcomeUrl')]") private WebElement welcomeUrl;
+    @FindBy(xpath = "//textarea[contains(@id,'OtherInstructions')]") private WebElement otherInstructions;
+    @FindBy(xpath="//i[@class='dx-icon dx-icon-edit-button-addrow']") private WebElement addIcon;
+
+    //region Introction question popup
+    @FindBy(xpath = "//input[contains(@id,'QuestionName')]") private WebElement questionName;
+    @FindBy(xpath = "//input[contains(@id,'QuestionFormatType')]") private WebElement type;
+    @FindBy(xpath="(//span[@class='dx-button-text'][normalize-space()='Save'])[3]") private WebElement save1;
+    //endregion
+
+    @FindBy(xpath="//span[normalize-space()='Initate']") private WebElement initate;
+
+    //endregion
+
+    //endregion
+
+    //region Convert to Employee
+    @FindBy(xpath="//i[@class='dx-icon dx-icon-user']") private WebElement convertToEmployeeIcon;
+    //endregion
+
+    //endregion
+
+    //region Rejected
+
+    //endregion
 
     //endregion
 
@@ -211,6 +299,239 @@ public class JobApplicationTrackingPage extends BasePage
     }
 
 
+
+    //endregion
+
+    //region JAT Pipeline
+
+    public void changePipelineStatus(String currentStageStatus, String nextStageStatus)
+    {
+        waitForElement1(By.xpath("//span[normalize-space()='" + currentStageStatus + "']")).click();
+        waitForElement1(By.xpath("//input[contains(@id,'HiringTimeline')]")).click();
+        selectDropdownOption(nextStageStatus);
+        waitForElement1(By.xpath("//div[@id='StatusUpdateButton']//span[@class='dx-button-text'][normalize-space()='Update']")).click();
+    }
+
+    //region Applied
+
+    //endregion
+
+    //region Screening
+    public void clickScreening()
+    {
+        waitForElement(screening1).click();
+    }
+    public void selectStatus(String statusValue)
+    {
+        waitForElement(statusDD).click();
+        selectDropdownOption(statusValue);
+    }
+    public void clickUpdate()
+    {
+        waitForElement(update).click();
+    }
+    public void switchPipelineToInterview()
+    {
+        String screeningCount1= waitForElement(screeningCount).getText().trim();
+        if(screeningCount1.equals("0"))
+        {
+            waitForElement(interviewPipeline).click();
+        }
+        else
+        {
+            throw new RuntimeException("Candidate has not been added to Screening Pipeline, kindly check the Screening Pipeline first.");
+        }
+    }
+    //endregion
+
+    //region Interview
+    public void clickInterviewButton()
+    {
+        waitForElement(intervieButton).click();
+    }
+    public void clickNewButton()
+    {
+        waitForElement(newButton).click();
+    }
+
+    //region Schedule Interview Popup
+    public void selectInterviewType()
+    {
+        provideAndEnter(interviewType, "HR Interview");
+    }
+    public void provideInterviewDateTime()
+    {
+        clearAndProvide1(interviewDuration, DateUtils.getCurrentDateTime("dd-MMM-yyyy hh:mm a"));
+    }
+    public void provideInterviewDuration()
+    {
+        clearAndProvide1(interviewDuration, "60");
+    }
+    public void selectInterviewMode()
+    {
+        provideAndEnter(interviewMode, "Face To Face");
+    }
+    public void provideLocation()
+    {
+        clearAndProvide1(location, "Online");
+    }
+    public void selectInterviewer()
+    {
+        provideAndEnter(interviewer, "001 | Vaibhav Chavan");
+    }
+    public void selectGuestInterviewer()
+    {
+        provideAndEnter(guestInterviewer, "002");
+    }
+    public void clickSave()
+    {
+        waitForElement(save).click();
+    }
+    public void clickCancel()
+    {
+        waitForElement(cancel).click();
+    }
+    public void getStatusOfInterview()
+    {
+        String interviewStatusText = waitForElement(interviewStatus).getText().trim();
+        if (interviewStatusText.equals("Scheduled"))
+        {
+            System.out.println("Interview is scheduled successfully.");
+        }
+        else
+        {
+            throw new RuntimeException("Interview is not scheduled successfully");
+        }
+    }
+    public void clickCloseSchduledInterviewPopupIcon()
+    {
+        waitForElement(closeSchduledInterviewPopupIcon).click();
+    }
+    //endregion
+
+    public void clickOk()
+    {
+        waitForElement(ok).click();
+    }
+
+
+
+    //endregion
+
+    //region Offered
+    public void provideOfferLetter()
+    {
+        String offerStatusText = waitForElement(offerStatus).getText().trim();
+        if (offerStatusText.equals("Not Generated"))
+        {
+            waitForElement(offerIcon).click();
+            switchTab();
+
+        }
+        else
+        {
+            System.out.println("Offer letter is already generated.");
+        }
+    }
+    //endregion
+
+    //region Hired
+
+    //region Initiate Onboarding
+    public void clickInitiateOnboardingIcon()
+    {
+        waitForElement(initiateOnboardingIcon).click();
+    }
+    public void clickNext()
+    {
+        waitForElement(next).click();
+    }
+
+    //region Initiate Onboarding Popup
+    public void provideJoiningDate()
+    {
+        clearAndProvide1(joiningDate, DateUtils.addDaysToGivenDate("dd-MMM-yyyy", 30));
+    }
+    public void provideArrivalTime()
+    {
+        clearAndProvide1(arrivalTime, DateUtils.getCurrentTime("hh:mm a"));
+    }
+    public void selectContactPerson()
+    {
+        provideAndEnter(contactPerson, "001 | Vaibhav Chavan");
+    }
+    public void selectDepartment()
+    {
+        provideAndEnter(department, "QC");
+    }
+    public void selectDesignation()
+    {
+        provideAndEnter(designation, "Systems Analyst");
+    }
+    public void selectWorkLocation()
+    {
+        provideAndEnter(workLocation, "Salmiya City");
+    }
+    public void provideWelcomeMessage()
+    {
+        clearAndProvide1(welcome, "Welcome to the team!");
+    }
+    public void provideWelcomeUrl()
+    {
+        clearAndProvide1(welcomeUrl, "https://www.example.com/welcome");
+    }
+    public void provideOtherInstructions()
+    {
+        clearAndProvide1(otherInstructions, "Please complete the onboarding process.");
+    }
+    public void clickAddIcon()
+    {
+        waitForElement(addIcon).click();
+    }
+    public void provideQuestionName()
+    {
+        clearAndProvide1(questionName, "what is your name?");
+    }
+    public void selectType()
+    {
+        provideAndEnter(type, "Free Text");
+    }
+    public void clickSave1()
+    {
+        waitForElement(save1).click();
+    }
+    public void clickInitate()
+    {
+        waitForElement(initate).click();
+    }
+    //endregion
+
+    //endregion
+
+    //region Convert to Employee
+
+    public void clickConvertToEmployeeIcon()
+    {
+        waitForElement(convertToEmployeeIcon).click();
+        switchTab();
+    }
+
+
+
+
+
+
+
+
+    //endregion
+
+    //endregion
+
+    //region Rejected
+
+    //endregion
+
+    //endregion
 
     //endregion
 
