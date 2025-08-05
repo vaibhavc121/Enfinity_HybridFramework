@@ -5,6 +5,8 @@ import base.BaseTest;
 import models.Recruitment.Recruitment.RecruitmentModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.EmployeePage1;
 import pageObjects.HRMS.Recruitment.CandidatePage;
 import pageObjects.HRMS.Recruitment.JobApplicationTrackingPage;
 import pageObjects.HRMS.Recruitment.JobPage;
@@ -339,17 +341,9 @@ public class RecruitmentTest extends BaseTest
                 ja.clickAssign();
                 log("Clicked on Assign Job button");
 
-                Assert.assertTrue(ja.isScreeningLabelDisplay());
+                //Assert.assertTrue(ja.isScreeningLabelDisplay());
+                Assert.assertTrue(ja.candidateLabelDisplay(candidateName));
             }
-
-
-
-
-
-
-
-
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -359,6 +353,237 @@ public class RecruitmentTest extends BaseTest
     }
 
 
+    //endregion
+
+    //region Schedule Interview
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    public void scheduleInterview()
+    {
+        try
+        {
+            String recruitmentFile = FileUtils.getDataFile("Recruitment", "Recruitment", "RecruitmentData");
+            List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
+
+            // Recruitment page
+            RecruitmentPage rp = new RecruitmentPage(driver);
+            rp.clickRecruitment();
+            log("Clicked on Recruitment");
+            rp.clickJob();
+            log("Clicked on Job");
+
+            // Job Application Tracking page
+            JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
+
+            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            {
+                //ja.openJobFromListing(JobTitle);
+                ja.openJobFromListing("Customer Banking Architect");
+                log("Opened job from listing: " + JobTitle);
+
+                ja.clickOnCandidates();
+                log("Clicked on Candidates");
+
+                ja.clickScreeningPipeline();
+                log("Clicked on Screening Pipeline");
+
+                ja.changePipelineStatus("Screening", "Interview");
+                log("Changed pipeline status from Screening to Interview");
+
+                ja.clickInterviewPipeline();
+                log("Clicked on Interview Pipeline");
+
+                ja.clickInterviewButton();
+                log("Clicked on Interview button");
+
+                ja.clickNewButton();
+                log("Clicked on New button to schedule an interview");
+
+                ja.selectInterviewType();
+                log("Selected interview type");
+
+                ja.provideInterviewDateTime();
+                log("Provided interview date and time");
+
+                ja.provideInterviewDuration();
+                log("Provided interview duration");
+
+                ja.selectInterviewMode();
+                log("Selected interview mode");
+
+                ja.provideLocation();
+                log("Provided location for the interview");
+
+                ja.selectInterviewer();
+                log("Selected interviewer");
+
+                ja.selectGuestInterviewer();
+                log("Selected guest interviewer");
+
+                ja.clickSave();
+                log("Clicked on Save button to schedule the interview");
+
+                ja.clickCancel();
+                log("Clicked on Cancel button to close the interview dialog");
+
+                ja.getStatusOfInterview();
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    //endregion
+
+    //region Offer Job to Candidate
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    public void offerJobToCandidate()
+    {
+        try
+        {
+            String recruitmentFile = FileUtils.getDataFile("Recruitment", "Recruitment", "RecruitmentData");
+            List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
+
+
+            // Job Application Tracking page
+            JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
+
+            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            {
+                ja.clickCloseSchduledInterviewPopupIcon();
+                log("Clicked on Close Scheduled Interview Popup Icon");
+
+                ja.changePipelineStatus("Interview", "Offered");
+                log("Changed pipeline status from Interview to Offered");
+
+                ja.clickCancel();
+                log("Clicked on Cancel button to close the dialog");
+
+                ja.clickOfferedPipeline();
+                log("Clicked on Offered Pipeline");
+
+                ja.provideOfferLetter();
+
+                ja.checkOfferStatus();
+
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+    //endregion
+
+    //region Complete Hiring Process
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    public void completeHiringProcess()
+    {
+        try
+        {
+            String recruitmentFile = FileUtils.getDataFile("Recruitment", "Recruitment", "RecruitmentData");
+            List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
+
+            // Job Application Tracking page
+            JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
+
+            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            {
+               ja.changePipelineStatus("Offered", "Hired");
+               log("Changed pipeline status from Offered to Hired");
+
+                //region Onboarding Process
+                ja.clickInitiateOnboardingIcon();
+                log("Clicked on Initiate Onboarding Icon");
+
+                ja.clickNext();
+                log("Clicked on Next button");
+
+                ja.provideJoiningDate();
+                log("Provided Joining Date");
+
+                ja.provideArrivalTime();
+                log("Provided Arrival Time");
+
+                ja.selectContactPerson();
+                log("Selected Contact Person");
+
+                ja.selectDepartment();
+                log("Selected Department");
+
+                ja.selectDesignation();
+                log("Selected Designation");
+
+                ja.selectWorkLocation();
+                log("Selected Work Location");
+
+                ja.provideWelcomeMessage();
+                log("Provided Welcome Message");
+
+                ja.provideWelcomeUrl();
+                log("Provided Welcome URL");
+
+                ja.provideOtherInstructions();
+                log("Provided Other Instructions");
+
+                ja.clickAddIcon();
+                log("Clicked on Add Icon to add onboarding details");
+
+                ja.provideQuestionName();
+                log("Provided Question Name");
+
+                ja.selectType();
+                log("Selected Type");
+
+                ja.clickSave1();
+                log("Clicked on Save button to save onboarding details");
+
+                ja.clickInitate();
+                log("Clicked on Initiate button to complete the hiring process");
+
+                //endregion
+
+                //region Convert Candidate to Employee
+                ja.clickConvertToEmployeeIcon();
+                log("Clicked on Convert to Employee Icon");
+
+                BasePage.switchTab();
+                log("Switched to the employee tab");
+
+                // Employee Page
+                EmployeePage ep=new EmployeePage(driver);
+                ep.selectDepartment("QC");
+                log("Selected Department");
+
+                ep.selectPayrollSet("PS0- Calendar days");
+                log("Selected Payroll Set");
+
+                ep.selectCalendar("Calendar");
+                log("Selected Calendar");
+
+                ep.selectIndemnity("Indemnity");
+                log("Selected Indemnity");
+
+                ep.clickSave();
+                log("Clicked on Save button");
+
+
+
+
+
+                //endregion
+
+
+
+
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
     //endregion
 
 

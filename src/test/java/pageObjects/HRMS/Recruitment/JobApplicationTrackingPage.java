@@ -1,10 +1,12 @@
 package pageObjects.HRMS.Recruitment;
 
 import base.BasePage;
+import base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import utilities.DateUtils;
 
@@ -79,6 +81,7 @@ public class JobApplicationTrackingPage extends BasePage
     //endregion
 
     //region Screening
+    @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[2]") private WebElement screeningPipeline;
     @FindBy(xpath="//span[normalize-space()='Screening']") private WebElement screening1;
     @FindBy(xpath = "//input[contains(@id,'HiringTimeline')]") private WebElement statusDD;
     @FindBy(xpath="//div[@id='StatusUpdateButton']//span[@class='dx-button-text'][normalize-space()='Update']") private WebElement update;
@@ -111,6 +114,17 @@ public class JobApplicationTrackingPage extends BasePage
     @FindBy(xpath="//td[normalize-space()='Not Generated']") private WebElement offerStatus;
     @FindBy(xpath="//i[@class='dx-icon dx-icon-message']") private WebElement offerIcon;
     @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[5]") private WebElement hiredPipeline;
+
+
+    //region Job Offer Page
+    @FindBy(id="JobOffer.JobOfferReportIdLookup_I") private WebElement jobOfferTemplateDD;
+    @FindBy(id="JobOfferSalaryComponents_RPHT") private WebElement salaryComponentsSection;
+    @FindBy(id="JobOfferSalaryComponent_SalaryComponentId_I") private WebElement SalaryComponentDD;
+    @FindBy(xpath="(//div[@class='dxgBCTC dx-ellipsis'])[2]") private WebElement salaryAmount;
+    @FindBy(id="JobOfferLeaveTypes_RPHT") private WebElement leaveTypes;
+    @FindBy(id="JobOfferLeaveType_LeaveTypeId_I") private WebElement LeaveTypeDD;
+    @FindBy(xpath="//span[normalize-space()='Generate Offer']") private WebElement generateOffer;
+    //endregion
     //endregion
 
     //region Hired
@@ -182,10 +196,26 @@ public class JobApplicationTrackingPage extends BasePage
     //endregion
 
     //region Candidates
+    public void clickOnCandidates()
+    {
+        waitForElement(candidates).click();
+    }
     public boolean isScreeningLabelDisplay()
     {
         String screeningText = waitForElement(screening).getText().trim();
         if (screeningText.equals("Screening"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public boolean candidateLabelDisplay(String candidateNm)
+    {
+        String screeningText = waitForElement1(By.xpath("//span[normalize-space()='" +candidateNm + "']")).getText().trim();
+        if (screeningText.equals(candidateNm))
         {
             return true;
         }
@@ -317,6 +347,10 @@ public class JobApplicationTrackingPage extends BasePage
     //endregion
 
     //region Screening
+    public void clickScreeningPipeline()
+    {
+        waitForElement(screeningPipeline).click();
+    }
     public void clickScreening()
     {
         waitForElement(screening1).click();
@@ -345,6 +379,10 @@ public class JobApplicationTrackingPage extends BasePage
     //endregion
 
     //region Interview
+    public void clickInterviewPipeline()
+    {
+        waitForElement(interviewPipeline).click();
+    }
     public void clickInterviewButton()
     {
         waitForElement(intervieButton).click();
@@ -396,7 +434,8 @@ public class JobApplicationTrackingPage extends BasePage
         String interviewStatusText = waitForElement(interviewStatus).getText().trim();
         if (interviewStatusText.equals("Scheduled"))
         {
-            System.out.println("Interview is scheduled successfully.");
+            //System.out.println("Interview is scheduled successfully.");
+            Assert.assertTrue(true, "Interview is scheduled successfully.");
         }
         else
         {
@@ -419,18 +458,69 @@ public class JobApplicationTrackingPage extends BasePage
     //endregion
 
     //region Offered
-    public void provideOfferLetter()
+    public void clickOfferedPipeline()
+    {
+        waitForElement(offeredPipeline).click();
+    }
+    public void provideOfferLetter() throws InterruptedException
     {
         String offerStatusText = waitForElement(offerStatus).getText().trim();
         if (offerStatusText.equals("Not Generated"))
         {
             waitForElement(offerIcon).click();
-            switchTab();
+            BaseTest.log("Offer letter icon clicked.");
 
+            switchTab();
+            BaseTest.log("Switched to Offer Letter tab.");
+
+            clickOnEdit();
+            BaseTest.log("Clicked on Edit button");
+
+            clearAndProvide1(jobOfferTemplateDD, "");
+            BaseTest.log("provided Job Offer Template");
+
+            clickOnElement1(salaryComponentsSection);
+            BaseTest.log("Clicked on Salary Components Section");
+
+            clickOnNewLine();
+            BaseTest.log("Clicked on New Line button");
+
+            provideAndEnter(SalaryComponentDD, "Basic");
+            BaseTest.log("Provided Salary Component");
+
+            clearAndProvide2(salaryAmount, "500");
+            BaseTest.log("Provided Salary Amount");
+
+            clickOnNewLine();
+            BaseTest.log("Clicked on New Line button for Leave Type");
+
+            provideAndEnter(LeaveTypeDD, "Unpaid Leave");
+            BaseTest.log("Provided Leave Type");
+
+            clickOnView();
+            BaseTest.log("Clicked on View button");
+
+            waitForElement(generateOffer);
+            BaseTest.log("clicked on Generate Offer button");
+
+            closeUnwantedTab();
+            BaseTest.log("job offer tab closed.");
         }
         else
         {
             System.out.println("Offer letter is already generated.");
+        }
+    }
+    public void checkOfferStatus()
+    {
+        String offerStatusText1 = waitForElement(offerStatus).getText().trim();
+        if (offerStatusText1.equals("Sent"))
+        {
+            Assert.assertTrue(true, "Offer letter is generated successfully.");
+        }
+        else
+        {
+            throw new RuntimeException("Offer letter is not generated successfully");
         }
     }
     //endregion
@@ -513,7 +603,6 @@ public class JobApplicationTrackingPage extends BasePage
     public void clickConvertToEmployeeIcon()
     {
         waitForElement(convertToEmployeeIcon).click();
-        switchTab();
     }
 
 
