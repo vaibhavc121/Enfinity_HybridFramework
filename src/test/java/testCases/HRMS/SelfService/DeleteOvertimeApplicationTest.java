@@ -14,6 +14,7 @@ import java.util.List;
 
 public class DeleteOvertimeApplicationTest extends BaseTest
 {
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void deleteOvertimeApplication()
 	{
 		// self service page

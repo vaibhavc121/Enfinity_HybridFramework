@@ -13,6 +13,7 @@ import java.util.List;
 
 public class CreateResignationTest extends BaseTest
 {
+	@Test(groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void createResignation()
 	{
 		try

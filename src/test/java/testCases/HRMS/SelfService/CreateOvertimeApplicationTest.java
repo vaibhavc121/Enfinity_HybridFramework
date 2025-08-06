@@ -15,6 +15,7 @@ import java.util.List;
 
 public class CreateOvertimeApplicationTest extends BaseTest
 {
+	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
 	public void createOvertimeApplication()
 	{
 		try

@@ -14,6 +14,7 @@ import java.util.List;
 
 public class DeleteResignationTest extends BaseTest
 {
+	@Test(groups = "Regression" , retryAnalyzer = RetryAnalyzer.class)
 	public void deleteResignation()
 	{
 		// self service page

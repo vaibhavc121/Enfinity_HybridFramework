@@ -14,6 +14,7 @@ import java.util.List;
 
 public class DeleteTravelRequestTest extends BaseTest
 {
+	@Test(groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void DeleteTravelRequest()
 	{
 		// Self service page

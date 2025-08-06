@@ -133,8 +133,8 @@
 
 
             <!-- Flaky Test -->
-            <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
+            <class name="testCases.HRMS.SelfService.CreateOvertimeApplicationTest"/>
+            <class name="testCases.HRMS.SelfService.DeleteOvertimeApplicationTest"/>
 
 
 
