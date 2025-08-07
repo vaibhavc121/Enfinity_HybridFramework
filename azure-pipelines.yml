@@ -3,73 +3,50 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
-
 trigger:
-- master
+  - master
 
 pool:
   vmImage: windows-latest
 
-variables:
-  isFlakyRun: false
-
 jobs:
-- job: Regression_NewTestCases
-  timeoutInMinutes: 120
-  displayName: "Regression (New) Testcase Execution"
-  steps:
+  - job: Regression_NewTestCases
+    displayName: "Regression(New) testcase execution"
+    steps:
+      - task: Maven@4
+        inputs:
 
-  - task: Maven@4
-    displayName: "Run New TestCases Suite"
-    inputs:
-      mavenPomFile: 'pom.xml'
-      goals: 'test'
-      options: >
-        -DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml 
-        -DexcludedGroups=flaky
-      publishJUnitResults: false
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '1.17'
-      mavenVersionOption: 'Default'
-      mavenAuthenticateFeed: false
-      effectivePomSkip: false
-      sonarQubeRunAnalysis: false
-      checkStyleRunAnalysis: true
-      pmdRunAnalysis: true
-      findBugsRunAnalysis: true
-    continueOnError: true
+          mavenPomFile: 'pom.xml'
+          goals: 'test'
+          options: >
+            -DsuiteXmlFile=testng-suites/NewTestCasesSuite.xml 
+            -DexcludedGroups=flaky
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          testRunTitle: 'Automation Enginner (SDET)- Vaibhav Chavan'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.17'
+          mavenVersionOption: 'Default'
+          mavenAuthenticateFeed: false
+          effectivePomSkip: false
+          sonarQubeRunAnalysis: false
+          checkStyleRunAnalysis: true
+          pmdRunAnalysis: true
+          findBugsRunAnalysis: true
 
-  - task: PublishTestResults@2
-    displayName: 'Publish Test Results'
-    inputs:
-      testResultsFormat: 'JUnit'
-      testResultsFiles: '**/surefire-reports/TEST-*.xml'
-      testRunTitle: 'Automation Engineer - Vaibhav Chavan (New Cases)'
-      failTaskOnFailedTests: false
+      - task: CopyFiles@2
+        displayName: 'Copy ExtentReports + Linked Assets'
+        inputs:
+          SourceFolder: '$(System.DefaultWorkingDirectory)'
+          Contents: |
+            reports/**
+            screenshots/**
+            logs/**
+          TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
 
-  - script: |
-      if exist target/surefire-reports/testng-failed.xml (
-        echo "Retrying failed tests..."
-        mvn test -DsuiteXmlFile=target/surefire-reports/testng-failed.xml
-      ) else (
-        echo "No failed tests to rerun."
-      )
-    displayName: "Rerun Failed Tests"
-    continueOnError: true
-
-  - task: CopyFiles@2
-    displayName: 'Copy ExtentReports + Linked Assets'
-    inputs:
-      SourceFolder: '$(System.DefaultWorkingDirectory)'
-      Contents: |
-        reports/**
-        screenshots/**
-        logs/**
-      TargetFolder: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
-
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish ExtentReports Artifact'
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
-      ArtifactName: 'ExtentReport'
-      publishLocation: 'Container'
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish ExtentReports Artifact with Assets'
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)/ExtentReportBundle'
+          ArtifactName: 'ExtentReport'
+          publishLocation: 'Container'
