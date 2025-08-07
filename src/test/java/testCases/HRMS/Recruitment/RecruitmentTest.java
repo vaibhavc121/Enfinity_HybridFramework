@@ -278,7 +278,7 @@ public class RecruitmentTest extends BaseTest
             for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
                 //ja.openJobFromListing(JobTitle);
-                ja.openJobFromListing("Customer Banking Architect");
+                ja.openJobFromListing("Construction Associate");
                 log("Opened job from listing: " + JobTitle);
 
                 ja.clickAdvanceCandidateSearch();
@@ -335,14 +335,15 @@ public class RecruitmentTest extends BaseTest
                 log("Scrolled to top of the page");
 
                 // ja.selectCandidate(candidateName);
-                ja.selectCandidate("Lloyd");
+                ja.selectCandidate("Angelika");
                 log("Selected candidate: " + candidateName);
 
                 ja.clickAssign();
                 log("Clicked on Assign Job button");
 
                 //Assert.assertTrue(ja.isScreeningLabelDisplay());
-                Assert.assertTrue(ja.candidateLabelDisplay(candidateName));
+                //Assert.assertTrue(ja.candidateLabelDisplay(candidateName));
+                Assert.assertTrue(ja.candidateLabelDisplay("Angelika"));
             }
         } catch (Exception e)
         {
@@ -377,7 +378,7 @@ public class RecruitmentTest extends BaseTest
             for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
                 //ja.openJobFromListing(JobTitle);
-                ja.openJobFromListing("Customer Banking Architect");
+                ja.openJobFromListing("Construction Associate");
                 log("Opened job from listing: " + JobTitle);
 
                 ja.clickOnCandidates();
@@ -425,7 +426,11 @@ public class RecruitmentTest extends BaseTest
                 ja.clickCancel();
                 log("Clicked on Cancel button to close the interview dialog");
 
-                ja.getStatusOfInterview();
+                Assert.assertTrue(ja.getStatusOfInterview(), "Interview is not scheduled successfully");
+                log("Interview scheduled successfully for candidate: " + candidateName);
+
+                ja.clickCloseSchduledInterviewPopupIcon();
+                log("Closed Scheduled Interview Popup");
             }
         } catch (Exception e)
         {
@@ -445,19 +450,35 @@ public class RecruitmentTest extends BaseTest
             String recruitmentFile = FileUtils.getDataFile("Recruitment", "Recruitment", "RecruitmentData");
             List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
+            // Recruitment page
+            RecruitmentPage rp = new RecruitmentPage(driver);
+            rp.clickRecruitment();
+            log("Clicked on Recruitment");
+            rp.clickJob();
+            log("Clicked on Job");
 
             // Job Application Tracking page
             JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
 
             for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
-                ja.clickCloseSchduledInterviewPopupIcon();
-                log("Clicked on Close Scheduled Interview Popup Icon");
+                //ja.openJobFromListing(JobTitle);
+                ja.openJobFromListing("Construction Associate");
+                log("Opened job from listing: " + JobTitle);
+
+                ja.clickOnCandidates();
+                log("Clicked on Candidates");
+
+                ja.clickInterviewPipeline();
+                log("Clicked on Interview Pipeline");
+
+                //ja.clickCloseSchduledInterviewPopupIcon();
+                //log("Clicked on Close Scheduled Interview Popup Icon");
 
                 ja.changePipelineStatus("Interview", "Offered");
                 log("Changed pipeline status from Interview to Offered");
 
-                ja.clickCancel();
+                ja.clickCancelPopupInterview();
                 log("Clicked on Cancel button to close the dialog");
 
                 ja.clickOfferedPipeline();
@@ -568,9 +589,22 @@ public class RecruitmentTest extends BaseTest
                 ep.clickSave();
                 log("Clicked on Save button");
 
+                Assert.assertTrue(ep.isEmployeeNameDisplay(candidateName),"Employee is not created");
+                log("Employee created successfully with name: " + candidateName);
 
+                //endregion
 
+                //region Delete Employee
+                ep.clickSettingButton();
+                log("Clicked on Setting Button");
 
+                ep.clickDelete();
+                log("Clicked on Delete button");
+
+                ep.clickOk();
+                log("Clicked on OK button to confirm deletion");
+
+                Assert.assertFalse(ep.validateEmpDelete(candidateName), "Employee " + candidateName + " is not deleted.");
 
                 //endregion
 

@@ -19,7 +19,11 @@ public class EmployeePage extends BasePage
 
 	}
 
-	// Setting Button Page Objects
+	//region Locators
+
+	//region EmployeeProfileHeader
+
+	//region Setting Button Page Objects
 	@FindBy(xpath = "//i[@class='dx-icon dx-icon-setup-icon']")
 	WebElement settingButton;
 
@@ -43,8 +47,11 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "(//div[@class='dx-item-content dx-list-item-content'])[20]")
 	WebElement severance;
+	//endregion
 
-	// Create Employee Page Objects
+	//endregion
+
+	//region Create Employee Page Objects
 	@FindBy(css = "#MainMenu_DXI0_Img")
 	WebElement newbtn;
 
@@ -122,8 +129,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//h4[@class='font-size-h2']")
 	WebElement myInfoEmp;
+	//endregion
 
-	// Tab Page Objects
+	//region Tab Page Objects
 	@FindBy(xpath = "//span[contains(text(),'Job')]")
 	WebElement job;
 
@@ -165,8 +173,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='Career Path']")
 	WebElement careerPath;
+	//endregion
 
-	// Personal Tab Page Objects
+	//region Personal Tab Page Objects
 	@FindBy(xpath = "//input[@name='NameL2']")
 	WebElement nameL2;
 
@@ -208,8 +217,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//input[contains(@id,'EmailVisibility')]")
 	WebElement emailVisibility;
+	//endregion
 
-	// Job Page Objects
+	//region Job Page Objects
 	@FindBy(xpath = "//input[contains(@id,'ManagerEmployeeId')]")
 	WebElement manager;
 
@@ -260,8 +270,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "/html[1]/body[1]/div[9]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/span[1]")
 	WebElement saveQualification;
+	//endregion
 
-	// Payroll Tab Page Objects
+	//region Payroll Tab Page Objects
 	@FindBy(xpath = "//input[contains(@id,'PayrollSetId')]")
 	WebElement payrollsetid;
 
@@ -286,7 +297,7 @@ public class EmployeePage extends BasePage
 	@FindBy(xpath = "//input[contains(@id,'GovtRecruitmentContractLicenseId')]")
 	WebElement govtRecruitmentContractLicense;
 
-	// salary Component section
+	//region salary Component section
 	@FindBy(xpath = "//p[normalize-space()='Salary Components']/../..//i[@class='dx-icon dx-icon-add']")
 	WebElement addSalaryComponentsBtn;
 
@@ -302,7 +313,7 @@ public class EmployeePage extends BasePage
 	@FindBy(xpath = "//div[@id='SaveButton']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement saveSalComponent;
 
-	// edit basic salary
+	//region edit basic salary
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/main[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]/i[1]")
 	WebElement editBasicSalBtn;
 
@@ -314,15 +325,19 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@id='SaveButton']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement saveBasicSalary;
+	//endregion
 
-	// delete basic salary
+	//region delete basic salary
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/main[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[2]/div[1]/i[1]")
 	WebElement deleteBasicSalBtn;
 
 	@FindBy(xpath = "//span[normalize-space()='Delete']")
 	WebElement deleteBasicSalaryComponent;
+	//endregion
 
-	// overtime types section
+	//endregion
+
+	//region overtime types section
 	@FindBy(xpath = "//p[normalize-space()='Overtime Types']//following::i[@class='dx-icon dx-icon-add']")
 	WebElement addOvertimeTypes;
 
@@ -331,8 +346,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@id='EmployeeOvertimeTypePopupForm']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement saveOvertimeType;
+	//endregion
 
-	// tickets section
+	//region tickets section
 	@FindBy(xpath = "//div[@title='Add Ticket']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addTicketsBtn;
 
@@ -353,8 +369,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement saveTicket;
+	//endregion
 
-	// Miscellaneous Accrual Earnings section
+	//region Miscellaneous Accrual Earnings section
 	@FindBy(xpath = "//div[@title='Add Miscellaneous Accrual Earning']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addMiscellaneousAccrual;
 
@@ -369,8 +386,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement miscellaneousAccrualSave;
+	//endregion
 
-	// Benefit Schemes section
+	//region Benefit Schemes section
 	@FindBy(xpath = "//div[@title='Add Benefit Scheme']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addBenefitScheme;
 
@@ -388,8 +406,11 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement BSsave;
+	//endregion
 
-	// TimeOff Tab Page Objects
+	//endregion
+
+	//region TimeOff Tab Page Objects
 	@FindBy(xpath = "//span[normalize-space()='Assign Leave Type']")
 	WebElement assignLeaveType;
 
@@ -398,8 +419,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//input[contains(@id,'EffectiveFromDate')]")
 	WebElement LTeffectiveFromDate;
+	//endregion
 
-	// Attendance Tab Page Objects
+	//region Attendance Tab Page Objects
 	@FindBy(xpath = "//input[contains(@id,'CalendarId')]")
 	WebElement calendar;
 
@@ -417,8 +439,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//input[contains(@id,'ShiftPreference')]")
 	WebElement shiftPreference;
+	//endregion
 
-	// Documents Tab Page Objects
+	//region Documents Tab Page Objects
 	@FindBy(xpath = "//div[@class='dx-switch-on']")
 	WebElement showActive;
 
@@ -442,9 +465,11 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='Add Attachment']")
 	WebElement addAttachment;
+	//endregion
 
-	// Performance Tab Page Objects
-	// Key Result Areas
+	//region Performance Tab Page Objects
+
+	//region Key Result Areas
 	@FindBy(xpath = "//div[@title='Add Key Result Area']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addKRABtn;
 
@@ -456,8 +481,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement KRAsave;
+	//endregion
 
-	// Competencies
+	//region Competencies
 	@FindBy(xpath = "//div[@title='Add Competency']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addCompetencies;
 
@@ -469,8 +495,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement competenciesSave;
+	//endregion
 
-	// Skill Sets
+	//region Skill Sets
 	@FindBy(xpath = "//div[@title='Add Skill Set']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addSkillSetBtn;
 
@@ -485,8 +512,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement skillSetsave;
+	//endregion
 
-	// Goals
+	//region Goals
 	@FindBy(xpath = "//div[@title='Add Goal']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addGoalsBtn;
 
@@ -507,9 +535,13 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement goalSave;
+	//endregion
 
-	// Integration Tab Page Objects
-	// Cost Allocation section
+	//endregion
+
+	//region Integration Tab Page Objects
+
+	//region Cost Allocation section
 	@FindBy(xpath = "//input[contains(@id,'FinancialIntegrationGroupId')]")
 	WebElement financialIntegrationGroup;
 
@@ -524,8 +556,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//input[contains(@id,'Segment4')]")
 	WebElement segmentWorkLocation;
+	//endregion
 
-	// Default Cost Allocation section
+	//region Default Cost Allocation section
 	@FindBy(xpath = "//i[@class='dx-icon dx-icon-add']")
 	WebElement defaultCostAllocationBtn;
 
@@ -552,8 +585,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@id='SaveButton']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement costAllocationsave;
+	//endregion
 
-	// Project section
+	//region Project section
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/main[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/i[1]")
 	WebElement AddProjectsBtn;
 
@@ -568,10 +602,13 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-item-content dx-toolbar-item-content']//div[@aria-label='Save']//div[@class='dx-button-content']")
 	WebElement empProjectsave;
+	//endregion
 
-	// Dependents Tab Page Objects
+	//endregion
 
-	// Spouse section
+	//region Dependents Tab Page Objects
+
+	//region Spouse section
 	@FindBy(xpath = "//div[@title='Add Spouse']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addSpousesBtn;
 
@@ -586,8 +623,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement spouseSave;
+	//endregion
 
-	// Childrens section
+	//region Childrens section
 	@FindBy(xpath = "//div[@title='Add Child']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addChildrensBtn;
 
@@ -599,8 +637,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement childrenSave;
+	//endregion
 
-	// Others section
+	//region Others section
 	@FindBy(xpath = "//div[@title='Add Dependent']//i[@class='dx-icon dx-icon-edit-button-addrow']")
 	WebElement addOthersBtn;
 
@@ -612,9 +651,13 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
 	WebElement OtherSave;
+	//endregion
 
-	// ResidencyInfo Tab Page Objects
-	// basic details
+	//endregion
+
+	//region ResidencyInfo Tab Page Objects
+
+	//region basic details
 	@FindBy(name = "SecondName")
 	WebElement secondName;
 
@@ -644,8 +687,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(name = "BirthPlace")
 	WebElement birthPlace;
+	//endregion
 
-	// Work Permit Details
+	//region Work Permit Details
 	@FindBy(xpath = "//div[@class='dx-switch-off']")
 	WebElement OnCompanyResidencyYes;
 
@@ -681,8 +725,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//input[contains(@id,'OldContractSalary')]")
 	WebElement OldContractSalary;
+	//endregion
 
-	// Address Details
+	//region Address Details
 	@FindBy(xpath = "//input[contains(@id,'Block')]")
 	WebElement Block;
 
@@ -712,8 +757,9 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//input[contains(@id,'PaciNumber')]")
 	WebElement PaciNumber;
+	//endregion
 
-	// Previous Sponsor Details
+	//region Previous Sponsor Details
 	@FindBy(xpath = "//input[contains(@id,'PreviousSponsorName')]")
 	WebElement PreviousSponsorName;
 
@@ -732,7 +778,12 @@ public class EmployeePage extends BasePage
 	@FindBy(xpath = "//input[contains(@id,'OldGovernmentLicense')]")
 	WebElement OldGovernmentLicense;
 
-	// Delete Employee Page Objects
+
+	//endregion
+
+	//endregion
+
+	//region Delete Employee Page Objects
 	// @FindBy(xpath = "//i[@class='dx-icon dx-icon-setup-icon']")
 	// WebElement settingButton;
 
@@ -757,14 +808,77 @@ public class EmployeePage extends BasePage
 
 	@FindBy(xpath = "//span[normalize-space()='Log Off']")
 	WebElement logOff;
+	//endregion
 
-	// Setting Button Action Methods
+	//endregion
+
+	//region Action Methods
+
+	//region EmployeeProfileHeader
+
+	//region Setting Button Action Methods
 	public void clickResetPwd()
 	{
 		resetPassword.click();
 	}
+	//endregion
 
-	// Create Employee Action Methods
+	//region Delete Employee Action Methods
+	public void clickSettingButton()
+	{
+		settingButton.click();
+		waitTS(2);
+	}
+
+	public void clickDelete()
+	{
+		delete.click();
+		waitTS(2);
+	}
+
+	public void clickOk()
+	{
+		ok.click();
+		waitTS(3);
+	}
+
+	public void clickRightAreaMenu()
+	{
+		rightAreaMenu.click();
+		waitTS(1);
+	}
+
+	public void clicklogOff()
+	{
+		logOff.click();
+	}
+
+	public boolean validateEmpDelete(String value)
+	{
+		filterByIndex(2, value);
+		waitTS(2);
+		String employee = resultValue(1);
+		return employee.contains(value);
+	}
+	//endregion
+
+	public boolean isEmployeeNameDisplay(String empName)
+	{
+		String employeeName = waitForElement1(By.xpath("//h2[normalize-space()='" + empName + "']")).getText();
+		if (employeeName.contains(empName))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+
+	//endregion
+
+	//region Create Employee Action Methods
 	public void clickNewBtn()
 	{
 		clickOnNew();
@@ -888,7 +1002,9 @@ public class EmployeePage extends BasePage
 		return resultEmployee().contains(empname);
 	}
 
-	// Tab Action Methods
+	//endregion
+
+	//region Tab Action Methods
 	public void clickJob()
 	{
 		job.click();
@@ -959,7 +1075,9 @@ public class EmployeePage extends BasePage
 		careerPath.click();
 	}
 
-	// Personal Tab Action Methods
+	//endregion
+
+	//region Personal Tab Action Methods
 	public void provideNameL2(String value)
 	{
 		nameL2.sendKeys(value);
@@ -1037,8 +1155,9 @@ public class EmployeePage extends BasePage
 		selectDropdownOption(value);
 		waitTS(1);
 	}
+	//endregion
 
-	// Job Action Methods
+	//region Job Action Methods
 	public void clickManager() throws InterruptedException
 	{
 		manager.click();
@@ -1123,7 +1242,7 @@ public class EmployeePage extends BasePage
 		waitTS(1);
 	}
 
-	// work experience starts
+	//region work experience section
 	public void clickAddWorkExpBtn() throws InterruptedException
 	{
 		addWorkExpButton.click();
@@ -1147,9 +1266,9 @@ public class EmployeePage extends BasePage
 		saveWorkExp.click();
 		waitTS(1);
 	}
-	// work experience ends
+	//endregion
 
-	// qualification starts
+	//region qualification section
 	public void addQualificationBtn() throws InterruptedException
 	{
 		addQualification.click();
@@ -1185,9 +1304,11 @@ public class EmployeePage extends BasePage
 		saveQualification.click();
 		waitTS(1);
 	}
-	// qualification ends
+	//endregion
 
-	// Payroll Tab Action Methods
+	//endregion
+
+	//region Payroll Tab Action Methods
 	public void clickPayrollSetID()
 	{
 		payrollsetid.click();
@@ -1506,8 +1627,9 @@ public class EmployeePage extends BasePage
 	{
 		BSsave.click();
 	}
+	//endregion
 
-	// TimeOff Tab Action Methods
+	//region TimeOff Tab Action Methods
 	public void clickAssignLeaveType()
 	{
 		assignLeaveType.click();
@@ -1537,8 +1659,9 @@ public class EmployeePage extends BasePage
 	{
 		clickSave();
 	}
+	//endregion
 
-	// Attendance Tab Action Methods
+	//region Attendance Tab Action Methods
 	public void clickAttendanceCalendar()
 	{
 		calendar.click();
@@ -1603,8 +1726,9 @@ public class EmployeePage extends BasePage
 	{
 		selectDropdownOption(value);
 	}
+	//endregion
 
-	// Documents Tab Action Methods
+	//region Documents Tab Action Methods
 	public void showActiveDocs()
 	{
 		showActive.click();
@@ -1663,7 +1787,9 @@ public class EmployeePage extends BasePage
 		addAttachment.sendKeys("C:\\\\Users\\\\admin\\\\Downloads\\\\Employee Contract_190120251111.pdf");
 	}
 
-	// Performance Tab Action Methods
+	//endregion
+
+	//region Performance Tab Action Methods
 	public void addKRABtn()
 	{
 		addKRABtn.click();
@@ -1798,8 +1924,9 @@ public class EmployeePage extends BasePage
 		goalSave.click();
 		waitTS(1);
 	}
+	//endregion
 
-	// Integration Tab Action Methods
+	//region Integration Tab Action Methods
 	public void clickFinancialIntegrationGroup()
 	{
 		financialIntegrationGroup.click();
@@ -1926,8 +2053,9 @@ public class EmployeePage extends BasePage
 	{
 		clickSave();
 	}
+	//endregion
 
-	// Dependents Tab Action Methods
+	//region Dependents Tab Action Methods
 	public void clickAddSpousesBtn()
 	{
 		addSpousesBtn.click();
@@ -1988,7 +2116,9 @@ public class EmployeePage extends BasePage
 		OtherSave.click();
 	}
 
-	// ResidencyInfo Tab Action Methods
+	//endregion
+
+	//region ResidencyInfo Tab Action Methods
 	public void provideSecondName(String value)
 	{
 		secondName.sendKeys(value);
@@ -2191,43 +2321,8 @@ public class EmployeePage extends BasePage
 	{
 		clickSave();
 	}
+	//endregion
 
-	// Delete Employee Action Methods
-	public void clickSettingButton()
-	{
-		settingButton.click();
-		waitTS(2);
-	}
-
-	public void clickDelete()
-	{
-		delete.click();
-		waitTS(2);
-	}
-
-	public void clickOk()
-	{
-		ok.click();
-		waitTS(3);
-	}
-
-	public void clickRightAreaMenu()
-	{
-		rightAreaMenu.click();
-		waitTS(1);
-	}
-
-	public void clicklogOff()
-	{
-		logOff.click();
-	}
-
-	public boolean validateEmpDelete(String value)
-	{
-		filterByIndex(2, value);
-		waitTS(2);
-		String employee = resultValue(1);
-		return employee.contains(value);
-	}
+	//endregion
 
 }

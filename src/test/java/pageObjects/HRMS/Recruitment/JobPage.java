@@ -140,7 +140,7 @@ public class JobPage extends BasePage
 
 	public void provideTargetDate()
 	{
-		clearAndProvide1(targetDate, DateUtils.addDaysToCurrentDate(30,"dd-MMM-yyyy"));
+		clearAndProvide1(targetDate, DateUtils.addDaysToCurrentDate(7,"dd-MMM-yyyy"));
 	}
 
 	public void provideMonthlySal(String value)

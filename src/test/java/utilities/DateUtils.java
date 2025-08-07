@@ -18,6 +18,11 @@ public class DateUtils
 		return LocalDateTime.now().format(DateTimeFormatter.ofPattern(format));
 	}
 
+	public static String getCurrentDateTime1(String format) {
+		String dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern(format));
+		return dateTime.replaceAll("am", "AM").replaceAll("pm", "PM");
+	}
+
 	public static String getCurrentDate(String format)
 	{
 		return LocalDate.now().format(DateTimeFormatter.ofPattern(format));

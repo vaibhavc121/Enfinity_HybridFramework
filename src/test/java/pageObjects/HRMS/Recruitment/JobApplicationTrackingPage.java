@@ -93,10 +93,14 @@ public class JobApplicationTrackingPage extends BasePage
     @FindBy(xpath="//i[@class='dx-icon dx-icon-event']") private WebElement intervieButton;
     @FindBy(xpath="//span[normalize-space()='New']") private WebElement newButton;
     @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[4]") private WebElement offeredPipeline;
+    @FindBy(xpath="(//span[@class='dx-button-text'][normalize-space()='Cancel'])[2]") private WebElement cancelPopupInterview;
 
     //region Schedule Interview Popup
     @FindBy(xpath = "//input[contains(@id,'InterviewType')]") private WebElement interviewType;
     @FindBy(xpath = "//input[contains(@id,'InterviewDateTime')]") private WebElement interviewDateTime;
+    @FindBy(xpath="(//div[@class='dx-dropdowneditor-icon'])[17]") private WebElement interviewDateTimeCalendarIcon;
+    @FindBy(xpath="//div[@aria-label='Today']//div[@class='dx-button-content']") private WebElement today;
+    @FindBy(xpath="(//span[@class='dx-button-text'][normalize-space()='OK'])[2]") private WebElement oKCalendar;
     @FindBy(xpath = "//input[contains(@id,'Duration')]") private WebElement interviewDuration;
     @FindBy(xpath = "//input[contains(@id,'Mode')]") private WebElement interviewMode;
     @FindBy(xpath = "//input[contains(@id,'Location')]") private WebElement location;
@@ -191,7 +195,31 @@ public class JobApplicationTrackingPage extends BasePage
 
     public void openJobFromListing(String jobNameValue)
     {
-        BasePage.navigateToEmployee(jobNameValue);
+        // selectFilterAll();
+        filterByIndex(2, jobNameValue);
+        BaseTest.log("value filtered");
+        waitTS(2);
+        String employee = resultValue(1);
+        // Thread.sleep(2000);
+        if (employee.contains(jobNameValue))
+        {
+            selectRow();
+            BaseTest.log("row selected");
+            try
+            {
+                clickOnEdit();
+                BaseTest.log("clicked On Edit");
+
+            } catch (Exception e)
+            {
+                clickOnView();
+                BaseTest.log("clicked On View");
+            }
+
+        } else
+        {
+            throw new RuntimeException("VRC- No matching record found");
+        }
     }
     //endregion
 
@@ -385,11 +413,27 @@ public class JobApplicationTrackingPage extends BasePage
     }
     public void clickInterviewButton()
     {
-        waitForElement(intervieButton).click();
+        try
+        {
+            waitForElement(intervieButton).click();
+        } catch (Exception e)
+        {
+            waitForElement(intervieButton).click();
+            waitTS(5);
+        }
+
     }
     public void clickNewButton()
     {
-        waitForElement(newButton).click();
+        try
+        {
+            waitForElement(newButton).click();
+        } catch (Exception e)
+        {
+            waitForElement(newButton).click();
+        }
+
+        waitTS(5);
     }
 
     //region Schedule Interview Popup
@@ -399,7 +443,10 @@ public class JobApplicationTrackingPage extends BasePage
     }
     public void provideInterviewDateTime()
     {
-        clearAndProvide1(interviewDuration, DateUtils.getCurrentDateTime("dd-MMM-yyyy hh:mm a"));
+        //clearAndProvide1(interviewDateTime, DateUtils.getCurrentDateTime1("dd-MMM-yyyy hh:mm A"));
+        clickOnElement1(interviewDateTimeCalendarIcon);
+        clickOnElement1(today);
+        clickOnElement1(oKCalendar);
     }
     public void provideInterviewDuration()
     {
@@ -427,19 +474,37 @@ public class JobApplicationTrackingPage extends BasePage
     }
     public void clickCancel()
     {
-        waitForElement(cancel).click();
+        waitTS(3);
+        try
+        {
+            waitForElement(cancel).click();
+        } catch (Exception e)
+        {
+            waitForElement(cancel).click();
+        }
+
     }
-    public void getStatusOfInterview()
+    public void clickCancelPopupInterview()
+    {
+        waitTS(3);
+        try
+        {
+            waitForElement(cancelPopupInterview).click();
+        } catch (Exception e)
+        {
+            waitForElement(cancelPopupInterview).click();
+        }
+    }
+    public boolean getStatusOfInterview()
     {
         String interviewStatusText = waitForElement(interviewStatus).getText().trim();
         if (interviewStatusText.equals("Scheduled"))
         {
-            //System.out.println("Interview is scheduled successfully.");
-            Assert.assertTrue(true, "Interview is scheduled successfully.");
+            return true;
         }
         else
         {
-            throw new RuntimeException("Interview is not scheduled successfully");
+            return false;
         }
     }
     public void clickCloseSchduledInterviewPopupIcon()
@@ -465,7 +530,7 @@ public class JobApplicationTrackingPage extends BasePage
     public void provideOfferLetter() throws InterruptedException
     {
         String offerStatusText = waitForElement(offerStatus).getText().trim();
-        if (offerStatusText.equals("Not Generated"))
+        if (offerStatusText.equals("Not Generated") || offerStatusText.equals("Draft"))
         {
             waitForElement(offerIcon).click();
             BaseTest.log("Offer letter icon clicked.");
@@ -473,14 +538,20 @@ public class JobApplicationTrackingPage extends BasePage
             switchTab();
             BaseTest.log("Switched to Offer Letter tab.");
 
-            clickOnEdit();
-            BaseTest.log("Clicked on Edit button");
+//            clickOnEdit();
+//            BaseTest.log("Clicked on Edit button");
 
-            clearAndProvide1(jobOfferTemplateDD, "");
+            clearAndProvide1(jobOfferTemplateDD, "Job Offer");
             BaseTest.log("provided Job Offer Template");
 
             clickOnElement1(salaryComponentsSection);
             BaseTest.log("Clicked on Salary Components Section");
+
+            clickOnView();
+            BaseTest.log("Clicked on View button");
+
+            clickOnEdit();
+            BaseTest.log("Clicked on Edit button");
 
             clickOnNewLine();
             BaseTest.log("Clicked on New Line button");
