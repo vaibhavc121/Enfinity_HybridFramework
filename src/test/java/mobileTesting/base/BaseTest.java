@@ -35,13 +35,13 @@ public class BaseTest
         dc.setCapability("appium:platformVersion", "16.0");
         dc.setCapability("appium:deviceName", "Android Emulator");
         dc.setCapability("appium:automationName", "UiAutomator2");
-        dc.setCapability("appium:app", "C:\\apkfiles\\mda-2.2.0-25.apk"); // Use full path to avoid path issues
+        dc.setCapability("appium:app", "C:\\apkfiles\\erp.apk"); // Use full path to avoid path issues
 
         // App already installed - use appPackage and appActivity
 //        dc.setCapability("appium:appPackage", "com.onenfinity.hrms8");
 //        dc.setCapability("appium:appActivity", "com.onenfinity.hrms8.MainActivity");
 
-        dc.setCapability("appium:autoGrantPermissions", true);
+        //dc.setCapability("appium:autoGrantPermissions", true);
 
         // Prevent app reset if you want to retain app data
         //dc.setCapability("appium:noReset", true);
@@ -71,9 +71,14 @@ public class BaseTest
 //        driver.findElement(By.xpath("//android.widget.Button[@text=\"Login\"]")).click();
 
         Thread.sleep(5000);
-        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-0\")")).sendKeys("vaibhavc121@demo.com#test");
-        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-1\")")).sendKeys("123");
-        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Login\")")).click();
+//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-0\")")).sendKeys("vaibhavc121@demo.com#test");
+//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-1\")")).sendKeys("123");
+//        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Login\")")).click();
+
+        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\").instance(0)")).sendKeys("admin@demo.com#test");
+        driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\").instance(1)")).sendKeys("123");
+        driver.findElement(AppiumBy.xpath("//android.widget.Button[@text=\"LOGIN\"]")).click();
+
         Thread.sleep(5000);
         //endregion
 
