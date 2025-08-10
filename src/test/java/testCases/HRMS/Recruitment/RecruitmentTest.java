@@ -18,13 +18,15 @@ import utilities.RetryAnalyzer;
 
 import java.util.List;
 
+
+
 public class RecruitmentTest extends BaseTest
 {
     private static String JobTitle;
     private static String candidateName;
 
     //region Create Candidate
-    @Test(groups="functional", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups="functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void createCandidate()
     {
         try
@@ -73,6 +75,8 @@ public class RecruitmentTest extends BaseTest
                 }
 
                 //endregion
+
+
 
                 //region Address Information
                 cp.provideCity(candidate.city);
@@ -137,6 +141,8 @@ public class RecruitmentTest extends BaseTest
 
                 //endregion
 
+
+
                 cp.clickSave();
                 log("Clicked on Save button");
 
@@ -152,7 +158,7 @@ public class RecruitmentTest extends BaseTest
     //endregion
 
     //region Create Job
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
     public void createJob()
     {
         try
@@ -163,6 +169,7 @@ public class RecruitmentTest extends BaseTest
             // Recruitment page
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
+            rp.clickOnHambergurIcon();
             rp.clickJob();
 
             // job page
@@ -257,7 +264,7 @@ public class RecruitmentTest extends BaseTest
 
     //region Assign Job to Candidate
 
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 3)
     public void assignJobToCandidate()
     {
         try
@@ -269,6 +276,8 @@ public class RecruitmentTest extends BaseTest
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
             log("Clicked on Recruitment");
+
+            rp.clickOnHambergurIcon();
             rp.clickJob();
             log("Clicked on Job");
 
@@ -277,8 +286,8 @@ public class RecruitmentTest extends BaseTest
 
             for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
-                //ja.openJobFromListing(JobTitle);
-                ja.openJobFromListing("Construction Associate");
+                ja.openJobFromListing(JobTitle);
+                //ja.openJobFromListing("Customer IT Strategist");
                 log("Opened job from listing: " + JobTitle);
 
                 ja.clickAdvanceCandidateSearch();
@@ -334,16 +343,20 @@ public class RecruitmentTest extends BaseTest
                 ja.scrollToTop();
                 log("Scrolled to top of the page");
 
-                // ja.selectCandidate(candidateName);
-                ja.selectCandidate("Angelika");
+                BasePage.waitTS(2);
+
+                JavaScriptUtils.scrollToBottom(driver);
+
+                ja.selectCandidate(candidateName);
+//                ja.selectCandidate("Larae");
                 log("Selected candidate: " + candidateName);
 
                 ja.clickAssign();
                 log("Clicked on Assign Job button");
 
                 //Assert.assertTrue(ja.isScreeningLabelDisplay());
-                //Assert.assertTrue(ja.candidateLabelDisplay(candidateName));
-                Assert.assertTrue(ja.candidateLabelDisplay("Angelika"));
+                Assert.assertTrue(ja.candidateLabelDisplay(candidateName));
+//                Assert.assertTrue(ja.candidateLabelDisplay("Larae"));
             }
         } catch (Exception e)
         {
@@ -357,7 +370,7 @@ public class RecruitmentTest extends BaseTest
     //endregion
 
     //region Schedule Interview
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 4)
     public void scheduleInterview()
     {
         try
@@ -369,6 +382,7 @@ public class RecruitmentTest extends BaseTest
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
             log("Clicked on Recruitment");
+            rp.clickOnHambergurIcon();
             rp.clickJob();
             log("Clicked on Job");
 
@@ -377,8 +391,8 @@ public class RecruitmentTest extends BaseTest
 
             for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
-                //ja.openJobFromListing(JobTitle);
-                ja.openJobFromListing("Construction Associate");
+                ja.openJobFromListing(JobTitle);
+//                ja.openJobFromListing("Customer IT Strategist");
                 log("Opened job from listing: " + JobTitle);
 
                 ja.clickOnCandidates();
@@ -442,7 +456,7 @@ public class RecruitmentTest extends BaseTest
     //endregion
 
     //region Offer Job to Candidate
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 5)
     public void offerJobToCandidate()
     {
         try
@@ -454,6 +468,7 @@ public class RecruitmentTest extends BaseTest
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
             log("Clicked on Recruitment");
+            rp.clickOnHambergurIcon();
             rp.clickJob();
             log("Clicked on Job");
 
@@ -462,8 +477,8 @@ public class RecruitmentTest extends BaseTest
 
             for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
-                //ja.openJobFromListing(JobTitle);
-                ja.openJobFromListing("Construction Associate");
+                ja.openJobFromListing(JobTitle);
+//                ja.openJobFromListing("Customer IT Strategist");
                 log("Opened job from listing: " + JobTitle);
 
                 ja.clickOnCandidates();
@@ -486,7 +501,8 @@ public class RecruitmentTest extends BaseTest
 
                 ja.provideOfferLetter();
 
-                ja.checkOfferStatus();
+                Assert.assertTrue(ja.checkOfferStatus(), "Offer letter is not generated successfully");
+                BaseTest.log("Offer letter is generated successfully");
 
             }
         } catch (Exception e)
@@ -498,7 +514,7 @@ public class RecruitmentTest extends BaseTest
     //endregion
 
     //region Complete Hiring Process
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 6)
     public void completeHiringProcess()
     {
         try
@@ -506,17 +522,44 @@ public class RecruitmentTest extends BaseTest
             String recruitmentFile = FileUtils.getDataFile("Recruitment", "Recruitment", "RecruitmentData");
             List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
+            // Recruitment page
+            RecruitmentPage rp = new RecruitmentPage(driver);
+            rp.clickRecruitment();
+            log("Clicked on Recruitment");
+            rp.clickOnHambergurIcon();
+            rp.clickJob();
+            log("Clicked on Job");
+
             // Job Application Tracking page
             JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
 
             for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
-               ja.changePipelineStatus("Offered", "Hired");
-               log("Changed pipeline status from Offered to Hired");
+                ja.openJobFromListing(JobTitle);
+//                ja.openJobFromListing("Customer IT Strategist");
+                log("Opened job from listing: " + JobTitle);
+
+                ja.clickOnCandidates();
+                log("Clicked on Candidates");
+
+                ja.clickOfferedPipeline();
+                log("Clicked on offered Pipeline");
+
+                //ja.clickCloseSchduledInterviewPopupIcon();
+                //log("Clicked on Close Scheduled Interview Popup Icon");
+
+                ja.changePipelineStatus("Offered", "Hired");
+                log("Changed pipeline status from Offered to Hired");
+
+                ja.clickHiredPipeline();
+                log("Clicked on hired Pipeline");
 
                 //region Onboarding Process
                 ja.clickInitiateOnboardingIcon();
                 log("Clicked on Initiate Onboarding Icon");
+
+                ja.selectProcess();
+                log("Selected Onboarding Process");
 
                 ja.clickNext();
                 log("Clicked on Next button");
@@ -569,6 +612,8 @@ public class RecruitmentTest extends BaseTest
                 ja.clickConvertToEmployeeIcon();
                 log("Clicked on Convert to Employee Icon");
 
+                BasePage.waitTS(5);
+
                 BasePage.switchTab();
                 log("Switched to the employee tab");
 
@@ -590,6 +635,7 @@ public class RecruitmentTest extends BaseTest
                 log("Clicked on Save button");
 
                 Assert.assertTrue(ep.isEmployeeNameDisplay(candidateName),"Employee is not created");
+//                Assert.assertTrue(ep.isEmployeeNameDisplay("Larae"),"Employee is not created");
                 log("Employee created successfully with name: " + candidateName);
 
                 //endregion
@@ -605,12 +651,9 @@ public class RecruitmentTest extends BaseTest
                 log("Clicked on OK button to confirm deletion");
 
                 Assert.assertFalse(ep.validateEmpDelete(candidateName), "Employee " + candidateName + " is not deleted.");
+//                Assert.assertFalse(ep.validateEmpDelete("Larae"), "Employee " + "Larae" + " is not deleted.");
 
                 //endregion
-
-
-
-
             }
         } catch (Exception e)
         {

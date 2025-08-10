@@ -8,7 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import pageObjects.HRMS.HRCore.EmployeePage;
+import utilities.BrowserUtils;
 import utilities.DateUtils;
+import utilities.JavaScriptUtils;
 
 import java.text.MessageFormat;
 
@@ -22,7 +24,8 @@ public class JobApplicationTrackingPage extends BasePage
     //region Locators
 
     //region Job Listing
-    @FindBy(xpath = "(//td[@class='list-hyperlink'])[1]") private WebElement jobName;
+
+    @FindBy(xpath = "(//td[@class='list-hyperlink'])[1]") private  WebElement jobName;
     @FindBy(xpath = "(//tr)[12]") private WebElement jobRow;
     //endregion
 
@@ -109,25 +112,30 @@ public class JobApplicationTrackingPage extends BasePage
     @FindBy(xpath="//span[@class='dx-vam dxm-contentText'][normalize-space()='Save']") private WebElement save;
     @FindBy(xpath="//span[normalize-space()='Ok']") private WebElement ok;
     @FindBy(xpath="(//span[@class='dx-button-text'][normalize-space()='Cancel'])[3]") private WebElement cancel;
-    @FindBy(xpath="(//i[@class='dx-icon dx-icon-close'])[1]") private WebElement closeSchduledInterviewPopupIcon;
+    @FindBy(xpath="(//i[@class='dx-icon dx-icon-close'])[2]") private WebElement closeSchduledInterviewPopupIcon;
     @FindBy(xpath="//label[normalize-space()='Scheduled']") private WebElement interviewStatus;
     //endregion
     //endregion
 
     //region Offered
     @FindBy(xpath="//td[normalize-space()='Not Generated']") private WebElement offerStatus;
+    @FindBy(xpath = "(//td[@class='verticalAlign'])[8]") private WebElement offerStatus1;
     @FindBy(xpath="//i[@class='dx-icon dx-icon-message']") private WebElement offerIcon;
     @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[5]") private WebElement hiredPipeline;
+    @FindBy(xpath = "//i[@class='dx-icon dx-icon-new-icon']") private WebElement newLineButton;
 
 
     //region Job Offer Page
+    @FindBy(xpath="//span[normalize-space()='View']") private WebElement viewButton;
     @FindBy(id="JobOffer.JobOfferReportIdLookup_I") private WebElement jobOfferTemplateDD;
     @FindBy(id="JobOfferSalaryComponents_RPHT") private WebElement salaryComponentsSection;
     @FindBy(id="JobOfferSalaryComponent_SalaryComponentId_I") private WebElement SalaryComponentDD;
     @FindBy(xpath="(//div[@class='dxgBCTC dx-ellipsis'])[2]") private WebElement salaryAmount;
     @FindBy(id="JobOfferLeaveTypes_RPHT") private WebElement leaveTypes;
+    @FindBy(xpath="//td[contains(text(),'Leave Type')]") private WebElement leaveTypeLabel;
     @FindBy(id="JobOfferLeaveType_LeaveTypeId_I") private WebElement LeaveTypeDD;
     @FindBy(xpath="//span[normalize-space()='Generate Offer']") private WebElement generateOffer;
+    @FindBy(xpath="//span[normalize-space()='Preview']") private WebElement preview;
     //endregion
     //endregion
 
@@ -137,6 +145,7 @@ public class JobApplicationTrackingPage extends BasePage
 
     //region Initiate Onboarding
     @FindBy(xpath="//i[@class='dx-icon dx-icon-bolt-solid']") private WebElement initiateOnboardingIcon;
+    @FindBy(xpath="//input[contains(@id,'OnboardingProcessId')]") private WebElement processDD;
     @FindBy(xpath="//span[normalize-space()='Next']") private WebElement next;
 
     //region Initiate Onboarding Popup
@@ -144,8 +153,8 @@ public class JobApplicationTrackingPage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'JoiningDate')]") private WebElement joiningDate;
     @FindBy(xpath = "//input[contains(@id,'ArrivalTime')]") private WebElement arrivalTime;
     @FindBy(xpath = "//input[contains(@id,'ContactEmployeeId')]") private WebElement contactPerson;
-    @FindBy(xpath = "//input[contains(@id,'DepartmentId')]") private WebElement department;
-    @FindBy(xpath = "//input[contains(@id,'DesignationId')]") private WebElement designation;
+    @FindBy(xpath = "(//input[contains(@id,'DepartmentId')])[2]") private WebElement department;
+    @FindBy(xpath = "(//input[contains(@id,'DesignationId')])[2]") private WebElement designation;
     @FindBy(xpath = "//input[contains(@id,'WorkLocationId')]") private WebElement workLocation;
     @FindBy(xpath="(//div[@aria-label='Editor content'])[2]") private WebElement welcome;
     @FindBy(xpath = "//input[contains(@id,'WelcomeUrl')]") private WebElement welcomeUrl;
@@ -181,6 +190,7 @@ public class JobApplicationTrackingPage extends BasePage
     //region Action Methods
 
     //region Job Listing
+
     public String getJobName()
     {
         String jobNameText = waitForElement(jobName).getText();
@@ -368,6 +378,7 @@ public class JobApplicationTrackingPage extends BasePage
         waitForElement1(By.xpath("//input[contains(@id,'HiringTimeline')]")).click();
         selectDropdownOption(nextStageStatus);
         waitForElement1(By.xpath("//div[@id='StatusUpdateButton']//span[@class='dx-button-text'][normalize-space()='Update']")).click();
+        waitTS(2);
     }
 
     //region Applied
@@ -425,6 +436,7 @@ public class JobApplicationTrackingPage extends BasePage
     }
     public void clickNewButton()
     {
+        waitTS(2);
         try
         {
             waitForElement(newButton).click();
@@ -529,80 +541,164 @@ public class JobApplicationTrackingPage extends BasePage
     }
     public void provideOfferLetter() throws InterruptedException
     {
-        String offerStatusText = waitForElement(offerStatus).getText().trim();
-        if (offerStatusText.equals("Not Generated") || offerStatusText.equals("Draft"))
+        waitTS(2);
+        String offerStatusText = waitForElement(offerStatus1).getText().trim();
+        if (offerStatusText.equals("Not Generated") || offerStatusText.equals("Draft") || offerStatusText.equals("Sent"))
         {
             waitForElement(offerIcon).click();
             BaseTest.log("Offer letter icon clicked.");
 
+            BasePage.waitTS(5);
+
             switchTab();
             BaseTest.log("Switched to Offer Letter tab.");
 
-//            clickOnEdit();
-//            BaseTest.log("Clicked on Edit button");
+            //BasePage.waitTS(5);
 
-            clearAndProvide1(jobOfferTemplateDD, "Job Offer");
-            BaseTest.log("provided Job Offer Template");
+            if(waitForElement(preview).isDisplayed())
+            {
+                System.out.println("Offer letter is already generated.");
+            }
+            else
+            {
 
-            clickOnElement1(salaryComponentsSection);
-            BaseTest.log("Clicked on Salary Components Section");
+                //if(waitForElement(viewButton).isDisplayed())
+//                try
+//                {
+//                    clickOnEdit();
+//                } catch (Exception e)
+//                {
+//                    clickOnEdit();
+//                }
+//                BaseTest.log("Clicked on Edit button");
+//
+//                pressTab();
+//                BaseTest.log("Pressed Tab key");
+//
+//                pressTab();
+//                BaseTest.log("Pressed Tab key");
 
-            clickOnView();
-            BaseTest.log("Clicked on View button");
 
-            clickOnEdit();
-            BaseTest.log("Clicked on Edit button");
 
-            clickOnNewLine();
-            BaseTest.log("Clicked on New Line button");
+                clearAndProvide1(jobOfferTemplateDD, "Job Offer");
+                BaseTest.log("provided Job Offer Template");
 
-            provideAndEnter(SalaryComponentDD, "Basic");
-            BaseTest.log("Provided Salary Component");
+                clickOnElement1(salaryComponentsSection);
+                BaseTest.log("Clicked on Salary Components Section");
 
-            clearAndProvide2(salaryAmount, "500");
-            BaseTest.log("Provided Salary Amount");
+                clickOnView();
+                BaseTest.log("Clicked on View button");
 
-            clickOnNewLine();
-            BaseTest.log("Clicked on New Line button for Leave Type");
+                clickOnEdit();
+                BaseTest.log("Clicked on Edit button");
 
-            provideAndEnter(LeaveTypeDD, "Unpaid Leave");
-            BaseTest.log("Provided Leave Type");
+                waitTS(2);
 
-            clickOnView();
-            BaseTest.log("Clicked on View button");
+                clickOnNewLine();
+                BaseTest.log("Clicked on New Line button");
 
-            waitForElement(generateOffer);
-            BaseTest.log("clicked on Generate Offer button");
+                provideAndEnter(SalaryComponentDD, "Basic");
+                BaseTest.log("Provided Salary Component");
+
+                clearAndProvide2(salaryAmount, "500");
+                BaseTest.log("Provided Salary Amount");
+
+                clickOnElement1(salaryComponentsSection);
+                BaseTest.log("closed Salary Components Section");
+
+                //region Leave Types Section
+//            JavaScriptUtils.scrollToBottom(driver);
+//            BaseTest.log("Scrolled to bottom of the page");
+//
+//            clickOnElement1(leaveTypes);
+//            BaseTest.log("Clicked on Leave Types Section");
+//
+//            JavaScriptUtils.scrollToBottom(driver);
+//            BaseTest.log("Scrolled to bottom of the page");
+//
+//            JavaScriptUtils.scrollIntoView(driver, newLineButton);
+//            BaseTest.log("Scrolled to New Line button");
+//
+//            clickOnElement1(leaveTypeLabel);
+//            BaseTest.log("Clicked on Leave Type Label");
+//
+//            try
+//            {
+//                clickOnElement1(newLineButton);
+//            } catch (Exception e)
+//            {
+//                clickOnElement1(newLineButton);
+//            }
+//            BaseTest.log("Clicked on New Line button for Leave Type");
+//
+//            provideAndEnter(LeaveTypeDD, "Unpaid Leave");
+//            BaseTest.log("Provided Leave Type");
+
+                //endregion
+
+
+                clickOnView();
+                BaseTest.log("Clicked on View button");
+
+                clickOnElement1(generateOffer);
+                BaseTest.log("clicked on Generate Offer button");
+            }
 
             closeUnwantedTab();
             BaseTest.log("job offer tab closed.");
+
+            BrowserUtils.refreshPage(driver);
+            BaseTest.log("Page refreshed");
+
+            clickOnElement1(candidates);
+            BaseTest.log("Clicked on Candidates tab");
+
+            clickOnElement1(offeredPipeline);
+            BaseTest.log("Clicked on Offered Pipeline");
+
+
         }
         else
         {
             System.out.println("Offer letter is already generated.");
         }
     }
-    public void checkOfferStatus()
+    public boolean checkOfferStatus()
     {
-        String offerStatusText1 = waitForElement(offerStatus).getText().trim();
+        waitTS(3);
+        String offerStatusText1 = waitForElement(offerStatus1).getText().trim();
         if (offerStatusText1.equals("Sent"))
         {
-            Assert.assertTrue(true, "Offer letter is generated successfully.");
+            return true;
         }
         else
         {
-            throw new RuntimeException("Offer letter is not generated successfully");
+            return false;
         }
+
     }
     //endregion
 
     //region Hired
+
+    public void clickHiredPipeline()
+    {
+        clickOnElement1(hiredPipeline);
+    }
 
     //region Initiate Onboarding
     public void clickInitiateOnboardingIcon()
     {
         waitForElement(initiateOnboardingIcon).click();
     }
+
+    public void selectProcess()
+    {
+        waitForElement(processDD).click();
+        waitTS(2);
+        selectDropdownOption("Onboarding Process");
+    }
+
     public void clickNext()
     {
         waitForElement(next).click();
@@ -611,7 +707,8 @@ public class JobApplicationTrackingPage extends BasePage
     //region Initiate Onboarding Popup
     public void provideJoiningDate()
     {
-        clearAndProvide1(joiningDate, DateUtils.addDaysToGivenDate("dd-MMM-yyyy", 30));
+        clearAndProvide1(joiningDate, DateUtils.addDaysToCurrentDate(7,"dd-MMM-yyyy"));
+
     }
     public void provideArrivalTime()
     {
@@ -673,7 +770,15 @@ public class JobApplicationTrackingPage extends BasePage
 
     public void clickConvertToEmployeeIcon()
     {
-        waitForElement(convertToEmployeeIcon).click();
+        waitTS(3);
+        try
+        {
+            waitForElement(convertToEmployeeIcon).click();
+        } catch (Exception e)
+        {
+            waitForElement(convertToEmployeeIcon).click();
+        }
+
     }
 
 

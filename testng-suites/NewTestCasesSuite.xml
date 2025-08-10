@@ -125,8 +125,8 @@
             <!--<class name="testCases.HRMS.Attendance.AttendanceTest"/>-->
 
             <!-- Recruitment -->
-<!--            <class name="testCases.HRMS.Recruitment.CreateJobTest"/>-->
-<!--            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>-->
+            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>
+
 
             <!-- Global -->
             <!-- <class name="testCases.HRMS.Global.BrokenLinksTest"/> -->

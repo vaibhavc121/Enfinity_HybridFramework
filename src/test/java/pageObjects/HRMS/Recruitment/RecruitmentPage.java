@@ -1,5 +1,6 @@
 package pageObjects.HRMS.Recruitment;
 
+import base.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,6 +16,7 @@ public class RecruitmentPage extends BasePage
 
 	}
 
+
 	@FindBy(xpath = "//span[normalize-space()='Recruitment']")
 	private WebElement recruitment;
 
@@ -22,6 +24,20 @@ public class RecruitmentPage extends BasePage
 	private WebElement job;
 
 	@FindBy(xpath="//span[@class='dx-vam'][normalize-space()='Candidate']") private WebElement candidate;
+
+	public  void clickOnHambergurIcon()
+	{
+		boolean value=  waitForElement(job).isDisplayed();
+		if(!value)
+		{
+			clickOnHamburgerMenu();
+			BaseTest.log("Hamburger icon clicked");
+		}
+		else
+		{
+			BaseTest.log("Job Name is already displayed, no need to click on Hamburger icon");
+		}
+	}
 
 	public void clickRecruitment()
 	{

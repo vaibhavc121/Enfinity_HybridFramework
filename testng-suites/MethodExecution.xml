@@ -31,9 +31,22 @@
 
             <class name="testCases.HRMS.Recruitment.RecruitmentTest">
                 <methods>
+                    <include name="createCandidate"/>
+                    <include name="createJob"/>
+                    <include name="assignJobToCandidate"/>
+                    <include name="scheduleInterview"/>
                     <include name="offerJobToCandidate"/>
+                    <include name="completeHiringProcess"/>
                 </methods>
             </class>
+
+<!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
+<!--                <methods>-->
+
+<!--                    <include name="assignJobToCandidate"/>-->
+
+<!--                </methods>-->
+<!--            </class>-->
 
 
         </classes>

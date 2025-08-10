@@ -38,7 +38,7 @@
       "country": "India",
       "postalCode": "100011",
 
-      "workExperienceInYear": 5,
+      "workExperienceInYear": 10,
       "currentJobTitle": "Software Engineer",
       "currentEmployer": "ABC Corp",
       "skills": "Accounting Software",
@@ -60,8 +60,8 @@
     {
         "skills": "Accounting Software",
 
-        "minimumWorkExperience": "1",
-        "maximumWorkExperience": "5",
+        "minimumWorkExperience": "10",
+        "maximumWorkExperience": "15",
 
         "minimumSalaryRange": "100",
         "maximumSalaryRange": "500",
