@@ -45,7 +45,8 @@ public class RecruitmentPage extends BasePage
             clickOnElement1(recruitment);
         } catch (Exception e)
         {
-            clickOnElement1(recruitment);
+            //clickOnElement1(recruitment);
+            clickElementByJavaScript(driver, recruitment);
         }
     }
 
