@@ -551,7 +551,7 @@ public class JobApplicationTrackingPage extends BasePage
                 waitTS(5);
             } catch (Exception e1)
             {
-                waitForElement(interviewButton1).click();
+                waitForElement(intervieButton).click();
                 waitTS(5);
             }
         }
