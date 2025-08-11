@@ -10,24 +10,24 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class DeleteOvertimeApplicationTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void deleteOvertimeApplication()
-	{
-		// self service page
-		SelfServicePage ss = new SelfServicePage(driver);
-		ss.clickSelfService();
-		ss.clickTransactions();
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void deleteOvertimeApplication()
+    {
+        // self service page
+        SelfServicePage ss = new SelfServicePage(driver);
+        ss.clickSelfService();
+        ss.clickTransactions();
 
-		// OvertimeRequestPage
-		OvertimeRequestPage ot = new OvertimeRequestPage(driver);
-		ot.clickOvertimeRequest();
+        // OvertimeRequestPage
+        OvertimeRequestPage ot = new OvertimeRequestPage(driver);
+        ot.clickOvertimeRequest();
 
-		BasePage.deleteTxn(6, "active");
-		Assert.assertFalse(BasePage.validateListing("active", 6, 6));
-	}
-
+        BasePage.deleteTxn(7, "active");
+        Assert.assertFalse(BasePage.validateListing("active", 7, 7));
+    }
 }

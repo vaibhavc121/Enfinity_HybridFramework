@@ -535,6 +535,7 @@ public class JobApplicationTrackingPage extends BasePage
 
     public void clickInterviewButton()
     {
+        waitTS(3);
         try
         {
             waitForElement(intervieButton).click();

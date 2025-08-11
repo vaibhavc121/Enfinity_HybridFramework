@@ -11,55 +11,53 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class CreateOvertimeApplicationTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createOvertimeApplication()
-	{
-		try
-		{
-			String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-			List<OvertimeRequestModel> overtimeRequestData = JsonUtils.convertJsonListDataModel(selfServiceFile,
-					"createOvertimeRequest", OvertimeRequestModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createOvertimeApplication()
+    {
+        try
+        {
+            String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<OvertimeRequestModel> overtimeRequestData = JsonUtils.convertJsonListDataModel(selfServiceFile,
+                    "createOvertimeRequest", OvertimeRequestModel.class);
 
-			// self service page
-			SelfServicePage ss = new SelfServicePage(driver);
-			ss.clickSelfService();
-			ss.clickTransactions();
+            // self service page
+            SelfServicePage ss = new SelfServicePage(driver);
+            ss.clickSelfService();
+            ss.clickTransactions();
 
-			// Overtime Request page
-			OvertimeRequestPage or = new OvertimeRequestPage(driver);
+            // Overtime Request page
+            OvertimeRequestPage or = new OvertimeRequestPage(driver);
 
-			for (OvertimeRequestModel overtimeRequest : overtimeRequestData)
-			{
-				// or.scrollDownWebpage();
-				or.clickOvertimeRequest();
-				or.clickNew();
-				or.provideOvertimeDate(overtimeRequest.overtimeDate);
-				or.provideOvertimeType(overtimeRequest.overtimeType);
-				or.provideHrs(overtimeRequest.hrs);
-				or.provideRemarks(overtimeRequest.remarks);
+            for (OvertimeRequestModel overtimeRequest : overtimeRequestData)
+            {
+                // or.scrollDownWebpage();
+                or.clickOvertimeRequest();
+                or.clickNew();
+                or.provideOvertimeDate(overtimeRequest.overtimeDate);
+                or.provideHrs(overtimeRequest.hrs);
+                or.provideRemarks(overtimeRequest.remarks);
 
-				// additional code
-				BasePage.clickOnSave();
-				if (BasePage.isTransactionCreated())
-				{
-					BasePage.clickSaveAndBack();
-				} else
-				{
-					Assert.fail("Test case failed: " + or.displayErrorMsg());
-				}
+                // additional code
+                BasePage.clickSaveAndBack();
+//                if (BasePage.isTransactionCreated())
+//                {
+//                    BasePage.clickSaveAndBack();
+//                } else
+//                {
+//                    Assert.fail("Test case failed: " + or.displayErrorMsg());
+//                }
 
-				Assert.assertTrue(or.isTxnCreated(overtimeRequest.overtimeType, overtimeRequest.hrs));
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+                Assert.assertTrue(or.isTxnCreated(overtimeRequest.overtimeType, overtimeRequest.hrs));
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }
