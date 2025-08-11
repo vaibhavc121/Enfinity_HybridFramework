@@ -123,8 +123,8 @@ public class JobApplicationTrackingPage extends BasePage
     //region Interview
     @FindBy(xpath = "//i[@class='dx-icon dx-icon-event']")
     private WebElement intervieButton;
-    @FindBy(className = "dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-icon dx-state-hover")
-    private WebElement interviewButton1;
+    //    @FindBy(className = "dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-icon dx-state-hover")
+//    private WebElement interviewButton1;
     @FindBy(xpath = "//span[normalize-space()='New']")
     private WebElement newButton;
     @FindBy(xpath = "(//h3[@class='widget-content text-right animation-pullDown'])[4]")
