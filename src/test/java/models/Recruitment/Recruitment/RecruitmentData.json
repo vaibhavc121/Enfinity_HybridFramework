@@ -24,7 +24,6 @@
       "nationality": "India"
     }
   ],
-
   "createCandidate": [
     {
       "mobile": "8888888888",
@@ -32,13 +31,11 @@
       "gender": "Male",
       "maritalStatus": "Single",
       "checkbox1": true,
-
       "city": "Pune",
       "state": "Maharashtra",
       "country": "India",
       "postalCode": "100011",
-
-      "workExperienceInYear": 10,
+      "workExperienceInYear": 5,
       "currentJobTitle": "Software Engineer",
       "currentEmployer": "ABC Corp",
       "skills": "Accounting Software",
@@ -46,58 +43,44 @@
       "expectedSalary": 500,
       "noticePeriodInDays": 30,
       "checkbox2": true,
-
       "passportNumber": "P1234567",
       "passportIssueDate": "14-Dec-2016",
       "passportExpiryDate": "13-Dec-2026",
       "visaType": "Work Visa",
       "civilIdNumber": "CIV123456"
-
     }
   ],
-
   "jobApplicationTracking": [
     {
-        "skills": "Accounting Software",
-
-        "minimumWorkExperience": "10",
-        "maximumWorkExperience": "15",
-
-        "minimumSalaryRange": "100",
-        "maximumSalaryRange": "500",
-
-        "minimumNoticePeriodInDays": "30",
-        "maximumNoticePeriodInDays": "60",
-
-        "nationalityCountries": "India",
-        "visaType": "Work Visa",
-        "gender": "Female",
-        "drivingLicense": true,
-        "minimumAge": "18",
-        "maximumAge": "60"
-      }
+      "skills": "Accounting Software",
+      "minimumWorkExperience": "10",
+      "maximumWorkExperience": "15",
+      "minimumSalaryRange": "100",
+      "maximumSalaryRange": "500",
+      "minimumNoticePeriodInDays": "30",
+      "maximumNoticePeriodInDays": "60",
+      "nationalityCountries": "India",
+      "visaType": "Work Visa",
+      "gender": "Female",
+      "drivingLicense": true,
+      "minimumAge": "18",
+      "maximumAge": "60"
+    }
   ],
-
-  "jobApplicationTracking1":
-  {
+  "jobApplicationTracking1": {
     "description": {},
     "candidates": {},
     "edit": {},
     "assessments": {},
-    "advanceCandidateSearch":
-    [
+    "advanceCandidateSearch": [
       {
         "skills": "Accounting Software",
-
         "minimumWorkExperience": "1",
         "maximumWorkExperience": "5",
-
         "minimumSalaryRange": "100",
         "maximumSalaryRange": "500",
-
         "minimumNoticePeriodInDays": "30",
         "maximumNoticePeriodInDays": "60",
-
         "nationalityCountries": "India",
         "visaType": "Work Visa",
         "gender": "Female",
@@ -106,8 +89,5 @@
         "maximumAge": "60"
       }
     ]
-
   }
-
-
 }

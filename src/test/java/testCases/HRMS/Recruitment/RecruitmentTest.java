@@ -18,15 +18,13 @@ import utilities.RetryAnalyzer;
 
 import java.util.List;
 
-
-
 public class RecruitmentTest extends BaseTest
 {
     private static String JobTitle;
     private static String candidateName;
 
     //region Create Candidate
-    @Test(groups="functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void createCandidate()
     {
         try
@@ -36,14 +34,14 @@ public class RecruitmentTest extends BaseTest
                     "createCandidate", RecruitmentModel.CandidateModel.class);
 
             // recruitment page
-            RecruitmentPage rp=new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
             rp.clickCandidate();
 
             // candidate page
-            CandidatePage cp=new CandidatePage(driver);
+            CandidatePage cp = new CandidatePage(driver);
 
-            for(RecruitmentModel.CandidateModel candidate : candidateData)
+            for (RecruitmentModel.CandidateModel candidate : candidateData)
             {
                 cp.clickNew();
                 log("Clicked on New button");
@@ -68,15 +66,13 @@ public class RecruitmentTest extends BaseTest
                 cp.selectMaritalStatus(candidate.maritalStatus);
                 log("Provided Marital Status");
 
-                if(candidate.checkbox1)
+                if (candidate.checkbox1)
                 {
                     cp.clickDrivingLicense();
                     log("Clicked on Driving License checkbox");
                 }
 
                 //endregion
-
-
 
                 //region Address Information
                 cp.provideCity(candidate.city);
@@ -115,7 +111,7 @@ public class RecruitmentTest extends BaseTest
                 cp.provideNoticePeriodInDays(candidate.noticePeriodInDays);
                 log("Provided Notice Period in Days");
 
-                if(candidate.checkbox2)
+                if (candidate.checkbox2)
                 {
                     cp.clickOverseas();
                     log("Clicked on Overseas checkbox");
@@ -141,14 +137,11 @@ public class RecruitmentTest extends BaseTest
 
                 //endregion
 
-
-
                 cp.clickSave();
                 log("Clicked on Save button");
 
-                Assert.assertEquals(cp.getCandidateName(),candidateName);
+                Assert.assertEquals(cp.getCandidateName(), candidateName);
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -237,7 +230,7 @@ public class RecruitmentTest extends BaseTest
                 log("Provided postal code: " + job.postalCode);
 
                 jp.provideGender(job.gender);
-                log("provided gender: " +job.gender);
+                log("provided gender: " + job.gender);
 
                 jp.provideMaritalStatus(job.maritalStatus);
                 log("provided marital status: " + job.maritalStatus);
@@ -284,10 +277,10 @@ public class RecruitmentTest extends BaseTest
             // Job Application Tracking page
             JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
 
-            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
                 ja.openJobFromListing(JobTitle);
-                //ja.openJobFromListing("Customer IT Strategist");
+//                ja.openJobFromListing("International Marketing Orchestrator");
                 log("Opened job from listing: " + JobTitle);
 
                 ja.clickAdvanceCandidateSearch();
@@ -325,7 +318,7 @@ public class RecruitmentTest extends BaseTest
                 ja.provideGender(search.gender);
                 log("Provided gender");
 
-                if(search.drivingLicense)
+                if (search.drivingLicense)
                 {
                     ja.clickDrivingLicense();
                     log("Clicked on Driving License checkbox");
@@ -345,10 +338,10 @@ public class RecruitmentTest extends BaseTest
 
                 BasePage.waitTS(2);
 
-                JavaScriptUtils.scrollToBottom(driver);
+                //JavaScriptUtils.scrollToBottom(driver);
 
                 ja.selectCandidate(candidateName);
-//                ja.selectCandidate("Larae");
+//                ja.selectCandidate("Raleigh");
                 log("Selected candidate: " + candidateName);
 
                 ja.clickAssign();
@@ -356,16 +349,14 @@ public class RecruitmentTest extends BaseTest
 
                 //Assert.assertTrue(ja.isScreeningLabelDisplay());
                 Assert.assertTrue(ja.candidateLabelDisplay(candidateName));
-//                Assert.assertTrue(ja.candidateLabelDisplay("Larae"));
+//                Assert.assertTrue(ja.candidateLabelDisplay("Raleigh"));
             }
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
-
     }
-
 
     //endregion
 
@@ -389,7 +380,7 @@ public class RecruitmentTest extends BaseTest
             // Job Application Tracking page
             JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
 
-            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
                 ja.openJobFromListing(JobTitle);
 //                ja.openJobFromListing("Customer IT Strategist");
@@ -475,7 +466,7 @@ public class RecruitmentTest extends BaseTest
             // Job Application Tracking page
             JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
 
-            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
                 ja.openJobFromListing(JobTitle);
 //                ja.openJobFromListing("Customer IT Strategist");
@@ -503,7 +494,6 @@ public class RecruitmentTest extends BaseTest
 
                 Assert.assertTrue(ja.checkOfferStatus(), "Offer letter is not generated successfully");
                 BaseTest.log("Offer letter is generated successfully");
-
             }
         } catch (Exception e)
         {
@@ -533,7 +523,7 @@ public class RecruitmentTest extends BaseTest
             // Job Application Tracking page
             JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
 
-            for(RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
+            for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
                 ja.openJobFromListing(JobTitle);
 //                ja.openJobFromListing("Customer IT Strategist");
@@ -618,7 +608,7 @@ public class RecruitmentTest extends BaseTest
                 log("Switched to the employee tab");
 
                 // Employee Page
-                EmployeePage ep=new EmployeePage(driver);
+                EmployeePage ep = new EmployeePage(driver);
                 ep.selectDepartment("QC");
                 log("Selected Department");
 
@@ -634,7 +624,7 @@ public class RecruitmentTest extends BaseTest
                 ep.clickSave();
                 log("Clicked on Save button");
 
-                Assert.assertTrue(ep.isEmployeeNameDisplay(candidateName),"Employee is not created");
+                Assert.assertTrue(ep.isEmployeeNameDisplay(candidateName), "Employee is not created");
 //                Assert.assertTrue(ep.isEmployeeNameDisplay("Larae"),"Employee is not created");
                 log("Employee created successfully with name: " + candidateName);
 
@@ -662,7 +652,4 @@ public class RecruitmentTest extends BaseTest
         }
     }
     //endregion
-
-
-
 }
