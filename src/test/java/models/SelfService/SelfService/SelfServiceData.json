@@ -63,6 +63,18 @@
       "expToDate": "01-Jan-25"
     }
   ],
+  "leaveCancellation": {
+    "backDatedLeave": {},
+    "onGoingLeave": {},
+    "approvedLeave": {},
+    "activeLeave": {},
+    "futureLeave": [
+      {
+        "leaveType": "Absent Leave",
+        "expEmpName": "Rohit Chavan"
+      }
+    ]
+  },
   "checkWorkflow": [
     {
       "leaveType": "Sick Leave",

@@ -491,6 +491,13 @@ public class BasePage
         waitTS(2);
         BaseTest.log("Clicked on menu image icon");
 
+        //if action is cancel
+        if (action.equalsIgnoreCase("Cancel"))
+        {
+            waitForElement1(By.xpath("//span[normalize-space()='" + action + "']")).click();
+            return;
+        }
+
         if (action.equalsIgnoreCase("Cancel Resumption"))
         {
             waitForElement1(By.xpath("//span[normalize-space()='Cancel Resumption']")).click();

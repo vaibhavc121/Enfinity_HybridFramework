@@ -24,6 +24,7 @@
             <!-- New Test -->
             <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>
             <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>
+            <!--            <class name="testCases.HRMS.SelfService.LeaveCancellationTest"/>-->
 
 
         </classes>

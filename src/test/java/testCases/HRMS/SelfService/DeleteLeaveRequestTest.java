@@ -21,17 +21,22 @@ public class DeleteLeaveRequestTest extends BaseTest
     {
         try
         {
-
             // self service page
             SelfServicePage ss = new SelfServicePage(driver);
             ss.clickSelfService();
+            log("Navigated to Self Service page");
             ss.clickTransactions();
+            log("Clicked on Transactions");
 
             // leave request page
             LeaveRequestPage lr = new LeaveRequestPage(driver);
             lr.clickLeaveRequest();
+            log("Clicked on Leave Request");
 
             BasePage.deleteTxn(7, "active");
+            log("Leave Request deleteted successfully");
+            Assert.assertFalse(BasePage.validateListing("active", 7, 7));
+            log("Verified: There is no active Leave on the listing page");
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
