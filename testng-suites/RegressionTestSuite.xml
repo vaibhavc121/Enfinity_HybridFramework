@@ -69,8 +69,6 @@
             <class name="testCases.HRMS.SelfService.DeleteBenefitClaimTest"/>
             <class name="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
             <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
-            <!--<class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>-->
-           <!-- <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>-->
             <class name="testCases.HRMS.SelfService.CreateHRAssetRequest"/>
             <class name="testCases.HRMS.SelfService.CreateHRAssetReturnTest"/>
             <class name="testCases.HRMS.SelfService.DeleteHRAssetRequestTest"/>
@@ -88,6 +86,8 @@
             <class name="testCases.HRMS.SelfService.DeleteSupportReqCategoryTest"/>
             <class name="testCases.HRMS.SelfService.CreateTimeOffTest"/>
             <class name="testCases.HRMS.SelfService.DeleteTimeOffTest"/>
+            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>
+            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>
             <class name="testCases.HRMS.SelfService.CreateTravelRequestTest"/>
             <class name="testCases.HRMS.SelfService.DeleteTravelRequestTest"/>
             <class name="testCases.HRMS.SelfService.VerifyApproveWorkflowTest"/>

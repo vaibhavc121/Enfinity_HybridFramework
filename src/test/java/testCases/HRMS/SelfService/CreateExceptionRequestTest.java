@@ -9,63 +9,62 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class CreateExceptionRequestTest extends BaseTest
 {
 
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createExceptionRequest()
-	{
-		try
-		{
-			String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-			List<ExceptionRequestModel> exceptionRequestData = JsonUtils.convertJsonListDataModel(selfServiceFile,
-					"createExceptionRequest", ExceptionRequestModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createExceptionRequest()
+    {
+        try
+        {
+            String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<ExceptionRequestModel> exceptionRequestData = JsonUtils.convertJsonListDataModel(selfServiceFile,
+                    "createExceptionRequest", ExceptionRequestModel.class);
 
-			// self service page
-			SelfServicePage ss = new SelfServicePage(driver);
-			ss.clickSelfService();
-			log("clickSelfService");
+            // self service page
+            SelfServicePage ss = new SelfServicePage(driver);
+            ss.clickSelfService();
+            log("clickSelfService");
 
-			ss.clickTransactions();
-			log("clickTransactions");
+            ss.clickTransactions();
+            log("clickTransactions");
 
-			// ExceptionRequest page
-			ExceptionRequestPage er = new ExceptionRequestPage(driver);
+            // ExceptionRequest page
+            ExceptionRequestPage er = new ExceptionRequestPage(driver);
 
-			for (ExceptionRequestModel exception : exceptionRequestData)
-			{
-				er.createExceptionRequest();
-				log("createExceptionRequest");
+            for (ExceptionRequestModel exception : exceptionRequestData)
+            {
+                er.createExceptionRequest();
+                log("createExceptionRequest");
 
-				er.clickNew();
-				log("clickNew");
+                er.clickNew();
+                log("clickNew");
 
-				er.provideExceptionDate(exception.exceptionDate);
-				log("provideExceptionDate");
+                er.provideExceptionDate(exception.exceptionDate);
+                log("provided Exception Date: " + exception.exceptionDate);
 
-				er.provideLoginTime(exception.loginTime);
-				log("provideLoginTime");
+                er.provideLoginTime(exception.loginTime);
+                log("provided Login Time: " + exception.loginTime);
 
-//				er.provideLogoutTime(exception.logotTime);
-//				log("provideLogoutTime");
+                er.provideLogoutTime(exception.logotTime);
+                log("provided Logout Time: " + exception.logotTime);
 
-				er.provideRemarks(exception.remarks);
-				log("provideRemarks");
+                er.provideRemarks(exception.remarks);
+                log("provided Remarks: " + exception.remarks);
 
-				er.clickSaveBack();
-				log("clickSaveBack");
+                er.clickSaveBack();
+                log("clickSaveBack");
 
-				Assert.assertTrue(er.isTxnCreated(exception.exceptionDate));
-				log("assertion successful");
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+                Assert.assertTrue(er.isTxnCreated(exception.exceptionDate));
+                log("Verified: Transaction created successfully for date: " + exception.exceptionDate);
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

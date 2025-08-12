@@ -28,7 +28,9 @@ public class CreateOvertimeApplicationTest extends BaseTest
             // self service page
             SelfServicePage ss = new SelfServicePage(driver);
             ss.clickSelfService();
+            log("clicked on SelfService");
             ss.clickTransactions();
+            log("clicked on Transactions");
 
             // Overtime Request page
             OvertimeRequestPage or = new OvertimeRequestPage(driver);
@@ -37,13 +39,23 @@ public class CreateOvertimeApplicationTest extends BaseTest
             {
                 // or.scrollDownWebpage();
                 or.clickOvertimeRequest();
+                log("clicked on Overtime Request");
+
                 or.clickNew();
+                log("clicked on New");
+
                 or.provideOvertimeDate(overtimeRequest.overtimeDate);
+                log("provided Overtime Date: " + overtimeRequest.overtimeDate);
+
                 or.provideHrs(overtimeRequest.hrs);
+                log("provided Hours: " + overtimeRequest.hrs);
+
                 or.provideRemarks(overtimeRequest.remarks);
+                log("provided Remarks: " + overtimeRequest.remarks);
 
                 // additional code
                 BasePage.clickSaveAndBack();
+                log("clicked on Save and Back");
 //                if (BasePage.isTransactionCreated())
 //                {
 //                    BasePage.clickSaveAndBack();
@@ -53,6 +65,8 @@ public class CreateOvertimeApplicationTest extends BaseTest
 //                }
 
                 Assert.assertTrue(or.isTxnCreated(overtimeRequest.overtimeType, overtimeRequest.hrs));
+                log("Verified: Transaction created successfully for Overtime Type: " + overtimeRequest.overtimeType
+                        + " with Hours: " + overtimeRequest.hrs);
             }
         } catch (Exception e)
         {
