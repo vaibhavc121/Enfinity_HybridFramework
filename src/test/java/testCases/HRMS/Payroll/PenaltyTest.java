@@ -34,7 +34,7 @@ public class PenaltyTest extends BaseTest
             // penalty pg
             PenaltyPage pn = new PenaltyPage(driver);
 
-            for(PayrollModel.PenaltyModel penalty:penaltyData)
+            for (PayrollModel.PenaltyModel penalty : penaltyData)
             {
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
@@ -57,16 +57,14 @@ public class PenaltyTest extends BaseTest
                 pn.clickSaveViewApproveBack();
                 log("clicked on view approve back button");
 
-                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6,6));
+                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6, 6));
                 log("assertion passed: Penalty in days created successfully");
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
-
     }
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
@@ -88,7 +86,7 @@ public class PenaltyTest extends BaseTest
             // penalty pg
             PenaltyPage pn = new PenaltyPage(driver);
 
-            for(PayrollModel.PenaltyModel penalty:penaltyData)
+            for (PayrollModel.PenaltyModel penalty : penaltyData)
             {
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
@@ -97,13 +95,11 @@ public class PenaltyTest extends BaseTest
                 Assert.assertFalse(BasePage.validateListing(penalty.employee, 6, 6));
                 log("assertion passed: Penalty in days deleted successfully");
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
-
     }
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 3)
@@ -125,7 +121,7 @@ public class PenaltyTest extends BaseTest
             // penalty pg
             PenaltyPage pn = new PenaltyPage(driver);
 
-            for(PayrollModel.PenaltyModel penalty:penaltyData)
+            for (PayrollModel.PenaltyModel penalty : penaltyData)
             {
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
@@ -148,16 +144,14 @@ public class PenaltyTest extends BaseTest
                 pn.clickSaveViewApproveBack();
                 log("clicked on view approve back button");
 
-                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6,6));
-                log("assertion passed: Penalty in days created successfully");
+                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6, 6));
+                log("assertion passed: Penalty in amt created successfully");
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
-
     }
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 4)
@@ -179,22 +173,19 @@ public class PenaltyTest extends BaseTest
             // penalty pg
             PenaltyPage pn = new PenaltyPage(driver);
 
-            for(PayrollModel.PenaltyModel penalty:penaltyData)
+            for (PayrollModel.PenaltyModel penalty : penaltyData)
             {
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
 
                 BasePage.performAction(6, penalty.employee, "Amend");
                 Assert.assertFalse(BasePage.validateListing(penalty.employee, 6, 6));
-                log("assertion passed: Penalty in days deleted successfully");
+                log("assertion passed: Penalty in Amt deleted successfully");
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
-
     }
-
 }
