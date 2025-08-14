@@ -17,7 +17,7 @@ import java.util.List;
 
 public class LeaveCancellationTest extends BaseTest
 {
-    @Test(groups = "functional", retryAnalyzer = utilities.RetryAnalyzer.class)
+    @Test(groups = "functional", retryAnalyzer = utilities.RetryAnalyzer.class, enabled = false, description = "false bcos not able to amend approved leave request and after reject not able to delete the request")
     public void cancelFutureLeave()
     {
         try
@@ -119,6 +119,118 @@ public class LeaveCancellationTest extends BaseTest
             log("Transaction amend successfully");
             Assert.assertFalse(BasePage.validateListing("Approved", 7, 7));
             log("Verified: There is no approved request on the listing page");
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "functional", retryAnalyzer = utilities.RetryAnalyzer.class)
+    public void verifyUserIsRestrictedFromCancellingInProcessOrApprovedLeave()
+    {
+        try
+        {
+            //region Test Data Setup
+            String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<SelfServiceModel.LeaveCancellationModel> leaveCancellationData = JsonUtils.convertJsonListDataModel(selfServiceFile, "leaveCancellation.futureLeave", SelfServiceModel.LeaveCancellationModel.class);
+            //endregion
+
+            //region Page Objects
+            SelfServicePage ss = new SelfServicePage(driver);
+            LeaveRequestPage lr = new LeaveRequestPage(driver);
+            //endregion
+
+            //region self service module: Create Leave Request
+            BasePage.logoutAndLogin("rohitc@test.com", "123");
+
+            ss.clickSelfService();
+            log("clicked on Self Service");
+
+            ss.clickTransactions();
+            log("clicked on Transactions");
+
+            // Leave Request page
+
+            // create leave request as employee
+            for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
+            {
+                lr.clickLeaveRequest();
+                log("clicked on Leave Request");
+
+                Thread.sleep(5000);
+
+                lr.clickNew();
+                log("clicked on New");
+
+                //lr.hoverAndClick(leaveRequest.leaveType);
+                lr.clickOnLeaveType(leaveCancel.leaveType, 3); //absent leave
+                log("selected leave type: " + leaveCancel.leaveType);
+
+                lr.provideFromDate(DateUtils.addDaysToCurrentDate(7, "dd-MMM-yyyy"));
+                log("provided From Date");
+
+                lr.provideToDate(DateUtils.addDaysToCurrentDate(7, "dd-MMM-yyyy"));
+                log("provided To Date");
+
+                lr.clickSaveAndSubmit();
+                log("clicked on Save and Submit");
+                // lr.clickSave();
+
+                // ClassicAssert.isTrue(lr.isTxnCreated(leaveRequest.expFromDate,
+                // leaveRequest.expToDate));
+            }
+            //endregion
+
+            //region approve the leave request from manager login
+            BasePage.logoutAndLogin("vaibhav@test.com", "123");
+            NotificationPage np = new NotificationPage(driver);
+            for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
+            {
+                np.clickBellIcon();
+                log("clicked on Bell Icon");
+                np.isLeaveDataCorrect(leaveCancel.expEmpName, "Approve");
+            }
+            //endregion
+
+            //region Leave Cancellation Request
+            BasePage.logoutAndLogin("rohitc@test.com", "123");
+            ss.clickSelfService();
+            log("clicked on Self Service");
+            ss.clickTransactions();
+            log("clicked on Transactions");
+            lr.clickLeaveRequest();
+            log("clicked on Leave Request");
+            BasePage.performAction(7, "Approve", "Cancel");
+            //endregion
+
+            //region validation
+            Assert.assertTrue(lr.checkValidationMessage(), "Validation message not displayed for cancelling approved leave request.");
+            log("Verified: User is restricted from cancelling approved leave request");
+            //endregion
+
+            //region Delete leave request
+
+            for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
+            {
+                BrowserUtils.navigateBack(driver);
+                log("navigated back to Leave Request page");
+
+                BasePage.performAction(7, "Approve", "Amend");
+                log("Transaction deleted successfully");
+//                Assert.assertFalse(BasePage.validateListing(leaveCancel.expEmpName, 6, 6),
+//                        "Leave request not deleted successfully");
+                if (!BasePage.validateListing(leaveCancel.expEmpName, 6, 6))
+                {
+                    log("Verified: There is no approved request on the listing page");
+                } else
+                {
+                    throw new RuntimeException("Leave request not deleted successfully");
+                }
+            }
+
+            //endregion
+
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

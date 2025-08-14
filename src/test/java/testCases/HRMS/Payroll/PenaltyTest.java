@@ -92,7 +92,8 @@ public class PenaltyTest extends BaseTest
                 log("clicked on penalty link");
 
                 BasePage.performAction(6, penalty.employee, "Amend");
-                Assert.assertFalse(BasePage.validateListing(penalty.employee, 6, 6));
+                Assert.assertFalse(BasePage.validateListing(penalty.employee, 6, 6),
+                        "Penalty in days not deleted successfully");
                 log("assertion passed: Penalty in days deleted successfully");
             }
         } catch (Exception e)

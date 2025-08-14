@@ -64,10 +64,11 @@
     }
   ],
   "leaveCancellation": {
-    "backDatedLeave": {},
-    "onGoingLeave": {},
-    "approvedLeave": {},
-    "activeLeave": {},
+    "onGoingLeaveOrApprovedLeave": [
+      {
+        "expEmpName": "Rohit Chavan"
+      }
+    ],
     "futureLeave": [
       {
         "leaveType": "Absent Leave",

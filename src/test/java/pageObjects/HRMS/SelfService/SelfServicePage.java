@@ -9,38 +9,44 @@ import base.BasePage;
 public class SelfServicePage extends BasePage
 {
 
-	public SelfServicePage(WebDriver driver)
-	{
-		super(driver);
+    public SelfServicePage(WebDriver driver)
+    {
+        super(driver);
+    }
 
-	}
+    //region Locators
+    @FindBy(xpath = "//span[normalize-space()='Self Service']")
+    WebElement selfService;
 
-	// Locators
+    @FindBy(xpath = "//span[normalize-space()='Time Off']")
+    WebElement timeOff;
 
-	// Action Methods
+    @FindBy(xpath = "//span[text()='Transactions']")
+    WebElement transactions;
 
-	@FindBy(xpath = "//span[normalize-space()='Self Service']")
-	WebElement selfService;
+    @FindBy(xpath = "//label[normalize-space()='My Approvals']")
+    private WebElement myApprovals;
+    //endregion
 
-	@FindBy(xpath = "//span[normalize-space()='Time Off']")
-	WebElement timeOff;
+    //region Action Methods
+    public void clickSelfService()
+    {
+        selfService.click();
+    }
 
-	@FindBy(xpath = "//span[text()='Transactions']")
-	WebElement transactions;
+    public void clickTimeOff()
+    {
+        timeOff.click();
+    }
 
-	public void clickSelfService()
-	{
-		selfService.click();
-	}
+    public void clickTransactions()
+    {
+        transactions.click();
+    }
 
-	public void clickTimeOff()
-	{
-		timeOff.click();
-	}
-
-	public void clickTransactions()
-	{
-		transactions.click();
-	}
-
+    public void clickMyApprovals()
+    {
+        waitForElement(myApprovals).click();
+    }
+    //endregion
 }

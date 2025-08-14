@@ -126,6 +126,21 @@ public class LeaveRequestPage extends BasePage
         }
     }
 
+    public boolean checkValidationMessage()
+    {
+        String validationMsg = waitForElement1(By.xpath("//div[@class='dx-dialog-message']")).getText().trim();
+        if (validationMsg.equalsIgnoreCase("Leave cannot be canceled once it has started."))
+        {
+            waitTS(2);
+            pressEnter();
+            return true;
+        } else
+        {
+            BaseTest.log("Validation message not displayed as expected. Actual: " + validationMsg);
+            return false;
+        }
+    }
+
     public void clickSaveAndSubmit()
     {
         saveAndSubmit.click();

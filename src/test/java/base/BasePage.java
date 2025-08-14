@@ -495,6 +495,7 @@ public class BasePage
         if (action.equalsIgnoreCase("Cancel"))
         {
             waitForElement1(By.xpath("//span[normalize-space()='" + action + "']")).click();
+            BaseTest.log("Clicked on " + action);
             return;
         }
 
@@ -534,6 +535,7 @@ public class BasePage
 
         waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
         BaseTest.log("clicked on delete");
+        BaseTest.log("Transaction deleted successfully");
 
         waitTS(1);
 
