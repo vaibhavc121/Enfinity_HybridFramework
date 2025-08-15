@@ -90,6 +90,7 @@ public class RecruitmentTest extends BaseTest
                 //endregion
 
                 //region Professional Information
+                cp.scrollDown();
                 cp.provideWorkExpInYears(candidate.workExperienceInYear);
                 log("Provided Work Experience in Years");
 
@@ -162,7 +163,8 @@ public class RecruitmentTest extends BaseTest
             // Recruitment page
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
-            rp.clickOnHambergurIcon();
+            BasePage.openSidebar();
+            BasePage.openSidebar();
             rp.clickJob();
 
             // job page
@@ -217,6 +219,8 @@ public class RecruitmentTest extends BaseTest
                 jp.provideSkills(job.skills);
                 log("Provided skills: " + job.skills);
 
+                jp.scrollPage();
+
                 jp.provideCity(job.city);
                 log("Provided city: " + job.city);
 
@@ -270,7 +274,8 @@ public class RecruitmentTest extends BaseTest
             rp.clickRecruitment();
             log("Clicked on Recruitment");
 
-            rp.clickOnHambergurIcon();
+            //rp.clickOnSidebar();
+            BasePage.openSidebar();
             rp.clickJob();
             log("Clicked on Job");
 
@@ -318,11 +323,11 @@ public class RecruitmentTest extends BaseTest
                 ja.provideGender(search.gender);
                 log("Provided gender");
 
-                if (search.drivingLicense)
-                {
-                    ja.clickDrivingLicense();
-                    log("Clicked on Driving License checkbox");
-                }
+//                if (search.drivingLicense)
+//                {
+//                    ja.clickDrivingLicense();
+//                    log("Clicked on Driving License checkbox");
+//                }
 
                 ja.provideMinimumAge(search.minimumAge);
                 log("Provided minimum age: " + search.minimumAge);
@@ -373,7 +378,7 @@ public class RecruitmentTest extends BaseTest
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
             log("Clicked on Recruitment");
-            rp.clickOnHambergurIcon();
+            BasePage.openSidebar();
             rp.clickJob();
             log("Clicked on Job");
 
@@ -459,7 +464,7 @@ public class RecruitmentTest extends BaseTest
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
             log("Clicked on Recruitment");
-            rp.clickOnHambergurIcon();
+            BasePage.openSidebar();
             rp.clickJob();
             log("Clicked on Job");
 
@@ -516,7 +521,7 @@ public class RecruitmentTest extends BaseTest
             RecruitmentPage rp = new RecruitmentPage(driver);
             rp.clickRecruitment();
             log("Clicked on Recruitment");
-            rp.clickOnHambergurIcon();
+            BasePage.openSidebar();
             rp.clickJob();
             log("Clicked on Job");
 

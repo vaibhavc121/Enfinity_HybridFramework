@@ -299,11 +299,11 @@ public class JobApplicationTrackingPage extends BasePage
             BaseTest.log("row selected");
             try
             {
-                clickOnEdit();
+                clickOnEditListing();
                 BaseTest.log("clicked On Edit");
             } catch (Exception e)
             {
-                clickOnView();
+                clickOnEditListing();
                 BaseTest.log("clicked On View");
             }
         } else

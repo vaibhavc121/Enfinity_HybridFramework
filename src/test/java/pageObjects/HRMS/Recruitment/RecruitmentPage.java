@@ -18,13 +18,13 @@ public class RecruitmentPage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Recruitment']")
     private WebElement recruitment;
 
-    @FindBy(xpath = "//a[@title='Job']//span[@class='dx-vam'][normalize-space()='Job']")
-    private WebElement job;
+    @FindBy(xpath = "//label[normalize-space()='Job']")
+    WebElement job;
 
     @FindBy(xpath = "//span[@class='dx-vam'][normalize-space()='Candidate']")
     private WebElement candidate;
 
-    public void clickOnHambergurIcon()
+    public void clickOnSidebar()
     {
         boolean value = waitForElement(job).isDisplayed();
         if (!value)
@@ -52,7 +52,7 @@ public class RecruitmentPage extends BasePage
 
     public void clickJob()
     {
-        job.click();
+        clickOnElement1(job);
     }
 
     public void clickCandidate()

@@ -2,9 +2,11 @@ package pageObjects.HRMS.Global;
 
 import base.BasePage;
 import base.BaseTest;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.JavaScriptUtils;
 
 import java.sql.Ref;
 
@@ -62,7 +64,8 @@ public class TopNavigationBar extends BasePage
     //region Notifications Section
     public void clickNotifications()
     {
-        clickOnElement1(notifications);
+        //clickOnElement1(notifications);
+        JavaScriptUtils.clickElementByJavaScript(driver, notifications);
     }
     public boolean checkNotificationContent(String expectedText)
     {
@@ -72,7 +75,8 @@ public class TopNavigationBar extends BasePage
             throw new RuntimeException("No notifications available.");
         } else if (notificationText.contains(expectedText))
         {
-            waitForElement(settingsIcon).click();
+            //waitForElement(settingsIcon).click();
+            JavaScriptUtils.clickElementByJavaScript(driver, settingsIcon);
             BaseTest.log("clicked on settings icon");
 
             waitForElement(acknowledged).click();

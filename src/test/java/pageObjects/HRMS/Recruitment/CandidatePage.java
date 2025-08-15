@@ -4,6 +4,7 @@ import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.JavaScriptUtils;
 
 public class CandidatePage extends BasePage
 {
@@ -15,40 +16,65 @@ public class CandidatePage extends BasePage
     //region Locators
 
     //region Personal Information
-    @FindBy(xpath="(//input[contains(@id,'Name')])[1]") private WebElement name;
-    @FindBy(xpath="//input[contains(@id,'Email')]") private WebElement email;
-    @FindBy(xpath="//input[contains(@id,'MobileNumber')]") private WebElement mobileNumber;
-    @FindBy(xpath="//input[contains(@id,'DateOfBirth')]") private WebElement dateOfBirth;
-    @FindBy(xpath="//span[@class='bCardHover']") private WebElement candidateName;
-    @FindBy(xpath = "//input[contains(@id,'Gender')]") private WebElement gender;
-    @FindBy(xpath = "//input[contains(@id,'MaritalStatus')]") private WebElement maritalStatus;
-    @FindBy(xpath = "//div[@class='dx-form-group-content']//div[@class='dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-field-item-has-group']//div[@class='dx-form-group-content']//span[@class='dx-checkbox-icon']") private WebElement checkbox1;
+    @FindBy(xpath = "(//input[contains(@id,'Name')])[1]")
+    private WebElement name;
+    @FindBy(xpath = "//input[contains(@id,'Email')]")
+    private WebElement email;
+    @FindBy(xpath = "//input[contains(@id,'MobileNumber')]")
+    private WebElement mobileNumber;
+    @FindBy(xpath = "//input[contains(@id,'DateOfBirth')]")
+    private WebElement dateOfBirth;
+    @FindBy(xpath = "//span[@class='bCardHover']")
+    private WebElement candidateName;
+    @FindBy(xpath = "//input[contains(@id,'Gender')]")
+    private WebElement gender;
+    @FindBy(xpath = "//input[contains(@id,'MaritalStatus')]")
+    private WebElement maritalStatus;
+    @FindBy(xpath = "//div[@class='dx-form-group-content']//div[@class='dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-field-item-has-group']//div[@class='dx-form-group-content']//span[@class='dx-checkbox-icon']")
+    private WebElement checkbox1;
     //endregion
 
     //region Address Information
-    @FindBy(xpath = "//input[contains(@id,'City')]") private WebElement city;
-    @FindBy(xpath = "//input[contains(@id,'State')]") private WebElement state;
-    @FindBy(xpath = "//input[contains(@id,'CountryId')]") private WebElement country;
-    @FindBy(xpath = "//input[contains(@id,'PostalCode')]") private WebElement postalCode;
+    @FindBy(xpath = "//input[contains(@id,'City')]")
+    private WebElement city;
+    @FindBy(xpath = "//input[contains(@id,'State')]")
+    private WebElement state;
+    @FindBy(xpath = "//input[contains(@id,'CountryId')]")
+    private WebElement country;
+    @FindBy(xpath = "//input[contains(@id,'PostalCode')]")
+    private WebElement postalCode;
     //endregion
 
     //region Professional Information
-    @FindBy(xpath = "//input[contains(@id,'WorkExperienceInYear')]") private WebElement workExperienceInYear;
-    @FindBy(xpath = "//input[contains(@id,'CurrentJobTitle')]") private WebElement currentJobTitle;
-    @FindBy(xpath = "//input[contains(@id,'CurrentEmployer')]") private WebElement currentEmployer;
-    @FindBy(xpath = "//input[contains(@id,'SkillIds')]") private WebElement skills;
-    @FindBy(xpath = "//input[contains(@id,'CurrentSalary')]") private WebElement currentSalary;
-    @FindBy(xpath = "//input[contains(@id,'ExpectedSalary')]") private WebElement expectedSalary;
-    @FindBy(xpath = "//input[contains(@id,'NoticePeriodInDays')]") private WebElement noticePeriodInDays;
-    @FindBy(xpath = "(//span[@class='dx-checkbox-icon'])[2]") private WebElement checkbox2;
+    @FindBy(xpath = "//input[contains(@id,'WorkExperienceInYear')]")
+    private WebElement workExperienceInYear;
+    @FindBy(xpath = "//input[contains(@id,'CurrentJobTitle')]")
+    private WebElement currentJobTitle;
+    @FindBy(xpath = "//input[contains(@id,'CurrentEmployer')]")
+    private WebElement currentEmployer;
+    @FindBy(xpath = "//input[contains(@id,'SkillIds')]")
+    private WebElement skills;
+    @FindBy(xpath = "//input[contains(@id,'CurrentSalary')]")
+    private WebElement currentSalary;
+    @FindBy(xpath = "//input[contains(@id,'ExpectedSalary')]")
+    private WebElement expectedSalary;
+    @FindBy(xpath = "//input[contains(@id,'NoticePeriodInDays')]")
+    private WebElement noticePeriodInDays;
+    @FindBy(xpath = "(//span[@class='dx-checkbox-icon'])[2]")
+    private WebElement checkbox2;
     //endregion
 
     //region Document Information
-    @FindBy(xpath = "//input[contains(@id,'PassportNumber')]") private WebElement passportNumber;
-    @FindBy(xpath = "//input[contains(@id,'PassportIssueDate')]") private WebElement passportIssueDate;
-    @FindBy(xpath = "//input[contains(@id,'PassportExpiryDate')]") private WebElement passportExpiryDate;
-    @FindBy(xpath = "//input[contains(@id,'VisaType')]") private WebElement visaType;
-    @FindBy(xpath = "//input[contains(@id,'CivilIdNumber')]") private WebElement civilIdNumber;
+    @FindBy(xpath = "//input[contains(@id,'PassportNumber')]")
+    private WebElement passportNumber;
+    @FindBy(xpath = "//input[contains(@id,'PassportIssueDate')]")
+    private WebElement passportIssueDate;
+    @FindBy(xpath = "//input[contains(@id,'PassportExpiryDate')]")
+    private WebElement passportExpiryDate;
+    @FindBy(xpath = "//input[contains(@id,'VisaType')]")
+    private WebElement visaType;
+    @FindBy(xpath = "//input[contains(@id,'CivilIdNumber')]")
+    private WebElement civilIdNumber;
     //endregion
 
     //region Qualification Details
@@ -58,10 +84,6 @@ public class CandidatePage extends BasePage
     //region Experience Details
 
     //endregion
-
-
-
-
 
     //endregion
 
@@ -123,6 +145,10 @@ public class CandidatePage extends BasePage
     //endregion
 
     //region Professional Information
+    public void scrollDown()
+    {
+        JavaScriptUtils.scrollIntoView(driver, workExperienceInYear);
+    }
     public void provideWorkExpInYears(String value)
     {
         clearAndProvide1(workExperienceInYear, value);
@@ -181,14 +207,13 @@ public class CandidatePage extends BasePage
     }
     //endregion
 
-
     public void clickSave()
     {
         clickOnSave();
     }
     public String getCandidateName()
     {
-        String candidateNm= candidateName.getText();
+        String candidateNm = candidateName.getText();
         return candidateNm;
     }
 

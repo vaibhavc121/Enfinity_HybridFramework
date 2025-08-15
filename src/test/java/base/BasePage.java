@@ -16,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.WheelInput;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.*;
@@ -39,6 +40,37 @@ public class BasePage
         PageFactory.initElements(driver, this);
     }
     // endregion
+
+    //region Left Navigation Sidebar
+
+    public static void openSidebar()
+    {
+        //label[normalize-space()='Home'] //optional can be used
+        boolean value = waitForElement1(By.xpath("//label[@class='label expanded-view']")).isDisplayed();
+        if (!value)
+        {
+            waitForElement1(By.xpath("//i[@class='enfinity-logo-white default-icon']")).click();
+            BaseTest.log("Clicked on logo icon to open the sidebar");
+        } else
+        {
+            BaseTest.log("Sidebar is already opend, no need to click on sidebar/logo icon");
+        }
+    }
+    public static void clickMenuIcon()
+    {
+        List<WebElement> elements = driver.findElements(By.xpath("//label[contains(text(),'Apps')]"));
+        boolean value = !elements.isEmpty() && elements.get(0).isDisplayed();
+        if (!value)
+        {
+            waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-grid-light']")).click();
+            BaseTest.log("Clicked on menu icon to access the modules");
+        } else
+        {
+            BaseTest.log("Menu is already opend, no need to click on it");
+        }
+        waitTS(1);
+    }
+    //endregion
 
     // region For fake data generation
     public Faker faker = new Faker();
@@ -144,7 +176,8 @@ public class BasePage
     public static void selectRow()
     {
         // driver.findElement(By.xpath("(//tr)[12]//td[2]")).click();
-        waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
+        //(//td[@role='gridcell'])[13]
+        waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
         BaseTest.log("row selected");
     }
 
@@ -153,7 +186,7 @@ public class BasePage
         // String result =
         // driver.findElement(By.xpath("(//tbody//tr)[12]//td[2]")).getText();
         // return result;
-        String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
+        String xpath = "(//tbody//tr)[6]//td[" + columnIndex + "]";
         try
         {
             BaseTest.log("extracting text from the result");
@@ -168,6 +201,13 @@ public class BasePage
         // String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
         // String result = driver.findElement(By.xpath(xpath)).getText();
         // return result;
+    }
+
+    public static void clickOnEditListing()
+    {
+        //img[@id='MainMenu_DXI15_PImg']
+        clickOnElement(By.xpath("//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')]"));
+        clickOnElement(By.xpath("//span[@title='Edit']"));
     }
     // endregion
 
@@ -212,7 +252,7 @@ public class BasePage
 
     public static void clickOnView()
     {
-        waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
+        waitForElement1(By.xpath("//img[@id='MainMenu_DXI3_Img']")).click();
     }
 
     public static void clickOnApprove()
@@ -377,7 +417,7 @@ public class BasePage
         element.sendKeys(Keys.ENTER);
     }
 
-    public static void provideValue(WebElement locator, String value)
+    public static void provideValueJS(WebElement locator, String value)
     {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         WebElement element = waitForElement(locator);
@@ -468,7 +508,7 @@ public class BasePage
         try
         {
             // Need to select row to click on view
-            waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
+            waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
             BaseTest.log("clicked on row");
         } catch (Exception e)
         {
@@ -477,17 +517,24 @@ public class BasePage
         }
         try
         {
-            clickOnView();
+            try
+            {
+                clickOnView();
+            } catch (Exception e)
+            {
+                clickOnElement(By.xpath("//img[@id='MainMenu_DXI4_Img']"));
+            }
             BaseTest.log("clicked on view");
         } catch (Exception e)
         {
-            clickOnEdit();
+            //clickOnEdit();
+            clickOnEditListing();
             BaseTest.log("clicked on edit");
         }
         waitTS(5);
 
         // Click on menu image icon
-        waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        waitForElement1(By.xpath("//img[@id='MainMenu_DXI18_PImg']")).click();
         waitTS(2);
         BaseTest.log("Clicked on menu image icon");
 
@@ -529,7 +576,7 @@ public class BasePage
         }
 
         // Delete the transaction
-        waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        waitForElement1(By.xpath("//img[@id='MainMenu_DXI18_PImg']")).click();
         waitTS(2);
         BaseTest.log("clicked on menu/setting");
 
@@ -637,11 +684,18 @@ public class BasePage
             BaseTest.log("row selected");
             try
             {
-                clickOnView();
-                BaseTest.log("clicked On View");
+                try
+                {
+                    clickOnView();
+                } catch (Exception e)
+                {
+                    clickOnElement(By.xpath("//img[@id='MainMenu_DXI4_Img']"));
+                }
+                BaseTest.log("clicked on view");
             } catch (Exception e)
             {
-                clickOnEdit();
+                //clickOnEdit();
+                clickOnEditListing();
                 BaseTest.log("clicked On Edit");
             }
         } else

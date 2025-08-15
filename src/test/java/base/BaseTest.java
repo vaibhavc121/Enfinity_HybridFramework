@@ -17,6 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import pageObjects.HRMS.Login.LoginPage;
@@ -174,7 +175,8 @@ public class BaseTest
             options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             options.setExperimentalOption("useAutomationExtension", false);
 
-            options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>() {{
+            options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>()
+            {{
                 put("credentials_enable_service", false);
                 put("profile.password_manager_enabled", false);
             }});
@@ -233,15 +235,31 @@ public class BaseTest
         //region Login
         LoginPage lp = new LoginPage(driver);
         lp.setUsername(p.getProperty("username"));
-        logger.info("provided username");
+        log("provided username");
         lp.setPwd(p.getProperty("pwd"));
-        logger.info("provided password");
+        log("provided password");
         lp.clkSignin();
-        logger.info("clicked on sign in button");
+        log("clicked on sign in button");
+
+        lp.clickSkip();
+        log("clicked on skip button");
+
         //endregion
         //endregion
 
     }
+    //endregion
+
+    //region Before Method
+    @BeforeMethod(groups = {"regression", "datadriven", "functional"})
+    public void prepareNavigation()
+    {
+        BasePage.openSidebar();
+        log("Opened sidebar");
+        BasePage.clickMenuIcon();
+        log("Clicked on Menu Icon");
+    }
+
     //endregion
 
     //region TearDown

@@ -17,18 +17,23 @@ public class LoginPage extends BasePage
         // TODO Auto-generated constructor stub
     }
 
-   //region Locators
-   @FindBy(name = "Username")
-   WebElement username;
+    //region Locators
+    @FindBy(name = "Username")
+    WebElement username;
 
     @FindBy(name = "Password")
     WebElement password;
 
     @FindBy(className = "login-btn")
     WebElement signIn;
-   //endregion
+
+    @FindBy(xpath = "//span[normalize-space()='Skip']")
+    WebElement skip;
+
+    //endregion
 
     //region Action Methods
+
     // Locate, highlight, enter data, and remove highlight for "Username" field
     public void setUsername(String uname)
     {
@@ -51,6 +56,12 @@ public class LoginPage extends BasePage
         // bc.highlightElement(driver, signIn, false); // Remove highlight
     }
 
+    public void clickSkip()
+    {
+        waitTS(1);
+        waitForElement(skip).click();
+    }
+
     public void login(String uname, String pwd)
     {
         WebElement usernameField = driver.findElement(By.name("Username"));
@@ -66,7 +77,6 @@ public class LoginPage extends BasePage
         loginButton.click();
         BaseTest.log("clicked on login button");
     }
+
     //endregion
-
-
 }

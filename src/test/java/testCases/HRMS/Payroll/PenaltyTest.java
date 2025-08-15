@@ -5,6 +5,8 @@ import base.BaseTest;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pageObjects.HRMS.Global.NotificationPage;
+import pageObjects.HRMS.Login.LoginPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
 import pageObjects.HRMS.Payroll.PenaltyPage;
 import utilities.FileUtils;
@@ -26,6 +28,7 @@ public class PenaltyTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            LoginPage.clickMenuIcon();
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
@@ -58,6 +61,7 @@ public class PenaltyTest extends BaseTest
                 log("clicked on view approve back button");
 
                 Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6, 6));
+                //Assert.assertTrue(BasePage.validateListing(penalty.employee, 7, 7));
                 log("assertion passed: Penalty in days created successfully");
             }
         } catch (Exception e)
@@ -78,6 +82,8 @@ public class PenaltyTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            LoginPage.clickMenuIcon();
+            log("clicked on menu icon");
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
@@ -91,8 +97,8 @@ public class PenaltyTest extends BaseTest
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
 
-                BasePage.performAction(6, penalty.employee, "Amend");
-                Assert.assertFalse(BasePage.validateListing(penalty.employee, 6, 6),
+                BasePage.performAction(7, penalty.employee, "Amend");
+                Assert.assertFalse(BasePage.validateListing(penalty.employee, 7, 7),
                         "Penalty in days not deleted successfully");
                 log("assertion passed: Penalty in days deleted successfully");
             }

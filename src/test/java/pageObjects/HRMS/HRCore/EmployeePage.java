@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
+import utilities.JavaScriptUtils;
 
 public class EmployeePage extends BasePage
 {
@@ -985,6 +986,12 @@ public class EmployeePage extends BasePage
     public void clickSave()
     {
         clickOnSave();
+    }
+
+    public void clickJsSave()
+    {
+        WebElement save = waitForElement1(By.xpath("//span[normalize-space()='Save']"));
+        JavaScriptUtils.clickElementByJavaScript(driver, save);
     }
 
     public boolean validate(String value)

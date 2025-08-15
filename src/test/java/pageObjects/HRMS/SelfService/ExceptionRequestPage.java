@@ -88,7 +88,7 @@ public class ExceptionRequestPage extends BasePage
     public void provideRemarks(String value)
     {
         //provideDescription(value);
-        provideValue(description, value);
+        provideValueJS(description, value);
         try
         {
             clickOnElement1(calendarIcon);

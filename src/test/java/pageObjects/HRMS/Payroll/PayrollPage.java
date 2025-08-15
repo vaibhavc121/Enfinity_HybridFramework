@@ -5,38 +5,40 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
+import utilities.JavaScriptUtils;
 
 public class PayrollPage extends BasePage
 {
 
-	public PayrollPage(WebDriver driver)
-	{
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+    public PayrollPage(WebDriver driver)
+    {
+        super(driver);
+        // TODO Auto-generated constructor stub
+    }
 
-	@FindBy(xpath = "//span[normalize-space()='Payroll']")
-	WebElement payroll;
+    @FindBy(xpath = "//span[normalize-space()='Payroll']")
+    WebElement payroll;
 
-	@FindBy(xpath = "//span[@class='dxnb-ghtext']")
-	WebElement transactions;
+    @FindBy(xpath = "//div[normalize-space()='Transactions']")
+    WebElement transactions;
 
-	@FindBy(xpath = "//span[normalize-space()='Reports']")
-	WebElement reports;
+    @FindBy(xpath = "//span[normalize-space()='Reports']")
+    WebElement reports;
 
-	public void clkPayroll()
-	{
-		payroll.click();
-	}
+    public void clkPayroll()
+    {
+        // waitForElement(payroll);
+        JavaScriptUtils.clickElementByJavaScript(driver, payroll);
+        waitTS(1);
+    }
 
-	public void clkTxn()
-	{
-		transactions.click();
-	}
+    public void clkTxn()
+    {
+        JavaScriptUtils.clickElementByJavaScript(driver, transactions);
+    }
 
-	public void clickReports()
-	{
-		reports.click();
-	}
-
+    public void clickReports()
+    {
+        reports.click();
+    }
 }

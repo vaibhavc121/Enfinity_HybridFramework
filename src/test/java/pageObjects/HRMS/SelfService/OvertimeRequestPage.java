@@ -71,7 +71,7 @@ public class OvertimeRequestPage extends BasePage
     public void provideRemarks(String value)
     {
         //provideDescription(value);
-        provideValue(remarks, value);
+        provideValueJS(remarks, value);
     }
 
     public void clickSaveBack()
