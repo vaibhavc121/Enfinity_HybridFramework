@@ -10,24 +10,24 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class DeleteResignationTest extends BaseTest
 {
-	@Test(groups = "Regression" , retryAnalyzer = RetryAnalyzer.class)
-	public void deleteResignation()
-	{
-		// self service page
-		SelfServicePage ss = new SelfServicePage(driver);
-		ss.clickSelfService();
-		ss.clickTransactions();
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void deleteResignation()
+    {
+        // self service page
+        SelfServicePage ss = new SelfServicePage(driver);
+        ss.clickSelfService();
+        ss.clickTransactions();
 
-		// Resignation page
-		ResignationPage rp = new ResignationPage(driver);
-		rp.clickResignation();
+        // Resignation page
+        ResignationPage rp = new ResignationPage(driver);
+        rp.clickResignation();
 
-		BasePage.deleteTxn(6, "active");
-		Assert.assertFalse(BasePage.validateListing("active", 6, 6));
-	}
-
+        BasePage.deleteTxn(6, "active");
+        Assert.assertFalse(BasePage.validateListing("active", 6, 6));
+    }
 }

@@ -27,16 +27,19 @@ public class DeleteBankTest extends BaseTest
 
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
+            log("clickHRCore");
             hc.clickSetupForm();
+            log("clickSetupForm");
 
             SetupPage sp = new SetupPage(driver);
             for (DeleteBankModel bank : bankData)
             {
                 sp.clickBank();
+                log("clicked on Bank");
                 Thread.sleep(2000);
                 BasePage.deleteHrCoreTxn(2, bank.bankName);
-
-                Assert.assertFalse(BasePage.validateListing(bank.bankName, 2, 1));
+                Assert.assertFalse(BasePage.validateListing(bank.bankName, 2, 1), "Transaction not deleted: " + bank.bankName);
+                log("Verified: Transaction deleted successfully");
                 // ClassicAssert.isTrue(BasePage.isTxnCreated());
             }
         } catch (Exception e)

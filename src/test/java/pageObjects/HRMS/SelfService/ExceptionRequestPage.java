@@ -16,7 +16,7 @@ public class ExceptionRequestPage extends BasePage
     }
 
     // Locators
-    @FindBy(xpath = "(//span[text()='Exception Request'])[2]")
+    @FindBy(xpath = "//span[contains(text(),'Exception Request')]")
     WebElement exceptionRequest;
 
     @FindBy(xpath = "//input[contains(@id,'ExceptionDate')]")

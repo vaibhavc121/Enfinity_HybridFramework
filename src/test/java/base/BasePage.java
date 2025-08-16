@@ -73,7 +73,7 @@ public class BasePage
         */
 
         waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-grid-light']")).click();
-        //waitTS(1);
+        waitTS(1);
     }
 
     public static void clickOnModule(String moduleName)
@@ -518,7 +518,14 @@ public class BasePage
             BaseTest.log("clickOnEdit");
         }
         waitTS(5);
-        waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        try
+        {
+            waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[1]")).click();
+        } catch (Exception e)
+        {
+            waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        }
+
         BaseTest.log("clciked on setting");
         waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
         BaseTest.log("clicked on delete");
@@ -562,7 +569,14 @@ public class BasePage
         waitTS(5);
 
         // Click on menu image icon
-        waitForElement1(By.xpath("//img[@id='MainMenu_DXI26_PImg']")).click();
+        try
+        {
+            waitForElement1(By.xpath("(//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')])[1]")).click();
+        } catch (Exception e)
+        {
+            waitForElement1(By.xpath("//img[@id='MainMenu_DXI16_PImg']")).click();
+        }
+
         waitTS(2);
         BaseTest.log("Clicked on context menu");
 
@@ -604,7 +618,13 @@ public class BasePage
         }
 
         // Delete the transaction
-        waitForElement1(By.xpath("//img[@id='MainMenu_DXI26_PImg']")).click();
+        try
+        {
+            waitForElement1(By.xpath("(//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')])[1]")).click();
+        } catch (Exception e)
+        {
+            waitForElement1(By.xpath("//img[@id='MainMenu_DXI16_PImg']")).click();
+        }
         waitTS(2);
         BaseTest.log("clicked on context menu");
 
@@ -632,7 +652,7 @@ public class BasePage
                 waitForElement1(By.xpath("(//tr)[6]//td[1]")).click();
             } else
             {
-                waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
+                waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
             }
         } catch (Exception e)
         {
@@ -644,10 +664,24 @@ public class BasePage
             clickOnViewListing();
         } catch (Exception e)
         {
+            waitForElement1(By.xpath("(//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')])[1]")).click();
             clickOnEdit();
         }
         waitTS(5);
-        waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[8]")).click();
+        try
+        {
+            waitForElement1(By.xpath("(//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')])[1]")).click();
+        } catch (Exception e)
+        {
+            try
+            {
+                waitForElement1(By.xpath("//img[@id='MainMenu_DXI26_PImg']")).click();
+            } catch (Exception e1)
+            {
+                waitForElement1(By.xpath("//img[@id='MainMenu_DXI16_PImg']")).click();
+            }
+        }
+
         waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
         waitTS(1);
         pressKey("enter");

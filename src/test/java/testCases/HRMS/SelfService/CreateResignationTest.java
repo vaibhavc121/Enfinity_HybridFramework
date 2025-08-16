@@ -9,43 +9,43 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class CreateResignationTest extends BaseTest
 {
-	@Test(groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
-	public void createResignation()
-	{
-		try
-		{
-			String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-			List<ResignationModel> resignationData = JsonUtils.convertJsonListDataModel(selfServiceFile,
-					"createResignation", ResignationModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createResignation()
+    {
+        try
+        {
+            String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<ResignationModel> resignationData = JsonUtils.convertJsonListDataModel(selfServiceFile,
+                    "createResignation", ResignationModel.class);
 
-			// self service page
-			SelfServicePage ss = new SelfServicePage(driver);
-			ss.clickSelfService();
-			ss.clickTransactions();
+            // self service page
+            SelfServicePage ss = new SelfServicePage(driver);
+            ss.clickSelfService();
+            ss.clickTransactions();
 
-			// Resignation page
-			ResignationPage rp = new ResignationPage(driver);
+            // Resignation page
+            ResignationPage rp = new ResignationPage(driver);
 
-			for (ResignationModel resignation : resignationData)
-			{
-				// rp.scrollDownWebpage();
-				rp.clickResignation();
-				rp.clickNew();
-				rp.provideSubmittedDate(resignation.submittedDate);
-				rp.provideRemarks(resignation.remarks);
-				rp.clickOnSaveAndBack();
+            for (ResignationModel resignation : resignationData)
+            {
+                // rp.scrollDownWebpage();
+                rp.clickResignation();
+                rp.clickNew();
+                rp.provideSubmittedDate(resignation.submittedDate);
+                rp.provideRemarks(resignation.remarks);
+                rp.clickOnSaveAndBack();
 
-				Assert.assertTrue(rp.isTransactionCreated1());
-			}
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+                Assert.assertTrue(rp.isTransactionCreated1());
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

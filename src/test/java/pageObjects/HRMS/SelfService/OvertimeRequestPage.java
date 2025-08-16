@@ -26,7 +26,7 @@ public class OvertimeRequestPage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'OvertimeDate')]")
     WebElement overtimeDate;
 
-    @FindBy(xpath = "//div[@class='dx-dropdowneditor-icon']")
+    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[2]")
     private WebElement dateDD;
 
     @FindBy(xpath = "//input[contains(@id,'Hours')]")
@@ -65,6 +65,7 @@ public class OvertimeRequestPage extends BasePage
     {
         //clearAndProvide1(hours, value);
         //provideValue(hours, value);
+        waitTS(1);
         provideAndEnter(hours, value);
     }
 

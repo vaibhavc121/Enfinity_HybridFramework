@@ -61,9 +61,7 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on approve btn");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 7, 7));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -96,9 +94,7 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on leave");
                 BasePage.performAction(5, leave.employee, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -131,6 +127,8 @@ public class LeaveTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -170,7 +168,6 @@ public class LeaveTest extends BaseTest
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -203,9 +200,7 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -237,6 +232,8 @@ public class LeaveTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -276,7 +273,6 @@ public class LeaveTest extends BaseTest
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -309,9 +305,7 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -321,7 +315,7 @@ public class LeaveTest extends BaseTest
     //endregion
 
     //region Maternity Leave
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 5, enabled = true )
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 5, enabled = true)
     public void createMaternityLeave()
     {
         try
@@ -343,6 +337,8 @@ public class LeaveTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -382,7 +378,6 @@ public class LeaveTest extends BaseTest
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -415,9 +410,7 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -449,6 +442,8 @@ public class LeaveTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -488,7 +483,6 @@ public class LeaveTest extends BaseTest
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -521,9 +515,7 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -558,6 +550,8 @@ public class LeaveTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -598,7 +592,6 @@ public class LeaveTest extends BaseTest
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -631,9 +624,7 @@ public class LeaveTest extends BaseTest
                 logger.info("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -641,7 +632,4 @@ public class LeaveTest extends BaseTest
         }
     }
     //endregion
-
-
-
 }

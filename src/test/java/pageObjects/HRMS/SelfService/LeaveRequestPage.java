@@ -17,7 +17,7 @@ public class LeaveRequestPage extends BasePage
     }
 
     // Locators
-    @FindBy(xpath = "(//span[text()='Leave Request'])[2]")
+    @FindBy(xpath = "//span[contains(text(),'Leave Request')]")
     WebElement leaveRequest;
 
     @FindBy(xpath = "//p[@title='Sick Leave']")
@@ -64,7 +64,7 @@ public class LeaveRequestPage extends BasePage
 
     public void clickNew() throws InterruptedException
     {
-        plusBtn1.click();
+        clickOnNew();
         Thread.sleep(5000);
     }
 

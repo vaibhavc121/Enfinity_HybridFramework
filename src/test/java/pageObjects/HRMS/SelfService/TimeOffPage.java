@@ -18,7 +18,7 @@ public class TimeOffPage extends BasePage
 
     // Action Methods
 
-    @FindBy(xpath = "(//span[text()='Time Off'])[2]")
+    @FindBy(xpath = "//span[contains(text(),'Time Off')]")
     WebElement timeOff;
 
     @FindBy(xpath = "//input[contains(@id,'LateDate')]")

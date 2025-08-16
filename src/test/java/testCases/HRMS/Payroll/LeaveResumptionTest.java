@@ -44,6 +44,8 @@ public class LeaveResumptionTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -105,6 +107,9 @@ public class LeaveResumptionTest extends BaseTest
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
+
+                BasePage.clickMenuIcon();
+                log("clicked on menu icon");
 
                 hc.clickHRCore();
                 log("clicked on hr core link");
@@ -184,6 +189,8 @@ public class LeaveResumptionTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -250,6 +257,9 @@ public class LeaveResumptionTest extends BaseTest
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
+
+                BasePage.clickMenuIcon();
+                log("clicked on menu icon");
 
                 hc.clickHRCore();
                 log("clicked on hr core link");
@@ -326,6 +336,8 @@ public class LeaveResumptionTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -395,6 +407,9 @@ public class LeaveResumptionTest extends BaseTest
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
+
+                BasePage.clickMenuIcon();
+                log("clicked on menu icon");
 
                 hc.clickHRCore();
                 log("clicked on hr core link");
@@ -474,6 +489,8 @@ public class LeaveResumptionTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -543,6 +560,9 @@ public class LeaveResumptionTest extends BaseTest
                 log("assertion passed for leave resumption");
 
                 //verify the leave balance
+                BasePage.clickMenuIcon();
+                log("clicked on menu icon");
+
                 hc.clickHRCore();
                 log("clicked on hr core link");
 
@@ -618,6 +638,8 @@ public class LeaveResumptionTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -687,6 +709,9 @@ public class LeaveResumptionTest extends BaseTest
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
+
+                BasePage.clickMenuIcon();
+                log("clicked on menu icon");
 
                 hc.clickHRCore();
                 log("clicked on hr core link");
@@ -763,6 +788,8 @@ public class LeaveResumptionTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
+            BasePage.clickMenuIcon();
+            logger.info("clicked on menu icon");
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
@@ -832,6 +859,9 @@ public class LeaveResumptionTest extends BaseTest
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
+
+                BasePage.clickMenuIcon();
+                log("clicked on menu icon");
 
                 hc.clickHRCore();
                 log("clicked on hr core link");

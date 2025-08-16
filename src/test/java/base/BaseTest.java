@@ -266,7 +266,7 @@ public class BaseTest
     @AfterClass(groups = {"regression", "datadriven", "functional"})
     public void teardown()
     {
-        logger.info("--test execution completed--");
+        //logger.info("--test execution completed--");
         driver.quit();
     }
     //endregion
