@@ -185,8 +185,8 @@ public class PenaltyTest extends BaseTest
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
 
-                BasePage.performAction(6, penalty.employee, "Amend");
-                Assert.assertFalse(BasePage.validateListing(penalty.employee, 6, 6));
+                BasePage.performAction(7, penalty.employee, "Amend");
+                Assert.assertFalse(BasePage.validateListing(penalty.employee, 7, 7));
                 log("assertion passed: Penalty in Amt deleted successfully");
             }
         } catch (Exception e)

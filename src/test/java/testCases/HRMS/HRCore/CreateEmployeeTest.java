@@ -12,62 +12,94 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class CreateEmployeeTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createEmployee()
-	{
-		try
-		{
-			String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
-			List<EmpModel> employeeInfo = JsonUtils.convertJsonListDataModel(employeeFile, "newEmployee",
-					EmpModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createEmployee()
+    {
+        try
+        {
+            String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
+            List<EmpModel> employeeInfo = JsonUtils.convertJsonListDataModel(employeeFile, "newEmployee",
+                    EmpModel.class);
 
-			HRCorePage hc = new HRCorePage(driver);
-			hc.clickHRCore();
-			hc.clickSetupForm();
+            HRCorePage hc = new HRCorePage(driver);
+            hc.clickHRCore();
+            log("Clicked on HR Core");
+            hc.clickSetupForm();
+            log("Clicked on Setup Form");
 
-			SetupPage sp = new SetupPage(driver);
-			sp.clickEmployee();
-			Thread.sleep(2000);
+            SetupPage sp = new SetupPage(driver);
+            sp.clickEmployee();
+            log("Clicked on Employee");
+            Thread.sleep(2000);
 
-			EmployeePage ep = new EmployeePage(driver);
+            EmployeePage ep = new EmployeePage(driver);
 
-			for (EmpModel employee : employeeInfo)
-			{
-				ep.clickNewBtn();
-				ep.provideWorkEmail(employee.email);
-				ep.provideName(employee.name);
-				// ep.clickMgrDropdown();
-				// ep.selectMgr();
-				ep.provideMobileNumber(employee.mobile);
-				ep.provideDOJ(employee.DOJ);
+            for (EmpModel employee : employeeInfo)
+            {
+                ep.clickNewBtn();
+                log("Clicked on New Button");
 
-				ep.selectDepartment(employee.department);
-				ep.selectDesignation(employee.designation);
-				// ep.clearPayrollSet();
-				ep.selectPayrollSet(employee.payrollSet);
-				ep.selectCalendar(employee.calendar);
-				ep.selectIndemnity(employee.indemnity);
-				ep.selectGrade(employee.grade);
-				ep.selectGender(employee.gender);
-				ep.selectReligion(employee.religion);
-				ep.selectMaritalStatus(employee.maritalStatus);
+                ep.provideWorkEmail(employee.email);
+                log("provided work email: " + employee.email);
 
-				ep.clickSave();
+                ep.provideName(employee.name);
+                log("provided name: " + employee.name);
 
-				Assert.assertTrue(ep.validate(employee.name));
-			}
+                // ep.clickMgrDropdown();
+                // ep.selectMgr();
+                ep.provideMobileNumber(employee.mobile);
+                log("provided mobile number: " + employee.mobile);
 
-			// ClassicAssert.isTrue(ep.isEmployeeCreated(name));
+                ep.provideDOJ(employee.DOJ);
+                log("provided date of joining: " + employee.DOJ);
 
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
+                ep.selectDepartment(employee.department);
+                log("selected department: " + employee.department);
 
+                ep.selectDesignation(employee.designation);
+                log("selected designation: " + employee.designation);
+
+                // ep.clearPayrollSet();
+                ep.selectPayrollSet(employee.payrollSet);
+                log("selected payroll set: " + employee.payrollSet);
+
+                ep.selectCalendar(employee.calendar);
+                log("selected calendar: " + employee.calendar);
+
+                ep.selectIndemnity(employee.indemnity);
+                log("selected indemnity: " + employee.indemnity);
+
+                ep.selectGrade(employee.grade);
+                log("selected grade: " + employee.grade);
+
+                ep.selectGender(employee.gender);
+                log("selected gender: " + employee.gender);
+
+                ep.selectReligion(employee.religion);
+                log("selected religion: " + employee.religion);
+
+                ep.selectMaritalStatus(employee.maritalStatus);
+                log("selected marital status: " + employee.maritalStatus);
+
+                ep.clickSave();
+                log("Clicked on Save Button");
+
+                Assert.assertTrue(ep.validate(employee.name),
+                        "Employee creation failed for: " + employee.name);
+                log("Verified: Employee created successfully with name: " + employee.name);
+            }
+
+            // ClassicAssert.isTrue(ep.isEmployeeCreated(name));
+
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

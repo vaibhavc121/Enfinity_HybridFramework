@@ -16,7 +16,7 @@ public class PayrollPage extends BasePage
         // TODO Auto-generated constructor stub
     }
 
-    @FindBy(xpath = "//span[normalize-space()='Payroll']")
+    @FindBy(xpath = "//i[@class='payroll-module-single-color-icon']")
     WebElement payroll;
 
     @FindBy(xpath = "//div[normalize-space()='Transactions']")

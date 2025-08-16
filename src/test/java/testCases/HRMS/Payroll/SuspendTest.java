@@ -57,11 +57,10 @@ public class SuspendTest extends BaseTest
                 sp.clickViewApproveBack();
                 log("clicked on view approve button");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(suspend.employee, 6, 6,suspend.suspendType, 7,7),
+                Assert.assertTrue(BasePage.validateListing2Fields(suspend.employee, 6, 6, suspend.suspendType, 7, 7),
                         "Suspend transaction not created for employee: " + suspend.employee);
                 log("Suspend transaction created successfully for employee: " + suspend.employee);
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -100,7 +99,7 @@ public class SuspendTest extends BaseTest
                 sp.provideReleaseSuspendDate(suspend.releaseSuspendDate);
                 log("provided release suspend date");
 
-                BasePage.clickOnView();
+                BasePage.clickOnViewTxn();
                 log("clicked on view button");
 
                 BasePage.waitForElement1(By.xpath("(//img[@class='dxWeb_mAdaptiveMenu_Office365 dxm-pImage'])[1]")).click();
@@ -129,7 +128,6 @@ public class SuspendTest extends BaseTest
                 Assert.assertTrue(sp.validateMsg());
                 log("Assertion passed: Suspend transaction released successfully for employee: " + suspend.employee);
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

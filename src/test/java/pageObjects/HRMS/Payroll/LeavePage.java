@@ -16,120 +16,120 @@ import utilities.DateUtils;
 public class LeavePage extends BasePage
 {
 
-	public LeavePage(WebDriver driver)
-	{
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+    public LeavePage(WebDriver driver)
+    {
+        super(driver);
+        // TODO Auto-generated constructor stub
+    }
 
-	//region Locators
-	@FindBy(xpath = "(//span[text()='Leave'])[2]")
-	WebElement leave;
+    //region Locators
+    @FindBy(xpath = "//span[@class='dx-vam'][normalize-space()='Leave']")
+    WebElement leave;
 
-	@FindBy(xpath = "//input[@id='Leave.EmployeeIdLookup_I']")
-	WebElement empdd;
+    @FindBy(xpath = "//input[@id='Leave.EmployeeIdLookup_I']")
+    WebElement empdd;
 
-	@FindBy(xpath = "//input[@id='Leave.EffectiveDate_I']")
-	WebElement effectiveDate;
+    @FindBy(xpath = "//input[@id='Leave.EffectiveDate_I']")
+    WebElement effectiveDate;
 
-	@FindBy(xpath = "//input[@id='Leave.LeaveTypeIdLookup_I']")
-	WebElement leaveTypeDD;
+    @FindBy(xpath = "//input[@id='Leave.LeaveTypeIdLookup_I']")
+    WebElement leaveTypeDD;
 
-	@FindBy(xpath="//img[@id='Leave.LeaveTypeIdLookup_B-1Img']") WebElement leaveTypeDD1;
+    @FindBy(xpath = "//img[@id='Leave.LeaveTypeIdLookup_B-1Img']")
+    WebElement leaveTypeDD1;
 
-	@FindBy(xpath = "//input[@id='Leave.FromDate_I']")
-	WebElement fromDate;
+    @FindBy(xpath = "//input[@id='Leave.FromDate_I']")
+    WebElement fromDate;
 
-	@FindBy(xpath = "//input[@id='Leave.UptoDate_I']")
-	WebElement uptoDate;
+    @FindBy(xpath = "//input[@id='Leave.UptoDate_I']")
+    WebElement uptoDate;
 
-	@FindBy(xpath="//span[normalize-space()='Edit Resumption']") WebElement editResumption;
-	@FindBy(xpath="//span[normalize-space()='Resume']") WebElement resume;
-	//endregion
+    @FindBy(xpath = "//span[normalize-space()='Edit Resumption']")
+    WebElement editResumption;
+    @FindBy(xpath = "//span[normalize-space()='Resume']")
+    WebElement resume;
+    //endregion
 
+    //region Action Methods
+    public void clkLeave()
+    {
+        leave.click();
+    }
 
-	//region Action Methods
-	public void clkLeave()
-	{
-		leave.click();
-	}
+    public void clkNewBtn()
+    {
+        clickOnNew();
+    }
 
-	public void clkNewBtn()
-	{
-		clickOnNew();
-	}
+    public void provideEmp(String value)
+    {
+        clearAndProvide1(empdd, value);
+    }
 
-	public void provideEmp(String value)
-	{
-		clearAndProvide1(empdd, value);
-	}
+    public void provideEffectiveDt(String value)
+    {
+        selectDropdownValue(value);
+    }
 
-	public void provideEffectiveDt(String value)
-	{
-		selectDropdownValue(value);
-	}
+    public void provideLeaveType(String value)
+    {
+        clickOnElement1(leaveTypeDD1);
+        waitTS(1);
+        clickOnElement1(leaveTypeDD1);
+        waitTS(1);
+        clickOnElement1(leaveTypeDD1);
+        waitTS(1);
+        selectDropdownValue(value);
+        // clearAndProvide1(leaveTypeDD, value);
+    }
 
-	public void provideLeaveType(String value)
-	{
-		clickOnElement1(leaveTypeDD1);
-		waitTS(1);
-		clickOnElement1(leaveTypeDD1);
-		waitTS(1);
-		clickOnElement1(leaveTypeDD1);
-		waitTS(1);
-		selectDropdownValue(value);
-		// clearAndProvide1(leaveTypeDD, value);
-	}
+    public void provideFromDt(String value)
+    {
+        clearAndProvide1(fromDate, value);
+    }
 
-	public void provideFromDt(String value)
-	{
-		clearAndProvide1(fromDate, value);
-	}
+    public void provideUpToDt(String value)
+    {
+        clearAndProvide1(uptoDate, value);
+    }
 
-	public void provideUpToDt(String value)
-	{
-		clearAndProvide1(uptoDate, value);
-	}
+    public void provideFromDate()
+    {
+        clearAndProvide1(fromDate, DateUtils.getCurrentDate("dd-MM-yyyy"));
+    }
 
-	public void provideFromDate()
-	{
-		clearAndProvide1(fromDate, DateUtils.getCurrentDate("dd-MM-yyyy"));
-	}
+    public void provideUpToDate()
+    {
+        clearAndProvide1(uptoDate, DateUtils.getCurrentDate("dd-MM-yyyy"));
+    }
 
-	public void provideUpToDate()
-	{
-		clearAndProvide1(uptoDate, DateUtils.getCurrentDate("dd-MM-yyyy"));
-	}
+    public void providePaymentType(String value)
+    {
+        selectDropdownValueOffice365(value);
+    }
 
-	public void providePaymentType(String value)
-	{
-		selectDropdownValueOffice365(value);
-	}
+    public void clkView()
+    {
+        clickOnViewTxn();
+    }
 
-	public void clkView()
-	{
-		clickOnView();
-	}
+    public void clkApproveBack()
+    {
+        clickApproveAndBack();
+    }
 
-	public void clkApproveBack()
-	{
-		clickApproveAndBack();
-	}
+    public void clickApprove()
+    {
+        clickOnApprove();
+    }
+    public void clickEditResumption()
+    {
+        clickOnElement1(editResumption);
+    }
+    public void clickResume()
+    {
+        clickOnElement1(resume);
+    }
 
-	public void clickApprove()
-	{
-		clickOnApprove();
-	}
-	public void clickEditResumption()
-	{
-		clickOnElement1(editResumption);
-	}
-	public void clickResume()
-	{
-		clickOnElement1(resume);
-	}
-
-	//endregion
-
-
+    //endregion
 }

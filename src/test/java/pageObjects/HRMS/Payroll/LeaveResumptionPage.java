@@ -14,9 +14,12 @@ public class LeaveResumptionPage extends BasePage
     }
 
     //region Locators
-    @FindBy(xpath = "(//input[contains(@id,'ActualResumptionDate')])[2]") WebElement resumptionDate;
-    @FindBy(xpath = "//input[contains(@id, 'ResumePaidDays')]") WebElement paidDays;
-    @FindBy(xpath = "//input[contains(@id,'ResumeGrantDays')]") WebElement grantDays;
+    @FindBy(xpath = "(//input[contains(@id,'ActualResumptionDate')])[2]")
+    WebElement resumptionDate;
+    @FindBy(xpath = "//input[contains(@id, 'ResumePaidDays')]")
+    WebElement paidDays;
+    @FindBy(xpath = "//input[contains(@id,'ResumeGrantDays')]")
+    WebElement grantDays;
 
     //endregion
 
@@ -37,7 +40,7 @@ public class LeaveResumptionPage extends BasePage
     }
     public void clickView()
     {
-        clickOnView();
+        clickOnViewTxn();
     }
 
     //endregion

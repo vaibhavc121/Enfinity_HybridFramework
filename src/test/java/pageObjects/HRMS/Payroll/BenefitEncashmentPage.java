@@ -118,7 +118,7 @@ public class BenefitEncashmentPage extends BasePage
 
     public void clkView()
     {
-        clickOnView();
+        clickOnViewTxn();
     }
 
     public void clkApproveBack() throws InterruptedException

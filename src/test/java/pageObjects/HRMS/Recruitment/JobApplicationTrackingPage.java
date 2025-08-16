@@ -714,7 +714,7 @@ public class JobApplicationTrackingPage extends BasePage
                 clickOnElement1(salaryComponentsSection);
                 BaseTest.log("Clicked on Salary Components Section");
 
-                clickOnView();
+                clickOnViewTxn();
                 BaseTest.log("Clicked on View button");
 
                 clickOnEdit();
@@ -764,7 +764,7 @@ public class JobApplicationTrackingPage extends BasePage
 
                 //endregion
 
-                clickOnView();
+                clickOnViewTxn();
                 BaseTest.log("Clicked on View button");
 
                 clickOnElement1(generateOffer);

@@ -26,7 +26,9 @@ public class CreateBenefitClaimTest extends BaseTest
             // self service page
             SelfServicePage ss = new SelfServicePage(driver);
             ss.clickSelfService();
+            log("Clicked on Self Service module");
             ss.clickTransactions();
+            log("Clicked on Transactions");
 
             // Benefit Claim page
             BenefitClaimPage bc = new BenefitClaimPage(driver);

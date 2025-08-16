@@ -7,6 +7,7 @@ import base.BasePage;
 import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel.LeaveRequestModel;
 import pageObjects.HRMS.Global.NotificationPage;
+import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.SelfService.LeaveRequestPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
@@ -69,12 +70,12 @@ public class VerifyApproveWorkflowTest extends BaseTest
 
             // approve the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
-            NotificationPage np = new NotificationPage(driver);
+            TopNavigationBar tn = new TopNavigationBar(driver);
             for (LeaveRequestModel leaveRequest : leaveRequestData)
             {
-                np.clickBellIcon();
+                tn.clickBellIcon();
                 log("clicked on Bell Icon");
-                np.isLeaveDataCorrect(leaveRequest.expEmpName, "Approve");
+                tn.isLeaveDataCorrect(leaveRequest.expEmpName, "Approve");
             }
 
             // amend the txn

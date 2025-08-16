@@ -87,7 +87,9 @@ public class AttendanceTest extends BaseTest
             // AttendancePage
             AttendancePage ap = new AttendancePage(driver);
             ap.clickAttendance();
+            log("Clicking on Attendance module");
             ap.clickRoster();
+            log("Clicking on Roster");
 
             // RosterPage
             RosterPage rp = new RosterPage(driver);
@@ -95,17 +97,40 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.RosterModel roster : rosterData)
             {
                 rp.clickNew();
-                rp.switchTheTab();
-                rp.provideFromDate(roster.fromDate);
-                rp.provideUptoDate(roster.upToDate);
-                rp.provideTimetable(roster.timetable);
-                rp.selectExcludeDay(roster.excludeDay);
-                rp.provideEmp(roster.applicableFor);
-                rp.clickOnGenerate();
-                rp.switchTheTab1();
-                rp.refreshBrowser();
+                log("clicked on New button");
 
-                Assert.assertTrue(rp.isTransactionCreated(roster.fromDate));
+                rp.switchTheTab();
+                log("tab switched to Roster tab");
+
+                rp.provideFromDate(roster.fromDate);
+                log("provided from date " + roster.fromDate);
+
+                rp.provideUptoDate(roster.upToDate);
+                log("provided up to date " + roster.upToDate);
+
+                rp.provideTimetable(roster.timetable);
+                log("provided timetable " + roster.timetable);
+
+                rp.selectExcludeDay(roster.excludeDay);
+                log("selected exclude day " + roster.excludeDay);
+
+                rp.provideEmp(roster.applicableFor);
+                log("provided applicable for " + roster.applicableFor);
+
+                rp.clickOnGenerate();
+                log("clicked on Generate button");
+
+                rp.switchTheTab1();
+                log("tab switched to Roster Details tab");
+
+                rp.refreshBrowser();
+                log("browser refreshed");
+
+                Assert.assertTrue(rp.isTransactionCreated(roster.fromDate),
+                        "Roster creation failed for " + roster.applicableFor + " from " + roster.fromDate + " to "
+                                + roster.upToDate);
+                log("Verified: Roster created successfully for " + roster.applicableFor + " from "
+                        + roster.fromDate + " to " + roster.upToDate);
             }
         } catch (Exception e)
         {

@@ -13,78 +13,77 @@ import utilities.CommonActions;
 public class LeaveEncashmentPage extends BasePage
 {
 
-	public LeaveEncashmentPage(WebDriver driver)
-	{
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+    public LeaveEncashmentPage(WebDriver driver)
+    {
+        super(driver);
+        // TODO Auto-generated constructor stub
+    }
 
-	@FindBy(xpath = "//span[normalize-space()='Leave Encashment']")
-	WebElement leaveEncashment;
+    @FindBy(xpath = "//span[normalize-space()='Leave Encashment']")
+    WebElement leaveEncashment;
 
-	@FindBy(xpath = "//input[@id='LeaveAdjustment.EffectiveDate_I']")
-	WebElement effectiveDate;
+    @FindBy(xpath = "//input[@id='LeaveAdjustment.EffectiveDate_I']")
+    WebElement effectiveDate;
 
-	@FindBy(xpath = "//input[@id='LeaveAdjustment.EmployeeIdLookup_I']")
-	WebElement empdd;
+    @FindBy(xpath = "//input[@id='LeaveAdjustment.EmployeeIdLookup_I']")
+    WebElement empdd;
 
-	@FindBy(xpath = "//input[@id='LeaveAdjustment.LeaveTypeIdLookup_I']")
-	WebElement leaveTypeDD;
+    @FindBy(xpath = "//input[@id='LeaveAdjustment.LeaveTypeIdLookup_I']")
+    WebElement leaveTypeDD;
 
-	@FindBy(xpath = "//input[@id='LeaveAdjustment.PaidDays_I']")
-	WebElement paidDaysTB;
+    @FindBy(xpath = "//input[@id='LeaveAdjustment.PaidDays_I']")
+    WebElement paidDaysTB;
 
-	@FindBy(xpath = "//td[normalize-space()='1']")
-	WebElement countPaidDays;
+    @FindBy(xpath = "//td[normalize-space()='1']")
+    WebElement countPaidDays;
 
-	public void clkLeaveEncashment()
-	{
-		leaveEncashment.click();
-	}
+    public void clkLeaveEncashment()
+    {
+        leaveEncashment.click();
+    }
 
-	public void clkNewBtn()
-	{
-		clickOnNew();
-	}
+    public void clkNewBtn()
+    {
+        clickOnNew();
+    }
 
-	public void provideEffectiveDate(String value)
-	{
-		clearAndProvide1(effectiveDate, value);
-	}
+    public void provideEffectiveDate(String value)
+    {
+        clearAndProvide1(effectiveDate, value);
+    }
 
-	public void provideEmp(String value)
-	{
-		clearAndProvide1(empdd, value);
-	}
+    public void provideEmp(String value)
+    {
+        clearAndProvide1(empdd, value);
+    }
 
-	public void provideLeaveType(String value)
-	{
-		clearAndProvide1(leaveTypeDD, value);
-	}
+    public void provideLeaveType(String value)
+    {
+        clearAndProvide1(leaveTypeDD, value);
+    }
 
-	public void providePaidDays(String value)
-	{
-		clearAndProvide1(paidDaysTB, value);
-	}
+    public void providePaidDays(String value)
+    {
+        clearAndProvide1(paidDaysTB, value);
+    }
 
-	public void selectPaymentType(String value)
-	{
-		selectDropdownValueOffice365(value);
-	}
+    public void selectPaymentType(String value)
+    {
+        selectDropdownValueOffice365(value);
+    }
 
-	public void provideRemarks(String value)
-	{
-		provideDescription(value);
-	}
+    public void provideRemarks(String value)
+    {
+        provideDescription(value);
+    }
 
-	public void clkViewBtn()
-	{
-		clickOnView();
-	}
+    public void clkViewBtn()
+    {
+        clickOnViewTxn();
+    }
 
-	public void clkApproveBtn() throws InterruptedException
-	{
-		clickOnApprove();
-	}
-
+    public void clkApproveBtn() throws InterruptedException
+    {
+        clickOnApprove();
+    }
 }

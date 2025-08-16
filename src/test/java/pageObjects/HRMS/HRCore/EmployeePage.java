@@ -808,7 +808,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//div[@aria-label='Ok']//div[@class='dx-button-content']")
     WebElement ok;
 
-    @FindBy(xpath = "//img[@class='account-image']")
+    @FindBy(xpath = "(//span[@class='user-image-placeholder'])[1]")
     WebElement rightAreaMenu;
 
     @FindBy(xpath = "//span[normalize-space()='Log Off']")

@@ -40,7 +40,7 @@ public class CreateLeaveEncashmentTest extends BaseTest
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
-            pp.clkPayroll();
+            BasePage.navigateToModule("Payroll");
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
@@ -68,7 +68,7 @@ public class CreateLeaveEncashmentTest extends BaseTest
                 le.clkApproveBtn();
                 logger.info("clicked on approve btn");
 
-                hc.clickHRCore();
+                BasePage.navigateToModule("HR Core");
                 hc.clickEmployee();
                 BasePage.navigateToEmployee("001");
                 ep.clkTimeOff();

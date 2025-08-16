@@ -24,6 +24,7 @@ import org.testng.Assert;
 
 import com.github.javafaker.Faker;
 
+import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.Login.LoginPage;
 import utilities.BrowserUtils;
@@ -58,6 +59,7 @@ public class BasePage
     }
     public static void clickMenuIcon()
     {
+        /*
         List<WebElement> elements = driver.findElements(By.xpath("//label[contains(text(),'Apps')]"));
         boolean value = !elements.isEmpty() && elements.get(0).isDisplayed();
         if (!value)
@@ -68,7 +70,24 @@ public class BasePage
         {
             BaseTest.log("Menu is already opend, no need to click on it");
         }
+        */
+
+        waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-grid-light']")).click();
+        //waitTS(1);
+    }
+
+    public static void clickOnModule(String moduleName)
+    {
+        waitForElement1(By.xpath("//span[normalize-space()='" + moduleName + "']")).click();
+    }
+
+    public static void navigateToModule(String moduleName)
+    {
+        openSidebar();
+        waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-grid-light']")).click();
         waitTS(1);
+        clickOnModule(moduleName);
+        waitTS(2);
     }
     //endregion
 
@@ -160,7 +179,7 @@ public class BasePage
             selectRow();
             if (mode.contains("view"))
             {
-                clickOnView();
+                clickOnViewListing();
             } else
             {
                 clickOnEdit();
@@ -250,9 +269,14 @@ public class BasePage
         driver.navigate().back();
     }
 
-    public static void clickOnView()
+    public static void clickOnViewListing()
     {
         waitForElement1(By.xpath("//img[@id='MainMenu_DXI3_Img']")).click();
+    }
+
+    public static void clickOnViewTxn()
+    {
+        waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
     }
 
     public static void clickOnApprove()
@@ -300,7 +324,7 @@ public class BasePage
         waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
         waitTS(2);
         clickOnEdit();
-        clickOnView();
+        clickOnViewTxn();
         driver.navigate().back();
     }
 
@@ -337,13 +361,15 @@ public class BasePage
         List<WebElement> dropdownList = waitForElements2(By.xpath("//div[@class='dx-item dx-list-item']"));
         for (WebElement dropdownElement : dropdownList)
         {
-            String actualValue = dropdownElement.getText();
-            if (actualValue.contains(expectedValue))
+            String actualValue = dropdownElement.getText().trim().toLowerCase();
+            if (actualValue.contains(expectedValue.toLowerCase()))
             {
                 dropdownElement.click();
+                BaseTest.log("Value selected from result: " + expectedValue);
                 break;
             }
         }
+        BaseTest.log("No matching value found in result: " + expectedValue);
     }
 
     public static void selectDropdownValue(String value)
@@ -432,12 +458,14 @@ public class BasePage
 
     public static void globalSearch(String value)
     {
-        WebElement globalSearchInput = waitForElement1(By.id("GlobalSearch"));
+        /*        WebElement globalSearchInput = waitForElement1(By.id("GlobalSearch"));
         globalSearchInput.click();
         WebElement comboBoxInput = waitForElement1(By.xpath("//input[@role='combobox']"));
         comboBoxInput.sendKeys(value);
         waitTS(2);
-        selectDropdownOption(value);
+        selectDropdownOption(value);*/
+
+        TopNavigationBar.globalSearch(value);
     }
 
     public static void scrollDownWebPageSample()
@@ -473,7 +501,7 @@ public class BasePage
         waitTS(2);
         try
         {
-            waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
+            waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
             BaseTest.log("row selected");
         } catch (Exception e)
         {
@@ -482,7 +510,7 @@ public class BasePage
         }
         try
         {
-            clickOnView();
+            clickOnViewListing();
             BaseTest.log("clickOnView");
         } catch (Exception e)
         {
@@ -519,7 +547,7 @@ public class BasePage
         {
             try
             {
-                clickOnView();
+                clickOnViewListing();
             } catch (Exception e)
             {
                 clickOnElement(By.xpath("//img[@id='MainMenu_DXI4_Img']"));
@@ -534,9 +562,9 @@ public class BasePage
         waitTS(5);
 
         // Click on menu image icon
-        waitForElement1(By.xpath("//img[@id='MainMenu_DXI18_PImg']")).click();
+        waitForElement1(By.xpath("//img[@id='MainMenu_DXI26_PImg']")).click();
         waitTS(2);
-        BaseTest.log("Clicked on menu image icon");
+        BaseTest.log("Clicked on context menu");
 
         //if action is cancel
         if (action.equalsIgnoreCase("Cancel"))
@@ -576,9 +604,9 @@ public class BasePage
         }
 
         // Delete the transaction
-        waitForElement1(By.xpath("//img[@id='MainMenu_DXI18_PImg']")).click();
+        waitForElement1(By.xpath("//img[@id='MainMenu_DXI26_PImg']")).click();
         waitTS(2);
-        BaseTest.log("clicked on menu/setting");
+        BaseTest.log("clicked on context menu");
 
         waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
         BaseTest.log("clicked on delete");
@@ -601,7 +629,7 @@ public class BasePage
         {
             if (ColumnIndex == 2)
             {
-                waitForElement1(By.xpath("(//tr)[12]//td[1]")).click();
+                waitForElement1(By.xpath("(//tr)[6]//td[1]")).click();
             } else
             {
                 waitForElement1(By.xpath("(//tr)[12]//td[2]")).click();
@@ -613,7 +641,7 @@ public class BasePage
         }
         try
         {
-            clickOnView();
+            clickOnViewListing();
         } catch (Exception e)
         {
             clickOnEdit();
@@ -686,8 +714,8 @@ public class BasePage
             {
                 try
                 {
-                    clickOnView();
-                } catch (Exception e)
+                    clickOnViewListing();
+                } catch (Exception e1)
                 {
                     clickOnElement(By.xpath("//img[@id='MainMenu_DXI4_Img']"));
                 }

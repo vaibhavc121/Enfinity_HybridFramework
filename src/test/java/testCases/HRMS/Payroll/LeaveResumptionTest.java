@@ -88,7 +88,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.switchTab();
                 log("switched to leave resumption tab");
 
-                BasePage.clickOnView();
+                BasePage.clickOnViewTxn();
                 log("clicked on view btn");
 
                 BasePage.waitTS(2);
@@ -103,7 +103,7 @@ public class LeaveResumptionTest extends BaseTest
                 BrowserUtils.navigateBack(driver);
                 log("navigated back to leave page");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6,6));
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
 
                 hc.clickHRCore();
@@ -117,10 +117,7 @@ public class LeaveResumptionTest extends BaseTest
                 log("clicked on time off tab");
 
                 Assert.assertEquals(ep.extractValueFromText(3), expLeaveBal);
-
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -154,9 +151,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.performAction(5, leave.employee1, "Cancel Resumption");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -237,7 +232,7 @@ public class LeaveResumptionTest extends BaseTest
                 lrp.provideResumptionDate(leave.expEarlyResumptionDate);
                 log("provided resumption date");
 
-                BasePage.clickOnView();
+                BasePage.clickOnViewTxn();
                 log("clicked on view btn");
 
                 BasePage.waitTS(2);
@@ -253,7 +248,7 @@ public class LeaveResumptionTest extends BaseTest
                 BrowserUtils.navigateBack(driver);
                 log("navigated back to leave page");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6,6));
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
 
                 hc.clickHRCore();
@@ -267,10 +262,7 @@ public class LeaveResumptionTest extends BaseTest
                 log("clicked on time off tab");
 
                 Assert.assertEquals(ep.extractValueFromText(3), expLeaveBal);
-
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -304,9 +296,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.performAction(5, leave.employee1, "Cancel Resumption");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -387,7 +377,7 @@ public class LeaveResumptionTest extends BaseTest
                 lrp.providePaidDays(leave.paidDays);
                 log("provided paid days");
 
-                BasePage.clickOnView();
+                BasePage.clickOnViewTxn();
                 log("clicked on view btn");
 
                 BasePage.waitTS(2);
@@ -403,7 +393,7 @@ public class LeaveResumptionTest extends BaseTest
                 BrowserUtils.navigateBack(driver);
                 log("navigated back to leave page");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6,6));
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
 
                 hc.clickHRCore();
@@ -417,10 +407,7 @@ public class LeaveResumptionTest extends BaseTest
                 log("clicked on time off tab");
 
                 Assert.assertEquals(ep.extractValueFromText(3), expLeaveBal);
-
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -454,9 +441,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.performAction(5, leave.employee1, "Cancel Resumption");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -538,7 +523,7 @@ public class LeaveResumptionTest extends BaseTest
                 lrp.provideResumptionDate(leave.expLateResumptionDate);
                 log("provided resumption date");
 
-                BasePage.clickOnView();
+                BasePage.clickOnViewTxn();
                 log("clicked on view btn");
 
                 BasePage.waitTS(2);
@@ -554,7 +539,7 @@ public class LeaveResumptionTest extends BaseTest
                 BrowserUtils.navigateBack(driver);
                 log("navigated back to leave page");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6,6));
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
 
                 //verify the leave balance
@@ -569,10 +554,7 @@ public class LeaveResumptionTest extends BaseTest
                 log("clicked on time off tab");
 
                 Assert.assertEquals(ep.extractValueFromText(3), expLeaveBal);
-
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -606,9 +588,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.performAction(5, leave.employee1, "Cancel Resumption");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -634,7 +614,7 @@ public class LeaveResumptionTest extends BaseTest
             EmployeePage1 ep = new EmployeePage1(driver);
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
-            double expLeaveBal = LeaveBal-2;
+            double expLeaveBal = LeaveBal - 2;
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
@@ -689,7 +669,7 @@ public class LeaveResumptionTest extends BaseTest
                 lrp.providePaidDays(leave.paidDays);
                 log("provided paid days");
 
-                BasePage.clickOnView();
+                BasePage.clickOnViewTxn();
                 log("clicked on view btn");
 
                 BasePage.waitTS(2);
@@ -705,7 +685,7 @@ public class LeaveResumptionTest extends BaseTest
                 BrowserUtils.navigateBack(driver);
                 log("navigated back to leave page");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6,6));
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
 
                 hc.clickHRCore();
@@ -719,10 +699,7 @@ public class LeaveResumptionTest extends BaseTest
                 log("clicked on time off tab");
 
                 Assert.assertEquals(ep.extractValueFromText(3), expLeaveBal);
-
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -756,9 +733,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.performAction(5, leave.employee1, "Cancel Resumption");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -784,7 +759,7 @@ public class LeaveResumptionTest extends BaseTest
             EmployeePage1 ep = new EmployeePage1(driver);
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
-            double expLeaveBal = LeaveBal-1;
+            double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
@@ -839,7 +814,7 @@ public class LeaveResumptionTest extends BaseTest
                 lrp.provideGrantDays(leave.grantDays);
                 log("provided paid days");
 
-                BasePage.clickOnView();
+                BasePage.clickOnViewTxn();
                 log("clicked on view btn");
 
                 BasePage.waitTS(2);
@@ -855,7 +830,7 @@ public class LeaveResumptionTest extends BaseTest
                 BrowserUtils.navigateBack(driver);
                 log("navigated back to leave page");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6,6));
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
                 log("assertion passed for leave resumption");
 
                 hc.clickHRCore();
@@ -869,10 +844,7 @@ public class LeaveResumptionTest extends BaseTest
                 log("clicked on time off tab");
 
                 Assert.assertEquals(ep.extractValueFromText(3), expLeaveBal);
-
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -906,9 +878,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.performAction(5, leave.employee1, "Cancel Resumption");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
-
             }
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);
@@ -917,6 +887,4 @@ public class LeaveResumptionTest extends BaseTest
     }
 
     //endregion
-
-
 }

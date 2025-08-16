@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
+import utilities.BrowserUtils;
 import utilities.DataUtils;
 
 public class EmployeePage1 extends BasePage
@@ -110,6 +111,10 @@ public class EmployeePage1 extends BasePage
         // String numberPart = bal.substring(0, 5);
         double expBal = Double.parseDouble(number);
         // expBal += 1;
+        BrowserUtils.navigateBack(driver);
+        BaseTest.log("navigating back to employee page");
+        BrowserUtils.navigateBack(driver);
+        BaseTest.log("navigating back to employee page");
         return expBal;
     }
 

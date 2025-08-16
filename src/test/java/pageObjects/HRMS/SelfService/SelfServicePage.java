@@ -21,7 +21,7 @@ public class SelfServicePage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Time Off']")
     WebElement timeOff;
 
-    @FindBy(xpath = "//span[text()='Transactions']")
+    @FindBy(xpath = "//div[normalize-space()='Transactions']")
     WebElement transactions;
 
     @FindBy(xpath = "//label[normalize-space()='My Approvals']")
