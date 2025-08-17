@@ -96,6 +96,8 @@ public class ExceptionRequestPage extends BasePage
         {
             JavaScriptUtils.clickElementByJavaScript(driver, calendarIcon);
         }
+
+        waitTS(2);
     }
 
     public void clickSaveBack()

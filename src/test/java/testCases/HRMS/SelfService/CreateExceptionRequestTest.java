@@ -1,5 +1,6 @@
 package testCases.HRMS.SelfService;
 
+import base.BasePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -26,6 +27,7 @@ public class CreateExceptionRequestTest extends BaseTest
 
             // self service page
             SelfServicePage ss = new SelfServicePage(driver);
+            BasePage.clickMenuIcon();
             ss.clickSelfService();
             log("clickSelfService");
 
@@ -55,8 +57,8 @@ public class CreateExceptionRequestTest extends BaseTest
                 er.provideRemarks(exception.remarks);
                 log("provided Remarks: " + exception.remarks);
 
-                er.clickSaveBack();
-                log("clickSaveBack");
+                BasePage.clickOnSaveAndSubmitBack();
+                log("clickOnSaveAndSubmitBack");
 
                 Assert.assertTrue(er.isTxnCreated(exception.exceptionDate));
                 log("Verified: Transaction created successfully for date: " + exception.exceptionDate);

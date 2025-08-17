@@ -39,6 +39,32 @@ public class MyApprovalsPage extends BasePage
             }
         }
         waitForElement(approve).click();
+        waitTS(3);
+        BaseTest.log("Clicked on Approve button");
+        BasePage.pressEnter();
+        BaseTest.log("pressed Enter to confirm approval");
+    }
+
+    public boolean isApproveButtonDisplay()
+    {
+        boolean status;
+        try
+        {
+            status = waitForElement1(By.xpath("(//span[@class='dx-button-text'][normalize-space()='Approve'])[2]")).isDisplayed();
+        } catch (Exception e)
+        {
+            status = false;
+        }
+
+        if (!status)
+        {
+            BaseTest.log("Approve button is not displayed, indicating that the transactions are bulk approved successfully.");
+            return true;
+        } else
+        {
+            BaseTest.log("Approve button is still displayed, indicating that the bulk approval failed.");
+            return false;
+        }
     }
 
     //endregion

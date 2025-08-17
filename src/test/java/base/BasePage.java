@@ -28,6 +28,7 @@ import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.Login.LoginPage;
 import utilities.BrowserUtils;
+import utilities.JavaScriptUtils;
 
 public class BasePage
 {
@@ -293,6 +294,14 @@ public class BasePage
         driver.navigate().back();
     }
 
+    public static void clickOnSaveAndSubmitBack()
+    {
+        WebElement element = waitForElement1(By.xpath("//span[normalize-space()='Save and Submit']"));
+        JavaScriptUtils.clickElementByJavaScript(driver, element);
+        waitTS(1);
+        driver.navigate().back();
+    }
+
     public static void clickOnSaveViewApproveBack()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
@@ -543,7 +552,14 @@ public class BasePage
         try
         {
             // Need to select row to click on view
-            waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
+            try
+            {
+                waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
+            } catch (Exception e)
+            {
+                waitForElement1(By.xpath("(//tr)[9]//td[2]")).click();
+            }
+
             BaseTest.log("clicked on row");
         } catch (Exception e)
         {

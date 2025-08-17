@@ -22,108 +22,27 @@ public class MyApprovalTest extends BaseTest
     {
         try
         {
-            //region Create Exception Request
-            String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-            List<SelfServiceModel.ExceptionRequestModel> exceptionRequestData = JsonUtils.convertJsonListDataModel(selfServiceFile,
-                    "createExceptionRequest", SelfServiceModel.ExceptionRequestModel.class);
-
             BasePage.logoutAndLogin("rohitc@test.com", "123");
 
-            // self service page
+            //region Pageobjects
             SelfServicePage ss = new SelfServicePage(driver);
-            ss.clickSelfService();
-            log("clickSelfService");
+            ExceptionRequestPage erp = new ExceptionRequestPage(driver);
+            TimeOffPage top = new TimeOffPage(driver);
+            CreateExceptionRequestTest er = new CreateExceptionRequestTest();
+            CreateTimeOffTest to = new CreateTimeOffTest();
+            //endregion
 
-            ss.clickTransactions();
-            log("clickTransactions");
-
-            // ExceptionRequest page
-            ExceptionRequestPage er = new ExceptionRequestPage(driver);
-
-            for (SelfServiceModel.ExceptionRequestModel exception : exceptionRequestData)
-            {
-                er.createExceptionRequest();
-                log("createExceptionRequest");
-
-                er.clickNew();
-                log("clickNew");
-
-                er.provideExceptionDate(exception.exceptionDate);
-                log("provided Exception Date: " + exception.exceptionDate);
-
-                er.provideLoginTime(exception.loginTime);
-                log("provided Login Time: " + exception.loginTime);
-
-                er.provideLogoutTime(exception.logotTime);
-                log("provided Logout Time: " + exception.logotTime);
-
-                er.provideRemarks(exception.remarks);
-                log("provided Remarks: " + exception.remarks);
-
-                er.clickSaveBack();
-                log("clickSaveBack");
-
-                //Assert.assertTrue(er.isTxnCreated(exception.exceptionDate));
-                if (er.isTxnCreated(exception.exceptionDate))
-                {
-                    log("Transaction created successfully for date: " + exception.exceptionDate);
-                } else
-                {
-                    throw new Exception("Transaction creation failed for date: " + exception.exceptionDate);
-                }
-            }
+            //region Create Exception Request
+            er.createExceptionRequest();
             //endregion
 
             //region Create TimeOff Request
-            String timeOffFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-            List<SelfServiceModel.TimeOffModel> timeOffData = JsonUtils.convertJsonListDataModel(timeOffFile, "createTimeOff",
-                    SelfServiceModel.TimeOffModel.class);
-
-            // self service page
-            ss.clickSelfService();
-            ss.clickTransactions();
-
-            // time off page
-            TimeOffPage to = new TimeOffPage(driver);
-
-            for (SelfServiceModel.TimeOffModel timeOff : timeOffData)
-            {
-                to.clickTimeOff();
-                to.clickNew();
-                to.providePermissonDate(timeOff.permisionDate);
-                to.clickPersoanl();
-                // to.clickBusiness();
-                // to.clickLeave();
-                // to.clickFromTimeField();
-                // to.provideHrs(timeOff.getHrs());
-                // to.provideMinutes(timeOff.getMinutes());
-                // to.clickTimeNotation();
-                // to.selectTimeNotation();
-                // to.clickOk();
-                // issue
-                // to.clickUpToTimeField();
-                // to.provideUpTOHrs1();
-                // to.provideUpToHrs(timeOff.getUpTohrs());
-                // to.provideUpToMinutes(timeOff.getUpToMinutes());
-                // to.clickUpToTimeNotation();
-                // to.selectUpToTimeNotation();
-                // to.clickUpToOk();
-                to.enterDescription("test");
-                to.clickSave();
-
-                //Assert.assertTrue(to.isTxnCreated(timeOff.expPermisionDate));
-                if (to.isTxnCreated(timeOff.expPermisionDate))
-                {
-                    log("Transaction created successfully for date: " + timeOff.expPermisionDate);
-                } else
-                {
-                    throw new Exception("Transaction creation failed for date: " + timeOff.expPermisionDate);
-                }
-            }
+            to.createTimeOff();
             //endregion
 
             //region Bulk approve the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
+            BasePage.clickMenuIcon();
             ss.clickSelfService();
             log("clicked on Self Service");
             ss.clickMyApprovals();
@@ -131,6 +50,46 @@ public class MyApprovalTest extends BaseTest
 
             MyApprovalsPage ma = new MyApprovalsPage(driver);
             ma.bulkApproveRequest("Rohit Chavan");
+            //endregion
+
+            //region Assertion
+            Assert.assertTrue(ma.isApproveButtonDisplay(), "Bulk approval failed, approve button is still displayed.");
+            log("Verified: Transactions are bulk approved successfully");
+            //endregion
+
+            //region Delete Exception Request
+            // self service page
+            BasePage.clickMenuIcon();
+            ss.clickSelfService();
+            log("clickSelfService");
+
+            ss.clickTransactions();
+            log("clickTransactions");
+
+            erp.createExceptionRequest();
+            log("click Exception Request");
+
+            BasePage.performAction(6, "002", "Amend");
+            Assert.assertFalse(BasePage.validateListing("001", 6, 6), "Exception request not deleted successfully.");
+            log("Verified: Exception request deleted successfully");
+            //endregion
+
+            //region Delete TimeOff Request
+            BasePage.clickMenuIcon();
+            ss.clickSelfService();
+            ss.clickTransactions();
+
+            // time off page
+            top.clickTimeOff();
+            // to.selectRow();
+            // to.clickOnView();
+            // to.clickContextMenu();
+            // to.clickDelete();
+            // to.clickOk();
+            // BasePage.deleteTxn(8, "active");
+            BasePage.performAction(5, "002", "Amend");
+            Assert.assertFalse(BasePage.validateListing("001", 5, 5), "Time off request not deleted successfully.");
+            log("Verified: Time off request deleted successfully");
             //endregion
 
         } catch (Exception e)
