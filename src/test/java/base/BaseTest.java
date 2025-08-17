@@ -241,9 +241,6 @@ public class BaseTest
         lp.clkSignin();
         log("clicked on sign in button");
 
-        lp.clickSkip();
-        log("clicked on skip button");
-
         //endregion
         //endregion
 

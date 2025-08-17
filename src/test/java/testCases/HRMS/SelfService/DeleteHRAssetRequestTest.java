@@ -11,34 +11,35 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class DeleteHRAssetRequestTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, description = "dont check delete bcos i am checking asset return so txn cannot keep active for delete", enabled = true)
-	public void deleteHRAssetRequest()
-	{
-		try
-		{
-			String hrAssetRequestFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-			List<HRAssetRequestModel> hrAssetRequestData = JsonUtils.convertJsonListDataModel(hrAssetRequestFile,
-					"createHRAssetRequest", HRAssetRequestModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, description = "dont check delete bcos i am checking asset return so txn cannot keep active for delete", enabled = true, invocationCount = 4)
+    public void deleteHRAssetRequest()
+    {
+        try
+        {
+            String hrAssetRequestFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<HRAssetRequestModel> hrAssetRequestData = JsonUtils.convertJsonListDataModel(hrAssetRequestFile,
+                    "createHRAssetRequest", HRAssetRequestModel.class);
 
-			// self service page
-			SelfServicePage ss = new SelfServicePage(driver);
-			ss.clickSelfService();
-			ss.clickTransactions();
+            // self service page
+            SelfServicePage ss = new SelfServicePage(driver);
+            ss.clickSelfService();
+            ss.clickTransactions();
 
-			// HR asset request page
-			HRAssetRequestPage ar = new HRAssetRequestPage(driver);
-			ar.clickHRAssetRequest();
-			ar.test();
-			BasePage.performAction(7, "Approved", "Amend");
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+            // HR asset request page
+            HRAssetRequestPage ar = new HRAssetRequestPage(driver);
+            ar.clickHRAssetRequest();
+            //ar.test();
+            //BasePage.performAction(7, "Approved", "Amend");
+            BasePage.performAction(7, "Active", "Delete");
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

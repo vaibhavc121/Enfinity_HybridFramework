@@ -56,12 +56,6 @@ public class LoginPage extends BasePage
         // bc.highlightElement(driver, signIn, false); // Remove highlight
     }
 
-    public void clickSkip()
-    {
-        waitTS(1);
-        waitForElement(skip).click();
-    }
-
     public void login(String uname, String pwd)
     {
         WebElement usernameField = driver.findElement(By.name("Username"));
