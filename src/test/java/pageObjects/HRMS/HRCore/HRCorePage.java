@@ -15,8 +15,9 @@ public class HRCorePage extends BasePage
         // TODO Auto-generated constructor stub
     }
 
+    //region Locators
     @FindBy(xpath = "//span[normalize-space()='HR Core']")
-    WebElement hRCore;
+    static WebElement hRCore;
 
     @FindBy(xpath = "//label[normalize-space()='Employee']")
     WebElement employee;
@@ -26,12 +27,14 @@ public class HRCorePage extends BasePage
 
     @FindBy(xpath = "//span[normalize-space()='Asset Issue']")
     WebElement assetIssue;
+    //endregion
 
-    public void clickHRCore()
+    //region Action Methods
+    public static void clickHRCore()
     {
+        BasePage.clickMenuIcon();
         highlightElement(driver, hRCore, true);
         clickOnElement1(hRCore);
-        // highlightElement(driver, hRCore, false); // Remove highlight
     }
 
     public void clickEmployee()
@@ -50,4 +53,5 @@ public class HRCorePage extends BasePage
     {
         clickOnElement1(assetIssue);
     }
+    //endregion
 }

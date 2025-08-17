@@ -9,6 +9,7 @@ import pageObjects.HRMS.HRCore.BankPage;
 import pageObjects.HRMS.HRCore.HRCorePage;
 import pageObjects.HRMS.HRCore.SetupPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
+import pageObjects.HRMS.SuccessionPlanning.SuccessionPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;

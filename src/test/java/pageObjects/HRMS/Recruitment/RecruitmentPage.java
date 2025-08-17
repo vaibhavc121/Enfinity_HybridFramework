@@ -16,7 +16,7 @@ public class RecruitmentPage extends BasePage
     }
 
     @FindBy(xpath = "//span[normalize-space()='Recruitment']")
-    private WebElement recruitment;
+    private static WebElement recruitment;
 
     @FindBy(xpath = "//label[normalize-space()='Job']")
     WebElement job;
@@ -37,9 +37,10 @@ public class RecruitmentPage extends BasePage
         }
     }
 
-    public void clickRecruitment()
+    public static void clickRecruitment()
     {
         waitTS(3);
+        BasePage.clickMenuIcon();
         try
         {
             clickOnElement1(recruitment);

@@ -7,13 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.WheelInput;
 import org.openqa.selenium.support.FindBy;
@@ -24,9 +18,17 @@ import org.testng.Assert;
 
 import com.github.javafaker.Faker;
 
+import pageObjects.HRMS.Attendance.AttendancePage;
 import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.HRCorePage;
+import pageObjects.HRMS.Learning.LearningPage;
 import pageObjects.HRMS.Login.LoginPage;
+import pageObjects.HRMS.Onboarding.OnboardingPage;
+import pageObjects.HRMS.Payroll.PayrollPage;
+import pageObjects.HRMS.Recruitment.RecruitmentPage;
+import pageObjects.HRMS.SelfService.SelfServicePage;
+import pageObjects.HRMS.SuccessionPlanning.SuccessionPage;
 import utilities.BrowserUtils;
 import utilities.JavaScriptUtils;
 
@@ -58,22 +60,102 @@ public class BasePage
             BaseTest.log("Sidebar is already opend, no need to click on sidebar/logo icon");
         }
     }
+
     public static void clickMenuIcon()
     {
+        openSidebar();
+        clickMenuIcon1();
+    }
+
+    public static void clickMenuIcon1()
+    {
         /*
-        List<WebElement> elements = driver.findElements(By.xpath("//label[contains(text(),'Apps')]"));
-        boolean value = !elements.isEmpty() && elements.get(0).isDisplayed();
-        if (!value)
+        public static void openMenuIfNotOpened1()
         {
-            waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-grid-light']")).click();
-            BaseTest.log("Clicked on menu icon to access the modules");
-        } else
+            try
+            {
+                // Check invisibility using JS instead of WebDriverWait
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+
+                // Execute JS to see if "Apps" label is visible in DOM
+                Boolean invisible = (Boolean) js.executeScript(
+                        "let el = document.evaluate(\"//label[contains(text(),'Apps')]\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
+                                "return (el === null || el.offsetParent === null);"
+                );
+
+                if (invisible)
+                {
+                    BaseTest.log("Clicked on menu icon to access the modules.");
+
+                    // Click the menu icon via JS
+                    js.executeScript(
+                            "document.evaluate(\"//i[@class='dx-icon dx-icon-grid-light']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();"
+                    );
+                } else
+                {
+                    BaseTest.log("Menu is already opened, no need to click on it.");
+                }
+            } catch (Exception e)
+            {
+                BaseTest.log("Menu is already opened, no need to click on it");
+            }
+        }
+
+        */
+
+        /*
+         public static void openMenuIfNotOpened2()
         {
-            BaseTest.log("Menu is already opend, no need to click on it");
+            try
+            {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+
+                // Use JS to check if the <label> containing 'Apps' is present and visible
+                Boolean isVisible = (Boolean) js.executeScript(
+                        "let el = document.evaluate(\"//label[contains(text(),'Apps')]\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
+                                "return (el !== null && el.offsetParent !== null);"
+                );
+
+                if (!isVisible)
+                {
+                    // Click the menu icon using JS
+                    WebElement menuIcon = (WebElement) js.executeScript(
+                            "return document.evaluate(\"//i[@class='dx-icon dx-icon-grid-light']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;"
+                    );
+                    menuIcon.click();
+
+                    BaseTest.log("Clicked on menu icon to access the modules");
+                } else
+                {
+                    BaseTest.log("Menu is already opened, no need to click on it");
+                }
+            } catch (Exception e)
+            {
+                BaseTest.log("Exception while checking or clicking menu: " + e.getMessage());
+            }
         }
         */
 
-        waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-grid-light']")).click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Check if Apps label exists in DOM
+        String appsText = (String) js.executeScript(
+                "var el = document.evaluate(\"//label[contains(text(),'Apps')]\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
+                        "return el ? el.textContent.trim() : '';"
+        );
+
+        if (appsText == null || !appsText.contains("Apps"))
+        {
+            // Menu not opened, so click menu icon immediately
+            js.executeScript(
+                    "var el = document.evaluate(\"//i[@class='dx-icon dx-icon-grid-light']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
+                            "if (el) el.click();"
+            );
+            BaseTest.log("Clicked on menu icon to access the modules");
+        } else
+        {
+            BaseTest.log("Menu is already opened, no need to click on it");
+        }
         waitTS(1);
     }
 
@@ -85,11 +167,48 @@ public class BasePage
     public static void navigateToModule(String moduleName)
     {
         openSidebar();
-        waitForElement1(By.xpath("//i[@class='dx-icon dx-icon-grid-light']")).click();
-        waitTS(1);
+        clickMenuIcon();
         clickOnModule(moduleName);
         waitTS(2);
     }
+
+    //region Modules
+    public static void clickOnHRCore()
+    {
+        HRCorePage.clickHRCore();
+    }
+    public static void clickOnPayroll()
+    {
+        PayrollPage.clkPayroll();
+    }
+    public static void clickOnSelfService()
+    {
+        SelfServicePage.clickSelfService();
+    }
+    public static void clickOnAttendance()
+    {
+        AttendancePage.clickAttendance();
+    }
+    public static void clickOnLearning()
+    {
+        LearningPage.clickLearning();
+    }
+    public static void clickOnRecruitment()
+    {
+        RecruitmentPage.clickRecruitment();
+    }
+    public static void clickOnOnboarding()
+    {
+        OnboardingPage.clickOnboarding();
+    }
+
+    public static void clickOnSuccessionPlanning()
+    {
+        SuccessionPage.clickSuccessionPlanning();
+    }
+
+    //endregion
+
     //endregion
 
     // region For fake data generation

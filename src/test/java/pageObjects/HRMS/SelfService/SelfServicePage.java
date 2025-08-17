@@ -16,7 +16,7 @@ public class SelfServicePage extends BasePage
 
     //region Locators
     @FindBy(xpath = "//span[normalize-space()='Self Service']")
-    WebElement selfService;
+    static WebElement selfService;
 
     @FindBy(xpath = "//span[normalize-space()='Time Off']")
     WebElement timeOff;
@@ -29,8 +29,9 @@ public class SelfServicePage extends BasePage
     //endregion
 
     //region Action Methods
-    public void clickSelfService()
+    public static void clickSelfService()
     {
+        BasePage.clickMenuIcon();
         selfService.click();
     }
 

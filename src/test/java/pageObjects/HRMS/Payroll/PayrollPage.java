@@ -17,7 +17,7 @@ public class PayrollPage extends BasePage
     }
 
     @FindBy(xpath = "//i[@class='payroll-module-single-color-icon']")
-    WebElement payroll;
+    static WebElement payroll;
 
     @FindBy(xpath = "//div[normalize-space()='Transactions']")
     WebElement transactions;
@@ -25,9 +25,10 @@ public class PayrollPage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Reports']")
     WebElement reports;
 
-    public void clkPayroll()
+    public static void clkPayroll()
     {
         // waitForElement(payroll);
+        BasePage.clickMenuIcon();
         JavaScriptUtils.clickElementByJavaScript(driver, payroll);
         waitTS(1);
     }

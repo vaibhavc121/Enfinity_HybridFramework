@@ -9,26 +9,25 @@ import base.BasePage;
 public class LearningPage extends BasePage
 {
 
-	public LearningPage(WebDriver driver)
-	{
-		super(driver);
+    public LearningPage(WebDriver driver)
+    {
+        super(driver);
+    }
 
-	}
+    @FindBy(xpath = "//span[normalize-space()='Learning']")
+    static WebElement learning;
 
-	@FindBy(xpath = "//span[normalize-space()='Learning']")
-	WebElement learning;
+    @FindBy(xpath = "//span[normalize-space()='My Course']//preceding::span[@class='dx-vam'][normalize-space()='Course']")
+    WebElement course;
 
-	@FindBy(xpath = "//span[normalize-space()='My Course']//preceding::span[@class='dx-vam'][normalize-space()='Course']")
-	WebElement course;
+    public static void clickLearning()
+    {
+        BasePage.clickMenuIcon();
+        learning.click();
+    }
 
-	public void clickLearning()
-	{
-		learning.click();
-	}
-
-	public void clickCourse()
-	{
-		course.click();
-	}
-
+    public void clickCourse()
+    {
+        course.click();
+    }
 }

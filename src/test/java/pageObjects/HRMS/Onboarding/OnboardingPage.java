@@ -9,34 +9,33 @@ import base.BasePage;
 public class OnboardingPage extends BasePage
 {
 
-	public OnboardingPage(WebDriver driver)
-	{
-		super(driver);
+    public OnboardingPage(WebDriver driver)
+    {
+        super(driver);
+    }
 
-	}
+    @FindBy(xpath = "//img[@id='applicationMenu_DXI10_PImg']")
+    WebElement menu;
 
-	@FindBy(xpath = "//img[@id='applicationMenu_DXI10_PImg']")
-	WebElement menu;
+    @FindBy(xpath = "//span[normalize-space()='Onboarding']")
+    static WebElement onboarding;
 
-	@FindBy(xpath = "//span[normalize-space()='Onboarding']")
-	WebElement onboarding;
+    @FindBy(xpath = "//a[@title='Candidate']//span[@class='dx-vam'][normalize-space()='Candidate']")
+    WebElement candidate;
 
-	@FindBy(xpath = "//a[@title='Candidate']//span[@class='dx-vam'][normalize-space()='Candidate']")
-	WebElement candidate;
+    public void clickMenu()
+    {
+        menu.click();
+    }
 
-	public void clickMenu()
-	{
-		menu.click();
-	}
+    public static void clickOnboarding()
+    {
+        BasePage.clickMenuIcon();
+        onboarding.click();
+    }
 
-	public void clickOnboarding()
-	{
-		onboarding.click();
-	}
-
-	public void clickCandidate()
-	{
-		candidate.click();
-	}
-
+    public void clickCandidate()
+    {
+        candidate.click();
+    }
 }

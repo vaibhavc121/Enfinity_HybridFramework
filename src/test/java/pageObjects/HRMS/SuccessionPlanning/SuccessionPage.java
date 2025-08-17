@@ -9,34 +9,33 @@ import base.BasePage;
 public class SuccessionPage extends BasePage
 {
 
-	public SuccessionPage(WebDriver driver)
-	{
-		super(driver);
+    public SuccessionPage(WebDriver driver)
+    {
+        super(driver);
+    }
 
-	}
+    @FindBy(xpath = "//img[@id='applicationMenu_DXI10_PImg']")
+    private WebElement menu;
 
-	@FindBy(xpath = "//img[@id='applicationMenu_DXI10_PImg']")
-	private WebElement menu;
+    @FindBy(xpath = "//span[normalize-space()='Succession Planning']")
+    private static WebElement successionPlanning;
 
-	@FindBy(xpath = "//span[normalize-space()='Succession Planning']")
-	private WebElement successionPlanning;
+    @FindBy(xpath = "//a[@title='Succession Plan']//span[@class='dx-vam'][normalize-space()='Succession Plan']")
+    private WebElement successionPlan;
 
-	@FindBy(xpath = "//a[@title='Succession Plan']//span[@class='dx-vam'][normalize-space()='Succession Plan']")
-	private WebElement successionPlan;
+    public void clickMenu()
+    {
+        menu.click();
+    }
 
-	public void clickMenu()
-	{
-		menu.click();
-	}
+    public static void clickSuccessionPlanning()
+    {
+        BasePage.clickMenuIcon();
+        successionPlanning.click();
+    }
 
-	public void clickSuccessionPlanning()
-	{
-		successionPlanning.click();
-	}
-
-	public void clickSuccessionPlan()
-	{
-		successionPlan.click();
-	}
-
+    public void clickSuccessionPlan()
+    {
+        successionPlan.click();
+    }
 }
