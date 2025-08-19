@@ -93,6 +93,7 @@ public class BenefitEncashmentPage extends BasePage
 
     public void provideBenefitScheme(String value) throws InterruptedException
     {
+        waitTS(2);
         clearAndProvide1(benefitSchemeDD, value);
     }
 

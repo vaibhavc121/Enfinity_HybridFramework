@@ -28,9 +28,7 @@
             <!--            <class name="testCases.HRMS.Payroll.CreateLeaveEncashmentTest"/>-->
             <!--            <class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/>-->
             <!--            <class name="testCases.HRMS.SelfService.MyApprovalTest"/>-->
-            <class name="testCases.HRMS.HRCore.CreateBankTest"/>
-            <class name="testCases.HRMS.HRCore.DeleteBankTest"/>
-
+            
 
         </classes>
     </test>

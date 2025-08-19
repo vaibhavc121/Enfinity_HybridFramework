@@ -77,6 +77,9 @@ public class CreateEmployeeTest extends BaseTest
                 ep.selectGrade(employee.grade);
                 log("selected grade: " + employee.grade);
 
+                ep.scrollPage();
+                log("Scrolled the page");
+
                 ep.selectGender(employee.gender);
                 log("selected gender: " + employee.gender);
 

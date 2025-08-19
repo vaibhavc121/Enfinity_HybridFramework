@@ -17,21 +17,30 @@ public class PromotionPage extends BasePage
     }
 
     //region Locators
-    @FindBy(xpath = "(//span[text()='Promotion'])[2]")
-    WebElement promotion;
+    @FindBy(xpath = "//span[contains(text(),'Promotion')]")
+    private WebElement promotion;
 
-    @FindBy(xpath="//input[@id='EmployeePromotion.EmployeeIdLookup_I']") WebElement empdd;
-    @FindBy(xpath="//input[@id='EmployeePromotion.EffectiveDate_I']") WebElement effectiveDate;
-    @FindBy(xpath="//input[@id='EmployeePromotion.Type_I']") WebElement promotionTypeDD;
-    @FindBy(xpath="//input[@id='EmployeePromotion.NewDesignationIdLookup_I']") WebElement newDesignation;
-    @FindBy(xpath="//span[text()='Salaries']") WebElement salaries;
-    @FindBy(xpath="//input[@id='EmployeePromotionLine_SalaryComponentId_I']") WebElement salcompdd;
+    @FindBy(xpath = "//input[@id='EmployeePromotion.EmployeeIdLookup_I']")
+    WebElement empdd;
+    @FindBy(xpath = "//input[@id='EmployeePromotion.EffectiveDate_I']")
+    WebElement effectiveDate;
+    @FindBy(xpath = "//input[@id='EmployeePromotion.Type_I']")
+    WebElement promotionTypeDD;
+    @FindBy(xpath = "//input[@id='EmployeePromotion.NewDesignationIdLookup_I']")
+    WebElement newDesignation;
+    @FindBy(xpath = "//span[text()='Salaries']")
+    WebElement salaries;
+    @FindBy(xpath = "//input[@id='EmployeePromotionLine_SalaryComponentId_I']")
+    WebElement salcompdd;
     //@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[3]") WebElement incrementAmt;
-    @FindBy(xpath="//td[@class=' grid-cell dx-wrap dxgv dx-ellipsis dx-ar']//div[@class='dxgBCTC dx-ellipsis'][normalize-space()='0']") WebElement incrementAmt;
-    @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[5]") WebElement effectiveFromDate;
+    @FindBy(xpath = "//td[@class=' grid-cell dx-wrap dxgv dx-ellipsis dx-ar']//div[@class='dxgBCTC dx-ellipsis'][normalize-space()='0']")
+    WebElement incrementAmt;
+    @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[5]")
+    WebElement effectiveFromDate;
     @FindBy(xpath = "(//span[text()='Employee'])[2]")
     WebElement employee;
-    @FindBy(xpath = "//div[@class='salary-component-info']//p") WebElement salCompInfo;
+    @FindBy(xpath = "//div[@class='salary-component-info']//p")
+    WebElement salCompInfo;
 
     //endregion
 
@@ -46,21 +55,21 @@ public class PromotionPage extends BasePage
         clickOnNew();
     }
 
-	public void provideEmployee(String value)
-	{
+    public void provideEmployee(String value)
+    {
         clearAndProvide1(empdd, value);
     }
 
-	public void provideEffectiveDate(String value)
-	{
+    public void provideEffectiveDate(String value)
+    {
         clearAndProvide1(effectiveDate, value);
-	}
+    }
 
-	public void selectPromotionType(String value)
-	{
+    public void selectPromotionType(String value)
+    {
         promotionTypeDD.click();
         selectDropdownValueOffice365(value);
-	}
+    }
 
     public void provideNewDesignation(String value)
     {
@@ -79,20 +88,20 @@ public class PromotionPage extends BasePage
         scrollToBottom(driver);
     }
 
-	public void clickSalaries()
-	{
+    public void clickSalaries()
+    {
         salaries.click();
-	}
+    }
 
     public void clickNew1()
     {
         clickOnNewLine();
     }
 
-	public void provideSalComp(String value)
-	{
-        provideAndEnter(salcompdd,value);
-	}
+    public void provideSalComp(String value)
+    {
+        provideAndEnter(salcompdd, value);
+    }
 
     public void provideIncrementAmt(String value) throws InterruptedException
     {
@@ -115,15 +124,10 @@ public class PromotionPage extends BasePage
     {
         employee.click();
         navigateToEmployee(empname);
-        EmployeePage ep=new EmployeePage(driver);
+        EmployeePage ep = new EmployeePage(driver);
         ep.clickPayroll();
         return DataUtils.extractNumericValueFromText(salCompInfo);
     }
-
-
-
-
-
 
     //endregion
 }

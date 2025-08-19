@@ -952,6 +952,11 @@ public class EmployeePage extends BasePage
         provideAndEnter(gender, value);
     }
 
+    public void scrollPage()
+    {
+        JavaScriptUtils.scrollIntoView(driver, maritalstatus);
+    }
+
     public void selectReligion(String value)
     {
         provideAndEnter(religion, value);
