@@ -34,7 +34,8 @@ public class DeleteBenefitClaimTest extends BaseTest
             BenefitClaimPage bc = new BenefitClaimPage(driver);
             bc.clickBenefitClaim();
 
-            BasePage.deleteTxn(6, "001");
+            //BasePage.deleteTxn(6, "001");
+            BasePage.performAction(6, "001", "Amend");
             Assert.assertFalse(BasePage.validateListing("001", 6, 6));
         } catch (Exception e)
         {

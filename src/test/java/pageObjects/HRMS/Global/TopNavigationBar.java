@@ -83,7 +83,7 @@ public class TopNavigationBar extends BasePage
 
     public void isLeaveDataCorrect(String expEmpName, String status)
     {
-        String notificationData = waitForElement1(By.xpath("//p[normalize-space()='002-Rohit Chavan']")).getText();
+        String notificationData = waitForElement1(By.xpath("(//span[contains(text(),'002-Rohit Chavan')])[1]")).getText();
         if (notificationData.contains(expEmpName))
         {
             contextMenuMyApprovals.click();

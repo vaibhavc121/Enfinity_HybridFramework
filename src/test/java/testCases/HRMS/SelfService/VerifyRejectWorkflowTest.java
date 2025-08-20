@@ -7,75 +7,75 @@ import base.BasePage;
 import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel.LeaveRequestModel;
 import pageObjects.HRMS.Global.NotificationPage;
+import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.SelfService.LeaveRequestPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.DateUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class VerifyRejectWorkflowTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void verifyRejectWorkflow()
-	{
-		try
-		{
-			String leaveRequestFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-			List<LeaveRequestModel> leaveRequestData = JsonUtils.convertJsonListDataModel(leaveRequestFile,
-					"checkWorkflow", LeaveRequestModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void verifyRejectWorkflow()
+    {
+        try
+        {
+            String leaveRequestFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<LeaveRequestModel> leaveRequestData = JsonUtils.convertJsonListDataModel(leaveRequestFile,
+                    "checkWorkflow", LeaveRequestModel.class);
 
-			BasePage.logoutAndLogin("rohitc@test.com", "123");
+            BasePage.logoutAndLogin("rohitc@test.com", "123");
 
-			// self service module
-			SelfServicePage ss = new SelfServicePage(driver);
-			ss.clickSelfService();
-			ss.clickTransactions();
+            // self service module
+            SelfServicePage ss = new SelfServicePage(driver);
+            ss.clickSelfService();
+            ss.clickTransactions();
 
-			// Leave Request page
-			LeaveRequestPage lr = new LeaveRequestPage(driver);
+            // Leave Request page
+            LeaveRequestPage lr = new LeaveRequestPage(driver);
 
-			// create leave request as employee
-			for (LeaveRequestModel leaveRequest : leaveRequestData)
-			{
-				lr.clickLeaveRequest();
-				Thread.sleep(5000);
-				lr.clickNew();
-				lr.hoverAndClick(leaveRequest.leaveType);
-				lr.provideFromDate(leaveRequest.fromDate);
-				lr.provideToDate(leaveRequest.toDate);
-				lr.clickSaveAndSubmit();
-				// lr.clickSave();
+            // create leave request as employee
+            for (LeaveRequestModel leaveRequest : leaveRequestData)
+            {
+                lr.clickLeaveRequest();
+                Thread.sleep(5000);
+                lr.clickNew();
+                lr.hoverAndClick(leaveRequest.leaveType);
+                lr.provideFromDate(leaveRequest.fromDate);
+                lr.provideToDate(leaveRequest.toDate);
+                lr.clickSaveAndSubmit();
+                // lr.clickSave();
 
-				// ClassicAssert.isTrue(lr.isTxnCreated(leaveRequest.expFromDate,
-				// leaveRequest.expToDate));
-			}
+                // ClassicAssert.isTrue(lr.isTxnCreated(leaveRequest.expFromDate,
+                // leaveRequest.expToDate));
+            }
 
-			// Reject the leave request from manager login
-			BasePage.logoutAndLogin("vaibhav@test.com", "123");
-			NotificationPage np = new NotificationPage(driver);
-			for (LeaveRequestModel leaveRequest : leaveRequestData)
-			{
-				np.clickBellIcon();
-				np.isLeaveDataCorrect(leaveRequest.expEmpName, "Reject");
-			}
+            // Reject the leave request from manager login
+            BasePage.logoutAndLogin("vaibhav@test.com", "123");
+            TopNavigationBar tn = new TopNavigationBar(driver);
+            for (LeaveRequestModel leaveRequest : leaveRequestData)
+            {
+                tn.clickBellIcon();
+                tn.isLeaveDataCorrect(leaveRequest.expEmpName, "Reject");
+            }
 
-			// Validate the rejected leave requests
-			BasePage.logoutAndLogin("rohitc@test.com", "123");
-			ss.clickSelfService();
-			ss.clickTransactions();
-			lr.clickLeaveRequest();
-			for (LeaveRequestModel leaveRequest : leaveRequestData)
-			{
-				BasePage.validateListing1(DateUtils.currentDateInCustomFormat(), null, "Rejected");
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+            // Validate the rejected leave requests
+            BasePage.logoutAndLogin("rohitc@test.com", "123");
+            ss.clickSelfService();
+            ss.clickTransactions();
+            lr.clickLeaveRequest();
+            for (LeaveRequestModel leaveRequest : leaveRequestData)
+            {
+                BasePage.validateListing1(DateUtils.currentDateInCustomFormat(), null, "Rejected");
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }
