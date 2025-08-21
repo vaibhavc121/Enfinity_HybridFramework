@@ -43,6 +43,7 @@ public class MyApprovalsPage extends BasePage
         BaseTest.log("Clicked on Approve button");
         BasePage.pressEnter();
         BaseTest.log("pressed Enter to confirm approval");
+        waitTS(3);
     }
 
     public boolean isApproveButtonDisplay()

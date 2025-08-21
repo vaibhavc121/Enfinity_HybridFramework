@@ -59,6 +59,7 @@ public class MyApprovalTest extends BaseTest
 
             //region Delete Exception Request
             // self service page
+            BasePage.logoutAndLogin("rohitc@test.com", "123");
             BasePage.clickMenuIcon();
             ss.clickSelfService();
             log("clickSelfService");
