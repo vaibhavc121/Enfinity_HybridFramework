@@ -18,6 +18,7 @@ import org.testng.Assert;
 
 import com.github.javafaker.Faker;
 
+import org.testng.asserts.SoftAssert;
 import pageObjects.HRMS.Attendance.AttendancePage;
 import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.HRCore.EmployeePage;
@@ -36,6 +37,7 @@ public class BasePage
 {
     public static WebDriver driver;
     Robot robot;
+    public static SoftAssert softAssert = new SoftAssert();
 
     // region Constructor
     public BasePage(WebDriver driver)
@@ -1298,6 +1300,27 @@ public class BasePage
         // employee and status
         // IsTransactionCreated("2025-04-15", "John", "Completed"); // Check all three
     }
+
+    public static void validateMessage(String expectedMessage) throws InterruptedException
+    {
+        //if u want to see actual failure message then remove try catch block
+        WebElement element;
+        try
+        {
+            element = driver.findElement(By.className("dx-toast-message"));
+            String actualMessage = element.getText();
+            Thread.sleep(500);
+
+            softAssert.assertTrue(actualMessage.contains(expectedMessage),
+                    "Expected message to contain: " + expectedMessage + " but found: " + actualMessage);
+
+            softAssert.assertAll();
+        } catch (Exception e)
+        {
+            BaseTest.log(">>Soft Assert failed..<<");
+        }
+    }
+
     // endregion
 
     // region Alert Handling

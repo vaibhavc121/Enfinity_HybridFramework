@@ -17,56 +17,56 @@ import utilities.RetryAnalyzer;
 
 public class CreateLeaveTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createLeave()
-	{
-		try
-		{
-			String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-			List<LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave",
-					LeaveModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createLeave()
+    {
+        try
+        {
+            String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+            List<LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave",
+                    LeaveModel.class);
 
-			// payroll pg
-			PayrollPage pp = new PayrollPage(driver);
-			pp.clkPayroll();
-			logger.info("clicked on payroll link");
-			pp.clkTxn();
-			logger.info("clicked on txn");
+            // payroll pg
+            PayrollPage pp = new PayrollPage(driver);
+            pp.clkPayroll();
+            logger.info("clicked on payroll link");
+            pp.clkTxn();
+            logger.info("clicked on txn");
 
-			// leave pg
-			LeavePage lp = new LeavePage(driver);
+            // leave pg
+            LeavePage lp = new LeavePage(driver);
 
-			for (LeaveModel leave : leaveData)
-			{
-				lp.clkLeave();
-				logger.info("clicked on leave");
-				lp.clkNewBtn();
-				logger.info("clicked on new btn");
-				lp.provideEmp(leave.employee);
-				logger.info("emp selected");
+            for (LeaveModel leave : leaveData)
+            {
+                lp.clkLeave();
+                log("clicked on leave");
+                lp.clkNewBtn();
+                log("clicked on new btn");
+                lp.provideEmp(leave.employee);
+                log("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
 //				logger.info("provided effective date");
-				lp.provideLeaveType(leave.leaveTypeUnpaid); //Unpaid Leave
-				logger.info("leave type selected");
-				lp.provideFromDt(leave.fromDate);
-				logger.info("provided from date");
-				lp.provideUpToDt(leave.uptoDate);
-				logger.info("provided upto date");
-				lp.providePaymentType(leave.paymentType);
-				lp.clkView();
-				logger.info("clicked on view btn");
-				lp.clkApproveBack();
-				logger.info("clicked on approve btn");
+                lp.provideLeaveType(leave.leaveTypeUnpaid); //Unpaid Leave
+                log("leave type selected");
+                lp.provideFromDt(leave.fromDate);
+                log("provided from date");
+                lp.provideUpToDt(leave.uptoDate);
+                log("provided upto date");
+                lp.providePaymentType(leave.paymentType);
+                log("payment type selected");
+                lp.clkView();
+                log("clicked on view btn");
+                lp.clkApproveBack();
+                log("clicked on approve btn");
 
-				Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 7, 7));
-
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+                BasePage.validateMessage("Leave Approved!");
+                Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 7, 7), "Failed to create leave for emp: " + leave.employee);
+                log("Verified: " + leave.leaveTypeUnpaid + " created for emp: " + leave.employee + " successfully.");
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

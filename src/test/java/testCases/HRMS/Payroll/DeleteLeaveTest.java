@@ -16,39 +16,38 @@ import utilities.RetryAnalyzer;
 
 public class DeleteLeaveTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void deleteLeave()
-	{
-		try
-		{
-			String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-			List<LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave",
-					LeaveModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void deleteLeave()
+    {
+        try
+        {
+            String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+            List<LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave",
+                    LeaveModel.class);
 
-			// payroll pg
-			PayrollPage pp = new PayrollPage(driver);
-			pp.clkPayroll();
-			logger.info("clicked on payroll link");
-			pp.clkTxn();
-			logger.info("clicked on txn");
+            // payroll pg
+            PayrollPage pp = new PayrollPage(driver);
+            pp.clkPayroll();
+            logger.info("clicked on payroll link");
+            pp.clkTxn();
+            logger.info("clicked on txn");
 
-			// leave pg
-			LeavePage lp = new LeavePage(driver);
+            // leave pg
+            LeavePage lp = new LeavePage(driver);
 
-			for (LeaveModel leave : leaveData)
-			{
-				lp.clkLeave();
-				logger.info("clicked on leave");
-				BasePage.performAction(5, leave.employee, "Amend");
-				Assert.assertFalse(BasePage.validateListing(leave.employee, 5, 5));
-
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+            for (LeaveModel leave : leaveData)
+            {
+                lp.clkLeave();
+                logger.info("clicked on leave");
+                BasePage.performAction(5, leave.employee, "Amend");
+                BasePage.validateMessage("Record deleted successfully!");
+                Assert.assertFalse(BasePage.validateListing(leave.employee, 5, 5), "Record not deleted");
+                log("Verified: record deleted successfully");
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }
