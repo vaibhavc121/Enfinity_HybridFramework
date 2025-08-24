@@ -24,12 +24,7 @@
             <!-- New Test -->
             <!--            <class name="testCases.HRMS.SelfService.LeaveCancellationTest"/>-->
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>-->
-            <!--            <class name="testCases.HRMS.Global.EventsTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.CreateLeaveEncashmentTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.DeleteLeaveEncashmentTest"/>-->
-            <!--            <class name="testCases.HRMS.SelfService.MyApprovalTest"/>-->
-           
-            <class name="testCases.HRMS.SelfService.DeleteTravelRequestTest"/>
+
 
         </classes>
     </test>
