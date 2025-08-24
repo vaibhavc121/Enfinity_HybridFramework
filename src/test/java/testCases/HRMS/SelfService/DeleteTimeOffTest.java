@@ -40,7 +40,8 @@ public class DeleteTimeOffTest extends BaseTest
             // to.clickOk();
             // BasePage.deleteTxn(8, "active");
             //BasePage.deleteTxn(8, "Active");
-            Assert.assertFalse(BasePage.validateListing("Active", 8, 8));
+            BasePage.performAction(8, "Approved", "Amend");
+            Assert.assertFalse(BasePage.validateListing("Approved", 8, 8));
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

@@ -251,6 +251,13 @@ public class BaseTest
     @BeforeMethod(groups = {"regression", "datadriven", "functional"})
     public void prepareNavigation()
     {
+        try
+        {
+            LoginPage.clickOnSkip();
+        } catch (Exception e)
+        {
+
+        }
         BasePage.openSidebar();
         log("Opened sidebar");
         BasePage.clickMenuIcon();

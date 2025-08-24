@@ -28,7 +28,7 @@ public class LoginPage extends BasePage
     WebElement signIn;
 
     @FindBy(xpath = "//span[normalize-space()='Skip']")
-    WebElement skip;
+    static WebElement skip;
 
     //endregion
 
@@ -56,6 +56,12 @@ public class LoginPage extends BasePage
         // bc.highlightElement(driver, signIn, false); // Remove highlight
     }
 
+    public static void clickOnSkip()
+    {
+        waitTS(3);
+        skip.click();
+    }
+
     public void login(String uname, String pwd)
     {
         WebElement usernameField = driver.findElement(By.name("Username"));
@@ -70,6 +76,8 @@ public class LoginPage extends BasePage
 
         loginButton.click();
         BaseTest.log("clicked on login button");
+
+        clickOnSkip();
     }
 
     //endregion
