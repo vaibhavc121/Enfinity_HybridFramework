@@ -6,6 +6,7 @@ import models.SelfService.SelfService.SelfServiceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.Global.NotificationPage;
+import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.SelfService.LeaveRequestPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.BrowserUtils;
@@ -167,10 +168,10 @@ public class LeaveCancellationTest extends BaseTest
                 lr.clickOnLeaveType(leaveCancel.leaveType, 3); //absent leave
                 log("selected leave type: " + leaveCancel.leaveType);
 
-                lr.provideFromDate(DateUtils.addDaysToCurrentDate(7, "dd-MMM-yyyy"));
+                lr.provideFromDate(DateUtils.addDaysToCurrentDate(-2, "dd-MMM-yyyy"));
                 log("provided From Date");
 
-                lr.provideToDate(DateUtils.addDaysToCurrentDate(7, "dd-MMM-yyyy"));
+                lr.provideToDate(DateUtils.addDaysToCurrentDate(-1, "dd-MMM-yyyy"));
                 log("provided To Date");
 
                 lr.clickSaveAndSubmit();
@@ -184,12 +185,12 @@ public class LeaveCancellationTest extends BaseTest
 
             //region approve the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
-            NotificationPage np = new NotificationPage(driver);
+            TopNavigationBar tn = new TopNavigationBar(driver);
             for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
             {
-                np.clickBellIcon();
+                tn.clickBellIcon();
                 log("clicked on Bell Icon");
-                np.isLeaveDataCorrect(leaveCancel.expEmpName, "Approve");
+                tn.isLeaveDataCorrect(leaveCancel.expEmpName, "Approve");
             }
             //endregion
 
@@ -220,7 +221,7 @@ public class LeaveCancellationTest extends BaseTest
                 log("Transaction deleted successfully");
 //                Assert.assertFalse(BasePage.validateListing(leaveCancel.expEmpName, 6, 6),
 //                        "Leave request not deleted successfully");
-                if (!BasePage.validateListing(leaveCancel.expEmpName, 6, 6))
+                if (!BasePage.validateListing(leaveCancel.expEmpName, 5, 5))
                 {
                     log("Verified: There is no approved request on the listing page");
                 } else

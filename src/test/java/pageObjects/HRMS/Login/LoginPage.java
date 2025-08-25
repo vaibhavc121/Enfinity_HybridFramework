@@ -58,7 +58,7 @@ public class LoginPage extends BasePage
 
     public static void clickOnSkip()
     {
-        waitTS(3);
+        waitTS(4);
         skip.click();
     }
 

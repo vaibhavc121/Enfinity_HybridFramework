@@ -26,14 +26,14 @@ public class TopNavigationBar extends BasePage
     //region Notification
 
     @FindBy(xpath = "//i[@class='dx-icon dx-icon-bell-light']")
-    private WebElement bellIcon;
+    WebElement bellIcon;
 
     //region My Approvals Section
     @FindBy(xpath = "//span[normalize-space()='Open']")
     WebElement open;
 
     @FindBy(xpath = "(//i[@class='dx-icon dx-icon-overflow'])[1]")
-    private WebElement contextMenuMyApprovals;
+    public WebElement contextMenuMyApprovals;
     //endregion
 
     //region Announcements Section
@@ -41,16 +41,16 @@ public class TopNavigationBar extends BasePage
 
     //region Notifications Section
     @FindBy(xpath = "//span[normalize-space()='Notifications']")
-    private WebElement notifications;
+    WebElement notifications;
 
     @FindBy(xpath = "//span[@class='notification-subject']")
-    private WebElement notificationSubject;
+    WebElement notificationSubject;
 
     @FindBy(xpath = "(//i[@class='dx-icon dx-icon-overflow'])[3]")
-    private WebElement contextMenuNotifications;
+    WebElement contextMenuNotifications;
 
     @FindBy(xpath = "//span[normalize-space()='Acknowledged']")
-    private WebElement acknowledged;
+    WebElement acknowledged;
     //endregion
 
     //endregion
@@ -89,8 +89,11 @@ public class TopNavigationBar extends BasePage
             contextMenuMyApprovals.click();
             BaseTest.log("clicked on setting icon");
 
+            waitTS(2);
             open.click();
             BaseTest.log("clicked on open");
+
+            waitTS(2);
 
             BasePage.switchTab();
             BaseTest.log("tab switched");
