@@ -24,6 +24,8 @@
             <!-- New Test -->
             <!--            <class name="testCases.HRMS.SelfService.LeaveCancellationTest"/>-->
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>-->
+            <class name="testCases.HRMS.HRCore.CreateBankTest"/>
+            <class name="testCases.HRMS.HRCore.DeleteBankTest"/>
 
 
         </classes>
