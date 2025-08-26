@@ -22,6 +22,7 @@
 
             <class name="testCases.HRMS.Payroll.LeaveTest"/>
             <class name="testCases.HRMS.Payroll.LeaveResumptionTest"/>
+            <class name="testCases.HRMS.SelfService.LeaveCancellationTest"/>
             <class name="testCases.HRMS.Global.EventsTest"/>
             <class name="testCases.HRMS.SelfService.MyApprovalTest"/>
 

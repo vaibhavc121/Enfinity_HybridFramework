@@ -32,7 +32,7 @@ public class TopNavigationBar extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Open']")
     WebElement open;
 
-    @FindBy(xpath = "//i[@class='dx-icon dx-icon-overflow']")
+    @FindBy(xpath = "//img[@alt='Employee Picture']//following::i[@class='dx-icon dx-icon-overflow']")
     public WebElement contextMenuMyApprovals;
     //endregion
 
@@ -95,13 +95,12 @@ public class TopNavigationBar extends BasePage
                 contextMenuMyApprovals.click();
             }
 
-            BaseTest.log("clicked on setting icon");
+            BaseTest.log("clicked on context menu icon");
 
-            waitTS(2);
             open.click();
             BaseTest.log("clicked on open");
 
-            waitTS(4);
+            waitTS(2);
 
             BasePage.switchTab();
             BaseTest.log("tab switched");

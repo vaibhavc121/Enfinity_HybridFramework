@@ -185,7 +185,6 @@ public class LeaveCancellationTest extends BaseTest
 
             //region approve the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
-            BasePage.waitTS(2);
             TopNavigationBar tn = new TopNavigationBar(driver);
             for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
             {
