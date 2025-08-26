@@ -185,6 +185,7 @@ public class LeaveCancellationTest extends BaseTest
 
             //region approve the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
+            BasePage.waitTS(2);
             TopNavigationBar tn = new TopNavigationBar(driver);
             for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
             {
@@ -221,7 +222,7 @@ public class LeaveCancellationTest extends BaseTest
                 log("Transaction deleted successfully");
 //                Assert.assertFalse(BasePage.validateListing(leaveCancel.expEmpName, 6, 6),
 //                        "Leave request not deleted successfully");
-                if (!BasePage.validateListing(leaveCancel.expEmpName, 5, 5))
+                if (!BasePage.validateListing("Approve", 7, 7))
                 {
                     log("Verified: There is no approved request on the listing page");
                 } else

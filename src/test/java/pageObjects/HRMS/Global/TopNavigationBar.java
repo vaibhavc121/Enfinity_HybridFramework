@@ -32,7 +32,7 @@ public class TopNavigationBar extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Open']")
     WebElement open;
 
-    @FindBy(xpath = "(//i[@class='dx-icon dx-icon-overflow'])[1]")
+    @FindBy(xpath = "//i[@class='dx-icon dx-icon-overflow']")
     public WebElement contextMenuMyApprovals;
     //endregion
 
@@ -86,14 +86,22 @@ public class TopNavigationBar extends BasePage
         String notificationData = waitForElement1(By.xpath("(//span[contains(text(),'002-Rohit Chavan')])[1]")).getText();
         if (notificationData.contains(expEmpName))
         {
-            contextMenuMyApprovals.click();
+
+            try
+            {
+                JavaScriptUtils.clickElementByJavaScript(driver, contextMenuMyApprovals);
+            } catch (Exception e)
+            {
+                contextMenuMyApprovals.click();
+            }
+
             BaseTest.log("clicked on setting icon");
 
             waitTS(2);
             open.click();
             BaseTest.log("clicked on open");
 
-            waitTS(2);
+            waitTS(4);
 
             BasePage.switchTab();
             BaseTest.log("tab switched");
