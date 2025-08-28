@@ -52,7 +52,7 @@ public class BasePage
     public static void openSidebar()
     {
         //label[normalize-space()='Home'] //optional can be used
-        boolean value = waitForElement1(By.xpath("//label[@class='label expanded-view']")).isDisplayed();
+        boolean value = waitForElement1(By.xpath("//i[@title='Close sidebar']")).isDisplayed();
         if (!value)
         {
             waitForElement1(By.xpath("//i[@class='enfinity-logo-white default-icon']")).click();

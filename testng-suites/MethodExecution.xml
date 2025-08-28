@@ -21,6 +21,12 @@
 
         <classes>
 
+            <class name="testCases.HRMS.Performance.PerformanceTest">
+                <methods>
+                    <include name="createAppraisalCycle"/>
+                </methods>
+            </class>
+
 
             <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
             <!--                <methods>-->

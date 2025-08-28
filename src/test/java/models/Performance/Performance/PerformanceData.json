@@ -1,16 +1,27 @@
 {
   "createAppraisalCycle": [
     {
-      "name": "Systems Analyst",
-      "designation": "Systems Analyst",
-      "employee": "001 | Vaibhav Chavan",
-      "minimumPercentage": "40",
-      "qualificationPercentage": "20",
-      "experiencePercentage": "20",
-      "skillsPercentage": "20",
-      "appraisalPercentage": "20",
-      "coursePercentage": "20",
-      "description": "test"
+      "appraisalFromDate": "01-Jan-2025",
+      "appraisalToDate": "31-Dec-2025",
+      "processFromDate": "01-Jan-2025",
+      "processToDate": "31-Dec-2025",
+      "description": "test",
+      "goals": true,
+      "KRA": true,
+      "competency": true,
+      "reviewQuestions": true,
+      "goalsWeightage": "30",
+      "KRAWeightage": "30",
+      "competencyWeightage": "40",
+      "goalRating": "Score",
+      "keyResultAreaRating": "Score",
+      "competencyRating": "Score",
+      "overallRating": "Score",
+      "employee": "Vaibhav Chavan",
+      "allowManualWorkflow": true,
+      "workflow": "VRC Emp Manager",
+      "enableReviewerOpinion": true,
+      "enableSkillSetAssessment": true
     }
   ]
 }
