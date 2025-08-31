@@ -5,47 +5,50 @@
     <link href="../my-testng.css" rel="stylesheet" type="text/css"/>
 
     <style type="text/css">
-        .log { display: none;}
-        .stack-trace { display: none;}
+        .log {
+            display: none;
+        }
+
+        .stack-trace {
+            display: none;
+        }
     </style>
     <script type="text/javascript">
         <!--
         function flip(e) {
-          current = e.style.display;
-          if (current == 'block') {
-            e.style.display = 'none';
-            return 0;
-          }
-          else {
-            e.style.display = 'block';
-            return 1;
-          }
+            current = e.style.display;
+            if (current == 'block') {
+                e.style.display = 'none';
+                return 0;
+            } else {
+                e.style.display = 'block';
+                return 1;
+            }
         }
 
-        function toggleBox(szDivId, elem, msg1, msg2)
-        {
-          var res = -1;  if (document.getElementById) {
-            res = flip(document.getElementById(szDivId));
-          }
-          else if (document.all) {
-            // this is the way old msie versions work
-            res = flip(document.all[szDivId]);
-          }
-          if(elem) {
-            if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
-          }
+        function toggleBox(szDivId, elem, msg1, msg2) {
+            var res = -1;
+            if (document.getElementById) {
+                res = flip(document.getElementById(szDivId));
+            } else if (document.all) {
+                // this is the way old msie versions work
+                res = flip(document.all[szDivId]);
+            }
+            if (elem) {
+                if (res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+            }
 
         }
 
         function toggleAllBoxes() {
-          if (document.getElementsByTagName) {
-            d = document.getElementsByTagName('div');
-            for (i = 0; i < d.length; i++) {
-              if (d[i].className == 'log') {
-                flip(d[i]);
-              }
+            if (document.getElementsByTagName) {
+                d = document.getElementsByTagName('div');
+                for (i = 0; i < d.length; i++) {
+                    if (d[i].className == 'log') {
+                        flip(d[i]);
+                    }
+                }
             }
-          }
         }
 
         // -->
@@ -3370,12 +3373,12 @@ Session ID: d0d8262f7d66d664e84826cc1990c928
         <td>testCases.HRMS.SelfService.SupportRequestCategoryTest@4763c727</td>
     </tr>
     <tr>
-        <td title='testCases.HRMS.SelfService.CreateTravelRequestTest.createTravelRequest()'>
-            <b>createTravelRequest</b><br>Test class: testCases.HRMS.SelfService.CreateTravelRequestTest
+        <td title='testCases.HRMS.SelfService.TravelRequestTest.createTravelRequest()'>
+            <b>createTravelRequest</b><br>Test class: testCases.HRMS.SelfService.TravelRequestTest
         </td>
         <td></td>
         <td>32</td>
-        <td>testCases.HRMS.SelfService.CreateTravelRequestTest@1252b961</td>
+        <td>testCases.HRMS.SelfService.TravelRequestTest@1252b961</td>
     </tr>
     <tr>
         <td title='testCases.HRMS.Payroll.BenefitEncashmentTest.createBenefitEncashment()'>
@@ -3516,12 +3519,12 @@ Session ID: d0d8262f7d66d664e84826cc1990c928
         <td>testCases.HRMS.Attendance.CreateLenientShiftTimetableTest@4d098f9b</td>
     </tr>
     <tr>
-        <td title='testCases.HRMS.SelfService.CreateTimeOffTest.createTimeOff()'><b>createTimeOff</b><br>Test class:
-            testCases.HRMS.SelfService.CreateTimeOffTest
+        <td title='testCases.HRMS.SelfService.TimeOffTest.createTimeOff()'><b>createTimeOff</b><br>Test class:
+            testCases.HRMS.SelfService.TimeOffTest
         </td>
         <td></td>
         <td>15</td>
-        <td>testCases.HRMS.SelfService.CreateTimeOffTest@458342d3</td>
+        <td>testCases.HRMS.SelfService.TimeOffTest@458342d3</td>
     </tr>
     <tr>
         <td title='testCases.HRMS.HRCore.DeleteDeptTest.deleteDepartment()'><b>deleteDepartment</b><br>Test class:
@@ -3581,12 +3584,13 @@ Session ID: d0d8262f7d66d664e84826cc1990c928
         <td>testCases.HRMS.Payroll.DeleteLeaveEncashmentTest@40e10ff8</td>
     </tr>
     <tr>
-        <td title='testCases.HRMS.SelfService.CreateExceptionRequestTest.createExceptionRequest()'><b>createExceptionRequest</b><br>Test
-            class: testCases.HRMS.SelfService.CreateExceptionRequestTest
+        <td title='testCases.HRMS.SelfService.ExceptionRequestTest.createExceptionRequest()'>
+            <b>createExceptionRequest</b><br>Test
+            class: testCases.HRMS.SelfService.ExceptionRequestTest
         </td>
         <td></td>
         <td>16</td>
-        <td>testCases.HRMS.SelfService.CreateExceptionRequestTest@a5b0b86</td>
+        <td>testCases.HRMS.SelfService.ExceptionRequestTest@a5b0b86</td>
     </tr>
     <tr>
         <td title='testCases.HRMS.Payroll.LeaveAdjustmentTest.createLeaveAdjustment()'>

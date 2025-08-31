@@ -2,18 +2,13 @@ package testCases.HRMS.SelfService;
 
 import base.BasePage;
 import base.BaseTest;
-import models.SelfService.SelfService.SelfServiceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.SelfService.ExceptionRequestPage;
 import pageObjects.HRMS.SelfService.MyApprovalsPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import pageObjects.HRMS.SelfService.TimeOffPage;
-import utilities.FileUtils;
-import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
-
-import java.util.List;
 
 public class MyApprovalTest extends BaseTest
 {
@@ -28,8 +23,8 @@ public class MyApprovalTest extends BaseTest
             SelfServicePage ss = new SelfServicePage(driver);
             ExceptionRequestPage erp = new ExceptionRequestPage(driver);
             TimeOffPage top = new TimeOffPage(driver);
-            CreateExceptionRequestTest er = new CreateExceptionRequestTest();
-            CreateTimeOffTest to = new CreateTimeOffTest();
+            ExceptionRequestTest er = new ExceptionRequestTest();
+            TimeOffTest to = new TimeOffTest();
             //endregion
 
             //region Create Exception Request

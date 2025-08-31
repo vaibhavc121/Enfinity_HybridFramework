@@ -59,12 +59,9 @@
             <class name="testCases.HRMS.SelfService.PromotionRequestTest"/>
             <class name="testCases.HRMS.SelfService.ResignationTest"/>
             <class name="testCases.HRMS.SelfService.SupportRequestCategoryTest"/>
-            <class name="testCases.HRMS.SelfService.CreateTimeOffTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteTimeOffTest"/>
-            <class name="testCases.HRMS.SelfService.CreateExceptionRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteExceptionRequestTest"/>
-            <class name="testCases.HRMS.SelfService.CreateTravelRequestTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteTravelRequestTest"/>
+            <class name="testCases.HRMS.SelfService.TimeOffTest"/>
+            <class name="testCases.HRMS.SelfService.ExceptionRequestTest"/>
+            <class name="testCases.HRMS.SelfService.TravelRequestTest"/>
             <class name="testCases.HRMS.SelfService.VerifyApproveWorkflowTest"/>
             <class name="testCases.HRMS.SelfService.VerifyRejectWorkflowTest"/>
             <class name="testCases.HRMS.SelfService.VerifyReviseWorkflowTest"/>
@@ -94,8 +91,6 @@
             <!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->
 
             <!-- Flaky Test -->
-            <!--<class name="testCases.HRMS.SelfService.SupportRequestTest"/>-->
-            <!--<class name="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>-->
 
 
         </classes>

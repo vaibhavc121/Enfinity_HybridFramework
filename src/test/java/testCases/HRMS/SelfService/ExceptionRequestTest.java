@@ -13,10 +13,9 @@ import utilities.RetryAnalyzer;
 
 import java.util.List;
 
-public class CreateExceptionRequestTest extends BaseTest
+public class ExceptionRequestTest extends BaseTest
 {
-
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void createExceptionRequest()
     {
         try
@@ -63,6 +62,35 @@ public class CreateExceptionRequestTest extends BaseTest
                 Assert.assertTrue(er.isTxnCreated(exception.exceptionDate));
                 log("Verified: Transaction created successfully for date: " + exception.exceptionDate);
             }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    public void deleteExceptionRequest()
+    {
+        try
+        {
+            // self service page
+            SelfServicePage ss = new SelfServicePage(driver);
+            ss.clickSelfService();
+            log("clickSelfService");
+
+            ss.clickTransactions();
+            log("clickTransactions");
+
+            // ExceptionRequest page
+            ExceptionRequestPage er = new ExceptionRequestPage(driver);
+            er.createExceptionRequest();
+            log("createExceptionRequest");
+
+            //BasePage.deleteTxn(6, "001");
+            BasePage.performAction(7, "Approved", "Amend");
+            Assert.assertFalse(BasePage.validateListing("001", 6, 6));
+            log("assertion successful");
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

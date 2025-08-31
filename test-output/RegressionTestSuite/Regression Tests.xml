@@ -1077,7 +1077,7 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
               time="38.175"/>
     <testcase classname="testCases.HRMS.SelfService.BenefitClaimTest" name="createBenefitClaim" time="25.857"/>
     <testcase classname="testCases.HRMS.SelfService.DeleteBenefitClaimTest" name="deleteBenefitClaim" time="37.65"/>
-    <testcase classname="testCases.HRMS.SelfService.CreateExceptionRequestTest" name="createExceptionRequest"
+    <testcase classname="testCases.HRMS.SelfService.ExceptionRequestTest" name="createExceptionRequest"
               time="16.841"/>
     <testcase classname="testCases.HRMS.SelfService.DeleteExceptionRequestTest" name="deleteExceptionRequest"
               time="26.843"/>
@@ -1211,7 +1211,7 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames]]>
         </failure>
     </testcase> <!-- deleteITSupportRequest -->
-    <testcase classname="testCases.HRMS.SelfService.CreateTimeOffTest" name="createTimeOff" time="15.604"/>
+    <testcase classname="testCases.HRMS.SelfService.TimeOffTest" name="createTimeOff" time="15.604"/>
     <testcase classname="testCases.HRMS.SelfService.DeleteTimeOffTest" name="deleteTimeOff" time="0.002">
         <skipped/>
     </testcase> <!-- deleteTimeOff -->
@@ -1224,7 +1224,7 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames]]>
         </failure>
     </testcase> <!-- deleteTimeOff -->
-    <testcase classname="testCases.HRMS.SelfService.CreateTravelRequestTest" name="createTravelRequest" time="32.724"/>
+    <testcase classname="testCases.HRMS.SelfService.TravelRequestTest" name="createTravelRequest" time="32.724"/>
     <testcase classname="testCases.HRMS.SelfService.VerifyApproveWorkflowTest" name="verifyApproveWorkflow"
               time="32.374">
         <skipped/>
