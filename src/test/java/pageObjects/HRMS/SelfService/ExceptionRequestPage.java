@@ -1,5 +1,6 @@
 package pageObjects.HRMS.SelfService;
 
+import base.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,13 +26,13 @@ public class ExceptionRequestPage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'LoginTime')]")
     WebElement loginTime;
 
+    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[3]")
+    WebElement loginCal;
+
     @FindBy(xpath = "//input[contains(@id,'LogoutTime')]")
     WebElement logotTime;
 
-    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[2]")
-    WebElement loginCal;
-
-    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[3]")
+    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[4]")
     WebElement logoutCal;
 
     @FindBy(xpath = "//span[normalize-space()='OK']")
@@ -65,24 +66,42 @@ public class ExceptionRequestPage extends BasePage
     public void provideLoginTime(String value)
     {
         clearAndProvide1(loginTime, value);
+        BaseTest.log("provided login time: " + value);
         waitTS(5);
         pressTab();
+        BaseTest.log("pressed tab");
         clickOnElement1(loginTime);
-        // clickOnOk();
-        // loginCal.click();
+        try
+        {
+            JavaScriptUtils.clickElementByJavaScript(driver, loginCal);
+            BaseTest.log("clicked on login cal");
+        } catch (Exception e)
+        {
+            JavaScriptUtils.clickElementByJavaScript(driver, okButton);
+            BaseTest.log("clicked on ok button");
+        }
+
         pressTab();
     }
 
     public void provideLogoutTime(String value)
     {
-//		logotTime.click();
-//		clearAndProvide1(logotTime, value);
-        clickOnOk();
-        //provideValue(logotTime, value);
         clearAndProvide1(logotTime, value);
-        //clickOnOk();
-        JavaScriptUtils.clickElementByJavaScript(driver, okButton);
-        // logoutCal.click();
+
+        try
+        {
+            JavaScriptUtils.clickElementByJavaScript(driver, logoutCal);
+            BaseTest.log("clicked on logout cal");
+        } catch (Exception e)
+        {
+            JavaScriptUtils.clickElementByJavaScript(driver, okButton);
+            BaseTest.log("clicked on ok button");
+        }
+
+        JavaScriptUtils.clickElementByJavaScript(driver, loginCal);
+        BaseTest.log("close login calendar");
+        JavaScriptUtils.clickElementByJavaScript(driver, logoutCal);
+        BaseTest.log("close logout calendar");
     }
 
     public void provideRemarks(String value)

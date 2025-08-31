@@ -1,5 +1,6 @@
 package pageObjects.HRMS.SelfService;
 
+import base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -169,13 +170,15 @@ public class SupportRequestCategoryPage extends BasePage
             driver.findElement(By.xpath(
                             "(//tr)[6]"))
                     .click();
+            BaseTest.log("clicked on filtered record");
         } catch (Exception e)
         {
             throw new RuntimeException("Vaibhav- There is no active records..");
         }
 
-        clickOnElement(By.xpath("//img[@id='MainMenu_DXI11_PImg']"));
-        clickOnEdit();
+        clickOnElement(By.xpath("//img[@id='MainMenu_DXI3_Img']"));
+        BaseTest.log("Clicked on edit button");
+
         waitTS(2);
         driver.findElement(By.xpath("//img[@id='MainMenu_DXI7_PImg']")).click();
         waitTS(2);

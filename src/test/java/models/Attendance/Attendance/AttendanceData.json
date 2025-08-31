@@ -3,7 +3,6 @@
     {
       "shiftName": "Normal",
       "defaultTimetable": "VRC 9-3"
-
     }
   ],
   "createRoster": [
@@ -13,7 +12,6 @@
       "timetable": "VRC 9-3",
       "excludeDay": "Saturday",
       "applicableFor": "001 | Vaibhav Chavan"
-
     }
   ],
   "createStrictDayShiftTimetable": [
@@ -24,19 +22,17 @@
       "maximumWorkedHourPerDay": "18",
       "firstInTime": "0900AM",
       "firstOutTime": "0300PM"
-
     }
   ],
   "createLenientShiftTimetable": [
     {
-      "name": "Lenient",
+      "name": "LenientTimetable",
       "dayType": "Working",
       "mode": "Lenient",
       "maximumWorkedHourPerDay": "18",
       "workedHourPerDay": "6",
       "hourlyMinCheckInTime": "0900AM",
       "hourlyMaxCheckOutTime": "0300PM"
-
     }
   ],
   "createTwoShiftDayShiftTimetable": [
@@ -49,10 +45,8 @@
       "firstOutTime": "1100AM",
       "secondInTime": "0100PM",
       "secondOutTime": "0500PM"
-
     }
   ],
-
   "createNightShiftTimetable": [
     {
       "name": "NightShift",
@@ -61,10 +55,8 @@
       "maximumWorkedHourPerDay": "18",
       "firstInTime": "0900PM",
       "firstOutTime": "0300AM"
-
     }
   ],
-
   "createTwoShiftNightShiftTimetable": [
     {
       "name": "TwoShift NightShift",
@@ -76,7 +68,6 @@
       "secondInTime": "0100AM",
       "secondOutTime": "0500AM",
       "shiftNextDayStartFrom": "Second Half In Time"
-
     }
   ]
 }

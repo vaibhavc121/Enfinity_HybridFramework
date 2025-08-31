@@ -88,7 +88,7 @@ public class OvertimeRequestPage extends BasePage
 
     public boolean isTxnCreated(String overtimeType, String hrs)
     {
-        return resultValue(8).contains(overtimeType) && resultValue(8).contains(hrs);
+        return resultValue(6).contains(overtimeType) && resultValue(6).contains(hrs);
     }
     //endregion
 }

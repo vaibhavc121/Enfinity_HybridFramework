@@ -39,6 +39,7 @@ public class HRCorePage extends BasePage
 
     public void clickEmployee()
     {
+        BasePage.openSidebar();
         clickOnElement1(employee);
     }
 

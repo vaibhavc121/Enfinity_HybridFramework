@@ -25,6 +25,9 @@
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>-->
 
+            <class name="testCases.HRMS.SelfService.CreateOvertimeApplicationTest"/>
+            <class name="testCases.HRMS.SelfService.DeleteOvertimeApplicationTest"/>
+
 
         </classes>
     </test>

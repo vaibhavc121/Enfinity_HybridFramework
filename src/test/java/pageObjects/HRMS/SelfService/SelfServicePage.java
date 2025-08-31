@@ -42,6 +42,7 @@ public class SelfServicePage extends BasePage
 
     public void clickTransactions()
     {
+        BasePage.openSidebar();
         transactions.click();
     }
 
