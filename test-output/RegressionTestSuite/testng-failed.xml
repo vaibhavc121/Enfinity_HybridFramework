@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [RegressionTestSuite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utilities.ExtentReportsUtils"/>
-  </listeners>
-  <test thread-count="5" name="Regression Tests(failed)">
-    <parameter name="os" value="windows"/>
-    <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-        <include name="datadriven"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="testCases.HRMS.SelfService.DeleteITSupportRequestTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="deleteITSupportRequest"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.DeleteITSupportRequestTest -->
-      <class name="testCases.HRMS.SelfService.VerifyReviseWorkflowTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="verifyReviseWorkflow"/>
-          <include name="teardown"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.VerifyReviseWorkflowTest -->
-      <class name="testCases.HRMS.SelfService.VerifyApproveWorkflowTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="verifyApproveWorkflow"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.VerifyApproveWorkflowTest -->
-      <class name="testCases.HRMS.SelfService.DeleteTimeOffTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="deleteTimeOff"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.DeleteTimeOffTest -->
-      <class name="testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="createLeaveOpeningBalance"/>
-        </methods>
-      </class> <!-- testCases.HRMS.Payroll.CreateLeaveOpeningBalanceTest -->
-      <class name="testCases.HRMS.HRCore.CreateEmployeeTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="createEmployee"/>
-        </methods>
-      </class> <!-- testCases.HRMS.HRCore.CreateEmployeeTest -->
-      <class name="testCases.HRMS.SelfService.CreateLeaveRequestTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="createLeaveRequest"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.CreateLeaveRequestTest -->
-      <class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="deleteLeaveRequest"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.DeleteLeaveRequestTest -->
-      <class name="testCases.HRMS.SelfService.DeleteLoanRequestTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="deleteLoanRequest"/>
-          <include name="teardown"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.DeleteLoanRequestTest -->
-      <class name="testCases.HRMS.SelfService.DeleteSupportReqCategoryTest">
-        <methods>
-          <include name="setup"/>
-          <include name="deleteSupportReqCategory"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.DeleteSupportReqCategoryTest -->
-      <class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="deleteLeaveOpeningBalance"/>
-        </methods>
-      </class> <!-- testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest -->
-      <class name="testCases.HRMS.Attendance.CreateRosterTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="createRoster"/>
-        </methods>
-      </class> <!-- testCases.HRMS.Attendance.CreateRosterTest -->
-      <class name="testCases.HRMS.Payroll.DeleteLeaveTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="deleteLeave"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- testCases.HRMS.Payroll.DeleteLeaveTest -->
-      <class name="testCases.HRMS.SelfService.CreateLoanRequestTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="createLoanRequest"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.CreateLoanRequestTest -->
-      <class name="testCases.HRMS.SelfService.VerifyRejectWorkflowTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="verifyRejectWorkflow"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.VerifyRejectWorkflowTest -->
-      <class name="testCases.HRMS.SelfService.CreateSupportRequestTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="createSupportRequest"/>
-        </methods>
-      </class> <!-- testCases.HRMS.SelfService.CreateSupportRequestTest -->
-      <class name="testCases.HRMS.Payroll.CreateLeaveTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="teardown"/>
-          <include name="login"/>
-          <include name="createLeave"/>
-        </methods>
-      </class> <!-- testCases.HRMS.Payroll.CreateLeaveTest -->
-    </classes>
-  </test> <!-- Regression Tests(failed) -->
+    <listeners>
+        <listener class-name="utilities.ExtentReportsUtils"/>
+    </listeners>
+    <test thread-count="5" name="Regression Tests(failed)">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+                <include name="datadriven"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testCases.HRMS.SelfService.DeleteITSupportRequestTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="deleteITSupportRequest"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.DeleteITSupportRequestTest -->
+            <class name="testCases.HRMS.SelfService.VerifyReviseWorkflowTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="verifyReviseWorkflow"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.VerifyReviseWorkflowTest -->
+            <class name="testCases.HRMS.SelfService.VerifyApproveWorkflowTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="verifyApproveWorkflow"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.VerifyApproveWorkflowTest -->
+            <class name="testCases.HRMS.SelfService.DeleteTimeOffTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="deleteTimeOff"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.DeleteTimeOffTest -->
+            <class name="testCases.HRMS.Payroll.LeaveOpeningBalanceTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="createLeaveOpeningBalance"/>
+                </methods>
+            </class> <!-- testCases.HRMS.Payroll.LeaveOpeningBalanceTest -->
+            <class name="testCases.HRMS.HRCore.EmployeeTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="createEmployee"/>
+                </methods>
+            </class> <!-- testCases.HRMS.HRCore.EmployeeTest -->
+            <class name="testCases.HRMS.SelfService.LeaveRequestTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="createLeaveRequest"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.LeaveRequestTest -->
+            <class name="testCases.HRMS.SelfService.DeleteLeaveRequestTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="deleteLeaveRequest"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.DeleteLeaveRequestTest -->
+            <class name="testCases.HRMS.SelfService.DeleteLoanRequestTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="deleteLoanRequest"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.DeleteLoanRequestTest -->
+            <class name="testCases.HRMS.SelfService.DeleteSupportReqCategoryTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="deleteSupportReqCategory"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.DeleteSupportReqCategoryTest -->
+            <class name="testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="deleteLeaveOpeningBalance"/>
+                </methods>
+            </class> <!-- testCases.HRMS.Payroll.DeleteLeaveOpeningBalanceTest -->
+            <class name="testCases.HRMS.Attendance.CreateRosterTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="createRoster"/>
+                </methods>
+            </class> <!-- testCases.HRMS.Attendance.CreateRosterTest -->
+            <class name="testCases.HRMS.Payroll.DeleteLeaveTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="teardown"/>
+                    <include name="deleteLeave"/>
+                    <include name="login"/>
+                </methods>
+            </class> <!-- testCases.HRMS.Payroll.DeleteLeaveTest -->
+            <class name="testCases.HRMS.SelfService.LoanRequestTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="createLoanRequest"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.LoanRequestTest -->
+            <class name="testCases.HRMS.SelfService.VerifyRejectWorkflowTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="verifyRejectWorkflow"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.VerifyRejectWorkflowTest -->
+            <class name="testCases.HRMS.SelfService.SupportRequestTest">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="setup"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="createSupportRequest"/>
+                </methods>
+            </class> <!-- testCases.HRMS.SelfService.SupportRequestTest -->
+            <class name="testCases.HRMS.Payroll.CreateLeaveTest">
+                <methods>
+                    <include name="setup"/>
+                    <include name="afterMethod"/>
+                    <include name="teardown"/>
+                    <include name="login"/>
+                    <include name="createLeave"/>
+                </methods>
+            </class> <!-- testCases.HRMS.Payroll.CreateLeaveTest -->
+        </classes>
+    </test> <!-- Regression Tests(failed) -->
 </suite> <!-- Failed suite [RegressionTestSuite] -->

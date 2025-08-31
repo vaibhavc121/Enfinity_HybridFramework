@@ -1,67 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2025-08-02T01:14:07 IST" name="NewTestCaseSuite" finished-at="2025-08-02T01:15:30 IST" duration-ms="83711">
-    <groups>
-      <group name="regression">
-        <method signature="CreateSupportRequestTest.createSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@4275c20c]" name="createSupportRequest" class="testCases.HRMS.SelfService.CreateSupportRequestTest"/>
-        <method signature="DeleteSupportRequestTest.deleteITSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]" name="deleteITSupportRequest" class="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
-      </group> <!-- regression -->
-    </groups>
-    <test started-at="2025-08-02T01:14:07 IST" name="Regression Tests" finished-at="2025-08-02T01:15:30 IST" duration-ms="83711">
-      <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]" started-at="2025-08-02T01:14:44 IST" name="setup" finished-at="2025-08-02T01:15:07 IST" duration-ms="22906" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deleteITSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]" started-at="2025-08-02T01:15:07 IST" name="deleteITSupportRequest" finished-at="2025-08-02T01:15:30 IST" duration-ms="23098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteITSupportRequest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]" started-at="2025-08-02T01:15:30 IST" name="teardown" finished-at="2025-08-02T01:15:30 IST" duration-ms="258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.SelfService.DeleteSupportRequestTest -->
-      <class name="testCases.HRMS.SelfService.CreateSupportRequestTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@4275c20c]" started-at="2025-08-02T01:14:07 IST" name="setup" finished-at="2025-08-02T01:14:32 IST" duration-ms="25114" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@4275c20c]" started-at="2025-08-02T01:14:32 IST" name="createSupportRequest" finished-at="2025-08-02T01:14:44 IST" duration-ms="11808" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSupportRequest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.CreateSupportRequestTest@4275c20c]" started-at="2025-08-02T01:14:44 IST" name="teardown" finished-at="2025-08-02T01:14:44 IST" duration-ms="258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.HRMS.SelfService.CreateSupportRequestTest -->
-    </test> <!-- Regression Tests -->
-  </suite> <!-- NewTestCaseSuite -->
+    <reporter-output>
+    </reporter-output>
+    <suite started-at="2025-08-02T01:14:07 IST" name="NewTestCaseSuite" finished-at="2025-08-02T01:15:30 IST"
+           duration-ms="83711">
+        <groups>
+            <group name="regression">
+                <method signature="CreateSupportRequestTest.createSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.SupportRequestTest@4275c20c]"
+                        name="createSupportRequest" class="testCases.HRMS.SelfService.SupportRequestTest"/>
+                <method signature="DeleteSupportRequestTest.deleteITSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]"
+                        name="deleteITSupportRequest" class="testCases.HRMS.SelfService.DeleteSupportRequestTest"/>
+            </group> <!-- regression -->
+        </groups>
+        <test started-at="2025-08-02T01:14:07 IST" name="Regression Tests" finished-at="2025-08-02T01:15:30 IST"
+              duration-ms="83711">
+            <class name="testCases.HRMS.SelfService.DeleteSupportRequestTest">
+                <test-method is-config="true"
+                             signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]"
+                             started-at="2025-08-02T01:14:44 IST" name="setup" finished-at="2025-08-02T01:15:07 IST"
+                             duration-ms="22906" status="PASS">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[windows]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[chrome]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- setup -->
+                <test-method
+                        signature="deleteITSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]"
+                        started-at="2025-08-02T01:15:07 IST" name="deleteITSupportRequest"
+                        finished-at="2025-08-02T01:15:30 IST" duration-ms="23098" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- deleteITSupportRequest -->
+                <test-method is-config="true"
+                             signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.DeleteSupportRequestTest@40258c2f]"
+                             started-at="2025-08-02T01:15:30 IST" name="teardown" finished-at="2025-08-02T01:15:30 IST"
+                             duration-ms="258" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- teardown -->
+            </class> <!-- testCases.HRMS.SelfService.DeleteSupportRequestTest -->
+            <class name="testCases.HRMS.SelfService.SupportRequestTest">
+                <test-method is-config="true"
+                             signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.HRMS.SelfService.SupportRequestTest@4275c20c]"
+                             started-at="2025-08-02T01:14:07 IST" name="setup" finished-at="2025-08-02T01:14:32 IST"
+                             duration-ms="25114" status="PASS">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[windows]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[chrome]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- setup -->
+                <test-method
+                        signature="createSupportRequest()[pri:0, instance:testCases.HRMS.SelfService.SupportRequestTest@4275c20c]"
+                        started-at="2025-08-02T01:14:32 IST" name="createSupportRequest"
+                        finished-at="2025-08-02T01:14:44 IST" duration-ms="11808" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- createSupportRequest -->
+                <test-method is-config="true"
+                             signature="teardown()[pri:0, instance:testCases.HRMS.SelfService.SupportRequestTest@4275c20c]"
+                             started-at="2025-08-02T01:14:44 IST" name="teardown" finished-at="2025-08-02T01:14:44 IST"
+                             duration-ms="258" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- teardown -->
+            </class> <!-- testCases.HRMS.SelfService.SupportRequestTest -->
+        </test> <!-- Regression Tests -->
+    </suite> <!-- NewTestCaseSuite -->
 </testng-results>

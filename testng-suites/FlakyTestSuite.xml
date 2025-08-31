@@ -28,7 +28,7 @@
 
 
             <!-- Self Service -->
-            <class name="testCases.HRMS.SelfService.CreateOvertimeApplicationTest"/>
+            <class name="testCases.HRMS.SelfService.OvertimeApplicationTest"/>
             <class name="testCases.HRMS.SelfService.DeleteOvertimeApplicationTest"/>
 
             <!-- Attendance -->

@@ -18,7 +18,7 @@
         <parameter name="browser" value="chrome"/>
 
         <classes>
-            <class name="testCases.HRMS.HRCore.CreateBankTest"/>
+            <class name="testCases.HRMS.HRCore.BankTest"/>
             <class name="testCases.HRMS.HRCore.DeleteBankTest"/>
         </classes>
     </test>
@@ -28,7 +28,7 @@
         <parameter name="browser" value="chrome"/>
 
         <classes>
-            <class name="testCases.HRMS.HRCore.CreateCalendarTest"/>
+            <class name="testCases.HRMS.HRCore.CalendarTest"/>
             <class name="testCases.HRMS.HRCore.DeleteCalendarTest"/>
         </classes>
     </test>
