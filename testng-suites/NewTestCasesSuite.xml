@@ -23,6 +23,8 @@
 
             <!-- New Test -->
 
+            <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>-->
+
 
         </classes>
     </test>
