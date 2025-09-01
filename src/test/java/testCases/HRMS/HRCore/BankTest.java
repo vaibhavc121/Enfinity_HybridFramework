@@ -28,10 +28,13 @@ public class BankTest extends BaseTest
 
             HRCorePage hc = new HRCorePage(driver);
             hc.clickHRCore();
+            BaseTest.log("Click on HRCore module");
             hc.clickSetupForm();
+            BaseTest.log("Click on Setup form");
 
             SetupPage sp = new SetupPage(driver);
             sp.clickBank();
+            BaseTest.log("Clicked on Bank");
             Thread.sleep(2000);
 
             BankPage bp = new BankPage(driver);
@@ -39,10 +42,14 @@ public class BankTest extends BaseTest
             for (CreateBankModel bank : bankData)
             {
                 bp.clickNew();
+                BaseTest.log("Clicked on New button");
                 bp.provideBankName(bank.bankName);
+                BaseTest.log("Provided Bank Name: " + bank.bankName);
                 bp.clickSaveBack();
+                BaseTest.log("Clicked on Save and Back button");
 
                 BasePage.validateListing(bank.bankName, 2, 1);
+                BaseTest.log("Verified: Bank created successfully: " + bank.bankName);
             }
             // ClassicAssert.isTrue(bp.isTxnCreated());
 
@@ -76,7 +83,7 @@ public class BankTest extends BaseTest
                 Thread.sleep(2000);
                 BasePage.deleteHrCoreTxn(2, bank.bankName);
                 Assert.assertFalse(BasePage.validateListing(bank.bankName, 2, 1), "Transaction not deleted: " + bank.bankName);
-                log("Verified: Transaction deleted successfully");
+                log("Verified: Bank deleted successfully: " + bank.bankName);
                 // ClassicAssert.isTrue(BasePage.isTxnCreated());
             }
         } catch (Exception e)

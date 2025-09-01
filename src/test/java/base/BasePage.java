@@ -394,6 +394,7 @@ public class BasePage
     public static void clickOnViewListing()
     {
         waitForElement1(By.xpath("//img[@id='MainMenu_DXI3_Img']")).click();
+        BaseTest.log("Clicked on view");
     }
 
     public static void clickOnViewTxn()
@@ -461,6 +462,7 @@ public class BasePage
     public static void clickOnEdit()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Edit']")).click();
+        BaseTest.log("Clicked on edit");
     }
 
     public static void clickApproveAndBack()
@@ -787,9 +789,11 @@ public class BasePage
             if (ColumnIndex == 2)
             {
                 waitForElement1(By.xpath("(//tr)[6]//td[1]")).click();
+                BaseTest.log("row selected from listing");
             } else
             {
                 waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
+                BaseTest.log("row selected from listing");
             }
         } catch (Exception e)
         {
@@ -802,27 +806,34 @@ public class BasePage
         } catch (Exception e)
         {
             waitForElement1(By.xpath("(//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')])[1]")).click();
+            BaseTest.log("Clicked on context menu");
             clickOnEdit();
         }
         waitTS(5);
         try
         {
             waitForElement1(By.xpath("(//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')])[1]")).click();
+            BaseTest.log("Clicked on context menu");
         } catch (Exception e)
         {
             try
             {
                 waitForElement1(By.xpath("//img[@id='MainMenu_DXI26_PImg']")).click();
+                BaseTest.log("Clicked on context menu");
             } catch (Exception e1)
             {
                 waitForElement1(By.xpath("//img[@id='MainMenu_DXI16_PImg']")).click();
+                BaseTest.log("Clicked on context menu");
             }
         }
 
         waitForElement1(By.xpath("//span[normalize-space()='Delete']")).click();
+        BaseTest.log("Clicked on delete");
         waitTS(1);
         pressKey("enter");
+        BaseTest.log("Pressed enter key");
         driver.navigate().back();
+        BaseTest.log("Navigated back to listing");
     }
 
     public static void clickOnContextMenu()
