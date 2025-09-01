@@ -25,9 +25,9 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
-      # Run Maven tests
+      # Run Maven tests (fixed)
       - name: Run Maven Tests
-        run: mvn test -DsuiteXmlFile=testng-suites/RegressionTestSuite.xml -DexcludedGroups=flaky
+        run: mvn -DsuiteXmlFile="testng-suites/RegressionTestSuite.xml" -DexcludedGroups=flaky test
 
       # Upload JUnit results
       - name: Upload Test Results
@@ -40,7 +40,7 @@ jobs:
       - name: Archive ExtentReports + Assets
         run: |
           mkdir -p ExtentReportBundle
-          cp -r reports screenshots logs ExtentReportBundle || true
+          cp -r reports screenshots logs ExtentReportBundle || echo "No reports/screenshots/logs to copy"
 
       # Publish ExtentReports as Artifact
       - name: Upload ExtentReport
