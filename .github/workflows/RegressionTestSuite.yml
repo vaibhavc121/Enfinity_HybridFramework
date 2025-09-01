@@ -25,7 +25,7 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
-      # Run Maven tests (fixed)
+      # Run Maven tests (fixed order of arguments)
       - name: Run Maven Tests
         run: mvn -DsuiteXmlFile="testng-suites/NewTestCasesSuite.xml" -DexcludedGroups=flaky test
 
@@ -36,11 +36,14 @@ jobs:
           name: junit-results
           path: '**/surefire-reports/TEST-*.xml'
 
-      # Copy ExtentReports + assets
+      # Copy ExtentReports + assets (PowerShell version for Windows)
       - name: Archive ExtentReports + Assets
         run: |
-          mkdir -p ExtentReportBundle
-          cp -r reports screenshots logs ExtentReportBundle || echo "No reports/screenshots/logs to copy"
+          New-Item -ItemType Directory -Force -Path ExtentReportBundle
+          if (Test-Path reports) { Copy-Item reports -Destination ExtentReportBundle -Recurse }
+          if (Test-Path screenshots) { Copy-Item screenshots -Destination ExtentReportBundle -Recurse }
+          if (Test-Path logs) { Copy-Item logs -Destination ExtentReportBundle -Recurse }
+        shell: pwsh
 
       # Publish ExtentReports as Artifact
       - name: Upload ExtentReport
