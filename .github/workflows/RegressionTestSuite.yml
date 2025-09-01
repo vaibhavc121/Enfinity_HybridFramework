@@ -27,7 +27,7 @@ jobs:
 
       # Run Maven tests (fixed)
       - name: Run Maven Tests
-        run: mvn -DsuiteXmlFile="testng-suites/RegressionTestSuite.xml" -DexcludedGroups=flaky test
+        run: mvn -DsuiteXmlFile="testng-suites/NewTestCasesSuite.xml" -DexcludedGroups=flaky test
 
       # Upload JUnit results
       - name: Upload Test Results
