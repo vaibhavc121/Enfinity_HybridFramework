@@ -77,13 +77,13 @@ public class LoginPage extends BasePage
         loginButton.click();
         BaseTest.log("clicked on login button");
 
-        try
-        {
-            clickOnSkip();
-        } catch (Exception e)
-        {
-
-        }
+//        try
+//        {
+//            clickOnSkip();
+//        } catch (Exception e)
+//        {
+//
+//        }
     }
 
     //endregion

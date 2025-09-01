@@ -44,6 +44,25 @@ public class BaseTest
 
     //region Setup
 
+    //region Before Method
+    @BeforeMethod(groups = {"regression", "datadriven", "functional"}, enabled = false)
+    public void prepareNavigation()
+    {
+        try
+        {
+            LoginPage.clickOnSkip();
+        } catch (Exception e)
+        {
+
+        }
+        BasePage.openSidebar();
+        log("Opened sidebar");
+        BasePage.clickMenuIcon();
+        log("Clicked on Menu Icon");
+    }
+
+    //endregion
+
     @SuppressWarnings("deprecation")
     @BeforeClass(groups = {"regression", "datadriven", "functional"})
     @Parameters({"os", "browser"})
@@ -245,25 +264,6 @@ public class BaseTest
         //endregion
 
     }
-    //endregion
-
-    //region Before Method
-    @BeforeMethod(groups = {"regression", "datadriven", "functional"})
-    public void prepareNavigation()
-    {
-        try
-        {
-            LoginPage.clickOnSkip();
-        } catch (Exception e)
-        {
-
-        }
-        BasePage.openSidebar();
-        log("Opened sidebar");
-        BasePage.clickMenuIcon();
-        log("Clicked on Menu Icon");
-    }
-
     //endregion
 
     //region TearDown

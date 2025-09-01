@@ -31,8 +31,6 @@
             <!--            <class name="testCases.HRMS.Payroll.OvertimeTest"/>-->
             <!--            <class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>-->
 
-            <class name="testCases.HRMS.HRCore.BankTest"/>
-
 
         </classes>
     </test>
