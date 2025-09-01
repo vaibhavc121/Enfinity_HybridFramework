@@ -1,0 +1,50 @@
+name: Maven Regression Tests
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  regression-test:
+    runs-on: windows-latest
+    timeout-minutes: 120
+    name: Nightly Regression Suite
+
+    steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup JDK 17
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      # Run Maven tests
+      - name: Run Maven Tests
+        run: mvn test -DsuiteXmlFile=testng-suites/RegressionTestSuite.xml -DexcludedGroups=flaky
+
+      # Upload JUnit results
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-results
+          path: '**/surefire-reports/TEST-*.xml'
+
+      # Copy ExtentReports + assets
+      - name: Archive ExtentReports + Assets
+        run: |
+          mkdir -p ExtentReportBundle
+          cp -r reports screenshots logs ExtentReportBundle || true
+
+      # Publish ExtentReports as Artifact
+      - name: Upload ExtentReport
+        uses: actions/upload-artifact@v4
+        with:
+          name: ExtentReport
+          path: ExtentReportBundle
