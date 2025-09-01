@@ -400,6 +400,7 @@ public class BasePage
     public static void clickOnViewTxn()
     {
         waitForElement1(By.xpath("//span[normalize-space()='View']")).click();
+        waitTS(2);
     }
 
     public static void clickOnApprove()
