@@ -1,0 +1,47 @@
+version: 2.1
+
+executors:
+  maven-executor:
+    docker:
+      - image: cimg/openjdk:17.0
+    working_directory: ~/repo
+
+jobs:
+  regression_test:
+    executor: maven-executor
+    steps:
+      - checkout
+      - run:
+          name: Run Regression Suite with Maven
+          command: |
+            mvn test \
+              -DsuiteXmlFile=testng-suites/RegressionTestSuite.xml \
+              -DexcludedGroups=flaky \
+              -Dmaven.test.failure.ignore=false
+      - store_test_results:
+          path: target/surefire-reports
+      - store_artifacts:
+          path: reports
+          destination: reports
+      - store_artifacts:
+          path: screenshots
+          destination: screenshots
+      - store_artifacts:
+          path: logs
+          destination: logs
+      - store_artifacts:
+          path: target/surefire-reports
+          destination: surefire-reports
+
+workflows:
+  version: 2
+  nightly_regression:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - regression_test
