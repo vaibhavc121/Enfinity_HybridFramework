@@ -21,11 +21,11 @@
 
         <classes>
 
-            <class name="testCases.HRMS.Performance.PerformanceTest">
-                <methods>
-                    <include name="createAppraisalCycle"/>
-                </methods>
-            </class>
+            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createAppraisalCycle"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
             <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
@@ -45,6 +45,13 @@
             <!--                    <include name="completeHiringProcess"/>-->
             <!--                </methods>-->
             <!--            </class>-->
+
+            <class name="testCases.HRMS.HRCore.DelegationTest">
+                <methods>
+                    <include name="deleteDelegation"/>
+
+                </methods>
+            </class>
 
 
         </classes>

@@ -462,7 +462,7 @@ public class BasePage
 
     public static void clickOnEdit()
     {
-        waitForElement1(By.xpath("//span[normalize-space()='Edit']")).click();
+        waitForElement1(By.xpath("//img[@title='Edit']")).click();
         BaseTest.log("Clicked on edit");
     }
 

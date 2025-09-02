@@ -13,6 +13,7 @@ import pageObjects.HRMS.HRCore.SetupPage;
 import utilities.CommonActions;
 import utilities.FileUtils;
 import utilities.JsonUtils;
+import utilities.RetryAnalyzer;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class DelegationTest extends BaseTest
             HRCoreModel.DelegationModel.class);
 
     @Test(groups = "regression")
-    public void verifyDelegation()
+    public void createDelegation()
     {
         try
         {
@@ -56,8 +57,46 @@ public class DelegationTest extends BaseTest
                 dp.provideDesc(data.description);
                 log("provided description: " + data.description);
 
-                //Assert.assertTrue(CommonActions.IsTxnCreated());
+                BasePage.clickSaveAndBack();
 
+                //Assert.assertTrue(CommonActions.IsTxnCreated());
+                BasePage.validateListing2Fields(data.delegator, 2, 1, "Active", 8, 7);
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    public void deleteDelegation()
+    {
+        try
+        {
+            // hr core
+            HRCorePage hc = new HRCorePage(driver);
+            hc.clickHRCore();
+            log("clicked on hr core link");
+            hc.clickSetupForm();
+            log("clicked on setup form");
+
+            // setup page
+            SetupPage sp = new SetupPage(driver);
+            sp.clickDelegation();
+            log("clicked on delegation");
+            Thread.sleep(2000);
+
+            // delegation pg
+            DelegationPage dp = new DelegationPage(driver);
+            for (HRCoreModel.DelegationModel data : delegationData)
+            {
+                BasePage.filterAndOpenTransaction(8, 7, "Active", "Edit");
+                dp.clickDelete();
+                log("clicked on delete button");
+
+                Assert.assertFalse(BasePage.validateListing("Active", 8, 7), "Delegation record not deleted successfully");
+                log("Verified: Delegation record deleted successfully");
             }
         } catch (Exception e)
         {

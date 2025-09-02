@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
+import utilities.BrowserUtils;
 import utilities.CommonActions;
 
 import java.util.List;
@@ -37,6 +38,9 @@ public class DelegationPage extends BasePage
 
     @FindBy(xpath = "//input[contains(@id,'ToDate')]")
     private WebElement toDate;
+
+    @FindBy(xpath = "//span[normalize-space()='Delete']")
+    private WebElement delete;
 
     //endregion
 
@@ -103,6 +107,12 @@ public class DelegationPage extends BasePage
     public void clkSaveBtn()
     {
         CommonActions.clkSave();
+    }
+
+    public void clickDelete()
+    {
+        clickOnElement1(delete);
+        BrowserUtils.navigateBack(driver);
     }
     //endregion
 }
