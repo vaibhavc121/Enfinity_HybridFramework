@@ -27,7 +27,9 @@ public class LoanRequestTest extends BaseTest
             // self service page
             SelfServicePage ss = new SelfServicePage(driver);
             ss.clickSelfService();
+            log("Clicked on Self Service");
             ss.clickTransactions();
+            log("Clicked on Transactions");
 
             // Loan Request page
             LoanRequestPage lr = new LoanRequestPage(driver);
@@ -35,15 +37,31 @@ public class LoanRequestTest extends BaseTest
             for (LoanRequestModel loan : loanRequestData)
             {
                 lr.clickLoanRequest();
-                lr.clickNew();
-                lr.clickPlusBtn();
-                lr.provideLoanAmt(loan.loanAmt);
-                lr.provideInstallmentAmt(loan.installmentAmt);
-                lr.selectRepaymentStartPeriod(loan.repaymentStartPeriod);
-                lr.provideRemarks(loan.remarks);
-                lr.clickSave();
+                log("Clicked on Loan Request");
 
-                Assert.assertTrue(lr.isTxnCreated(loan.loanType, loan.loanAmt));
+                lr.clickNew();
+                log("Clicked on New button");
+
+                lr.clickPlusBtn();
+                log("Clicked on Plus button");
+
+                lr.provideLoanAmt(loan.loanAmt);
+                log("Provided Loan Amount: " + loan.loanAmt);
+
+                lr.provideInstallmentAmt(loan.installmentAmt);
+                log("Provided Installment Amount: " + loan.installmentAmt);
+
+                lr.selectRepaymentStartPeriod(loan.repaymentStartPeriod);
+                log("Selected Repayment Start Period: " + loan.repaymentStartPeriod);
+
+                lr.provideRemarks(loan.remarks);
+                log("Provided Remarks: " + loan.remarks);
+
+                lr.clickSave();
+                log("Clicked on Save button");
+
+                Assert.assertTrue(lr.isTxnCreated(loan.loanType, loan.loanAmt), "Loan Request creation failed for Loan Type: " + loan.loanType +
+                        " and Loan Amount: " + loan.loanAmt);
             }
         } catch (Exception e)
         {

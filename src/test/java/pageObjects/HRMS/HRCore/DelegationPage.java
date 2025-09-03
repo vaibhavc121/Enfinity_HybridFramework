@@ -42,6 +42,9 @@ public class DelegationPage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Delete']")
     private WebElement delete;
 
+    @FindBy(xpath = "(//tr)[6]//td[3]")
+    private static WebElement row;
+
     //endregion
 
     //region Action Methods
@@ -111,8 +114,38 @@ public class DelegationPage extends BasePage
 
     public void clickDelete()
     {
+        waitTS(2);
         clickOnElement1(delete);
-        BrowserUtils.navigateBack(driver);
+        waitTS(2);
+        pressEnter();
+        waitTS(2);
+        //BrowserUtils.navigateBack(driver);
+    }
+
+    public static void filterAndOpenTransaction(int filterIndex, int resultIndex, String expValue, String mode)
+    {
+        filterByIndex(filterIndex, expValue);
+        waitTS(2);
+        String actValue = resultValue(resultIndex);
+        if (actValue.contains(expValue))
+        {
+            selectRow1();
+            if (mode.contains("view"))
+            {
+                clickOnViewListing();
+            } else
+            {
+                clickOnEditListing();
+            }
+        } else
+        {
+            throw new RuntimeException("VRC- No matching record found");
+        }
+    }
+
+    public static void selectRow1()
+    {
+        clickOnElement1(row);
     }
     //endregion
 }

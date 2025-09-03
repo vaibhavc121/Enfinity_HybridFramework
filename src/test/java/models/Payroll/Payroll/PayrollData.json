@@ -100,8 +100,8 @@
     {
       "employee": "Vaibhav Chavan",
       "effectiveDate": "01-01-2025",
-      "loanType": "Car Loan",
-      "repaymentStartPeriod": "Feb-2023",
+      "loanType": "Housing Loan",
+      "repaymentStartPeriod": "Jan-2025",
       "loanAmt": "100",
       "amountOfInstallments": "10",
       "remarks": "10"
@@ -138,5 +138,4 @@
       "releaseSuspendDate": "01-01-2025"
     }
   ]
-
 }

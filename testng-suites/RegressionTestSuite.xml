@@ -31,6 +31,8 @@
             <class name="testCases.HRMS.HRCore.QualificationTest"/>
             <class name="testCases.HRMS.HRCore.ReligionTest"/>
             <class name="testCases.HRMS.HRCore.WorkLocationTest"/>
+            <class name="testCases.HRMS.HRCore.DelegationTest"/>
+            <class name="testCases.HRMS.HRCore.LicensesTest"/>
 
 
             <!-- Payroll -->
@@ -44,7 +46,9 @@
             <class name="testCases.HRMS.Payroll.PromotionTest"/>
             <class name="testCases.HRMS.Payroll.PenaltyTest"/>
             <class name="testCases.HRMS.Payroll.SuspendTest"/>
-            
+            <class name="testCases.HRMS.Payroll.LoanTest"/>
+            <class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>
+
 
             <!-- Self Service -->
             <class name="testCases.HRMS.SelfService.BenefitClaimTest"/>

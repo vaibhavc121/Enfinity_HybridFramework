@@ -370,6 +370,7 @@ public class AttendanceTest extends BaseTest
                 tp.provideSecondOutTime(strict.secondOutTime);
                 tp.selectShiftNextDayStartFrom(strict.shiftNextDayStartFrom);
                 tp.clickViewBack();
+                //p.clickTimetable();
 
                 Assert.assertTrue(BasePage.validateListing(strict.name, 3, 2));
             }

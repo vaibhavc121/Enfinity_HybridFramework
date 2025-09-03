@@ -21,12 +21,13 @@
 
         <classes>
 
-            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createAppraisalCycle"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
+            <class name="testCases.HRMS.HRCore.DelegationTest">
+                <methods>
+                    <include name="createDelegation"/>
+                    <include name="deleteDelegation"/>
 
+                </methods>
+            </class>
 
             <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
             <!--                <methods>-->
@@ -34,6 +35,21 @@
             <!--                    <include name="deleteUnpaidLeave"/>-->
             <!--                </methods>-->
             <!--            </class>-->
+
+            <!--            <class name="testCases.HRMS.SelfService.ExceptionRequestTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createLoanRequest"/>-->
+            <!--                    <include name="deleteLoanRequest"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+
+
+            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createAppraisalCycle"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
             <!--                <methods>-->
@@ -46,12 +62,12 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name="testCases.HRMS.HRCore.DelegationTest">
-                <methods>
-                    <include name="deleteDelegation"/>
 
-                </methods>
-            </class>
+            <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createCandidate"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
         </classes>

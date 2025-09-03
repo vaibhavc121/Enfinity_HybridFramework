@@ -25,11 +25,7 @@
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>-->
             <!--            <class name="testCases.HRMS.SelfService.LeaveCancellationTest"/>-->
-            <class name="testCases.HRMS.HRCore.DelegationTest"/>
-            <!--            <class name="testCases.HRMS.HRCore.LicensesTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.LoanTest"/>-->
             <!--            <class name="testCases.HRMS.Payroll.OvertimeTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>-->
 
 
         </classes>

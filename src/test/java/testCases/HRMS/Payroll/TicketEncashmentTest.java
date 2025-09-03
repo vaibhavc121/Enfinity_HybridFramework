@@ -28,9 +28,9 @@ public class TicketEncashmentTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // Ticket Encashment pg
             TicketEncashmentPage te = new TicketEncashmentPage(driver);
@@ -38,17 +38,34 @@ public class TicketEncashmentTest extends BaseTest
             for (TicketEncashmentModel ticketEncashment : ticketEncashmentData)
             {
                 te.clickTicketEncashment();
+                log("clicked on Ticket Encashment link");
+
                 te.clickNew();
+                log("clicked on new button");
+
                 te.provideEmp(ticketEncashment.employee);
+                log("Provided employee: " + ticketEncashment.employee);
                 // te.provideEffectiveDate(ticketEncashment.effectiveDate);
                 te.providePaymentType(ticketEncashment.paymentType);
-                te.clickSave();
-                te.provideIssueTickets(ticketEncashment.issueTickets);
-                te.clickSave1();
-                te.clickView();
-                te.clickApproveBack();
+                log("Provided payment type: " + ticketEncashment.paymentType);
 
-                Assert.assertTrue(BasePage.validateListing(ticketEncashment.employee, 6, 6));
+                te.clickSave();
+                log("clicked on save button");
+
+                te.provideIssueTickets(ticketEncashment.issueTickets);
+                log("Provided issue tickets: " + ticketEncashment.issueTickets);
+
+                te.clickSave1();
+                log("clicked on save button");
+
+                te.clickView();
+                log("clicked on view button");
+
+                te.clickApproveBack();
+                log("clicked on approve & navigate back to listing");
+
+                Assert.assertTrue(BasePage.validateListing2Fields(ticketEncashment.employee, 6, 6, "Approved", 7, 7), "Ticket Encashment creation failed");
+                log("Verified: Ticket Encashment created successfully: " + ticketEncashment.employee);
             }
         } catch (Exception e)
         {
@@ -69,9 +86,9 @@ public class TicketEncashmentTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage(driver);
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // Ticket Encashment pg
             TicketEncashmentPage te = new TicketEncashmentPage(driver);
@@ -79,10 +96,11 @@ public class TicketEncashmentTest extends BaseTest
             for (TicketEncashmentModel ticketEncashment : ticketEncashmentData)
             {
                 te.clickTicketEncashment();
+                log("clicked on Ticket Encashment link");
 
-                BasePage.performAction(6, ticketEncashment.employee, "Amend");
-                // Assert.assertFalse(BasePage.validateListing(benefitEncashment.employee, 6,
-                // 6));
+                BasePage.performAction(7, "Approved", "Amend");
+                Assert.assertFalse(BasePage.validateListing2Fields(ticketEncashment.employee, 6, 6, "Approved", 7, 7), "Ticket Encashment deletion failed");
+                log("Verified: Ticket Encashment deleted successfully: " + ticketEncashment.employee);
             }
         } catch (Exception e)
         {

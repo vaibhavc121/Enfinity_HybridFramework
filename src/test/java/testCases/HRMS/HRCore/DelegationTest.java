@@ -91,8 +91,11 @@ public class DelegationTest extends BaseTest
             DelegationPage dp = new DelegationPage(driver);
             for (HRCoreModel.DelegationModel data : delegationData)
             {
-                BasePage.filterAndOpenTransaction(8, 7, "Active", "Edit");
+                dp.filterAndOpenTransaction(8, 7, "Active", "Edit");
+                BasePage.switchTab();
+                BasePage.waitTS(2);
                 dp.clickDelete();
+
                 log("clicked on delete button");
 
                 Assert.assertFalse(BasePage.validateListing("Active", 8, 7), "Delegation record not deleted successfully");

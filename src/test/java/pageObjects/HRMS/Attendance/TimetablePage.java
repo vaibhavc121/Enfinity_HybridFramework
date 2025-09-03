@@ -56,6 +56,9 @@ public class TimetablePage extends BasePage
     @FindBy(xpath = "//input[@id='Timetable.HourlyMaxCheckOutTime_I']")
     WebElement hourlyMaxCheckOutTime;
 
+    @FindBy(xpath = "//a[normalize-space()='Timetable']")
+    private WebElement timetable;
+
     public void clickNew()
     {
         waitTS(3);
@@ -142,6 +145,11 @@ public class TimetablePage extends BasePage
     {
         clearAndProvide1(hourlyMaxCheckOutTime, value);
         waitTS(2);
+    }
+
+    public void clickTimetable()
+    {
+        clickOnElement1(timetable);
     }
 
     public void clickViewBack()

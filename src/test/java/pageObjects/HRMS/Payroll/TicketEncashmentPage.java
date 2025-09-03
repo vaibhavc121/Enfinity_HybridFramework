@@ -38,7 +38,7 @@ public class TicketEncashmentPage extends BasePage
 //	@FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[6]")
 //	WebElement issueTicket;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]")
+    @FindBy(xpath = "(//td[@class='grid-cell dx-wrap dxgv dx-ellipsis dx-ar'])[3]")
     WebElement issueTicket;
 
     public void clickTicketEncashment()
@@ -76,7 +76,7 @@ public class TicketEncashmentPage extends BasePage
     public boolean checkAvailableTicket()
     {
         String availableTicket = driver.findElement(By.xpath(
-                        "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[5]"))
+                        "(//td[@class='grid-cell dx-wrap dxgv dx-ellipsis dx-ar'])[1]"))
                 .getText();
 
         // String availableTicket = driver.findElement(By.xpath("(//div[@class='dxgBCTC
