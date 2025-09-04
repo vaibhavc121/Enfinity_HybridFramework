@@ -60,7 +60,7 @@ public class DelegationTest extends BaseTest
                 BasePage.clickSaveAndBack();
 
                 //Assert.assertTrue(CommonActions.IsTxnCreated());
-                BasePage.validateListing2Fields(data.delegator, 2, 1, "Active", 8, 7);
+                BasePage.validateListing2Fields(data.delegator, 2, 1, "Active", 4, 3);
             }
         } catch (Exception e)
         {
@@ -91,14 +91,14 @@ public class DelegationTest extends BaseTest
             DelegationPage dp = new DelegationPage(driver);
             for (HRCoreModel.DelegationModel data : delegationData)
             {
-                dp.filterAndOpenTransaction(8, 7, "Active", "Edit");
+                dp.filterAndOpenTransaction(4, 3, "Active", "Edit");
                 BasePage.switchTab();
                 BasePage.waitTS(2);
                 dp.clickDelete();
 
                 log("clicked on delete button");
 
-                Assert.assertFalse(BasePage.validateListing("Active", 8, 7), "Delegation record not deleted successfully");
+                Assert.assertFalse(BasePage.validateListing("Active", 4, 3), "Delegation record not deleted successfully");
                 log("Verified: Delegation record deleted successfully");
             }
         } catch (Exception e)

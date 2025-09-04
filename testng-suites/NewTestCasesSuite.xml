@@ -25,7 +25,7 @@
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>-->
             <!--            <class name="testCases.HRMS.SelfService.LeaveCancellationTest"/>-->
-            <!--            <class name="testCases.HRMS.Payroll.OvertimeTest"/>-->
+            <class name="testCases.HRMS.Payroll.OvertimeTest"/>
 
 
         </classes>
