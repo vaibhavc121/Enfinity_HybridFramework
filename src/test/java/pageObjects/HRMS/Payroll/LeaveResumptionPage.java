@@ -8,11 +8,6 @@ import org.openqa.selenium.support.FindBy;
 public class LeaveResumptionPage extends BasePage
 {
 
-    public LeaveResumptionPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     //region Locators
     @FindBy(xpath = "(//input[contains(@id,'ActualResumptionDate')])[2]")
     WebElement resumptionDate;

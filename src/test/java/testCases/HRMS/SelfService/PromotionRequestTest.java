@@ -26,12 +26,12 @@ public class PromotionRequestTest extends BaseTest
                     "createPromotionRequest", PromotionRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // Promotion Request page
-            PromotionRequestPage pr = new PromotionRequestPage(driver);
+            PromotionRequestPage pr = new PromotionRequestPage();
             pr.clickPromotionRequest();
             pr.clickNew();
 
@@ -64,12 +64,12 @@ public class PromotionRequestTest extends BaseTest
                 "createPromotionRequest", PromotionRequestModel.class);
 
         // self service page
-        SelfServicePage ss = new SelfServicePage(driver);
+        SelfServicePage ss = new SelfServicePage();
         ss.clickSelfService();
         ss.clickTransactions();
 
         // Promotion Request page
-        PromotionRequestPage pr = new PromotionRequestPage(driver);
+        PromotionRequestPage pr = new PromotionRequestPage();
         // pr.scrollDownWebpage();
         pr.clickPromotionRequest();
 

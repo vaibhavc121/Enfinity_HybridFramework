@@ -9,11 +9,6 @@ import base.BasePage;
 public class OnboardingPage extends BasePage
 {
 
-    public OnboardingPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     @FindBy(xpath = "//img[@id='applicationMenu_DXI10_PImg']")
     WebElement menu;
 

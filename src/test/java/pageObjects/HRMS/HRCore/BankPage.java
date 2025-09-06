@@ -11,12 +11,6 @@ import utilities.CommonActions;
 public class BankPage extends BasePage
 {
 
-    public BankPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     //region Locators
     @FindBy(xpath = "//input[@id='Bank.Name_I']")
     WebElement bankName;
@@ -48,8 +42,4 @@ public class BankPage extends BasePage
         return isTransactionCreated();
     }
     //endregion
-
-
-
-
 }

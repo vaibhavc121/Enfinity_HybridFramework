@@ -26,18 +26,18 @@ public class CalendarTest extends BaseTest
             List<CreateCalendarModel> calendarData = JsonUtils.convertJsonListDataModel(calendarFile, "createCalendar",
                     CreateCalendarModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("Clicked on HR Core module");
             hc.clickSetupForm();
             log("Clicked on Setup form");
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickCalendar();
             log("Clicked on Calendar link");
             Thread.sleep(2000);
 
-            CalendarPage cp = new CalendarPage(driver);
+            CalendarPage cp = new CalendarPage();
             for (CreateCalendarModel calendar : calendarData)
             {
                 cp.clickNewButton();
@@ -72,13 +72,13 @@ public class CalendarTest extends BaseTest
             List<HRCoreModel.DeleteCalendarModel> calendarData = JsonUtils.convertJsonListDataModel(calendarFile, "deleteCalendar",
                     HRCoreModel.DeleteCalendarModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("Clicked on HR Core module");
             hc.clickSetupForm();
             log("Clicked on Setup form");
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteCalendarModel calendar : calendarData)
             {
                 sp.clickCalendar();

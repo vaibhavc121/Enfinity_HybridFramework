@@ -9,12 +9,6 @@ import base.BasePage;
 public class LeaveAdjustmentPage extends BasePage
 {
 
-    public LeaveAdjustmentPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     @FindBy(xpath = "//span[normalize-space()='Leave Adjustment']")
     WebElement leaveAdjustment;
 

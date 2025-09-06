@@ -9,11 +9,6 @@ import base.BasePage;
 public class TimeOffPage extends BasePage
 {
 
-    public TimeOffPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     // Locators
 
     // Action Methods
@@ -159,7 +154,7 @@ public class TimeOffPage extends BasePage
 
     public void provideUpTOHrs1()
     {
-        // ClickElementByJavaScript(driver, hrs1);
+        // ClickElementByJavaScript(DriverFactory.getDriver(), hrs1);
     }
 
     public void provideUpToMinutes(String value)

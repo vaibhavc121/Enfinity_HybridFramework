@@ -2,6 +2,7 @@ package pageObjects.HRMS.SelfService;
 
 import java.util.List;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,11 +12,6 @@ import base.BasePage;
 
 public class HRAssetRequestPage extends BasePage
 {
-
-    public HRAssetRequestPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     // Locators
     @FindBy(xpath = "//span[text()='HR Asset Request']")
@@ -73,7 +69,7 @@ public class HRAssetRequestPage extends BasePage
     {
         while (true)
         {
-            List<WebElement> valuesList = driver.findElements(By.xpath("//div[@class='lookup-text']"));
+            List<WebElement> valuesList = DriverFactory.getDriver().findElements(By.xpath("//div[@class='lookup-text']"));
             for (WebElement valueElement : valuesList)
             {
                 String actualValue = valueElement.getText();
@@ -84,7 +80,7 @@ public class HRAssetRequestPage extends BasePage
                     return;
                 }
             }
-            driver.findElement(By.xpath("//img[@alt='Next']")).click();
+            DriverFactory.getDriver().findElement(By.xpath("//img[@alt='Next']")).click();
             Thread.sleep(3000);
         }
     }
@@ -130,7 +126,7 @@ public class HRAssetRequestPage extends BasePage
 
     public void test()
     {
-        String value = driver.findElement(By.xpath("(//tbody//tr)[12]//td[2]")).getText();
+        String value = DriverFactory.getDriver().findElement(By.xpath("(//tbody//tr)[12]//td[2]")).getText();
         System.out.println(value);
     }
 }

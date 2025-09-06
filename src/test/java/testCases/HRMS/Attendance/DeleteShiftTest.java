@@ -26,7 +26,7 @@ public class DeleteShiftTest extends BaseTest
                     ShiftModel.class);
 
             // AttendancePage
-            AttendancePage ap = new AttendancePage(driver);
+            AttendancePage ap = new AttendancePage();
             ap.clickAttendance();
             ap.clickShift();
 

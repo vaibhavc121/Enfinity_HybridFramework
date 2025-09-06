@@ -10,28 +10,21 @@ import utilities.CommonActions;
 public class ReligionPage extends BasePage
 {
 
-	public ReligionPage(WebDriver driver)
-	{
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+    @FindBy(xpath = "//input[@id='Religion.Name_I']")
+    WebElement religionName;
 
-	@FindBy(xpath = "//input[@id='Religion.Name_I']")
-	WebElement religionName;
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    public void provideReligionName(String value)
+    {
+        religionName.sendKeys(value);
+    }
 
-	public void provideReligionName(String value)
-	{
-		religionName.sendKeys(value);
-	}
-
-	public void clickSaveBack()
-	{
-		clickSaveAndBack();
-	}
-
+    public void clickSaveBack()
+    {
+        clickSaveAndBack();
+    }
 }

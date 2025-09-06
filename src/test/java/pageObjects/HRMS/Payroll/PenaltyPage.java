@@ -7,18 +7,20 @@ import org.openqa.selenium.support.FindBy;
 
 public class PenaltyPage extends BasePage
 {
-    public PenaltyPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
-    @FindBy(xpath="//span[normalize-space()='Penalty']") WebElement penalty;
-    @FindBy(xpath="//input[@id='Penalty.EmployeeIdLookup_I']") WebElement empdd;
-    @FindBy(xpath="//input[@id='Penalty.PenaltyDate_I']") WebElement penaltyDate;
-    @FindBy(xpath="//input[@id='Penalty.PenaltyTypeIdLookup_I']") WebElement penaltyTypeDD;
-    @FindBy(xpath="//input[@id='Penalty.PenaltyInDays_I']") WebElement penaltyInDays;
-    @FindBy(xpath="//input[@id='Penalty.PenaltyInAmount_I']") WebElement penaltyInAmount;
+    @FindBy(xpath = "//span[normalize-space()='Penalty']")
+    WebElement penalty;
+    @FindBy(xpath = "//input[@id='Penalty.EmployeeIdLookup_I']")
+    WebElement empdd;
+    @FindBy(xpath = "//input[@id='Penalty.PenaltyDate_I']")
+    WebElement penaltyDate;
+    @FindBy(xpath = "//input[@id='Penalty.PenaltyTypeIdLookup_I']")
+    WebElement penaltyTypeDD;
+    @FindBy(xpath = "//input[@id='Penalty.PenaltyInDays_I']")
+    WebElement penaltyInDays;
+    @FindBy(xpath = "//input[@id='Penalty.PenaltyInAmount_I']")
+    WebElement penaltyInAmount;
     //endregion
 
     //region Action Methods
@@ -50,7 +52,6 @@ public class PenaltyPage extends BasePage
         clearAndProvide1(penaltyInDays, days);
         pressTab();
         pressTab();
-
     }
     public void providePenaltyInAmount(String amount)
     {

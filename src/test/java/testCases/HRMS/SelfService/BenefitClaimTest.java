@@ -25,14 +25,14 @@ public class BenefitClaimTest extends BaseTest
                     "createBenefitClaim", BenefitClaimModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("Clicked on Self Service module");
             ss.clickTransactions();
             log("Clicked on Transactions");
 
             // Benefit Claim page
-            BenefitClaimPage bc = new BenefitClaimPage(driver);
+            BenefitClaimPage bc = new BenefitClaimPage();
 
             for (BenefitClaimModel benefitClaim : benefitClaimData)
             {
@@ -67,12 +67,12 @@ public class BenefitClaimTest extends BaseTest
                     "createBenefitClaim", BenefitClaimModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // Benefit Claim page
-            BenefitClaimPage bc = new BenefitClaimPage(driver);
+            BenefitClaimPage bc = new BenefitClaimPage();
             bc.clickBenefitClaim();
 
             BasePage.deleteTxn(6, "001");

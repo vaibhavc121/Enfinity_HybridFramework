@@ -1,5 +1,6 @@
 package pageObjects.HRMS.HRCore;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -13,11 +14,6 @@ import utilities.JavaScriptUtils;
 
 public class EmployeePage extends BasePage
 {
-
-    public EmployeePage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
 
@@ -954,7 +950,7 @@ public class EmployeePage extends BasePage
 
     public void scrollPage()
     {
-        JavaScriptUtils.scrollIntoView(driver, maritalstatus);
+        JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), maritalstatus);
     }
 
     public void selectReligion(String value)
@@ -996,7 +992,7 @@ public class EmployeePage extends BasePage
     public void clickJsSave()
     {
         WebElement save = waitForElement1(By.xpath("//span[normalize-space()='Save']"));
-        JavaScriptUtils.clickElementByJavaScript(driver, save);
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), save);
     }
 
     public boolean validate(String value)
@@ -1403,8 +1399,8 @@ public class EmployeePage extends BasePage
 
     public void deleteBasicSalaryComponent()
     {
-        WebElement elementToHover = driver.findElement(By.xpath("..."));
-        Actions actions = new Actions(driver);
+        WebElement elementToHover = DriverFactory.getDriver().findElement(By.xpath("..."));
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveToElement(elementToHover).perform();
         deleteBasicSalBtn.click();
         waitTS(2);
@@ -1413,8 +1409,8 @@ public class EmployeePage extends BasePage
 
     public void editBasicSalaryComponent(String value)
     {
-        WebElement elementToHover = driver.findElement(By.xpath("..."));
-        Actions actions = new Actions(driver);
+        WebElement elementToHover = DriverFactory.getDriver().findElement(By.xpath("..."));
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveToElement(elementToHover).perform();
         editBasicSalBtn.click();
         waitTS(1);
@@ -1503,8 +1499,8 @@ public class EmployeePage extends BasePage
 
     public void scrollDownWebPageTicket()
     {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        WebElement element = driver.findElement(By.xpath("//div[contains(text(),'Tickets')]"));
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverFactory.getDriver();
+        WebElement element = DriverFactory.getDriver().findElement(By.xpath("//div[contains(text(),'Tickets')]"));
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
@@ -2239,8 +2235,8 @@ public class EmployeePage extends BasePage
 
     public void scrollDownWebPageOldContract()
     {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
-                driver.findElement(By.xpath("//input[contains(@id,'OldContractSalary')]")));
+        ((JavascriptExecutor) DriverFactory.getDriver()).executeScript("arguments[0].scrollIntoView(true);",
+                DriverFactory.getDriver().findElement(By.xpath("//input[contains(@id,'OldContractSalary')]")));
     }
 
     public void provideOldContractSalary(String value)

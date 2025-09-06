@@ -18,7 +18,7 @@ public class CreateLoanRequestTest extends BaseTest
 
         try
         {
-            LoanPage lp=new LoanPage(driver);
+            LoanPage lp = new LoanPage();
             lp.clickPlusBtn();
             log("clicked on plus button");
 
@@ -38,8 +38,6 @@ public class CreateLoanRequestTest extends BaseTest
             log("clickSubmit");
 
             Assert.assertTrue(false);
-
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

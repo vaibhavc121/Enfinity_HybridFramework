@@ -2,6 +2,7 @@ package pageObjects.HRMS.Recruitment;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,10 +17,6 @@ import java.text.MessageFormat;
 
 public class JobApplicationTrackingPage extends BasePage
 {
-    public JobApplicationTrackingPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
 
@@ -438,7 +435,7 @@ public class JobApplicationTrackingPage extends BasePage
 
     public void scrollToTop()
     {
-        scrollIntoView(driver, advanceCandidateSearch);
+        scrollIntoView(DriverFactory.getDriver(), advanceCandidateSearch);
     }
 
     //endregion
@@ -450,7 +447,7 @@ public class JobApplicationTrackingPage extends BasePage
         try
         {
             WebElement candidate = waitForElement1(By.xpath("//span[normalize-space()='" + candidateName + "']"));
-            JavaScriptUtils.scrollIntoView(driver, candidate);
+            JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), candidate);
             waitForElement1(By.xpath("//span[normalize-space()='" + candidateName + "']/../../../../..//span[@class='dx-checkbox-icon']")).click();
         } catch (Exception e)
         {
@@ -461,7 +458,7 @@ public class JobApplicationTrackingPage extends BasePage
                 try
                 {
                     WebElement candidate = waitForElement1(By.xpath("//span[normalize-space()='" + candidateName + "']"));
-                    JavaScriptUtils.scrollIntoView(driver, candidate);
+                    JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), candidate);
                     waitForElement1(By.xpath("//span[normalize-space()='" + candidateName + "']/../../../../..//span[@class='dx-checkbox-icon']")).click();
                     break;
                 } catch (Exception e1)
@@ -735,16 +732,16 @@ public class JobApplicationTrackingPage extends BasePage
                 BaseTest.log("closed Salary Components Section");
 
                 //region Leave Types Section
-//            JavaScriptUtils.scrollToBottom(driver);
+//            JavaScriptUtils.scrollToBottom(DriverFactory.getDriver());
 //            BaseTest.log("Scrolled to bottom of the page");
 //
 //            clickOnElement1(leaveTypes);
 //            BaseTest.log("Clicked on Leave Types Section");
 //
-//            JavaScriptUtils.scrollToBottom(driver);
+//            JavaScriptUtils.scrollToBottom(DriverFactory.getDriver());
 //            BaseTest.log("Scrolled to bottom of the page");
 //
-//            JavaScriptUtils.scrollIntoView(driver, newLineButton);
+//            JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), newLineButton);
 //            BaseTest.log("Scrolled to New Line button");
 //
 //            clickOnElement1(leaveTypeLabel);
@@ -774,7 +771,7 @@ public class JobApplicationTrackingPage extends BasePage
             closeUnwantedTab();
             BaseTest.log("job offer tab closed.");
 
-            BrowserUtils.refreshPage(driver);
+            BrowserUtils.refreshPage(DriverFactory.getDriver());
             BaseTest.log("Page refreshed");
 
             clickOnElement1(candidates);

@@ -2,6 +2,7 @@ package pageObjects.HRMS.Payroll;
 
 import base.BasePage;
 
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,10 +12,6 @@ import utilities.DataUtils;
 
 public class PromotionPage extends BasePage
 {
-    public PromotionPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
     @FindBy(xpath = "//span[contains(text(),'Promotion')]")
@@ -84,8 +81,8 @@ public class PromotionPage extends BasePage
     public void scrollToElement()
     {
         waitTS(2);
-        //scrollIntoView(driver, salaries);
-        scrollToBottom(driver);
+        //scrollIntoView(DriverFactory.getDriver(), salaries);
+        scrollToBottom(DriverFactory.getDriver());
     }
 
     public void clickSalaries()
@@ -124,7 +121,7 @@ public class PromotionPage extends BasePage
     {
         employee.click();
         navigateToEmployee(empname);
-        EmployeePage ep = new EmployeePage(driver);
+        EmployeePage ep = new EmployeePage();
         ep.clickPayroll();
         return DataUtils.extractNumericValueFromText(salCompInfo);
     }

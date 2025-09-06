@@ -12,93 +12,86 @@ import utilities.CommonActions;
 public class OvertimePage extends BasePage
 {
 
-	public OvertimePage(WebDriver driver)
-	{
-		super(driver);
+    @FindBy(xpath = "//span[normalize-space()='Overtime']")
+    WebElement overtime;
 
-	}
+    @FindBy(xpath = "//input[@id='Overtime.EmployeeIdLookup_I']")
+    WebElement empdd;
 
-	@FindBy(xpath = "//span[normalize-space()='Overtime']")
-	WebElement overtime;
+    @FindBy(xpath = "//input[@id='Overtime.EffectiveDate_I']")
+    WebElement effectiveDate;
 
-	@FindBy(xpath = "//input[@id='Overtime.EmployeeIdLookup_I']")
-	WebElement empdd;
+    @FindBy(xpath = "//input[@id='Overtime.OvertimeDate_I']")
+    WebElement overtimeDate;
 
-	@FindBy(xpath = "//input[@id='Overtime.EffectiveDate_I']")
-	WebElement effectiveDate;
+    @FindBy(xpath = "//input[@id='Overtime.OvertimeTypeIdLookup_I']")
+    WebElement overtimeType;
 
-	@FindBy(xpath = "//input[@id='Overtime.OvertimeDate_I']")
-	WebElement overtimeDate;
+    @FindBy(xpath = "//img[@id='Overtime.OvertimeTypeIdLookup_B-1Img']")
+    WebElement overtimeTypeDD;
 
-	@FindBy(xpath = "//input[@id='Overtime.OvertimeTypeIdLookup_I']")
-	WebElement overtimeType;
+    @FindBy(xpath = "//input[@id='Overtime.Hours_I']")
+    WebElement hours;
 
-	@FindBy(xpath = "//img[@id='Overtime.OvertimeTypeIdLookup_B-1Img']")
-	WebElement overtimeTypeDD;
+    @FindBy(xpath = "//img[@id='Overtime.PayBenefitAs_B-1Img']")
+    WebElement payBenefitDD;
 
-	@FindBy(xpath = "//input[@id='Overtime.Hours_I']")
-	WebElement hours;
+    @FindBy(xpath = "//img[@id='Overtime.LeaveTypeIdLookup_B-1Img']")
+    WebElement leaveTypeDD;
 
-	@FindBy(xpath = "//img[@id='Overtime.PayBenefitAs_B-1Img']")
-	WebElement payBenefitDD;
+    BaseTest bc = new BaseTest();
 
-	@FindBy(xpath = "//img[@id='Overtime.LeaveTypeIdLookup_B-1Img']")
-	WebElement leaveTypeDD;
+    public void clickOvertime()
+    {
+        overtime.click();
+    }
 
-	BaseTest bc = new BaseTest();
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
-	public void clickOvertime()
-	{
-		overtime.click();
+    public void provideEmp(String value)
+    {
+        clearAndProvide1(empdd, value);
+    }
 
-	}
+    public void provideEffectiveDate(String value)
+    {
+        clearAndProvide1(effectiveDate, value);
+    }
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    public void provideOvertimeDate(String value)
+    {
+        clearAndProvide1(overtimeDate, value);
+    }
 
-	public void provideEmp(String value)
-	{
-		clearAndProvide1(empdd, value);
-	}
+    public void provideOvertimeType(String value)
+    {
+        clearAndProvide1(overtimeType, value);
+    }
 
-	public void provideEffectiveDate(String value)
-	{
-		clearAndProvide1(effectiveDate, value);
-	}
+    public void provideHrs(String value)
+    {
+        clearAndProvide1(hours, value);
+    }
 
-	public void provideOvertimeDate(String value)
-	{
-		clearAndProvide1(overtimeDate, value);
-	}
+    public void selectPayBenefit()
+    {
+        payBenefitDD.click();
+        selectDropdownValueOffice365("Leave Balance Days");
+    }
 
-	public void provideOvertimeType(String value)
-	{
-		clearAndProvide1(overtimeType, value);
-	}
+    public void slctLeaveType() throws InterruptedException
+    {
+        leaveTypeDD.click();
+        selectDropdownValue("Annual Leave");
+    }
 
-	public void provideHrs(String value)
-	{
-		clearAndProvide1(hours, value);
-	}
-
-	public void selectPayBenefit()
-	{
-		payBenefitDD.click();
-		selectDropdownValueOffice365("Leave Balance Days");
-	}
-
-	public void slctLeaveType() throws InterruptedException
-	{
-		leaveTypeDD.click();
-		selectDropdownValue("Annual Leave");
-	}
-
-	public void clickApproveBack()
-	{
-		clickOnViewApproveBack();
-	}
+    public void clickApproveBack()
+    {
+        clickOnViewApproveBack();
+    }
 
 //	public boolean isTxnCreated()
 //	{
@@ -120,5 +113,4 @@ public class OvertimePage extends BasePage
 //		}
 //
 //	}
-
 }

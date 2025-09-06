@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.DriverFactory;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -29,21 +30,21 @@ public class LeaveResumptionTest extends BaseTest
             List<PayrollModel.LeaveModel> leaveData = JsonUtils.convertJsonListDataModel(payrollFile, "createLeave", PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("clicked on hr core link");
             hc.clickEmployee();
             log("clicked on employee link");
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             log("clicked on time off tab");
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -52,7 +53,7 @@ public class LeaveResumptionTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -102,7 +103,7 @@ public class LeaveResumptionTest extends BaseTest
 
                 BasePage.closeUnwantedTab();
 
-                BrowserUtils.navigateBack(driver);
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
                 log("navigated back to leave page");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
@@ -140,14 +141,14 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -177,18 +178,18 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -197,7 +198,7 @@ public class LeaveResumptionTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -235,7 +236,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.switchTab();
                 log("switched to leave resumption tab");
 
-                LeaveResumptionPage lrp = new LeaveResumptionPage(driver);
+                LeaveResumptionPage lrp = new LeaveResumptionPage();
                 lrp.provideResumptionDate(leave.expEarlyResumptionDate);
                 log("provided resumption date");
 
@@ -252,7 +253,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.closeUnwantedTab();
                 log("switched to leave tab");
 
-                BrowserUtils.navigateBack(driver);
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
                 log("navigated back to leave page");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
@@ -290,14 +291,14 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -324,18 +325,18 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -344,7 +345,7 @@ public class LeaveResumptionTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -382,7 +383,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.switchTab();
                 log("switched to leave resumption tab");
 
-                LeaveResumptionPage lrp = new LeaveResumptionPage(driver);
+                LeaveResumptionPage lrp = new LeaveResumptionPage();
                 lrp.provideResumptionDate(leave.expEarlyResumptionDate);
                 log("provided resumption date");
 
@@ -402,7 +403,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.closeUnwantedTab();
                 log("switched to leave tab");
 
-                BrowserUtils.navigateBack(driver);
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
                 log("navigated back to leave page");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
@@ -440,14 +441,14 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -477,18 +478,18 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -497,7 +498,7 @@ public class LeaveResumptionTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -536,7 +537,7 @@ public class LeaveResumptionTest extends BaseTest
                 log("switched to leave resumption tab");
 
                 //leave resumption page
-                LeaveResumptionPage lrp = new LeaveResumptionPage(driver);
+                LeaveResumptionPage lrp = new LeaveResumptionPage();
                 lrp.provideResumptionDate(leave.expLateResumptionDate);
                 log("provided resumption date");
 
@@ -553,7 +554,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.closeUnwantedTab();
                 log("switched to leave tab");
 
-                BrowserUtils.navigateBack(driver);
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
                 log("navigated back to leave page");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
@@ -592,14 +593,14 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -626,18 +627,18 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 2;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -646,7 +647,7 @@ public class LeaveResumptionTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -684,7 +685,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.switchTab();
                 log("switched to leave resumption tab");
 
-                LeaveResumptionPage lrp = new LeaveResumptionPage(driver);
+                LeaveResumptionPage lrp = new LeaveResumptionPage();
                 lrp.provideResumptionDate(leave.expLateResumptionDate);
                 log("provided resumption date");
 
@@ -704,7 +705,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.closeUnwantedTab();
                 log("switched to leave tab");
 
-                BrowserUtils.navigateBack(driver);
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
                 log("navigated back to leave page");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
@@ -742,14 +743,14 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -776,18 +777,18 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -796,7 +797,7 @@ public class LeaveResumptionTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -834,7 +835,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.switchTab();
                 log("switched to leave resumption tab");
 
-                LeaveResumptionPage lrp = new LeaveResumptionPage(driver);
+                LeaveResumptionPage lrp = new LeaveResumptionPage();
                 lrp.provideResumptionDate(leave.expLateResumptionDate);
                 log("provided resumption date");
 
@@ -854,7 +855,7 @@ public class LeaveResumptionTest extends BaseTest
                 BasePage.closeUnwantedTab();
                 log("switched to leave tab");
 
-                BrowserUtils.navigateBack(driver);
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
                 log("navigated back to leave page");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee1, 5, 5, "Yes", 6, 6));
@@ -892,14 +893,14 @@ public class LeaveResumptionTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {

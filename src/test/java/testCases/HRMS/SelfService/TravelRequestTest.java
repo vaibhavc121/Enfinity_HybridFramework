@@ -25,12 +25,12 @@ public class TravelRequestTest extends BaseTest
                     "createTravelRequest", TravelRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // travel Request page
-            TravelRequestPage tr = new TravelRequestPage(driver);
+            TravelRequestPage tr = new TravelRequestPage();
             for (TravelRequestModel travelRequest : travelRequestData)
             {
                 // tr.scrollDownWebpage();
@@ -64,12 +64,12 @@ public class TravelRequestTest extends BaseTest
     public void DeleteTravelRequest()
     {
         // Self service page
-        SelfServicePage ss = new SelfServicePage(driver);
+        SelfServicePage ss = new SelfServicePage();
         ss.clickSelfService();
         ss.clickTransactions();
 
         // TravelRequestPage
-        TravelRequestPage tr = new TravelRequestPage(driver);
+        TravelRequestPage tr = new TravelRequestPage();
         tr.clickTravelRequest();
 
         BasePage.deleteTxn(6, "active");

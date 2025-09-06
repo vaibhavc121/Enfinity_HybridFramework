@@ -1,6 +1,7 @@
 package mobileTesting.pages.hrms;
 
 import base.BasePage;
+import factory.DriverFactory;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,11 +11,6 @@ import static base.BasePage.waitTS;
 
 public class LeavePage extends BasePage
 {
-    public LeavePage(WebDriver driver)
-    {
-        super(driver);
-    }
-
 
     //region Locators
     private By plusBtn = AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(5)");
@@ -23,8 +19,6 @@ public class LeavePage extends BasePage
     private By advanceAmt = AppiumBy.androidUIAutomator("new UiSelector().className(\"android.view.View\").instance(24)");
     private By description = AppiumBy.xpath("//android.widget.EditText[@resource-id=\"ion-textarea-1\"]");
     private By submit = AppiumBy.xpath("//android.widget.Button[@text=\"SUBMIT\"]");
-
-
 
     //endregion
 
@@ -42,14 +36,14 @@ public class LeavePage extends BasePage
     public void providedAdvanceAmount()
     {
         waitTS(2);
-        driver.findElement(advanceAmt).click();
-        driver.findElement(advanceAmt).sendKeys("10");
+        DriverFactory.getDriver().findElement(advanceAmt).click();
+        DriverFactory.getDriver().findElement(advanceAmt).sendKeys("10");
     }
     public void providedDescription()
     {
         waitTS(2);
-        driver.findElement(description).click();
-        driver.findElement(description).sendKeys("Expense Claim");
+        DriverFactory.getDriver().findElement(description).click();
+        DriverFactory.getDriver().findElement(description).sendKeys("Expense Claim");
     }
     public void clickSubmit()
     {
@@ -57,8 +51,5 @@ public class LeavePage extends BasePage
         clickOnElement(submit);
     }
 
-
     //endregion
-
-
 }

@@ -9,11 +9,6 @@ import base.BasePage;
 public class PromotionRequestPage extends BasePage
 {
 
-    public PromotionRequestPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     // Locators
     @FindBy(xpath = "//a[@id='TxnInstanceView_I0i19_T']//span[@class='dx-vam'][normalize-space()='Profile Update']")
     WebElement profileUpdate;

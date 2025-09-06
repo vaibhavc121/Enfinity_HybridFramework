@@ -10,11 +10,6 @@ import base.BasePage;
 public class RecruitmentPage extends BasePage
 {
 
-    public RecruitmentPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     @FindBy(xpath = "//span[normalize-space()='Recruitment']")
     private static WebElement recruitment;
 
@@ -47,7 +42,7 @@ public class RecruitmentPage extends BasePage
         } catch (Exception e)
         {
             clickOnElement1(recruitment);
-            //clickElementByJavaScript(driver, recruitment);
+            //clickElementByJavaScript(DriverFactory.getDriver(), recruitment);
         }
     }
 

@@ -27,7 +27,7 @@ public class PenaltyTest extends BaseTest
                     "createPenalty", PayrollModel.PenaltyModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             LoginPage.clickMenuIcon();
             pp.clkPayroll();
             log("clicked on payroll link");
@@ -35,7 +35,7 @@ public class PenaltyTest extends BaseTest
             log("clicked on txn");
 
             // penalty pg
-            PenaltyPage pn = new PenaltyPage(driver);
+            PenaltyPage pn = new PenaltyPage();
 
             for (PayrollModel.PenaltyModel penalty : penaltyData)
             {
@@ -81,7 +81,7 @@ public class PenaltyTest extends BaseTest
                     "createPenalty", PayrollModel.PenaltyModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             LoginPage.clickMenuIcon();
             log("clicked on menu icon");
             pp.clkPayroll();
@@ -90,7 +90,7 @@ public class PenaltyTest extends BaseTest
             log("clicked on txn");
 
             // penalty pg
-            PenaltyPage pn = new PenaltyPage(driver);
+            PenaltyPage pn = new PenaltyPage();
 
             for (PayrollModel.PenaltyModel penalty : penaltyData)
             {
@@ -119,14 +119,14 @@ public class PenaltyTest extends BaseTest
                     "createPenalty", PayrollModel.PenaltyModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
             log("clicked on txn");
 
             // penalty pg
-            PenaltyPage pn = new PenaltyPage(driver);
+            PenaltyPage pn = new PenaltyPage();
 
             for (PayrollModel.PenaltyModel penalty : penaltyData)
             {
@@ -171,14 +171,14 @@ public class PenaltyTest extends BaseTest
                     "createPenalty", PayrollModel.PenaltyModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
             log("clicked on txn");
 
             // penalty pg
-            PenaltyPage pn = new PenaltyPage(driver);
+            PenaltyPage pn = new PenaltyPage();
 
             for (PayrollModel.PenaltyModel penalty : penaltyData)
             {

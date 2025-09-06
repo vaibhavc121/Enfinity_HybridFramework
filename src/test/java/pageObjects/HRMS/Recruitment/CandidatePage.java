@@ -1,6 +1,7 @@
 package pageObjects.HRMS.Recruitment;
 
 import base.BasePage;
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,10 +9,6 @@ import utilities.JavaScriptUtils;
 
 public class CandidatePage extends BasePage
 {
-    public CandidatePage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
 
@@ -147,7 +144,7 @@ public class CandidatePage extends BasePage
     //region Professional Information
     public void scrollDown()
     {
-        JavaScriptUtils.scrollIntoView(driver, workExperienceInYear);
+        JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), workExperienceInYear);
     }
     public void provideWorkExpInYears(String value)
     {

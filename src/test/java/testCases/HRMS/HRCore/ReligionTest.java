@@ -26,15 +26,15 @@ public class ReligionTest extends BaseTest
             List<CreateReligionModel> religionData = JsonUtils.convertJsonListDataModel(religionFile, "createReligion",
                     CreateReligionModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickReligion();
             Thread.sleep(2000);
 
-            ReligionPage rp = new ReligionPage(driver);
+            ReligionPage rp = new ReligionPage();
             for (CreateReligionModel religion : religionData)
             {
                 rp.clickNew();
@@ -59,11 +59,11 @@ public class ReligionTest extends BaseTest
             List<HRCoreModel.DeleteReligionModel> religionData = JsonUtils.convertJsonListDataModel(religionFile, "createReligion",
                     HRCoreModel.DeleteReligionModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteReligionModel religion : religionData)
             {
                 sp.clickReligion();

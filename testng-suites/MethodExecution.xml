@@ -21,13 +21,13 @@
 
         <classes>
 
-            <class name="testCases.HRMS.HRCore.DelegationTest">
-                <methods>
-                    <include name="createDelegation"/>
-                    <include name="deleteDelegation"/>
+            <!--            <class name="testCases.HRMS.HRCore.DelegationTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createDelegation"/>-->
+            <!--                    <include name="deleteDelegation"/>-->
 
-                </methods>
-            </class>
+            <!--                </methods>-->
+            <!--            </class>-->
 
             <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
             <!--                <methods>-->
@@ -63,11 +63,12 @@
             <!--            </class>-->
 
 
-            <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createCandidate"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
+            <class name="testCases.HRMS.Attendance.AttendanceTest">
+                <methods>
+                    <include name="createLenientShiftTimetable"/>
+                    <include name="deleteLenientShiftTimetable"/>
+                </methods>
+            </class>
 
 
         </classes>

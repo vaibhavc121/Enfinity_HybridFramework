@@ -26,15 +26,15 @@ public class QualificationTest extends BaseTest
             List<CreateQualificationModel> qualificationData = JsonUtils.convertJsonListDataModel(qualificationFile,
                     "createQualification", CreateQualificationModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickQualification();
             Thread.sleep(2000);
 
-            QualificationPage qp = new QualificationPage(driver);
+            QualificationPage qp = new QualificationPage();
 
             for (CreateQualificationModel qualification : qualificationData)
             {
@@ -62,11 +62,11 @@ public class QualificationTest extends BaseTest
             List<HRCoreModel.DeleteQualificationModel> qualificationData = JsonUtils.convertJsonListDataModel(qualificationFile,
                     "deleteQualification", HRCoreModel.DeleteQualificationModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteQualificationModel qualification : qualificationData)
             {
                 sp.clickQualification();

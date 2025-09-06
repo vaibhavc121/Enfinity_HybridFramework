@@ -10,11 +10,6 @@ import utilities.CommonActions;
 public class BenefitEncashmentPage extends BasePage
 {
 
-    public BenefitEncashmentPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     @FindBy(xpath = "//span[normalize-space()='Benefit Scheme Encashment']")
     WebElement benefitSchemeEncashment;
 

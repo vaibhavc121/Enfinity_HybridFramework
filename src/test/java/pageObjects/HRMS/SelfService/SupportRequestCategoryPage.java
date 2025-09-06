@@ -1,6 +1,7 @@
 package pageObjects.HRMS.SelfService;
 
 import base.BaseTest;
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,11 +11,6 @@ import base.BasePage;
 
 public class SupportRequestCategoryPage extends BasePage
 {
-
-    public SupportRequestCategoryPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     // Locators
 
@@ -49,14 +45,14 @@ public class SupportRequestCategoryPage extends BasePage
 
     public void globalSearch1(String expectedValue) throws InterruptedException
     {
-        WebElement globalSearchInput = driver.findElement(By.id("GlobalSearch"));
+        WebElement globalSearchInput = DriverFactory.getDriver().findElement(By.id("GlobalSearch"));
         globalSearchInput.click();
 
-        WebElement comboBoxInput = driver.findElement(By.xpath("//input[@role='combobox']"));
+        WebElement comboBoxInput = DriverFactory.getDriver().findElement(By.xpath("//input[@role='combobox']"));
         comboBoxInput.sendKeys(expectedValue);
 
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//i[normalize-space()='Support Request Category']")).click();
+        DriverFactory.getDriver().findElement(By.xpath("//i[normalize-space()='Support Request Category']")).click();
     }
 
     public void clickNew()
@@ -167,7 +163,7 @@ public class SupportRequestCategoryPage extends BasePage
 
         try
         {
-            driver.findElement(By.xpath(
+            DriverFactory.getDriver().findElement(By.xpath(
                             "(//tr)[6]"))
                     .click();
             BaseTest.log("clicked on filtered record");
@@ -180,9 +176,9 @@ public class SupportRequestCategoryPage extends BasePage
         BaseTest.log("Clicked on edit button");
 
         waitTS(2);
-        driver.findElement(By.xpath("//img[@id='MainMenu_DXI7_PImg']")).click();
+        DriverFactory.getDriver().findElement(By.xpath("//img[@id='MainMenu_DXI7_PImg']")).click();
         waitTS(2);
-        driver.findElement(By.xpath("//span[normalize-space()='Delete']")).click();
+        DriverFactory.getDriver().findElement(By.xpath("//span[normalize-space()='Delete']")).click();
         Thread.sleep(1000);
         pressKey("enter");
     }

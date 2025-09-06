@@ -1,5 +1,6 @@
 package pageObjects.HRMS.HRCore;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,12 +14,6 @@ import java.util.List;
 
 public class DelegationPage extends BasePage
 {
-
-    public DelegationPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
 
     //region Locators
     @FindBy(xpath = "//span[normalize-space()='New']")
@@ -65,7 +60,7 @@ public class DelegationPage extends BasePage
 
     public void selectOption(String expOption)
     {
-        List<WebElement> optionElement = driver.findElements(By.xpath("//div[@class='dx-item-content']"));
+        List<WebElement> optionElement = DriverFactory.getDriver().findElements(By.xpath("//div[@class='dx-item-content']"));
 
         for (WebElement option : optionElement)
         {
@@ -119,7 +114,7 @@ public class DelegationPage extends BasePage
         waitTS(2);
         pressEnter();
         waitTS(2);
-        //BrowserUtils.navigateBack(driver);
+        //BrowserUtils.navigateBack(DriverFactory.getDriver());
     }
 
     public static void filterAndOpenTransaction(int filterIndex, int resultIndex, String expValue, String mode)

@@ -1,6 +1,7 @@
 package pageObjects.HRMS.SelfService;
 
 import base.BaseTest;
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,11 +11,6 @@ import utilities.JavaScriptUtils;
 
 public class ExceptionRequestPage extends BasePage
 {
-
-    public ExceptionRequestPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     // Locators
     @FindBy(xpath = "//span[contains(text(),'Exception Request')]")
@@ -73,11 +69,11 @@ public class ExceptionRequestPage extends BasePage
         clickOnElement1(loginTime);
         try
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, loginCal);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), loginCal);
             BaseTest.log("clicked on login cal");
         } catch (Exception e)
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, okButton);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), okButton);
             BaseTest.log("clicked on ok button");
         }
 
@@ -90,17 +86,17 @@ public class ExceptionRequestPage extends BasePage
 
         try
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, logoutCal);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), logoutCal);
             BaseTest.log("clicked on logout cal");
         } catch (Exception e)
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, okButton);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), okButton);
             BaseTest.log("clicked on ok button");
         }
 
-        JavaScriptUtils.clickElementByJavaScript(driver, loginCal);
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), loginCal);
         BaseTest.log("close login calendar");
-        JavaScriptUtils.clickElementByJavaScript(driver, logoutCal);
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), logoutCal);
         BaseTest.log("close logout calendar");
     }
 
@@ -113,7 +109,7 @@ public class ExceptionRequestPage extends BasePage
             clickOnElement1(calendarIcon);
         } catch (Exception e)
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, calendarIcon);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), calendarIcon);
         }
 
         waitTS(2);
@@ -122,8 +118,8 @@ public class ExceptionRequestPage extends BasePage
     public void clickSaveBack()
     {
         //clickSaveAndBack();
-        JavaScriptUtils.clickElementByJavaScript(driver, saveButton);
-        driver.navigate().back();
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), saveButton);
+        DriverFactory.getDriver().navigate().back();
     }
 
     public boolean isTxnCreated(String expDate)

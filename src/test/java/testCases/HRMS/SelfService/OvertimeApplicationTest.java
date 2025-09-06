@@ -26,14 +26,14 @@ public class OvertimeApplicationTest extends BaseTest
                     "createOvertimeRequest", OvertimeRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("clicked on SelfService");
             ss.clickTransactions();
             log("clicked on Transactions");
 
             // Overtime Request page
-            OvertimeRequestPage or = new OvertimeRequestPage(driver);
+            OvertimeRequestPage or = new OvertimeRequestPage();
 
             for (OvertimeRequestModel overtimeRequest : overtimeRequestData)
             {
@@ -79,12 +79,12 @@ public class OvertimeApplicationTest extends BaseTest
     public void deleteOvertimeApplication()
     {
         // self service page
-        SelfServicePage ss = new SelfServicePage(driver);
+        SelfServicePage ss = new SelfServicePage();
         ss.clickSelfService();
         ss.clickTransactions();
 
         // OvertimeRequestPage
-        OvertimeRequestPage ot = new OvertimeRequestPage(driver);
+        OvertimeRequestPage ot = new OvertimeRequestPage();
         ot.clickOvertimeRequest();
 
         BasePage.deleteTxn(7, "active");

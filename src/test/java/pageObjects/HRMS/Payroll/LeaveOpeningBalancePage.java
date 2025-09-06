@@ -9,11 +9,6 @@ import base.BasePage;
 public class LeaveOpeningBalancePage extends BasePage
 {
 
-    public LeaveOpeningBalancePage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     // Locators
     @FindBy(xpath = "//span[normalize-space()='Leave Opening Balance']")
     WebElement leaveOpeningBalance;

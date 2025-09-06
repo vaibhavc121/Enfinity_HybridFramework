@@ -9,11 +9,6 @@ import base.BasePage;
 public class AttendancePage extends BasePage
 {
 
-    public AttendancePage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     @FindBy(xpath = "//span[normalize-space()='Attendance']")
     static WebElement attendance;
 

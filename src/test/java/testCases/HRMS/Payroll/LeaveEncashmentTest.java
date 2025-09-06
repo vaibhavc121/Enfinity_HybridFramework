@@ -28,25 +28,25 @@ public class LeaveEncashmentTest extends BaseTest
                     "createLeaveEncashment", LeaveEncashmentModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("001");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(2);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.navigateToModule("Payroll");
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // Leave Encashment pg
-            LeaveEncashmentPage le = new LeaveEncashmentPage(driver);
+            LeaveEncashmentPage le = new LeaveEncashmentPage();
             for (LeaveEncashmentModel LeaveEncashment : leaveEncashData)
             {
                 le.clkLeaveEncashment();
@@ -92,14 +92,14 @@ public class LeaveEncashmentTest extends BaseTest
                     "createLeaveEncashment", LeaveEncashmentModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave adjustment pg
-            LeaveEncashmentPage le = new LeaveEncashmentPage(driver);
+            LeaveEncashmentPage le = new LeaveEncashmentPage();
 
             for (LeaveEncashmentModel LeaveEncashment : leaveEncashData)
             {

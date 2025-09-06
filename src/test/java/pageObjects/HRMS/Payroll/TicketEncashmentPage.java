@@ -2,6 +2,7 @@ package pageObjects.HRMS.Payroll;
 
 import java.time.Duration;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,11 +19,6 @@ import utilities.CommonActions;
 
 public class TicketEncashmentPage extends BasePage
 {
-
-    public TicketEncashmentPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     @FindBy(xpath = "//span[normalize-space()='Ticket Encashment']")
     WebElement ticketEncashment;
@@ -75,11 +71,11 @@ public class TicketEncashmentPage extends BasePage
 
     public boolean checkAvailableTicket()
     {
-        String availableTicket = driver.findElement(By.xpath(
+        String availableTicket = DriverFactory.getDriver().findElement(By.xpath(
                         "(//td[@class='grid-cell dx-wrap dxgv dx-ellipsis dx-ar'])[1]"))
                 .getText();
 
-        // String availableTicket = driver.findElement(By.xpath("(//div[@class='dxgBCTC
+        // String availableTicket = DriverFactory.getDriver().findElement(By.xpath("(//div[@class='dxgBCTC
         // dx-ellipsis'])[4]")).getText();
 
         double availableTicketDouble = Double.parseDouble(availableTicket);

@@ -11,12 +11,6 @@ import utilities.CommonActions;
 public class DeptPage extends BasePage
 {
 
-    public DeptPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     @FindBy(xpath = "//input[@id='Department.Name_I']")
     WebElement deptName;
 

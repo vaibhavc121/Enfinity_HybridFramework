@@ -9,10 +9,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class MyApprovalsPage extends BasePage
 {
-    public MyApprovalsPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
     @FindBy(xpath = "(//span[@class='dx-button-text'][normalize-space()='Approve'])[1]")

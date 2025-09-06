@@ -27,15 +27,15 @@ public class DesignationTest extends BaseTest
             List<CreateDesignationModel> designationData = JsonUtils.convertJsonListDataModel(designationFile,
                     "createDesignation", CreateDesignationModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickDesignation();
             Thread.sleep(2000);
 
-            DesignationPage dp = new DesignationPage(driver);
+            DesignationPage dp = new DesignationPage();
 
             for (CreateDesignationModel desg : designationData)
             {
@@ -67,12 +67,12 @@ public class DesignationTest extends BaseTest
             List<HRCoreModel.DeleteDesignationModel> designationData = JsonUtils.convertJsonListDataModel(designationFile,
                     "deleteDesignation", HRCoreModel.DeleteDesignationModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             Thread.sleep(5000);
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteDesignationModel desg : designationData)
             {
                 sp.clickDesignation();

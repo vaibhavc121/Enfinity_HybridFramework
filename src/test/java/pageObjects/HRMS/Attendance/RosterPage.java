@@ -2,6 +2,7 @@ package pageObjects.HRMS.Attendance;
 
 import java.util.List;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,96 +15,89 @@ import utilities.DateUtils;
 public class RosterPage extends BasePage
 {
 
-	public RosterPage(WebDriver driver)
-	{
-		super(driver);
+    @FindBy(xpath = "//input[@id='FromDate_I']")
+    WebElement fromDate;
 
-	}
+    @FindBy(xpath = "//input[@id='UptoDate_I']")
+    WebElement uptoDate;
 
-	@FindBy(xpath = "//input[@id='FromDate_I']")
-	WebElement fromDate;
+    @FindBy(xpath = "//input[@id='TimetableIdLookup_I']")
+    WebElement timetableIdLookup;
 
-	@FindBy(xpath = "//input[@id='UptoDate_I']")
-	WebElement uptoDate;
+    @FindBy(xpath = "//label[contains(text(),'day')]")
+    List<WebElement> days;
 
-	@FindBy(xpath = "//input[@id='TimetableIdLookup_I']")
-	WebElement timetableIdLookup;
+    @FindBy(xpath = "//input[@id='EmployeeIds_I']")
+    WebElement employee;
 
-	@FindBy(xpath = "//label[contains(text(),'day')]")
-	List<WebElement> days;
+    @FindBy(xpath = "//span[text()='Generate']")
+    WebElement generate;
 
-	@FindBy(xpath = "//input[@id='EmployeeIds_I']")
-	WebElement employee;
+    public void clickNew()
+    {
+        waitTS(3);
+        clickOnNew();
+    }
 
-	@FindBy(xpath = "//span[text()='Generate']")
-	WebElement generate;
+    public void switchTheTab()
+    {
+        waitTS(3);
+        switchTab();
+    }
 
-	public void clickNew()
-	{
-		waitTS(3);
-		clickOnNew();
-	}
+    public void provideFromDate(String value)
+    {
+        waitTS(3);
+        clearAndProvide1(fromDate, value);
+    }
 
-	public void switchTheTab()
-	{
-		waitTS(3);
-		switchTab();
-	}
+    public void provideUptoDate(String value)
+    {
+        clearAndProvide1(uptoDate, value);
+    }
 
-	public void provideFromDate(String value)
-	{
-		waitTS(3);
-		clearAndProvide1(fromDate, value);
-	}
+    public void provideTimetable(String value)
+    {
+        clearAndProvide1(timetableIdLookup, value);
+    }
 
-	public void provideUptoDate(String value)
-	{
-		clearAndProvide1(uptoDate, value);
-	}
+    public void selectExcludeDay(String expDay)
+    {
+        for (int i = 0; i < days.size(); i++)
+        {
+            if (days.get(i).getText().contains(expDay))
+            {
+                String toggleXpath = "(//span[@class='dxSwitcher dx-not-acc'])[" + (i + 1) + "]";
+                DriverFactory.getDriver().findElement(By.xpath(toggleXpath)).click();
+                return;
+            }
+        }
+        throw new RuntimeException("No matching day found: " + expDay);
+    }
 
-	public void provideTimetable(String value)
-	{
-		clearAndProvide1(timetableIdLookup, value);
-	}
+    public void provideEmp(String value)
+    {
+        clearAndProvide1(employee, value);
+    }
 
-	public void selectExcludeDay(String expDay)
-	{
-		for (int i = 0; i < days.size(); i++)
-		{
-			if (days.get(i).getText().contains(expDay))
-			{
-				String toggleXpath = "(//span[@class='dxSwitcher dx-not-acc'])[" + (i + 1) + "]";
-				driver.findElement(By.xpath(toggleXpath)).click();
-				return;
-			}
-		}
-		throw new RuntimeException("No matching day found: " + expDay);
-	}
+    public void clickOnGenerate()
+    {
+        generate.click();
+    }
 
-	public void provideEmp(String value)
-	{
-		clearAndProvide1(employee, value);
-	}
+    public void switchTheTab1()
+    {
+        switchTab();
+    }
 
-	public void clickOnGenerate()
-	{
-		generate.click();
-	}
+    public void refreshBrowser()
+    {
+        BrowserUtils.refreshPage(DriverFactory.getDriver());
+    }
 
-	public void switchTheTab1()
-	{
-		switchTab();
-	}
-
-	public void refreshBrowser()
-	{
-		BrowserUtils.refreshPage(driver);
-	}
-
-	public boolean isTransactionCreated(String date)
-	{
-		String expDate = DateUtils.formattedDateMMM(date);
-		return resultValue(2).contains(expDate);
-	}
-
+    public boolean isTransactionCreated(String date)
+    {
+        String expDate = DateUtils.formattedDateMMM(date);
+        return resultValue(2).contains(expDate);
+    }
 }

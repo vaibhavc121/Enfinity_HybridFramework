@@ -28,12 +28,12 @@ public class HRAssetTest extends BaseTest
                     "createHRAssetRequest", HRAssetRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // HR asset request page
-            HRAssetRequestPage ar = new HRAssetRequestPage(driver);
+            HRAssetRequestPage ar = new HRAssetRequestPage();
 
             for (HRAssetRequestModel HRAssetRequest : hrAssetRequestData)
             {
@@ -89,14 +89,14 @@ public class HRAssetTest extends BaseTest
                     "createHRAssetReturn", SelfServiceModel.HRAssetReturnModel.class);
 
             // hr core page
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("Clicked on HR Core module");
             hc.clickAssetIssue();
             log("Clicked on Asset Issue");
 
             // asset issue page
-            AssetIssuePage ai = new AssetIssuePage(driver);
+            AssetIssuePage ai = new AssetIssuePage();
 
             for (SelfServiceModel.HRAssetReturnModel hrAssetReturn : hrAssetReturnData)
             {
@@ -132,12 +132,12 @@ public class HRAssetTest extends BaseTest
                     "createHRAssetRequest", HRAssetRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // HR asset request page
-            HRAssetRequestPage ar = new HRAssetRequestPage(driver);
+            HRAssetRequestPage ar = new HRAssetRequestPage();
             ar.clickHRAssetRequest();
             //ar.test();
             BasePage.performAction(7, "Approved", "Amend");

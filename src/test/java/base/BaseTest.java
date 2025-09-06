@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import com.github.javafaker.Faker;
+import factory.DriverFactory;
 import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.Platform;
@@ -25,7 +26,7 @@ import pageObjects.HRMS.Login.LoginPage;
 public class BaseTest
 {
     //region Global Variables and Logger Initialization
-    public static WebDriver driver;
+    //public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();  // Thread-safe WebDriver
     // public static SelfHealingDriver driver; // updated to SelfHealingDriver
     public Properties p;
     public static Logger logger; // log4j
@@ -39,6 +40,13 @@ public class BaseTest
     {
         String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
         logger.info(methodName + " - " + message);
+    }
+
+    // Getter for WebDriver
+    public static WebDriver getDriver()
+    {
+        //return driver.get();
+        return DriverFactory.getDriver();
     }
     //endregion
 
@@ -71,9 +79,9 @@ public class BaseTest
         //region CloseBrowserWhenClickStopDebugging
         Runtime.getRuntime().addShutdownHook(new Thread(() ->
         {
-            if (driver != null)
+            if (getDriver() != null)
             {
-                driver.quit();
+                getDriver().quit();
             }
         }));
         //endregion
@@ -167,19 +175,22 @@ public class BaseTest
             //endregion
 
             //region For selenium grid standalone
-            // driver = new RemoteWebDriver(new URL("http://192.168.102.117:4444/wd/hub"), capabilities);
+            // WebDriver remoteDriver = new RemoteWebDriver(new URL("http://192.168.102.117:4444/wd/hub"), capabilities);
+            // driver.set(remoteDriver);
             // driver = SelfHealingDriver.create(_driver);
             //endregion
 
             //region For docker container on selenium grid
-            // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            // WebDriver remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            // driver.set(remoteDriver);
             // driver = SelfHealingDriver.create(_driver);
             //endregion
 
             //region For browserstack
-//            driver = new RemoteWebDriver(
+//            WebDriver remoteDriver = new RemoteWebDriver(
 //                    new URL("https://vaibhavchavan_vXTnjK:VjyZRpR7fkRybdm1cyAb@hub-cloud.browserstack.com/wd/hub"),
 //                    capabilities);
+            // driver.set(remoteDriver);
             // driver = SelfHealingDriver.create(_driver);
             //endregion
 
@@ -203,12 +214,14 @@ public class BaseTest
             // options.addArguments("--no-sandbox"); // Required for CI environments
             // options.addArguments("--disable-dev-shm-usage"); // Required for CI environments
 
+            WebDriver localDriver;
+
             switch (browser.toLowerCase())
             {
                 case "chrome":
 //                     driver = new ChromeDriver(options);
-                    driver = new ChromeDriver(options);
-                    logger.info("browser opened");
+                    localDriver = new ChromeDriver(options);
+                    log("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
                     // logger.info("Chrome browser opened with Healenium");
                     // logger.info("browser opened");
@@ -216,15 +229,15 @@ public class BaseTest
                     break;
 
                 case "edge":
-                    driver = new EdgeDriver();
-                    logger.info("browser opened");
+                    localDriver = new EdgeDriver();
+                    log("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
                     // logger.info("Edge browser opened with Healenium");
                     // logger.info("browser opened");
 
                 case "firefox":
-                    driver = new FirefoxDriver();
-                    logger.info("browser opened");
+                    localDriver = new FirefoxDriver();
+                    log("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
                     // logger.info("Firefox browser opened with Healenium");
                     // logger.info("browser opened");
@@ -235,24 +248,26 @@ public class BaseTest
                     System.out.println("invalid browser name");
                     return; // return- totally exit from the execution
             }
+            //driver.set(localDriver); // assign driver to current thread
+            DriverFactory.setDriver(localDriver);
         }
         // region Browser Setup
 
         // driver = new ChromeDriver();
         // logger.info("browser opened");
-        driver.manage().deleteAllCookies();
-        logger.info("cookies deleted");
-        driver.manage().window().maximize();
-        logger.info("browser maximized");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        logger.info("implicit wait applied for 10 seconds");
-        driver.get(p.getProperty("appurl")); // Reading URL from properties file
-        logger.info("provided app URL in browser");
+        getDriver().manage().deleteAllCookies();
+        log("cookies deleted");
+        getDriver().manage().window().maximize();
+        log("browser maximized");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        log("implicit wait applied for 10 seconds");
+        getDriver().get(p.getProperty("appurl")); // Reading URL from properties file
+        log("provided app URL in browser");
 
         //endregion
 
         //region Login
-        LoginPage lp = new LoginPage(driver);
+        LoginPage lp = new LoginPage();
         lp.setUsername(p.getProperty("username"));
         log("provided username");
         lp.setPwd(p.getProperty("pwd"));
@@ -270,16 +285,14 @@ public class BaseTest
     @AfterClass(groups = {"regression", "datadriven", "functional"})
     public void teardown()
     {
-        //logger.info("--test execution completed--");
-        driver.quit();
-    }
-    //endregion
-
-    //region Additional Code
-    // used in extent report manager class
-    public WebDriver getDriver()
-    {
-        return driver;
+       /*
+        if (getDriver() != null)
+        {
+            getDriver().quit();
+            driver.remove();
+        }
+       */
+        DriverFactory.cleanupDriver();
     }
     //endregion
 }

@@ -28,7 +28,7 @@ public class AttendanceTest extends BaseTest
 
             BasePage.globalSearch("Timetable");
 
-            TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage();
 
             for (AttendanceModel.LenientShiftModel strict : attendanceData)
             {
@@ -85,14 +85,14 @@ public class AttendanceTest extends BaseTest
                     AttendanceModel.RosterModel.class);
 
             // AttendancePage
-            AttendancePage ap = new AttendancePage(driver);
+            AttendancePage ap = new AttendancePage();
             ap.clickAttendance();
             log("Clicking on Attendance module");
             ap.clickRoster();
             log("Clicking on Roster");
 
             // RosterPage
-            RosterPage rp = new RosterPage(driver);
+            RosterPage rp = new RosterPage();
 
             for (AttendanceModel.RosterModel roster : rosterData)
             {
@@ -149,7 +149,7 @@ public class AttendanceTest extends BaseTest
                     AttendanceModel.RosterModel.class);
 
             // AttendancePage
-            AttendancePage ap = new AttendancePage(driver);
+            AttendancePage ap = new AttendancePage();
             ap.clickAttendance();
             ap.clickRoster();
 
@@ -175,12 +175,12 @@ public class AttendanceTest extends BaseTest
                     AttendanceModel.ShiftModel.class);
 
             // AttendancePage
-            AttendancePage ap = new AttendancePage(driver);
+            AttendancePage ap = new AttendancePage();
             ap.clickAttendance();
             ap.clickShift();
 
             // ShiftPage
-            ShiftPage sp = new ShiftPage(driver);
+            ShiftPage sp = new ShiftPage();
 
             for (AttendanceModel.ShiftModel shift : shiftData)
             {
@@ -209,7 +209,7 @@ public class AttendanceTest extends BaseTest
                     AttendanceModel.ShiftModel.class);
 
             // AttendancePage
-            AttendancePage ap = new AttendancePage(driver);
+            AttendancePage ap = new AttendancePage();
             ap.clickAttendance();
             ap.clickShift();
 
@@ -236,7 +236,7 @@ public class AttendanceTest extends BaseTest
 
             BasePage.globalSearch("Timetable");
 
-            TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage();
 
             for (AttendanceModel.StrictDayShiftModel strict : attendanceData)
             {
@@ -293,7 +293,7 @@ public class AttendanceTest extends BaseTest
 
             BasePage.globalSearch("Timetable");
 
-            TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage();
 
             for (AttendanceModel.TwoShiftDayShiftModel strict : attendanceData)
             {
@@ -353,7 +353,7 @@ public class AttendanceTest extends BaseTest
 
             BasePage.globalSearch("Timetable");
 
-            TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage();
 
             for (AttendanceModel.TwoShiftNightShiftModel strict : attendanceData)
             {
@@ -409,7 +409,7 @@ public class AttendanceTest extends BaseTest
 
             BasePage.globalSearch("Timetable");
 
-            TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage();
 
             for (AttendanceModel.NightShiftModel shift : attendanceData)
             {

@@ -9,11 +9,6 @@ import base.BasePage;
 public class SuccessionPage extends BasePage
 {
 
-    public SuccessionPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     @FindBy(xpath = "//img[@id='applicationMenu_DXI10_PImg']")
     private WebElement menu;
 

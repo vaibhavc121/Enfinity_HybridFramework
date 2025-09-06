@@ -28,28 +28,28 @@ public class LeaveAdjustmentTest extends BaseTest
                     "createLeaveAdjustment", LeaveAdjustmentModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("clicked on HR Core module");
             hc.clickEmployee();
             log("clicked on Employee");
             BasePage.navigateToEmployee("001");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             log("clicked on Time Off");
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal + 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave adjustment pg
-            LeaveAdjustmentPage la = new LeaveAdjustmentPage(driver);
+            LeaveAdjustmentPage la = new LeaveAdjustmentPage();
 
             for (LeaveAdjustmentModel LeaveAdjustment : leaveAdjData)
             {
@@ -107,14 +107,14 @@ public class LeaveAdjustmentTest extends BaseTest
                     "createLeaveAdjustment", LeaveAdjustmentModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave adjustment pg
-            LeaveAdjustmentPage la = new LeaveAdjustmentPage(driver);
+            LeaveAdjustmentPage la = new LeaveAdjustmentPage();
 
             for (LeaveAdjustmentModel LeaveAdjustment : leaveAdjData)
             {

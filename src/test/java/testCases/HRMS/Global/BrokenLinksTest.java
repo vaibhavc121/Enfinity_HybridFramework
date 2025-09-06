@@ -4,6 +4,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -13,49 +14,48 @@ import pageObjects.HRMS.HRCore.HRCorePage;
 
 public class BrokenLinksTest extends BaseTest
 {
-	@Test(groups = "regression")
-	public void findBrokenLinks() throws InterruptedException
-	{
+    @Test(groups = "regression")
+    public void findBrokenLinks() throws InterruptedException
+    {
 
-		HRCorePage hc = new HRCorePage(driver);
-		hc.clickHRCore();
+        HRCorePage hc = new HRCorePage();
+        hc.clickHRCore();
 
-		// capture all the links from website
-		List<WebElement> links = driver.findElements(By.tagName("a"));
-		System.out.println(links.size());
-		int noofbrokenlinks = 0;
+        // capture all the links from website
+        List<WebElement> links = DriverFactory.getDriver().findElements(By.tagName("a"));
+        System.out.println(links.size());
+        int noofbrokenlinks = 0;
 
-		for (WebElement link : links)
-		{
-			String hrefvalue = link.getAttribute("href");
-			if (hrefvalue == null || hrefvalue.isEmpty())
-			{
-				System.out.println("value is null or empty so not possible to check");
-				continue;
-			}
+        for (WebElement link : links)
+        {
+            String hrefvalue = link.getAttribute("href");
+            if (hrefvalue == null || hrefvalue.isEmpty())
+            {
+                System.out.println("value is null or empty so not possible to check");
+                continue;
+            }
 
-			// hit url to the server
-			try
-			{
+            // hit url to the server
+            try
+            {
 
-				URL linkUrl = new URL(hrefvalue); // converted href value from string to url format
-				HttpURLConnection conn = (HttpURLConnection) linkUrl.openConnection(); // open connection to the server
-				conn.connect(); // connect to the server and send request to the server
-				if (conn.getResponseCode() >= 400)
-				{
-					System.out.println(hrefvalue + " broken link");
-					noofbrokenlinks++;
-				} else
-				{
-					System.out.println(hrefvalue + " not a broken link");
-				}
-			} catch (Exception e)
-			{
-				// TODO: handle exception
-			}
-
-		}
-		System.out.println("no of broken links: " + noofbrokenlinks);
+                URL linkUrl = new URL(hrefvalue); // converted href value from string to url format
+                HttpURLConnection conn = (HttpURLConnection) linkUrl.openConnection(); // open connection to the server
+                conn.connect(); // connect to the server and send request to the server
+                if (conn.getResponseCode() >= 400)
+                {
+                    System.out.println(hrefvalue + " broken link");
+                    noofbrokenlinks++;
+                } else
+                {
+                    System.out.println(hrefvalue + " not a broken link");
+                }
+            } catch (Exception e)
+            {
+                // TODO: handle exception
+            }
+        }
+        System.out.println("no of broken links: " + noofbrokenlinks);
 
 //		List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 //		System.out.println("Total links found: " + allLinks.size());
@@ -109,6 +109,5 @@ public class BrokenLinksTest extends BaseTest
 //		}
 //
 //		System.out.println("Total broken links: " + brokenLinkCount);
-	}
-
+    }
 }

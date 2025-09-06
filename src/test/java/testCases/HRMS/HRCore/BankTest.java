@@ -26,18 +26,18 @@ public class BankTest extends BaseTest
             List<CreateBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "createBank",
                     CreateBankModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             BaseTest.log("Click on HRCore module");
             hc.clickSetupForm();
             BaseTest.log("Click on Setup form");
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickBank();
             BaseTest.log("Clicked on Bank");
             Thread.sleep(2000);
 
-            BankPage bp = new BankPage(driver);
+            BankPage bp = new BankPage();
 
             for (CreateBankModel bank : bankData)
             {
@@ -69,13 +69,13 @@ public class BankTest extends BaseTest
             List<HRCoreModel.DeleteBankModel> bankData = JsonUtils.convertJsonListDataModel(bankFile, "deleteBank",
                     HRCoreModel.DeleteBankModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("clickHRCore");
             hc.clickSetupForm();
             log("clickSetupForm");
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteBankModel bank : bankData)
             {
                 sp.clickBank();

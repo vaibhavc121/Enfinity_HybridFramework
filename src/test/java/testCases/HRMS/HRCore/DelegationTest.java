@@ -29,20 +29,20 @@ public class DelegationTest extends BaseTest
         try
         {
             // hr core
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("clicked on hr core link");
             hc.clickSetupForm();
             log("clicked on setup form");
 
             // setup page
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickDelegation();
             log("clicked on delegation");
             Thread.sleep(2000);
 
             // delegation pg
-            DelegationPage dp = new DelegationPage(driver);
+            DelegationPage dp = new DelegationPage();
             for (HRCoreModel.DelegationModel data : delegationData)
             {
                 dp.clkNewBtn();
@@ -75,20 +75,20 @@ public class DelegationTest extends BaseTest
         try
         {
             // hr core
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("clicked on hr core link");
             hc.clickSetupForm();
             log("clicked on setup form");
 
             // setup page
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickDelegation();
             log("clicked on delegation");
             Thread.sleep(2000);
 
             // delegation pg
-            DelegationPage dp = new DelegationPage(driver);
+            DelegationPage dp = new DelegationPage();
             for (HRCoreModel.DelegationModel data : delegationData)
             {
                 dp.filterAndOpenTransaction(4, 3, "Active", "Edit");

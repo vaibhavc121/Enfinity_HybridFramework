@@ -2,6 +2,7 @@ package pageObjects.HRMS.Global;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +14,6 @@ import java.sql.Ref;
 
 public class TopNavigationBar extends BasePage
 {
-    public TopNavigationBar(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
 
@@ -89,7 +86,7 @@ public class TopNavigationBar extends BasePage
 
             try
             {
-                JavaScriptUtils.clickElementByJavaScript(driver, contextMenuMyApprovals);
+                JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), contextMenuMyApprovals);
             } catch (Exception e)
             {
                 contextMenuMyApprovals.click();
@@ -123,7 +120,7 @@ public class TopNavigationBar extends BasePage
                     throw new IllegalArgumentException("Invalid leave status: " + status);
             }
 
-            BasePage.acceptAlert(driver);
+            BasePage.acceptAlert(DriverFactory.getDriver());
             BaseTest.log("alert accepted");
             // BasePage.closeCurrentTab();
             // BasePage.closeTab();
@@ -142,7 +139,7 @@ public class TopNavigationBar extends BasePage
     public void clickNotifications()
     {
         //clickOnElement1(notifications);
-        JavaScriptUtils.clickElementByJavaScript(driver, notifications);
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), notifications);
     }
     public boolean checkNotificationContent(String expectedText)
     {
@@ -153,7 +150,7 @@ public class TopNavigationBar extends BasePage
         } else if (notificationText.contains(expectedText))
         {
             //waitForElement(settingsIcon).click();
-            JavaScriptUtils.clickElementByJavaScript(driver, contextMenuNotifications);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), contextMenuNotifications);
             BaseTest.log("clicked on settings icon");
 
             waitForElement(acknowledged).click();

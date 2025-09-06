@@ -23,20 +23,20 @@ public class LicensesTest extends BaseTest
         try
         {
             // hr core
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("clicked on hr core link");
             hc.clickSetupForm();
             log("clicked on setup form");
 
             // setup page
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickLicense();
             Thread.sleep(2000);
             log("clicked on license");
 
             // license pg
-            LicensesPage lp = new LicensesPage(driver);
+            LicensesPage lp = new LicensesPage();
             lp.clkNewBtn();
             log("clicked on new btn");
 
@@ -64,14 +64,14 @@ public class LicensesTest extends BaseTest
         try
         {
             // hr core
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("clicked on hr core link");
             hc.clickSetupForm();
             log("clicked on setup form");
 
             // setup page
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickLicense();
             log("clicked on license");
             Thread.sleep(2000);

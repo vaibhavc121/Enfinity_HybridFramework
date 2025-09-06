@@ -29,14 +29,14 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -79,14 +79,14 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -115,18 +115,18 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(1);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -135,7 +135,7 @@ public class LeaveTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -185,14 +185,14 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -220,18 +220,18 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(4);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -240,7 +240,7 @@ public class LeaveTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -290,14 +290,14 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -325,18 +325,18 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(5);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -345,7 +345,7 @@ public class LeaveTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -395,14 +395,14 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -430,18 +430,18 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -450,7 +450,7 @@ public class LeaveTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -500,14 +500,14 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -535,12 +535,12 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             BasePage.navigateToEmployee("003");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             double LeaveBal = ep.getLeaveBal(6);
             double expLeaveBal1 = LeaveBal - 1;
@@ -549,7 +549,7 @@ public class LeaveTest extends BaseTest
             double expLeaveBalance = Double.parseDouble(expLeaveBal);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
             logger.info("clicked on menu icon");
             pp.clkPayroll();
@@ -558,7 +558,7 @@ public class LeaveTest extends BaseTest
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {
@@ -609,14 +609,14 @@ public class LeaveTest extends BaseTest
                     PayrollModel.LeaveModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave pg
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
 
             for (PayrollModel.LeaveModel leave : leaveData)
             {

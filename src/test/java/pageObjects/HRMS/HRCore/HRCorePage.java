@@ -1,5 +1,6 @@
 package pageObjects.HRMS.HRCore;
 
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,12 +9,6 @@ import base.BasePage;
 
 public class HRCorePage extends BasePage
 {
-
-    public HRCorePage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
 
     //region Locators
     @FindBy(xpath = "//span[normalize-space()='HR Core']")
@@ -33,7 +28,7 @@ public class HRCorePage extends BasePage
     public static void clickHRCore()
     {
         BasePage.clickMenuIcon();
-        highlightElement(driver, hRCore, true);
+        highlightElement(DriverFactory.getDriver(), hRCore, true);
         clickOnElement1(hRCore);
     }
 
@@ -45,9 +40,9 @@ public class HRCorePage extends BasePage
 
     public void clickSetupForm()
     {
-        highlightElement(driver, setups, true);
+        highlightElement(DriverFactory.getDriver(), setups, true);
         clickOnElement1(setups);
-        highlightElement(driver, setups, false); // Remove highlight
+        highlightElement(DriverFactory.getDriver(), setups, false); // Remove highlight
     }
 
     public void clickAssetIssue()

@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import factory.DriverFactory;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -35,15 +36,14 @@ import utilities.JavaScriptUtils;
 
 public class BasePage
 {
-    public static WebDriver driver;
+
     Robot robot;
     public static SoftAssert softAssert = new SoftAssert();
 
     // region Constructor
-    public BasePage(WebDriver driver)
+    public BasePage()
     {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(DriverFactory.getDriver(), this);
     }
     // endregion
 
@@ -77,7 +77,7 @@ public class BasePage
             try
             {
                 // Check invisibility using JS instead of WebDriverWait
-                JavascriptExecutor js = (JavascriptExecutor) driver;
+                JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
 
                 // Execute JS to see if "Apps" label is visible in DOM
                 Boolean invisible = (Boolean) js.executeScript(
@@ -110,7 +110,7 @@ public class BasePage
         {
             try
             {
-                JavascriptExecutor js = (JavascriptExecutor) driver;
+                JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
 
                 // Use JS to check if the <label> containing 'Apps' is present and visible
                 Boolean isVisible = (Boolean) js.executeScript(
@@ -138,7 +138,7 @@ public class BasePage
         }
         */
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
 
         // Check if Apps label exists in DOM
         String appsText = (String) js.executeScript(
@@ -316,7 +316,7 @@ public class BasePage
     // region Listing result (Relative xpath)
     public static void selectRow()
     {
-        // driver.findElement(By.xpath("(//tr)[12]//td[2]")).click();
+        // DriverFactory.getDriver().findElement(By.xpath("(//tr)[12]//td[2]")).click();
         //(//td[@role='gridcell'])[13]
         waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
         BaseTest.log("row selected");
@@ -325,7 +325,7 @@ public class BasePage
     public static String resultValue(int columnIndex)
     {
         // String result =
-        // driver.findElement(By.xpath("(//tbody//tr)[12]//td[2]")).getText();
+        // DriverFactory.getDriver().findElement(By.xpath("(//tbody//tr)[12]//td[2]")).getText();
         // return result;
         String xpath = "(//tbody//tr)[6]//td[" + columnIndex + "]";
         try
@@ -340,7 +340,7 @@ public class BasePage
             return "No matching record found";
         }
         // String xpath = "(//tbody//tr)[12]//td[" + columnIndex + "]";
-        // String result = driver.findElement(By.xpath(xpath)).getText();
+        // String result = DriverFactory.getDriver().findElement(By.xpath(xpath)).getText();
         // return result;
     }
 
@@ -389,7 +389,7 @@ public class BasePage
     public static void clickSaveAndBack()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
     }
 
     public static void clickOnViewListing()
@@ -415,15 +415,15 @@ public class BasePage
         waitTS(1);
         waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
         waitTS(1);
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
     }
 
     public static void clickOnSaveAndSubmitBack()
     {
         WebElement element = waitForElement1(By.xpath("//span[normalize-space()='Save and Submit']"));
-        JavaScriptUtils.clickElementByJavaScript(driver, element);
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), element);
         waitTS(1);
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
     }
 
     public static void clickOnSaveViewApproveBack()
@@ -434,7 +434,7 @@ public class BasePage
         waitTS(1);
         waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
         waitTS(1);
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
     }
 
     public static void clickReject()
@@ -458,7 +458,7 @@ public class BasePage
         waitTS(2);
         clickOnEdit();
         clickOnViewTxn();
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
     }
 
     public static void clickOnEdit()
@@ -470,13 +470,13 @@ public class BasePage
     public static void clickApproveAndBack()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Approve']")).click();
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
     }
 
     public static void clickSubmitAndBack()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Submit']")).click();
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
     }
 
     public static void clickOnNew()
@@ -551,7 +551,7 @@ public class BasePage
     {
         WebElement element = waitForElement(locator);
         element.click();
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         waitTS(1);
         actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
         waitTS(1);
@@ -561,7 +561,7 @@ public class BasePage
     public static void clearAndProvide2(WebElement locator, String value) throws InterruptedException
     {
         WebElement element = waitForElement(locator);
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveToElement(element).click().doubleClick().sendKeys(value).build().perform();
         waitTS(2);
     }
@@ -570,7 +570,7 @@ public class BasePage
     {
         WebElement element = waitForElement(locator);
         element.click();
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
         element.sendKeys(value);
         waitTS(2);
@@ -579,7 +579,7 @@ public class BasePage
 
     public static void provideValueJS(WebElement locator, String value)
     {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverFactory.getDriver();
         WebElement element = waitForElement(locator);
         jsExecutor.executeScript("arguments[0].value='" + value + "';", element);
     }
@@ -604,14 +604,14 @@ public class BasePage
 
     public static void scrollDownWebPageSample()
     {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverFactory.getDriver();
         WebElement element = waitForElement1(By.xpath("//input[contains(@id,'OldContractSalary')]"));
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
     public static void scrollDownWebPage(WebElement locator)
     {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverFactory.getDriver();
         WebElement element = waitForElement(locator);
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
@@ -624,7 +624,7 @@ public class BasePage
     public static void hoverAndClick(WebElement locator, WebElement locator1)
     {
         WebElement elementToHover = waitForElement(locator);
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveToElement(elementToHover).perform();
         waitForElement(locator1).click();
     }
@@ -666,7 +666,7 @@ public class BasePage
         waitTS(1);
         pressKey("enter");
         BaseTest.log("enter pressed");
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
         BaseTest.log("went back to listing");
     }
 
@@ -735,7 +735,7 @@ public class BasePage
             waitTS(1);
             pressKey("enter");
             BaseTest.log("pressed enter");
-            BrowserUtils.navigateBack(driver);
+            BrowserUtils.navigateBack(DriverFactory.getDriver());
             BaseTest.log("navigated back to listing");
             return;
         }
@@ -778,7 +778,7 @@ public class BasePage
         pressKey("enter");
         BaseTest.log("pressed enter button");
 
-        BrowserUtils.navigateBack(driver);
+        BrowserUtils.navigateBack(DriverFactory.getDriver());
         BaseTest.log("navigate back to listing");
     }
 
@@ -834,7 +834,7 @@ public class BasePage
         waitTS(1);
         pressKey("enter");
         BaseTest.log("Pressed enter key");
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
         BaseTest.log("Navigated back to listing");
     }
 
@@ -847,13 +847,13 @@ public class BasePage
     // region Employee listing
     public static void filterEmployee(String value)
     {
-        // driver.findElement(By.id("//input[@aria-describedby='dx-col-4']")).sendKeys(value);
+        // DriverFactory.getDriver().findElement(By.id("//input[@aria-describedby='dx-col-4']")).sendKeys(value);
         waitForElement1(By.id("//input[@aria-describedby='dx-col-4']")).sendKeys(value);
     }
 
     public static String resultEmployee()
     {
-        // String result = driver.findElement(By.xpath(
+        // String result = DriverFactory.getDriver().findElement(By.xpath(
         // "/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/p[1]/span[1]/a[1]")).getText();
         String result = waitForElement1(By.xpath(
                 "/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/p[1]/span[1]/a[1]"))
@@ -863,7 +863,7 @@ public class BasePage
 
     public static String result()
     {
-        // String result = driver.findElement(By.xpath("//td[@class='list-hyperlink
+        // String result = DriverFactory.getDriver().findElement(By.xpath("//td[@class='list-hyperlink
         // dx-cell-focus-disabled']")).getText();
         String result = waitForElement1(By.xpath("//td[@class='list-hyperlink dx-cell-focus-disabled']")).getText();
         return result;
@@ -872,7 +872,7 @@ public class BasePage
     public static void clickResult(String value)
     {
         // WebElement employee =
-        // driver.findElement(By.xpath("//td[@class='list-hyperlink
+        // DriverFactory.getDriver().findElement(By.xpath("//td[@class='list-hyperlink
         // dx-cell-focus-disabled']"));
         WebElement employee = waitForElement1(By.xpath("//td[@class='list-hyperlink dx-cell-focus-disabled']"));
         String result = employee.getText();
@@ -918,16 +918,16 @@ public class BasePage
 
     public static void switchTab()
     {
-        String originalWindow = driver.getWindowHandle();
+        String originalWindow = DriverFactory.getDriver().getWindowHandle();
         // Get all window handles
-        Set<String> allWindows = driver.getWindowHandles();
+        Set<String> allWindows = DriverFactory.getDriver().getWindowHandles();
         // Iterate through the window handles
         for (String windowHandle : allWindows)
         {
             if (!windowHandle.equals(originalWindow))
             {
                 // Switch to the new window
-                driver.switchTo().window(windowHandle);
+                DriverFactory.getDriver().switchTo().window(windowHandle);
                 break;
             }
         }
@@ -936,7 +936,7 @@ public class BasePage
     public static void closeUnwantedTab()
     {
         // Step 1: Store all tab handles
-        Set<String> allTabs = driver.getWindowHandles();
+        Set<String> allTabs = DriverFactory.getDriver().getWindowHandles();
         Iterator<String> tabIterator = allTabs.iterator();
 
         // Step 2: Get first and second tab handles
@@ -944,24 +944,24 @@ public class BasePage
         String secondTab = tabIterator.next(); // This is the one currently focused (to be closed)
 
         // Step 3: Close current (second) tab
-        driver.close(); // This will close the current focused tab
+        DriverFactory.getDriver().close(); // This will close the current focused tab
 
         // Step 4: Switch back to the first tab
-        driver.switchTo().window(firstTab);
+        DriverFactory.getDriver().switchTo().window(firstTab);
 
         // region Alternative (Safe for Dynamic Handle Order):
         // If you're not 100% sure about tab order (sometimes order varies), use:
 
-        String currentTab = driver.getWindowHandle(); // Current is 2nd tab
+        String currentTab = DriverFactory.getDriver().getWindowHandle(); // Current is 2nd tab
 
         // Find the other tab (1st)
-        Set<String> handles = driver.getWindowHandles();
+        Set<String> handles = DriverFactory.getDriver().getWindowHandles();
         for (String handle : handles)
         {
             if (!handle.equals(currentTab))
             {
-                driver.close(); // Close current (2nd)
-                driver.switchTo().window(handle); // Switch to 1st
+                DriverFactory.getDriver().close(); // Close current (2nd)
+                DriverFactory.getDriver().switchTo().window(handle); // Switch to 1st
                 break;
             }
         }
@@ -972,17 +972,17 @@ public class BasePage
 
     public static void closeTab()
     {
-        String originalWindow = driver.getWindowHandle();
+        String originalWindow = DriverFactory.getDriver().getWindowHandle();
         // Get all window handles
-        Set<String> allWindows = driver.getWindowHandles();
+        Set<String> allWindows = DriverFactory.getDriver().getWindowHandles();
         // Iterate through the window handles
         for (String windowHandle : allWindows)
         {
             if (!windowHandle.equals(originalWindow))
             {
                 // Switch to the new window
-                driver.switchTo().window(windowHandle);
-                driver.close();
+                DriverFactory.getDriver().switchTo().window(windowHandle);
+                DriverFactory.getDriver().close();
                 break;
             }
         }
@@ -992,22 +992,22 @@ public class BasePage
     // region Common Actions
     public static void logoutAndLogin(String username, String pwd)
     {
-        EmployeePage ep = new EmployeePage(driver);
+        EmployeePage ep = new EmployeePage();
         ep.clickRightAreaMenu();
         BaseTest.log("clickRightAreaMenu");
 
         ep.clicklogOff();
         BaseTest.log("clicklogOff");
 
-        LoginPage lp = new LoginPage(driver);
+        LoginPage lp = new LoginPage();
         lp.login(username, pwd);
     }
 
     public static void selectFilterAll()
     {
-        // driver.findElement(By.id("//img[@id='ListingViews_B-1Img']")).click();
-//		WebElement element = driver.findElement(By.id("//input[@name='ListingViews']"));
-//		clickElementByJavaScript(driver, element);
+        // DriverFactory.getDriver().findElement(By.id("//img[@id='ListingViews_B-1Img']")).click();
+//		WebElement element = DriverFactory.getDriver().findElement(By.id("//input[@name='ListingViews']"));
+//		clickElementByJavaScript(DriverFactory.getDriver(), element);
         By locator = By.id("//img[@id='ListingViews_B-1Img']");
         waitForElement1(locator).click();
         selectDropdownValueOffice365("All");
@@ -1018,25 +1018,25 @@ public class BasePage
 
     public static void pause(String key)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.pause(Duration.ofSeconds(2)).perform(); // wait for 2 seconds
     }
 
     public static void enterKey(String key)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.sendKeys(key).perform();
     }
 
     public static void enterCapitalKey(String key)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.keyDown(Keys.SHIFT).sendKeys(key).keyUp(Keys.SHIFT).perform();
     }
 
     public static void pressKey(String key)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.sendKeys(getKeyFromString(key)).perform();
     }
 
@@ -1110,13 +1110,13 @@ public class BasePage
 
     public static void pressTab()
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.sendKeys(Keys.TAB).perform();
     }
 
     public static void pressEnter()
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.sendKeys(Keys.ENTER).perform();
     }
     // endregion
@@ -1125,12 +1125,12 @@ public class BasePage
 
     public static void waitUntil(By locator)
     {
-        Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
+        Wait<WebDriver> fluentWait = new FluentWait<>(DriverFactory.getDriver()).withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500))
                 .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
-        WebElement element = fluentWait.until(driver ->
+        WebElement element = fluentWait.until(d ->
         {
-            WebElement el = driver.findElement(locator);
+            WebElement el = DriverFactory.getDriver().findElement(locator);
             return (el.isDisplayed() || el.isEnabled()) ? el : null;
         });
         element.click();
@@ -1138,10 +1138,10 @@ public class BasePage
 
     public static WebElement waitForElement(WebElement element)
     {
-        Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
+        Wait<WebDriver> fluentWait = new FluentWait<>(DriverFactory.getDriver()).withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500))
                 .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
-        return fluentWait.until(driver ->
+        return fluentWait.until(d ->
         {
             WebElement el = element;
             return (el.isDisplayed() || el.isEnabled()) ? el : null;
@@ -1150,25 +1150,25 @@ public class BasePage
 
     public static WebElement waitForElement1(By locator)
     {
-        Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
+        Wait<WebDriver> fluentWait = new FluentWait<>(DriverFactory.getDriver()).withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500))
                 .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
-        return fluentWait.until(driver ->
+        return fluentWait.until(d ->
         {
-            WebElement el = driver.findElement(locator);
+            WebElement el = DriverFactory.getDriver().findElement(locator);
             return (el.isDisplayed() || el.isEnabled()) ? el : null;
         });
     }
 
     public static List<WebElement> waitForElements2(By locator)
     {
-        Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
+        Wait<WebDriver> wait = new FluentWait<>(DriverFactory.getDriver()).withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500)).ignoring(NoSuchElementException.class)
                 .ignoring(StaleElementReferenceException.class);
 
-        return wait.until(driver ->
+        return wait.until(d ->
         {
-            List<WebElement> elements = driver.findElements(locator);
+            List<WebElement> elements = DriverFactory.getDriver().findElements(locator);
             return (!elements.isEmpty()) ? elements : null;
         });
     }
@@ -1320,7 +1320,7 @@ public class BasePage
         WebElement element;
         try
         {
-            element = driver.findElement(By.className("dx-toast-message"));
+            element = DriverFactory.getDriver().findElement(By.className("dx-toast-message"));
             String actualMessage = element.getText();
             Thread.sleep(500);
 
@@ -1339,77 +1339,77 @@ public class BasePage
     // region Alert Handling
     public static void acceptAlert(WebDriver driver)
     {
-        driver.switchTo().alert().accept();
+        DriverFactory.getDriver().switchTo().alert().accept();
     }
 
     public void dismissAlert(WebDriver driver)
     {
-        driver.switchTo().alert().dismiss();
+        DriverFactory.getDriver().switchTo().alert().dismiss();
     }
 
     public String getAlertText(WebDriver driver)
     {
-        return driver.switchTo().alert().getText();
+        return DriverFactory.getDriver().switchTo().alert().getText();
     }
 
     public void sendKeysToAlert(WebDriver driver, String text)
     {
-        driver.switchTo().alert().sendKeys(text);
+        DriverFactory.getDriver().switchTo().alert().sendKeys(text);
     }
     // endregion
 
     // region JavaScript Executor
     public static void executeScript(WebDriver driver, String script, Object... args)
     {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverFactory.getDriver();
         jsExecutor.executeScript(script, args);
     }
 
     public Object executeScriptWithReturn(WebDriver driver, String script, Object... args)
     {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverFactory.getDriver();
         return jsExecutor.executeScript(script, args);
     }
 
     public void scrollToBottom(WebDriver driver)
     {
-        executeScript(driver, "window.scrollTo(0, document.body.scrollHeight);");
+        executeScript(DriverFactory.getDriver(), "window.scrollTo(0, document.body.scrollHeight);");
     }
 
     public void scrollToTop(WebDriver driver)
     {
-        executeScript(driver, "window.scrollTo(0, 0);");
+        executeScript(DriverFactory.getDriver(), "window.scrollTo(0, 0);");
     }
 
     public void scrollIntoView(WebDriver driver, WebElement element)
     {
-        executeScript(driver, "arguments[0].scrollIntoView(true);", element);
+        executeScript(DriverFactory.getDriver(), "arguments[0].scrollIntoView(true);", element);
     }
 
     public static void clickElementByJavaScript(WebDriver driver, WebElement element)
     {
-        executeScript(driver, "arguments[0].click();", element);
+        executeScript(DriverFactory.getDriver(), "arguments[0].click();", element);
     }
 
     public void setAttribute(WebDriver driver, WebElement element, String attributeName, String attributeValue)
     {
-        executeScript(driver, "arguments[0].setAttribute('" + attributeName + "', '" + attributeValue + "');", element);
+        executeScript(DriverFactory.getDriver(), "arguments[0].setAttribute('" + attributeName + "', '" + attributeValue + "');", element);
     }
 
     public String getAttribute(WebDriver driver, WebElement element, String attributeName)
     {
-        return (String) executeScriptWithReturn(driver, "return arguments[0].getAttribute('" + attributeName + "');",
+        return (String) executeScriptWithReturn(DriverFactory.getDriver(), "return arguments[0].getAttribute('" + attributeName + "');",
                 element);
     }
 
     public void highlightElement1(WebDriver driver, WebElement element)
     {
-        executeScript(driver, "arguments[0].style.border='3px solid red'", element);
+        executeScript(DriverFactory.getDriver(), "arguments[0].style.border='3px solid red'", element);
     }
 
     public static void highlightElement(WebDriver driver, WebElement element, boolean highlight)
     {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
         if (highlight)
         {
             // Add a red border to highlight the element
@@ -1423,101 +1423,101 @@ public class BasePage
 
     public void refreshBrowserUsingJS(WebDriver driver)
     {
-        executeScript(driver, "history.go(0);");
+        executeScript(DriverFactory.getDriver(), "history.go(0);");
     }
 
     public void openNewTabUsingJS(WebDriver driver)
     {
-        executeScript(driver, "window.open();");
+        executeScript(DriverFactory.getDriver(), "window.open();");
     }
     // endregion
 
     // region Frame Handling
     public void switchToFrameByIndex(int index)
     {
-        driver.switchTo().frame(index);
+        DriverFactory.getDriver().switchTo().frame(index);
     }
 
     public void switchToFrameByNameOrId(String nameOrId)
     {
-        driver.switchTo().frame(nameOrId);
+        DriverFactory.getDriver().switchTo().frame(nameOrId);
     }
 
     public void switchToFrameByElement(WebElement element)
     {
         WebElement frameElement = element;
-        driver.switchTo().frame(frameElement);
+        DriverFactory.getDriver().switchTo().frame(frameElement);
     }
 
     public void switchToDefaultContent()
     {
-        driver.switchTo().defaultContent();
+        DriverFactory.getDriver().switchTo().defaultContent();
     }
 
     public void switchToParentFrame()
     {
-        driver.switchTo().parentFrame();
+        DriverFactory.getDriver().switchTo().parentFrame();
     }
     // endregion
 
     // region Mouse Actions
     public void hoverOverElement(WebElement locator)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveToElement(locator).perform();
     }
 
     public void dragAndDrop1(WebElement sourceLocator, WebElement targetLocator)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.dragAndDrop(waitForElement(sourceLocator), waitForElement(targetLocator)).perform();
     }
 
     public static void moveToElement(WebElement element)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveToElement(element).perform();
     }
 
     public static void clickAndHold(WebElement element)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.clickAndHold(element).perform();
     }
 
     public static void release()
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.release().perform();
     }
 
     public static void doubleClick(WebElement element)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.doubleClick(element).perform();
     }
 
     public static void contextClick(WebElement element)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.contextClick(element).perform();
     }
 
     public static void dragAndDrop(WebElement source, WebElement target)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.dragAndDrop(source, target).perform();
     }
 
     public static void dragAndDropByOffset(WebElement element, int xOffset, int yOffset)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.dragAndDropBy(element, xOffset, yOffset).perform();
     }
 
     public static void moveSliderByOffset(WebElement locator, int xOffset)
     {
-        Actions move = new Actions(driver);
+        Actions move = new Actions(DriverFactory.getDriver());
         move.clickAndHold(waitForElement(locator)).moveByOffset(xOffset, 0) // Move right horizontally; adjust pixel
                 // value as per
                 // your slider
@@ -1527,25 +1527,25 @@ public class BasePage
     public void scrollToElement(WebDriver driver, WebElement element)
     {
         WheelInput.ScrollOrigin origin = WheelInput.ScrollOrigin.fromElement(element);
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.scrollFromOrigin(origin, 0, 0).perform();
     }
 
     public void moveToLocation(WebDriver driver, int x, int y)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveByOffset(x, y).perform();
     }
 
     public void scrollByAmount(WebDriver driver, int deltaX, int deltaY)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.scrollByAmount(deltaX, deltaY).perform();
     }
 
     public void scrollFromOrigin(WebDriver driver, WheelInput.ScrollOrigin origin, int deltaX, int deltaY)
     {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(DriverFactory.getDriver());
         actions.scrollFromOrigin(origin, deltaX, deltaY).perform();
     }
     // endregion

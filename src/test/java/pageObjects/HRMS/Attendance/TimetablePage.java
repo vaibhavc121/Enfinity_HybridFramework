@@ -9,11 +9,6 @@ import base.BasePage;
 public class TimetablePage extends BasePage
 {
 
-    public TimetablePage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     @FindBy(xpath = "//input[@id='Timetable.Name_I']")
     WebElement name;
 

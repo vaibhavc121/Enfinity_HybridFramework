@@ -27,7 +27,7 @@ public class CreateStrictDayShiftTimetableTest extends BaseTest
 
             BasePage.globalSearch("Timetable");
 
-            TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage();
 
             for (StrictDayShiftModel strict : attendanceData)
             {

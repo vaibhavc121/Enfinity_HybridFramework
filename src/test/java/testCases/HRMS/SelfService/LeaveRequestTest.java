@@ -25,12 +25,12 @@ public class LeaveRequestTest extends BaseTest
                     "createLeaveRequest", LeaveRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // leave request page
-            LeaveRequestPage lr = new LeaveRequestPage(driver);
+            LeaveRequestPage lr = new LeaveRequestPage();
 
             for (LeaveRequestModel leaveRequest : leaveRequestData)
             {
@@ -58,14 +58,14 @@ public class LeaveRequestTest extends BaseTest
         try
         {
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("Navigated to Self Service page");
             ss.clickTransactions();
             log("Clicked on Transactions");
 
             // leave request page
-            LeaveRequestPage lr = new LeaveRequestPage(driver);
+            LeaveRequestPage lr = new LeaveRequestPage();
             lr.clickLeaveRequest();
             log("Clicked on Leave Request");
 

@@ -2,6 +2,7 @@ package testCases.HRMS.Global;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.DriverFactory;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class EventsTest extends BaseTest
 //            String itSupportFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
 //            List<ITSupportModel> itSupportData = JsonUtils.convertJsonListDataModel(itSupportFile, "createITSupport", ITSupportModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickEmployee();
             log("Clicked on Employee link in HR Core");
@@ -37,7 +38,7 @@ public class EventsTest extends BaseTest
             BasePage.navigateToEmployee("001");
             log("Navigated to Employee 001");
 
-            EmployeePage ep = new EmployeePage(driver);
+            EmployeePage ep = new EmployeePage();
             BasePage.switchTab();
             log("Switched to Employee tab");
             ep.provideMobileNo(faker.letterify("????"));
@@ -45,12 +46,12 @@ public class EventsTest extends BaseTest
             ep.clickJsSave();
             log("Clicked on Save button");
 
-            BrowserUtils.refreshPage(driver);
+            BrowserUtils.refreshPage(DriverFactory.getDriver());
             log("Page refreshed to verify notification");
-            BrowserUtils.navigateBack(driver);
+            BrowserUtils.navigateBack(DriverFactory.getDriver());
             log("Navigated back to Employee page");
 
-            TopNavigationBar tnb = new TopNavigationBar(driver);
+            TopNavigationBar tnb = new TopNavigationBar();
             tnb.clickBellIcon();
             log("Clicked on Bell Icon to view notifications");
             tnb.clickNotifications();
@@ -75,7 +76,7 @@ public class EventsTest extends BaseTest
             pt.createPenaltyInDays();
             pt.deletePenaltyInDays();
 
-            TopNavigationBar tnb = new TopNavigationBar(driver);
+            TopNavigationBar tnb = new TopNavigationBar();
             tnb.clickBellIcon();
             log("Clicked on Bell Icon to view notifications");
             tnb.clickNotifications();

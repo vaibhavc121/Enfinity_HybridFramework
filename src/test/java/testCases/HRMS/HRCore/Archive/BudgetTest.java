@@ -18,20 +18,20 @@
 //		try
 //		{
 //			// hr core
-//			HRCorePage hc = new HRCorePage(driver);
+//			HRCorePage hc = new HRCorePage();
 //			hc.clkHRCore();
 //			logger.info("clicked on hr core link");
 //			hc.clkSetupForm();
 //			logger.info("clicked on setup form");
 //
 //			// setup page
-//			SetupPage sp = new SetupPage(driver);
+//			SetupPage sp = new SetupPage();
 //			sp.clkBudget();
 //			Thread.sleep(2000);
 //			logger.info("clicked on budget");
 //
 //			// budget pg
-//			BudgetPage bp = new BudgetPage(driver);
+//			BudgetPage bp = new BudgetPage();
 //			bp.clkNewBtn();
 //			logger.info("clicked on new btn");
 //			bp.setName();

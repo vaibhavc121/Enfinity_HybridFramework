@@ -25,13 +25,13 @@ public class TimeOffTest extends BaseTest
                     TimeOffModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             BasePage.clickMenuIcon();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // time off page
-            TimeOffPage to = new TimeOffPage(driver);
+            TimeOffPage to = new TimeOffPage();
 
             for (TimeOffModel timeOff : timeOffData)
             {
@@ -78,12 +78,12 @@ public class TimeOffTest extends BaseTest
                     TimeOffModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // time off page
-            TimeOffPage to = new TimeOffPage(driver);
+            TimeOffPage to = new TimeOffPage();
             to.clickTimeOff();
             // to.selectRow();
             // to.clickOnView();

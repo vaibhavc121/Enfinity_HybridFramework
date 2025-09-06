@@ -10,12 +10,6 @@ import utilities.CommonActions;
 public class LicensesPage extends BasePage
 {
 
-    public LicensesPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     @FindBy(xpath = "//span[normalize-space()='New']")
     WebElement newbtn;
 

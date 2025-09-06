@@ -29,14 +29,14 @@ public class VariableSalaryTest_Lambok extends BaseTest
                     "createVariableSal", VariableSalModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // variable sal pg
-            VariableSalaryPage vs = new VariableSalaryPage(driver);
+            VariableSalaryPage vs = new VariableSalaryPage();
 
             for (VariableSalModel varSal : leaveRequestData)
             {
@@ -80,14 +80,14 @@ public class VariableSalaryTest_Lambok extends BaseTest
                     "createVariableSal", VariableSalModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // variable sal pg
-            VariableSalaryPage vs = new VariableSalaryPage(driver);
+            VariableSalaryPage vs = new VariableSalaryPage();
 
             for (VariableSalModel varSal : leaveRequestData)
             {

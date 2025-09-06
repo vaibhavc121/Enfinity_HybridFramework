@@ -10,12 +10,6 @@ import base.BasePage;
 public class VariableSalaryPage extends BasePage
 {
 
-    public VariableSalaryPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     @FindBy(xpath = "//span[contains(text(),'Variable Salary')]")
     WebElement variableSalary;
 

@@ -26,14 +26,14 @@ public class TicketEncashmentTest extends BaseTest
                     "createTicketEncashment", TicketEncashmentModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
             log("clicked on txn");
 
             // Ticket Encashment pg
-            TicketEncashmentPage te = new TicketEncashmentPage(driver);
+            TicketEncashmentPage te = new TicketEncashmentPage();
 
             for (TicketEncashmentModel ticketEncashment : ticketEncashmentData)
             {
@@ -84,14 +84,14 @@ public class TicketEncashmentTest extends BaseTest
                     "createTicketEncashment", TicketEncashmentModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
             log("clicked on txn");
 
             // Ticket Encashment pg
-            TicketEncashmentPage te = new TicketEncashmentPage(driver);
+            TicketEncashmentPage te = new TicketEncashmentPage();
 
             for (TicketEncashmentModel ticketEncashment : ticketEncashmentData)
             {

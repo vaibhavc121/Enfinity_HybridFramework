@@ -25,7 +25,7 @@ public class ExceptionRequestTest extends BaseTest
                     "createExceptionRequest", ExceptionRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             BasePage.clickMenuIcon();
             ss.clickSelfService();
             log("clickSelfService");
@@ -34,7 +34,7 @@ public class ExceptionRequestTest extends BaseTest
             log("clickTransactions");
 
             // ExceptionRequest page
-            ExceptionRequestPage er = new ExceptionRequestPage(driver);
+            ExceptionRequestPage er = new ExceptionRequestPage();
 
             for (ExceptionRequestModel exception : exceptionRequestData)
             {
@@ -75,7 +75,7 @@ public class ExceptionRequestTest extends BaseTest
         try
         {
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("clickSelfService");
 
@@ -83,7 +83,7 @@ public class ExceptionRequestTest extends BaseTest
             log("clickTransactions");
 
             // ExceptionRequest page
-            ExceptionRequestPage er = new ExceptionRequestPage(driver);
+            ExceptionRequestPage er = new ExceptionRequestPage();
             er.createExceptionRequest();
             log("createExceptionRequest");
 

@@ -17,7 +17,7 @@ public class CreateLeaveRequestTest extends BaseTest
 
         try
         {
-            LeavePage lp = new LeavePage(driver);
+            LeavePage lp = new LeavePage();
             lp.clickPlusBtn();
             log("Clicked on plus button");
 
@@ -34,8 +34,6 @@ public class CreateLeaveRequestTest extends BaseTest
             log("Clicked submit button");
 
             Assert.assertTrue(true, "Leave request created successfully");
-
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

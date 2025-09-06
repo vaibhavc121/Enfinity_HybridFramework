@@ -2,6 +2,7 @@ package testCases.HRMS.Recruitment;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.DriverFactory;
 import models.Recruitment.Recruitment.RecruitmentModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -34,12 +35,12 @@ public class RecruitmentTest extends BaseTest
                     "createCandidate", RecruitmentModel.CandidateModel.class);
 
             // recruitment page
-            RecruitmentPage rp = new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage();
             rp.clickRecruitment();
             rp.clickCandidate();
 
             // candidate page
-            CandidatePage cp = new CandidatePage(driver);
+            CandidatePage cp = new CandidatePage();
 
             for (RecruitmentModel.CandidateModel candidate : candidateData)
             {
@@ -161,14 +162,14 @@ public class RecruitmentTest extends BaseTest
             List<RecruitmentModel.JobModel> jobData = JsonUtils.convertJsonListDataModel(recruitmentFile, "createJob", RecruitmentModel.JobModel.class);
 
             // Recruitment page
-            RecruitmentPage rp = new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage();
             rp.clickRecruitment();
             BasePage.openSidebar();
             BasePage.openSidebar();
             rp.clickJob();
 
             // job page
-            JobPage jp = new JobPage(driver);
+            JobPage jp = new JobPage();
 
             for (RecruitmentModel.JobModel job : jobData)
             {
@@ -270,7 +271,7 @@ public class RecruitmentTest extends BaseTest
             List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
             // Recruitment page
-            RecruitmentPage rp = new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage();
             rp.clickRecruitment();
             log("Clicked on Recruitment");
 
@@ -280,7 +281,7 @@ public class RecruitmentTest extends BaseTest
             log("Clicked on Job");
 
             // Job Application Tracking page
-            JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
+            JobApplicationTrackingPage ja = new JobApplicationTrackingPage();
 
             for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
@@ -318,7 +319,8 @@ public class RecruitmentTest extends BaseTest
                 ja.provideVisaType(search.visaType);
                 log("Provided visa type: " + search.visaType);
 
-                JavaScriptUtils.scrollToBottom(driver);
+                JavaScriptUtils.scrollToBottom(DriverFactory.getDriver()
+                );
 
                 ja.provideGender(search.gender);
                 log("Provided gender");
@@ -375,7 +377,7 @@ public class RecruitmentTest extends BaseTest
             List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
             // Recruitment page
-            RecruitmentPage rp = new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage();
             rp.clickRecruitment();
             log("Clicked on Recruitment");
             BasePage.openSidebar();
@@ -383,7 +385,7 @@ public class RecruitmentTest extends BaseTest
             log("Clicked on Job");
 
             // Job Application Tracking page
-            JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
+            JobApplicationTrackingPage ja = new JobApplicationTrackingPage();
 
             for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
@@ -461,7 +463,7 @@ public class RecruitmentTest extends BaseTest
             List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
             // Recruitment page
-            RecruitmentPage rp = new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage();
             rp.clickRecruitment();
             log("Clicked on Recruitment");
             BasePage.openSidebar();
@@ -469,7 +471,7 @@ public class RecruitmentTest extends BaseTest
             log("Clicked on Job");
 
             // Job Application Tracking page
-            JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
+            JobApplicationTrackingPage ja = new JobApplicationTrackingPage();
 
             for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
@@ -518,7 +520,7 @@ public class RecruitmentTest extends BaseTest
             List<RecruitmentModel.AdvanceCandidateSearchModel> candidateSearch = JsonUtils.convertJsonListDataModel(recruitmentFile, "jobApplicationTracking1.advanceCandidateSearch", RecruitmentModel.AdvanceCandidateSearchModel.class);
 
             // Recruitment page
-            RecruitmentPage rp = new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage();
             rp.clickRecruitment();
             log("Clicked on Recruitment");
             BasePage.openSidebar();
@@ -526,7 +528,7 @@ public class RecruitmentTest extends BaseTest
             log("Clicked on Job");
 
             // Job Application Tracking page
-            JobApplicationTrackingPage ja = new JobApplicationTrackingPage(driver);
+            JobApplicationTrackingPage ja = new JobApplicationTrackingPage();
 
             for (RecruitmentModel.AdvanceCandidateSearchModel search : candidateSearch)
             {
@@ -613,7 +615,7 @@ public class RecruitmentTest extends BaseTest
                 log("Switched to the employee tab");
 
                 // Employee Page
-                EmployeePage ep = new EmployeePage(driver);
+                EmployeePage ep = new EmployeePage();
                 ep.selectDepartment("QC");
                 log("Selected Department");
 

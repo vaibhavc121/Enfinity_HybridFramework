@@ -1,5 +1,6 @@
 package pageObjects.HRMS.Payroll;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,11 +11,6 @@ import utilities.CommonActions;
 
 public class TicketAdjustmentPage extends BasePage
 {
-
-    public TicketAdjustmentPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     @FindBy(xpath = "//span[normalize-space()='Ticket Adjustment']")
     WebElement ticketAdjustment;
@@ -77,11 +73,11 @@ public class TicketAdjustmentPage extends BasePage
 //	}
     public boolean checkAvailableTicket()
     {
-        String availableTicket = driver.findElement(By.xpath(
+        String availableTicket = DriverFactory.getDriver().findElement(By.xpath(
                         "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[5]"))
                 .getText();
 
-        // String availableTicket = driver.findElement(By.xpath("(//div[@class='dxgBCTC
+        // String availableTicket = DriverFactory.getDriver().findElement(By.xpath("(//div[@class='dxgBCTC
         // dx-ellipsis'])[4]")).getText();
 
         double availableTicketDouble = Double.parseDouble(availableTicket);

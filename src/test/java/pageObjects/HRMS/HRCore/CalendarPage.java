@@ -11,12 +11,6 @@ import utilities.CommonActions;
 public class CalendarPage extends BasePage
 {
 
-    public CalendarPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     //region Locators
     @FindBy(name = "Name")
     WebElement calname;
@@ -67,8 +61,4 @@ public class CalendarPage extends BasePage
         clickSaveAndBack();
     }
     //endregion
-
-
-
-
 }

@@ -16,12 +16,6 @@ import utilities.DateUtils;
 public class LeavePage extends BasePage
 {
 
-    public LeavePage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     //region Locators
     @FindBy(xpath = "//span[@class='dx-vam'][normalize-space()='Leave']")
     WebElement leave;

@@ -26,14 +26,14 @@ public class BenefitEncashmentTest extends BaseTest
                     payrollFile, "createBenefitSchemeEncashment", BenefitSchemeEncashmentModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // Benefit Encashment pg
-            BenefitEncashmentPage be = new BenefitEncashmentPage(driver);
+            BenefitEncashmentPage be = new BenefitEncashmentPage();
 
             for (BenefitSchemeEncashmentModel benefitEncashment : benefitSchemeEncashmentData)
             {
@@ -89,14 +89,14 @@ public class BenefitEncashmentTest extends BaseTest
                     payrollFile, "createBenefitSchemeEncashment", BenefitSchemeEncashmentModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // Benefit Encashment pg
-            BenefitEncashmentPage be = new BenefitEncashmentPage(driver);
+            BenefitEncashmentPage be = new BenefitEncashmentPage();
 
             for (BenefitSchemeEncashmentModel benefitEncashment : benefitSchemeEncashmentData)
             {

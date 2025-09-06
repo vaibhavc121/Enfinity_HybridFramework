@@ -1,6 +1,7 @@
 package pageObjects.HRMS.Performance;
 
 import base.BasePage;
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,10 +11,6 @@ import utilities.JavaScriptUtils;
 
 public class AppraisalCyclePage extends BasePage
 {
-    public AppraisalCyclePage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
 
@@ -123,28 +120,28 @@ public class AppraisalCyclePage extends BasePage
     {
         if (value)
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, Goals);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), Goals);
         }
     }
     public void enableKRA(boolean value)
     {
         if (value)
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, KRA);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), KRA);
         }
     }
     public void enableCompetency(boolean value)
     {
         if (value)
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, Competency);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), Competency);
         }
     }
     public void enableReviewQuestions(boolean value)
     {
         if (value)
         {
-            JavaScriptUtils.clickElementByJavaScript(driver, reviewQuestions);
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), reviewQuestions);
         }
     }
 
@@ -167,7 +164,7 @@ public class AppraisalCyclePage extends BasePage
 
     public void scrollPageGoalRating()
     {
-        JavaScriptUtils.scrollIntoView(driver, goalRating);
+        JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), goalRating);
     }
     public void selectGoalRating(String rating)
     {
@@ -204,7 +201,7 @@ public class AppraisalCyclePage extends BasePage
 
     public void scrollPageToManualWorkflow()
     {
-        JavaScriptUtils.scrollIntoView(driver, allowManualWorkflow);
+        JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), allowManualWorkflow);
     }
     public void checkAllowManualWorkflow(boolean value)
     {

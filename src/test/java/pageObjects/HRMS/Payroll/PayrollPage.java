@@ -1,5 +1,6 @@
 package pageObjects.HRMS.Payroll;
 
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,12 +10,6 @@ import utilities.JavaScriptUtils;
 
 public class PayrollPage extends BasePage
 {
-
-    public PayrollPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
 
     @FindBy(xpath = "//i[@class='payroll-module-single-color-icon']")
     static WebElement payroll;
@@ -29,13 +24,13 @@ public class PayrollPage extends BasePage
     {
         // waitForElement(payroll);
         BasePage.clickMenuIcon();
-        JavaScriptUtils.clickElementByJavaScript(driver, payroll);
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), payroll);
         waitTS(1);
     }
 
     public void clkTxn()
     {
-        JavaScriptUtils.clickElementByJavaScript(driver, transactions);
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), transactions);
     }
 
     public void clickReports()

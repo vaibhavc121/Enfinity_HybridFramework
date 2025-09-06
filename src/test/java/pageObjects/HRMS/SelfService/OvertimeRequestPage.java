@@ -11,11 +11,6 @@ import utilities.JavaScriptUtils;
 public class OvertimeRequestPage extends BasePage
 {
 
-    public OvertimeRequestPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     //region Locators
     @FindBy(xpath = "//a[@id='TxnInstanceView_I0i19_T']//span[@class='dx-vam'][normalize-space()='Profile Update']")
     WebElement profileUpdate;
@@ -59,6 +54,7 @@ public class OvertimeRequestPage extends BasePage
     {
         clearAndProvide1(overtimeDate, value);
         clickOnElement1(dateDD);
+        pressTab();
     }
 
     public void provideHrs(String value)

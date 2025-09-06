@@ -11,24 +11,24 @@ import utilities.RetryAnalyzer;
 
 public class CreateVariableSalaryTest extends BaseTest
 {
-	@Test(groups = "regression", dataProvider = "variableSal", dataProviderClass = DataProviders.class, retryAnalyzer = RetryAnalyzer.class)
-	public void verifyVariableSalary(String emp, String remarks, String effectiveDate, String salComponent, String amt) // ,
-	{
-		try
-		{
-			// payroll pg
-			PayrollPage pp = new PayrollPage(driver);
-			pp.clkPayroll();
-			logger.info("clicked on payroll link");
-			pp.clkTxn();
-			logger.info("clicked on txn");
+    @Test(groups = "regression", dataProvider = "variableSal", dataProviderClass = DataProviders.class, retryAnalyzer = RetryAnalyzer.class)
+    public void verifyVariableSalary(String emp, String remarks, String effectiveDate, String salComponent, String amt) // ,
+    {
+        try
+        {
+            // payroll pg
+            PayrollPage pp = new PayrollPage();
+            pp.clkPayroll();
+            logger.info("clicked on payroll link");
+            pp.clkTxn();
+            logger.info("clicked on txn");
 
-			// variable sal pg
-			VariableSalaryPage vs = new VariableSalaryPage(driver);
-			vs.clkVariableSal();
-			logger.info("clicked on variable sal");
-			vs.clkNewBtn();
-			logger.info("clicked on new btn");
+            // variable sal pg
+            VariableSalaryPage vs = new VariableSalaryPage();
+            vs.clkVariableSal();
+            logger.info("clicked on variable sal");
+            vs.clkNewBtn();
+            logger.info("clicked on new btn");
 //			vs.clkEmpDD();
 //			logger.info("clicked on emp dd");
 //			vs.slctEmp();
@@ -51,12 +51,11 @@ public class CreateVariableSalaryTest extends BaseTest
 //			vs.clkApproveBtn();
 //			logger.info("clicked on approved button");
 //			vs.clkVariableSalLabel();
-			logger.info("clicked on variable sal label");
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+            logger.info("clicked on variable sal label");
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

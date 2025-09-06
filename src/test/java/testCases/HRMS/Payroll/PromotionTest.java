@@ -26,14 +26,14 @@ public class PromotionTest extends BaseTest
                     "createPromotion", PayrollModel.PromotionModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // promotion pg
-            PromotionPage pr = new PromotionPage(driver);
+            PromotionPage pr = new PromotionPage();
 
             for (PayrollModel.PromotionModel proData : promotionData)
             {
@@ -103,14 +103,14 @@ public class PromotionTest extends BaseTest
                     PayrollModel.PromotionModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // promotion pg
-            PromotionPage lp = new PromotionPage(driver);
+            PromotionPage lp = new PromotionPage();
 
             for (PayrollModel.PromotionModel loan : promotionData)
             {

@@ -10,75 +10,68 @@ import utilities.DateUtils;
 public class ResignationPage extends BasePage
 {
 
-	public ResignationPage(WebDriver driver)
-	{
-		super(driver);
+    // Locators
 
-	}
+    // Action Methods
 
-	// Locators
+    @FindBy(xpath = "//a[@id='TxnInstanceView_I0i19_T']//span[@class='dx-vam'][normalize-space()='Profile Update']")
+    WebElement profileUpdate;
 
-	// Action Methods
+    @FindBy(xpath = "//span[normalize-space()='Resignation Application']")
+    WebElement resignationApplication;
 
-	@FindBy(xpath = "//a[@id='TxnInstanceView_I0i19_T']//span[@class='dx-vam'][normalize-space()='Profile Update']")
-	WebElement profileUpdate;
+    @FindBy(xpath = "//input[@id='ResignationApplication.SubmittedDate_I']")
+    WebElement submittedDate;
 
-	@FindBy(xpath = "//span[normalize-space()='Resignation Application']")
-	WebElement resignationApplication;
+    @FindBy(xpath = "//textarea[@id='ResignationApplication.Description_I']")
+    WebElement remarks;
 
-	@FindBy(xpath = "//input[@id='ResignationApplication.SubmittedDate_I']")
-	WebElement submittedDate;
+    public void scrollDownWebpage()
+    {
+        scrollDownWebPage(profileUpdate);
+    }
 
-	@FindBy(xpath = "//textarea[@id='ResignationApplication.Description_I']")
-	WebElement remarks;
+    public void clickResignation()
+    {
+        resignationApplication.click();
+    }
 
-	public void scrollDownWebpage()
-	{
-		scrollDownWebPage(profileUpdate);
-	}
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
-	public void clickResignation()
-	{
-		resignationApplication.click();
-	}
+    public void provideSubmittedDate(String value)
+    {
+        clearAndProvide1(submittedDate, value);
+    }
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    public void provideRemarks(String value)
+    {
+        remarks.sendKeys(value);
+    }
 
-	public void provideSubmittedDate(String value)
-	{
-		clearAndProvide1(submittedDate, value);
-	}
+    public void clickOnSaveAndBack()
+    {
+        clickSaveAndBack();
+    }
 
-	public void provideRemarks(String value)
-	{
-		remarks.sendKeys(value);
-	}
+    public boolean isTxnCreated()
+    {
+        return isTransactionCreated();
+    }
 
-	public void clickOnSaveAndBack()
-	{
-		clickSaveAndBack();
-	}
+    public boolean isTransactionCreated1()
+    {
+        String expectedDate = DateUtils.currentDateInCustomFormat();
+        String expectedDesc = DateUtils.addDaysToGivenDate("01-01-2025", 100);
 
-	public boolean isTxnCreated()
-	{
-		return isTransactionCreated();
-	}
-
-	public boolean isTransactionCreated1()
-	{
-		String expectedDate = DateUtils.currentDateInCustomFormat();
-		String expectedDesc = DateUtils.addDaysToGivenDate("01-01-2025", 100);
-
-		if (resultValue(2).contains(expectedDate) || resultValue(7).contains(expectedDesc))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-	}
-
+        if (resultValue(2).contains(expectedDate) || resultValue(7).contains(expectedDesc))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
 }

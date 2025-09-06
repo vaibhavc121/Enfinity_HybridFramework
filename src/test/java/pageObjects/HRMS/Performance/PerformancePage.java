@@ -7,10 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class PerformancePage extends BasePage
 {
-    public PerformancePage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
     @FindBy(xpath = "//span[normalize-space()='Performance']")

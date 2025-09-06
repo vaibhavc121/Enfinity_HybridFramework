@@ -9,43 +9,36 @@ import base.BasePage;
 public class ShiftPage extends BasePage
 {
 
-	public ShiftPage(WebDriver driver)
-	{
-		super(driver);
+    @FindBy(xpath = "//input[@id='Shift.Name_I']")
+    WebElement name;
 
-	}
+    @FindBy(xpath = "//input[@id='Shift.DefaultTimetableIdLookup_I']")
+    WebElement defaultTimetableIdLookup;
 
-	@FindBy(xpath = "//input[@id='Shift.Name_I']")
-	WebElement name;
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
-	@FindBy(xpath = "//input[@id='Shift.DefaultTimetableIdLookup_I']")
-	WebElement defaultTimetableIdLookup;
+    public void provideShiftName(String value)
+    {
+        name.sendKeys(value);
+    }
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    public void provideDefaultTimetable(String value)
+    {
+        provideAndEnter(defaultTimetableIdLookup, value);
+        waitTS(3);
+    }
 
-	public void provideShiftName(String value)
-	{
-		name.sendKeys(value);
-	}
+    public void clickSaveBack()
+    {
+        clickSaveAndBack();
+    }
 
-	public void provideDefaultTimetable(String value)
-	{
-		provideAndEnter(defaultTimetableIdLookup, value);
-		waitTS(3);
-	}
-
-	public void clickSaveBack()
-	{
-		clickSaveAndBack();
-	}
-
-	public boolean isTransactionCreated(String expShift)
-	{
-		filterByIndex(2, expShift);
-		return resultValue(1).contains(expShift);
-	}
-
+    public boolean isTransactionCreated(String expShift)
+    {
+        filterByIndex(2, expShift);
+        return resultValue(1).contains(expShift);
+    }
 }

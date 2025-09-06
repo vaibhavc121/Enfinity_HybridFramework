@@ -7,14 +7,7 @@ import base.BasePage;
 public class LeaveExtensionPage extends BasePage
 {
 
-	public LeaveExtensionPage(WebDriver driver)
-	{
-		super(driver);
+    // Locators
 
-	}
-
-	// Locators
-
-	// Action Methods
-
+    // Action Methods
 }

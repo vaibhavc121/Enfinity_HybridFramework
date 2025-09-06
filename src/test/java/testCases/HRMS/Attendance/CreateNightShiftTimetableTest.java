@@ -28,7 +28,7 @@ public class CreateNightShiftTimetableTest extends BaseTest
             BasePage.globalSearch("Timetable");
             log("");
 
-            TimetablePage tp = new TimetablePage(driver);
+            TimetablePage tp = new TimetablePage();
 
             for (NightShiftModel shift : attendanceData)
             {

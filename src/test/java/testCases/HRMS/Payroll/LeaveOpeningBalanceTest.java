@@ -28,28 +28,28 @@ public class LeaveOpeningBalanceTest extends BaseTest
                     "createLeaveOpeningBalance", LeaveOpeningBalanceModel.class);
 
             // hr core pg
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             logger.info("clicked on HRCore link");
             hc.clickEmployee();
             logger.info("clicked on Employee");
             BasePage.navigateToEmployee("001");
 
-            EmployeePage1 ep = new EmployeePage1(driver);
+            EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
             logger.info("clicked on TimeOff");
             double LeaveBal = ep.getLeaveBal(2);
             double expLeaveBal = LeaveBal + 1;
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // leave opening bal pg
-            LeaveOpeningBalancePage ob = new LeaveOpeningBalancePage(driver);
+            LeaveOpeningBalancePage ob = new LeaveOpeningBalancePage();
 
             for (LeaveOpeningBalanceModel leaveOpBal : leaveOpeningData)
             {
@@ -108,14 +108,14 @@ public class LeaveOpeningBalanceTest extends BaseTest
                     "createLeaveOpeningBalance", LeaveOpeningBalanceModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // Leave Opening Balance Page
-            LeaveOpeningBalancePage ob = new LeaveOpeningBalancePage(driver);
+            LeaveOpeningBalancePage ob = new LeaveOpeningBalancePage();
 
             for (LeaveOpeningBalanceModel LeaveOpBal : leaveOpeningData)
             {

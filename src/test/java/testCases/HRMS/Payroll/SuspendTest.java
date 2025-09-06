@@ -26,14 +26,14 @@ public class SuspendTest extends BaseTest
                     "createSuspend", PayrollModel.SuspendModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
             log("clicked on txn");
 
             // suspend pg
-            SuspendPage sp = new SuspendPage(driver);
+            SuspendPage sp = new SuspendPage();
             for (PayrollModel.SuspendModel suspend : suspendData)
             {
                 sp.clickSuspend();
@@ -78,14 +78,14 @@ public class SuspendTest extends BaseTest
                     "createSuspend", PayrollModel.SuspendModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             log("clicked on payroll link");
             pp.clkTxn();
             log("clicked on txn");
 
             // suspend pg
-            SuspendPage sp = new SuspendPage(driver);
+            SuspendPage sp = new SuspendPage();
             for (PayrollModel.SuspendModel suspend : suspendData)
             {
                 sp.clickSuspend();

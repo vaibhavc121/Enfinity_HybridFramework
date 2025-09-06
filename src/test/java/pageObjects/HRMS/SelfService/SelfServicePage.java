@@ -9,11 +9,6 @@ import base.BasePage;
 public class SelfServicePage extends BasePage
 {
 
-    public SelfServicePage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     //region Locators
     @FindBy(xpath = "//span[normalize-space()='Self Service']")
     static WebElement selfService;

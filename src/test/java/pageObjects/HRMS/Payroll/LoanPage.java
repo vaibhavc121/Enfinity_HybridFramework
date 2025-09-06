@@ -9,11 +9,6 @@ import org.openqa.selenium.support.FindBy;
 public class LoanPage extends BasePage
 {
 
-    public LoanPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     @FindBy(xpath = "//span[normalize-space()='Loan']")
     private WebElement loan;
 

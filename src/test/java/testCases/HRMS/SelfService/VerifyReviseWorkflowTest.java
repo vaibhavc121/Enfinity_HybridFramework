@@ -30,7 +30,7 @@ public class VerifyReviseWorkflowTest extends BaseTest
             BasePage.logoutAndLogin("rohitc@test.com", "123");
 
             // self service module
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("clickSelfService");
 
@@ -38,7 +38,7 @@ public class VerifyReviseWorkflowTest extends BaseTest
             log("clickTransactions");
 
             // Leave Request page
-            LeaveRequestPage lr = new LeaveRequestPage(driver);
+            LeaveRequestPage lr = new LeaveRequestPage();
 
             // create leave request as employee
             for (LeaveRequestModel leaveRequest : leaveRequestData)
@@ -70,7 +70,7 @@ public class VerifyReviseWorkflowTest extends BaseTest
 
             // Revise the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
-            TopNavigationBar tn = new TopNavigationBar(driver);
+            TopNavigationBar tn = new TopNavigationBar();
             for (LeaveRequestModel leaveRequest : leaveRequestData)
             {
                 tn.clickBellIcon();

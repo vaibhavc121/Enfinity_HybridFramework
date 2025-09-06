@@ -11,11 +11,6 @@ import base.BasePage;
 public class LeaveRequestPage extends BasePage
 {
 
-    public LeaveRequestPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     // Locators
     @FindBy(xpath = "//span[contains(text(),'Leave Request')]")
     WebElement leaveRequest;

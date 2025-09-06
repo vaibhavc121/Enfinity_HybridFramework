@@ -1,6 +1,7 @@
 package pageObjects.HRMS.Global;
 
 import base.BaseTest;
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,11 +11,6 @@ import base.BasePage;
 
 public class NotificationPage extends BasePage
 {
-
-    public NotificationPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
     @FindBy(xpath = "//i[@class='dx-icon bell-icon white-color-icon']")
@@ -68,7 +64,7 @@ public class NotificationPage extends BasePage
                     throw new IllegalArgumentException("Invalid leave status: " + status);
             }
 
-            BasePage.acceptAlert(driver);
+            BasePage.acceptAlert(DriverFactory.getDriver());
             BaseTest.log("alert accepted");
             // BasePage.closeCurrentTab();
             // BasePage.closeTab();

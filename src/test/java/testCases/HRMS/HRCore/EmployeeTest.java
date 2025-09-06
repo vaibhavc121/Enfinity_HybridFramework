@@ -26,18 +26,18 @@ public class EmployeeTest extends BaseTest
             List<EmpModel> employeeInfo = JsonUtils.convertJsonListDataModel(employeeFile, "newEmployee",
                     EmpModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             log("Clicked on HR Core");
             hc.clickSetupForm();
             log("Clicked on Setup Form");
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickEmployee();
             log("Clicked on Employee");
             Thread.sleep(2000);
 
-            EmployeePage ep = new EmployeePage(driver);
+            EmployeePage ep = new EmployeePage();
 
             for (EmpModel employee : employeeInfo)
             {
@@ -118,13 +118,13 @@ public class EmployeeTest extends BaseTest
                 List<EmployeeModel.DeleteEmpModel> deleteEmployee = JsonUtils.convertJsonListDataModel(employeeFile, "deleteEmployee",
                         EmployeeModel.DeleteEmpModel.class);
 
-                HRCorePage hc = new HRCorePage(driver);
+                HRCorePage hc = new HRCorePage();
                 hc.clickHRCore();
                 log("clicked on HR Core module");
                 hc.clickSetupForm();
                 log("clicked on Setup Form");
 
-                SetupPage sp = new SetupPage(driver);
+                SetupPage sp = new SetupPage();
                 sp.clickEmployee();
                 log("clicked on Employee");
                 Thread.sleep(2000);
@@ -135,7 +135,7 @@ public class EmployeeTest extends BaseTest
                     BasePage.switchTab();
                     log("switched to Employee tab for " + del.empName);
 
-                    EmployeePage ep = new EmployeePage(driver);
+                    EmployeePage ep = new EmployeePage();
                     ep.clickSettingButton();
                     log("clicked on setting button");
 

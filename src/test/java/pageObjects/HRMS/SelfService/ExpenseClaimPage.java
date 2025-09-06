@@ -2,6 +2,7 @@ package pageObjects.HRMS.SelfService;
 
 import java.util.List;
 
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,11 +12,6 @@ import base.BasePage;
 
 public class ExpenseClaimPage extends BasePage
 {
-
-    public ExpenseClaimPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     // Locators
     @FindBy(xpath = "//span[normalize-space()='Expense Claim']")
@@ -89,7 +85,7 @@ public class ExpenseClaimPage extends BasePage
 
     public void selectExpenseClaimCategory(String value)
     {
-        List<WebElement> valuesList = driver.findElements(By.xpath("//div[@class='lookup-text']"));
+        List<WebElement> valuesList = DriverFactory.getDriver().findElements(By.xpath("//div[@class='lookup-text']"));
         for (WebElement valueElement : valuesList)
         {
             String actualValue = valueElement.getText();
@@ -104,7 +100,7 @@ public class ExpenseClaimPage extends BasePage
     public void provideCurrency(String value)
     {
         expenseClaimLineCurrency.click();
-        List<WebElement> valuesList = driver.findElements(By.xpath("//div[@class='lookup-text']"));
+        List<WebElement> valuesList = DriverFactory.getDriver().findElements(By.xpath("//div[@class='lookup-text']"));
         for (WebElement valueElement : valuesList)
         {
             String actualValue = valueElement.getText();

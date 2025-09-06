@@ -10,38 +10,31 @@ import utilities.CommonActions;
 public class WorkLocationPage extends BasePage
 {
 
-	public WorkLocationPage(WebDriver driver)
-	{
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+    @FindBy(xpath = "//input[@id='WorkLocation.Name_I']")
+    WebElement workLocationName;
 
-	@FindBy(xpath = "//input[@id='WorkLocation.Name_I']")
-	WebElement workLocationName;
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    public void provideWorkLocName(String value)
+    {
+        workLocationName.sendKeys(value);
+    }
 
-	public void provideWorkLocName(String value)
-	{
-		workLocationName.sendKeys(value);
-	}
+    public void provideWorkLocName()
+    {
+        workLocationName.sendKeys(randomString());
+    }
 
-	public void provideWorkLocName()
-	{
-		workLocationName.sendKeys(randomString());
-	}
+    public void clickSaveBack()
+    {
+        clickSaveAndBack();
+    }
 
-	public void clickSaveBack()
-	{
-		clickSaveAndBack();
-	}
-
-	public boolean isTxnCreated()
-	{
-		return isTransactionCreated();
-	}
-
+    public boolean isTxnCreated()
+    {
+        return isTransactionCreated();
+    }
 }

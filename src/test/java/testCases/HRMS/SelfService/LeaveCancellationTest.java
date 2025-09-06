@@ -2,6 +2,7 @@ package testCases.HRMS.SelfService;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.DriverFactory;
 import models.SelfService.SelfService.SelfServiceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class LeaveCancellationTest extends BaseTest
             BasePage.logoutAndLogin("rohitc@test.com", "123");
 
             // self service module
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("clicked on Self Service");
 
@@ -37,7 +38,7 @@ public class LeaveCancellationTest extends BaseTest
             log("clicked on Transactions");
 
             // Leave Request page
-            LeaveRequestPage lr = new LeaveRequestPage(driver);
+            LeaveRequestPage lr = new LeaveRequestPage();
 
             // create leave request as employee
             for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
@@ -70,7 +71,7 @@ public class LeaveCancellationTest extends BaseTest
 
             // approve the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
-            NotificationPage np = new NotificationPage(driver);
+            NotificationPage np = new NotificationPage();
             for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
             {
                 np.clickBellIcon();
@@ -88,7 +89,7 @@ public class LeaveCancellationTest extends BaseTest
             log("clicked on Leave Request");
             BasePage.performAction(7, "Approve", "Cancel");
             log("Created Leave Cancellation Request");
-            BrowserUtils.refreshPage(driver);
+            BrowserUtils.refreshPage(DriverFactory.getDriver());
             log("Page refreshed");
             lr.checkCancellationStatus();
 
@@ -115,7 +116,7 @@ public class LeaveCancellationTest extends BaseTest
             Assert.assertTrue(lr.checkCancellationStatus1(), "Leave cacellation approved failed.");
             log("Verified: Leave cancellation approved successfully");
 
-            BrowserUtils.navigateBack(driver);
+            BrowserUtils.navigateBack(DriverFactory.getDriver());
             BasePage.performAction(7, "Approve", "Amend");
             log("Transaction amend successfully");
             Assert.assertFalse(BasePage.validateListing("Approved", 7, 7));
@@ -138,8 +139,8 @@ public class LeaveCancellationTest extends BaseTest
             //endregion
 
             //region Page Objects
-            SelfServicePage ss = new SelfServicePage(driver);
-            LeaveRequestPage lr = new LeaveRequestPage(driver);
+            SelfServicePage ss = new SelfServicePage();
+            LeaveRequestPage lr = new LeaveRequestPage();
             //endregion
 
             //region self service module: Create Leave Request
@@ -185,7 +186,7 @@ public class LeaveCancellationTest extends BaseTest
 
             //region approve the leave request from manager login
             BasePage.logoutAndLogin("vaibhav@test.com", "123");
-            TopNavigationBar tn = new TopNavigationBar(driver);
+            TopNavigationBar tn = new TopNavigationBar();
             for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
             {
                 tn.clickBellIcon();
@@ -214,7 +215,7 @@ public class LeaveCancellationTest extends BaseTest
 
             for (SelfServiceModel.LeaveCancellationModel leaveCancel : leaveCancellationData)
             {
-                BrowserUtils.navigateBack(driver);
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
                 log("navigated back to Leave Request page");
 
                 BasePage.performAction(7, "Approve", "Amend");

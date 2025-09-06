@@ -25,8 +25,8 @@ public class PerformanceTest extends BaseTest
             List<PerformanceModel.AppraisalCycleModel> performanceData = JsonUtils.convertJsonListDataModel(performanceFile, "createAppraisalCycle", PerformanceModel.AppraisalCycleModel.class);
 
             //region Page Initializations
-            PerformancePage pp = new PerformancePage(driver);
-            AppraisalCyclePage ac = new AppraisalCyclePage(driver);
+            PerformancePage pp = new PerformancePage();
+            AppraisalCyclePage ac = new AppraisalCyclePage();
             //endregion
 
             //region Performance page
@@ -122,7 +122,7 @@ public class PerformanceTest extends BaseTest
                 //endregion
 
                 //region Reviewers
-                
+
                 ac.scrollPageToManualWorkflow();
                 log("Scrolled down the page to allowManualWorkflow");
 

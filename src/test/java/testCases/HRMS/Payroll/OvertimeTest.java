@@ -26,14 +26,14 @@ public class OvertimeTest extends BaseTest
                     OvertimeModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // overtime pg
-            OvertimePage op = new OvertimePage(driver);
+            OvertimePage op = new OvertimePage();
 
             for (OvertimeModel ot : overtimeData)
             {
@@ -80,14 +80,14 @@ public class OvertimeTest extends BaseTest
                     OvertimeModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // overtime pg
-            OvertimePage op = new OvertimePage(driver);
+            OvertimePage op = new OvertimePage();
 
             for (OvertimeModel ot : overtimeData)
             {

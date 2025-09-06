@@ -7,21 +7,24 @@ import org.openqa.selenium.support.FindBy;
 
 public class SuspendPage extends BasePage
 {
-    public SuspendPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
-    @FindBy(xpath="//span[normalize-space()='Suspend']") WebElement suspend;
-    @FindBy(xpath="//input[@id='Suspend.EffectiveDate_I']") WebElement effectiveDate;
-    @FindBy(xpath="//input[@id='Suspend.EmployeeIdLookup_I']") WebElement empdd;
-    @FindBy(xpath="//input[@id='Suspend.SuspendTypeIdLookup_I']") WebElement suspendTypeDD;
-    @FindBy(xpath="//textarea[@id='Suspend.Description_I']") WebElement remarks;
-    @FindBy(xpath="//input[@id='Suspend.ReleaseSuspendDate_I']") WebElement releaseSuspendDate;
-    @FindBy(xpath="//span[normalize-space()='Release']") WebElement release;
-    @FindBy(xpath="//span[@id='ValidationSummary']") WebElement msg;
-
+    @FindBy(xpath = "//span[normalize-space()='Suspend']")
+    WebElement suspend;
+    @FindBy(xpath = "//input[@id='Suspend.EffectiveDate_I']")
+    WebElement effectiveDate;
+    @FindBy(xpath = "//input[@id='Suspend.EmployeeIdLookup_I']")
+    WebElement empdd;
+    @FindBy(xpath = "//input[@id='Suspend.SuspendTypeIdLookup_I']")
+    WebElement suspendTypeDD;
+    @FindBy(xpath = "//textarea[@id='Suspend.Description_I']")
+    WebElement remarks;
+    @FindBy(xpath = "//input[@id='Suspend.ReleaseSuspendDate_I']")
+    WebElement releaseSuspendDate;
+    @FindBy(xpath = "//span[normalize-space()='Release']")
+    WebElement release;
+    @FindBy(xpath = "//span[@id='ValidationSummary']")
+    WebElement msg;
 
     //endregion
 
@@ -64,12 +67,11 @@ public class SuspendPage extends BasePage
     }
     public boolean validateMsg()
     {
-        String message= msg.getText();
-        if(message.contains("Suspend already resumed."))
+        String message = msg.getText();
+        if (message.contains("Suspend already resumed."))
         {
             return true;
-        }
-        else
+        } else
         {
             return false;
         }

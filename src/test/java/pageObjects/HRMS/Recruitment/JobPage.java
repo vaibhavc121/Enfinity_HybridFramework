@@ -1,6 +1,7 @@
 package pageObjects.HRMS.Recruitment;
 
 import com.github.javafaker.Faker;
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,11 +12,6 @@ import utilities.JavaScriptUtils;
 
 public class JobPage extends BasePage
 {
-
-    public JobPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
     @FindBy(xpath = "//div[@class='jobTemplateUpload']")
@@ -176,7 +172,7 @@ public class JobPage extends BasePage
 
     public void scrollPage()
     {
-        JavaScriptUtils.scrollIntoView(driver, city);
+        JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), city);
     }
 
     public void provideCity(String value)

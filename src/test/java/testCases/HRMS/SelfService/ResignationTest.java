@@ -25,12 +25,12 @@ public class ResignationTest extends BaseTest
                     "createResignation", ResignationModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // Resignation page
-            ResignationPage rp = new ResignationPage(driver);
+            ResignationPage rp = new ResignationPage();
 
             for (ResignationModel resignation : resignationData)
             {
@@ -54,12 +54,12 @@ public class ResignationTest extends BaseTest
     public void deleteResignation()
     {
         // self service page
-        SelfServicePage ss = new SelfServicePage(driver);
+        SelfServicePage ss = new SelfServicePage();
         ss.clickSelfService();
         ss.clickTransactions();
 
         // Resignation page
-        ResignationPage rp = new ResignationPage(driver);
+        ResignationPage rp = new ResignationPage();
         rp.clickResignation();
 
         BasePage.deleteTxn(6, "active");

@@ -25,7 +25,7 @@ public class SupportRequestCategoryTest extends BaseTest
                     selfServiceFile, "createSupportRequestCategory", SupportRequestCategoryModel.class);
 
             // global search
-            SupportRequestCategoryPage sr = new SupportRequestCategoryPage(driver);
+            SupportRequestCategoryPage sr = new SupportRequestCategoryPage();
 
             for (SupportRequestCategoryModel src : supportRequestCategoryData)
             {
@@ -76,7 +76,7 @@ public class SupportRequestCategoryTest extends BaseTest
                     selfServiceFile, "deleteSupportRequestCategory", SelfServiceModel.DeleteSupportRequestCategoryModel.class);
 
             // SupportRequestCategory
-            SupportRequestCategoryPage sr = new SupportRequestCategoryPage(driver);
+            SupportRequestCategoryPage sr = new SupportRequestCategoryPage();
             for (SelfServiceModel.DeleteSupportRequestCategoryModel SRC : supportRequestCategoryData)
             {
                 BasePage.globalSearch("support request category");

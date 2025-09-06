@@ -25,12 +25,12 @@ public class SupportRequestTest extends BaseTest
                     ITSupportModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // ITSupport page
-            ITSupportRequestPage it = new ITSupportRequestPage(driver);
+            ITSupportRequestPage it = new ITSupportRequestPage();
 
             for (ITSupportModel itSupport : itSupportData)
             {
@@ -65,14 +65,14 @@ public class SupportRequestTest extends BaseTest
                     ITSupportModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("clickSelfService");
             ss.clickTransactions();
             log("clickTransactions");
 
             // ITSupport page
-            ITSupportRequestPage it = new ITSupportRequestPage(driver);
+            ITSupportRequestPage it = new ITSupportRequestPage();
             it.clickITSupport();
             log("clickITSupport");
 

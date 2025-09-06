@@ -3,6 +3,7 @@ package pageObjects.HRMS.HRCore;
 import java.util.Set;
 
 import base.BaseTest;
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,12 +15,6 @@ import utilities.DataUtils;
 
 public class EmployeePage1 extends BasePage
 {
-
-    public EmployeePage1(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
 
     @FindBy(css = "#MainMenu_DXI0_Img")
     WebElement newbtn;
@@ -111,9 +106,9 @@ public class EmployeePage1 extends BasePage
         // String numberPart = bal.substring(0, 5);
         double expBal = Double.parseDouble(number);
         // expBal += 1;
-        BrowserUtils.navigateBack(driver);
+        BrowserUtils.navigateBack(DriverFactory.getDriver());
         BaseTest.log("navigating back to employee page");
-        BrowserUtils.navigateBack(driver);
+        BrowserUtils.navigateBack(DriverFactory.getDriver());
         BaseTest.log("navigating back to employee page");
         return expBal;
     }
@@ -204,13 +199,13 @@ public class EmployeePage1 extends BasePage
 
     public void clkResidencyInfo()
     {
-        String originalWindow = driver.getWindowHandle();
-        Set<String> allWindows = driver.getWindowHandles();
+        String originalWindow = DriverFactory.getDriver().getWindowHandle();
+        Set<String> allWindows = DriverFactory.getDriver().getWindowHandles();
         for (String windowHandle : allWindows)
         {
             if (!windowHandle.equals(originalWindow))
             {
-                driver.switchTo().window(windowHandle);
+                DriverFactory.getDriver().switchTo().window(windowHandle);
                 break;
             }
         }

@@ -9,11 +9,6 @@ import base.BasePage;
 public class ITSupportRequestPage extends BasePage
 {
 
-    public ITSupportRequestPage(WebDriver driver)
-    {
-        super(driver);
-    }
-
     // Locators
     @FindBy(xpath = "//span[normalize-space()='Support Request']")
     WebElement iTSupportRequest;

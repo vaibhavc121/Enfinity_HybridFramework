@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CreateCandidateTest extends BaseTest
 {
-    @Test(groups="functional", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
     public void createCandidate()
     {
         try
@@ -24,14 +24,14 @@ public class CreateCandidateTest extends BaseTest
                     "createCandidate", RecruitmentModel.CandidateModel.class);
 
             // recruitment page
-            RecruitmentPage rp=new RecruitmentPage(driver);
+            RecruitmentPage rp = new RecruitmentPage();
             rp.clickRecruitment();
             rp.clickCandidate();
 
             // candidate page
-            CandidatePage cp=new CandidatePage(driver);
+            CandidatePage cp = new CandidatePage();
 
-            for(RecruitmentModel.CandidateModel candidate : candidateData)
+            for (RecruitmentModel.CandidateModel candidate : candidateData)
             {
                 cp.clickNew();
                 log("Clicked on New button");
@@ -56,7 +56,7 @@ public class CreateCandidateTest extends BaseTest
                 cp.selectMaritalStatus(candidate.maritalStatus);
                 log("Provided Marital Status");
 
-                if(candidate.checkbox1)
+                if (candidate.checkbox1)
                 {
                     cp.clickDrivingLicense();
                     log("Clicked on Driving License checkbox");
@@ -101,7 +101,7 @@ public class CreateCandidateTest extends BaseTest
                 cp.provideNoticePeriodInDays(candidate.noticePeriodInDays);
                 log("Provided Notice Period in Days");
 
-                if(candidate.checkbox2)
+                if (candidate.checkbox2)
                 {
                     cp.clickOverseas();
                     log("Clicked on Overseas checkbox");
@@ -130,12 +130,8 @@ public class CreateCandidateTest extends BaseTest
                 cp.clickSave();
                 log("Clicked on Save button");
 
-                Assert.assertEquals(cp.getCandidateName(),candidateName);
+                Assert.assertEquals(cp.getCandidateName(), candidateName);
             }
-
-
-
-
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

@@ -13,12 +13,6 @@ import utilities.CommonActions;
 public class LeaveEncashmentPage extends BasePage
 {
 
-    public LeaveEncashmentPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     @FindBy(xpath = "//span[normalize-space()='Leave Encashment']")
     WebElement leaveEncashment;
 

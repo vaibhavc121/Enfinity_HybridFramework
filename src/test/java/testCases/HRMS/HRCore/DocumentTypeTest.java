@@ -26,15 +26,15 @@ public class DocumentTypeTest extends BaseTest
             List<CreateDocumentTypeModel> documentTypeData = JsonUtils.convertJsonListDataModel(documentTypeFile,
                     "createDocumentType", CreateDocumentTypeModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickDocumentType();
             Thread.sleep(2000);
 
-            DocumentTypePage dt = new DocumentTypePage(driver);
+            DocumentTypePage dt = new DocumentTypePage();
 
             for (CreateDocumentTypeModel document : documentTypeData)
             {
@@ -62,11 +62,11 @@ public class DocumentTypeTest extends BaseTest
             List<HRCoreModel.DeleteDocumentTypeModel> documentTypeData = JsonUtils.convertJsonListDataModel(documentTypeFile,
                     "createDocumentType", HRCoreModel.DeleteDocumentTypeModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteDocumentTypeModel doc : documentTypeData)
             {
                 sp.clickDocumentType();

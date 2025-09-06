@@ -27,14 +27,14 @@ public class LoanTest extends BaseTest
                     "createLoan", PayrollModel.LoanModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // loan pg
-            LoanPage lp = new LoanPage(driver);
+            LoanPage lp = new LoanPage();
 
             for (PayrollModel.LoanModel loan : loanData)
             {
@@ -86,14 +86,14 @@ public class LoanTest extends BaseTest
                     PayrollModel.LoanModel.class);
 
             // payroll pg
-            PayrollPage pp = new PayrollPage(driver);
+            PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
             logger.info("clicked on payroll link");
             pp.clkTxn();
             logger.info("clicked on txn");
 
             // Loan pg
-            LoanPage lp = new LoanPage(driver);
+            LoanPage lp = new LoanPage();
 
             for (PayrollModel.LoanModel loan : loanData)
             {

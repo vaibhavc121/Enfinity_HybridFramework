@@ -26,16 +26,16 @@ public class GradeTest extends BaseTest
             List<CreateGradeModel> gradeData = JsonUtils.convertJsonListDataModel(gradeFile, "createGrade",
                     CreateGradeModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             Thread.sleep(5000);
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickGrade();
             Thread.sleep(2000);
 
-            GradePage gp = new GradePage(driver);
+            GradePage gp = new GradePage();
 
             for (CreateGradeModel grade : gradeData)
             {
@@ -63,12 +63,12 @@ public class GradeTest extends BaseTest
             List<HRCoreModel.DeleteGradeModel> gradeData = JsonUtils.convertJsonListDataModel(gradeFile, "deleteGrade",
                     HRCoreModel.DeleteGradeModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             Thread.sleep(5000);
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteGradeModel grade : gradeData)
             {
                 sp.clickGrade();

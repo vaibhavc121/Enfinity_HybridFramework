@@ -10,12 +10,6 @@ import utilities.CommonActions;
 public class DesignationPage extends BasePage
 {
 
-    public DesignationPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
-
     @FindBy(css = "#MainMenu_DXI0_Img")
     private WebElement newBtnCss;
 

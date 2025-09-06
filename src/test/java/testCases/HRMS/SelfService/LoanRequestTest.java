@@ -25,14 +25,14 @@ public class LoanRequestTest extends BaseTest
                     "createLoanRequest", LoanRequestModel.class);
 
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             log("Clicked on Self Service");
             ss.clickTransactions();
             log("Clicked on Transactions");
 
             // Loan Request page
-            LoanRequestPage lr = new LoanRequestPage(driver);
+            LoanRequestPage lr = new LoanRequestPage();
 
             for (LoanRequestModel loan : loanRequestData)
             {
@@ -76,12 +76,12 @@ public class LoanRequestTest extends BaseTest
         try
         {
             // self service page
-            SelfServicePage ss = new SelfServicePage(driver);
+            SelfServicePage ss = new SelfServicePage();
             ss.clickSelfService();
             ss.clickTransactions();
 
             // LoanRequestPage
-            LoanRequestPage lr = new LoanRequestPage(driver);
+            LoanRequestPage lr = new LoanRequestPage();
             lr.clickLoanRequest();
 
             BasePage.deleteTxn(7, "active");

@@ -11,35 +11,34 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class DeleteLeaveExtensionTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, enabled = false)
-	public void deleteLeaveExtension()
-	{
-		try
-		{
-			String leaveRequestFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-			List<LeaveRequestModel> leaveRequestData = JsonUtils.convertJsonListDataModel(leaveRequestFile,
-					"createLeaveRequest", LeaveRequestModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, enabled = false)
+    public void deleteLeaveExtension()
+    {
+        try
+        {
+            String leaveRequestFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+            List<LeaveRequestModel> leaveRequestData = JsonUtils.convertJsonListDataModel(leaveRequestFile,
+                    "createLeaveRequest", LeaveRequestModel.class);
 
-			// self service page
-			SelfServicePage ss = new SelfServicePage(driver);
-			ss.clickSelfService();
-			ss.clickTransactions();
+            // self service page
+            SelfServicePage ss = new SelfServicePage();
+            ss.clickSelfService();
+            ss.clickTransactions();
 
-			// Leave extension page
-			LeaveExtensionPage le = new LeaveExtensionPage(driver);
-			// le.clickLeaveExtension();
+            // Leave extension page
+            LeaveExtensionPage le = new LeaveExtensionPage();
+            // le.clickLeaveExtension();
 
-			BasePage.deleteTxn(7, "active");
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+            BasePage.deleteTxn(7, "active");
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

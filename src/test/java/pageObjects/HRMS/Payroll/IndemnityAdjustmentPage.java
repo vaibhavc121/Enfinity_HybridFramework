@@ -1,5 +1,6 @@
 package pageObjects.HRMS.Payroll;
 
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,12 +10,6 @@ import utilities.CommonActions;
 
 public class IndemnityAdjustmentPage extends BasePage
 {
-
-    public IndemnityAdjustmentPage(WebDriver driver)
-    {
-        super(driver);
-        // TODO Auto-generated constructor stub
-    }
 
     @FindBy(xpath = "//a[@title='Indemnity Adjustment']//span[@class='dx-vam'][normalize-space()='Indemnity Adjustment']")
     WebElement indemnityAdjustment;
@@ -46,7 +41,7 @@ public class IndemnityAdjustmentPage extends BasePage
     @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[9]")
     WebElement resultIndAmt;
 
-//	String IndemnityBal=driver.findElement(By.xpath("//input[@id='GratuityAdjustment.GratuityBalance_I")).getText();
+//	String IndemnityBal=DriverFactory.getDriver().findElement(By.xpath("//input[@id='GratuityAdjustment.GratuityBalance_I")).getText();
 //	int actIndBalInt=Integer.parseInt(IndemnityBal);
 //	int expindbal=actIndBalInt-1;
 
@@ -97,7 +92,7 @@ public class IndemnityAdjustmentPage extends BasePage
     public void clkApprove() throws InterruptedException
     {
         clickOnApprove();
-        driver.navigate().back();
+        DriverFactory.getDriver().navigate().back();
         Thread.sleep(3000);
     }
 

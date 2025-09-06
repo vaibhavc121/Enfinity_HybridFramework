@@ -1,5 +1,6 @@
 package utilities;
 
+import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -20,7 +21,7 @@ public class TestNGReportManager implements ITestListener
         // Get the driver instance from the failed test class
         Object testClass = result.getInstance();
         //driver = ((BaseTest) testClass).getDriver();
-        driver = BaseTest.driver;
+        driver = DriverFactory.getDriver();
 
         // Attach the screenshot to TestNG report
         Reporter.log("<a href='" + imgPath + "'>Click here to see Screenshot</a>");

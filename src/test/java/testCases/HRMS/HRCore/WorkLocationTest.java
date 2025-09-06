@@ -26,15 +26,15 @@ public class WorkLocationTest extends BaseTest
             List<CreateWorkLocationModel> workLocationData = JsonUtils.convertJsonListDataModel(workLocationFile,
                     "createWorkLocation", CreateWorkLocationModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickWorkLocation();
             Thread.sleep(2000);
 
-            WorkLocationPage wl = new WorkLocationPage(driver);
+            WorkLocationPage wl = new WorkLocationPage();
             for (CreateWorkLocationModel workLocation : workLocationData)
             {
                 wl.clickNew();
@@ -61,11 +61,11 @@ public class WorkLocationTest extends BaseTest
             List<HRCoreModel.DeleteWorkLocationModel> workLocationData = JsonUtils.convertJsonListDataModel(workLocationFile,
                     "createWorkLocation", HRCoreModel.DeleteWorkLocationModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             for (HRCoreModel.DeleteWorkLocationModel wl : workLocationData)
             {
                 sp.clickWorkLocation();

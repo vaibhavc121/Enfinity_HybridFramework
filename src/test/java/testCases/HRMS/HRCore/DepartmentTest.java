@@ -26,16 +26,16 @@ public class DepartmentTest extends BaseTest
             List<CreateDepartmentModel> departmentData = JsonUtils.convertJsonListDataModel(departmentFile,
                     "createDepartment", CreateDepartmentModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             Thread.sleep(5000);
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
             sp.clickDepartment();
             Thread.sleep(2000);
 
-            DeptPage dp = new DeptPage(driver);
+            DeptPage dp = new DeptPage();
 
             for (CreateDepartmentModel department : departmentData)
             {
@@ -65,12 +65,12 @@ public class DepartmentTest extends BaseTest
             List<HRCoreModel.DeleteDepartmentModel> departmentData = JsonUtils.convertJsonListDataModel(departmentFile,
                     "deleteDepartment", HRCoreModel.DeleteDepartmentModel.class);
 
-            HRCorePage hc = new HRCorePage(driver);
+            HRCorePage hc = new HRCorePage();
             Thread.sleep(5000);
             hc.clickHRCore();
             hc.clickSetupForm();
 
-            SetupPage sp = new SetupPage(driver);
+            SetupPage sp = new SetupPage();
 
             for (HRCoreModel.DeleteDepartmentModel dept : departmentData)
             {

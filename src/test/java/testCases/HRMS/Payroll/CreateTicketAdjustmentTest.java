@@ -19,66 +19,64 @@ import utilities.RetryAnalyzer;
 public class CreateTicketAdjustmentTest extends BaseTest
 {
 
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void verifyTicketAdjustment()
-	{
-		try
-		{
-			String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-			List<TicketAdjustmentModel> ticketAdjData = JsonUtils.convertJsonListDataModel(payrollFile,
-					"createTicketAdjustment", TicketAdjustmentModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void verifyTicketAdjustment()
+    {
+        try
+        {
+            String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+            List<TicketAdjustmentModel> ticketAdjData = JsonUtils.convertJsonListDataModel(payrollFile,
+                    "createTicketAdjustment", TicketAdjustmentModel.class);
 
-			for (TicketAdjustmentModel ticketAdj : ticketAdjData)
-			{
-				// payroll pg
-				PayrollPage pp = new PayrollPage(driver);
-				pp.clkPayroll();
-				logger.info("clicked on payroll link");
+            for (TicketAdjustmentModel ticketAdj : ticketAdjData)
+            {
+                // payroll pg
+                PayrollPage pp = new PayrollPage();
+                pp.clkPayroll();
+                logger.info("clicked on payroll link");
 
-				// getting balance from the report
-				pp.clickReports();
-				ReportsPage rp = new ReportsPage(driver);
-				rp.openReport(ticketAdj.reportName);
-				double ticketBal = rp.getTicketBalance(ticketAdj.employee);
-				double expTicketBal = ticketBal + 1;
+                // getting balance from the report
+                pp.clickReports();
+                ReportsPage rp = new ReportsPage();
+                rp.openReport(ticketAdj.reportName);
+                double ticketBal = rp.getTicketBalance(ticketAdj.employee);
+                double expTicketBal = ticketBal + 1;
 
-				pp.clkPayroll();
-				BasePage.clickOnHamburgerMenu();
-				logger.info("clicked on payroll link");
-				pp.clkTxn();
-				logger.info("clicked on txn");
+                pp.clkPayroll();
+                BasePage.clickOnHamburgerMenu();
+                logger.info("clicked on payroll link");
+                pp.clkTxn();
+                logger.info("clicked on txn");
 
-				// ticket adjustment pg
-				TicketAdjustmentPage ta = new TicketAdjustmentPage(driver);
-				ta.clickTicketAdjustment();
-				logger.info("clicked on ticket adjustment");
-				ta.clickNew();
-				logger.info("clicked on new");
-				ta.provideEmployee(ticketAdj.employee);
-				logger.info("emp selected");
-				ta.selectPaymentType(ticketAdj.paymentType);
-				logger.info("payment type selected");
-				ta.clickSave();
-				logger.info("clicked on save");
-				ta.provideIssueTickets(ticketAdj.issueTickets);
-				logger.info("provided issue ticket");
-				ta.clickView();
-				logger.info("clicked on view");
-				BasePage.clickOnApprove();
-				logger.info("clicked on approve");
+                // ticket adjustment pg
+                TicketAdjustmentPage ta = new TicketAdjustmentPage();
+                ta.clickTicketAdjustment();
+                logger.info("clicked on ticket adjustment");
+                ta.clickNew();
+                logger.info("clicked on new");
+                ta.provideEmployee(ticketAdj.employee);
+                logger.info("emp selected");
+                ta.selectPaymentType(ticketAdj.paymentType);
+                logger.info("payment type selected");
+                ta.clickSave();
+                logger.info("clicked on save");
+                ta.provideIssueTickets(ticketAdj.issueTickets);
+                logger.info("provided issue ticket");
+                ta.clickView();
+                logger.info("clicked on view");
+                BasePage.clickOnApprove();
+                logger.info("clicked on approve");
 
-				BasePage.clickOnHamburgerMenu();
-				pp.clickReports();
-				rp.openReport(ticketAdj.reportName);
+                BasePage.clickOnHamburgerMenu();
+                pp.clickReports();
+                rp.openReport(ticketAdj.reportName);
 
-				Assert.assertEquals(rp.getTicketBalance(ticketAdj.employee), expTicketBal);
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+                Assert.assertEquals(rp.getTicketBalance(ticketAdj.employee), expTicketBal);
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

@@ -9,89 +9,83 @@ import base.BasePage;
 public class BenefitClaimPage extends BasePage
 {
 
-	public BenefitClaimPage(WebDriver driver)
-	{
-		super(driver);
+    // Locators
+    @FindBy(xpath = "//a[@id='TxnInstanceView_I0i19_T']//span[@class='dx-vam'][normalize-space()='Profile Update']")
+    WebElement profileUpdate;
 
-	}
+    @FindBy(xpath = "//span[normalize-space()='Benefit Claim']")
+    WebElement benefitClaim;
 
-	// Locators
-	@FindBy(xpath = "//a[@id='TxnInstanceView_I0i19_T']//span[@class='dx-vam'][normalize-space()='Profile Update']")
-	WebElement profileUpdate;
+    @FindBy(xpath = "//input[@id='BenefitClaim.ClaimDate_I']")
+    WebElement claimDate;
 
-	@FindBy(xpath = "//span[normalize-space()='Benefit Claim']")
-	WebElement benefitClaim;
+    @FindBy(xpath = "//input[@id='BenefitClaim.EmployeeBenefitSchemeIdLookup_I']")
+    WebElement EmpBenefitScheme;
 
-	@FindBy(xpath = "//input[@id='BenefitClaim.ClaimDate_I']")
-	WebElement claimDate;
+    @FindBy(xpath = "//input[@id='BenefitClaim.ClaimAmount_I']")
+    WebElement claimAmount;
 
-	@FindBy(xpath = "//input[@id='BenefitClaim.EmployeeBenefitSchemeIdLookup_I']")
-	WebElement EmpBenefitScheme;
+    @FindBy(xpath = "//input[@id='BenefitClaim.PaymentType_I']")
+    WebElement paymentType;
 
-	@FindBy(xpath = "//input[@id='BenefitClaim.ClaimAmount_I']")
-	WebElement claimAmount;
+    @FindBy(xpath = "//textarea[@id='BenefitClaim.Description_I']")
+    WebElement remarks;
 
-	@FindBy(xpath = "//input[@id='BenefitClaim.PaymentType_I']")
-	WebElement paymentType;
+    // Action Methods
+    public void scrollDownWebpage()
+    {
+        scrollDownWebPage(profileUpdate);
+    }
 
-	@FindBy(xpath = "//textarea[@id='BenefitClaim.Description_I']")
-	WebElement remarks;
+    public void clickBenefitClaim()
+    {
+        benefitClaim.click();
+    }
 
-	// Action Methods
-	public void scrollDownWebpage()
-	{
-		scrollDownWebPage(profileUpdate);
-	}
+    public void clickNew()
+    {
+        clickOnNew();
+    }
 
-	public void clickBenefitClaim()
-	{
-		benefitClaim.click();
-	}
+    public void provideClaimDate(String value)
+    {
+        clearAndProvide1(claimDate, value);
+    }
 
-	public void clickNew()
-	{
-		clickOnNew();
-	}
+    public void provideBenefitScheme(String value)
+    {
+        clearAndProvide1(EmpBenefitScheme, value);
+    }
 
-	public void provideClaimDate(String value)
-	{
-		clearAndProvide1(claimDate, value);
-	}
+    public void provideClaimAmt(String value)
+    {
+        claimAmount.sendKeys(value);
+    }
 
-	public void provideBenefitScheme(String value)
-	{
-		clearAndProvide1(EmpBenefitScheme, value);
-	}
+    public void providePaymentType(String value)
+    {
+        clearAndProvide1(paymentType, value);
+    }
 
-	public void provideClaimAmt(String value)
-	{
-		claimAmount.sendKeys(value);
-	}
+    public void provideRemarks(String value)
+    {
+        remarks.sendKeys(value);
+    }
 
-	public void providePaymentType(String value)
-	{
-		clearAndProvide1(paymentType, value);
-	}
+    public void clickSave()
+    {
+        clickSaveAndBack();
+        // clickSave();
+    }
 
-	public void provideRemarks(String value)
-	{
-		remarks.sendKeys(value);
-	}
-
-	public void clickSave()
-	{
-		clickSaveAndBack();
-		// clickSave();
-	}
-
-	public boolean isTxnCreated(String emp, String claimAmt)
-	{
-		if (resultValue(6).contains(emp) && resultValue(8).contains(claimAmt))
-		{
-			return true;
-		} else
-		{
-			return false;
-		}
-	}
+    public boolean isTxnCreated(String emp, String claimAmt)
+    {
+        if (resultValue(6).contains(emp) && resultValue(8).contains(claimAmt))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
 }

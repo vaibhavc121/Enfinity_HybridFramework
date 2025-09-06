@@ -1,6 +1,7 @@
 package mobileTesting.pages.hrms;
 
 import base.BasePage;
+import factory.DriverFactory;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.By;
@@ -10,10 +11,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoanPage extends BasePage
 {
-    public LoanPage(WebDriver driver)
-    {
-        super(driver);
-    }
 
     //region Locators
     private By plusBtn = AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(5)");
@@ -36,15 +33,14 @@ public class LoanPage extends BasePage
     {
         waitTS(2);
         clickOnElement(loanRequest);
-
     }
 
     public void providedLoanAmount(String loanAmount)
     {
         waitTS(2);
         //clearAndProvide(loanAmt, loanAmount);
-        driver.findElement(loanAmt).click();
-        driver.findElement(loanAmt).sendKeys(loanAmount);
+        DriverFactory.getDriver().findElement(loanAmt).click();
+        DriverFactory.getDriver().findElement(loanAmt).sendKeys(loanAmount);
     }
 
     public void providedInstallmentAmount(String amount)
@@ -66,6 +62,4 @@ public class LoanPage extends BasePage
     }
 
     //endregion
-
-
 }

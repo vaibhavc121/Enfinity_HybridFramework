@@ -10,43 +10,42 @@ import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
+
 import java.util.List;
 
 public class CreateShiftTest extends BaseTest
 {
-	@Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
-	public void createShift()
-	{
-		try
-		{
-			String attendanceFile = FileUtils.getDataFile("Attendance", "Attendance", "AttendanceData");
-			List<ShiftModel> shiftData = JsonUtils.convertJsonListDataModel(attendanceFile, "createShift",
-					ShiftModel.class);
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    public void createShift()
+    {
+        try
+        {
+            String attendanceFile = FileUtils.getDataFile("Attendance", "Attendance", "AttendanceData");
+            List<ShiftModel> shiftData = JsonUtils.convertJsonListDataModel(attendanceFile, "createShift",
+                    ShiftModel.class);
 
-			// AttendancePage
-			AttendancePage ap = new AttendancePage(driver);
-			ap.clickAttendance();
-			ap.clickShift();
+            // AttendancePage
+            AttendancePage ap = new AttendancePage();
+            ap.clickAttendance();
+            ap.clickShift();
 
-			// ShiftPage
-			ShiftPage sp = new ShiftPage(driver);
+            // ShiftPage
+            ShiftPage sp = new ShiftPage();
 
-			for (ShiftModel shift : shiftData)
-			{
-				sp.clickNew();
-				sp.provideShiftName(shift.shiftName);
-				sp.provideDefaultTimetable(shift.defaultTimetable);
-				sp.clickSaveBack();
+            for (ShiftModel shift : shiftData)
+            {
+                sp.clickNew();
+                sp.provideShiftName(shift.shiftName);
+                sp.provideDefaultTimetable(shift.defaultTimetable);
+                sp.clickSaveBack();
 
-				// ClassicAssert.isTrue(sp.isTransactionCreated(shift.shiftName));
-				Assert.assertTrue(true);
-			}
-
-		} catch (Exception e)
-		{
-			logger.error("Test failed due to exception: ", e);
-			Assert.fail("Test case failed: " + e);
-		}
-	}
-
+                // ClassicAssert.isTrue(sp.isTransactionCreated(shift.shiftName));
+                Assert.assertTrue(true);
+            }
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

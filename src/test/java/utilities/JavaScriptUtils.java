@@ -1,11 +1,11 @@
 package utilities;
 
+import factory.DriverFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import static base.BasePage.waitForElement;
-import static base.BaseTest.driver;
 
 public class JavaScriptUtils
 {
@@ -16,7 +16,7 @@ public class JavaScriptUtils
 
     public static void provideValueJS(WebElement locator, String value)
     {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverFactory.getDriver();
         WebElement element = waitForElement(locator);
         jsExecutor.executeScript("arguments[0].value='" + value + "';", element);
     }

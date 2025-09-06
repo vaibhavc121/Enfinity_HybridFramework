@@ -26,7 +26,7 @@ public class DeleteRosterTest extends BaseTest
                     RosterModel.class);
 
             // AttendancePage
-            AttendancePage ap = new AttendancePage(driver);
+            AttendancePage ap = new AttendancePage();
             ap.clickAttendance();
             ap.clickRoster();
 

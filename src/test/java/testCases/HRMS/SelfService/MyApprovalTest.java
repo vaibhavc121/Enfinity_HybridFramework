@@ -20,9 +20,9 @@ public class MyApprovalTest extends BaseTest
             BasePage.logoutAndLogin("rohitc@test.com", "123");
 
             //region Pageobjects
-            SelfServicePage ss = new SelfServicePage(driver);
-            ExceptionRequestPage erp = new ExceptionRequestPage(driver);
-            TimeOffPage top = new TimeOffPage(driver);
+            SelfServicePage ss = new SelfServicePage();
+            ExceptionRequestPage erp = new ExceptionRequestPage();
+            TimeOffPage top = new TimeOffPage();
             ExceptionRequestTest er = new ExceptionRequestTest();
             TimeOffTest to = new TimeOffTest();
             //endregion
@@ -43,7 +43,7 @@ public class MyApprovalTest extends BaseTest
             ss.clickMyApprovals();
             log("clicked on My Approvals");
 
-            MyApprovalsPage ma = new MyApprovalsPage(driver);
+            MyApprovalsPage ma = new MyApprovalsPage();
             ma.bulkApproveRequest("Rohit Chavan");
             //endregion
 
