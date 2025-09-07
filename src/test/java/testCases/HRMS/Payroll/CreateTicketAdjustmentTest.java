@@ -33,41 +33,41 @@ public class CreateTicketAdjustmentTest extends BaseTest
                 // payroll pg
                 PayrollPage pp = new PayrollPage();
                 pp.clkPayroll();
-                logger.info("clicked on payroll link");
+                log("clicked on payroll link");
 
                 // getting balance from the report
                 pp.clickReports();
+                log("clicked on reports");
                 ReportsPage rp = new ReportsPage();
                 rp.openReport(ticketAdj.reportName);
                 double ticketBal = rp.getTicketBalance(ticketAdj.employee);
                 double expTicketBal = ticketBal + 1;
 
                 pp.clkPayroll();
-                BasePage.clickOnHamburgerMenu();
-                logger.info("clicked on payroll link");
+                log("clicked on payroll link");
                 pp.clkTxn();
-                logger.info("clicked on txn");
+                log("clicked on txn");
 
                 // ticket adjustment pg
                 TicketAdjustmentPage ta = new TicketAdjustmentPage();
                 ta.clickTicketAdjustment();
-                logger.info("clicked on ticket adjustment");
+                log("clicked on ticket adjustment");
                 ta.clickNew();
-                logger.info("clicked on new");
+                log("clicked on new");
                 ta.provideEmployee(ticketAdj.employee);
-                logger.info("emp selected");
+                log("emp selected");
                 ta.selectPaymentType(ticketAdj.paymentType);
-                logger.info("payment type selected");
+                log("payment type selected");
                 ta.clickSave();
-                logger.info("clicked on save");
+                log("clicked on save");
                 ta.provideIssueTickets(ticketAdj.issueTickets);
-                logger.info("provided issue ticket");
+                log("provided issue ticket");
                 ta.clickView();
-                logger.info("clicked on view");
+                log("clicked on view");
                 BasePage.clickOnApprove();
-                logger.info("clicked on approve");
+                log("clicked on approve");
 
-                BasePage.clickOnHamburgerMenu();
+                //BasePage.clickOnHamburgerMenu();
                 pp.clickReports();
                 rp.openReport(ticketAdj.reportName);
 

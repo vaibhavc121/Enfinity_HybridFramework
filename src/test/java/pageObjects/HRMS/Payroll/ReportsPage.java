@@ -16,7 +16,7 @@ public class ReportsPage extends BasePage
     @FindBy(xpath = "//td[normalize-space()='Ticket Balance']")
     WebElement resultcolumn;
 
-    @FindBy(xpath = "//span[normalize-space()='Preview']")
+    @FindBy(xpath = "//img[@id='MainMenu_DXI2_Img']")
     WebElement preview;
 
     @FindBy(xpath = "//input[contains(@id,'EmployeeId')]")
@@ -25,7 +25,7 @@ public class ReportsPage extends BasePage
     @FindBy(xpath = "//span[@class='dx-button-text']")
     WebElement submit;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/td[6]")
+    @FindBy(xpath = "/html[1]/body[1]/section[1]/main[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[3]/td[6]/div[1]")
     WebElement availableTicket;
 
     public void openReport(String value)
@@ -40,8 +40,8 @@ public class ReportsPage extends BasePage
 
     public double getTicketBalance(String emp)
     {
-        clearAndProvide1(empdd, emp);
-        submit.click();
+        provideAndEnter(empdd, emp);
+        //submit.click();
         String bal = availableTicket.getText();
         double expBal = Double.parseDouble(bal);
         return expBal;

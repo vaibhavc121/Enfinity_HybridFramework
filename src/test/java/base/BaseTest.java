@@ -77,13 +77,7 @@ public class BaseTest
     public void setup(String os, String browser) throws IOException
     {
         //region CloseBrowserWhenClickStopDebugging
-        Runtime.getRuntime().addShutdownHook(new Thread(() ->
-        {
-            if (getDriver() != null)
-            {
-                getDriver().quit();
-            }
-        }));
+        Runtime.getRuntime().addShutdownHook(new Thread(DriverFactory::quitAllDrivers));
         //endregion
 
         //region Selenide Setup

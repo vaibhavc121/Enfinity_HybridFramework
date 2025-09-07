@@ -25,12 +25,7 @@
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>-->
             <!--            <class name="testCases.HRMS.SelfService.LeaveCancellationTest"/>-->
-            <class name="testCases.HRMS.HRCore.BankTest"/>
-            <class name="testCases.HRMS.HRCore.CalendarTest"/>
-            <class name="testCases.HRMS.HRCore.DepartmentTest"/>
-            <class name="testCases.HRMS.SelfService.SupportRequestTest"/>
-            <class name="testCases.HRMS.SelfService.LoanRequestTest"/>
-            <class name="testCases.HRMS.SelfService.LoanRequestTest"/>
+            <class name="testCases.HRMS.Payroll.CreateTicketAdjustmentTest"/>
 
 
         </classes>
