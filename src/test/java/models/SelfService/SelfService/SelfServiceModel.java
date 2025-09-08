@@ -179,4 +179,45 @@ public class SelfServiceModel
     {
         public String categoryName;
     }
+
+    public static class Entitlement
+    {
+        private int maximumLeaveBalance;
+        private int eligibilityDaysAfterJoining;
+        private boolean includeUnpaidLeaveInProvisions;
+        private boolean countWeekendsAsLeaveDays;
+        private boolean countWeekendsAsUnpaidDays;
+        private boolean countPublicHolidaysAsPublicHolidays;
+        private boolean grantPublicHolidaysDuringLeave;
+        private boolean countRestDaysAsRestDays;
+        private String leaveApplicability;
+        private String leaveApplicabilityFor;
+        private boolean allowExceedLeaveBalance;
+    }
+
+    public static class Restriction
+    {
+        private String leaveTypeApplicableFor;
+        private boolean autoResumeLeave;
+        private boolean considerLateResumeAsPaidIfBalanceAvailable;
+        private boolean considerAllLateResumeAsUnpaid;
+        private ApplicableCriteria applicableCriteria;
+        private boolean assignLeaveTypeToNewEmployee;
+        private boolean restrictUnpaidLeaveDays;
+        private boolean allowSelfServicePortalRequests;
+        private int maxPaidLeaveDaysPerRequest;
+        private int leaveRequestAdvanceDays;
+        private int leaveRequestBackdatedDays;
+        private boolean requireSubstituteForLeaveRequest;
+        private boolean allowBackdatedLeaveRequestsInPortal;
+        private String restrictLeaveBeforeOrAfter;
+        private boolean attachmentMandatoryForLeaveRequest;
+    }
+
+    public static class ApplicableCriteria
+    {
+        private String gender;
+        private String maritalStatus;
+        private String religion;
+    }
 }

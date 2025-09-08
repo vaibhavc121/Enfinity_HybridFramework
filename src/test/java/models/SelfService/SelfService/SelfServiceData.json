@@ -230,5 +230,45 @@
     {
       "categoryName": "Performance Issue"
     }
-  ]
+  ],
+  "annualLeave": {
+    "entitlement": [
+      {
+        "maximumLeaveBalance": 0,
+        "eligibilityDaysAfterJoining": 0,
+        "includeUnpaidLeaveInProvisions": false,
+        "countWeekendsAsLeaveDays": false,
+        "countWeekendsAsUnpaidDays": false,
+        "countPublicHolidaysAsPublicHolidays": true,
+        "grantPublicHolidaysDuringLeave": false,
+        "countRestDaysAsRestDays": false,
+        "leaveApplicability": "Not Applicable",
+        "leaveApplicabilityFor": "Not Applicable",
+        "allowExceedLeaveBalance": false
+      }
+    ],
+    "restriction": [
+      {
+        "leaveTypeApplicableFor": "SDET",
+        "autoResumeLeave": false,
+        "considerLateResumeAsPaidIfBalanceAvailable": false,
+        "considerAllLateResumeAsUnpaid": false,
+        "applicableCriteria": {
+          "gender": null,
+          "maritalStatus": null,
+          "religion": null
+        },
+        "assignLeaveTypeToNewEmployee": false,
+        "restrictUnpaidLeaveDays": false,
+        "allowSelfServicePortalRequests": true,
+        "maxPaidLeaveDaysPerRequest": 0,
+        "leaveRequestAdvanceDays": 0,
+        "leaveRequestBackdatedDays": 0,
+        "requireSubstituteForLeaveRequest": false,
+        "allowBackdatedLeaveRequestsInPortal": false,
+        "restrictLeaveBeforeOrAfter": "Not Applicable",
+        "attachmentMandatoryForLeaveRequest": false
+      }
+    ]
+  }
 }
