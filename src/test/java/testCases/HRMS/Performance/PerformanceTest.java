@@ -2,21 +2,21 @@ package testCases.HRMS.Performance;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.DriverFactory;
 import models.Performance.Performance.PerformanceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.Performance.AppraisalCyclePage;
 import pageObjects.HRMS.Performance.PerformancePage;
-import utilities.DateUtils;
-import utilities.FileUtils;
-import utilities.JsonUtils;
-import utilities.RetryAnalyzer;
+import utilities.*;
 
 import java.util.List;
 
 public class PerformanceTest extends BaseTest
 {
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    String appraisalCycleName = "AC_" + DateUtils.getCurrentDateTime("dd-MMM-yyyy_HH:mm:ss");
+
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void createAppraisalCycle()
     {
         try
@@ -44,8 +44,6 @@ public class PerformanceTest extends BaseTest
                 log("Clicked on New button to create new appraisal cycle");
 
                 //region Header
-
-                String appraisalCycleName = "AC" + DateUtils.getCurrentDateTime("dd-MMM-yyyy HH:mm:ss");
 
                 ac.enterName(appraisalCycleName);
                 log("Entered Name: " + appraisalCycleName);
@@ -94,7 +92,7 @@ public class PerformanceTest extends BaseTest
 
                 //region Rating
 
-                ac.scrollPageToManualWorkflow();
+                ac.scrollPageGoalRating();
                 log("Scrolled down the page to access Rating section");
 
                 ac.selectGoalRating(data.goalRating);
@@ -143,15 +141,50 @@ public class PerformanceTest extends BaseTest
                 BasePage.clickOnSave();
                 log("Clicked on Save button");
 
+                BrowserUtils.navigateBack(DriverFactory.getDriver());
+                BasePage.waitTS(2);
+
                 //region Validation
-                BasePage.validateMessage("");
-                Assert.assertTrue(BasePage.validateListing(appraisalCycleName, 2, 2));
+                //BasePage.validateMessage("");
+                Assert.assertTrue(BasePage.validateListing(appraisalCycleName, 2, 1), "Appraisal Cycle creation failed: " + appraisalCycleName);
                 log("Verified: Appraisal Cycle created successfully: " + appraisalCycleName);
                 //endregion
             }
 
             //endregion
 
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    public void deleteAppraisalCycle()
+    {
+        try
+        {
+            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
+            List<PerformanceModel.AppraisalCycleModel> performanceData = JsonUtils.convertJsonListDataModel(performanceFile, "createAppraisalCycle", PerformanceModel.AppraisalCycleModel.class);
+
+            //region Page Initializations
+            PerformancePage pp = new PerformancePage();
+            AppraisalCyclePage ac = new AppraisalCyclePage();
+            //endregion
+
+            //region Performance page
+            pp.clickPerformance();
+            log("Clicked on Performance module");
+            pp.clickAppraisalCycle();
+            log("Clicked on Appraisal Cycle");
+            //endregion
+
+            // ac.deleteAppraisalCycle(appraisalCycleName, 2, 1);
+            ac.deleteAppraisalCycle("AC_08-Sept-2025_18:06:29", 2, 1);
+
+            Assert.assertFalse(BasePage.validateListing(appraisalCycleName, 2, 1), "Appraisal Cycle deletion failed: " + appraisalCycleName);
+            log("Verified: Appraisal Cycle deleted successfully: " + appraisalCycleName);
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

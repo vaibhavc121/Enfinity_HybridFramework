@@ -86,6 +86,17 @@
       "issueTickets": "1"
     }
   ],
+  "createIndemnityAdjustment": [
+    {
+      "reportName": "Indemnity Balance",
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-01-2025",
+      "asOnDate": "01-Jan-2025",
+      "indemnityType": "Indemnity",
+      "paymentType": "Pay Now",
+      "paidDays": "1"
+    }
+  ],
   "createOvertime": [
     {
       "employee": "Vaibhav Chavan",

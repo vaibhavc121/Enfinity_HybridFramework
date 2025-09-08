@@ -30,7 +30,7 @@ public class TicketAdjustmentPage extends BasePage
     @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[7]/div[1]")
     WebElement issueTicket;
 
-    @FindBy(xpath = "//tbody/tr[@id='TicketEncashmentLine_DXDataRow-1']/td[7]/div[1]")
+    @FindBy(xpath = "(//td[@class='grid-cell dx-wrap dxgv dx-ellipsis dx-ar'])[3]")
     WebElement issueTicket1;
 
     @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[6]")
@@ -38,6 +38,9 @@ public class TicketAdjustmentPage extends BasePage
 
     @FindBy(xpath = "//td[@class='dx-ellipsis']")
     WebElement grid;
+
+    @FindBy(xpath = "//a[normalize-space()='Ticket Adjustment']")
+    private WebElement ticketAdjustmentLabel;
 
     public void clickTicketAdjustment()
     {
@@ -74,7 +77,7 @@ public class TicketAdjustmentPage extends BasePage
     public boolean checkAvailableTicket()
     {
         String availableTicket = DriverFactory.getDriver().findElement(By.xpath(
-                        "/html[1]/body[1]/div[6]/div[2]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[2]/table[1]/tbody[1]/tr[3]/td[5]"))
+                        "(//td[@class='grid-cell dx-wrap dxgv dx-ellipsis dx-ar'])[1]"))
                 .getText();
 
         // String availableTicket = DriverFactory.getDriver().findElement(By.xpath("(//div[@class='dxgBCTC
@@ -98,7 +101,7 @@ public class TicketAdjustmentPage extends BasePage
             // clearAndProvide2(issueTicket, value);
             grid.click();
             clearAndProvide2(issueTicket1, value);
-            issueTicket.sendKeys(value);
+            //issueTicket.sendKeys(value);
 
             // clearAndProvide1(issueTicket, value);
         } else
@@ -115,6 +118,11 @@ public class TicketAdjustmentPage extends BasePage
     public void clickApproveBack()
     {
         clickApproveAndBack();
+    }
+
+    public void clickTicketAdjustmentLabel()
+    {
+        clickOnElement1(ticketAdjustmentLabel);
     }
 
     public boolean isTxnCreated()

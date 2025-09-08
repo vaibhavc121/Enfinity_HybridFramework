@@ -1,6 +1,7 @@
 package pageObjects.HRMS.Performance;
 
 import base.BasePage;
+import base.BaseTest;
 import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -73,11 +74,17 @@ public class AppraisalCyclePage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'WorkflowId')]")
     private WebElement workflow;
 
-    @FindBy(xpath = "(//div[@class='dx-switch-on'][normalize-space()='Yes'])[1]")
+    @FindBy(xpath = "(//div[@class='dx-switch-off'][normalize-space()='No'])[1]")
     private WebElement enableReviewerOpinion;
-    @FindBy(xpath = "(//div[@class='dx-switch-on'][normalize-space()='Yes'])[2]")
+    @FindBy(xpath = "(//div[@class='dx-switch-off'][normalize-space()='No'])[2]")
     private WebElement enableSkillSetAssessment;
     //endregion
+
+    @FindBy(xpath = "//img[@id='MainMenu_DXI11_PImg']")
+    private WebElement contextMenu;
+
+    @FindBy(xpath = "//span[@title='Delete']")
+    private WebElement delete;
 
     //endregion
 
@@ -86,6 +93,7 @@ public class AppraisalCyclePage extends BasePage
     {
         waitTS(2);
         clickOnNew();
+        waitTS(2);
     }
 
     //region Header
@@ -227,8 +235,29 @@ public class AppraisalCyclePage extends BasePage
         {
             clickOnElement1(enableSkillSetAssessment);
         }
+        waitTS(2);
     }
 
     //endregion
+
+    public void deleteAppraisalCycle(String expValue, int filterIndex, int resultIndex)
+    {
+        filterByIndex(filterIndex, expValue);
+        waitTS(2);
+        String actValue = resultValue(resultIndex);
+        if (actValue.contains(expValue))
+        {
+            selectRow();
+            clickOnElement1(contextMenu);
+            BaseTest.log("Clicked on Context Menu");
+            clickOnElement1(delete);
+            BaseTest.log("Clicked on Delete option");
+            waitTS(2);
+            pressEnter();
+        } else
+        {
+            throw new RuntimeException("VRC- No matching record found");
+        }
+    }
     //endregion
 }

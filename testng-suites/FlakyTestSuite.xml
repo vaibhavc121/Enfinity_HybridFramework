@@ -28,8 +28,7 @@
 
 
             <!-- Self Service -->
-            <class name="testCases.HRMS.SelfService.OvertimeApplicationTest"/>
-            <class name="testCases.HRMS.SelfService.DeleteOvertimeApplicationTest"/>
+            <class name="testCases.HRMS.SelfService.CreateBusinessTripClaimTest"/>
 
             <!-- Attendance -->
 
@@ -39,9 +38,6 @@
 
 
             <!-- Global -->
-
-
-            <!-- Flaky Test -->
 
 
         </classes>

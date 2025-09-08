@@ -3,6 +3,8 @@ package base;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import com.github.javafaker.Faker;
@@ -204,6 +206,10 @@ public class BaseTest
                 put("credentials_enable_service", false);
                 put("profile.password_manager_enabled", false);
             }});
+
+            // Map<String, String> mobileEmulation = new HashMap<>();
+            // mobileEmulation.put("deviceName", "Pixel 2");
+            // options.setExperimentalOption("mobileEmulation", mobileEmulation);
             // options.addArguments("--headless"); // Run in headless mode
             // options.addArguments("--no-sandbox"); // Required for CI environments
             // options.addArguments("--disable-dev-shm-usage"); // Required for CI environments

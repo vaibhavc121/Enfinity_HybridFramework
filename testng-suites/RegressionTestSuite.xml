@@ -39,34 +39,37 @@
             <class name="testCases.HRMS.Payroll.VariableSalaryTest_Lambok"/>
             <class name="testCases.HRMS.Payroll.LeaveTest"/>
             <class name="testCases.HRMS.Payroll.LeaveResumptionTest"/>
-            <class name="testCases.HRMS.Payroll.LeaveEncashmentTest"/>
             <class name="testCases.HRMS.Payroll.LeaveAdjustmentTest"/>
+            <class name="testCases.HRMS.Payroll.LeaveEncashmentTest"/>
             <class name="testCases.HRMS.Payroll.LeaveOpeningBalanceTest"/>
+            <class name="testCases.HRMS.Payroll.IndemnityAdjustmentTest"/>
             <class name="testCases.HRMS.Payroll.BenefitEncashmentTest"/>
+            <class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>
+            <class name="testCases.HRMS.Payroll.TicketAdjustmentTest"/>
+            <class name="testCases.HRMS.Payroll.OvertimeTest"/>
+            <class name="testCases.HRMS.Payroll.LoanTest"/>
             <class name="testCases.HRMS.Payroll.PromotionTest"/>
             <class name="testCases.HRMS.Payroll.PenaltyTest"/>
             <class name="testCases.HRMS.Payroll.SuspendTest"/>
-            <class name="testCases.HRMS.Payroll.LoanTest"/>
-            <class name="testCases.HRMS.Payroll.TicketEncashmentTest"/>
 
 
             <!-- Self Service -->
-            <class name="testCases.HRMS.SelfService.BenefitClaimTest"/>
-            <class name="testCases.HRMS.SelfService.SupportRequestTest"/>
-            <class name="testCases.HRMS.SelfService.HRAssetTest"/>
-            <class name="testCases.HRMS.SelfService.LeaveRequestTest"/>
-            <class name="testCases.HRMS.SelfService.LoanRequestTest"/>
-            <class name="testCases.HRMS.SelfService.OvertimeApplicationTest"/>
-            <class name="testCases.HRMS.SelfService.PromotionRequestTest"/>
-            <class name="testCases.HRMS.SelfService.ResignationTest"/>
-            <class name="testCases.HRMS.SelfService.SupportRequestCategoryTest"/>
             <class name="testCases.HRMS.SelfService.TimeOffTest"/>
+            <class name="testCases.HRMS.SelfService.HRAssetTest"/>
             <class name="testCases.HRMS.SelfService.ExceptionRequestTest"/>
+            <class name="testCases.HRMS.SelfService.LeaveRequestTest"/>
+            <class name="testCases.HRMS.SelfService.SupportRequestCategoryTest"/>
+            <class name="testCases.HRMS.SelfService.SupportRequestTest"/>
+            <class name="testCases.HRMS.SelfService.LoanRequestTest"/>
+            <class name="testCases.HRMS.SelfService.BenefitClaimTest"/>
+            <class name="testCases.HRMS.SelfService.PromotionRequestTest"/>
             <class name="testCases.HRMS.SelfService.TravelRequestTest"/>
+            <class name="testCases.HRMS.SelfService.OvertimeApplicationTest"/>
+            <class name="testCases.HRMS.SelfService.ResignationTest"/>
             <class name="testCases.HRMS.SelfService.VerifyApproveWorkflowTest"/>
             <class name="testCases.HRMS.SelfService.VerifyRejectWorkflowTest"/>
             <class name="testCases.HRMS.SelfService.VerifyReviseWorkflowTest"/>
-            <class name="testCases.HRMS.SelfService.CreateBusinessTripClaimTest"/>
+
             <class name="testCases.HRMS.SelfService.DeleteLeaveExtensionTest"/>
 
 

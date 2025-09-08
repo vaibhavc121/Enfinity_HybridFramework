@@ -274,6 +274,7 @@ public class BasePage
 
         waitForElement1(By.xpath(xpath)).sendKeys(value);
         BaseTest.log("provided filter value");
+        pressEnter();
     }
 
     // other approach

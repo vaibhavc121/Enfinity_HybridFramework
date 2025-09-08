@@ -11,35 +11,23 @@ import utilities.CommonActions;
 public class IndemnityAdjustmentPage extends BasePage
 {
 
-    @FindBy(xpath = "//a[@title='Indemnity Adjustment']//span[@class='dx-vam'][normalize-space()='Indemnity Adjustment']")
+    @FindBy(xpath = "//span[contains(text(),'Indemnity Adjustment')]")
     WebElement indemnityAdjustment;
 
-    @FindBy(xpath = "//img[@id='GratuityAdjustment.EmployeeIdLookup_B-1Img']")
-    WebElement empdd;
+    @FindBy(xpath = "//input[@id='GratuityAdjustment.EffectiveDate_I']")
+    private WebElement effectiveDate;
 
-    @FindBy(xpath = "//div[contains(text(),'003 | rahul')]")
-    WebElement emp;
+    @FindBy(xpath = "//input[@id='GratuityAdjustment.EmployeeIdLookup_I']")
+    private WebElement empdd;
 
-    @FindBy(xpath = "//img[@id='GratuityAdjustment.GratuityIdLookup_B-1Img']")
-    WebElement indemnitydd;
-
-    @FindBy(xpath = "//div[contains(text(),'Indemnity')]")
-    WebElement indemnity;
+    @FindBy(xpath = "//input[@id='GratuityAdjustment.GratuityIdLookup_I']")
+    private WebElement indemnityDD;
 
     @FindBy(xpath = "//input[@id='GratuityAdjustment.PaidDays_I']")
-    WebElement paidDays;
+    private WebElement paidDays;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[6]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-    WebElement filterCell;
-
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/span[1]/a[1]")
-    WebElement result;
-
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[9]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
-    WebElement filterIndAmt;
-
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[9]")
-    WebElement resultIndAmt;
+    @FindBy(xpath = "//a[normalize-space()='Indemnity Adjustment']")
+    private WebElement indemnityAdjustmentLabel;
 
 //	String IndemnityBal=DriverFactory.getDriver().findElement(By.xpath("//input[@id='GratuityAdjustment.GratuityBalance_I")).getText();
 //	int actIndBalInt=Integer.parseInt(IndemnityBal);
@@ -52,36 +40,27 @@ public class IndemnityAdjustmentPage extends BasePage
 
     public void clkNewBtn()
     {
-        CommonActions.clkNew();
+        clickOnNew();
     }
 
-    public void clkEmpDD() throws InterruptedException
+    public void provideEffectiveDate(String value)
     {
-        empdd.click();
-        Thread.sleep(3000);
+        clearAndProvide1(effectiveDate, value);
     }
 
-    public void slctEmp() throws InterruptedException
+    public void provideEmployee(String value)
     {
-        emp.click();
-        Thread.sleep(2000);
+        provideAndEnter(empdd, value);
     }
 
-    public void clkIndemnityDD()
+    public void provideIndemnity(String value)
     {
-        indemnitydd.click();
+        provideAndEnter(indemnityDD, value);
     }
 
-    public void slctIndemnity()
+    public void providePaidDays(String value)
     {
-        indemnity.click();
-    }
-
-    public void providePaidDays() throws InterruptedException
-    {
-        paidDays.clear();
-        paidDays.sendKeys("1");
-        Thread.sleep(2000);
+        clearAndProvide1(paidDays, value);
     }
 
     public void clkView()
@@ -96,22 +75,8 @@ public class IndemnityAdjustmentPage extends BasePage
         Thread.sleep(3000);
     }
 
-    public boolean isTxnCreated()
+    public void clickIndemnityAdjustmentLabel()
     {
-        String expemp = "rahul";
-        // String expIndAmt="19.231";
-
-        filterCell.sendKeys(expemp);
-        // filterIndAmt.sendKeys(expIndAmt);
-        String actemp = result.getText();
-        // String actIndamt= resultIndAmt.getText();
-
-        if (actemp.contains(expemp))
-        {
-            return true;
-        } else
-        {
-            return false;
-        }
+        clickOnElement1(indemnityAdjustmentLabel);
     }
 }

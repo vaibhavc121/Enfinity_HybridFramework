@@ -35,6 +35,7 @@ public class PayrollPage extends BasePage
 
     public void clickReports()
     {
+        BasePage.openSidebar();
         reports.click();
     }
 }
