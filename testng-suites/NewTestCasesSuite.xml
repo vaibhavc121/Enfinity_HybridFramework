@@ -22,7 +22,7 @@
         <classes>
 
             <!-- New Test -->
-            <class name="testCases.HRMS.SelfService.TimeOffTest"/>
+            <!--            <class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest"/>-->
 
         </classes>
     </test>

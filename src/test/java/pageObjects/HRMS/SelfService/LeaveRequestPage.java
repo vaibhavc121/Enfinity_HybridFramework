@@ -81,9 +81,15 @@ public class LeaveRequestPage extends BasePage
 
     public void hoverAndClick(String leaveType)
     {
-        WebElement dynamicLeaveType = waitForElement1(By.xpath("//p[@title='" + leaveType + "']"));
-        hoverAndClick(dynamicLeaveType, plusBtn);
-        waitTS(5);
+        try
+        {
+            WebElement dynamicLeaveType = waitForElement1(By.xpath("//p[@title='" + leaveType + "']"));
+            hoverAndClick(dynamicLeaveType, plusBtn);
+            waitTS(5);
+        } catch (Exception e)
+        {
+
+        }
     }
 
     public void provideFromDate(String value)

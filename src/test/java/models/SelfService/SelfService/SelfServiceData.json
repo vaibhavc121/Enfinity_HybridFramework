@@ -235,7 +235,14 @@
     "entitlement": [
       {
         "maximumLeaveBalance": 0,
-        "eligibilityDaysAfterJoining": 0,
+        "eligibilityDaysAfterJoining": {
+          "days": 0,
+          "leaveType": "Annual Leave",
+          "fromDate": "01-Jan-2025",
+          "toDate": "01-Jan-2025",
+          "expFromDate": "01-Jan-25",
+          "expToDate": "01-Jan-25"
+        },
         "includeUnpaidLeaveInProvisions": false,
         "countWeekendsAsLeaveDays": false,
         "countWeekendsAsUnpaidDays": false,

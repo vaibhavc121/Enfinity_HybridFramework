@@ -180,44 +180,54 @@ public class SelfServiceModel
         public String categoryName;
     }
 
-    public static class Entitlement
+    public static class EntitlementModel
     {
-        private int maximumLeaveBalance;
-        private int eligibilityDaysAfterJoining;
-        private boolean includeUnpaidLeaveInProvisions;
-        private boolean countWeekendsAsLeaveDays;
-        private boolean countWeekendsAsUnpaidDays;
-        private boolean countPublicHolidaysAsPublicHolidays;
-        private boolean grantPublicHolidaysDuringLeave;
-        private boolean countRestDaysAsRestDays;
-        private String leaveApplicability;
-        private String leaveApplicabilityFor;
-        private boolean allowExceedLeaveBalance;
+        public String maximumLeaveBalance;
+        public EligibilityDaysAfterJoining eligibilityDaysAfterJoining;
+        public boolean includeUnpaidLeaveInProvisions;
+        public boolean countWeekendsAsLeaveDays;
+        public boolean countWeekendsAsUnpaidDays;
+        public boolean countPublicHolidaysAsPublicHolidays;
+        public boolean grantPublicHolidaysDuringLeave;
+        public boolean countRestDaysAsRestDays;
+        public String leaveApplicability;
+        public String leaveApplicabilityFor;
+        public boolean allowExceedLeaveBalance;
     }
 
-    public static class Restriction
+    public static class EligibilityDaysAfterJoining
     {
-        private String leaveTypeApplicableFor;
-        private boolean autoResumeLeave;
-        private boolean considerLateResumeAsPaidIfBalanceAvailable;
-        private boolean considerAllLateResumeAsUnpaid;
-        private ApplicableCriteria applicableCriteria;
-        private boolean assignLeaveTypeToNewEmployee;
-        private boolean restrictUnpaidLeaveDays;
-        private boolean allowSelfServicePortalRequests;
-        private int maxPaidLeaveDaysPerRequest;
-        private int leaveRequestAdvanceDays;
-        private int leaveRequestBackdatedDays;
-        private boolean requireSubstituteForLeaveRequest;
-        private boolean allowBackdatedLeaveRequestsInPortal;
-        private String restrictLeaveBeforeOrAfter;
-        private boolean attachmentMandatoryForLeaveRequest;
+        public int days;
+        public String leaveType;
+        public String fromDate;
+        public String toDate;
+        public String expFromDate;
+        public String expToDate;
+    }
+
+    public static class RestrictionModel
+    {
+        public String leaveTypeApplicableFor;
+        public boolean autoResumeLeave;
+        public boolean considerLateResumeAsPaidIfBalanceAvailable;
+        public boolean considerAllLateResumeAsUnpaid;
+        public ApplicableCriteria applicableCriteria;
+        public boolean assignLeaveTypeToNewEmployee;
+        public boolean restrictUnpaidLeaveDays;
+        public boolean allowSelfServicePortalRequests;
+        public String maxPaidLeaveDaysPerRequest;
+        public String leaveRequestAdvanceDays;
+        public String leaveRequestBackdatedDays;
+        public boolean requireSubstituteForLeaveRequest;
+        public boolean allowBackdatedLeaveRequestsInPortal;
+        public String restrictLeaveBeforeOrAfter;
+        public boolean attachmentMandatoryForLeaveRequest;
     }
 
     public static class ApplicableCriteria
     {
-        private String gender;
-        private String maritalStatus;
-        private String religion;
+        public String gender;
+        public String maritalStatus;
+        public String religion;
     }
 }
