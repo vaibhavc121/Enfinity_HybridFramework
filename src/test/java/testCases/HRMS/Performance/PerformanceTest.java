@@ -15,6 +15,7 @@ import java.util.List;
 public class PerformanceTest extends BaseTest
 {
     String appraisalCycleName = "AC_" + DateUtils.getCurrentDateTime("dd-MMM-yyyy_HH:mm:ss");
+    String feedbackCycleName = "FC_" + DateUtils.getCurrentDateTime("dd-MMM-yyyy_HH:mm:ss");
 
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void createAppraisalCycle()
@@ -24,17 +25,13 @@ public class PerformanceTest extends BaseTest
             String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
             List<PerformanceModel.AppraisalCycleModel> performanceData = JsonUtils.convertJsonListDataModel(performanceFile, "createAppraisalCycle", PerformanceModel.AppraisalCycleModel.class);
 
-            //region Page Initializations
             PerformancePage pp = new PerformancePage();
             AppraisalCyclePage ac = new AppraisalCyclePage();
-            //endregion
 
-            //region Performance page
             pp.clickPerformance();
             log("Clicked on Performance module");
             pp.clickAppraisalCycle();
             log("Clicked on Appraisal Cycle");
-            //endregion
 
             //region Appraisal Cycle page
 
@@ -180,11 +177,35 @@ public class PerformanceTest extends BaseTest
             log("Clicked on Appraisal Cycle");
             //endregion
 
-            // ac.deleteAppraisalCycle(appraisalCycleName, 2, 1);
-            ac.deleteAppraisalCycle("AC_08-Sept-2025_18:06:29", 2, 1);
+            ac.deleteAppraisalCycle(appraisalCycleName, 2, 1);
+            // ac.deleteAppraisalCycle("AC_08-Sept-2025_18:06:29", 2, 1);
 
             Assert.assertFalse(BasePage.validateListing(appraisalCycleName, 2, 1), "Appraisal Cycle deletion failed: " + appraisalCycleName);
             log("Verified: Appraisal Cycle deleted successfully: " + appraisalCycleName);
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 3)
+    public void create360FeedbackCycle()
+    {
+        try
+        {
+//            String itSupportFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+//            List<ITSupportModel> itSupportData = JsonUtils.convertJsonListDataModel(itSupportFile, "createITSupport", ITSupportModel.class);
+
+            //performance page
+            PerformancePage pp = new PerformancePage();
+            pp.clickFeedbackCycle();
+            log("Clicked on 360 Feedback Cycle");
+
+            pp.clickPerformance();
+            log("Clicked on Performance module");
+            pp.clickAppraisalCycle();
+            log("Clicked on Appraisal Cycle");
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

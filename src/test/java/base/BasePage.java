@@ -371,6 +371,12 @@ public class BasePage
         element.click();
     }
 
+    public static void clickOnElementNS(String value)
+    {
+        WebElement element = waitForElement1(By.xpath("//*[normalize-space()='" + value + "']"));
+        element.click();
+    }
+
     public static void clickOnElement1(WebElement ele)
     {
         WebElement element = waitForElement(ele);

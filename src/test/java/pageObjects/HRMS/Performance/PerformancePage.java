@@ -14,6 +14,9 @@ public class PerformancePage extends BasePage
 
     @FindBy(xpath = "//label[normalize-space()='Appraisal Cycle']")
     private WebElement appraisalCycle;
+
+    @FindBy(xpath = "//label[normalize-space()='360 Feedback Cycle']")
+    private WebElement FeedbackCycle;
     //endregion
 
     //region Action Methods
@@ -26,6 +29,12 @@ public class PerformancePage extends BasePage
     {
         BasePage.openSidebar();
         waitForElement(appraisalCycle).click();
+    }
+
+    public void clickFeedbackCycle()
+    {
+        BasePage.openSidebar();
+        waitForElement(FeedbackCycle).click();
     }
 
     //endregion

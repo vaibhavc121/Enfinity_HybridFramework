@@ -76,7 +76,7 @@ public class IndemnityAdjustmentTest extends BaseTest
                 ia.clkApprove();
                 log("clicked on approve");
 
-                Assert.assertTrue(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Approved", 10, 10), "Indemnity Adjustment creation failed");
+                Assert.assertTrue(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Approved", 7, 7), "Indemnity Adjustment creation failed");
 
                 pp.clickReports();
                 BasePage.closeUnwantedTab();
@@ -119,7 +119,7 @@ public class IndemnityAdjustmentTest extends BaseTest
 
             }
             //Assert.assertFalse(BasePage.validateListing(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2));
-            Assert.assertFalse(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Approved", 10, 10), "Indemnity Adjustment deletion failed");
+            Assert.assertFalse(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Approved", 7, 7), "Indemnity Adjustment deletion failed");
             log("Verified: Indemnity Adjustment deleted successfully for date: " + DateUtils.getCurrentDate("dd-MMM-yyyy") + "for emp: " + data.employee);
         }
     }

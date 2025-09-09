@@ -15,7 +15,7 @@ public class OvertimePage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Overtime']")
     WebElement overtime;
 
-    @FindBy(xpath = "//input[@id='Overtime.EmployeeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'EmployeeId')]")
     WebElement empdd;
 
     @FindBy(xpath = "//input[@id='Overtime.EffectiveDate_I']")
