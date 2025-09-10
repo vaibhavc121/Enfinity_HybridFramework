@@ -591,7 +591,7 @@ public class BasePage
         jsExecutor.executeScript("arguments[0].value='" + value + "';", element);
     }
 
-    public void provideDescription(String value)
+    public static void provideDescription(String value)
     {
         By description = By.xpath("//textarea[contains(@id,'Description')]");
         clearAndProvide(description, value);

@@ -82,7 +82,7 @@ public class JobPage extends BasePage
     private WebElement nationality;
 
     @FindBy(xpath = "//div[@aria-label='To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings']")
-    private WebElement description;
+    private static WebElement description;
 
     @FindBy(xpath = "//tr[@class='dx-row dx-data-row dx-row-lines dx-column-lines']//td[1]//span")
     private WebElement col1;
@@ -210,7 +210,7 @@ public class JobPage extends BasePage
         provideAndEnter(nationality, value);
     }
 
-    public void provideDescription(String jobTitle)
+    public void provideDesc(String jobTitle)
     {
         clearAndProvide1(description, "Job Opening for the position of: " + jobTitle + ": " + new Faker().lorem().paragraph());
     }

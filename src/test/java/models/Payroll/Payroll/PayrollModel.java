@@ -116,6 +116,7 @@ public class PayrollModel
         public String overtimeType;
         public String overtimeHrs;
         public String expectedOvertimeAmt;
+        public String remarks;
     }
 
     public static class LoanModel

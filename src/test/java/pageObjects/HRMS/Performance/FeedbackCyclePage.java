@@ -70,7 +70,7 @@ public class FeedbackCyclePage extends BasePage
     {
         clearAndProvide1(name, value);
     }
-    public void provideDescription(String value)
+    public void provideDesc(String value)
     {
         clearAndProvide1(description, value);
     }

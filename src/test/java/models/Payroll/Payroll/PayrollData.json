@@ -97,14 +97,37 @@
       "paidDays": "1"
     }
   ],
-  "createOvertime": [
+  "createNormalOvertime": [
     {
       "employee": "Vaibhav Chavan",
-      "effectiveDate": "01-01-2025",
-      "overtimeDate": "01-01-2025",
-      "overtimeType": "Normal Overtime",
+      "effectiveDate": "01-Jan-2025",
+      "overtimeDate": "01-Jan-2025",
+      "overtimeType": "Normal Overtime SDET",
       "overtimeHrs": "1",
-      "expectedOvertimeAmt": "2.016"
+      "expectedOvertimeAmt": "3.005",
+      "remarks": "overtime"
+    }
+  ],
+  "createWeekendOvertime": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-Jan-2025",
+      "overtimeDate": "03-Jan-2025",
+      "overtimeType": "Weekend Overtime SDET",
+      "overtimeHrs": "1",
+      "expectedOvertimeAmt": "3.606",
+      "remarks": "overtime"
+    }
+  ],
+  "createHolidayOvertime": [
+    {
+      "employee": "Vaibhav Chavan",
+      "effectiveDate": "01-Jan-2025",
+      "overtimeDate": "15-Jan-2025",
+      "overtimeType": "Holiday Overtime SDET",
+      "overtimeHrs": "1",
+      "expectedOvertimeAmt": "4.808",
+      "remarks": "overtime"
     }
   ],
   "createLoan": [

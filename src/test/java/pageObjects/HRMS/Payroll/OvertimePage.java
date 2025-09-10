@@ -18,32 +18,27 @@ public class OvertimePage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'EmployeeId')]")
     WebElement empdd;
 
-    @FindBy(xpath = "//input[@id='Overtime.EffectiveDate_I']")
+    @FindBy(xpath = "//input[contains(@id,'EffectiveDate')]")
     WebElement effectiveDate;
 
-    @FindBy(xpath = "//input[@id='Overtime.OvertimeDate_I']")
+    @FindBy(xpath = "//input[contains(@id,'OvertimeDate')]")
     WebElement overtimeDate;
 
-    @FindBy(xpath = "//input[@id='Overtime.OvertimeTypeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'OvertimeTypeId')]")
     WebElement overtimeType;
 
-    @FindBy(xpath = "//img[@id='Overtime.OvertimeTypeIdLookup_B-1Img']")
-    WebElement overtimeTypeDD;
-
-    @FindBy(xpath = "//input[@id='Overtime.Hours_I']")
+    @FindBy(xpath = "//input[contains(@id,'Hours')]")
     WebElement hours;
 
-    @FindBy(xpath = "//img[@id='Overtime.PayBenefitAs_B-1Img']")
-    WebElement payBenefitDD;
+    @FindBy(xpath = "(//div[@class='dx-radiobutton-icon-dot'])[1]")
+    private WebElement payBenefitAsAmt;
 
-    @FindBy(xpath = "//img[@id='Overtime.LeaveTypeIdLookup_B-1Img']")
-    WebElement leaveTypeDD;
-
-    BaseTest bc = new BaseTest();
+    @FindBy(xpath = "(//div[@class='dx-radiobutton-icon-dot'])[2]")
+    private WebElement payBenefitAsLeaveBalDays;
 
     public void clickOvertime()
     {
-        overtime.click();
+        clickOnElement1(overtime);
     }
 
     public void clickNew()
@@ -53,7 +48,7 @@ public class OvertimePage extends BasePage
 
     public void provideEmp(String value)
     {
-        clearAndProvide1(empdd, value);
+        provideAndEnter(empdd, value);
     }
 
     public void provideEffectiveDate(String value)
@@ -68,7 +63,7 @@ public class OvertimePage extends BasePage
 
     public void provideOvertimeType(String value)
     {
-        clearAndProvide1(overtimeType, value);
+        provideAndEnter(overtimeType, value);
     }
 
     public void provideHrs(String value)
@@ -76,16 +71,13 @@ public class OvertimePage extends BasePage
         clearAndProvide1(hours, value);
     }
 
-    public void selectPayBenefit()
+    public void payBenefitAsAmt()
     {
-        payBenefitDD.click();
-        selectDropdownValueOffice365("Leave Balance Days");
+        clickOnElement1(payBenefitAsAmt);
     }
-
-    public void slctLeaveType() throws InterruptedException
+    public void payBenefitAsLeaveBalDays()
     {
-        leaveTypeDD.click();
-        selectDropdownValue("Annual Leave");
+        clickOnElement1(payBenefitAsLeaveBalDays);
     }
 
     public void clickApproveBack()
