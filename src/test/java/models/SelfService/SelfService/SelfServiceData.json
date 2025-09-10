@@ -236,7 +236,7 @@
       {
         "maximumLeaveBalance": 0,
         "eligibilityDaysAfterJoining": {
-          "days": 0,
+          "days": 30,
           "leaveType": "Annual Leave",
           "fromDate": "01-Jan-2025",
           "toDate": "01-Jan-2025",

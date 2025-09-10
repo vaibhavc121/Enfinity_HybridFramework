@@ -350,7 +350,7 @@ public class BasePage
         //img[@id='MainMenu_DXI15_PImg']
         //clickOnElement(By.xpath("//img[contains(@class,'dxWeb_mAdaptiveMenu_Office365 dxm-pImage')]"));
         //clickOnElement(By.xpath("//span[@title='Edit']"));
-        clickOnElement(By.xpath("//img[@id='MainMenu_DXI3_Img']"));
+        clickOnElement(By.xpath("//img[@id='MainMenu_DXI4_Img']"));
     }
     // endregion
 

@@ -6,8 +6,10 @@ import models.SelfService.SelfService.SelfServiceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.SelfService.LeaveRequestPage;
+import pageObjects.HRMS.SelfService.LeaveTypesPage.ConfigureLeaveTypeSetting;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import testCases.HRMS.SelfService.LeaveRequestTest;
+import utilities.DateUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -18,6 +20,7 @@ public class AnnualLeaveTest extends BaseTest
 {
     String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
     List<SelfServiceModel.EntitlementModel> annualLeaveData = JsonUtils.convertJsonListDataModel(selfServiceFile, "annualLeave.entitlement", SelfServiceModel.EntitlementModel.class);
+    ConfigureLeaveTypeSetting stg = new ConfigureLeaveTypeSetting();
 
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void verifyEligibilityDaysAfterJoining()
@@ -31,6 +34,7 @@ public class AnnualLeaveTest extends BaseTest
                 {
                     try
                     {
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining0", data.eligibilityDaysAfterJoining.days);
 
                         // self service page
                         SelfServicePage ss = new SelfServicePage();
@@ -49,7 +53,11 @@ public class AnnualLeaveTest extends BaseTest
                         // lr.clickOnSaveSubmit();
                         lr.clickSave();
 
-                        Assert.assertTrue(lr.isTxnCreated(data.eligibilityDaysAfterJoining.expFromDate, data.eligibilityDaysAfterJoining.expToDate));
+                        Assert.assertTrue(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Active", 7, 7), "Leave request is not created: " + data.eligibilityDaysAfterJoining.leaveType);
+                        log("Veified: Leave request is created successfully: " + data.eligibilityDaysAfterJoining.leaveType);
+
+                        LeaveRequestTest lrp = new LeaveRequestTest();
+                        lrp.deleteLeaveRequest();
                     } catch (Exception e)
                     {
                         logger.error("Test failed due to exception: ", e);
@@ -59,6 +67,7 @@ public class AnnualLeaveTest extends BaseTest
                 {
                     try
                     {
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining30", data.eligibilityDaysAfterJoining.days);
 
                         // self service page
                         SelfServicePage ss = new SelfServicePage();
@@ -77,7 +86,8 @@ public class AnnualLeaveTest extends BaseTest
                         // lr.clickOnSaveSubmit();
                         lr.clickSave();
 
-                        Assert.assertFalse(lr.isTxnCreated(data.eligibilityDaysAfterJoining.expFromDate, data.eligibilityDaysAfterJoining.expToDate));
+                        Assert.assertFalse(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Active", 7, 7));
+                        log("Veified: Leave request is not created as expected: " + data.eligibilityDaysAfterJoining.leaveType);
                     } catch (Exception e)
                     {
                         logger.error("Test failed due to exception: ", e);

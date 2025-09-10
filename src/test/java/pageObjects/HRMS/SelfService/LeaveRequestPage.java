@@ -81,15 +81,11 @@ public class LeaveRequestPage extends BasePage
 
     public void hoverAndClick(String leaveType)
     {
-        try
-        {
-            WebElement dynamicLeaveType = waitForElement1(By.xpath("//p[@title='" + leaveType + "']"));
-            hoverAndClick(dynamicLeaveType, plusBtn);
-            waitTS(5);
-        } catch (Exception e)
-        {
 
-        }
+        WebElement plusBtn = waitForElement1(By.xpath("//p[@title='" + leaveType + "']/..//i[@class='dx-icon dx-icon-new-icon']"));
+        WebElement dynamicLeaveType = waitForElement1(By.xpath("//p[@title='" + leaveType + "']"));
+        hoverAndClick(dynamicLeaveType, plusBtn);
+        waitTS(5);
     }
 
     public void provideFromDate(String value)
@@ -160,6 +156,6 @@ public class LeaveRequestPage extends BasePage
 
     public boolean isTxnCreated(String fromDate, String toDate)
     {
-        return resultValue(8).contains(fromDate) && resultValue(8).contains(toDate);
+        return resultValue(5).contains(fromDate) && resultValue(8).contains(toDate);
     }
 }
