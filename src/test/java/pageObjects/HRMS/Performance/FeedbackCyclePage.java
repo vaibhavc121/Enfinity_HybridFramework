@@ -2,6 +2,7 @@ package pageObjects.HRMS.Performance;
 
 import base.BasePage;
 import factory.DriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utilities.JavaScriptUtils;
@@ -137,15 +138,26 @@ public class FeedbackCyclePage extends BasePage
     {
         clearAndProvide1(editorContent, value);
     }
+
+    public void selectValueFromDD(String value)
+    {
+        waitForElement1(By.xpath("//span[normalize-space()='Category']//following::div[text()=' " + value + " ']")).click();
+    }
+
     public void provideCategory(String value)
     {
         clickOnElement1(category);
-        selectDropdownOption(value);
+        //selectDropdownOption(value);
+
+        WebElement element = DriverFactory.getDriver().findElement((By.xpath("//span[normalize-space()='Category']//following::div[normalize-space()=' " + value + " ']")));
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), element);
     }
     public void selectRatingType(String value)
     {
         clickOnElement1(ratingType);
-        selectDropdownOption(value);
+        //selectDropdownOption(value);
+        WebElement element = waitForElement1(By.xpath("//span[normalize-space()='Rating Type']//following::div[text()=' " + value + " ']"));
+        JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), element);
     }
     public void checkMandatory()
     {

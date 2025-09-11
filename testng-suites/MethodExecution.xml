@@ -46,7 +46,7 @@
 
             <class name="testCases.HRMS.Performance.PerformanceTest">
                 <methods>
-                    <include name="create360FeedbackCycle"/>
+                    <include name="delete360FeedbackCycle"/>
                     <!--                    <include name="deleteAppraisalCycle"/>-->
                 </methods>
             </class>

@@ -283,4 +283,32 @@ public class PerformanceTest extends BaseTest
             Assert.fail("Test case failed: " + e);
         }
     }
+
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 4, invocationCount = 22)
+    public void delete360FeedbackCycle()
+    {
+        try
+        {
+            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
+            List<PerformanceModel.FeedbackCycleModel> feedbackCycleData = JsonUtils.convertJsonListDataModel(performanceFile, "feedbackCycle", PerformanceModel.FeedbackCycleModel.class);
+
+            //performance page
+            PerformancePage pp = new PerformancePage();
+            pp.clickPerformance();
+            log("Clicked on Performance module");
+            pp.clickFeedbackCycle();
+            log("Clicked on 360 Feedback Cycle");
+
+            AppraisalCyclePage ac = new AppraisalCyclePage();
+            ac.deleteAppraisalCycle(feedbackCycleName, 2, 1);
+            // ac.deleteAppraisalCycle("AC_08-Sept-2025_18:06:29", 2, 1);
+
+            Assert.assertFalse(BasePage.validateListing(feedbackCycleName, 2, 1), "Appraisal Cycle deletion failed: " + appraisalCycleName);
+            log("Verified: Appraisal Cycle deleted successfully: " + appraisalCycleName);
+        } catch (Exception e)
+        {
+            logger.error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }
