@@ -1,8 +1,10 @@
 package pageObjects.HRMS.Performance;
 
 import base.BasePage;
+import factory.DriverFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.JavaScriptUtils;
 
 public class FeedbackCyclePage extends BasePage
 {
@@ -68,6 +70,7 @@ public class FeedbackCyclePage extends BasePage
     //region Header & Settings
     public void provideName(String value)
     {
+        waitTS(2);
         clearAndProvide1(name, value);
     }
     public void provideDesc(String value)
@@ -106,6 +109,10 @@ public class FeedbackCyclePage extends BasePage
     {
         clickOnElement1(manualOverallRatingCheckbox);
     }
+    public void scrollDownTOJoiningDateUntil()
+    {
+        JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), joiningDateUntil);
+    }
     public void provideJoiningDateUntil(String value)
     {
         clearAndProvide1(joiningDateUntil, value);
@@ -132,11 +139,13 @@ public class FeedbackCyclePage extends BasePage
     }
     public void provideCategory(String value)
     {
-        clearAndProvide1(category, value);
+        clickOnElement1(category);
+        selectDropdownOption(value);
     }
     public void selectRatingType(String value)
     {
-        provideAndEnter(ratingType, value);
+        clickOnElement1(ratingType);
+        selectDropdownOption(value);
     }
     public void checkMandatory()
     {

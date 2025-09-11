@@ -29,10 +29,10 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
+            <!--            <class name="testCases.HRMS.Payroll.OvertimeTest">-->
             <!--                <methods>-->
-            <!--                    <include name="createUnpaidLeave"/>-->
-            <!--                    <include name="deleteUnpaidLeave"/>-->
+            <!--                    <include name="createNormalOvertime"/>-->
+            <!--                    <include name="deleteNormalOvertime"/>-->
             <!--                </methods>-->
             <!--            </class>-->
 
@@ -44,12 +44,12 @@
             <!--            </class>-->
 
 
-            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createAppraisalCycle"/>-->
-            <!--                    <include name="deleteAppraisalCycle"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
+            <class name="testCases.HRMS.Performance.PerformanceTest">
+                <methods>
+                    <include name="create360FeedbackCycle"/>
+                    <!--                    <include name="deleteAppraisalCycle"/>-->
+                </methods>
+            </class>
 
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
@@ -64,12 +64,12 @@
             <!--            </class>-->
 
 
-            <class name="testCases.HRMS.Attendance.AttendanceTest">
-                <methods>
-                    <include name="createNightShiftTimetable"/>
-                    <include name="deleteNightShiftTimetable"/>
-                </methods>
-            </class>
+            <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createNightShiftTimetable"/>-->
+            <!--                    <include name="deleteNightShiftTimetable"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
         </classes>

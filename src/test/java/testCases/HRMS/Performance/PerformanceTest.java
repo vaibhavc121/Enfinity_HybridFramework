@@ -7,6 +7,7 @@ import models.Performance.Performance.PerformanceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.Performance.AppraisalCyclePage;
+import pageObjects.HRMS.Performance.FeedbackCyclePage;
 import pageObjects.HRMS.Performance.PerformancePage;
 import utilities.*;
 
@@ -194,18 +195,88 @@ public class PerformanceTest extends BaseTest
     {
         try
         {
+            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
+            List<PerformanceModel.FeedbackCycleModel> feedbackCycleData = JsonUtils.convertJsonListDataModel(performanceFile, "feedbackCycle", PerformanceModel.FeedbackCycleModel.class);
 //            String itSupportFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
 //            List<ITSupportModel> itSupportData = JsonUtils.convertJsonListDataModel(itSupportFile, "createITSupport", ITSupportModel.class);
 
             //performance page
             PerformancePage pp = new PerformancePage();
+            pp.clickPerformance();
+            log("Clicked on Performance module");
             pp.clickFeedbackCycle();
             log("Clicked on 360 Feedback Cycle");
 
-            pp.clickPerformance();
-            log("Clicked on Performance module");
-            pp.clickAppraisalCycle();
-            log("Clicked on Appraisal Cycle");
+            FeedbackCyclePage fc = new FeedbackCyclePage();
+            for (PerformanceModel.FeedbackCycleModel data : feedbackCycleData)
+            {
+                BasePage.clickOnNew();
+                log("Clicked on New button to create new 360 Feedback cycle");
+                fc.provideName(feedbackCycleName);
+                log("Entered feedback cycle name: " + feedbackCycleName);
+                fc.provideDesc(data.description);
+                log("Provided description: " + data.description);
+                fc.provideProcessFromDate(data.processFromDate);
+                log("Provided process from date: " + data.processFromDate);
+                fc.provideProcessToDate(data.processToDate);
+                log("Provided process to date: " + data.processToDate);
+                fc.selectWorkflow(data.workflow);
+                log("Selected workflow: " + data.workflow);
+                fc.provideMinimumRater(data.minimumRater);
+                log("Provided minimum rater: " + data.minimumRater);
+                fc.provideMaximumRater(data.maximumRater);
+                log("Provided maximum rater: " + data.maximumRater);
+                if (data.allowRatingCheckbox)
+                {
+                    fc.checkAllowRating();
+                    log("Checked allow rating checkbox");
+                    fc.selectOverallRating(data.overallRating);
+                    log("Selected overall rating: " + data.overallRating);
+                }
+                if (data.manualOverallRatingCheckbox)
+                {
+                    fc.checkManualOverallRating();
+                    log("Checked manual overall rating checkbox");
+                }
+                fc.scrollDownTOJoiningDateUntil();
+                log("Scrolled down to Joining Date Until field");
+                fc.provideJoiningDateUntil(DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                log("Provided joining date until: " + DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                fc.selectEmployee(data.employee);
+                log("Selected employee: " + data.employee);
+
+                //region Questions
+                fc.clickNext();
+                log("Clicked on Next to navigate to Questions tab");
+
+                for (PerformanceModel.FeedbackCycleModel.Question q : data.questions)
+                {
+                    fc.clickAddQuestion();
+                    log("Clicked on Add Question button to add question");
+
+                    fc.provideQuestion(q.question);
+                    log("Provided question: " + q.question);
+
+                    fc.provideCategory(q.category);
+                    log("Provided category: " + q.category);
+
+                    fc.selectRatingType(q.ratingType);
+                    log("Selected rating type: " + q.ratingType);
+
+                    if (q.mandatoryCheckbox)
+                    {
+                        fc.checkMandatory();
+                        log("Checked mandatory checkbox");
+                    }
+
+                    fc.clickAdd();
+                    log("Clicked Add to save question");
+                }
+                //endregion
+
+                BasePage.clickOnSave();
+                log("Clicked on Save button to save feedback cycle");
+            }
         } catch (Exception e)
         {
             logger.error("Test failed due to exception: ", e);

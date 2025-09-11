@@ -58,6 +58,7 @@ public class OvertimePage extends BasePage
 
     public void provideOvertimeDate(String value)
     {
+        waitTS(2);
         clearAndProvide1(overtimeDate, value);
     }
 

@@ -23,5 +23,47 @@
       "enableReviewerOpinion": true,
       "enableSkillSetAssessment": true
     }
+  ],
+  "feedbackCycle": [
+    {
+      "name": "Sample Name",
+      "description": "feedbackCycle",
+      "processFromDate": "01-Jan-2025",
+      "processToDate": "31-Dec-2025",
+      "workflow": "VRC Emp Manager",
+      "minimumRater": "1",
+      "maximumRater": "5",
+      "allowRatingCheckbox": true,
+      "overallRating": "Score",
+      "manualOverallRatingCheckbox": false,
+      "joiningDateUntil": "2025-12-31",
+      "employee": "Rohit Chavan",
+      "questions": [
+        {
+          "question": "How well do you work in a team?",
+          "category": "Teamwork",
+          "ratingType": "Stars",
+          "mandatoryCheckbox": false
+        },
+        {
+          "question": "How effectively do you communicate with others?",
+          "category": "Communication",
+          "ratingType": "Stars",
+          "mandatoryCheckbox": true
+        },
+        {
+          "question": "Do you provide constructive feedback?",
+          "category": "Feedback",
+          "ratingType": "Stars",
+          "mandatoryCheckbox": false
+        },
+        {
+          "question": "How would you rate leadership skills?",
+          "category": "Leadership",
+          "ratingType": "Stars",
+          "mandatoryCheckbox": true
+        }
+      ]
+    }
   ]
 }

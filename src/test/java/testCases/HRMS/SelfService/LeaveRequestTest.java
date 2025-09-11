@@ -7,6 +7,7 @@ import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel.LeaveRequestModel;
 import pageObjects.HRMS.SelfService.LeaveRequestPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
+import utilities.DateUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -43,7 +44,8 @@ public class LeaveRequestTest extends BaseTest
                 // lr.clickOnSaveSubmit();
                 lr.clickSave();
 
-                Assert.assertTrue(lr.isTxnCreated(leaveRequest.expFromDate, leaveRequest.expToDate));
+                Assert.assertTrue(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Active", 7, 7), "Leave request is not created: " + leaveRequest.leaveType);
+                log("Verified: Leave request is created successfully: " + leaveRequest.leaveType);
             }
         } catch (Exception e)
         {
@@ -71,7 +73,7 @@ public class LeaveRequestTest extends BaseTest
 
             BasePage.deleteTxn(7, "active");
             log("Leave Request deleteted successfully");
-            Assert.assertFalse(BasePage.validateListing("active", 7, 7));
+            Assert.assertFalse(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "active", 7, 7));
             log("Verified: There is no active Leave on the listing page");
         } catch (Exception e)
         {
