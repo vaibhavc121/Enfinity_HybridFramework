@@ -1,6 +1,7 @@
 package testCases.HRMS.Payroll;
 
 import base.BasePage;
+import factory.LoggerFactory;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -28,9 +29,9 @@ public class PromotionTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // promotion pg
             PromotionPage pr = new PromotionPage();
@@ -56,25 +57,25 @@ public class PromotionTest extends BaseTest
                 log("provided new designation");
 
 //				pr.clickSave();
-//				logger.info("clicked on save button");
+//				log("clicked on save button");
 //
 //				pr.scrollToElement();
-//				logger.info("scrolled to element- salaries");
+//				log("scrolled to element- salaries");
 //
 //				pr.clickSalaries();
-//				logger.info("clicked on salaries");
+//				log("clicked on salaries");
 //
 //				pr.clickNew1();
-//				logger.info("clicked on new button in salaries");
+//				log("clicked on new button in salaries");
 //
 //				pr.provideSalComp(proData.salComp);
-//				logger.info("provided salary component");
+//				log("provided salary component");
 //
 //				pr.provideIncrementAmt(proData.incrementAmt);
-//				logger.info("provided increment amount");
+//				log("provided increment amount");
 //
 //				pr.provideEffectiveFromDate(proData.salCompEffectiveFromDate);
-//				logger.info("provided effective from date");
+//				log("provided effective from date");
 
                 pr.clickViewApproveBack();
                 log("clicked on view approve and navigate back");
@@ -88,7 +89,7 @@ public class PromotionTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -105,9 +106,9 @@ public class PromotionTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // promotion pg
             PromotionPage lp = new PromotionPage();
@@ -115,14 +116,14 @@ public class PromotionTest extends BaseTest
             for (PayrollModel.PromotionModel loan : promotionData)
             {
                 lp.clickPromotion();
-                logger.info("clicked on promotion");
+                log("clicked on promotion");
 
                 BasePage.performAction(6, "001", "Amend");
                 Assert.assertFalse(BasePage.validateListing("001", 6, 6));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

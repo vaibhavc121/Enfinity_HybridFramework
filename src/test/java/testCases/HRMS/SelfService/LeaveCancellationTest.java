@@ -3,6 +3,7 @@ package testCases.HRMS.SelfService;
 import base.BasePage;
 import base.BaseTest;
 import factory.DriverFactory;
+import factory.LoggerFactory;
 import models.SelfService.SelfService.SelfServiceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -123,7 +124,7 @@ public class LeaveCancellationTest extends BaseTest
             log("Verified: There is no approved request on the listing page");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -235,7 +236,7 @@ public class LeaveCancellationTest extends BaseTest
 
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -53,7 +54,7 @@ public class LicensesTest extends BaseTest
             log("Verified: license is created successfully");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -81,7 +82,7 @@ public class LicensesTest extends BaseTest
             log("Verified: license is deleted successfully");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

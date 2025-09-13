@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,37 +20,37 @@ public class DDT_ResidencyInfo extends BaseTest
             // hr core
             HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
-            logger.info("clicked on hr core link");
+            log("clicked on hr core link");
             hc.clickSetupForm();
-            logger.info("clicked on setup form");
+            log("clicked on setup form");
 
             // setup page
             SetupPage sp = new SetupPage();
             sp.clickEmployee();
             Thread.sleep(2000);
-            logger.info("clicked on employee");
+            log("clicked on employee");
 
             // employee pg
             EmployeePage1 ep = new EmployeePage1();
             ep.filterEmp();
-            logger.info("emp name entered");
+            log("emp name entered");
             Thread.sleep(3000);
             ep.clkFilteredEmp();
-            logger.info("clicked on filtered employee");
+            log("clicked on filtered employee");
             ep.clkResidencyInfo();
-            logger.info("clicked on residency info tab");
+            log("clicked on residency info tab");
 
             ep.setSecName(sname);
-            logger.info("provided sec name");
+            log("provided sec name");
             ep.setThirdName(tname);
-            logger.info("provided third nm");
+            log("provided third nm");
             ep.setFourthName(fname);
-            logger.info("provided fourth nm");
+            log("provided fourth nm");
             ep.setLastName(lname);
-            logger.info("provided last nm");
+            log("provided last nm");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

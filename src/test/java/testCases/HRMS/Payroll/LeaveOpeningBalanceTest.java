@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,23 +31,23 @@ public class LeaveOpeningBalanceTest extends BaseTest
             // hr core pg
             HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
-            logger.info("clicked on HRCore link");
+            log("clicked on HRCore link");
             hc.clickEmployee();
-            logger.info("clicked on Employee");
+            log("clicked on Employee");
             BasePage.navigateToEmployee("001");
 
             EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
-            logger.info("clicked on TimeOff");
+            log("clicked on TimeOff");
             double LeaveBal = ep.getLeaveBal(2);
             double expLeaveBal = LeaveBal + 1;
 
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave opening bal pg
             LeaveOpeningBalancePage ob = new LeaveOpeningBalancePage();
@@ -93,7 +94,7 @@ public class LeaveOpeningBalanceTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -110,9 +111,9 @@ public class LeaveOpeningBalanceTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // Leave Opening Balance Page
             LeaveOpeningBalancePage ob = new LeaveOpeningBalancePage();
@@ -126,7 +127,7 @@ public class LeaveOpeningBalanceTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

@@ -1,6 +1,7 @@
 package testCases.HRMS.SelfService;
 
 import base.BasePage;
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -65,7 +66,7 @@ public class LoanRequestTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -88,7 +89,7 @@ public class LoanRequestTest extends BaseTest
             Assert.assertFalse(BasePage.validateListing("active", 7, 7));
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

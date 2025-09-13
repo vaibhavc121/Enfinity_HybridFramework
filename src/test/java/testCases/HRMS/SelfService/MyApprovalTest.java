@@ -2,6 +2,7 @@ package testCases.HRMS.SelfService;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.SelfService.ExceptionRequestPage;
@@ -90,7 +91,7 @@ public class MyApprovalTest extends BaseTest
 
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

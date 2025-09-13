@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 public class SelfServiceModel
 {
 
@@ -190,7 +192,7 @@ public class SelfServiceModel
         public boolean countPublicHolidaysAsPublicHolidays;
         public boolean grantPublicHolidaysDuringLeave;
         public boolean countRestDaysAsRestDays;
-        public String leaveApplicability;
+        public List<String> leaveApplicability;
         public String leaveApplicabilityFor;
         public boolean allowExceedLeaveBalance;
     }
@@ -229,5 +231,21 @@ public class SelfServiceModel
         public String gender;
         public String maritalStatus;
         public String religion;
+    }
+
+    public static class EntitlementModel1
+    {
+        public String leaveType;
+        public String maximumLeaveBalance;
+        public String eligibilityDaysAfterJoining;
+        public boolean includeUnpaidLeaveInProvisions;
+        public boolean countWeekendsAsLeaveDays;
+        public boolean countWeekendsAsUnpaidDays;
+        public boolean countPublicHolidaysAsPublicHolidays;
+        public boolean grantPublicHolidaysDuringLeave;
+        public boolean countRestDaysAsRestDays;
+        public List<String> leaveApplicability;
+        public String leaveApplicabilityFor;
+        public boolean allowExceedLeaveBalance;
     }
 }

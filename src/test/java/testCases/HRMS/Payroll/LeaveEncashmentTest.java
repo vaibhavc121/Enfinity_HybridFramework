@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -41,32 +42,32 @@ public class LeaveEncashmentTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             BasePage.navigateToModule("Payroll");
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // Leave Encashment pg
             LeaveEncashmentPage le = new LeaveEncashmentPage();
             for (LeaveEncashmentModel LeaveEncashment : leaveEncashData)
             {
                 le.clkLeaveEncashment();
-                logger.info("clicked on leave incashment");
+                log("clicked on leave incashment");
                 le.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 le.provideEffectiveDate(LeaveEncashment.effectiveDate);
-                logger.info("provided effective date");
+                log("provided effective date");
                 le.provideEmp(LeaveEncashment.employee);
-                logger.info("employee selected");
+                log("employee selected");
                 le.provideLeaveType(LeaveEncashment.leaveType);
-                logger.info("selected leave type");
+                log("selected leave type");
                 le.providePaidDays(LeaveEncashment.paidDays);
-                logger.info("provided paid days");
+                log("provided paid days");
                 le.selectPaymentType(LeaveEncashment.paymentType);
-                logger.info("provided payment type");
+                log("provided payment type");
                 le.clkViewBtn();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 le.clkApproveBtn();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 BasePage.navigateToModule("HR Core");
                 hc.clickEmployee();
@@ -77,7 +78,7 @@ public class LeaveEncashmentTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -94,9 +95,9 @@ public class LeaveEncashmentTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave adjustment pg
             LeaveEncashmentPage le = new LeaveEncashmentPage();
@@ -104,14 +105,14 @@ public class LeaveEncashmentTest extends BaseTest
             for (LeaveEncashmentModel LeaveEncashment : leaveEncashData)
             {
                 le.clkLeaveEncashment();
-                logger.info("clicked on leave adj");
+                log("clicked on leave adj");
 
                 BasePage.performAction(6, LeaveEncashment.employee, "Amend");
                 Assert.assertFalse(BasePage.validateListing(LeaveEncashment.employee, 6, 6));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

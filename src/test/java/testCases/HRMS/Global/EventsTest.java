@@ -3,6 +3,7 @@ package testCases.HRMS.Global;
 import base.BasePage;
 import base.BaseTest;
 import factory.DriverFactory;
+import factory.LoggerFactory;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -62,7 +63,7 @@ public class EventsTest extends BaseTest
             log("Verified: Got notification for Employee Master changes");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -87,7 +88,7 @@ public class EventsTest extends BaseTest
             log("Verified: Got notification when took action on transaction");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

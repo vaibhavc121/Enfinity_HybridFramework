@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,54 +21,54 @@ public class MySQL_EmployeeTest extends BaseTest
             // hr core
             HRCorePage hc = new HRCorePage();
             hc.clickHRCore();
-            logger.info("clicked on hr core link");
+            log("clicked on hr core link");
             hc.clickSetupForm();
-            logger.info("clicked on setup form");
+            log("clicked on setup form");
 
             // setup page
             SetupPage sp = new SetupPage();
             sp.clickEmployee();
             Thread.sleep(2000);
-            logger.info("clicked on employee");
+            log("clicked on employee");
 
             // employee pg
             MySQL_EmployeePage ep = new MySQL_EmployeePage();
             ep.clkBtnNew();
-            logger.info("clicked on new btn");
+            log("clicked on new btn");
             ep.setWorkEmail(email);
-            logger.info("email provided");
+            log("email provided");
             ep.setName(name);
-            logger.info("name provided");
+            log("name provided");
             ep.setMblNum(mobile);
-            logger.info("mbl no provided");
+            log("mbl no provided");
             ep.setDOJ(DOJ);
-            logger.info("DOJ provided");
+            log("DOJ provided");
             ep.clkDept();
-            logger.info("clicked on dept dd");
+            log("clicked on dept dd");
             ep.slctDept(dept);
-            logger.info("dept selected");
+            log("dept selected");
             ep.clkDesig();
-            logger.info("clicked on desg");
+            log("clicked on desg");
             ep.slctDesig(designation);
-            logger.info("desg selected");
+            log("desg selected");
             ep.setGrade(grade);
-            logger.info("grade selected");
+            log("grade selected");
             ep.setGender(gender);
-            logger.info("gender selected");
+            log("gender selected");
             ep.setReligion(religion);
-            logger.info("religion selected");
+            log("religion selected");
             ep.setMaritalStatus(maritalstatus);
-            logger.info("marital sts selected");
+            log("marital sts selected");
             ep.clkSave();
-            logger.info("clicked on save button");
+            log("clicked on save button");
 
             Assert.assertEquals(ep.isEmployeeCreated(name), true);
             Thread.sleep(4000);
             // Assert.assertTrue(true);
-            logger.info("test case passed");
+            log("test case passed");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

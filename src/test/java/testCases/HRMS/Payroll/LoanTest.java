@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import base.BasePage;
 
+import factory.LoggerFactory;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -29,9 +30,9 @@ public class LoanTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // loan pg
             LoanPage lp = new LoanPage();
@@ -39,28 +40,28 @@ public class LoanTest extends BaseTest
             for (PayrollModel.LoanModel loan : loanData)
             {
                 lp.clickLoan();
-                logger.info("clicked on loan");
+                log("clicked on loan");
 
                 lp.clickNew();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
 
                 lp.provideEmp(loan.employee);
-                logger.info("emp selected");
+                log("emp selected");
 
                 lp.provideEffectiveDate(loan.effectiveDate);
-                logger.info("provideEffectiveDate");
+                log("provideEffectiveDate");
 
                 lp.provideLoanType(loan.loanType);
-                logger.info("loan type selected");
+                log("loan type selected");
 
                 lp.provideRepaymentStartPeriod(loan.repaymentStartPeriod);
-                logger.info("provided loan repayment start period");
+                log("provided loan repayment start period");
 
                 lp.provideLoanAmt(loan.loanAmt);
-                logger.info("loan amt entered");
+                log("loan amt entered");
 
                 lp.provideAmountOfInstallments(loan.amountOfInstallments);
-                logger.info("entered amt of installment");
+                log("entered amt of installment");
 
                 lp.provideRemarks(loan.remarks);
                 log("provideRemarks");
@@ -71,7 +72,7 @@ public class LoanTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -88,9 +89,9 @@ public class LoanTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // Loan pg
             LoanPage lp = new LoanPage();
@@ -98,14 +99,14 @@ public class LoanTest extends BaseTest
             for (PayrollModel.LoanModel loan : loanData)
             {
                 lp.clickLoan();
-                logger.info("clicked on loan");
+                log("clicked on loan");
 
                 BasePage.performAction(6, loan.employee, "Amend");
                 Assert.assertFalse(BasePage.validateListing(loan.employee, 6, 6));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

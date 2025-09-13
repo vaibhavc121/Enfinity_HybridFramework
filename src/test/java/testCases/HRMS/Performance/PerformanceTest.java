@@ -3,6 +3,7 @@ package testCases.HRMS.Performance;
 import base.BasePage;
 import base.BaseTest;
 import factory.DriverFactory;
+import factory.LoggerFactory;
 import models.Performance.Performance.PerformanceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -153,7 +154,7 @@ public class PerformanceTest extends BaseTest
 
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -185,7 +186,7 @@ public class PerformanceTest extends BaseTest
             log("Verified: Appraisal Cycle deleted successfully: " + appraisalCycleName);
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -279,7 +280,7 @@ public class PerformanceTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -307,7 +308,7 @@ public class PerformanceTest extends BaseTest
             log("Verified: Appraisal Cycle deleted successfully: " + appraisalCycleName);
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

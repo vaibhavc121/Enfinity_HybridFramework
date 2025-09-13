@@ -1,5 +1,6 @@
 package testCases.HRMS.Payroll;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,42 +20,42 @@ public class CreateVariableSalaryTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // variable sal pg
             VariableSalaryPage vs = new VariableSalaryPage();
             vs.clkVariableSal();
-            logger.info("clicked on variable sal");
+            log("clicked on variable sal");
             vs.clkNewBtn();
-            logger.info("clicked on new btn");
+            log("clicked on new btn");
 //			vs.clkEmpDD();
-//			logger.info("clicked on emp dd");
+//			log("clicked on emp dd");
 //			vs.slctEmp();
-//			logger.info("employee selected");
+//			log("employee selected");
 //			vs.provideRemarks(remarks);
 //			vs.clkSave();
-//			logger.info("clicked on save button");
+//			log("clicked on save button");
 //			vs.clkNewline();
-//			logger.info("clicked on new line");
+//			log("clicked on new line");
 //			vs.clkSalaryCompDD();
-//			logger.info("clicked on sal component dd");
+//			log("clicked on sal component dd");
 //			vs.slctSalComp();
-//			logger.info("selected sal component");
+//			log("selected sal component");
 //			vs.clkAmt();
-//			logger.info("clicked on amt textbox");
+//			log("clicked on amt textbox");
 //			vs.provideAmt(amt);
-//			logger.info("amt provided");
+//			log("amt provided");
 //			vs.clkViewBtn();
-//			logger.info("clicked on view btn");
+//			log("clicked on view btn");
 //			vs.clkApproveBtn();
-//			logger.info("clicked on approved button");
+//			log("clicked on approved button");
 //			vs.clkVariableSalLabel();
-            logger.info("clicked on variable sal label");
+            log("clicked on variable sal label");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

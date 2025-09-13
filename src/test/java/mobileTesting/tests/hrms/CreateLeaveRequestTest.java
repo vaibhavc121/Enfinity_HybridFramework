@@ -1,5 +1,6 @@
 package mobileTesting.tests.hrms;
 
+import factory.LoggerFactory;
 import mobileTesting.base.BaseTest;
 import mobileTesting.pages.hrms.LeavePage;
 import mobileTesting.pages.hrms.LoanPage;
@@ -36,7 +37,7 @@ public class CreateLeaveRequestTest extends BaseTest
             Assert.assertTrue(true, "Leave request created successfully");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

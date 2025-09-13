@@ -1,6 +1,7 @@
 package testCases.HRMS.HRCore;
 
 import base.BasePage;
+import factory.LoggerFactory;
 import models.HRCore.HRCore.EmployeeModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -101,7 +102,7 @@ public class EmployeeTest extends BaseTest
 
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -154,7 +155,7 @@ public class EmployeeTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

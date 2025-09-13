@@ -1,5 +1,6 @@
 package mobileTesting.tests.hrms;
 
+import factory.LoggerFactory;
 import mobileTesting.base.BaseTest;
 import mobileTesting.pages.hrms.LoanPage;
 import org.testng.Assert;
@@ -40,7 +41,7 @@ public class CreateLoanRequestTest extends BaseTest
             Assert.assertTrue(false);
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import factory.LoggerFactory;
 import models.HRCore.HRCore.HRCoreModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -47,7 +48,7 @@ public class WorkLocationTest extends BaseTest
 
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -76,7 +77,7 @@ public class WorkLocationTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

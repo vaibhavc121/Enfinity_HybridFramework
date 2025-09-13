@@ -20,35 +20,35 @@
 //			// hr core
 //			HRCorePage hc = new HRCorePage();
 //			hc.clkHRCore();
-//			logger.info("clicked on hr core link");
+//			log("clicked on hr core link");
 //			hc.clkSetupForm();
-//			logger.info("clicked on setup form");
+//			log("clicked on setup form");
 //
 //			// setup page
 //			SetupPage sp = new SetupPage();
 //			sp.clkBudget();
 //			Thread.sleep(2000);
-//			logger.info("clicked on budget");
+//			log("clicked on budget");
 //
 //			// budget pg
 //			BudgetPage bp = new BudgetPage();
 //			bp.clkNewBtn();
-//			logger.info("clicked on new btn");
+//			log("clicked on new btn");
 //			bp.setName();
-//			logger.info("provided budget name");
+//			log("provided budget name");
 //			bp.setStartDt();
-//			logger.info("provided start dt");
+//			log("provided start dt");
 //			bp.setEndDt();
 //			Thread.sleep(2000);
-//			logger.info("provided end dt");
+//			log("provided end dt");
 //			bp.clkSaveBtn();
-//			logger.info("clicked on save btn");
+//			log("clicked on save btn");
 //
 //			Assert.assertTrue(CommonActions.IsTxnCreated());
-//			logger.info("test case passed");
+//			log("test case passed");
 //		} catch (Exception e)
 //		{
-//			logger.error("Test failed due to exception: ", e);
+//			LoggerFactory.getLogger().error("Test failed due to exception: ", e);
 //			Assert.fail("Test case failed: " + e);
 //		}
 //

@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import com.github.javafaker.Faker;
 import factory.DriverFactory;
+import factory.LoggerFactory;
 import org.apache.logging.log4j.LogManager; //log4j
 import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.Platform;
@@ -31,17 +32,17 @@ public class BaseTest
     //public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();  // Thread-safe WebDriver
     // public static SelfHealingDriver driver; // updated to SelfHealingDriver
     public Properties p;
-    public static Logger logger; // log4j
+    //public static Logger logger; // log4j
     public Faker faker = new Faker(); // for generating random data
 
     //    public static void log(String message)
 //    {
-//        logger.info(message);
+//        log(message);
 //    }
     public static void log(String message)
     {
         String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
-        logger.info(methodName + " - " + message);
+        LoggerFactory.getLogger().info(methodName + " - " + message);
     }
 
     // Getter for WebDriver
@@ -50,6 +51,7 @@ public class BaseTest
         //return driver.get();
         return DriverFactory.getDriver();
     }
+
     //endregion
 
     //region Setup
@@ -98,9 +100,9 @@ public class BaseTest
         //endregion
 
         //region Logger Setup
-        logger = LogManager.getLogger(this.getClass()); // log4j2
-        logger.info(">>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<");
-        logger.info("--test execution started--");
+        LoggerFactory.setLogger(this.getClass());
+        LoggerFactory.getLogger().info(">>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<");
+        LoggerFactory.getLogger().info("--test execution started--");
         //endregion
 
         //region If execution on selenium grid or Remote Env
@@ -223,8 +225,8 @@ public class BaseTest
                     localDriver = new ChromeDriver(options);
                     log("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
-                    // logger.info("Chrome browser opened with Healenium");
-                    // logger.info("browser opened");
+                    // log("Chrome browser opened with Healenium");
+                    // log("browser opened");
 
                     break;
 
@@ -232,15 +234,15 @@ public class BaseTest
                     localDriver = new EdgeDriver();
                     log("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
-                    // logger.info("Edge browser opened with Healenium");
-                    // logger.info("browser opened");
+                    // log("Edge browser opened with Healenium");
+                    // log("browser opened");
 
                 case "firefox":
                     localDriver = new FirefoxDriver();
                     log("browser opened");
                     // driver = SelfHealingDriver.create(_driver);
-                    // logger.info("Firefox browser opened with Healenium");
-                    // logger.info("browser opened");
+                    // log("Firefox browser opened with Healenium");
+                    // log("browser opened");
 
                     break;
 
@@ -254,14 +256,14 @@ public class BaseTest
         // region Browser Setup
 
         // driver = new ChromeDriver();
-        // logger.info("browser opened");
-        getDriver().manage().deleteAllCookies();
+        // log("browser opened");
+        DriverFactory.getDriver().manage().deleteAllCookies();
         log("cookies deleted");
-        getDriver().manage().window().maximize();
+        DriverFactory.getDriver().manage().window().maximize();
         log("browser maximized");
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        DriverFactory.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         log("implicit wait applied for 10 seconds");
-        getDriver().get(p.getProperty("appurl")); // Reading URL from properties file
+        DriverFactory.getDriver().get(p.getProperty("appurl")); // Reading URL from properties file
         log("provided app URL in browser");
 
         //endregion
@@ -293,6 +295,7 @@ public class BaseTest
         }
        */
         DriverFactory.cleanupDriver();
+        LoggerFactory.cleanupLogger();
     }
     //endregion
 }

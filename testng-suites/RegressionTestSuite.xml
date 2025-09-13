@@ -11,6 +11,7 @@
 
     <listeners>
         <listener class-name="utilities.ExtentReportsUtils"></listener>
+        <listener class-name="listeners.Listeners"></listener>
     </listeners>
 
 

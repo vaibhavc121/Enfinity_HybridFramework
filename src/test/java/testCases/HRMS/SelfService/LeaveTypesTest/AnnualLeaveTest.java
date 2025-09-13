@@ -1,7 +1,10 @@
 package testCases.HRMS.SelfService.LeaveTypesTest;
 
+import annotations.Owner;
+import annotations.Reset;
 import base.BasePage;
 import base.BaseTest;
+import factory.LoggerFactory;
 import models.SelfService.SelfService.SelfServiceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -60,7 +63,7 @@ public class AnnualLeaveTest extends BaseTest
                         lrp.deleteLeaveRequest();
                     } catch (Exception e)
                     {
-                        logger.error("Test failed due to exception: ", e);
+                        LoggerFactory.getLogger().error("Test failed due to exception: ", e);
                         Assert.fail("Test case failed: " + e);
                     }
                 } else if (data.eligibilityDaysAfterJoining.days >= 30)
@@ -90,15 +93,29 @@ public class AnnualLeaveTest extends BaseTest
                         log("Veified: Leave request is not created as expected: " + data.eligibilityDaysAfterJoining.leaveType);
                     } catch (Exception e)
                     {
-                        logger.error("Test failed due to exception: ", e);
+                        LoggerFactory.getLogger().error("Test failed due to exception: ", e);
                         Assert.fail("Test case failed: " + e);
                     }
                 }
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Owner("Vaibhav")
+    @Reset()
+    public void resetSettings()
+    {
+        String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+        List<SelfServiceModel.EntitlementModel1> annualLeaveData = JsonUtils.convertJsonListDataModel(selfServiceFile, "resetAnnualLeave.entitlement", SelfServiceModel.EntitlementModel1.class);
+
+        ConfigureLeaveTypeSetting clt = new ConfigureLeaveTypeSetting();
+        for (SelfServiceModel.EntitlementModel1 data : annualLeaveData)
+        {
+            clt.resetSettings(data.leaveType, data);
         }
     }
 }

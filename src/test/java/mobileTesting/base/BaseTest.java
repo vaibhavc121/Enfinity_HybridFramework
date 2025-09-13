@@ -22,7 +22,7 @@ public class BaseTest
     public static void log(String message)
     {
         String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
-        logger.info(methodName + " - " + message);
+        log(methodName + " - " + message);
     }
     //endregion
 
@@ -56,8 +56,8 @@ public class BaseTest
 
         //region Logger Setup
         logger = LogManager.getLogger(this.getClass()); // log4j2
-        logger.info(">>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<");
-        logger.info("--test execution started--");
+        log(">>======>>======>> Automation Engineer (SDET)- Vaibhav Chavan <<======<<======<<");
+        log("--test execution started--");
         //endregion
 
         //region Login
@@ -81,11 +81,6 @@ public class BaseTest
 
         Thread.sleep(5000);
         //endregion
-
-
-
-
-
 
     }
     //endregion

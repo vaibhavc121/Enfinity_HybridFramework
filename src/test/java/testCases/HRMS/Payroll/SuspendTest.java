@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.LoggerFactory;
 import models.Payroll.Payroll.PayrollModel;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -63,7 +64,7 @@ public class SuspendTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -130,7 +131,7 @@ public class SuspendTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

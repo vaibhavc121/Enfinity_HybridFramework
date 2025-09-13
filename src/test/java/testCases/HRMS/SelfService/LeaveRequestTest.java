@@ -1,10 +1,10 @@
 package testCases.HRMS.SelfService;
 
 import base.BasePage;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel.LeaveRequestModel;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import pageObjects.HRMS.SelfService.LeaveRequestPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.DateUtils;
@@ -49,7 +49,7 @@ public class LeaveRequestTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            factory.LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -77,7 +77,7 @@ public class LeaveRequestTest extends BaseTest
             log("Verified: There is no active Leave on the listing page");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            factory.LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

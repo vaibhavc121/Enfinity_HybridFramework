@@ -1,5 +1,6 @@
 package testCases.HRMS.Login;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -27,10 +28,10 @@ public class LoginTest extends BaseTest
             boolean act = hp.isCompanyNameDisplay();
             Assert.assertEquals(act, true, "login failed");
             // Assert.assertTrue(act);
-            logger.info("test case passed");
+            log("test case passed");
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

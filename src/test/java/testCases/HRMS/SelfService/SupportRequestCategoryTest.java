@@ -1,6 +1,7 @@
 package testCases.HRMS.SelfService;
 
 import base.BasePage;
+import factory.LoggerFactory;
 import models.SelfService.SelfService.SelfServiceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -30,38 +31,38 @@ public class SupportRequestCategoryTest extends BaseTest
             for (SupportRequestCategoryModel src : supportRequestCategoryData)
             {
                 BasePage.globalSearch("support request category");
-                logger.info("searched and opened support request category");
+                log("searched and opened support request category");
 
                 sr.clickNew();
-                logger.info("clicked on new button");
+                log("clicked on new button");
 
                 sr.provideCategoryname(src.categoryName);
-                logger.info("provided category name: " + src.categoryName);
+                log("provided category name: " + src.categoryName);
 
                 sr.selectRequestedTo(src.requestedTo);
-                logger.info("selected requested to: " + src.requestedTo);
+                log("selected requested to: " + src.requestedTo);
 
                 sr.selectPriority(src.priority);
-                logger.info("selected priority: " + src.priority);
+                log("selected priority: " + src.priority);
 
                 sr.selectWorkflow(src.workflow);
-                logger.info("selected workflow: " + src.workflow);
+                log("selected workflow: " + src.workflow);
 
                 sr.requireAttachment(src.attachment);
-                logger.info("set require attachment: " + src.attachment);
+                log("set require attachment: " + src.attachment);
 
                 sr.provideDesc(src.desc);
-                logger.info("provided description: " + src.desc);
+                log("provided description: " + src.desc);
 
                 sr.clickSaveBack();
-                logger.info("clicked on save and navigate back");
+                log("clicked on save and navigate back");
 
                 Assert.assertTrue(sr.isTransactionCreated(null, src.categoryName, null));
-                logger.info("Support Request Category created successfully: " + src.categoryName);
+                log("Support Request Category created successfully: " + src.categoryName);
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("VRC- Test case failed: " + e);
         }
     }
@@ -90,7 +91,7 @@ public class SupportRequestCategoryTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("VRC- Test case failed: " + e);
         }
     }

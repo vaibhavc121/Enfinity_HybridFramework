@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import base.BasePage;
 import base.BaseTest;
+import factory.LoggerFactory;
 import models.Payroll.Payroll.PayrollModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -31,9 +32,9 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -41,30 +42,30 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 lp.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 lp.provideEmp(leave.employee);
-                logger.info("emp selected");
+                log("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
-//				logger.info("provided effective date");
+//				log("provided effective date");
                 lp.provideLeaveType(leave.leaveTypeUnpaid); //Unpaid Leave
-                logger.info("leave type selected");
+                log("leave type selected");
                 lp.provideFromDt(leave.fromDate);
-                logger.info("provided from date");
+                log("provided from date");
                 lp.provideUpToDt(leave.uptoDate);
-                logger.info("provided upto date");
+                log("provided upto date");
                 lp.providePaymentType(leave.paymentType);
                 lp.clkView();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 lp.clkApproveBack();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeUnpaid, 7, 7));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -81,9 +82,9 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -91,13 +92,13 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 BasePage.performAction(5, leave.employee, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee, 5, 5));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -128,11 +129,11 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
-            logger.info("clicked on menu icon");
+            log("clicked on menu icon");
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -140,24 +141,24 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 lp.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 lp.provideEmp(leave.employee1);
-                logger.info("emp selected");
+                log("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
-//				logger.info("provided effective date");
+//				log("provided effective date");
                 lp.provideLeaveType(leave.leaveTypeCondolence); //Unpaid Leave
-                logger.info("leave type selected");
+                log("leave type selected");
                 lp.provideFromDt(leave.fromDate);
-                logger.info("provided from date");
+                log("provided from date");
                 lp.provideUpToDt(leave.uptoDate);
-                logger.info("provided upto date");
+                log("provided upto date");
                 lp.providePaymentType(leave.paymentType);
                 lp.clkView();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 lp.clkApproveBack();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 hc.clickHRCore();
                 hc.clickEmployee();
@@ -170,7 +171,7 @@ public class LeaveTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -187,9 +188,9 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -197,13 +198,13 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -233,11 +234,11 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
-            logger.info("clicked on menu icon");
+            log("clicked on menu icon");
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -245,24 +246,24 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 lp.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 lp.provideEmp(leave.employee1);
-                logger.info("emp selected");
+                log("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
-//				logger.info("provided effective date");
+//				log("provided effective date");
                 lp.provideLeaveType(leave.leaveTypeHaj);
-                logger.info("leave type selected");
+                log("leave type selected");
                 lp.provideFromDt(leave.fromDate);
-                logger.info("provided from date");
+                log("provided from date");
                 lp.provideUpToDt(leave.uptoDate);
-                logger.info("provided upto date");
+                log("provided upto date");
                 lp.providePaymentType(leave.paymentType);
                 lp.clkView();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 lp.clkApproveBack();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 hc.clickHRCore();
                 hc.clickEmployee();
@@ -275,7 +276,7 @@ public class LeaveTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -292,9 +293,9 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -302,13 +303,13 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -338,11 +339,11 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
-            logger.info("clicked on menu icon");
+            log("clicked on menu icon");
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -350,24 +351,24 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 lp.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 lp.provideEmp(leave.employee1);
-                logger.info("emp selected");
+                log("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
-//				logger.info("provided effective date");
+//				log("provided effective date");
                 lp.provideLeaveType(leave.leaveTypeMaternity);
-                logger.info("leave type selected");
+                log("leave type selected");
                 lp.provideFromDt(leave.fromDate);
-                logger.info("provided from date");
+                log("provided from date");
                 lp.provideUpToDt(leave.uptoDate);
-                logger.info("provided upto date");
+                log("provided upto date");
                 lp.providePaymentType(leave.paymentType);
                 lp.clkView();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 lp.clkApproveBack();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 hc.clickHRCore();
                 hc.clickEmployee();
@@ -380,7 +381,7 @@ public class LeaveTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -397,9 +398,9 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -407,13 +408,13 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -443,11 +444,11 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
-            logger.info("clicked on menu icon");
+            log("clicked on menu icon");
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -455,24 +456,24 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 lp.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 lp.provideEmp(leave.employee1);
-                logger.info("emp selected");
+                log("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
-//				logger.info("provided effective date");
+//				log("provided effective date");
                 lp.provideLeaveType(leave.leaveTypeSick);
-                logger.info("leave type selected");
+                log("leave type selected");
                 lp.provideFromDt(leave.fromDate);
-                logger.info("provided from date");
+                log("provided from date");
                 lp.provideUpToDt(leave.uptoDate);
-                logger.info("provided upto date");
+                log("provided upto date");
                 lp.providePaymentType(leave.paymentType);
                 lp.clkView();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 lp.clkApproveBack();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 hc.clickHRCore();
                 hc.clickEmployee();
@@ -485,7 +486,7 @@ public class LeaveTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -502,9 +503,9 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -512,13 +513,13 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -551,11 +552,11 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             BasePage.clickMenuIcon();
-            logger.info("clicked on menu icon");
+            log("clicked on menu icon");
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -563,24 +564,24 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 lp.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 lp.provideEmp(leave.employee1);
-                logger.info("emp selected");
+                log("emp selected");
 //				lp.provideEffectiveDt(leave.effectiveDate);
-//				logger.info("provided effective date");
+//				log("provided effective date");
                 lp.provideLeaveType(leave.leaveTypeAnnual);
-                logger.info("leave type selected");
+                log("leave type selected");
                 lp.provideFromDate();
-                logger.info("provided from date");
+                log("provided from date");
                 lp.provideUpToDate();
-                logger.info("provided upto date");
+                log("provided upto date");
                 lp.providePaymentType(leave.paymentType);
                 lp.clkView();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 lp.clkApproveBack();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 hc.clickHRCore();
                 hc.clickEmployee();
@@ -594,7 +595,7 @@ public class LeaveTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -611,9 +612,9 @@ public class LeaveTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave pg
             LeavePage lp = new LeavePage();
@@ -621,13 +622,13 @@ public class LeaveTest extends BaseTest
             for (PayrollModel.LeaveModel leave : leaveData)
             {
                 lp.clkLeave();
-                logger.info("clicked on leave");
+                log("clicked on leave");
                 BasePage.performAction(5, leave.employee1, "Amend");
                 Assert.assertFalse(BasePage.validateListing(leave.employee1, 5, 5));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

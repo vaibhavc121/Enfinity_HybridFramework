@@ -2,6 +2,7 @@ package testCases.HRMS.Payroll;
 
 import java.util.List;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -44,9 +45,9 @@ public class LeaveAdjustmentTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave adjustment pg
             LeaveAdjustmentPage la = new LeaveAdjustmentPage();
@@ -54,34 +55,34 @@ public class LeaveAdjustmentTest extends BaseTest
             for (LeaveAdjustmentModel LeaveAdjustment : leaveAdjData)
             {
                 la.clkLeaveAdj();
-                logger.info("clicked on leave adj");
+                log("clicked on leave adj");
 
                 la.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
 
                 la.provideEmp(LeaveAdjustment.employee);
-                logger.info("employee selected");
+                log("employee selected");
 
                 la.provideEffectiveDate(LeaveAdjustment.effectiveDate);
-                logger.info("provied effective date");
+                log("provied effective date");
 
                 la.provideLeaveType(LeaveAdjustment.leaveType);
-                logger.info("leave type selected");
+                log("leave type selected");
 
                 la.providePaidDaysValue(LeaveAdjustment.paidDays);
-                logger.info("provided paid days value");
+                log("provided paid days value");
 
 //				la.provideUnpaidDaysValue();
-//				logger.info("provided unpaid days value");
+//				log("provided unpaid days value");
 
                 la.provideRemarks(LeaveAdjustment.remarks);
-                logger.info("provided remarks");
+                log("provided remarks");
 
                 la.clkViewBtn();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
 
                 la.clkApproveBtn();
-                logger.info("clicked on approve btn");
+                log("clicked on approve btn");
 
                 hc.clickHRCore();
                 hc.clickEmployee();
@@ -92,7 +93,7 @@ public class LeaveAdjustmentTest extends BaseTest
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -109,9 +110,9 @@ public class LeaveAdjustmentTest extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // leave adjustment pg
             LeaveAdjustmentPage la = new LeaveAdjustmentPage();
@@ -119,14 +120,14 @@ public class LeaveAdjustmentTest extends BaseTest
             for (LeaveAdjustmentModel LeaveAdjustment : leaveAdjData)
             {
                 la.clkLeaveAdj();
-                logger.info("clicked on leave adj");
+                log("clicked on leave adj");
 
                 BasePage.performAction(6, LeaveAdjustment.employee, "Amend");
                 Assert.assertFalse(BasePage.validateListing(LeaveAdjustment.employee, 6, 6));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }

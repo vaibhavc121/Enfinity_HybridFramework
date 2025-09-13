@@ -46,7 +46,7 @@
 //			}
 //		} catch (Exception e)
 //		{
-//			logger.error("Test failed due to exception: ", e);
+//			LoggerFactory.getLogger().error("Test failed due to exception: ", e);
 //			Assert.fail("Test case failed: " + e);
 //		}
 //	}

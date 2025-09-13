@@ -4,6 +4,7 @@ import java.util.List;
 
 import base.BasePage;
 
+import factory.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -31,9 +32,9 @@ public class VariableSalaryTest_Lambok extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // variable sal pg
             VariableSalaryPage vs = new VariableSalaryPage();
@@ -41,31 +42,31 @@ public class VariableSalaryTest_Lambok extends BaseTest
             for (VariableSalModel varSal : leaveRequestData)
             {
                 vs.clkVariableSal();
-                logger.info("clicked on variable sal");
+                log("clicked on variable sal");
                 vs.clkNewBtn();
-                logger.info("clicked on new btn");
+                log("clicked on new btn");
                 vs.provideEmp(varSal.employee);
-                logger.info("employee selected");
+                log("employee selected");
                 vs.provideEffectiveDate(varSal.effectiveDate);
                 //vs.provideRemarks(varSal.remarks);
                 vs.clkSave();
-                logger.info("clicked on save button");
+                log("clicked on save button");
                 vs.clkNewline();
-                logger.info("clicked on new line");
+                log("clicked on new line");
                 vs.provideSalaryComp(varSal.salComponent);
-                logger.info("selected sal component");
+                log("selected sal component");
                 vs.provideAmt(varSal.amt);
-                logger.info("amt provided");
+                log("amt provided");
                 vs.clkViewBtn();
-                logger.info("clicked on view btn");
+                log("clicked on view btn");
                 vs.clkApproveBack();
-                logger.info("clicked on approved button");
+                log("clicked on approved button");
 
                 Assert.assertTrue(BasePage.validateListing2Fields(varSal.employee, 6, 6, varSal.amt, 7, 7));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
@@ -82,9 +83,9 @@ public class VariableSalaryTest_Lambok extends BaseTest
             // payroll pg
             PayrollPage pp = new PayrollPage();
             pp.clkPayroll();
-            logger.info("clicked on payroll link");
+            log("clicked on payroll link");
             pp.clkTxn();
-            logger.info("clicked on txn");
+            log("clicked on txn");
 
             // variable sal pg
             VariableSalaryPage vs = new VariableSalaryPage();
@@ -92,14 +93,14 @@ public class VariableSalaryTest_Lambok extends BaseTest
             for (VariableSalModel varSal : leaveRequestData)
             {
                 vs.clkVariableSal();
-                logger.info("clicked on variable sal");
+                log("clicked on variable sal");
 
                 BasePage.performAction(6, varSal.employee, "Amend");
                 Assert.assertFalse(BasePage.validateListing(varSal.employee, 6, 6));
             }
         } catch (Exception e)
         {
-            logger.error("Test failed due to exception: ", e);
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
             Assert.fail("Test case failed: " + e);
         }
     }
