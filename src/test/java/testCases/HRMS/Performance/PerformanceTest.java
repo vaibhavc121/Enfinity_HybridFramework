@@ -20,6 +20,128 @@ public class PerformanceTest extends BaseTest
     String feedbackCycleName = "FC_" + DateUtils.getCurrentDateTime("dd-MMM-yyyy_HH:mm:ss");
 
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    public void create360FeedbackCycle()
+    {
+        try
+        {
+            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
+            List<PerformanceModel.FeedbackCycleModel> feedbackCycleData = JsonUtils.convertJsonListDataModel(performanceFile, "feedbackCycle", PerformanceModel.FeedbackCycleModel.class);
+//            String itSupportFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
+//            List<ITSupportModel> itSupportData = JsonUtils.convertJsonListDataModel(itSupportFile, "createITSupport", ITSupportModel.class);
+
+            //performance page
+            PerformancePage pp = new PerformancePage();
+            pp.clickPerformance();
+            log("Clicked on Performance module");
+            pp.clickFeedbackCycle();
+            log("Clicked on 360 Feedback Cycle");
+
+            FeedbackCyclePage fc = new FeedbackCyclePage();
+            for (PerformanceModel.FeedbackCycleModel data : feedbackCycleData)
+            {
+                BasePage.clickOnNew();
+                log("Clicked on New button to create new 360 Feedback cycle");
+                fc.provideName(feedbackCycleName);
+                log("Entered feedback cycle name: " + feedbackCycleName);
+                fc.provideDesc(data.description);
+                log("Provided description: " + data.description);
+                fc.provideProcessFromDate(data.processFromDate);
+                log("Provided process from date: " + data.processFromDate);
+                fc.provideProcessToDate(data.processToDate);
+                log("Provided process to date: " + data.processToDate);
+                fc.selectWorkflow(data.workflow);
+                log("Selected workflow: " + data.workflow);
+                fc.provideMinimumRater(data.minimumRater);
+                log("Provided minimum rater: " + data.minimumRater);
+                fc.provideMaximumRater(data.maximumRater);
+                log("Provided maximum rater: " + data.maximumRater);
+                if (data.allowRatingCheckbox)
+                {
+                    fc.checkAllowRating();
+                    log("Checked allow rating checkbox");
+                    fc.selectOverallRating(data.overallRating);
+                    log("Selected overall rating: " + data.overallRating);
+                }
+                if (data.manualOverallRatingCheckbox)
+                {
+                    fc.checkManualOverallRating();
+                    log("Checked manual overall rating checkbox");
+                }
+                fc.scrollDownTOJoiningDateUntil();
+                log("Scrolled down to Joining Date Until field");
+                fc.provideJoiningDateUntil(DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                log("Provided joining date until: " + DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                fc.selectEmployee(data.employee);
+                log("Selected employee: " + data.employee);
+
+                //region Questions
+                fc.clickNext();
+                log("Clicked on Next to navigate to Questions tab");
+
+                for (PerformanceModel.FeedbackCycleModel.Question q : data.questions)
+                {
+                    fc.clickAddQuestion();
+                    log("Clicked on Add Question button to add question");
+
+                    fc.provideQuestion(q.question);
+                    log("Provided question: " + q.question);
+
+                    fc.provideCategory(q.category);
+                    log("Provided category: " + q.category);
+
+                    fc.selectRatingType(q.ratingType);
+                    log("Selected rating type: " + q.ratingType);
+
+                    if (q.mandatoryCheckbox)
+                    {
+                        fc.checkMandatory();
+                        log("Checked mandatory checkbox");
+                    }
+
+                    fc.clickAdd();
+                    log("Clicked Add to save question");
+                }
+                //endregion
+
+                BasePage.clickOnSave();
+                log("Clicked on Save button to save feedback cycle");
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    public void delete360FeedbackCycle()
+    {
+        try
+        {
+            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
+            List<PerformanceModel.FeedbackCycleModel> feedbackCycleData = JsonUtils.convertJsonListDataModel(performanceFile, "feedbackCycle", PerformanceModel.FeedbackCycleModel.class);
+
+            //performance page
+            PerformancePage pp = new PerformancePage();
+            pp.clickPerformance();
+            log("Clicked on Performance module");
+            pp.clickFeedbackCycle();
+            log("Clicked on 360 Feedback Cycle");
+
+            AppraisalCyclePage ac = new AppraisalCyclePage();
+            ac.deleteAppraisalCycle(feedbackCycleName, 2, 1);
+            // ac.deleteAppraisalCycle("AC_08-Sept-2025_18:06:29", 2, 1);
+
+            Assert.assertFalse(BasePage.validateListing(feedbackCycleName, 2, 1), "Appraisal Cycle deletion failed: " + appraisalCycleName);
+            log("Verified: Appraisal Cycle deleted successfully: " + appraisalCycleName);
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 3)
     public void createAppraisalCycle()
     {
         try
@@ -159,7 +281,7 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 4)
     public void deleteAppraisalCycle()
     {
         try
@@ -191,121 +313,19 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 3)
-    public void create360FeedbackCycle()
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    public void reviewAppraisal()
     {
         try
         {
-            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
-            List<PerformanceModel.FeedbackCycleModel> feedbackCycleData = JsonUtils.convertJsonListDataModel(performanceFile, "feedbackCycle", PerformanceModel.FeedbackCycleModel.class);
-//            String itSupportFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
-//            List<ITSupportModel> itSupportData = JsonUtils.convertJsonListDataModel(itSupportFile, "createITSupport", ITSupportModel.class);
-
-            //performance page
-            PerformancePage pp = new PerformancePage();
-            pp.clickPerformance();
-            log("Clicked on Performance module");
-            pp.clickFeedbackCycle();
-            log("Clicked on 360 Feedback Cycle");
-
-            FeedbackCyclePage fc = new FeedbackCyclePage();
-            for (PerformanceModel.FeedbackCycleModel data : feedbackCycleData)
-            {
-                BasePage.clickOnNew();
-                log("Clicked on New button to create new 360 Feedback cycle");
-                fc.provideName(feedbackCycleName);
-                log("Entered feedback cycle name: " + feedbackCycleName);
-                fc.provideDesc(data.description);
-                log("Provided description: " + data.description);
-                fc.provideProcessFromDate(data.processFromDate);
-                log("Provided process from date: " + data.processFromDate);
-                fc.provideProcessToDate(data.processToDate);
-                log("Provided process to date: " + data.processToDate);
-                fc.selectWorkflow(data.workflow);
-                log("Selected workflow: " + data.workflow);
-                fc.provideMinimumRater(data.minimumRater);
-                log("Provided minimum rater: " + data.minimumRater);
-                fc.provideMaximumRater(data.maximumRater);
-                log("Provided maximum rater: " + data.maximumRater);
-                if (data.allowRatingCheckbox)
-                {
-                    fc.checkAllowRating();
-                    log("Checked allow rating checkbox");
-                    fc.selectOverallRating(data.overallRating);
-                    log("Selected overall rating: " + data.overallRating);
-                }
-                if (data.manualOverallRatingCheckbox)
-                {
-                    fc.checkManualOverallRating();
-                    log("Checked manual overall rating checkbox");
-                }
-                fc.scrollDownTOJoiningDateUntil();
-                log("Scrolled down to Joining Date Until field");
-                fc.provideJoiningDateUntil(DateUtils.getCurrentDate("dd-MMM-yyyy"));
-                log("Provided joining date until: " + DateUtils.getCurrentDate("dd-MMM-yyyy"));
-                fc.selectEmployee(data.employee);
-                log("Selected employee: " + data.employee);
-
-                //region Questions
-                fc.clickNext();
-                log("Clicked on Next to navigate to Questions tab");
-
-                for (PerformanceModel.FeedbackCycleModel.Question q : data.questions)
-                {
-                    fc.clickAddQuestion();
-                    log("Clicked on Add Question button to add question");
-
-                    fc.provideQuestion(q.question);
-                    log("Provided question: " + q.question);
-
-                    fc.provideCategory(q.category);
-                    log("Provided category: " + q.category);
-
-                    fc.selectRatingType(q.ratingType);
-                    log("Selected rating type: " + q.ratingType);
-
-                    if (q.mandatoryCheckbox)
-                    {
-                        fc.checkMandatory();
-                        log("Checked mandatory checkbox");
-                    }
-
-                    fc.clickAdd();
-                    log("Clicked Add to save question");
-                }
-                //endregion
-
-                BasePage.clickOnSave();
-                log("Clicked on Save button to save feedback cycle");
-            }
-        } catch (Exception e)
-        {
-            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
-            Assert.fail("Test case failed: " + e);
-        }
-    }
-
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 4, invocationCount = 22)
-    public void delete360FeedbackCycle()
-    {
-        try
-        {
-            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
-            List<PerformanceModel.FeedbackCycleModel> feedbackCycleData = JsonUtils.convertJsonListDataModel(performanceFile, "feedbackCycle", PerformanceModel.FeedbackCycleModel.class);
-
-            //performance page
-            PerformancePage pp = new PerformancePage();
-            pp.clickPerformance();
-            log("Clicked on Performance module");
-            pp.clickFeedbackCycle();
-            log("Clicked on 360 Feedback Cycle");
-
+            BasePage.filterAndOpenTransaction(2, 1, appraisalCycleName, "Edit");
             AppraisalCyclePage ac = new AppraisalCyclePage();
-            ac.deleteAppraisalCycle(feedbackCycleName, 2, 1);
-            // ac.deleteAppraisalCycle("AC_08-Sept-2025_18:06:29", 2, 1);
+            ac.clickInitiate();
+            log("Clicked on Initiate button");
 
-            Assert.assertFalse(BasePage.validateListing(feedbackCycleName, 2, 1), "Appraisal Cycle deletion failed: " + appraisalCycleName);
-            log("Verified: Appraisal Cycle deleted successfully: " + appraisalCycleName);
+            BasePage.waitTS(2);
+            BasePage.pressEnter();
+            log("Pressed Enter key");
         } catch (Exception e)
         {
             LoggerFactory.getLogger().error("Test failed due to exception: ", e);

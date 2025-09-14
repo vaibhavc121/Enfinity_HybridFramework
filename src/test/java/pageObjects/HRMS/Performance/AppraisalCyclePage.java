@@ -86,6 +86,9 @@ public class AppraisalCyclePage extends BasePage
     @FindBy(xpath = "//span[@title='Delete']")
     private WebElement delete;
 
+    @FindBy(xpath = "//span[normalize-space()='Initiate']")
+    private WebElement initiate;
+
     //endregion
 
     //region Action Methods
@@ -258,6 +261,11 @@ public class AppraisalCyclePage extends BasePage
         {
             throw new RuntimeException("VRC- No matching record found");
         }
+    }
+
+    public void clickInitiate()
+    {
+        clickOnElement1(initiate);
     }
     //endregion
 }
