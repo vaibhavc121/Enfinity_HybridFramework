@@ -22,7 +22,7 @@
             <!-- HR Core -->
             <class name="testCases.HRMS.HRCore.BankTest"/>
             <class name="testCases.HRMS.HRCore.CalendarTest"/>
-            <!--            <class name="testCases.HRMS.HRCore.DepartmentTest"/>-->
+            <class name="testCases.HRMS.HRCore.DepartmentTest"/>
             <!--            <class name="testCases.HRMS.HRCore.DesignationTest"/>-->
             <!--            <class name="testCases.HRMS.HRCore.DocumentTypeTest"/>-->
             <!--            <class name="testCases.HRMS.HRCore.EmployeeTest"/>-->
@@ -60,7 +60,7 @@
             <class name="testCases.HRMS.SelfService.SupportRequestTest"/>
             <class name="testCases.HRMS.SelfService.LoanRequestTest"/>
 
-            <!--            <class name="testCases.HRMS.SelfService.LeaveRequestTest"/>-->
+            <class name="testCases.HRMS.SelfService.LeaveRequestTest"/>
             <!--            <class name="testCases.HRMS.SelfService.HRAssetTest"/>-->
 
             <!--            <class name="testCases.HRMS.SelfService.OvertimeApplicationTest"/>-->
