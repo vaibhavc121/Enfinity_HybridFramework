@@ -42,7 +42,7 @@
                             <!--<suiteXmlFile>testng-suites/IntegrationTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/Jenkins.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/MySQLTestSuite.xml</suiteXmlFile>-->
-                            <suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>
+                            <!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/PerformanceTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/SanityTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/SecurityTestSuite.xml</suiteXmlFile>-->
@@ -53,7 +53,7 @@
                             <!--<suiteXmlFile>testng-suites/MasterTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/RegressionTestSuite.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>testng-suites/NewTestCasesSuite.xml</suiteXmlFile>-->
-                            <!--<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
+                            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 
                         </suiteXmlFiles>
                         <!--<argLine>-Djava.awt.headless=true</argLine>  Headless mode for Surefire -->
