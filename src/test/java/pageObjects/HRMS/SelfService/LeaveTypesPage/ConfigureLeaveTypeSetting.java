@@ -1,10 +1,14 @@
 package pageObjects.HRMS.SelfService.LeaveTypesPage;
 
 import base.BasePage;
+import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class ConfigureLeaveTypeSetting extends BasePage
 {
@@ -55,7 +59,7 @@ public class ConfigureLeaveTypeSetting extends BasePage
         setToggle("ExcludeRestDays", entitlement.countRestDaysAsRestDays);
     }
 
-    public void setToggle(String fieldId, boolean value)
+    public void setToggle1(String fieldId, boolean value)
     {
         WebElement toggle = waitForElement1(By.xpath("//div[@id='" + fieldId + "']//div[contains(@class,'dx-switch')]"));
         boolean isOn = toggle.getAttribute("class").contains("dx-switch-on");
@@ -66,6 +70,26 @@ public class ConfigureLeaveTypeSetting extends BasePage
         } else if (!value && isOn)
         {
             toggle.click(); // Turn OFF
+        }
+    }
+    public void setToggle(String fieldId, boolean value)
+    {
+        By toggleLocator = By.xpath("//div[@id='" + fieldId + "']");
+        WebElement toggle = waitForElement1(toggleLocator);
+
+        boolean isOn = toggle.getAttribute("class").contains("dx-switch-on");
+
+        if ((value && !isOn) || (!value && isOn))
+        {
+            toggle.click(); // Click parent div
+
+            // Wait until state updates
+            WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(3));
+            wait.until(d ->
+            {
+                String updatedClass = BaseTest.getDriver().findElement(toggleLocator).getAttribute("class");
+                return value ? updatedClass.contains("dx-switch-on") : updatedClass.contains("dx-switch-off");
+            });
         }
     }
 

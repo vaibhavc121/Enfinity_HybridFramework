@@ -291,7 +291,7 @@
         "includeUnpaidLeaveInProvisions": false,
         "countWeekendsAsLeaveDays": false,
         "countWeekendsAsUnpaidDays": false,
-        "countPublicHolidaysAsPublicHolidays": true,
+        "countPublicHolidaysAsPublicHolidays": false,
         "grantPublicHolidaysDuringLeave": false,
         "countRestDaysAsRestDays": false,
         "leaveApplicability": [
