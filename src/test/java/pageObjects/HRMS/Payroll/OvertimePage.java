@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import base.BasePage;
 import base.BaseTest;
 import utilities.CommonActions;
+import utilities.JavaScriptUtils;
 
 public class OvertimePage extends BasePage
 {
@@ -54,12 +55,14 @@ public class OvertimePage extends BasePage
     public void provideEffectiveDate(String value)
     {
         clearAndProvide1(effectiveDate, value);
+        clickOnElement1(effectiveDate);
     }
 
     public void provideOvertimeDate(String value)
     {
         waitTS(2);
-        clearAndProvide1(overtimeDate, value);
+        //clearAndProvide1(overtimeDate, value);
+        JavaScriptUtils.provideValueJS(overtimeDate, value);
     }
 
     public void provideOvertimeType(String value)
