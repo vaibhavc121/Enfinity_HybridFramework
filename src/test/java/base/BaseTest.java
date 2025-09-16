@@ -24,6 +24,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import org.testng.asserts.SoftAssert;
 import pageObjects.HRMS.Login.LoginPage;
 
 public class BaseTest
@@ -34,6 +35,7 @@ public class BaseTest
     public Properties p;
     //public static Logger logger; // log4j
     public Faker faker = new Faker(); // for generating random data
+    public SoftAssert softAssert;
 
     //    public static void log(String message)
 //    {
@@ -82,6 +84,10 @@ public class BaseTest
     {
         //region CloseBrowserWhenClickStopDebugging
         Runtime.getRuntime().addShutdownHook(new Thread(DriverFactory::quitAllDrivers));
+        //endregion\
+
+        //region SoftAssert Initialization
+        softAssert = new SoftAssert();
         //endregion
 
         //region Selenide Setup
@@ -296,6 +302,7 @@ public class BaseTest
        */
         DriverFactory.cleanupDriver();
         LoggerFactory.cleanupLogger();
+        softAssert.assertAll();
     }
     //endregion
 }

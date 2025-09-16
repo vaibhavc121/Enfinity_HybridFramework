@@ -7,6 +7,7 @@ import factory.LoggerFactory;
 import models.Performance.Performance.PerformanceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.Performance.AppraisalCyclePage;
 import pageObjects.HRMS.Performance.FeedbackCyclePage;
 import pageObjects.HRMS.Performance.PerformancePage;
@@ -326,6 +327,18 @@ public class PerformanceTest extends BaseTest
             BasePage.waitTS(2);
             BasePage.pressEnter();
             log("Pressed Enter key");
+
+            //region Validate Notification
+            TopNavigationBar tn = new TopNavigationBar();
+            tn.clickBellIcon();
+            log("Clicked on Bell icon to open Notifications");
+
+            softAssert.assertTrue(tn.validateMyApprovalData(appraisalCycleName), "Notification data not found: " + appraisalCycleName);
+            log("Verified: Notification data found: " + appraisalCycleName);
+
+            tn.openTxn();
+
+            //endregion
         } catch (Exception e)
         {
             LoggerFactory.getLogger().error("Test failed due to exception: ", e);

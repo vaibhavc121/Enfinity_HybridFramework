@@ -130,6 +130,34 @@ public class TopNavigationBar extends BasePage
         }
     }
 
+    public boolean validateMyApprovalData(String expData)
+    {
+        String notificationData = waitForElement1(By.xpath("//div[@class='pa-details']")).getText();
+        if (notificationData.contains(expData))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
+    public void openTxn()
+    {
+        try
+        {
+            JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), contextMenuMyApprovals);
+        } catch (Exception e)
+        {
+            contextMenuMyApprovals.click();
+        }
+
+        BaseTest.log("clicked on context menu icon");
+
+        open.click();
+        BaseTest.log("clicked on open");
+    }
+
     //endregion
 
     //region Announcements Section
