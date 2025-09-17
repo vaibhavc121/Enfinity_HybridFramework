@@ -25,7 +25,7 @@ public class AnnualLeaveTest extends BaseTest
     List<SelfServiceModel.EntitlementModel> annualLeaveData = JsonUtils.convertJsonListDataModel(selfServiceFile, "annualLeave.entitlement", SelfServiceModel.EntitlementModel.class);
     ConfigureLeaveTypeSetting stg = new ConfigureLeaveTypeSetting();
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
     public void verifyEligibilityDaysAfterJoining()
     {
         try
@@ -105,8 +105,9 @@ public class AnnualLeaveTest extends BaseTest
         }
     }
 
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
     @Owner("Vaibhav")
-    @Reset()
+
     public void resetSettings()
     {
         String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");

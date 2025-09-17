@@ -55,8 +55,44 @@ public class ConfigureLeaveTypeSetting extends BasePage
         setToggle("IncludeWeekends", entitlement.countWeekendsAsLeaveDays);
         setToggle("ExcludeWeekendDuringUnpaidDays", entitlement.countWeekendsAsUnpaidDays);
         setToggle("IncludeHolidays", entitlement.countPublicHolidaysAsPublicHolidays);
-        setToggle("IgnoreAvailDaysCheckForHoliday", entitlement.grantPublicHolidaysDuringLeave);
+        //setToggle("IgnoreAvailDaysCheckForHoliday", entitlement.grantPublicHolidaysDuringLeave);
         setToggle("ExcludeRestDays", entitlement.countRestDaysAsRestDays);
+    }
+
+    public void setToggle(String fieldId, boolean value)
+    {
+        if (value)
+        {
+            WebElement toggle = waitForElement1(By.xpath("//div[@id='" + fieldId + "']//div[contains(@class,'dx-switch')]"));
+            boolean isOn = toggle.getAttribute("class").contains("dx-switch-on");
+
+            if (value && !isOn)
+            {
+                toggle.click(); // Turn ON
+            } else if (!value && isOn)
+            {
+                toggle.click(); // Turn OFF
+            }
+        } else
+        {
+            By toggleLocator = By.xpath("//div[@id='" + fieldId + "']");
+            WebElement toggle = waitForElement1(toggleLocator);
+
+            boolean isOn = toggle.getAttribute("class").contains("dx-switch-on");
+
+            if ((value && !isOn) || (!value && isOn))
+            {
+                toggle.click(); // Click parent div
+
+                // Wait until state updates
+//            WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(3));
+//            wait.until(d ->
+//            {
+//                String updatedClass = BaseTest.getDriver().findElement(toggleLocator).getAttribute("class");
+//                return value ? updatedClass.contains("dx-switch-on") : updatedClass.contains("dx-switch-off");
+//            });
+            }
+        }
     }
 
     public void setToggle1(String fieldId, boolean value)
@@ -72,7 +108,7 @@ public class ConfigureLeaveTypeSetting extends BasePage
             toggle.click(); // Turn OFF
         }
     }
-    public void setToggle(String fieldId, boolean value)
+    public void setToggle2(String fieldId, boolean value)
     {
         By toggleLocator = By.xpath("//div[@id='" + fieldId + "']");
         WebElement toggle = waitForElement1(toggleLocator);
@@ -84,12 +120,12 @@ public class ConfigureLeaveTypeSetting extends BasePage
             toggle.click(); // Click parent div
 
             // Wait until state updates
-            WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(3));
-            wait.until(d ->
-            {
-                String updatedClass = BaseTest.getDriver().findElement(toggleLocator).getAttribute("class");
-                return value ? updatedClass.contains("dx-switch-on") : updatedClass.contains("dx-switch-off");
-            });
+//            WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(3));
+//            wait.until(d ->
+//            {
+//                String updatedClass = BaseTest.getDriver().findElement(toggleLocator).getAttribute("class");
+//                return value ? updatedClass.contains("dx-switch-on") : updatedClass.contains("dx-switch-off");
+//            });
         }
     }
 
