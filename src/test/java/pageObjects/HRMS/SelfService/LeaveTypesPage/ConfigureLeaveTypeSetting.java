@@ -91,6 +91,8 @@ public class ConfigureLeaveTypeSetting extends BasePage
 //                String updatedClass = BaseTest.getDriver().findElement(toggleLocator).getAttribute("class");
 //                return value ? updatedClass.contains("dx-switch-on") : updatedClass.contains("dx-switch-off");
 //            });
+
+                //test
             }
         }
     }
