@@ -92,7 +92,6 @@ public class ConfigureLeaveTypeSetting extends BasePage
 //                return value ? updatedClass.contains("dx-switch-on") : updatedClass.contains("dx-switch-off");
 //            });
 
-                //test
             }
         }
     }
