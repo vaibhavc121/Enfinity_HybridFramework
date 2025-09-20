@@ -20,7 +20,7 @@ jobs:
           mavenPomFile: 'pom.xml'
           goals: 'test'
           options: >
-            -DsuiteXmlFile=testng-suites/RegressionTestSuite.xml 
+            -DsuiteXmlFile=testng-suites/RegressionTestSuite0.xml 
             -DexcludedGroups=flaky
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
