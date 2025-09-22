@@ -64,60 +64,59 @@ public class PerformanceModel
 
     public static class ReviewAppraisalModel
     {
+        public KRA KRA;
+        public Goal goals;
+        public Competency competencies;
+        public ReviewQuestion reviewQuestions;
+        public Performance performance;
+        public SkillAndLearning skillsAndLearning;
+    }
 
-        public List<KRA> KRA;
-        public List<Goal> goals;
-        public List<Competency> competencies;
-        public List<ReviewQuestion> reviewQuestions;
-        public List<Performance> performance;
-        public List<SkillAndLearning> skillsAndLearning;
+    public static class KRA
+    {
+        public String rating;
+        public String reviewComment;
+        public String overallComment;
+        public String learningRequirements;
+    }
 
-        public static class KRA
-        {
-            public String rating;
-            public String reviewComment;
-            public String overallComment;
-            public String learningRequirements;
-        }
+    public static class Goal
+    {
+        public String rating;
+        public String reviewComment;
+        public String overallComment;
+        public String learningRequirements;
+    }
 
-        public static class Goal
-        {
-            public String rating;
-            public String reviewComment;
-            public String overallComment;
-            public String learningRequirements;
-        }
+    public static class Competency
+    {
+        public String rating;
+        public String reviewComment;
+        public String overallComment;
+        public String learningRequirements;
+    }
 
-        public static class Competency
-        {
-            public String rating;
-            public String reviewComment;
-            public String overallComment;
-            public String learningRequirements;
-        }
+    public static class ReviewQuestion
+    {
+        public String overallComment;
+        public String learningRequirements;
+    }
 
-        public static class ReviewQuestion
-        {
-            public String overallComment;
-            public String learningRequirements;
-        }
+    public static class Performance
+    {
+        public String hikeAmount;
+        public String hikePercentage;
+        public String promotedDepartment;
+        public String promotedDesignation;
+        public String overallComment;
+        public String learningRequirements;
+    }
 
-        public static class Performance
-        {
-            public String hikeAmount;
-            public String hikePercentage;
-            public String promotedDepartment;
-            public String promotedDesignation;
-            public String overallComment;
-            public String learningRequirements;
-        }
-
-        public static class SkillAndLearning
-        {
-            public String newLevelIntermidiate;
-            public String newLevelExpert;
-            public String overallComment;
-            public String learningRequirements;
-        }
+    public static class SkillAndLearning
+    {
+        public String newLevelIntermidiate;
+        public String newLevelExpert;
+        public String overallComment;
+        public String learningRequirements;
     }
 }

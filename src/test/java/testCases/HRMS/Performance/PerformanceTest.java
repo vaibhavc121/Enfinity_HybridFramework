@@ -349,7 +349,7 @@ public class PerformanceTest extends BaseTest
             ReviewPage rp = new ReviewPage();
             for (PerformanceModel.ReviewAppraisalModel data : reviewAppraisalData)
             {
-                //rp.provideRating();
+                rp.provideRating(data.KRA.rating);
             }
 
             //endregion
