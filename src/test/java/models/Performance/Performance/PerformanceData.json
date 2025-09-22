@@ -65,5 +65,57 @@
         }
       ]
     }
+  ],
+  "reviewAppraisal": [
+    {
+      "KRA": [
+        {
+          "rating": "80",
+          "reviewComment": "reviewComment",
+          "overallComment": "overallComment",
+          "learningRequirements": "learningRequirements"
+        }
+      ],
+      "goals": [
+        {
+          "rating": "90",
+          "reviewComment": "reviewComment",
+          "overallComment": "overallComment",
+          "learningRequirements": "learningRequirements"
+        }
+      ],
+      "competencies": [
+        {
+          "rating": "100",
+          "reviewComment": "reviewComment",
+          "overallComment": "overallComment",
+          "learningRequirements": "learningRequirements"
+        }
+      ],
+      "reviewQuestions": [
+        {
+          "overallComment": "overallComment",
+          "learningRequirements": "learningRequirements"
+        }
+      ],
+      "performance": [
+        {
+          "hikeAmount": "100",
+          "hikePercentage": "10",
+          "promotedDepartment": "Finance",
+          "promotedDesignation": "IT Assistant",
+          "overallComment": "overallComment",
+          "learningRequirements": "learningRequirements"
+        }
+      ],
+      "skillsAndLearning": [
+        {
+          "newLevelIntermidiate": "Intermidiate",
+          "newLevelExpert": "Expert",
+          "overallComment": "overallComment",
+          "learningRequirements": "learningRequirements"
+        }
+      ]
+    }
   ]
 }

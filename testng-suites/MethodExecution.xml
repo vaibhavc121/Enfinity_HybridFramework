@@ -30,12 +30,12 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name="testCases.HRMS.Payroll.LeaveTest">
-                <methods>
-                    <include name="createAnnualLeave"/>
-                    <include name="deleteAnnualLeave"/>
-                </methods>
-            </class>
+            <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createAnnualLeave"/>-->
+            <!--                    <include name="deleteAnnualLeave"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
             <!--            <class name="testCases.HRMS.SelfService.ExceptionRequestTest">-->
             <!--                <methods>-->
@@ -45,12 +45,12 @@
             <!--            </class>-->
 
 
-            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createAppraisalCycle"/>-->
-            <!--                    &lt;!&ndash;                    <include name="deleteAppraisalCycle"/>&ndash;&gt;-->
-            <!--                </methods>-->
-            <!--            </class>-->
+            <class name="testCases.HRMS.Performance.PerformanceTest">
+                <methods>
+                    <include name="createAppraisalCycle"/>
+                    <include name="deleteAppraisalCycle"/>
+                </methods>
+            </class>
 
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->

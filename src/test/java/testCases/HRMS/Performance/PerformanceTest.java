@@ -11,6 +11,7 @@ import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.Performance.AppraisalCyclePage;
 import pageObjects.HRMS.Performance.FeedbackCyclePage;
 import pageObjects.HRMS.Performance.PerformancePage;
+import pageObjects.HRMS.Performance.ReviewPage;
 import utilities.*;
 
 import java.util.List;
@@ -319,6 +320,9 @@ public class PerformanceTest extends BaseTest
     {
         try
         {
+            String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
+            List<PerformanceModel.ReviewAppraisalModel> reviewAppraisalData = JsonUtils.convertJsonListDataModel(performanceFile, "reviewAppraisal", PerformanceModel.ReviewAppraisalModel.class);
+
             BasePage.filterAndOpenTransaction(2, 1, appraisalCycleName, "Edit");
             AppraisalCyclePage ac = new AppraisalCyclePage();
             ac.clickInitiate();
@@ -337,6 +341,16 @@ public class PerformanceTest extends BaseTest
             log("Verified: Notification data found: " + appraisalCycleName);
 
             tn.openTxn();
+            BasePage.switchTab();
+            BasePage.closeUnwantedTab();
+            BasePage.waitTS(3);
+            log("tab switched to appraisal review page");
+
+            ReviewPage rp = new ReviewPage();
+            for (PerformanceModel.ReviewAppraisalModel data : reviewAppraisalData)
+            {
+                //rp.provideRating();
+            }
 
             //endregion
         } catch (Exception e)
