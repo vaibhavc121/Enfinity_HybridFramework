@@ -1,8 +1,11 @@
 package pageObjects.HRMS.Performance;
 
 import base.BasePage;
+import base.BaseTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.JavaScriptUtils;
 
 public class ReviewPage extends BasePage
 {
@@ -111,6 +114,21 @@ public class ReviewPage extends BasePage
 
     @FindBy(xpath = "(//td[@role='gridcell'])[5]")
     private WebElement newLeavel;
+
+    //region Purposed Learning Course
+    @FindBy(xpath = "//i[@class='dx-icon dx-icon-add']")
+    private WebElement plusButton;
+    @FindBy(xpath = "//span[normalize-space()='Select']")
+    private WebElement select;
+    @FindBy(xpath = "(//i[@class='dx-icon dx-icon-close'])[2]")
+    private WebElement closePopup;
+    @FindBy(xpath = "//p[@class='course-name']")
+    private WebElement javaProgramming;
+    @FindBy(xpath = "//i[@class='dx-icon dx-icon-trash']")
+    private WebElement trash;
+    //press enter
+
+    //endregion
     //endregion
 
     //endregion
@@ -237,12 +255,52 @@ public class ReviewPage extends BasePage
     {
         clickOnElement1(skillsAndLearning);
     }
-    public void provideNewLevel(String value)
+    public void provideNewLevel()
     {
-        clickOnElement1(newLeavel);
-        provideAndEnter(newLeavel, value);
+        String currentLevel = waitForElement1(By.cssSelector(".current-level.low-current-level")).getText();
+
+        if (currentLevel.equalsIgnoreCase("Beginner"))
+        {
+            clickOnElement1(newLeavel);
+            provideAndEnter(newLeavel, "Intermidiate");
+        } else if (currentLevel.equalsIgnoreCase("Intermidiate"))
+        {
+            clickOnElement1(newLeavel);
+            provideAndEnter(newLeavel, "Expert");
+        } else if (currentLevel.equalsIgnoreCase("Expert"))
+        {
+            System.out.println("Skill is already at highest level- Expert");
+        } else
+        {
+            System.out.println("Current level is not found..");
+        }
     }
-    
+    public void addRemoveLearningCourse()
+    {
+        clickOnElement1(plusButton);
+        BaseTest.log("Clicked on plus button");
+        clickOnElement1(select);
+        BaseTest.log("Clicked on select button");
+        clickOnElement1(closePopup);
+        BaseTest.log("Clicked on close button of popup");
+        BasePage.hoverAndClick(javaProgramming, trash);
+        waitTS(2);
+        BasePage.pressEnter();
+        BaseTest.log("pressed enter button");
+    }
+    public void deleteLearningCourse()
+    {
+        BasePage.hoverAndClick(javaProgramming, trash);
+        waitTS(2);
+        BasePage.pressEnter();
+        BaseTest.log("pressed enter button");
+    }
+
+    public void scrollPage()
+    {
+        JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), save);
+    }
+
     //endregion
 
     //endregion

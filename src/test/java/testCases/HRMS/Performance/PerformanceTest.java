@@ -349,7 +349,139 @@ public class PerformanceTest extends BaseTest
             ReviewPage rp = new ReviewPage();
             for (PerformanceModel.ReviewAppraisalModel data : reviewAppraisalData)
             {
+                //region Key Result Areas
                 rp.provideRating(data.KRA.rating);
+                log("Provided KRA rating: " + data.KRA.rating);
+
+                rp.enterReviewComment(data.KRA.reviewComment);
+                log("Entered KRA review comment: " + data.KRA.reviewComment);
+
+                rp.enterOverallComment(data.KRA.overallComment);
+                log("Entered KRA overall comment: " + data.KRA.overallComment);
+
+                rp.enterTrainingRequirements(data.KRA.learningRequirements);
+                log("Entered KRA learning requirements: " + data.KRA.learningRequirements);
+
+                rp.scrollPage();
+                log("Scrolled down the page to access Save button");
+                rp.clickSave();
+                log("Clicked on Save button");
+                //endregion
+
+                //region Goals
+                rp.clickGoals();
+                log("Clicked on Goals tab");
+
+                rp.provideRating2(data.goals.rating);
+                log("Provided Goals rating: " + data.goals.rating);
+
+                rp.enterReviewComment2(data.goals.reviewComment);
+                log("Entered Goals review comment: " + data.goals.reviewComment);
+
+                rp.enterOverallComment2(data.goals.overallComment);
+                log("Entered Goals overall comment: " + data.goals.overallComment);
+
+                rp.enterTrainingRequirements2(data.goals.learningRequirements);
+                log("Entered Goals learning requirements: " + data.goals.learningRequirements);
+
+                rp.scrollPage();
+                log("Scrolled down the page to access Save button");
+                rp.clickSave();
+                log("Clicked on Save button");
+                //endregion
+
+                //region Competencies
+                rp.clickCompetencies();
+                log("Clicked on Competencies tab");
+
+                rp.provideRating3(data.competencies.rating);
+                log("Provided Competencies rating: " + data.competencies.rating);
+
+                rp.enterReviewComment3(data.competencies.reviewComment);
+                log("Entered Competencies review comment: " + data.competencies.reviewComment);
+
+                rp.enterOverallComment3(data.competencies.overallComment);
+                log("Entered Competencies overall comment: " + data.competencies.overallComment);
+
+                rp.enterTrainingRequirements3(data.competencies.learningRequirements);
+                log("Entered Competencies learning requirements: " + data.competencies.learningRequirements);
+
+                rp.scrollPage();
+                log("Scrolled down the page to access Save button");
+                rp.clickSave();
+                log("Clicked on Save button");
+                //endregion
+
+                //region Review Questions
+                rp.clickReviewQuestions();
+                log("Clicked on Review Questions tab");
+
+                rp.enterOverallComment4(data.reviewQuestions.overallComment);
+                log("Entered Review Questions overall comment: " + data.reviewQuestions.overallComment);
+
+                rp.enterLearningRequirements(data.reviewQuestions.learningRequirements);
+                log("Entered Review Questions learning requirements: " + data.reviewQuestions.learningRequirements);
+
+                rp.scrollPage();
+                log("Scrolled down the page to access Save button");
+                rp.clickSave();
+                log("Clicked on Save button");
+                //endregion
+
+                //region Performance
+                rp.clickPerformance();
+                log("Clicked on Performance tab");
+
+                rp.enterHikeAmount(data.performance.hikeAmount);
+                log("Entered Hike Amount: " + data.performance.hikeAmount);
+
+                rp.enterHikePercentage(data.performance.hikePercentage);
+                log("Entered Hike Percentage: " + data.performance.hikePercentage);
+
+                rp.selectPromotedDepartment(data.performance.promotedDepartment);
+                log("Selected Promoted Department: " + data.performance.promotedDepartment);
+
+                rp.selectPromotedDesignation(data.performance.promotedDesignation);
+                log("Selected Promoted Designation: " + data.performance.promotedDesignation);
+
+                rp.enterOverallComment(data.performance.overallComment);
+                log("Entered Performance overall comment: " + data.performance.overallComment);
+
+                rp.enterLearningRequirements(data.performance.learningRequirements);
+                log("Entered Performance learning requirements: " + data.performance.learningRequirements);
+
+                rp.scrollPage();
+                log("Scrolled down the page to access Save button");
+                rp.clickSave();
+                log("Clicked on Save button");
+                //endregion
+
+                //region Skills & Learning
+                rp.clickSkillsAndLearning();
+                log("Clicked on Skills & Learning tab");
+
+                rp.provideNewLevel();
+                log("Provided New Level");
+
+                rp.addRemoveLearningCourse();
+                log("Added/Removed Learning Course");
+
+                rp.enterOverallComment(data.skillsAndLearning.overallComment);
+                log("Entered Skills & Learning overall comment: " + data.skillsAndLearning.overallComment);
+
+                rp.enterLearningRequirements(data.skillsAndLearning.learningRequirements);
+                log("Entered Skills & Learning learning requirements: " + data.skillsAndLearning.learningRequirements);
+
+                rp.scrollPage();
+                log("Scrolled down the page to access Save button");
+                rp.clickSave();
+                log("Clicked on Save button");
+
+                rp.clickSubmitForOpinion();
+                log("Clicked on Submit For Opinion button");
+
+                //endregion
+
             }
 
             //endregion
