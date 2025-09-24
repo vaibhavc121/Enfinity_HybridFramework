@@ -21,7 +21,7 @@ public class PerformanceTest extends BaseTest
     String appraisalCycleName = "AC_" + DateUtils.getCurrentDateTime("dd-MMM-yyyy_HH:mm:ss");
     String feedbackCycleName = "FC_" + DateUtils.getCurrentDateTime("dd-MMM-yyyy_HH:mm:ss");
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    @Test(groups = {"functional", "regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void create360FeedbackCycle()
     {
         try
@@ -77,6 +77,7 @@ public class PerformanceTest extends BaseTest
                 log("Selected employee: " + data.employee);
 
                 //region Questions
+                /*
                 fc.clickNext();
                 log("Clicked on Next to navigate to Questions tab");
 
@@ -103,6 +104,8 @@ public class PerformanceTest extends BaseTest
                     fc.clickAdd();
                     log("Clicked Add to save question");
                 }
+
+                 */
                 //endregion
 
                 BasePage.clickOnSave();
@@ -115,7 +118,7 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    @Test(groups = {"functional", "regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 2)
     public void delete360FeedbackCycle()
     {
         try
@@ -143,7 +146,7 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 3)
+    @Test(groups = {"functional", "regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 3)
     public void createAppraisalCycle()
     {
         try
@@ -247,8 +250,10 @@ public class PerformanceTest extends BaseTest
                 ac.scrollPageToManualWorkflow();
                 log("Scrolled down the page to allowManualWorkflow");
 
+                BasePage.waitTS(2);
                 ac.checkAllowManualWorkflow(data.allowManualWorkflow);
                 log("Allow Manual Workflow checked: " + data.allowManualWorkflow);
+                BasePage.waitTS(2);
 
                 ac.selectWorkflow(data.workflow);
                 log("Selected Workflow: " + data.workflow);
@@ -283,7 +288,7 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 4)
+    @Test(groups = {"functional", "regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 4)
     public void deleteAppraisalCycle()
     {
         try

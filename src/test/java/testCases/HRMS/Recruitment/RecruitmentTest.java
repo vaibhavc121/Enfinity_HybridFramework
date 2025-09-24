@@ -352,8 +352,10 @@ public class RecruitmentTest extends BaseTest
 //                ja.selectCandidate("Raleigh");
                 log("Selected candidate: " + candidateName);
 
+                BasePage.waitTS(2);
                 ja.clickAssign();
                 log("Clicked on Assign Job button");
+                BasePage.waitTS(2);
 
                 //Assert.assertTrue(ja.isScreeningLabelDisplay());
                 Assert.assertTrue(ja.candidateLabelDisplay(candidateName));

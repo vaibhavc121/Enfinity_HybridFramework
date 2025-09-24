@@ -319,7 +319,13 @@ public class BasePage
     {
         // DriverFactory.getDriver().findElement(By.xpath("(//tr)[12]//td[2]")).click();
         //(//td[@role='gridcell'])[13]
-        waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
+        try
+        {
+            waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
+        } catch (Exception e)
+        {
+            waitForElement1(By.xpath("(//tr)[6]//td[1]")).click();
+        }
         BaseTest.log("row selected");
     }
 

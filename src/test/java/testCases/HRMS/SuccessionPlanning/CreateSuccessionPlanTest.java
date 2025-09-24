@@ -18,20 +18,17 @@ import java.util.List;
 
 public class CreateSuccessionPlanTest extends BaseTest
 {
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class)
+    String successionPlanningFile = FileUtils.getDataFile("SuccessionPlanning", "SuccessionPlanning", "SuccessionData");
+    List<SuccessionPlanningModel> successionPlanData = JsonUtils.convertJsonListDataModel(successionPlanningFile, "createSuccessionPlan", SuccessionPlanningModel.class);
+
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void createSuccessionPlan()
     {
         try
         {
-
-            String successionPlanningFile = FileUtils.getDataFile("SuccessionPlanning", "SuccessionPlanning",
-                    "SuccessionData");
-            List<SuccessionPlanningModel> successionPlanData = JsonUtils.convertJsonListDataModel(
-                    successionPlanningFile, "createSuccessionPlan", SuccessionPlanningModel.class);
-
             // Succession page
             SuccessionPage op = new SuccessionPage();
-            op.clickMenu();
+            //op.clickMenu();
             op.clickSuccessionPlanning();
             op.clickSuccessionPlan();
 
@@ -56,6 +53,30 @@ public class CreateSuccessionPlanTest extends BaseTest
 
                 // Assert.assertTrue(sp.isTransactionCreated(successionPlan.name));
                 Assert.assertTrue(true);
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    public void deleteSuccessionPlan()
+    {
+        try
+        {
+            // Succession page
+            SuccessionPage sp = new SuccessionPage();
+            //op.clickMenu();
+            sp.clickSuccessionPlanning();
+            sp.clickSuccessionPlan();
+
+            for (SuccessionPlanningModel successionPlan : successionPlanData)
+            {
+                sp.deleteSuccessionPlan(successionPlan.name, 2, 1);
+                Assert.assertFalse(BasePage.validateListing(successionPlan.name, 2, 1), "Succession Plan is not deleted: " + successionPlan.name);
+                log("Verified: Succession Plan deleted successfully: " + successionPlan.name);
             }
         } catch (Exception e)
         {

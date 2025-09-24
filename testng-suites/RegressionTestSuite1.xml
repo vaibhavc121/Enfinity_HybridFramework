@@ -21,25 +21,18 @@
 
         <classes>
 
-
             <!-- Attendance -->
-            <!--<class name="testCases.HRMS.Attendance.CreateLenientShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteLenientShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.CreateRosterTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteRosterTest"/>
-            <class name="testCases.HRMS.Attendance.CreateShiftTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteShiftTest"/>
-            <class name="testCases.HRMS.Attendance.CreateStrictDayShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteStrictDayShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.CreateTwoShiftDayShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteTwoShiftDayShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.CreateTwoShiftNightShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteTwoShiftNightShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.CreateNightShiftTimetableTest"/>
-            <class name="testCases.HRMS.Attendance.DeleteNightShiftTimetableTest"/>-->
             <class name="testCases.HRMS.Attendance.AttendanceTest"/>
 
 
+            <!-- Performance-->
+            <class name="testCases.HRMS.Performance.PerformanceTest"/>
+
+
+            <!-- Succession Planning-->
+            <class name="testCases.HRMS.SuccessionPlanning.CreateSuccessionPlanTest"/>
+
+            
             <!-- Global -->
             <!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->
 
