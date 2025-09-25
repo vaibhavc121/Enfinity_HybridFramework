@@ -45,24 +45,24 @@
             <!--            </class>-->
 
 
-            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createAppraisalCycle"/>-->
-            <!--                    <include name="deleteAppraisalCycle"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
-
-
-            <class name="testCases.HRMS.Recruitment.RecruitmentTest">
+            <class name="testCases.HRMS.Performance.PerformanceTest">
                 <methods>
-                    <include name="createCandidate"/>
-                    <include name="createJob"/>
-                    <include name="assignJobToCandidate"/>
-                    <include name="scheduleInterview"/>
-                    <include name="offerJobToCandidate"/>
-                    <include name="completeHiringProcess"/>
+                    <include name="reviewAppraisal"/>
+
                 </methods>
             </class>
+
+
+            <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createCandidate"/>-->
+            <!--                    <include name="createJob"/>-->
+            <!--                    <include name="assignJobToCandidate"/>-->
+            <!--                    <include name="scheduleInterview"/>-->
+            <!--                    <include name="offerJobToCandidate"/>-->
+            <!--                    <include name="completeHiringProcess"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
             <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->
