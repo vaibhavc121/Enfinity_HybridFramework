@@ -7,6 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utilities.JavaScriptUtils;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 public class CandidatePage extends BasePage
 {
 
@@ -29,6 +35,10 @@ public class CandidatePage extends BasePage
     private WebElement maritalStatus;
     @FindBy(xpath = "//div[@class='dx-form-group-content']//div[@class='dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-field-item-has-group']//div[@class='dx-form-group-content']//span[@class='dx-checkbox-icon']")
     private WebElement checkbox1;
+    @FindBy(xpath = "(//span[@class='dx-button-text'][contains(text(),'Browse…')])[1]")
+    WebElement pictureBrowse;
+    @FindBy(xpath = "(//span[@class='dx-button-text'][contains(text(),'Browse…')])[2]")
+    WebElement cvBrowse;
     //endregion
 
     //region Address Information
@@ -118,6 +128,46 @@ public class CandidatePage extends BasePage
     public void clickDrivingLicense()
     {
         waitForElement(checkbox1).click();
+    }
+    public void clickPictureBrowse()
+    {
+        clickOnElement1(pictureBrowse);
+    }
+    public void uploadFileWithRobot(String filePath)
+    {
+        try
+        {
+            // Copy file path to clipboard
+            StringSelection selection = new StringSelection(filePath);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+            waitTS(1); // ensure clipboard is ready
+
+            // Use Robot to paste and press ENTER
+            Robot robot = new Robot();
+            robot.delay(500);
+
+            // CTRL + V
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+
+            robot.delay(500);
+
+            // Press ENTER
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+
+            // Optional: wait to verify upload
+            waitTS(2);
+        } catch (AWTException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    public void clickCVBrowse()
+    {
+        clickOnElement1(cvBrowse);
     }
     //endregion
 

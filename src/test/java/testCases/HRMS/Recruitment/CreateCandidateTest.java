@@ -1,5 +1,6 @@
 package testCases.HRMS.Recruitment;
 
+import base.BasePage;
 import base.BaseTest;
 import factory.LoggerFactory;
 import models.Recruitment.Recruitment.RecruitmentModel;
@@ -40,7 +41,7 @@ public class CreateCandidateTest extends BaseTest
                 //region Personal Information
                 String candidateName = faker.name().firstName();
                 cp.provideName(candidateName);
-                log("Provided Name");
+                log("Provided candidate Name: " + candidateName);
 
                 cp.provideEmail(faker.internet().emailAddress());
                 log("Provided Email");
@@ -63,6 +64,18 @@ public class CreateCandidateTest extends BaseTest
                     log("Clicked on Driving License checkbox");
                 }
 
+                cp.clickPictureBrowse();
+                log("Clicked on Picture Browse button");
+
+                cp.uploadFileWithRobot(System.getProperty("user.dir") + "\\files\\image");
+                log("Uploaded Picture");
+
+                cp.clickCVBrowse();
+                log("Clicked on CV Browse button");
+
+                cp.uploadFileWithRobot(System.getProperty("user.dir") + "\\files\\document");
+                log("Uploaded CV");
+
                 //endregion
 
                 //region Address Information
@@ -77,6 +90,7 @@ public class CreateCandidateTest extends BaseTest
 
                 cp.providePostalCode(candidate.postalCode);
                 log("Provided Postal Code");
+                BasePage.pressTab();
 
                 //endregion
 
@@ -107,6 +121,7 @@ public class CreateCandidateTest extends BaseTest
                     cp.clickOverseas();
                     log("Clicked on Overseas checkbox");
                 }
+                BasePage.pressTab();
 
                 //endregion
 
@@ -116,6 +131,7 @@ public class CreateCandidateTest extends BaseTest
 
                 cp.providePassportIssueDate(candidate.passportIssueDate);
                 log("Provided Passport Issue Date");
+                BasePage.pressTab();
 
                 cp.providePassportExpiryDate(candidate.passportExpiryDate);
                 log("Provided Passport Expiry Date");
