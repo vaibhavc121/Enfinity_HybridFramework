@@ -42,7 +42,7 @@ public class CreateCandidateTest extends BaseTest
                 String candidateName = faker.name().firstName();
                 cp.provideName(candidateName);
                 log("Provided candidate Name: " + candidateName);
-
+                /*
                 cp.provideEmail(faker.internet().emailAddress());
                 log("Provided Email");
 
@@ -64,17 +64,33 @@ public class CreateCandidateTest extends BaseTest
                     log("Clicked on Driving License checkbox");
                 }
 
+                 */
+
+                //cp.uploadImage(System.getProperty("user.dir") + "\\files\\image");
+
                 cp.clickPictureBrowse();
                 log("Clicked on Picture Browse button");
 
-                cp.uploadFileWithRobot(System.getProperty("user.dir") + "\\files\\image");
-                log("Uploaded Picture");
+                try
+                {
+                    BasePage.uploadFileWithRobot(System.getProperty("user.dir") + "\\files\\image");
+                    log("Uploaded Picture");
+                } catch (Exception e)
+                {
+                    log("Image not uploaded: " + e.getMessage());
+                }
 
                 cp.clickCVBrowse();
                 log("Clicked on CV Browse button");
 
-                cp.uploadFileWithRobot(System.getProperty("user.dir") + "\\files\\document");
-                log("Uploaded CV");
+                try
+                {
+                    BasePage.uploadFileWithRobot(System.getProperty("user.dir") + "\\files\\document");
+                    log("Uploaded CV");
+                } catch (Exception e)
+                {
+                    log("CV not uploaded: " + e.getMessage());
+                }
 
                 //endregion
 

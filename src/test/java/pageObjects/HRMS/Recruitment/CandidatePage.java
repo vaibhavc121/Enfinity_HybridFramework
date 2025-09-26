@@ -1,7 +1,9 @@
 package pageObjects.HRMS.Recruitment;
 
 import base.BasePage;
+import base.BaseTest;
 import factory.DriverFactory;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -129,42 +131,12 @@ public class CandidatePage extends BasePage
     {
         waitForElement(checkbox1).click();
     }
+
     public void clickPictureBrowse()
     {
         clickOnElement1(pictureBrowse);
     }
-    public void uploadFileWithRobot(String filePath)
-    {
-        try
-        {
-            // Copy file path to clipboard
-            StringSelection selection = new StringSelection(filePath);
-            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
-            waitTS(1); // ensure clipboard is ready
 
-            // Use Robot to paste and press ENTER
-            Robot robot = new Robot();
-            robot.delay(500);
-
-            // CTRL + V
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-
-            robot.delay(500);
-
-            // Press ENTER
-            robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
-
-            // Optional: wait to verify upload
-            waitTS(2);
-        } catch (AWTException e)
-        {
-            e.printStackTrace();
-        }
-    }
     public void clickCVBrowse()
     {
         clickOnElement1(cvBrowse);
