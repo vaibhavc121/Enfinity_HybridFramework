@@ -39,7 +39,9 @@ public class TimeOffTest extends BaseTest
                 to.clickTimeOff();
                 to.clickNew();
                 to.providePermissonDate(timeOff.permisionDate);
+                BasePage.waitTS(1);
                 to.clickPersoanl();
+                BasePage.waitTS(1);
                 // to.clickBusiness();
                 // to.clickLeave();
                 // to.clickFromTimeField();
@@ -57,6 +59,7 @@ public class TimeOffTest extends BaseTest
                 // to.selectUpToTimeNotation();
                 // to.clickUpToOk();
                 to.enterDescription("test");
+                BasePage.waitTS(3);
                 BasePage.clickOnSaveAndSubmitBack();
                 log("clickOnSaveAndSubmitBack");
 

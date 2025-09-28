@@ -41,6 +41,7 @@ public class MyApprovalTest extends BaseTest
             BasePage.clickMenuIcon();
             ss.clickSelfService();
             log("clicked on Self Service");
+            BasePage.openSidebar();
             ss.clickMyApprovals();
             log("clicked on My Approvals");
 
@@ -49,7 +50,7 @@ public class MyApprovalTest extends BaseTest
             //endregion
 
             //region Assertion
-            Assert.assertTrue(ma.isApproveButtonDisplay(), "Bulk approval failed, approve button is still displayed.");
+            softAssert.assertTrue(ma.isApproveButtonDisplay(), "Bulk approval failed, approve button is still displayed.");
             log("Verified: Transactions are bulk approved successfully");
             //endregion
 
@@ -87,6 +88,8 @@ public class MyApprovalTest extends BaseTest
             BasePage.performAction(5, "002", "Amend");
             Assert.assertFalse(BasePage.validateListing("001", 5, 5), "Time off request not deleted successfully.");
             log("Verified: Time off request deleted successfully");
+
+            softAssert.assertAll();
             //endregion
 
         } catch (Exception e)

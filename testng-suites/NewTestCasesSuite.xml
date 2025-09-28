@@ -24,8 +24,9 @@
 
             <!-- New Test -->
             <!--            <class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest"/>-->
+            <!--            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>-->
+            <class name="testCases.HRMS.SelfService.MyApprovalTest"/>
 
-            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>
 
         </classes>
     </test>

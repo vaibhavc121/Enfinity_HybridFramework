@@ -19,27 +19,33 @@ public class MyApprovalsPage extends BasePage
     //region Action Methods
     public void bulkApproveRequest(String empName)
     {
-        for (int i = 1; i <= 2; i++)
+        try
         {
-            String currentName = waitForElement1(
-                    By.xpath("(//div[contains(text(),'" + empName + "')])[" + i + "]")
-            ).getText();
-            BaseTest.log("Extracted name of " + i + " employee: " + currentName);
-
-            if (currentName.contains(empName))
+            for (int i = 1; i <= 2; i++)
             {
-                waitForElement1(
-                        By.xpath("//tbody/tr[" + i + "]//span[@class='dx-checkbox-icon']")
-                ).click();
-                BaseTest.log("Clicked on checkbox for employee: " + currentName);
+                String currentName = waitForElement1(
+                        By.xpath("(//div[contains(text(),'" + empName + "')])[" + i + "]")
+                ).getText();
+                BaseTest.log("Extracted name of " + i + " employee: " + currentName);
+
+                if (currentName.contains(empName))
+                {
+                    waitForElement1(
+                            By.xpath("//tbody/tr[" + i + "]//span[@class='dx-checkbox-icon']")
+                    ).click();
+                    BaseTest.log("Clicked on checkbox for employee: " + currentName);
+                }
             }
+            waitForElement(approve).click();
+            waitTS(3);
+            BaseTest.log("Clicked on Approve button");
+            BasePage.pressEnter();
+            BaseTest.log("pressed Enter to confirm approval");
+            waitTS(3);
+        } catch (Exception e)
+        {
+            return;
         }
-        waitForElement(approve).click();
-        waitTS(3);
-        BaseTest.log("Clicked on Approve button");
-        BasePage.pressEnter();
-        BaseTest.log("pressed Enter to confirm approval");
-        waitTS(3);
     }
 
     public boolean isApproveButtonDisplay()

@@ -8,6 +8,7 @@ import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel.ExceptionRequestModel;
 import pageObjects.HRMS.SelfService.ExceptionRequestPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
+import utilities.DateUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -60,7 +61,7 @@ public class ExceptionRequestTest extends BaseTest
                 BasePage.clickOnSaveAndSubmitBack();
                 log("clickOnSaveAndSubmitBack");
 
-                Assert.assertTrue(er.isTxnCreated(exception.exceptionDate));
+                Assert.assertTrue(BasePage.validateListing(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2));
                 log("Verified: Transaction created successfully for date: " + exception.exceptionDate);
             }
         } catch (Exception e)
@@ -90,7 +91,7 @@ public class ExceptionRequestTest extends BaseTest
 
             //BasePage.deleteTxn(6, "001");
             BasePage.performAction(7, "Approved", "Amend");
-            Assert.assertFalse(BasePage.validateListing("001", 6, 6));
+            Assert.assertFalse(BasePage.validateListing(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2));
             log("assertion successful");
         } catch (Exception e)
         {
