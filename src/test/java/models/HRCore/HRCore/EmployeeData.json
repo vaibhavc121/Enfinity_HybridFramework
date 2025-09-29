@@ -18,21 +18,20 @@
       "maritalStatus": "Married"
     }
   ],
-
   "personal": [
     {
       "nameL2": "موهان",
       "displayName": "Priti",
       "displayNameL2": "موهان",
       "DOB": "01-Jan-2000",
-      "nationality": "India",
+      "maritalStatus": "Married",
+      "nationality": "Kuwait",
       "bloodGroup": "O+",
       "photoVisibility": "Public",
       "mobileNumberVisibility": "Public",
       "emailVisibility": "Public"
     }
   ],
-
   "job": [
     {
       "manager": "Rohit Chavan",
@@ -49,7 +48,6 @@
       "YearOfPassing": "2018"
     }
   ],
-
   "payroll": [
     {
       "payrollset": "Test",
@@ -63,16 +61,13 @@
           "salaryComponent": "Food Allowance",
           "amount": "500",
           "effectiveFromDate": "10-Nov-2024"
-
         },
         {
           "salaryComponent": "Housing Allowance",
           "amount": "500",
           "effectiveFromDate": "10-Nov-2024"
         }
-
       ],
-
       "overtimeTypes": [
         {
           "overtimeType": "Normal Overtime"
@@ -80,9 +75,7 @@
         {
           "overtimeType": "Holiday Overtime"
         }
-
       ],
-
       "relationshipType": "Spouse",
       "description": "desc",
       "ticketAccrual": "Four Ticket Per Year",
@@ -95,10 +88,8 @@
       "benefitScheme": "Health Insurance",
       "BSeffectiveFromDate": "10-Nov-2024",
       "BSeffectiveToDate": "10-Nov-2025"
-
     }
   ],
-
   "timeOff": [
     {
       "leaveTypes": [
@@ -110,12 +101,9 @@
           "leaveType": "Sick Leave",
           "LTeffectiveFromDate": "01-Jan-2024"
         }
-
       ]
-
     }
   ],
-
   "attendance": [
     {
       "calendar": "cal1",
@@ -125,7 +113,6 @@
       "shiftPreference": "Two Shift"
     }
   ],
-
   "documents": [
     {
       "documentType": "Agreement",
@@ -138,7 +125,6 @@
       "placeOfDocument": "Company"
     }
   ],
-
   "performance": [
     {
       "KRA": [
@@ -151,7 +137,6 @@
           "weightage": "100"
         }
       ],
-
       "Competencies": [
         {
           "competencyName": "Communication with clients",
@@ -162,7 +147,6 @@
           "competenciesWeightage": "100"
         }
       ],
-
       "SkillSets": [
         {
           "skillSetName": "API design",
@@ -175,7 +159,6 @@
           "skillSetWeightage": "100"
         }
       ],
-
       "Goals": [
         {
           "goalName": "HRMS Automation",
@@ -192,13 +175,8 @@
           "goalsWeightage": "100"
         }
       ]
-
-
     }
-
-
   ],
-
   "integration": [
     {
       "financialIntegrationGroup": "Hawalley Store WorkLocation",
@@ -215,7 +193,6 @@
       "Projects": [
         {
           "Project": "Project0",
-
           "EffectiveFromDate": "01-Jan-2024",
           "EffectiveToDate": "30-Jun-2024"
         },
@@ -225,10 +202,8 @@
           "EffectiveToDate": "30-Jun-2025"
         }
       ]
-
     }
   ],
-
   "dependents": [
     {
       "spouseName": "Mahesh",
@@ -238,10 +213,8 @@
       "childrenBirthDate": "01-Jan-1999",
       "dependentName": "Dhiraj",
       "dependentBirthDate": "01-Jan-1970"
-
     }
   ],
-
   "residencyInfo": [
     {
       "secondName": "secondName",
@@ -275,26 +248,16 @@
       "OldGovtDesignation": "IPS",
       "OldFileNumber": "1234",
       "OldGovernmentLicense": "1234"
-
-
     }
   ],
-
   "deleteEmployee": [
     {
-      
       "empName": "Mohan Patil"
-      
     }
   ],
-
   "updateEmployee": [
     {
       "EMPID": "205"
     }
   ]
-
-
-
-
 }

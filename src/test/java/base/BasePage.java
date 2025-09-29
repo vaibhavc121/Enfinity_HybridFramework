@@ -919,7 +919,14 @@ public class BasePage
             {
                 try
                 {
-                    clickOnViewListing();
+                    String empText = waitForElement1(By.xpath("//span[@class='dxeBase_Office365 form-title listing-title dx-nowrap']")).getText();
+                    if (empText.contains("Employees"))
+                    {
+                        clickOnElement(By.xpath("//img[@id='MainMenu_DXI4_Img']"));
+                    } else
+                    {
+                        clickOnViewListing();
+                    }
                 } catch (Exception e1)
                 {
                     clickOnElement(By.xpath("//img[@id='MainMenu_DXI4_Img']"));

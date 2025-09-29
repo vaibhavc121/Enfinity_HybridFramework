@@ -184,14 +184,14 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//input[@aria-haspopup='true']")
     WebElement DOB;
 
+    @FindBy(xpath = "//input[contains(@id,'Gender')]")
+    private WebElement gender1;
+
     @FindBy(xpath = "//input[contains(@id,'MaritalStatus')]")
     private WebElement maritalStatus;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/main[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
-    WebElement clicknationality;
-
-    @FindBy(xpath = "//input[@aria-expanded='true']")
-    WebElement nationality;
+    @FindBy(xpath = "//input[contains(@id,'NationalityCountryId')]")
+    WebElement nationalityDD;
 
     @FindBy(xpath = "(//input[contains(@id,'MobileNumber')])[1]")
     private WebElement mobileNo;
@@ -1108,19 +1108,19 @@ public class EmployeePage extends BasePage
         DOB.sendKeys(value);
     }
 
+    public void selectGender1(String value)
+    {
+        provideAndEnter(gender1, value);
+    }
+
     public void selectMaritialStatus(String value)
     {
         provideAndEnter(maritalStatus, value);
     }
 
-    public void clickNationality()
-    {
-        clicknationality.click();
-    }
-
     public void selectNationality(String value)
     {
-        selectDropdownOption(value);
+        provideAndEnter(nationalityDD, value);
     }
 
     public void provideMobileNo(String value)
@@ -2340,6 +2340,19 @@ public class EmployeePage extends BasePage
     public void saveResidencyInfo()
     {
         clickSave();
+    }
+    //endregion
+
+    //region Navigate to Employee
+    public void navigateToEmp()
+    {
+        HRCorePage hc = new HRCorePage();
+        hc.clickHRCore();
+        hc.clickSetupForm();
+        SetupPage sp = new SetupPage();
+        sp.clickEmployee();
+        waitTS(2);
+        navigateToEmployee("Neelam Rajan");
     }
     //endregion
 

@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import base.BasePage;
 import base.BaseTest;
 import factory.LoggerFactory;
 import models.HRCore.HRCore.EmployeeModel;
@@ -55,10 +56,8 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 ep.provideDOB(data.DOB);
                 log("provided DOB: " + data.DOB);
 
-                //ep.selectMaritialStatus();
-
-                ep.clickNationality();
-                log("clicked on nationality dropdown");
+                ep.selectMaritialStatus(data.maritalStatus);
+                log("selected marital status: " + data.maritalStatus);
 
                 ep.selectNationality(data.nationality);
                 log("selected nationality: " + data.nationality);
@@ -70,6 +69,8 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
 
                 ep.selectBloodGroup(data.bloodGroup);
                 log("selected blood group: " + data.bloodGroup);
+
+                BasePage.pressTab();
 
                 ep.clickPhotoVisibility();
                 log("clicked on photo visibility dropdown");
@@ -88,6 +89,9 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
 
                 ep.selectEmailVisibility(data.emailVisibility);
                 log("selected email visibility: " + data.emailVisibility);
+
+                BasePage.clickOnSave();
+                log("clicked on Save button to save personal information");
             }
         } catch (Exception e)
         {
@@ -108,6 +112,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.JobTabModel.class);
 
             EmployeePage ep = new EmployeePage();
+            ep.navigateToEmp();
             for (EmployeeModel.JobTabModel data : jobTabInfo)
             {
                 ep.clickJob();
