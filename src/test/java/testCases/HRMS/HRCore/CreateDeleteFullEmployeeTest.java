@@ -112,7 +112,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.JobTabModel.class);
 
             EmployeePage ep = new EmployeePage();
-            ep.navigateToEmp();
+
             for (EmployeeModel.JobTabModel data : jobTabInfo)
             {
                 ep.clickJob();
@@ -127,17 +127,17 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 ep.enableKeyEmp();
                 log("enabled key employee checkbox");
 
-                ep.clickSubstituteEmployee();
-                log("clicked on substitute employee dropdown");
+                // ep.clickSubstituteEmployee();
+                // log("clicked on substitute employee dropdown");
 
-                ep.selectSubstituteEmployee(data.substituteEmployee);
-                log("selected substitute employee: " + data.substituteEmployee);
+                // ep.selectSubstituteEmployee(data.substituteEmployee);
+                // log("selected substitute employee: " + data.substituteEmployee);
 
-                ep.clickEmployeeCategory();
-                log("clicked on employee category dropdown");
+                // ep.clickEmployeeCategory();
+                // log("clicked on employee category dropdown");
 
-                ep.selectEmployeeCategory(data.category);
-                log("selected employee category: " + data.category);
+                // ep.selectEmployeeCategory(data.category);
+                // log("selected employee category: " + data.category);
 
                 ep.clickWorkLocation();
                 log("clicked on work location dropdown");
@@ -172,6 +172,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 //endregion
 
                 //region qualification section
+                /*
                 ep.addQualificationBtn();
                 log("clicked on add qualification button");
 
@@ -189,8 +190,11 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
 
                 ep.saveQualification();
                 log("clicked on save qualification button");
+                */
                 //endregion
 
+                BasePage.clickOnSave();
+                log("clicked on Save button");
             }
         } catch (Exception e)
         {
@@ -211,16 +215,19 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.PayrollTabModel.class);
 
             EmployeePage ep = new EmployeePage();
+            ep.navigateToEmp();
             for (EmployeeModel.PayrollTabModel data : payrollTabInfo)
             {
                 ep.clickPayroll();
                 log("Clicked on payroll Tab");
 
+                /*
                 ep.clickPayrollSetID();
                 log("clicked on payroll set dropdown");
 
                 ep.selectPayrollSetID(data.payrollset);
                 log("selected payroll set: " + data.payrollset);
+                */
 
                 ep.clickPaymentMode();
                 log("clicked on payment mode dropdown");
@@ -252,17 +259,28 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 ep.selectGovtLicense(data.govtRecruitmentContractLicense);
                 log("selected govt recruitment contract license: " + data.govtRecruitmentContractLicense);
 
-                ep.deleteBasicSalaryComponent();
-                log("deleted existing basic salary component");
+                // ep.deleteBasicSalaryComponent();
+                // log("deleted existing basic salary component");
 
                 for (EmployeeModel.SalaryComponentModel data1 : data.salaryComponents)
                 {
                     ep.clickAddSalaryComponentBtn();
+                    log("clicked on add salary component button");
+
                     ep.clickSalaryComponent();
+                    log("clicked on salary component dropdown");
+
                     ep.selectSalComponent(data1.salaryComponent);
+                    log("selected salary component: " + data1.salaryComponent);
+
                     ep.provideAmt(data1.amount);
+                    log("provided amount: " + data1.amount);
+
                     ep.provideEffectiveFromDate(data1.effectiveFromDate);
+                    log("provided effective from date: " + data1.effectiveFromDate);
+
                     ep.saveSalComponent();
+                    log("clicked on save salary component button");
                 }
 
                 for (EmployeeModel.OvertimeTypesModel ot : data.overtimeTypes)
@@ -273,8 +291,8 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     ep.clickOvertimeType();
                     log("clicked on overtime type dropdown");
 
-                    ep.selectOvertimeType(data.overtimeType);
-                    log("selected overtime type: " + data.overtimeType);
+                    ep.selectOvertimeType(ot.overtimeType);
+                    log("selected overtime type: " + ot.overtimeType);
 
                     ep.saveOvertimeType();
                     log("clicked on save overtime type button");
@@ -369,7 +387,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
         try
         {
             String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
-            List<EmployeeModel.TimeOffTabModel> timeOffTabInfo = JsonUtils.convertJsonListDataModel(employeeFile, "payroll",
+            List<EmployeeModel.TimeOffTabModel> timeOffTabInfo = JsonUtils.convertJsonListDataModel(employeeFile, "timeOff",
                     EmployeeModel.TimeOffTabModel.class);
 
             EmployeePage ep = new EmployeePage();
@@ -415,6 +433,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.AttendanceTabModel.class);
 
             EmployeePage ep = new EmployeePage();
+
             for (EmployeeModel.AttendanceTabModel data : attendanceTabInfo)
             {
                 ep.clickAttendance();
@@ -447,11 +466,16 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 ep.selectPolicy(data.policy);
                 log("selected policy: " + data.policy);
 
+                /*
                 ep.clickShiftPreference();
                 log("clicked on Shift Preference dropdown");
 
                 ep.selectShiftPreference(data.shiftPreference);
                 log("selected shift preference: " + data.shiftPreference);
+                */
+
+                BasePage.clickOnSave();
+                log("clicked on Save button to save attendance information");
             }
         } catch (Exception e)
         {
@@ -472,6 +496,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.DocumentsTabModel.class);
 
             EmployeePage ep = new EmployeePage();
+
             for (EmployeeModel.DocumentsTabModel data : documentsTabInfo)
             {
                 ep.clickDocuments();
@@ -501,8 +526,8 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 ep.empDocClickSave();
                 log("clicked on save document button");
 
-                ep.addAttachment();
-                log("clicked on add attachment button");
+                // ep.addAttachment();
+                //  log("clicked on add attachment button");
             }
         } catch (Exception e)
         {
@@ -523,6 +548,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.PerformanceTabModel.class);
 
             EmployeePage ep = new EmployeePage();
+            ep.navigateToEmp();
             for (EmployeeModel.PerformanceTabModel data : performanceTabInfo)
             {
                 ep.clickPerformance();

@@ -1,5 +1,6 @@
 package pageObjects.HRMS.HRCore;
 
+import base.BaseTest;
 import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -270,8 +271,11 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'YearOfPassing')]")
     WebElement YOP;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[9]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/span[1]")
+    @FindBy(xpath = "//div[@class='dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text']//span[@class='dx-button-text'][normalize-space()='Save']")
     WebElement saveQualification;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[20]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]")
+    WebElement saveQualification1;
     //endregion
 
     //region Payroll Tab Page Objects
@@ -1283,6 +1287,7 @@ public class EmployeePage extends BasePage
 
     public void clickSaveBtn() throws InterruptedException
     {
+        waitTS(2);
         saveWorkExp.click();
         waitTS(1);
     }
@@ -1291,6 +1296,7 @@ public class EmployeePage extends BasePage
     //region qualification section
     public void addQualificationBtn() throws InterruptedException
     {
+        waitTS(6);
         addQualification.click();
         waitTS(1);
     }
@@ -1321,8 +1327,17 @@ public class EmployeePage extends BasePage
 
     public void saveQualification()
     {
-        saveQualification.click();
-        waitTS(1);
+        try
+        {
+            waitTS(2);
+            saveQualification.click();
+            waitTS(1);
+        } catch (Exception e)
+        {
+            waitTS(2);
+            JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), saveQualification1);
+            waitTS(1);
+        }
     }
     //endregion
 
@@ -1566,7 +1581,9 @@ public class EmployeePage extends BasePage
 
     public void clickAddMiscellaneousAccrualEarnings()
     {
-        addMiscellaneousAccrual.click();
+        JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), addMiscellaneousAccrual);
+        waitTS(2);
+        waitForElement(addMiscellaneousAccrual);
         waitTS(1);
     }
 
@@ -1793,6 +1810,7 @@ public class EmployeePage extends BasePage
 
     public void selectPlaceOfDocument(String value)
     {
+        waitTS(2);
         selectDropdownOption(value);
     }
 

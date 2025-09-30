@@ -37,7 +37,7 @@
       "manager": "Rohit Chavan",
       "substituteEmployee": "Mary Kom",
       "category": "CAT 2",
-      "workLocation": "AfhXad",
+      "workLocation": "Salmiya City",
       "employmentType": "Part Time",
       "probationPeriod": "50",
       "noticePeriod": "50",
@@ -60,27 +60,30 @@
         {
           "salaryComponent": "Food Allowance",
           "amount": "500",
-          "effectiveFromDate": "10-Nov-2024"
+          "effectiveFromDate": "01-Jan-2025"
         },
         {
           "salaryComponent": "Housing Allowance",
           "amount": "500",
-          "effectiveFromDate": "10-Nov-2024"
+          "effectiveFromDate": "01-Jan-2025"
         }
       ],
       "overtimeTypes": [
         {
-          "overtimeType": "Normal Overtime"
+          "overtimeType": "Normal Overtime SDET"
         },
         {
-          "overtimeType": "Holiday Overtime"
+          "overtimeType": "Weekend Overtime SDET"
+        },
+        {
+          "overtimeType": "Holiday Overtime SDET"
         }
       ],
       "relationshipType": "Spouse",
       "description": "desc",
-      "ticketAccrual": "Four Ticket Per Year",
+      "ticketAccrual": "One Ticket Per Year",
       "ticketDestination": "Kolkata",
-      "ticketEffectiveFromDate": "10-Nov-2024",
+      "ticketEffectiveFromDate": "01-Jan-2025",
       "accrualType": "Education",
       "accrualAmount": "500",
       "resetAvailedDaysMethod": "On Calender Month",
@@ -94,12 +97,12 @@
     {
       "leaveTypes": [
         {
-          "leaveType": "Annual Leave",
-          "LTeffectiveFromDate": "01-Jan-2024"
+          "leaveType": "Condolence Leave",
+          "LTeffectiveFromDate": "01-Jan-2025"
         },
         {
           "leaveType": "Sick Leave",
-          "LTeffectiveFromDate": "01-Jan-2024"
+          "LTeffectiveFromDate": "01-Jan-2025"
         }
       ]
     }
@@ -115,7 +118,7 @@
   ],
   "documents": [
     {
-      "documentType": "Agreement",
+      "documentType": "Sponsor Contract",
       "dateOfExpiry": "01-Jan-2030",
       "placeOfDocument": "Company"
     },
@@ -129,21 +132,21 @@
     {
       "KRA": [
         {
-          "KeyResultAreaName": "Market Insights",
+          "KeyResultAreaName": "Performance Management",
           "weightage": "100"
         },
         {
-          "KeyResultAreaName": "project sign off",
+          "KeyResultAreaName": "Analytical Thinking",
           "weightage": "100"
         }
       ],
       "Competencies": [
         {
-          "competencyName": "Communication with clients",
+          "competencyName": "Accountability",
           "competenciesWeightage": "100"
         },
         {
-          "competencyName": "Initiative",
+          "competencyName": "Dress Code",
           "competenciesWeightage": "100"
         }
       ],

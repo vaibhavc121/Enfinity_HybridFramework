@@ -24,7 +24,7 @@
 
             <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest">
                 <methods>
-                    <include name="verifyJobTab"/>
+                    <include name="verifyPerformanceTab"/>
                 </methods>
             </class>
 
