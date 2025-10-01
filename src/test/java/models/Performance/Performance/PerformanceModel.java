@@ -64,12 +64,12 @@ public class PerformanceModel
 
     public static class ReviewAppraisalModel
     {
-        public KRA KRA;
-        public Goal goals;
-        public Competency competencies;
-        public ReviewQuestion reviewQuestions;
-        public Performance performance;
-        public SkillAndLearning skillsAndLearning;
+        public List<KRA> KRA;
+        public List<Goal> goals;
+        public List<Competency> competencies;
+        public List<ReviewQuestion> reviewQuestions;
+        public List<Performance> performance;
+        public List<SkillAndLearning> skillsAndLearning;
     }
 
     public static class KRA

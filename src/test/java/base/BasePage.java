@@ -402,6 +402,11 @@ public class BasePage
         waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
     }
 
+    public void clickSubmit()
+    {
+        waitForElement1(By.xpath("//span[normalize-space()='Submit']")).click();
+    }
+
     public void clickSaveSubmit()
     {
         waitForElement1(By.xpath("//span[text()='Save and Submit']")).click();

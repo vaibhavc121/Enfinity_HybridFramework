@@ -18,6 +18,9 @@ public class ReviewPage extends BasePage
     @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[1]")
     private WebElement reviewComment1;
 
+    @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[2]")
+    private WebElement empOpinionKRA;
+
     @FindBy(xpath = "//textarea[contains(@id,'Comment')]")
     private WebElement overallComment1;
 
@@ -36,11 +39,14 @@ public class ReviewPage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Goals']")
     private WebElement goals;
 
-    @FindBy(xpath = "(//input[@role='spinbutton'])[2]")
+    @FindBy(xpath = "(//input[@role='spinbutton'])[3]")
     private WebElement spinbutton2;
 
     @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[2]")
     private WebElement reviewComment2;
+
+    @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[3]")
+    private WebElement empOpiniongoals;
 
     @FindBy(xpath = "//textarea[contains(@id,'Comment')]")
     private WebElement overallComment2;
@@ -60,11 +66,14 @@ public class ReviewPage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Competencies']")
     private WebElement competenciesCompetencies;
 
-    @FindBy(xpath = "(//input[@role='spinbutton'])[3]")
+    @FindBy(xpath = "(//input[@role='spinbutton'])[5]")
     private WebElement spinbutton3;
 
     @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[3]")
     private WebElement reviewComment3;
+
+    @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[5]")
+    private WebElement empOpinionCompetencies;
 
     @FindBy(xpath = "//textarea[contains(@id,'Comment')]")
     private WebElement overallComment3;
@@ -144,6 +153,10 @@ public class ReviewPage extends BasePage
     {
         clearAndProvide1(reviewComment1, value);
     }
+    public void provideEmpOpinionKRA()
+    {
+        clearAndProvide1(empOpinionKRA, "Emp Opinion for KRA");
+    }
     public void enterOverallComment(String value)
     {
         clearAndProvide1(overallComment1, value);
@@ -156,6 +169,10 @@ public class ReviewPage extends BasePage
     {
         waitForElement(save).click();
     }
+    public void scrollPageSubmitForOpinion()
+    {
+        JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), submitForOpinion);
+    }
     public void clickSubmitForOpinion()
     {
         waitForElement(submitForOpinion).click();
@@ -166,7 +183,7 @@ public class ReviewPage extends BasePage
     //region Goals
     public void clickGoals()
     {
-        clickOnElement1(goals);
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), goals);
     }
     public void provideRating2(String value)
     {
@@ -175,6 +192,10 @@ public class ReviewPage extends BasePage
     public void enterReviewComment2(String value)
     {
         clearAndProvide1(reviewComment2, value);
+    }
+    public void provideEmpOpinionGoal()
+    {
+        clearAndProvide1(empOpiniongoals, "Emp Opinion for Goals");
     }
     public void enterOverallComment2(String value)
     {
@@ -190,7 +211,7 @@ public class ReviewPage extends BasePage
     //region Competencies
     public void clickCompetencies()
     {
-        clickOnElement1(competenciesCompetencies);
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), competenciesCompetencies);
     }
     public void provideRating3(String value)
     {
@@ -199,6 +220,10 @@ public class ReviewPage extends BasePage
     public void enterReviewComment3(String value)
     {
         clearAndProvide1(reviewComment3, value);
+    }
+    public void provideEmpOpinionCompetencies()
+    {
+        clearAndProvide1(empOpinionCompetencies, "Emp Opinion for Competencies");
     }
     public void enterOverallComment3(String value)
     {
@@ -214,7 +239,7 @@ public class ReviewPage extends BasePage
     //region Review Questions
     public void clickReviewQuestions()
     {
-        clickOnElement1(reviewQuestions);
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), reviewQuestions);
     }
     public void enterOverallComment4(String value)
     {
@@ -229,7 +254,7 @@ public class ReviewPage extends BasePage
     //region Performance
     public void clickPerformance()
     {
-        clickOnElement1(performance);
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), performance);
     }
     public void enterHikeAmount(String value)
     {
@@ -241,11 +266,14 @@ public class ReviewPage extends BasePage
     }
     public void selectPromotedDepartment(String value)
     {
-        provideAndEnter(promotedDepartment, value);
+        clickOnElement1(promotedDepartment);
+        selectDropdownOption(value);
     }
     public void selectPromotedDesignation(String value)
     {
-        provideAndEnter(promotedDesignation, value);
+        BasePage.waitTS(2);
+        clickOnElement1(promotedDesignation);
+        selectDropdownOption(value);
     }
 
     //endregion
@@ -253,7 +281,7 @@ public class ReviewPage extends BasePage
     //region Skills & Learning
     public void clickSkillsAndLearning()
     {
-        clickOnElement1(skillsAndLearning);
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), skillsAndLearning);
     }
     public void provideNewLevel()
     {
@@ -299,6 +327,18 @@ public class ReviewPage extends BasePage
     public void scrollPage()
     {
         JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), save);
+    }
+
+    public boolean verifyStatus()
+    {
+        String opinionStatus = waitForElement1(By.xpath("//span[@id='opinion_status']")).getText();
+        if (opinionStatus.contains("Pending for employee's opinion"))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
     }
 
     //endregion

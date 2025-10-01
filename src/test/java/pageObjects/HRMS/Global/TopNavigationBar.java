@@ -132,7 +132,7 @@ public class TopNavigationBar extends BasePage
 
     public boolean validateMyApprovalData(String expData)
     {
-        String notificationData = waitForElement1(By.xpath("//div[@class='pa-details']")).getText();
+        String notificationData = waitForElement1(By.xpath("//span[@class='pa-title']")).getText();
         if (notificationData.contains(expData))
         {
             return true;

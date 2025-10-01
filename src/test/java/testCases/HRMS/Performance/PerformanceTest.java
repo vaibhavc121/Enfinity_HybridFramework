@@ -326,16 +326,28 @@ public class PerformanceTest extends BaseTest
         try
         {
             String performanceFile = FileUtils.getDataFile("Performance", "Performance", "PerformanceData");
-            List<PerformanceModel.ReviewAppraisalModel> reviewAppraisalData = JsonUtils.convertJsonListDataModel(performanceFile, "reviewAppraisal", PerformanceModel.ReviewAppraisalModel.class);
+            List<PerformanceModel.ReviewAppraisalModel> reviewAppraisalData =
+                    JsonUtils.convertJsonListDataModel(performanceFile, "reviewAppraisal", PerformanceModel.ReviewAppraisalModel.class);
 
-            BasePage.filterAndOpenTransaction(2, 1, appraisalCycleName, "Edit");
-            AppraisalCyclePage ac = new AppraisalCyclePage();
-            ac.clickInitiate();
-            log("Clicked on Initiate button");
+            try
+            {
+                PerformancePage pp = new PerformancePage();
+                pp.clickPerformance();
+                log("Clicked on Performance module");
+                pp.clickAppraisalCycle();
+                log("Clicked on Appraisal Cycle");
 
-            BasePage.waitTS(2);
-            BasePage.pressEnter();
-            log("Pressed Enter key");
+                BasePage.filterAndOpenTransaction(2, 1, appraisalCycleName, "Edit");
+                AppraisalCyclePage ac = new AppraisalCyclePage();
+                ac.clickInitiate();
+                log("Clicked on Initiate button");
+
+                BasePage.waitTS(2);
+                BasePage.pressEnter();
+                log("Pressed Enter key");
+            } catch (Exception ignored)
+            {
+            }
 
             //region Validate Notification
             TopNavigationBar tn = new TopNavigationBar();
@@ -346,150 +358,228 @@ public class PerformanceTest extends BaseTest
             log("Verified: Notification data found: " + appraisalCycleName);
 
             tn.openTxn();
+            BasePage.waitTS(5);
             BasePage.switchTab();
-            BasePage.closeUnwantedTab();
+            BasePage.closeTab();
             BasePage.waitTS(3);
             log("tab switched to appraisal review page");
 
             ReviewPage rp = new ReviewPage();
+
             for (PerformanceModel.ReviewAppraisalModel data : reviewAppraisalData)
             {
+
                 //region Key Result Areas
-                rp.provideRating(data.KRA.rating);
-                log("Provided KRA rating: " + data.KRA.rating);
+                for (PerformanceModel.KRA kra : data.KRA)
+                {
+                    rp.provideRating(kra.rating);
+                    log("Provided KRA rating: " + kra.rating);
 
-                rp.enterReviewComment(data.KRA.reviewComment);
-                log("Entered KRA review comment: " + data.KRA.reviewComment);
+                    rp.enterReviewComment(kra.reviewComment);
+                    log("Entered KRA review comment: " + kra.reviewComment);
 
-                rp.enterOverallComment(data.KRA.overallComment);
-                log("Entered KRA overall comment: " + data.KRA.overallComment);
+                    rp.enterOverallComment(kra.overallComment);
+                    log("Entered KRA overall comment: " + kra.overallComment);
 
-                rp.enterTrainingRequirements(data.KRA.learningRequirements);
-                log("Entered KRA learning requirements: " + data.KRA.learningRequirements);
+                    BasePage.pressTab();
+                    log("Pressed Tab key");
 
-                rp.scrollPage();
-                log("Scrolled down the page to access Save button");
-                rp.clickSave();
-                log("Clicked on Save button");
+                    rp.enterTrainingRequirements(kra.learningRequirements);
+                    log("Entered KRA learning requirements: " + kra.learningRequirements);
+
+                    rp.scrollPage();
+                    rp.clickSave();
+                }
                 //endregion
 
                 //region Goals
                 rp.clickGoals();
-                log("Clicked on Goals tab");
+                for (PerformanceModel.Goal goal : data.goals)
+                {
+                    rp.provideRating2(goal.rating);
+                    log("Provided Goal rating: " + goal.rating);
 
-                rp.provideRating2(data.goals.rating);
-                log("Provided Goals rating: " + data.goals.rating);
+                    rp.enterReviewComment2(goal.reviewComment);
+                    log("Entered Goal review comment: " + goal.reviewComment);
 
-                rp.enterReviewComment2(data.goals.reviewComment);
-                log("Entered Goals review comment: " + data.goals.reviewComment);
+                    rp.enterOverallComment2(goal.overallComment);
+                    log("Entered Goal overall comment: " + goal.overallComment);
 
-                rp.enterOverallComment2(data.goals.overallComment);
-                log("Entered Goals overall comment: " + data.goals.overallComment);
+                    BasePage.pressTab();
+                    log("Pressed Tab key");
 
-                rp.enterTrainingRequirements2(data.goals.learningRequirements);
-                log("Entered Goals learning requirements: " + data.goals.learningRequirements);
+                    rp.enterTrainingRequirements2(goal.learningRequirements);
+                    log("Entered Goal learning requirements: " + goal.learningRequirements);
 
-                rp.scrollPage();
-                log("Scrolled down the page to access Save button");
-                rp.clickSave();
-                log("Clicked on Save button");
+                    rp.scrollPage();
+                    log("Scrolled the page");
+
+                    rp.clickSave();
+                    log("Clicked on Save button");
+                }
                 //endregion
 
                 //region Competencies
                 rp.clickCompetencies();
-                log("Clicked on Competencies tab");
+                for (PerformanceModel.Competency comp : data.competencies)
+                {
+                    rp.provideRating3(comp.rating);
+                    log("Provided Competency rating: " + comp.rating);
 
-                rp.provideRating3(data.competencies.rating);
-                log("Provided Competencies rating: " + data.competencies.rating);
+                    rp.enterReviewComment3(comp.reviewComment);
+                    log("Entered Competency review comment: " + comp.reviewComment);
 
-                rp.enterReviewComment3(data.competencies.reviewComment);
-                log("Entered Competencies review comment: " + data.competencies.reviewComment);
+                    rp.enterOverallComment3(comp.overallComment);
+                    log("Entered Competency overall comment: " + comp.overallComment);
 
-                rp.enterOverallComment3(data.competencies.overallComment);
-                log("Entered Competencies overall comment: " + data.competencies.overallComment);
+                    BasePage.pressTab();
+                    log("Pressed Tab key");
 
-                rp.enterTrainingRequirements3(data.competencies.learningRequirements);
-                log("Entered Competencies learning requirements: " + data.competencies.learningRequirements);
+                    rp.enterTrainingRequirements3(comp.learningRequirements);
+                    log("Entered Competency learning requirements: " + comp.learningRequirements);
 
-                rp.scrollPage();
-                log("Scrolled down the page to access Save button");
-                rp.clickSave();
-                log("Clicked on Save button");
+                    rp.scrollPage();
+                    log("Scrolled the page");
+
+                    rp.clickSave();
+                    log("Clicked on Save button");
+                }
                 //endregion
 
                 //region Review Questions
                 rp.clickReviewQuestions();
-                log("Clicked on Review Questions tab");
+                for (PerformanceModel.ReviewQuestion rq : data.reviewQuestions)
+                {
+                    rp.enterOverallComment4(rq.overallComment);
+                    log("Entered Review Question overall comment: " + rq.overallComment);
 
-                rp.enterOverallComment4(data.reviewQuestions.overallComment);
-                log("Entered Review Questions overall comment: " + data.reviewQuestions.overallComment);
+                    rp.enterLearningRequirements(rq.learningRequirements);
+                    log("Entered Review Question learning requirements: " + rq.learningRequirements);
 
-                rp.enterLearningRequirements(data.reviewQuestions.learningRequirements);
-                log("Entered Review Questions learning requirements: " + data.reviewQuestions.learningRequirements);
+                    rp.scrollPage();
+                    log("Scrolled the page");
 
-                rp.scrollPage();
-                log("Scrolled down the page to access Save button");
-                rp.clickSave();
-                log("Clicked on Save button");
+                    rp.clickSave();
+                    log("Clicked on Save button");
+                }
                 //endregion
 
                 //region Performance
                 rp.clickPerformance();
-                log("Clicked on Performance tab");
+                for (PerformanceModel.Performance perf : data.performance)
+                {
+                    rp.enterHikeAmount(perf.hikeAmount);
+                    log("Entered Hike Amount: " + perf.hikeAmount);
 
-                rp.enterHikeAmount(data.performance.hikeAmount);
-                log("Entered Hike Amount: " + data.performance.hikeAmount);
+                    rp.enterHikePercentage(perf.hikePercentage);
+                    log("Entered Hike Percentage: " + perf.hikePercentage);
 
-                rp.enterHikePercentage(data.performance.hikePercentage);
-                log("Entered Hike Percentage: " + data.performance.hikePercentage);
+                    rp.selectPromotedDepartment(perf.promotedDepartment);
+                    log("Selected Promoted Department: " + perf.promotedDepartment);
 
-                rp.selectPromotedDepartment(data.performance.promotedDepartment);
-                log("Selected Promoted Department: " + data.performance.promotedDepartment);
+                    rp.selectPromotedDesignation(perf.promotedDesignation);
+                    log("Selected Promoted Designation: " + perf.promotedDesignation);
 
-                rp.selectPromotedDesignation(data.performance.promotedDesignation);
-                log("Selected Promoted Designation: " + data.performance.promotedDesignation);
+                    rp.enterOverallComment(perf.overallComment);
+                    log("Entered Performance overall comment: " + perf.overallComment);
 
-                rp.enterOverallComment(data.performance.overallComment);
-                log("Entered Performance overall comment: " + data.performance.overallComment);
+                    rp.enterLearningRequirements(perf.learningRequirements);
+                    log("Entered Performance learning requirements: " + perf.learningRequirements);
 
-                rp.enterLearningRequirements(data.performance.learningRequirements);
-                log("Entered Performance learning requirements: " + data.performance.learningRequirements);
+                    rp.scrollPage();
+                    log("Scrolled the page");
 
-                rp.scrollPage();
-                log("Scrolled down the page to access Save button");
-                rp.clickSave();
-                log("Clicked on Save button");
+                    rp.clickSave();
+                    log("Clicked on Save button");
+                }
                 //endregion
 
                 //region Skills & Learning
                 rp.clickSkillsAndLearning();
-                log("Clicked on Skills & Learning tab");
+                for (PerformanceModel.SkillAndLearning sl : data.skillsAndLearning)
+                {
+                    rp.provideNewLevel();
+                    log("Clicked on New Level button");
 
-                rp.provideNewLevel();
-                log("Provided New Level");
+                    rp.addRemoveLearningCourse();
+                    log("Clicked on Add/Remove Learning Course button");
 
-                rp.addRemoveLearningCourse();
-                log("Added/Removed Learning Course");
+                    rp.enterOverallComment(sl.overallComment);
+                    log("Entered Skills & Learning overall comment: " + sl.overallComment);
 
-                rp.enterOverallComment(data.skillsAndLearning.overallComment);
-                log("Entered Skills & Learning overall comment: " + data.skillsAndLearning.overallComment);
+                    rp.enterLearningRequirements(sl.learningRequirements);
+                    log("Entered Skills & Learning learning requirements: " + sl.learningRequirements);
 
-                rp.enterLearningRequirements(data.skillsAndLearning.learningRequirements);
-                log("Entered Skills & Learning learning requirements: " + data.skillsAndLearning.learningRequirements);
+                    rp.scrollPage();
+                    log("Scrolled the page");
 
-                rp.scrollPage();
-                log("Scrolled down the page to access Save button");
-                rp.clickSave();
-                log("Clicked on Save button");
+                    rp.clickSave();
+                    log("Clicked on Save button");
+                }
 
+                rp.scrollPageSubmitForOpinion();
+                log("Scrolled the page to access Submit For Opinion button");
                 rp.clickSubmitForOpinion();
                 log("Clicked on Submit For Opinion button");
+                BasePage.pressEnter();
+                log("Pressed Enter key");
+
+                Assert.assertTrue(rp.verifyStatus(), "Status not updated to 'Pending for employee's opinion'");
+                log("Verified: Status updated to 'Pending for employee's opinion'");
 
                 //endregion
 
-            }
+                //region Employee's opinion
+                BasePage.logoutAndLogin("rohitc@test.com", "123");
 
-            //endregion
+                //region  Open Opinion Notification
+                tn.clickBellIcon();
+                log("Clicked on Bell icon to open Notifications");
+
+                softAssert.assertTrue(tn.validateMyApprovalData(appraisalCycleName), "Notification data not found: " + appraisalCycleName);
+                log("Verified: Notification data found: " + appraisalCycleName);
+
+                tn.openTxn();
+                BasePage.waitTS(5);
+                BasePage.switchTab();
+                BasePage.closeTab();
+                BasePage.waitTS(3);
+                log("tab switched to appraisal review page");
+                //endregion
+
+                rp.provideEmpOpinionKRA();
+                log("Provided Employee's Opinion on KRA");
+
+                rp.scrollPage();
+                BasePage.clickOnSave();
+                log("Clicked on Save button");
+
+                rp.clickGoals();
+                log("Clicked on Goals tab");
+                rp.provideEmpOpinionGoal();
+                log("Provided Employee's Opinion on Goal");
+
+                rp.scrollPage();
+                BasePage.clickOnSave();
+                log("Clicked on Save button");
+
+                rp.clickCompetencies();
+                log("Clicked on Competencies tab");
+
+                rp.provideEmpOpinionCompetencies();
+                log("Provided Employee's Opinion on Competency");
+
+                rp.scrollPage();
+                BasePage.clickOnSave();
+                log("Clicked on Save button");
+
+                rp.clickSubmit();
+                log("Clicked on Submit button");
+                BasePage.pressEnter();
+                log("Pressed Enter key");
+
+                //endregion
+            }
         } catch (Exception e)
         {
             LoggerFactory.getLogger().error("Test failed due to exception: ", e);
