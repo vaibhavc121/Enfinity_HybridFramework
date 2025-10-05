@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utilities.JavaScriptUtils;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ReviewPage extends BasePage
 {
     //region Locators
@@ -29,6 +32,9 @@ public class ReviewPage extends BasePage
 
     @FindBy(xpath = "//span[normalize-space()='Save']")
     private WebElement save;
+
+    @FindBy(xpath = "//span[normalize-space()='Approve']")
+    private WebElement approve;
 
     @FindBy(xpath = "//span[normalize-space()='Submit for Opinion']")
     private WebElement submitForOpinion;
@@ -138,6 +144,10 @@ public class ReviewPage extends BasePage
     //press enter
 
     //endregion
+    //endregion
+
+    //region Validation
+
     //endregion
 
     //endregion
@@ -285,7 +295,7 @@ public class ReviewPage extends BasePage
     }
     public void provideNewLevel()
     {
-        String currentLevel = waitForElement1(By.cssSelector(".current-level.low-current-level")).getText();
+        String currentLevel = waitForElement1(By.xpath("//td[@class='current-level']")).getText();
 
         if (currentLevel.equalsIgnoreCase("Beginner"))
         {
@@ -307,6 +317,7 @@ public class ReviewPage extends BasePage
     {
         clickOnElement1(plusButton);
         BaseTest.log("Clicked on plus button");
+        waitTS(3);
         clickOnElement1(select);
         BaseTest.log("Clicked on select button");
         clickOnElement1(closePopup);
@@ -329,10 +340,44 @@ public class ReviewPage extends BasePage
         JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), save);
     }
 
+    public void scrollPageApprove()
+    {
+        JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), approve);
+    }
+
     public boolean verifyStatus()
     {
         String opinionStatus = waitForElement1(By.xpath("//span[@id='opinion_status']")).getText();
         if (opinionStatus.contains("Pending for employee's opinion"))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
+    //endregion
+
+    //region Validation
+    public Map<String, String> extractRating1()
+    {
+        String finalScore = waitForElement1(By.xpath("(//span[@id='finalAvg'])[2]")).getText().trim();
+        String finalRating = waitForElement1(By.xpath("(//span[@id='ratingName'])[1]")).getText().trim();
+
+        Map<String, String> data = new HashMap<>();
+        data.put("finalScore", finalScore);
+        data.put("finalRating", finalRating);
+
+        return data;
+    }
+
+    public boolean extractRating(String expectedFinalScore, String expectedFinalRating)
+    {
+        String finalScore = waitForElement1(By.xpath("(//span[@id='finalAvg'])[2]")).getText().trim();
+        String finalRating = waitForElement1(By.xpath("(//span[@id='ratingName'])[1]")).getText().trim();
+
+        if (finalScore.equals(expectedFinalScore) && finalRating.equals(expectedFinalRating))
         {
             return true;
         } else

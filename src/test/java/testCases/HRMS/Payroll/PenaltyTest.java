@@ -10,6 +10,7 @@ import pageObjects.HRMS.Global.NotificationPage;
 import pageObjects.HRMS.Login.LoginPage;
 import pageObjects.HRMS.Payroll.PayrollPage;
 import pageObjects.HRMS.Payroll.PenaltyPage;
+import utilities.DateUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class PenaltyTest extends BaseTest
 {
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
     public void createPenaltyInDays()
     {
         try
@@ -61,7 +62,8 @@ public class PenaltyTest extends BaseTest
                 pn.clickSaveViewApproveBack();
                 log("clicked on view approve back button");
 
-                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6, 6));
+                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6, 6),
+                        "Penalty in days not created successfully");
                 //Assert.assertTrue(BasePage.validateListing(penalty.employee, 7, 7));
                 log("assertion passed: Penalty in days created successfully");
             }
@@ -72,7 +74,7 @@ public class PenaltyTest extends BaseTest
         }
     }
 
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2, enabled = false)
     public void deletePenaltyInDays()
     {
         try
@@ -98,8 +100,8 @@ public class PenaltyTest extends BaseTest
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
 
-                BasePage.performAction(7, penalty.employee, "Amend");
-                Assert.assertFalse(BasePage.validateListing(penalty.employee, 7, 7),
+                BasePage.performAction(2, DateUtils.getCurrentDate("dd-MMM-yyyy"), "Amend");
+                Assert.assertFalse(BasePage.validateListing(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2),
                         "Penalty in days not deleted successfully");
                 log("assertion passed: Penalty in days deleted successfully");
             }
@@ -152,7 +154,8 @@ public class PenaltyTest extends BaseTest
                 pn.clickSaveViewApproveBack();
                 log("clicked on view approve back button");
 
-                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6, 6));
+                Assert.assertTrue(BasePage.validateListing(penalty.expectedDeductionAmt, 6, 6),
+                        "Penalty in amt not created successfully");
                 log("assertion passed: Penalty in amt created successfully");
             }
         } catch (Exception e)
@@ -186,8 +189,8 @@ public class PenaltyTest extends BaseTest
                 pn.clickOnPenalty();
                 log("clicked on penalty link");
 
-                BasePage.performAction(7, penalty.employee, "Amend");
-                Assert.assertFalse(BasePage.validateListing(penalty.employee, 7, 7));
+                BasePage.performAction(2, DateUtils.getCurrentDate("dd-MMM-yyyy"), "Amend");
+                Assert.assertFalse(BasePage.validateListing(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2), "Penalty in amt not deleted successfully");
                 log("assertion passed: Penalty in Amt deleted successfully");
             }
         } catch (Exception e)

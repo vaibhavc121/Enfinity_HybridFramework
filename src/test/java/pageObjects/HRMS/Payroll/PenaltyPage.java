@@ -41,17 +41,22 @@ public class PenaltyPage extends BasePage
     public void providePenaltyDate(String date)
     {
         clearAndProvide1(penaltyDate, date);
+        waitTS(2);
     }
 
     public void providePenaltyType(String penaltyType)
     {
         clearAndProvide1(penaltyTypeDD, penaltyType);
+        waitTS(2);
     }
     public void providePenaltyInDays(String days)
     {
         clearAndProvide1(penaltyInDays, days);
+        waitTS(2);
         pressTab();
+        waitTS(2);
         pressTab();
+        waitTS(2);
     }
     public void providePenaltyInAmount(String amount)
     {

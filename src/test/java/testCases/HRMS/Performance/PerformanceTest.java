@@ -4,6 +4,7 @@ import base.BasePage;
 import base.BaseTest;
 import factory.DriverFactory;
 import factory.LoggerFactory;
+import freemarker.template.utility.DateUtil;
 import models.Performance.Performance.PerformanceModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,7 +15,9 @@ import pageObjects.HRMS.Performance.PerformancePage;
 import pageObjects.HRMS.Performance.ReviewPage;
 import utilities.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class PerformanceTest extends BaseTest
 {
@@ -174,16 +177,20 @@ public class PerformanceTest extends BaseTest
                 ac.enterName(appraisalCycleName);
                 log("Entered Name: " + appraisalCycleName);
 
-                ac.enterAppraisalFromDate(data.appraisalFromDate);
+                //ac.enterAppraisalFromDate(data.appraisalFromDate);
+                ac.enterAppraisalFromDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
                 log("Entered Appraisal From Date: " + data.appraisalFromDate);
 
-                ac.enterAppraisalToDate(data.appraisalToDate);
+                //ac.enterAppraisalToDate(data.appraisalToDate);
+                ac.enterAppraisalToDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
                 log("Entered Appraisal To Date: " + data.appraisalToDate);
 
-                ac.enterProcessFromDate(data.processFromDate);
+                //ac.enterProcessFromDate(data.processFromDate);
+                ac.enterProcessFromDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
                 log("Entered Process From Date: " + data.processFromDate);
 
-                ac.enterProcessToDate(data.processToDate);
+                //ac.enterProcessToDate(data.processToDate);
+                ac.enterProcessToDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
                 log("Entered Process To Date: " + data.processToDate);
 
                 ac.enterDescription(data.description);
@@ -288,7 +295,7 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = {"functional", "regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 4)
+    @Test(groups = {"regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 4)
     public void deleteAppraisalCycle()
     {
         try
@@ -320,7 +327,7 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = {"functional", "regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 5)
     public void reviewAppraisal()
     {
         try
@@ -345,6 +352,8 @@ public class PerformanceTest extends BaseTest
                 BasePage.waitTS(2);
                 BasePage.pressEnter();
                 log("Pressed Enter key");
+                BasePage.waitTS(3);
+                BrowserUtils.refreshPage(BaseTest.getDriver());
             } catch (Exception ignored)
             {
             }
@@ -360,7 +369,7 @@ public class PerformanceTest extends BaseTest
             tn.openTxn();
             BasePage.waitTS(5);
             BasePage.switchTab();
-            BasePage.closeTab();
+            //BasePage.closeUnwantedTab();
             BasePage.waitTS(3);
             log("tab switched to appraisal review page");
 
@@ -498,6 +507,8 @@ public class PerformanceTest extends BaseTest
                 rp.clickSkillsAndLearning();
                 for (PerformanceModel.SkillAndLearning sl : data.skillsAndLearning)
                 {
+                    rp.clickSkillsAndLearning();
+                    log("Clicked on Skills & Learning tab");
                     rp.provideNewLevel();
                     log("Clicked on New Level button");
 
@@ -523,6 +534,8 @@ public class PerformanceTest extends BaseTest
                 log("Clicked on Submit For Opinion button");
                 BasePage.pressEnter();
                 log("Pressed Enter key");
+                BasePage.waitTS(3);
+                BrowserUtils.refreshPage(BaseTest.getDriver());
 
                 Assert.assertTrue(rp.verifyStatus(), "Status not updated to 'Pending for employee's opinion'");
                 log("Verified: Status updated to 'Pending for employee's opinion'");
@@ -575,10 +588,67 @@ public class PerformanceTest extends BaseTest
 
                 rp.clickSubmit();
                 log("Clicked on Submit button");
+                BasePage.waitTS(2);
                 BasePage.pressEnter();
                 log("Pressed Enter key");
 
                 //endregion
+
+                //region Manager review after employee's opinion
+                BasePage.logoutAndLogin("vaibhav@test.com", "123");
+
+                //region  Open Opinion Notification
+                tn.clickBellIcon();
+                log("Clicked on Bell icon to open Notifications");
+
+                softAssert.assertTrue(tn.validateMyApprovalData(appraisalCycleName), "Notification data not found: " + appraisalCycleName);
+                log("Verified: Notification data found: " + appraisalCycleName);
+
+                tn.openTxn();
+                BasePage.waitTS(5);
+                BasePage.switchTab();
+                BasePage.closeTab();
+                BasePage.waitTS(3);
+                log("tab switched to appraisal review page");
+                //endregion
+
+                rp.scrollPageApprove();
+                log("Scrolled the page to access Approve button");
+
+                BasePage.clickOnApprove();
+                log("Clicked on Approve button");
+
+                BasePage.waitTS(2);
+
+                BasePage.pressEnter();
+                log("Pressed Enter key");
+
+                //endregion
+
+                //region Validation
+                /*
+                Map<String, String> expectedData = new HashMap<>();
+                expectedData.put("finalScore", "91.00");
+                expectedData.put("finalRating", "Strongly Agree");
+
+                for (String key : rp.extractRating().keySet())
+                {
+                    Assert.assertEquals(
+                            rp.extractRating().get(key),
+                            expectedData.get(key),
+                            key + " mismatch!"
+                    );
+                }
+                */
+
+                for (PerformanceModel.ExpectedRating er : data.expectedRating)
+                {
+                    Assert.assertTrue(rp.extractRating(er.finalScore, er.finalRating), "Final Score/Rating mismatch!");
+                    log("Verified: Final Score/Rating matched successfully!");
+                }
+
+                //endregion
+
             }
         } catch (Exception e)
         {

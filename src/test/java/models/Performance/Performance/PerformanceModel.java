@@ -70,6 +70,7 @@ public class PerformanceModel
         public List<ReviewQuestion> reviewQuestions;
         public List<Performance> performance;
         public List<SkillAndLearning> skillsAndLearning;
+        public List<ExpectedRating> expectedRating;
     }
 
     public static class KRA
@@ -118,5 +119,11 @@ public class PerformanceModel
         public String newLevelExpert;
         public String overallComment;
         public String learningRequirements;
+    }
+
+    public static class ExpectedRating
+    {
+        public String finalScore;
+        public String finalRating;
     }
 }

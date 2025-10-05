@@ -24,7 +24,8 @@
 
             <!-- New Test -->
             <!--            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>-->
-            <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest"/>
+            <!--            <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest"/>-->
+            <class name="testCases.HRMS.Performance.PerformanceTest"/>
 
 
         </classes>

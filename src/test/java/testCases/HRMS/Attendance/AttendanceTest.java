@@ -415,16 +415,34 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.NightShiftModel shift : attendanceData)
             {
                 tp.clickNew();
-                tp.provideTimetableName(shift.name);
-                tp.selectDayType(shift.dayType);
-                tp.clickNightShift();
-                tp.selectMode(shift.mode);
-                tp.provideMaximumWorkedHourPerDay(shift.maximumWorkedHourPerDay);
-                tp.provideFirstInTime(shift.firstInTime);
-                tp.provideFirstOutTime(shift.firstOutTime);
-                tp.clickViewBack();
+                log("clicked on New button");
 
-                Assert.assertTrue(BasePage.validateListing(shift.name, 3, 2));
+                tp.provideTimetableName(shift.name);
+                log("provided timetable name: " + shift.name);
+
+                tp.selectDayType(shift.dayType);
+                log("selected day type: " + shift.dayType);
+
+                tp.clickNightShift();
+                log("clicked on Night Shift");
+
+                tp.selectMode(shift.mode);
+                log("selected mode: " + shift.mode);
+
+                tp.provideMaximumWorkedHourPerDay(shift.maximumWorkedHourPerDay);
+                log("provided maximum worked hour per day: " + shift.maximumWorkedHourPerDay);
+
+                tp.provideFirstInTime(shift.firstInTime);
+                log("provided first in time: " + shift.firstInTime);
+
+                tp.provideFirstOutTime(shift.firstOutTime);
+                log("provided first out time: " + shift.firstOutTime);
+
+                tp.clickViewBack();
+                log("clicked on View & Back");
+
+                Assert.assertTrue(BasePage.validateListing(shift.name, 3, 2), "Timetable creation failed for " + shift.name);
+                log("Verified: Timetable created successfully for " + shift.name);
             }
         } catch (Exception e)
         {
@@ -448,7 +466,8 @@ public class AttendanceTest extends BaseTest
             for (AttendanceModel.NightShiftModel strict : attendanceData)
             {
                 BasePage.deleteTxn(3, strict.name);
-                Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2));
+                Assert.assertFalse(BasePage.validateListing(strict.name, 3, 2), "Timetable deletion failed for " + strict.name);
+                log("Verified: Timetable deleted successfully for " + strict.name);
             }
         } catch (Exception e)
         {

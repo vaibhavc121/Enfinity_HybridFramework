@@ -45,6 +45,7 @@
 
             <class name="testCases.HRMS.Performance.PerformanceTest">
                 <methods>
+                    <!--                    <include name="createAppraisalCycle"/>-->
                     <include name="reviewAppraisal"/>
 
                 </methods>

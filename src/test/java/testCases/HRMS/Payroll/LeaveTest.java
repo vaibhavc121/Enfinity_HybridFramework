@@ -589,7 +589,7 @@ public class LeaveTest extends BaseTest
                 ep.clkTimeOff();
 
                 Assert.assertEquals(ep.extractValueFromText(6), expLeaveBalance);
-                BasePage.clickOnHamburgerMenu();
+                BasePage.openSidebar();
                 //Assert.assertTrue(BasePage.validateListing2Fields(leave.employee, 5, 5, leave.leaveTypeCondolence, 9, 9));
 
             }
