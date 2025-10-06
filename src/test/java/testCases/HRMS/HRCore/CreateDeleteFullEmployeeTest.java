@@ -215,7 +215,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.PayrollTabModel.class);
 
             EmployeePage ep = new EmployeePage();
-            ep.navigateToEmp();
+            //ep.navigateToEmp();
             for (EmployeeModel.PayrollTabModel data : payrollTabInfo)
             {
                 ep.clickPayroll();
@@ -548,7 +548,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.PerformanceTabModel.class);
 
             EmployeePage ep = new EmployeePage();
-            ep.navigateToEmp();
+
             for (EmployeeModel.PerformanceTabModel data : performanceTabInfo)
             {
                 ep.clickPerformance();
@@ -658,6 +658,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.IntegrationTabModel.class);
 
             EmployeePage ep = new EmployeePage();
+            //ep.navigateToEmp();
             for (EmployeeModel.IntegrationTabModel data : integrationTabInfo)
             {
                 ep.clickIntegration();
@@ -853,4 +854,80 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
         }
     }
     // endregion
+
+    //region Dependents Tab
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 11)
+    public void verifyDependentsTab()
+    {
+        try
+        {
+            String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
+            List<EmployeeModel.DependentsTabModel> dependentsTab = JsonUtils.convertJsonListDataModel(employeeFile, "dependents",
+                    EmployeeModel.DependentsTabModel.class);
+
+            EmployeePage ep = new EmployeePage();
+            ep.navigateToEmp();
+            for (EmployeeModel.DependentsTabModel data : dependentsTab)
+            {
+                ep.clickMetaballsMenu();
+                log("clicked on metaballs menu");
+
+                ep.clickDependents();
+                log("clicked on Dependents Tab");
+
+                //region Spouses
+                ep.clickAddSpousesBtn();
+                log("clicked on Add Spouse button");
+
+                ep.provideSpouseName(data.spouseName);
+                log("provided Spouse Name: " + data.spouseName);
+
+                ep.provideSpouseBirthDate(data.birthDate);
+                log("provided Spouse Birth Date: " + data.birthDate);
+
+                ep.provideSpouseMarriageDate(data.marriageDate);
+                log("provided Spouse Marriage Date: " + data.marriageDate);
+
+                BasePage.clickOnSave();
+                log("clicked on Save button to save Dependents Info");
+                //endregion
+
+                //region Childrens
+                ep.clickAddChildrensBtn();
+                log("clicked on Add Childrens button");
+
+                ep.provideChildrenName(data.childrenName);
+                log("provided Children Name: " + data.childrenName);
+
+                ep.providechildrenBirthDate(data.childrenBirthDate);
+                log("provided Children Birth Date: " + data.childrenBirthDate);
+
+                ep.clickChildrenSave();
+                log("clicked on Save button to save Children Info");
+
+                //endregion
+
+                //region Others
+                ep.clickAddOthersBtn();
+                log("clicked on Add Others button");
+
+                ep.provideDependentName(data.dependentName);
+                log("provided Dependent Name: " + data.dependentName);
+
+                ep.provideDependentBirthDate(data.dependentBirthDate);
+                log("provided Dependent Birth Date: " + data.dependentBirthDate);
+
+                ep.clickOtherSave();
+                log("clicked on Save button to save Other Dependents Info");
+
+                //endregion
+
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+    //endregion
 }

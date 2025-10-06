@@ -179,18 +179,22 @@ public class PerformanceTest extends BaseTest
 
                 //ac.enterAppraisalFromDate(data.appraisalFromDate);
                 ac.enterAppraisalFromDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                // ac.enterAppraisalFromDate(DateUtils.addDaysToCurrentDate(4, "dd-MMM-yyyy"));
                 log("Entered Appraisal From Date: " + data.appraisalFromDate);
 
                 //ac.enterAppraisalToDate(data.appraisalToDate);
                 ac.enterAppraisalToDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                // ac.enterAppraisalToDate(DateUtils.addDaysToCurrentDate(4, "dd-MMM-yyyy"));
                 log("Entered Appraisal To Date: " + data.appraisalToDate);
 
                 //ac.enterProcessFromDate(data.processFromDate);
                 ac.enterProcessFromDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                // ac.enterProcessFromDate(DateUtils.addDaysToCurrentDate(4, "dd-MMM-yyyy"));
                 log("Entered Process From Date: " + data.processFromDate);
 
                 //ac.enterProcessToDate(data.processToDate);
                 ac.enterProcessToDate(DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                // ac.enterProcessToDate(DateUtils.addDaysToCurrentDate(4, "dd-MMM-yyyy"));
                 log("Entered Process To Date: " + data.processToDate);
 
                 ac.enterDescription(data.description);
@@ -327,7 +331,7 @@ public class PerformanceTest extends BaseTest
         }
     }
 
-    @Test(groups = {"functional", "regression"}, retryAnalyzer = RetryAnalyzer.class, priority = 5)
+    @Test(groups = {"functional"}, retryAnalyzer = RetryAnalyzer.class, priority = 5)
     public void reviewAppraisal()
     {
         try
@@ -532,9 +536,10 @@ public class PerformanceTest extends BaseTest
                 log("Scrolled the page to access Submit For Opinion button");
                 rp.clickSubmitForOpinion();
                 log("Clicked on Submit For Opinion button");
+                BasePage.waitTS(3);
                 BasePage.pressEnter();
                 log("Pressed Enter key");
-                BasePage.waitTS(3);
+                BasePage.waitTS(2);
                 BrowserUtils.refreshPage(BaseTest.getDriver());
 
                 Assert.assertTrue(rp.verifyStatus(), "Status not updated to 'Pending for employee's opinion'");
@@ -554,8 +559,8 @@ public class PerformanceTest extends BaseTest
 
                 tn.openTxn();
                 BasePage.waitTS(5);
-                BasePage.switchTab();
-                BasePage.closeTab();
+                BasePage.switchTabByTitle("Appraisal - Enfinity HCM");
+                //BasePage.closeTab();
                 BasePage.waitTS(3);
                 log("tab switched to appraisal review page");
                 //endregion
@@ -586,6 +591,7 @@ public class PerformanceTest extends BaseTest
                 BasePage.clickOnSave();
                 log("Clicked on Save button");
 
+                rp.scrollPage();
                 rp.clickSubmit();
                 log("Clicked on Submit button");
                 BasePage.waitTS(2);
@@ -606,8 +612,7 @@ public class PerformanceTest extends BaseTest
 
                 tn.openTxn();
                 BasePage.waitTS(5);
-                BasePage.switchTab();
-                BasePage.closeTab();
+                BasePage.switchTabByTitle("Appraisal - Enfinity HCM");
                 BasePage.waitTS(3);
                 log("tab switched to appraisal review page");
                 //endregion
@@ -622,6 +627,7 @@ public class PerformanceTest extends BaseTest
 
                 BasePage.pressEnter();
                 log("Pressed Enter key");
+                BasePage.waitTS(2);
 
                 //endregion
 

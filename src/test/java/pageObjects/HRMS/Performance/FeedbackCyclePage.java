@@ -92,11 +92,13 @@ public class FeedbackCyclePage extends BasePage
     }
     public void provideMinimumRater(String value)
     {
-        clearAndProvide1(minimumRater, value);
+        //clearAndProvide1(minimumRater, value);
+        JavaScriptUtils.provideValueJS(minimumRater, value);
     }
     public void provideMaximumRater(String value)
     {
-        clearAndProvide1(maximumRater, value);
+        //clearAndProvide1(maximumRater, value);
+        JavaScriptUtils.provideValueJS(maximumRater, value);
     }
     public void checkAllowRating()
     {

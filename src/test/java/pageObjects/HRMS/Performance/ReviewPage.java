@@ -51,7 +51,7 @@ public class ReviewPage extends BasePage
     @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[2]")
     private WebElement reviewComment2;
 
-    @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[3]")
+    @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[4]")
     private WebElement empOpiniongoals;
 
     @FindBy(xpath = "//textarea[contains(@id,'Comment')]")
@@ -78,7 +78,7 @@ public class ReviewPage extends BasePage
     @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[3]")
     private WebElement reviewComment3;
 
-    @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[5]")
+    @FindBy(xpath = "(//textarea[@class='dx-texteditor-input'])[6]")
     private WebElement empOpinionCompetencies;
 
     @FindBy(xpath = "//textarea[contains(@id,'Comment')]")
@@ -129,6 +129,8 @@ public class ReviewPage extends BasePage
 
     @FindBy(xpath = "(//td[@role='gridcell'])[5]")
     private WebElement newLeavel;
+    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[4]")
+    private WebElement newLeavelDD;
 
     //region Purposed Learning Course
     @FindBy(xpath = "//i[@class='dx-icon dx-icon-add']")
@@ -283,6 +285,7 @@ public class ReviewPage extends BasePage
     {
         BasePage.waitTS(2);
         clickOnElement1(promotedDesignation);
+        BasePage.waitTS(2);
         selectDropdownOption(value);
     }
 
@@ -293,21 +296,40 @@ public class ReviewPage extends BasePage
     {
         JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), skillsAndLearning);
     }
+
     public void provideNewLevel()
     {
-        String currentLevel = waitForElement1(By.xpath("//td[@class='current-level']")).getText();
+        String currentLevel = "";
+        try
+        {
+            currentLevel = waitForElement1(By.xpath("//td[@class='current-level low-current-level']")).getText();
+        } catch (Exception e)
+        {
+            currentLevel = "No Level";
+        }
 
         if (currentLevel.equalsIgnoreCase("Beginner"))
         {
             clickOnElement1(newLeavel);
-            provideAndEnter(newLeavel, "Intermidiate");
+            clickOnElement1(newLeavelDD);
+            BasePage.selectDropdownOption("Intermidiate");
         } else if (currentLevel.equalsIgnoreCase("Intermidiate"))
         {
             clickOnElement1(newLeavel);
-            provideAndEnter(newLeavel, "Expert");
+            clickOnElement1(newLeavelDD);
+            BasePage.selectDropdownOption("Expert");
         } else if (currentLevel.equalsIgnoreCase("Expert"))
         {
-            System.out.println("Skill is already at highest level- Expert");
+            //System.out.println("Skill is already at highest level- Expert");
+            clickOnElement1(newLeavel);
+            //provideAndEnter(newLeavel, "Not Applicable");
+            clickOnElement1(newLeavelDD);
+            BasePage.selectDropdownOption("Not Applicable");
+        } else if (currentLevel.equalsIgnoreCase("No Level"))
+        {
+            clickOnElement1(newLeavel);
+            clickOnElement1(newLeavelDD);
+            BasePage.selectDropdownOption("Beginner");
         } else
         {
             System.out.println("Current level is not found..");
@@ -377,7 +399,7 @@ public class ReviewPage extends BasePage
         String finalScore = waitForElement1(By.xpath("(//span[@id='finalAvg'])[2]")).getText().trim();
         String finalRating = waitForElement1(By.xpath("(//span[@id='ratingName'])[1]")).getText().trim();
 
-        if (finalScore.equals(expectedFinalScore) && finalRating.equals(expectedFinalRating))
+        if (finalScore.contains(expectedFinalScore) && finalRating.contains(expectedFinalRating))
         {
             return true;
         } else

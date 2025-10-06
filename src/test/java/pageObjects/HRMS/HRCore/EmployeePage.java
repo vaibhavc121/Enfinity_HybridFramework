@@ -594,7 +594,7 @@ public class EmployeePage extends BasePage
     //endregion
 
     //region Project section
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/main[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/i[1]")
+    @FindBy(xpath = "(//i[@class='dx-icon dx-icon-edit-button-addrow'])[1]")
     WebElement AddProjectsBtn;
 
     @FindBy(xpath = "//input[contains(@id,'ProjectId')]")
@@ -621,7 +621,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Name:']//following::input[contains(@id,'Name')][1]")
     WebElement spouseName;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[9]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement birthDate;
 
     @FindBy(xpath = "//input[contains(@id,'MarriageDate')]")
@@ -638,7 +638,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "/html[1]/body[1]/div[10]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement childrenName;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[10]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement childrenBirthDate;
 
     @FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")
@@ -652,7 +652,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "/html[1]/body[1]/div[10]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement dependentName;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[10]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement dependentBirthDate;
 
     @FindBy(xpath = "//div[@class='dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable']//span[@class='dx-button-text'][normalize-space()='Save']")

@@ -182,27 +182,22 @@
   ],
   "integration": [
     {
-      "financialIntegrationGroup": "Hawalley Store WorkLocation",
+      "financialIntegrationGroup": "Halwai City",
       "division": "01",
       "department": "02",
       "project": "03",
       "segmentWorkLocation": "04",
       "FromPeriod": "Jan-2025",
-      "ToPeriod": "Jun-2025",
+      "ToPeriod": "Dec-2025",
       "sdivision": "05",
       "sdepartment": "06",
       "sproject": "07",
       "sWorkLocation": "08",
       "Projects": [
         {
-          "Project": "Project0",
-          "EffectiveFromDate": "01-Jan-2024",
-          "EffectiveToDate": "30-Jun-2024"
-        },
-        {
-          "Project": "project1",
+          "Project": "Timesheet Entry Testing",
           "EffectiveFromDate": "01-Jan-2025",
-          "EffectiveToDate": "30-Jun-2025"
+          "EffectiveToDate": "30-Dec-2025"
         }
       ]
     }

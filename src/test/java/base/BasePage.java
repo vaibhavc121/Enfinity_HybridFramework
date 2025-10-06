@@ -966,6 +966,28 @@ public class BasePage
         }
     }
 
+    public static void switchTabByTitle(String expectedTitle)
+    {
+        String originalWindow = DriverFactory.getDriver().getWindowHandle();
+        Set<String> allWindows = DriverFactory.getDriver().getWindowHandles();
+
+        for (String windowHandle : allWindows)
+        {
+            DriverFactory.getDriver().switchTo().window(windowHandle);
+            String actualTitle = DriverFactory.getDriver().getTitle();
+
+            if (actualTitle.equalsIgnoreCase(expectedTitle))
+            {
+                System.out.println("Switched to window with title: " + actualTitle);
+                return; // Found the correct tab
+            }
+        }
+
+        // If no matching title found, switch back to the original
+        DriverFactory.getDriver().switchTo().window(originalWindow);
+        throw new RuntimeException("No window found with title: " + expectedTitle);
+    }
+
     public static void closeUnwantedTab()
     {
         // Step 1: Store all tab handles

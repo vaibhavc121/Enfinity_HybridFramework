@@ -26,6 +26,7 @@
             <!--<class name="testCases.HRMS.Global.EventsTest"/>-->
             <class name="testCases.HRMS.SelfService.MyApprovalTest"/>
             <class name="testCases.HRMS.Payroll.OvertimeTest"/>
+            <class name="testCases.HRMS.Performance.PerformanceTest"/>
 
         </classes>
     </test>
