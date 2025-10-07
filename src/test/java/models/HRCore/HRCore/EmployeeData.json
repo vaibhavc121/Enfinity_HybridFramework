@@ -3,6 +3,7 @@
     {
       "email": "abc121@gmail.com",
       "name": "Mohan Patil",
+      "name1": "Mayuri Patil",
       "NameArabic": null,
       "manager": null,
       "mobile": "7769765434",
@@ -57,6 +58,11 @@
       "govtRecruitmentContractLicense": "Demo Govt Recruitment Contract Lincese",
       "basicSalary": "500",
       "salaryComponents": [
+        {
+          "salaryComponent": "Basic",
+          "amount": "500",
+          "effectiveFromDate": "01-Jan-2025"
+        },
         {
           "salaryComponent": "Food Allowance",
           "amount": "500",
@@ -250,7 +256,8 @@
   ],
   "deleteEmployee": [
     {
-      "empName": "Mohan Patil"
+      "empName": "Mohan Patil",
+      "empName1": "Mayuri Patil"
     }
   ],
   "updateEmployee": [

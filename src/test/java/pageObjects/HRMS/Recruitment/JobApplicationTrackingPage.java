@@ -134,7 +134,7 @@ public class JobApplicationTrackingPage extends BasePage
     private WebElement interviewType;
     @FindBy(xpath = "//input[contains(@id,'InterviewDateTime')]")
     private WebElement interviewDateTime;
-    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[17]")
+    @FindBy(xpath = "(//div[@class='dx-dropdowneditor-icon'])[18]")
     private WebElement interviewDateTimeCalendarIcon;
     @FindBy(xpath = "//div[@aria-label='Today']//div[@class='dx-button-content']")
     private WebElement today;
@@ -459,6 +459,7 @@ public class JobApplicationTrackingPage extends BasePage
                 {
                     WebElement candidate = waitForElement1(By.xpath("//span[normalize-space()='" + candidateName + "']"));
                     JavaScriptUtils.scrollIntoView(DriverFactory.getDriver(), candidate);
+                    waitTS(2);
                     waitForElement1(By.xpath("//span[normalize-space()='" + candidateName + "']/../../../../..//span[@class='dx-checkbox-icon']")).click();
                     break;
                 } catch (Exception e1)
@@ -671,8 +672,10 @@ public class JobApplicationTrackingPage extends BasePage
     {
         waitTS(2);
         String offerStatusText = waitForElement(offerStatus1).getText().trim();
+        waitTS(2);
         if (offerStatusText.equals("Not Generated") || offerStatusText.equals("Draft") || offerStatusText.equals("Sent"))
         {
+            waitTS(2);
             waitForElement(offerIcon).click();
             BaseTest.log("Offer letter icon clicked.");
 
@@ -776,9 +779,11 @@ public class JobApplicationTrackingPage extends BasePage
 
             clickOnElement1(candidates);
             BaseTest.log("Clicked on Candidates tab");
+            BasePage.waitTS(2);
 
             clickOnElement1(offeredPipeline);
             BaseTest.log("Clicked on Offered Pipeline");
+            BasePage.waitTS(2);
         } else
         {
             System.out.println("Offer letter is already generated.");

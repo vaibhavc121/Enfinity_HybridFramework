@@ -29,6 +29,9 @@ public class TopNavigationBar extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Open']")
     WebElement open;
 
+    @FindBy(xpath = "//span[normalize-space()='Reject']")
+    private WebElement reject;
+
     @FindBy(xpath = "//img[@alt='Employee Picture']//following::i[@class='dx-icon dx-icon-overflow']")
     public WebElement contextMenuMyApprovals;
     //endregion
@@ -142,6 +145,32 @@ public class TopNavigationBar extends BasePage
         }
     }
 
+    public void rejectNotification(String expData)
+    {
+        try
+        {
+            String notificationData = waitForElement1(By.xpath("//span[@class='pa-title']")).getText();
+            if (notificationData.contains(expData))
+            {
+                try
+                {
+                    JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), contextMenuMyApprovals);
+                } catch (Exception e)
+                {
+                    contextMenuMyApprovals.click();
+                }
+                BaseTest.log("clicked on context menu icon");
+                waitTS(1);
+                clickOnElement1(reject);
+                BaseTest.log("clicked on reject");
+                BaseTest.log("Interview feedback notification rejected successfully.");
+            }
+        } catch (Exception e)
+        {
+            System.out.println("Interview feedback notification not found.");
+        }
+    }
+
     public void openTxn()
     {
         try
@@ -154,7 +183,7 @@ public class TopNavigationBar extends BasePage
 
         BaseTest.log("clicked on context menu icon");
 
-        open.click();
+        clickOnElement1(open);
         BaseTest.log("clicked on open");
     }
 

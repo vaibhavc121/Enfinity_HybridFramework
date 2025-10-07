@@ -22,11 +22,11 @@
 
         <classes>
 
-            <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest">
-                <methods>
-                    <include name="verifyDependentsTab"/>
-                </methods>
-            </class>
+            <!--            <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="verifyPerformanceTab"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
             <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
             <!--                <methods>-->
@@ -43,25 +43,25 @@
             <!--            </class>-->
 
 
-            <class name="testCases.HRMS.Performance.PerformanceTest">
-                <methods>
-                    <include name="create360FeedbackCycle"/>
-                    <include name="delete360FeedbackCycle"/>
-
-                </methods>
-            </class>
-
-
-            <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
+            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
             <!--                <methods>-->
-            <!--                    <include name="createCandidate"/>-->
-            <!--                    <include name="createJob"/>-->
-            <!--                    <include name="assignJobToCandidate"/>-->
-            <!--                    <include name="scheduleInterview"/>-->
-            <!--                    <include name="offerJobToCandidate"/>-->
-            <!--                    <include name="completeHiringProcess"/>-->
+            <!--                    <include name="create360FeedbackCycle"/>-->
+            <!--                    <include name="delete360FeedbackCycle"/>-->
+
             <!--                </methods>-->
             <!--            </class>-->
+
+
+            <class name="testCases.HRMS.Recruitment.RecruitmentTest">
+                <methods>
+                    <include name="createCandidate"/>
+                    <include name="createJob"/>
+                    <include name="assignJobToCandidate"/>
+                    <include name="scheduleInterview"/>
+                    <include name="offerJobToCandidate"/>
+                    <include name="completeHiringProcess"/>
+                </methods>
+            </class>
 
 
             <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->

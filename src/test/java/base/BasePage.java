@@ -400,6 +400,7 @@ public class BasePage
     public static void clickOnSave()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Save']")).click();
+        waitTS(2);
     }
 
     public void clickSubmit()

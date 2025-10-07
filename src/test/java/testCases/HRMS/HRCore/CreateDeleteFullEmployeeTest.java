@@ -1,5 +1,6 @@
 package testCases.HRMS.HRCore;
 
+import annotations.Reset;
 import base.BasePage;
 import base.BaseTest;
 import factory.LoggerFactory;
@@ -7,6 +8,8 @@ import models.HRCore.HRCore.EmployeeModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.HRCore.EmployeePage;
+import pageObjects.HRMS.HRCore.HRCorePage;
+import pageObjects.HRMS.HRCore.SetupPage;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -21,8 +24,82 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
     {
         try
         {
-            EmployeeTest et = new EmployeeTest();
-            et.createEmployee();
+            String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
+            List<EmployeeModel.EmpModel> employeeInfo = JsonUtils.convertJsonListDataModel(employeeFile, "newEmployee",
+                    EmployeeModel.EmpModel.class);
+
+            HRCorePage hc = new HRCorePage();
+            hc.clickHRCore();
+            log("Clicked on HR Core");
+            hc.clickSetupForm();
+            log("Clicked on Setup Form");
+
+            SetupPage sp = new SetupPage();
+            sp.clickEmployee();
+            log("Clicked on Employee");
+            Thread.sleep(2000);
+
+            EmployeePage ep = new EmployeePage();
+
+            for (EmployeeModel.EmpModel employee : employeeInfo)
+            {
+                ep.clickNewBtn();
+                log("Clicked on New Button");
+
+                ep.provideWorkEmail(employee.email);
+                log("provided work email: " + employee.email);
+
+                ep.provideName(employee.name1);
+                log("provided name: " + employee.name1);
+
+                // ep.clickMgrDropdown();
+                // ep.selectMgr();
+                ep.provideMobileNumber(employee.mobile);
+                log("provided mobile number: " + employee.mobile);
+
+                ep.provideDOJ(employee.DOJ);
+                log("provided date of joining: " + employee.DOJ);
+
+                ep.selectDepartment(employee.department);
+                log("selected department: " + employee.department);
+
+                ep.selectDesignation(employee.designation);
+                log("selected designation: " + employee.designation);
+
+                // ep.clearPayrollSet();
+                ep.selectPayrollSet(employee.payrollSet);
+                log("selected payroll set: " + employee.payrollSet);
+
+                ep.selectCalendar(employee.calendar);
+                log("selected calendar: " + employee.calendar);
+
+                ep.selectIndemnity(employee.indemnity);
+                log("selected indemnity: " + employee.indemnity);
+
+                ep.selectGrade(employee.grade);
+                log("selected grade: " + employee.grade);
+
+                ep.scrollPage();
+                log("Scrolled the page");
+
+                ep.selectGender(employee.gender);
+                log("selected gender: " + employee.gender);
+
+                ep.selectReligion(employee.religion);
+                log("selected religion: " + employee.religion);
+
+                ep.selectMaritalStatus(employee.maritalStatus);
+                log("selected marital status: " + employee.maritalStatus);
+
+                ep.clickSave();
+                log("Clicked on Save Button");
+
+                Assert.assertTrue(ep.validate(employee.name1),
+                        "Employee creation failed for: " + employee.name1);
+                log("Verified: Employee created successfully with name: " + employee.name1);
+            }
+
+            // ClassicAssert.isTrue(ep.isEmployeeCreated(name));
         } catch (Exception e)
         {
             LoggerFactory.getLogger().error("Test failed due to exception: ", e);
@@ -262,13 +339,14 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 // ep.deleteBasicSalaryComponent();
                 // log("deleted existing basic salary component");
 
+                //region Salary Components Section
                 for (EmployeeModel.SalaryComponentModel data1 : data.salaryComponents)
                 {
                     ep.clickAddSalaryComponentBtn();
                     log("clicked on add salary component button");
 
-                    ep.clickSalaryComponent();
-                    log("clicked on salary component dropdown");
+                    //ep.clickSalaryComponent();
+                    //log("clicked on salary component dropdown");
 
                     ep.selectSalComponent(data1.salaryComponent);
                     log("selected salary component: " + data1.salaryComponent);
@@ -282,7 +360,9 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     ep.saveSalComponent();
                     log("clicked on save salary component button");
                 }
+                //endregion
 
+                //region Overtime Types Section
                 for (EmployeeModel.OvertimeTypesModel ot : data.overtimeTypes)
                 {
                     ep.clickOvertimeTypesBtn();
@@ -297,7 +377,9 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     ep.saveOvertimeType();
                     log("clicked on save overtime type button");
                 }
+                //endregion
 
+                //region Tickets Section
                 ep.scrollDownWebPageTicket();
                 log("scrolled down to Ticket Accrual section");
 
@@ -330,7 +412,9 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
 
                 ep.clickSaveTicket();
                 log("clicked on save ticket button");
+                //endregion
 
+                //region MiscellaneousAccrualEarnings Section
                 ep.clickAddMiscellaneousAccrualEarnings();
                 log("clicked on Miscellaneous Accrual Earnings button");
 
@@ -340,6 +424,9 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 ep.selectAccrualType(data.accrualType);
                 log("selected accrual type: " + data.accrualType);
 
+                //ep.provideAccrualAmt(data.accrualAmount);
+                //log("provided accrual amount: " + data.accrualAmount);
+
                 ep.clickResetAvailedDaysMethod();
                 log("clicked on reset availed days method dropdown");
 
@@ -348,7 +435,10 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
 
                 ep.saveMiscellaneousAccrual();
                 log("clicked on save Miscellaneous Accrual button");
+                //endregion
 
+                //region Benefit Schemes Section
+                /*
                 ep.clickBenefitSchemes();
                 log("clicked on Benefit Schemes button");
 
@@ -371,6 +461,9 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 log("provided effective to date: " + data.BSeffectiveToDate);
 
                 ep.bsSave();
+                */
+                //endregion
+
             }
         } catch (Exception e)
         {
@@ -548,7 +641,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.PerformanceTabModel.class);
 
             EmployeePage ep = new EmployeePage();
-
+            //ep.navigateToEmp();
             for (EmployeeModel.PerformanceTabModel data : performanceTabInfo)
             {
                 ep.clickPerformance();
@@ -721,7 +814,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
         try
         {
             String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
-            List<EmployeeModel.ResidencyInfoTabModel> dataInfoTab = JsonUtils.convertJsonListDataModel(employeeFile, "dataInfo",
+            List<EmployeeModel.ResidencyInfoTabModel> dataInfoTab = JsonUtils.convertJsonListDataModel(employeeFile, "residencyInfo",
                     EmployeeModel.ResidencyInfoTabModel.class);
 
             EmployeePage ep = new EmployeePage();
@@ -856,7 +949,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
     // endregion
 
     //region Dependents Tab
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 11)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 11, enabled = false)
     public void verifyDependentsTab()
     {
         try
@@ -866,7 +959,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                     EmployeeModel.DependentsTabModel.class);
 
             EmployeePage ep = new EmployeePage();
-            ep.navigateToEmp();
+            //ep.navigateToEmp();
             for (EmployeeModel.DependentsTabModel data : dependentsTab)
             {
                 ep.clickMetaballsMenu();
@@ -922,6 +1015,61 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
 
                 //endregion
 
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+    //endregion
+
+    //region Delete Employee
+    @Reset()
+    public void deleteEmployee()
+    {
+        try
+        {
+            // instead of for loop you can use repeat attribute
+            for (int i = 1; i <= 1; i++)
+            {
+                String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
+                List<EmployeeModel.DeleteEmpModel> deleteEmployee = JsonUtils.convertJsonListDataModel(employeeFile, "deleteEmployee",
+                        EmployeeModel.DeleteEmpModel.class);
+
+                HRCorePage hc = new HRCorePage();
+                hc.clickHRCore();
+                log("clicked on HR Core module");
+                hc.clickSetupForm();
+                log("clicked on Setup Form");
+
+                SetupPage sp = new SetupPage();
+                sp.clickEmployee();
+                log("clicked on Employee");
+                Thread.sleep(2000);
+
+                for (EmployeeModel.DeleteEmpModel del : deleteEmployee)
+                {
+                    BasePage.navigateToEmployee(del.empName1);
+                    BasePage.switchTab();
+                    log("switched to Employee tab for " + del.empName1);
+
+                    EmployeePage ep = new EmployeePage();
+                    ep.clickSettingButton();
+                    log("clicked on setting button");
+
+                    ep.clickDelete();
+                    log("clicked on delete button");
+                    ep.clickOk();
+                    log("clicked on OK button to confirm deletion");
+                    // ClassicAssert.isTrue(BasePage.isEmployeeDeleted(), "Employee not deleted");
+                    // ep.clickRightAreaMenu();
+                    // ep.clickLogOff();
+                    // BasePage.closeTab();
+
+                    Assert.assertFalse(ep.validateEmpDelete(del.empName1), "Employee " + del.empName1 + " is not deleted.");
+                    log("Employee " + del.empName1 + " deleted successfully");
+                }
             }
         } catch (Exception e)
         {

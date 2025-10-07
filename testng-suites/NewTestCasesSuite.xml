@@ -23,8 +23,6 @@
         <classes>
 
             <!-- New Test -->
-            <!--            <class name="testCases.HRMS.Recruitment.CreateCandidateTest"/>-->
-            <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest"/>
 
 
         </classes>

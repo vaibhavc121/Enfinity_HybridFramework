@@ -310,6 +310,9 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Salary Component']//following::input[contains(@id,'SalaryComponentId')]")
     WebElement salaryComponent;
 
+    @FindBy(xpath = "//input[contains(@id,'SalaryComponentId')]")
+    private WebElement salComponent;
+
     @FindBy(xpath = "//input[contains(@id,'Amount')]")
     WebElement amount;
 
@@ -378,13 +381,19 @@ public class EmployeePage extends BasePage
     //endregion
 
     //region Miscellaneous Accrual Earnings section
-    @FindBy(xpath = "//div[@title='Add Miscellaneous Accrual Earning']//i[@class='dx-icon dx-icon-edit-button-addrow']")
-    WebElement addMiscellaneousAccrual;
+    @FindBy(xpath = "//div[contains(text(),'Miscellaneous Accrual Earnings')]")
+    WebElement MiscellaneousAccrual;
+
+    @FindBy(xpath = "//div[@class='dx-toolbar-button dx-toolbar-menu-container']//i[@class='dx-icon dx-icon-overflow']")
+    private WebElement contextMenu;
+
+    @FindBy(xpath = "//span[normalize-space()='Add Miscellaneous Accrual Earning']")
+    private WebElement addMiscellaneousAccrualEarning;
 
     @FindBy(xpath = "//input[contains(@id,'AccrualType')]")
     WebElement accrualType;
 
-    @FindBy(xpath = "//input[contains(@id,'_Amount')]")
+    @FindBy(xpath = "(//input[contains(@id,'Amount')])[4]")
     WebElement accrualAmount;
 
     @FindBy(xpath = "//input[contains(@id,'ResetAvailedDaysMethod')]")
@@ -621,7 +630,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Name:']//following::input[contains(@id,'Name')][1]")
     WebElement spouseName;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement birthDate;
 
     @FindBy(xpath = "//input[contains(@id,'MarriageDate')]")
@@ -635,7 +644,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//div[@title='Add Child']//i[@class='dx-icon dx-icon-edit-button-addrow']")
     WebElement addChildrensBtn;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[10]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement childrenName;
 
     @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
@@ -649,7 +658,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//div[@title='Add Dependent']//i[@class='dx-icon dx-icon-edit-button-addrow']")
     WebElement addOthersBtn;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[10]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
     WebElement dependentName;
 
     @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
@@ -1461,7 +1470,8 @@ public class EmployeePage extends BasePage
 
     public void selectSalComponent(String value)
     {
-        selectDropdownOption(value);
+        //selectDropdownOption(value);
+        provideAndEnter(salComponent, value);
         waitTS(1);
     }
 
@@ -1581,16 +1591,23 @@ public class EmployeePage extends BasePage
 
     public void clickAddMiscellaneousAccrualEarnings()
     {
-        JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), addMiscellaneousAccrual);
+        JavaScriptUtils.scrollIntoView(BaseTest.getDriver(), MiscellaneousAccrual);
         waitTS(2);
-        waitForElement(addMiscellaneousAccrual);
+        clickOnElement1(contextMenu);
         waitTS(1);
+        clickOnElement1(addMiscellaneousAccrualEarning);
+        waitTS(2);
     }
 
     public void clickAccrualType()
     {
         accrualType.click();
         waitTS(1);
+    }
+
+    public void provideAccrualAmt(String value)
+    {
+        clearAndProvide1(accrualAmount, value);
     }
 
     public void selectAccrualType(String value)
@@ -1831,6 +1848,7 @@ public class EmployeePage extends BasePage
     public void addKRABtn()
     {
         addKRABtn.click();
+        waitTS(1);
     }
 
     public void clickKeyResultAreaName()
@@ -1842,11 +1860,13 @@ public class EmployeePage extends BasePage
     public void selectResultAreaName(String value)
     {
         selectDropdownOption(value);
+        waitTS(1);
     }
 
     public void provideWeightage(String value)
     {
         weightage.sendKeys(value);
+        waitTS(1);
     }
 
     public void clickKRAsave()
@@ -1858,6 +1878,7 @@ public class EmployeePage extends BasePage
     public void clickAddCompetencies()
     {
         addCompetencies.click();
+        waitTS(1);
     }
 
     public void clickCompetencyName()
@@ -1869,11 +1890,13 @@ public class EmployeePage extends BasePage
     public void selectCompetencyName(String value)
     {
         selectDropdownOption(value);
+        waitTS(1);
     }
 
     public void provideCompetenciesWeightage(String value)
     {
         competenciesWeightage.sendKeys(value);
+        waitTS(1);
     }
 
     public void clickCompetenciesSave()
@@ -1897,6 +1920,7 @@ public class EmployeePage extends BasePage
     public void selectSkillSetName(String value)
     {
         selectDropdownOption(value);
+        waitTS(1);
     }
 
     public void clickLevel()
@@ -1908,11 +1932,13 @@ public class EmployeePage extends BasePage
     public void selectLevel(String value)
     {
         selectDropdownOption(value);
+        waitTS(1);
     }
 
     public void provideSkillSetWeightage(String value)
     {
         skillSetWeightage.sendKeys(value);
+        waitTS(1);
     }
 
     public void clickskillSetsave()
@@ -1924,21 +1950,25 @@ public class EmployeePage extends BasePage
     public void clickaddGoalsBtn()
     {
         addGoalsBtn.click();
+        waitTS(1);
     }
 
     public void provideGoalName(String value)
     {
         goalName.sendKeys(value);
+        waitTS(1);
     }
 
     public void provideGoalsStartDate(String value)
     {
         startDate.sendKeys(value);
+        waitTS(1);
     }
 
     public void provideGoalsDueDate(String value)
     {
         dueDate.sendKeys(value);
+        waitTS(1);
     }
 
     public void clickPriority()
@@ -1950,11 +1980,13 @@ public class EmployeePage extends BasePage
     public void selectPriority(String value)
     {
         selectDropdownOption(value);
+        waitTS(1);
     }
 
     public void provideGoalsWeightage(String value)
     {
         goalsWeightage.sendKeys(value);
+        waitTS(1);
     }
 
     public void clickGoalSave()
@@ -2101,6 +2133,7 @@ public class EmployeePage extends BasePage
 
     public void provideSpouseName(String value)
     {
+        waitTS(2);
         spouseName.sendKeys(value);
     }
 
@@ -2121,6 +2154,7 @@ public class EmployeePage extends BasePage
 
     public void provideChildrenName(String value)
     {
+        waitTS(2);
         childrenName.sendKeys(value);
     }
 
@@ -2132,6 +2166,7 @@ public class EmployeePage extends BasePage
     public void clickChildrenSave()
     {
         childrenSave.click();
+        waitTS(2);
     }
 
     public void clickAddOthersBtn()
@@ -2141,6 +2176,7 @@ public class EmployeePage extends BasePage
 
     public void provideDependentName(String value)
     {
+        waitTS(2);
         dependentName.sendKeys(value);
     }
 
@@ -2370,7 +2406,7 @@ public class EmployeePage extends BasePage
         SetupPage sp = new SetupPage();
         sp.clickEmployee();
         waitTS(2);
-        navigateToEmployee("Neelam Rajan");
+        navigateToEmployee("Mayuri Patil");
     }
     //endregion
 

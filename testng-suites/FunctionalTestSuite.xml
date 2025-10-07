@@ -27,6 +27,8 @@
             <class name="testCases.HRMS.SelfService.MyApprovalTest"/>
             <class name="testCases.HRMS.Payroll.OvertimeTest"/>
             <class name="testCases.HRMS.Performance.PerformanceTest"/>
+            <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest"/>
+            <class name="testCases.HRMS.Recruitment.RecruitmentTest"/>
 
         </classes>
     </test>

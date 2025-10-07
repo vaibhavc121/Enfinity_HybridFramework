@@ -20,6 +20,7 @@ public class EmployeeModel
     {
         public String email;
         public String name;
+        public String name1;
         public String mobile;
         public String DOJ;
         public String department;
@@ -254,5 +255,6 @@ public class EmployeeModel
     public static class DeleteEmpModel
     {
         public String empName;
+        public String empName1;
     }
 }

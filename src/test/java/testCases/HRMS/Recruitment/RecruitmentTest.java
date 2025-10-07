@@ -7,16 +7,14 @@ import factory.LoggerFactory;
 import models.Recruitment.Recruitment.RecruitmentModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pageObjects.HRMS.Global.TopNavigationBar;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.EmployeePage1;
 import pageObjects.HRMS.Recruitment.CandidatePage;
 import pageObjects.HRMS.Recruitment.JobApplicationTrackingPage;
 import pageObjects.HRMS.Recruitment.JobPage;
 import pageObjects.HRMS.Recruitment.RecruitmentPage;
-import utilities.FileUtils;
-import utilities.JavaScriptUtils;
-import utilities.JsonUtils;
-import utilities.RetryAnalyzer;
+import utilities.*;
 
 import java.util.List;
 
@@ -82,6 +80,9 @@ public class RecruitmentTest extends BaseTest
 
                 cp.provideState(candidate.state);
                 log("Provided State");
+
+                BasePage.pressTab();
+                log("Pressed Tab");
 
                 cp.provideCountry(candidate.country);
                 log("Provided Country");
@@ -154,7 +155,7 @@ public class RecruitmentTest extends BaseTest
     //endregion
 
     //region Create Job
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2)
     public void createJob()
     {
         try
@@ -215,6 +216,9 @@ public class RecruitmentTest extends BaseTest
                 jp.provideAssignedRecruiter(job.assignedRecruiter);
                 log("Provided assigned recruiter: " + job.assignedRecruiter);
 
+                BasePage.pressTab();
+                log("Pressed Tab");
+
                 jp.provideWorkExperience(job.workExperience);
                 log("Provided work experience: " + job.workExperience);
 
@@ -263,7 +267,7 @@ public class RecruitmentTest extends BaseTest
 
     //region Assign Job to Candidate
 
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 3)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 3)
     public void assignJobToCandidate()
     {
         try
@@ -316,9 +320,13 @@ public class RecruitmentTest extends BaseTest
 
 //                ja.provideNationality(search.nationalityCountries);
 //                log("select nationality: " + search.nationalityCountries);
+                BasePage.pressTab();
+                BasePage.pressTab();
 
                 ja.provideVisaType(search.visaType);
                 log("Provided visa type: " + search.visaType);
+
+                BasePage.pressTab();
 
                 JavaScriptUtils.scrollToBottom(DriverFactory.getDriver()
                 );
@@ -331,6 +339,7 @@ public class RecruitmentTest extends BaseTest
 //                    ja.clickDrivingLicense();
 //                    log("Clicked on Driving License checkbox");
 //                }
+                BasePage.pressTab();
 
                 ja.provideMinimumAge(search.minimumAge);
                 log("Provided minimum age: " + search.minimumAge);
@@ -438,8 +447,12 @@ public class RecruitmentTest extends BaseTest
                 ja.clickSave();
                 log("Clicked on Save button to schedule the interview");
 
+                BasePage.waitTS(3);
+
                 ja.clickCancel();
                 log("Clicked on Cancel button to close the interview dialog");
+
+                BasePage.waitTS(2);
 
                 Assert.assertTrue(ja.getStatusOfInterview(), "Interview is not scheduled successfully");
                 log("Interview scheduled successfully for candidate: " + candidateName);
@@ -651,9 +664,22 @@ public class RecruitmentTest extends BaseTest
                 log("Clicked on OK button to confirm deletion");
 
                 Assert.assertFalse(ep.validateEmpDelete(candidateName), "Employee " + candidateName + " is not deleted.");
+                log("Verified: Employee deleted successfully with name: " + candidateName);
 //                Assert.assertFalse(ep.validateEmpDelete("Larae"), "Employee " + "Larae" + " is not deleted.");
 
                 //endregion
+
+                //region Reject Notification
+                BrowserUtils.refreshPage(BaseTest.getDriver());
+                log("Refreshed the page");
+                TopNavigationBar tn = new TopNavigationBar();
+                tn.clickBellIcon();
+                log("Clicked on Bell Icon");
+                BasePage.waitTS(1);
+                tn.rejectNotification("Interviewer Feedback");
+
+                //endregion
+
             }
         } catch (Exception e)
         {
