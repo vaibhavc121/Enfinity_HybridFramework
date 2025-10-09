@@ -1,7 +1,9 @@
 package pageObjects.HRMS.Recruitment;
 
+import base.BaseTest;
 import com.github.javafaker.Faker;
 import factory.DriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -89,6 +91,12 @@ public class JobPage extends BasePage
 
     @FindBy(xpath = "//span[@class='bCardHover']")
     private WebElement jobName;
+
+    @FindBy(xpath = "//img[@id='MainMenu_DXI13_PImg']")
+    private WebElement contextMenu;
+
+    @FindBy(xpath = "//span[@title='Delete']")
+    private WebElement delete;
     //endregion
 
     //region Action Methods
@@ -224,6 +232,46 @@ public class JobPage extends BasePage
     {
         String jobTitleText = jobName.getText();
         return jobTitleText.contains(value);
+    }
+
+    public void deleteJob(String expValue, int filterIndex, int resultIndex)
+    {
+        filterByIndex(filterIndex, expValue);
+        waitTS(2);
+        String actValue = resultValue(resultIndex);
+        if (actValue.contains(expValue))
+        {
+            selectRow();
+            clickOnElement1(contextMenu);
+            BaseTest.log("Clicked on Context Menu");
+            clickOnElement1(delete);
+            BaseTest.log("Clicked on Delete option");
+            waitTS(2);
+            pressEnter();
+        } else
+        {
+            throw new RuntimeException("VRC- No matching record found");
+        }
+    }
+
+    public void deleteRecruitmentRequest(String expValue, int filterIndex, int resultIndex)
+    {
+        filterByIndex(filterIndex, expValue);
+        waitTS(2);
+        String actValue = resultValue(resultIndex);
+        if (actValue.contains(expValue))
+        {
+            selectRow();
+            clickOnElement(By.xpath("//img[@id='MainMenu_DXI12_PImg']"));
+            BaseTest.log("Clicked on Context Menu");
+            clickOnElement(By.xpath("//span[@title='Delete']"));
+            BaseTest.log("Clicked on Delete option");
+            waitTS(2);
+            pressEnter();
+        } else
+        {
+            throw new RuntimeException("VRC- No matching record found");
+        }
     }
     //endregion
 }

@@ -697,6 +697,26 @@ public class BasePage
         BaseTest.log("went back to listing");
     }
 
+    public static void deleteTxnFromListing(String expValue, int filterIndex, int resultIndex)
+    {
+        filterByIndex(filterIndex, expValue);
+        waitTS(2);
+        String actValue = resultValue(resultIndex);
+        if (actValue.contains(expValue))
+        {
+            selectRow();
+            clickOnElement(By.xpath("//img[@id='MainMenu_DXI11_PImg']"));
+            BaseTest.log("Clicked on Context Menu");
+            clickOnElement(By.xpath("//span[@title='Delete']"));
+            BaseTest.log("Clicked on Delete option");
+            waitTS(2);
+            pressEnter();
+        } else
+        {
+            throw new RuntimeException("VRC- No matching record found");
+        }
+    }
+
     public static void performAction(int index, String value, String action)
     {
         filterByIndex(index, value);

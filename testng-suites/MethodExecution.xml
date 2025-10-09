@@ -52,24 +52,24 @@
             <!--            </class>-->
 
 
-            <class name="testCases.HRMS.Recruitment.RecruitmentTest">
-                <methods>
-                    <include name="createCandidate"/>
-                    <include name="createJob"/>
-                    <include name="assignJobToCandidate"/>
-                    <include name="scheduleInterview"/>
-                    <include name="offerJobToCandidate"/>
-                    <include name="completeHiringProcess"/>
-                </methods>
-            </class>
-
-
-            <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->
+            <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
             <!--                <methods>-->
-            <!--                    <include name="createNightShiftTimetable"/>-->
-            <!--                    <include name="deleteNightShiftTimetable"/>-->
+            <!--                    <include name="createCandidate"/>-->
+            <!--                    <include name="createJob"/>-->
+            <!--                    <include name="assignJobToCandidate"/>-->
+            <!--                    <include name="scheduleInterview"/>-->
+            <!--                    <include name="offerJobToCandidate"/>-->
+            <!--                    <include name="completeHiringProcess"/>-->
             <!--                </methods>-->
             <!--            </class>-->
+
+
+            <class name="testCases.HRMS.Attendance.AttendanceTest">
+                <methods>
+                    <include name="createStrictDayShiftTimetable"/>
+                    <include name="deleteStrictDayShiftTimetable"/>
+                </methods>
+            </class>
 
 
         </classes>

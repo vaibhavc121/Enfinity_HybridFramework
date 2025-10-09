@@ -22,7 +22,7 @@ public class RecruitmentRequestTest extends BaseTest
     List<RecruitmentModel.JobModel> jobData = JsonUtils.convertJsonListDataModel(recruitmentFile, "createJob", RecruitmentModel.JobModel.class);
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
-    public void verifyRecruitmentReqAndJobCreation()
+    public void createRecruitmentRequest()
     {
         try
         {
@@ -49,9 +49,6 @@ public class RecruitmentRequestTest extends BaseTest
                 JobTitle = faker.job().title();
                 jp.provideJobTitle(JobTitle);
                 log("Provided job title: " + JobTitle);
-
-                jp.provideCompany(job.company);
-                log("Provided company: " + job.company);
 
                 jp.provideDepartment(job.department);
                 log("Provided department: " + job.department);
@@ -131,15 +128,39 @@ public class RecruitmentRequestTest extends BaseTest
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2, dependsOnMethods = "verifyRecruitmentReqAndJobCreation")
     public void verifyJobCreatedOrNot()
     {
+        RecruitmentPage rp = new RecruitmentPage();
+        BasePage.openSidebar();
+        rp.clickJob();
+        log("Navigated to Job listing page");
+
+        Assert.assertTrue(BasePage.validateListing(JobTitle, 2, 1), "Job creation failed, Job title not found in job listing: " + JobTitle);
+        log("Job created successfully with title: " + JobTitle);
     }
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 3, dependsOnMethods = "verifyJobCreatedOrNot")
     public void deleteCreatedJob()
     {
+        RecruitmentPage rp = new RecruitmentPage();
+        BasePage.openSidebar();
+        rp.clickJob();
+        log("Navigated to Job listing page");
+        JobPage jp = new JobPage();
+        jp.deleteJob(JobTitle, 2, 1);
+
+        Assert.assertFalse(BasePage.validateListing(JobTitle, 2, 1), "Job deletion failed, Job title still found in job listing: " + JobTitle);
+        log("Verified: Job deleted successfully with title: " + JobTitle);
     }
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 4, dependsOnMethods = "deleteCreatedJob")
     public void deleteRecruitmentRequest()
     {
+        RecruitmentPage rp = new RecruitmentPage();
+        JobPage jp = new JobPage();
+        BasePage.openSidebar();
+        rp.clickRecruitmentRequest();
+
+        BasePage.performAction(4, JobTitle, "Amend");
+        Assert.assertFalse(BasePage.validateListing(JobTitle, 4, 4), "Recruitment request deletion failed, Job title still found in listing: " + JobTitle);
+        log("Verified: Recruitment request deleted successfully with title: " + JobTitle);
     }
 }
