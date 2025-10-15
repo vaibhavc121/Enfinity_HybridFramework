@@ -125,7 +125,7 @@ public class RecruitmentRequestTest extends BaseTest
         }
     }
 
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2, dependsOnMethods = "verifyRecruitmentReqAndJobCreation")
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2, dependsOnMethods = "createRecruitmentRequest")
     public void verifyJobCreatedOrNot()
     {
         RecruitmentPage rp = new RecruitmentPage();
