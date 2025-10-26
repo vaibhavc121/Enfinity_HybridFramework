@@ -28,12 +28,16 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <!--            <class name="testCases.HRMS.Payroll.LeaveTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createAnnualLeave"/>-->
-            <!--                    <include name="deleteAnnualLeave"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
+            <!--<class name="testCases.HRMS.Payroll.LeaveResumptionTest">
+                <methods>
+                    <include name="verifyLateLeaveResumptionWithUnpaidDays"/>
+                    <include name="deleteLateLeaveResumptionWithUnpaidDays"/>
+                    <include name="verifyLateLeaveResumptionWithPaidDays"/>
+                    <include name="deleteLateLeaveResumptionWithPaidDays"/>
+                    <include name="verifyLateLeaveResumptionWithGrantDays"/>
+                    <include name="deleteLateLeaveResumptionWithGrantDays"/>
+                </methods>
+            </class>-->
 
             <!--            <class name="testCases.HRMS.SelfService.ExceptionRequestTest">-->
             <!--                <methods>-->
@@ -64,12 +68,12 @@
             <!--            </class>-->
 
 
-            <class name="testCases.HRMS.Attendance.AttendanceTest">
-                <methods>
-                    <include name="createStrictDayShiftTimetable"/>
-                    <include name="deleteStrictDayShiftTimetable"/>
-                </methods>
-            </class>
+            <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createStrictDayShiftTimetable"/>-->
+            <!--                    <include name="deleteStrictDayShiftTimetable"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
         </classes>

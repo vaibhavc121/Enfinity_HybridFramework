@@ -23,7 +23,7 @@
         <classes>
 
             <!-- New Test -->
-
+            <class name="testCases.HRMS.Performance.PerformanceTest"/>
 
         </classes>
     </test>
