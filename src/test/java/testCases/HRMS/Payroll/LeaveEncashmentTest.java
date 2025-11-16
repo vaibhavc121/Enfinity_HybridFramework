@@ -54,16 +54,22 @@ public class LeaveEncashmentTest extends BaseTest
                 log("clicked on leave incashment");
                 le.clkNewBtn();
                 log("clicked on new btn");
-                le.provideEffectiveDate(LeaveEncashment.effectiveDate);
-                log("provided effective date");
+
                 le.provideEmp(LeaveEncashment.employee);
-                log("employee selected");
+                log("employee selected " + LeaveEncashment.employee);
+
+                le.provideEncashmentDate(LeaveEncashment.encashmentDate);
+                log("provided Encashment date" + LeaveEncashment.encashmentDate);
+
                 le.provideLeaveType(LeaveEncashment.leaveType);
-                log("selected leave type");
+                log("selected leave type: " + LeaveEncashment.leaveType);
+
+                le.selectPaymentType(LeaveEncashment.paymentType);
+                log("provided payment type: " + LeaveEncashment.paymentType);
+
                 le.providePaidDays(LeaveEncashment.paidDays);
                 log("provided paid days");
-                le.selectPaymentType(LeaveEncashment.paymentType);
-                log("provided payment type");
+
                 le.clkViewBtn();
                 log("clicked on view btn");
                 le.clkApproveBtn();

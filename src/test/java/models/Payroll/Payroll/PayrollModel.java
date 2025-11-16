@@ -53,7 +53,7 @@ public class PayrollModel
     public static class LeaveEncashmentModel
     {
         public String employee;
-        public String effectiveDate;
+        public String encashmentDate;
         public String leaveType;
         public String paidDays;
         public String paymentType;

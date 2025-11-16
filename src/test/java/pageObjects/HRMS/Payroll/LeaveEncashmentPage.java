@@ -41,19 +41,19 @@ public class LeaveEncashmentPage extends BasePage
         clickOnNew();
     }
 
-    public void provideEffectiveDate(String value)
+    public void provideEncashmentDate(String value)
     {
         clearAndProvide1(effectiveDate, value);
     }
 
     public void provideEmp(String value)
     {
-        clearAndProvide1(empdd, value);
+        provideAndEnter(empdd, value);
     }
 
     public void provideLeaveType(String value)
     {
-        clearAndProvide1(leaveTypeDD, value);
+        provideAndEnter(leaveTypeDD, value);
     }
 
     public void providePaidDays(String value)
