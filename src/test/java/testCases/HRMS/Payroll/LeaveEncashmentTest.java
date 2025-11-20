@@ -36,7 +36,7 @@ public class LeaveEncashmentTest extends BaseTest
 
             EmployeePage1 ep = new EmployeePage1();
             ep.clkTimeOff();
-            double LeaveBal = ep.getLeaveBal(2);
+            double LeaveBal = ep.getLeaveBal(3);
             double expLeaveBal = LeaveBal - 1;
 
             // payroll pg
@@ -52,6 +52,7 @@ public class LeaveEncashmentTest extends BaseTest
             {
                 le.clkLeaveEncashment();
                 log("clicked on leave incashment");
+
                 le.clkNewBtn();
                 log("clicked on new btn");
 
@@ -67,11 +68,12 @@ public class LeaveEncashmentTest extends BaseTest
                 le.selectPaymentType(LeaveEncashment.paymentType);
                 log("provided payment type: " + LeaveEncashment.paymentType);
 
-                le.providePaidDays(LeaveEncashment.paidDays);
-                log("provided paid days");
+                le.provideEncashmentDays(LeaveEncashment.paidDays);
+                log("provided Encashment days: " + LeaveEncashment.paidDays);
 
                 le.clkViewBtn();
                 log("clicked on view btn");
+
                 le.clkApproveBtn();
                 log("clicked on approve btn");
 
@@ -80,7 +82,7 @@ public class LeaveEncashmentTest extends BaseTest
                 BasePage.navigateToEmployee("001");
                 ep.clkTimeOff();
 
-                Assert.assertEquals(ep.getLeaveBal(2), expLeaveBal);
+                Assert.assertEquals(ep.getLeaveBal(3), expLeaveBal);
             }
         } catch (Exception e)
         {

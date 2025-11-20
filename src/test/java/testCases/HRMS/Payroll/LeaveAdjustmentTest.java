@@ -61,22 +61,25 @@ public class LeaveAdjustmentTest extends BaseTest
                 log("clicked on new btn");
 
                 la.provideEmp(LeaveAdjustment.employee);
-                log("employee selected");
+                log("employee selected: " + LeaveAdjustment.employee);
 
                 la.provideEffectiveDate(LeaveAdjustment.effectiveDate);
-                log("provied effective date");
+                log("provied effective date: " + LeaveAdjustment.effectiveDate);
 
                 la.provideLeaveType(LeaveAdjustment.leaveType);
-                log("leave type selected");
+                log("leave type selected: " + LeaveAdjustment.leaveType);
+
+                // la.selectAdjustmentType("Paid Days");
+                // log("selected adjustment type as Paid Days");
 
                 la.providePaidDaysValue(LeaveAdjustment.paidDays);
-                log("provided paid days value");
+                log("provided paid days value: " + LeaveAdjustment.paidDays);
 
 //				la.provideUnpaidDaysValue();
 //				log("provided unpaid days value");
 
-                la.provideRemarks(LeaveAdjustment.remarks);
-                log("provided remarks");
+                BasePage.provideDescription(LeaveAdjustment.remarks);
+                log("provided remarks: " + LeaveAdjustment.remarks);
 
                 la.clkViewBtn();
                 log("clicked on view btn");

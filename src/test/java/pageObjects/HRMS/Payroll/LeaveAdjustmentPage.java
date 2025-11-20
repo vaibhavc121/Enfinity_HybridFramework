@@ -1,5 +1,6 @@
 package pageObjects.HRMS.Payroll;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,16 +13,19 @@ public class LeaveAdjustmentPage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Leave Adjustment']")
     WebElement leaveAdjustment;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.EmployeeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'EmployeeId')]")
     WebElement empdd;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.EffectiveDate_I']")
+    @FindBy(xpath = "//input[contains(@id,'EffectiveDate')]")
     WebElement effectiveDate;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.LeaveTypeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'LeaveTypeId')]")
     WebElement leavetypedd;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.PaidDays_I']")
+    @FindBy(xpath = "//div[@class='dx-item-content']")
+    private WebElement adjustmentType;
+
+    @FindBy(xpath = "//input[contains(@id,'PaidDays')]")
     WebElement paidDaysTB;
 
     @FindBy(xpath = "//input[@id='LeaveAdjustment.UnpaidDays_I']")
@@ -45,17 +49,24 @@ public class LeaveAdjustmentPage extends BasePage
 
     public void provideEmp(String value)
     {
-        clearAndProvide1(empdd, value);
+        provideAndEnter(empdd, value);
     }
 
     public void provideEffectiveDate(String value)
     {
+        waitTS(2);
         clearAndProvide1(effectiveDate, value);
+        clickOnElement1(effectiveDate);
     }
 
     public void provideLeaveType(String value)
     {
-        clearAndProvide1(leavetypedd, value);
+        provideAndEnter(leavetypedd, value);
+    }
+
+    public void selectAdjustmentType(String adjustmentTypeValue)
+    {
+        selectValue(By.xpath("//div[@class='dx-item-content']"), adjustmentTypeValue);
     }
 
     public void providePaidDaysValue(String value)

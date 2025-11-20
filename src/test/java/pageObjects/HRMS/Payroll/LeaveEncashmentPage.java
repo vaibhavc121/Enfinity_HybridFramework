@@ -2,6 +2,7 @@ package pageObjects.HRMS.Payroll;
 
 import java.util.List;
 
+import base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,16 +17,16 @@ public class LeaveEncashmentPage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Leave Encashment']")
     WebElement leaveEncashment;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.EffectiveDate_I']")
-    WebElement effectiveDate;
+    @FindBy(xpath = "//input[contains(@id,'EffectiveDate')]")
+    WebElement encashmentDate;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.EmployeeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'EmployeeId')]")
     WebElement empdd;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.LeaveTypeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'LeaveTypeId')]")
     WebElement leaveTypeDD;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.PaidDays_I']")
+    @FindBy(xpath = "//input[contains(@id,'PaidDays')]")
     WebElement paidDaysTB;
 
     @FindBy(xpath = "//td[normalize-space()='1']")
@@ -43,7 +44,13 @@ public class LeaveEncashmentPage extends BasePage
 
     public void provideEncashmentDate(String value)
     {
-        clearAndProvide1(effectiveDate, value);
+        try
+        {
+            clearAndProvide1(encashmentDate, value);
+        } catch (Exception e)
+        {
+            clearAndProvide1(encashmentDate, value);
+        }
     }
 
     public void provideEmp(String value)
@@ -56,14 +63,23 @@ public class LeaveEncashmentPage extends BasePage
         provideAndEnter(leaveTypeDD, value);
     }
 
-    public void providePaidDays(String value)
-    {
-        clearAndProvide1(paidDaysTB, value);
-    }
-
     public void selectPaymentType(String value)
     {
-        selectDropdownValueOffice365(value);
+        List<WebElement> paymentTypeBtns = BaseTest.getDriver().findElements(By.xpath("//div[@class='dx-item-content']"));
+
+        for (WebElement btn : paymentTypeBtns)
+        {
+            if (btn.getText().equalsIgnoreCase(value))
+            {
+                clickOnElement1(btn);
+                break;
+            }
+        }
+    }
+
+    public void provideEncashmentDays(String value)
+    {
+        clearAndProvide1(paidDaysTB, value);
     }
 
     public void provideRemarks(String value)

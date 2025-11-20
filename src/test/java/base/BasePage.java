@@ -566,6 +566,20 @@ public class BasePage
         }
     }
 
+    public static void selectValue(By locator, String value)
+    {
+        List<WebElement> paymentTypeBtns = waitForElements2(locator);
+
+        for (WebElement btn : paymentTypeBtns)
+        {
+            if (btn.getText().equalsIgnoreCase(value))
+            {
+                clickOnElement1(btn);
+                break;
+            }
+        }
+    }
+
     public static void clearAndProvide(By locator, String value)
     {
         WebElement element = waitForElement1(locator);

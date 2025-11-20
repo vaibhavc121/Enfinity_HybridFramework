@@ -32,7 +32,7 @@
   "createLeaveAdjustment": [
     {
       "employee": "Vaibhav Chavan",
-      "effectiveDate": "01-01-2025",
+      "effectiveDate": "01-Jan-2025",
       "leaveType": "Annual Leave",
       "paidDays": "1",
       "unpaidDays": "01-01-2025",
@@ -42,7 +42,7 @@
   "createLeaveEncashment": [
     {
       "employee": "Vaibhav Chavan",
-      "encashmentDate": "01-01-2025",
+      "encashmentDate": "01-Jan-2025",
       "leaveType": "Annual Leave",
       "paidDays": "1",
       "paymentType": "Pay Now",

@@ -23,7 +23,7 @@
         <classes>
 
             <!-- New Test -->
-            <class name="testCases.HRMS.Payroll.LeaveEncashmentTest"/>
+            <class name="testCases.HRMS.Payroll.LeaveAdjustmentTest"/>
 
         </classes>
     </test>
