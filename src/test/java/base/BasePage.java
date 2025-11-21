@@ -1230,7 +1230,8 @@ public class BasePage
     {
         Wait<WebDriver> fluentWait = new FluentWait<>(DriverFactory.getDriver()).withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500))
-                .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
+                .ignoring(NoSuchElementException.class, StaleElementReferenceException.class)
+                .withMessage("Element NOT found: " + element.toString());
         return fluentWait.until(d ->
         {
             WebElement el = element;
@@ -1242,7 +1243,8 @@ public class BasePage
     {
         Wait<WebDriver> fluentWait = new FluentWait<>(DriverFactory.getDriver()).withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500))
-                .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
+                .ignoring(NoSuchElementException.class, StaleElementReferenceException.class)
+                .withMessage("Element NOT found: " + locator.toString());
         return fluentWait.until(d ->
         {
             WebElement el = DriverFactory.getDriver().findElement(locator);
@@ -1254,7 +1256,8 @@ public class BasePage
     {
         Wait<WebDriver> wait = new FluentWait<>(DriverFactory.getDriver()).withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500)).ignoring(NoSuchElementException.class)
-                .ignoring(StaleElementReferenceException.class);
+                .ignoring(StaleElementReferenceException.class)
+                .withMessage("Element NOT found: " + locator.toString());
 
         return wait.until(d ->
         {
