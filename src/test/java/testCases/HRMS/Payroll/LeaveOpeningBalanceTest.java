@@ -57,28 +57,34 @@ public class LeaveOpeningBalanceTest extends BaseTest
                 ob.clickLeaveOpeningBalance();
                 log("clicked on LeaveOpening Balance");
 
-                ob.clickNew();
+                ob.clkNewBtn();
                 log("clicked on New");
 
                 ob.provideEmp(leaveOpBal.employee);
-                log("provided Emp");
+                log("employee selected: " + leaveOpBal.employee);
 
                 ob.provideEffectiveDate(leaveOpBal.effectiveDate);
-                log("provided Effective Date");
+                log("provied effective date: " + leaveOpBal.effectiveDate);
 
                 ob.provideLeaveType(leaveOpBal.leaveType);
-                log("provided LeaveType");
+                log("leave type selected: " + leaveOpBal.leaveType);
 
-                ob.providePaidDays(leaveOpBal.paidDays);
-                log("provided PaidDays");
+                // la.selectAdjustmentType("Paid Days");
+                // log("selected adjustment type as Paid Days");
 
-                ob.provideRemarks(leaveOpBal.remarks);
-                log("provided Remarks");
+                ob.providePaidDaysValue(leaveOpBal.paidDays);
+                log("provided paid days value: " + leaveOpBal.paidDays);
 
-                ob.clickView();
+//				la.provideUnpaidDaysValue();
+//				log("provided unpaid days value");
+
+                BasePage.provideDescription(leaveOpBal.remarks);
+                log("provided remarks: " + leaveOpBal.remarks);
+
+                ob.clkViewBtn();
                 log("clicked on View");
 
-                ob.clickApprove();
+                ob.clkApproveBtn();
                 log("clickApprove");
 
                 hc.clickHRCore();

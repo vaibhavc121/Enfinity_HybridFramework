@@ -133,8 +133,9 @@ public class PayrollModel
     public static class PromotionModel
     {
         public String employee;
-        public String effectiveDate;
-        public String promotionType;
+        public String promotionTypeSalRevision;
+        public String promotionTypeJobProfileRevision;
+        public String promotionPeriod;
         public String salComp;
         public String incrementAmt;
         public String salCompEffectiveFromDate;

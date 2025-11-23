@@ -52,7 +52,7 @@
   "createLeaveOpeningBalance": [
     {
       "employee": "Vaibhav Chavan",
-      "effectiveDate": "01-01-2025",
+      "effectiveDate": "01-Jan-2025",
       "leaveType": "Sick Leave",
       "paidDays": "1",
       "remarks": "test"
@@ -144,11 +144,12 @@
   "createPromotion": [
     {
       "employee": "Vaibhav Chavan",
-      "effectiveDate": "01-01-2025",
-      "promotionType": "Promotion",
-      "salComp": "SC04001 | Basic",
+      "promotionTypeSalRevision": "Salary Revision",
+      "promotionTypeJobProfileRevision": "Job Profile Revision",
+      "promotionPeriod": "Jan-2023",
+      "salComp": "SC04004 | Housing Allowance",
       "incrementAmt": "100",
-      "salCompEffectiveFromDate": "01-02-2025",
+      "salCompEffectiveFromDate": "01-Jan-2023",
       "expectedSal": "600",
       "newDesignation": "Sales Manager"
     }

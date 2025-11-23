@@ -17,12 +17,28 @@ public class PromotionPage extends BasePage
     @FindBy(xpath = "//span[contains(text(),'Promotion')]")
     private WebElement promotion;
 
-    @FindBy(xpath = "//input[@id='EmployeePromotion.EmployeeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'EmployeeId')]")
     WebElement empdd;
-    @FindBy(xpath = "//input[@id='EmployeePromotion.EffectiveDate_I']")
-    WebElement effectiveDate;
-    @FindBy(xpath = "//input[@id='EmployeePromotion.Type_I']")
+    @FindBy(xpath = "//input[contains(@id,'UIType')]")
     WebElement promotionTypeDD;
+    @FindBy(xpath = "//input[contains(@id,'PromotionPeriodId')]")
+    WebElement effectiveDate;
+
+    @FindBy(xpath = "//span[normalize-space()='Assign New Salary Component']")
+    private WebElement assignNewSalaryComponent;
+
+    @FindBy(xpath = "//input[contains(@id,'SalaryComponentId')]")
+    private WebElement SalaryComponentdd;
+
+    @FindBy(xpath = "//input[contains(@id,'CurrentAmount')]")
+    private WebElement salAmount;
+
+    @FindBy(xpath = "//input[contains(@id,'EffectiveFromDate')]")
+    private WebElement effectiveFromDate;
+
+    @FindBy(xpath = "(//span[text()='Save'])[2]")
+    private WebElement savePopup;
+
     @FindBy(xpath = "//input[@id='EmployeePromotion.NewDesignationIdLookup_I']")
     WebElement newDesignation;
     @FindBy(xpath = "//span[text()='Salaries']")
@@ -33,7 +49,7 @@ public class PromotionPage extends BasePage
     @FindBy(xpath = "//td[@class=' grid-cell dx-wrap dxgv dx-ellipsis dx-ar']//div[@class='dxgBCTC dx-ellipsis'][normalize-space()='0']")
     WebElement incrementAmt;
     @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[5]")
-    WebElement effectiveFromDate;
+    WebElement effectiveFromDate1;
     @FindBy(xpath = "(//span[text()='Employee'])[2]")
     WebElement employee;
     @FindBy(xpath = "//div[@class='salary-component-info']//p")
@@ -45,71 +61,61 @@ public class PromotionPage extends BasePage
     public void clickPromotion()
     {
         promotion.click();
+        waitTS(2);
     }
 
     public void clickNew()
     {
-        clickOnNew();
+        try
+        {
+            clickOnNew();
+        } catch (Exception e)
+        {
+            clickOnNew();
+        }
+        waitTS(3);
     }
 
     public void provideEmployee(String value)
     {
-        clearAndProvide1(empdd, value);
+        provideAndEnter(empdd, value);
     }
 
     public void provideEffectiveDate(String value)
     {
-        clearAndProvide1(effectiveDate, value);
+        waitTS(2);
+        provideAndEnter(effectiveDate, value);
     }
 
     public void selectPromotionType(String value)
     {
         promotionTypeDD.click();
-        selectDropdownValueOffice365(value);
+        selectDropdownOption(value);
     }
 
-    public void provideNewDesignation(String value)
+    public void clickAssignNewSalaryComponent()
     {
-        clearAndProvide1(newDesignation, value);
+        clickOnElement1(assignNewSalaryComponent);
+    }
+
+    public void provideSalComponent(String value)
+    {
+        provideAndEnter(SalaryComponentdd, value);
+    }
+
+    public void provideAmt(String value)
+    {
+        clearAndProvide1(salAmount, value);
+    }
+
+    public void provideEffectiveFromDt(String value)
+    {
+        clearAndProvide1(effectiveFromDate, value);
     }
 
     public void clickSave()
     {
-        clickOnSave();
-    }
-
-    public void scrollToElement()
-    {
-        waitTS(2);
-        //scrollIntoView(DriverFactory.getDriver(), salaries);
-        scrollToBottom(DriverFactory.getDriver());
-    }
-
-    public void clickSalaries()
-    {
-        salaries.click();
-    }
-
-    public void clickNew1()
-    {
-        clickOnNewLine();
-    }
-
-    public void provideSalComp(String value)
-    {
-        provideAndEnter(salcompdd, value);
-    }
-
-    public void provideIncrementAmt(String value) throws InterruptedException
-    {
-        waitTS(2);
-        clearAndProvide2(incrementAmt, value);
-    }
-
-    public void provideEffectiveFromDate(String value) throws InterruptedException
-    {
-        waitTS(2);
-        clearAndProvide2(effectiveFromDate, value);
+        clickOnElement1(savePopup);
     }
 
     public void clickViewApproveBack()

@@ -211,6 +211,7 @@ public class ReviewPage extends BasePage
     }
     public void enterOverallComment2(String value)
     {
+        scrollIntoView(BaseTest.getDriver(), overallComment2);
         clearAndProvide1(overallComment2, value);
     }
     public void enterTrainingRequirements2(String value)

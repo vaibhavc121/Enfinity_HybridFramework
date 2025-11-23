@@ -519,7 +519,15 @@ public class BasePage
 
     public static void selectDropdownOption(String expectedValue)
     {
-        List<WebElement> dropdownList = waitForElements2(By.xpath("//div[@class='dx-item dx-list-item']"));
+        List<WebElement> dropdownList;
+        try
+        {
+            dropdownList = waitForElements2(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
+        } catch (Exception e)
+        {
+            dropdownList = waitForElements2(By.xpath("//div[@class='dx-item dx-list-item']"));
+        }
+
         for (WebElement dropdownElement : dropdownList)
         {
             String actualValue = dropdownElement.getText().trim().toLowerCase();
@@ -614,7 +622,7 @@ public class BasePage
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
         element.sendKeys(value);
-        waitTS(2);
+        waitTS(3);
         element.sendKeys(Keys.ENTER);
     }
 

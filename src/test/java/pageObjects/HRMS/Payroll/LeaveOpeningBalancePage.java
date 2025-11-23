@@ -1,5 +1,6 @@
 package pageObjects.HRMS.Payroll;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,20 +14,26 @@ public class LeaveOpeningBalancePage extends BasePage
     @FindBy(xpath = "//span[normalize-space()='Leave Opening Balance']")
     WebElement leaveOpeningBalance;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.EmployeeIdLookup_I']")
+    @FindBy(xpath = "//input[contains(@id,'EmployeeId')]")
     WebElement empdd;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.EffectiveDate_I']")
+    @FindBy(xpath = "//input[contains(@id,'EffectiveDate')]")
     WebElement effectiveDate;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.LeaveTypeIdLookup_I']")
-    WebElement leaveType;
+    @FindBy(xpath = "//input[contains(@id,'LeaveTypeId')]")
+    WebElement leavetypedd;
 
-    @FindBy(xpath = "//input[@id='LeaveAdjustment.PaidDays_I']")
-    WebElement paidDays;
+    @FindBy(xpath = "//div[@class='dx-item-content']")
+    private WebElement adjustmentType;
+
+    @FindBy(xpath = "//input[contains(@id,'PaidDays')]")
+    WebElement paidDaysTB;
 
     @FindBy(xpath = "//input[@id='LeaveAdjustment.UnpaidDays_I']")
-    WebElement unpaidDays;
+    WebElement unpaidDaysTB;
+
+    @FindBy(xpath = "//textarea[@id='LeaveAdjustment.Description_I']")
+    WebElement remarks;
 
     // Action Methods
     public void clickLeaveOpeningBalance()
@@ -34,47 +41,54 @@ public class LeaveOpeningBalancePage extends BasePage
         leaveOpeningBalance.click();
     }
 
-    public void clickNew()
+    public void clkNewBtn()
     {
         clickOnNew();
     }
 
     public void provideEmp(String value)
     {
-        clearAndProvide1(empdd, value);
+        provideAndEnter(empdd, value);
     }
 
     public void provideEffectiveDate(String value)
     {
+        waitTS(2);
         clearAndProvide1(effectiveDate, value);
+        clickOnElement1(effectiveDate);
     }
 
     public void provideLeaveType(String value)
     {
-        clearAndProvide1(leaveType, value);
+        provideAndEnter(leavetypedd, value);
     }
 
-    public void providePaidDays(String value)
+    public void selectAdjustmentType(String adjustmentTypeValue)
     {
-        clearAndProvide1(paidDays, value);
+        selectValue(By.xpath("//div[@class='dx-item-content']"), adjustmentTypeValue);
     }
 
-    public void provideUnpaidDays(String value)
+    public void providePaidDaysValue(String value)
     {
-        clearAndProvide1(unpaidDays, value);
+        clearAndProvide1(paidDaysTB, value);
+    }
+
+    public void provideUnpaidDaysValue(String value)
+    {
+        clearAndProvide1(unpaidDaysTB, value);
     }
 
     public void provideRemarks(String value)
     {
-        provideDescription(value);
+        remarks.sendKeys(value);
     }
 
-    public void clickView()
+    public void clkViewBtn()
     {
         clickOnViewTxn();
     }
 
-    public void clickApprove()
+    public void clkApproveBtn() throws InterruptedException
     {
         clickOnApprove();
     }

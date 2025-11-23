@@ -28,16 +28,16 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name="testCases.HRMS.Payroll.LeaveResumptionTest">
-                <methods>
-                    <include name="verifyLateLeaveResumptionWithUnpaidDays"/>
-                    <include name="deleteLateLeaveResumptionWithUnpaidDays"/>
-                    <include name="verifyLateLeaveResumptionWithPaidDays"/>
-                    <include name="deleteLateLeaveResumptionWithPaidDays"/>
-                    <include name="verifyLateLeaveResumptionWithGrantDays"/>
-                    <include name="deleteLateLeaveResumptionWithGrantDays"/>
-                </methods>
-            </class>
+            <!--            <class name="testCases.HRMS.Payroll.LeaveResumptionTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="verifyLateLeaveResumptionWithUnpaidDays"/>-->
+            <!--                    <include name="deleteLateLeaveResumptionWithUnpaidDays"/>-->
+            <!--                    <include name="verifyLateLeaveResumptionWithPaidDays"/>-->
+            <!--                    <include name="deleteLateLeaveResumptionWithPaidDays"/>-->
+            <!--                    <include name="verifyLateLeaveResumptionWithGrantDays"/>-->
+            <!--                    <include name="deleteLateLeaveResumptionWithGrantDays"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
 
             <!--            <class name="testCases.HRMS.SelfService.ExceptionRequestTest">-->
             <!--                <methods>-->
@@ -47,13 +47,13 @@
             <!--            </class>-->
 
 
-            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="create360FeedbackCycle"/>-->
-            <!--                    <include name="delete360FeedbackCycle"/>-->
+            <class name="testCases.HRMS.Performance.PerformanceTest">
+                <methods>
+                    <include name="createAppraisalCycle"/>
+                    <include name="reviewAppraisal"/>
 
-            <!--                </methods>-->
-            <!--            </class>-->
+                </methods>
+            </class>
 
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->

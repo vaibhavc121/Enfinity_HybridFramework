@@ -45,17 +45,31 @@ public class PromotionTest extends BaseTest
                 log("clicked on new button");
 
                 pr.provideEmployee(proData.employee);
-                log("provided employee");
+                log("provided employee: " + proData.employee);
 
-                pr.provideEffectiveDate(proData.effectiveDate);
-                log("provided effective date");
-
-                pr.selectPromotionType(proData.promotionType);
+                pr.selectPromotionType(proData.promotionTypeSalRevision);
                 log("selected promotion type");
 
-                pr.provideNewDesignation(proData.newDesignation);
-                log("provided new designation");
+                pr.provideEffectiveDate(proData.promotionPeriod);
+                log("provided effective date");
 
+                BasePage.clickOnSave();
+                log("clicked on save button popup");
+
+                pr.clickAssignNewSalaryComponent();
+                log("clicked on assign new salary component");
+
+                pr.provideSalComponent(proData.salComp);
+                log("provided salary component: " + proData.salComp);
+
+                pr.provideAmt(proData.incrementAmt);
+                log("provided increment amount: " + proData.incrementAmt);
+
+                pr.provideEffectiveFromDt(proData.salCompEffectiveFromDate);
+                log("provided effective from date: " + proData.salCompEffectiveFromDate);
+
+                pr.clickSave();
+                log("clicked on save button");
 //				pr.clickSave();
 //				log("clicked on save button");
 //
@@ -80,7 +94,7 @@ public class PromotionTest extends BaseTest
                 pr.clickViewApproveBack();
                 log("clicked on view approve and navigate back");
 
-                Assert.assertTrue(BasePage.validateListing(proData.employee, 6, 6),
+                Assert.assertTrue(BasePage.validateListing(proData.employee, 7, 7),
                         "Promotion for employee: " + proData.employee + " is not created successfully");
 
 //				Assert.assertEquals(pr.getSalary(proData.employee), proData.expectedSal,
@@ -119,7 +133,7 @@ public class PromotionTest extends BaseTest
                 log("clicked on promotion");
 
                 BasePage.performAction(6, "001", "Amend");
-                Assert.assertFalse(BasePage.validateListing("001", 6, 6));
+                Assert.assertFalse(BasePage.validateListing("001", 7, 7));
             }
         } catch (Exception e)
         {
