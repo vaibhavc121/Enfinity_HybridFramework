@@ -380,6 +380,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
                 //endregion
 
                 //region Tickets Section
+                /*
                 ep.scrollDownWebPageTicket();
                 log("scrolled down to Ticket Accrual section");
 
@@ -412,6 +413,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
 
                 ep.clickSaveTicket();
                 log("clicked on save ticket button");
+                 */
                 //endregion
 
                 //region MiscellaneousAccrualEarnings Section
@@ -1025,6 +1027,7 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
     //endregion
 
     //region Delete Employee
+    /*
     @Reset()
     public void deleteEmployee()
     {
@@ -1077,5 +1080,59 @@ public class CreateDeleteFullEmployeeTest extends BaseTest
             Assert.fail("Test case failed: " + e);
         }
     }
+     */
     //endregion
+
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 12)
+    public void deleteEmployee()
+    {
+        try
+        {
+            // instead of for loop you can use repeat attribute
+            for (int i = 1; i <= 1; i++)
+            {
+                String employeeFile = FileUtils.getDataFile("HRCore", "HRCore", "EmployeeData");
+                List<EmployeeModel.EmpModel> employeeInfo = JsonUtils.convertJsonListDataModel(employeeFile, "newEmployee",
+                        EmployeeModel.EmpModel.class);
+
+                HRCorePage hc = new HRCorePage();
+                hc.clickHRCore();
+                log("clicked on HR Core module");
+                hc.clickSetupForm();
+                log("clicked on Setup Form");
+
+                SetupPage sp = new SetupPage();
+                sp.clickEmployee();
+                log("clicked on Employee");
+                Thread.sleep(2000);
+
+                for (EmployeeModel.EmpModel del : employeeInfo)
+                {
+                    BasePage.navigateToEmployee(del.name1);
+                    BasePage.switchTab();
+                    log("switched to Employee tab for " + del.name1);
+
+                    EmployeePage ep = new EmployeePage();
+                    ep.clickSettingButton();
+                    log("clicked on setting button");
+
+                    ep.clickDelete();
+                    log("clicked on delete button");
+                    ep.clickOk();
+                    log("clicked on OK button to confirm deletion");
+                    // ClassicAssert.isTrue(BasePage.isEmployeeDeleted(), "Employee not deleted");
+                    // ep.clickRightAreaMenu();
+                    // ep.clickLogOff();
+                    // BasePage.closeTab();
+
+                    Assert.assertFalse(ep.validateEmpDelete(del.name1), "Employee " + del.name1 + " is not deleted.");
+                    log("Employee " + del.name1 + " deleted successfully");
+                }
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
 }

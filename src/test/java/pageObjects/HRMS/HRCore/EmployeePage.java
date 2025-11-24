@@ -304,7 +304,7 @@ public class EmployeePage extends BasePage
     WebElement govtRecruitmentContractLicense;
 
     //region salary Component section
-    @FindBy(xpath = "//p[normalize-space()='Salary Components']/../..//i[@class='dx-icon dx-icon-add']")
+    @FindBy(xpath = "(//i[@class='dx-icon dx-icon-edit-button-addrow'])[1]")
     WebElement addSalaryComponentsBtn;
 
     @FindBy(xpath = "//span[normalize-space()='Salary Component']//following::input[contains(@id,'SalaryComponentId')]")
@@ -319,7 +319,7 @@ public class EmployeePage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'EffectiveFromDate')]")
     WebElement effectiveFromDate;
 
-    @FindBy(xpath = "//div[@id='SaveButton']//span[@class='dx-button-text'][normalize-space()='Save']")
+    @FindBy(xpath = "(//span[@class='dx-button-text'])[10]")
     WebElement saveSalComponent;
 
     //region edit basic salary
@@ -1908,13 +1908,20 @@ public class EmployeePage extends BasePage
     public void clickaddSkillSetBtn()
     {
         addSkillSetBtn.click();
-        waitTS(1);
+        waitTS(2);
     }
 
     public void clickSkillSetName()
     {
-        skillSetName.click();
-        waitTS(1);
+        try
+        {
+            skillSetName.click();
+            waitTS(1);
+        } catch (Exception e)
+        {
+            addSkillSetBtn.click();
+            waitTS(2);
+        }
     }
 
     public void selectSkillSetName(String value)

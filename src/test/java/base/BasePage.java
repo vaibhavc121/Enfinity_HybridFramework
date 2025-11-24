@@ -622,7 +622,7 @@ public class BasePage
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
         element.sendKeys(value);
-        waitTS(3);
+        waitTS(2);
         element.sendKeys(Keys.ENTER);
     }
 

@@ -18,13 +18,13 @@ import java.util.List;
 public class PromotionTest extends BaseTest
 {
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
-    public void createPromotion()
+    public void createSalaryRevision()
     {
         try
         {
             String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
             List<PayrollModel.PromotionModel> promotionData = JsonUtils.convertJsonListDataModel1(payrollFile,
-                    "createPromotion", PayrollModel.PromotionModel.class);
+                    "createPromotionSalRevision", PayrollModel.PromotionModel.class);
 
             // payroll pg
             PayrollPage pp = new PayrollPage();
@@ -48,10 +48,10 @@ public class PromotionTest extends BaseTest
                 log("provided employee: " + proData.employee);
 
                 pr.selectPromotionType(proData.promotionTypeSalRevision);
-                log("selected promotion type");
+                log("selected promotion type: " + proData.promotionTypeSalRevision);
 
-                pr.provideEffectiveDate(proData.promotionPeriod);
-                log("provided effective date");
+                pr.providePromotionPeriod(proData.promotionPeriod);
+                log("provided effective date: " + proData.promotionPeriod);
 
                 BasePage.clickOnSave();
                 log("clicked on save button popup");
@@ -109,7 +109,7 @@ public class PromotionTest extends BaseTest
     }
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
-    public void deletePromotion()
+    public void deleteSalaryRevision()
     {
         try
         {
@@ -132,7 +132,111 @@ public class PromotionTest extends BaseTest
                 lp.clickPromotion();
                 log("clicked on promotion");
 
-                BasePage.performAction(6, "001", "Amend");
+                BasePage.performAction(7, "001", "Amend");
+                Assert.assertFalse(BasePage.validateListing("001", 7, 7));
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 3)
+    public void createJobProfileRevision()
+    {
+        try
+        {
+            String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+            List<PayrollModel.PromotionModel> promotionData = JsonUtils.convertJsonListDataModel1(payrollFile,
+                    "createPromotionJobProfileRevision", PayrollModel.PromotionModel.class);
+
+            // payroll pg
+            PayrollPage pp = new PayrollPage();
+            pp.clkPayroll();
+            log("clicked on payroll link");
+            pp.clkTxn();
+            log("clicked on txn");
+
+            // promotion pg
+            PromotionPage pr = new PromotionPage();
+
+            for (PayrollModel.PromotionModel proData : promotionData)
+            {
+                pr.clickPromotion();
+                log("clicked on promotion link");
+
+                pr.clickNew();
+                log("clicked on new button");
+
+                pr.provideEmployee(proData.employee);
+                log("provided employee: " + proData.employee);
+
+                pr.selectPromotionType(proData.promotionTypeJobProfileRevision);
+                log("selected promotion type: " + proData.promotionTypeJobProfileRevision);
+
+                BasePage.clickOnSave();
+                log("clicked on save button popup");
+
+                pr.provideDept(proData.department);
+                log("provided department: " + proData.department);
+
+                pr.provideDesignation(proData.designation);
+                log("provided designation: " + proData.designation);
+
+                pr.provideWorkLocation(proData.workLocation);
+                log("provided work location: " + proData.workLocation);
+
+                pr.provideManager(proData.manager);
+                log("provided manager: " + proData.manager);
+
+                pr.provideProject(proData.Project);
+                log("provided project: " + proData.Project);
+
+                pr.savePopup();
+                log("popup saved");
+
+                pr.clickViewApproveBack();
+                log("clicked on view approve and navigate back");
+
+                Assert.assertTrue(BasePage.validateListing(proData.employee, 7, 7),
+                        "Promotion for employee: " + proData.employee + " is not created successfully");
+//				Assert.assertEquals(pr.getSalary(proData.employee), proData.expectedSal,
+//						"Salary after promotion is not as expected for employee: " + proData.employee);
+
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 4)
+    public void deleteJobProfileRevision()
+    {
+        try
+        {
+            String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
+            List<PayrollModel.PromotionModel> promotionData = JsonUtils.convertJsonListDataModel1(payrollFile,
+                    "createPromotionJobProfileRevision", PayrollModel.PromotionModel.class);
+
+            // payroll pg
+            PayrollPage pp = new PayrollPage();
+            pp.clkPayroll();
+            log("clicked on payroll link");
+            pp.clkTxn();
+            log("clicked on txn");
+
+            // promotion pg
+            PromotionPage lp = new PromotionPage();
+
+            for (PayrollModel.PromotionModel promotion : promotionData)
+            {
+                lp.clickPromotion();
+                log("clicked on promotion");
+
+                BasePage.performAction(7, "001", "Amend");
                 Assert.assertFalse(BasePage.validateListing("001", 7, 7));
             }
         } catch (Exception e)

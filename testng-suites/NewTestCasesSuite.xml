@@ -23,7 +23,7 @@
         <classes>
 
             <!-- New Test -->
-            <class name="testCases.HRMS.Payroll.PromotionTest"/>
+            <class name="testCases.HRMS.HRCore.EmployeeTest"/>
 
         </classes>
     </test>

@@ -141,7 +141,7 @@
       "remarks": "10"
     }
   ],
-  "createPromotion": [
+  "createPromotionSalRevision": [
     {
       "employee": "Vaibhav Chavan",
       "promotionTypeSalRevision": "Salary Revision",
@@ -149,9 +149,18 @@
       "promotionPeriod": "Jan-2023",
       "salComp": "SC04004 | Housing Allowance",
       "incrementAmt": "100",
-      "salCompEffectiveFromDate": "01-Jan-2023",
-      "expectedSal": "600",
-      "newDesignation": "Sales Manager"
+      "salCompEffectiveFromDate": "01-Jan-2023"
+    }
+  ],
+  "createPromotionJobProfileRevision": [
+    {
+      "employee": "Vaibhav Chavan",
+      "promotionTypeJobProfileRevision": "Job Profile Revision",
+      "department": "QC",
+      "designation": "Sales Manager",
+      "workLocation": "Salmiya City",
+      "manager": "002 | Sahil Gadkari",
+      "Project": "Timesheet Entry Testing"
     }
   ],
   "createPenalty": [

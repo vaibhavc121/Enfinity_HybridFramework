@@ -1,0 +1,1418 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test Execution Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">HRMS Regression Testing</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 24, 2025 01:59:14 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">functional</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.createNewPayrollEmployee</p>
+            <p class="text-sm">
+              <span>2:00:01 pm</span> / <span>00:00:00:005</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.createNewPayrollEmployee</h5>
+<span class='badge badge-success'>11.24.2025 2:00:01 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:00:01 pm</span>
+<span class='badge badge-default'>00:00:00:005</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:00:01 pm</td>
+        <td>
+          createNewPayrollEmployee got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPersonalTab</p>
+            <p class="text-sm">
+              <span>2:00:24 pm</span> / <span>00:00:00:002</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPersonalTab</h5>
+<span class='badge badge-success'>11.24.2025 2:00:24 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:00:24 pm</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:00:24 pm</td>
+        <td>
+          verifyPersonalTab got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyJobTab</p>
+            <p class="text-sm">
+              <span>2:00:45 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyJobTab</h5>
+<span class='badge badge-success'>11.24.2025 2:00:45 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:00:45 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:00:45 pm</td>
+        <td>
+          verifyJobTab got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="4"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab</p>
+            <p class="text-sm">
+              <span>2:01:08 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:08 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:08 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:01:08 pm</td>
+        <td>
+          verifyPayrollTab got skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:08 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='SaveButton']//span[@class='dx-button-text'][normalize-space()='Save']"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, findElement {using=xpath, value=//div[@id='SaveButton']//span[@class='dx-button-text'][normalize-space()='Save']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab</p>
+            <p class="text-sm">
+              <span>2:01:09 pm</span> / <span>00:00:00:104</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:09 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:10 pm</span>
+<span class='badge badge-default'>00:00:00:104</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyPayrollTab_20251124020109.png' src="D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyPayrollTab_20251124020109.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:01:09 pm</td>
+        <td>
+          verifyPayrollTab got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:09 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (418, 195). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper dx-datagrid-edit-popup dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1366px; height: 641px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1114}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //a[@id='employeeProfileMenu_DXI2_T']//span[@class='dx-vam dxm-contentText'][normalize-space()='Payroll']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="6"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab</p>
+            <p class="text-sm">
+              <span>2:01:11 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:11 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:11 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:01:11 pm</td>
+        <td>
+          verifyTimeOffTab got skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:11 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (510, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1115}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //span[normalize-space()='Time Off']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab</p>
+            <p class="text-sm">
+              <span>2:01:12 pm</span> / <span>00:00:00:086</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:12 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:12 pm</span>
+<span class='badge badge-default'>00:00:00:086</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyTimeOffTab_20251124020112.png' src="D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyTimeOffTab_20251124020112.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:01:12 pm</td>
+        <td>
+          verifyTimeOffTab got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:12 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (510, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1115}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //span[normalize-space()='Time Off']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="8"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab</p>
+            <p class="text-sm">
+              <span>2:01:13 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:13 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:13 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:01:13 pm</td>
+        <td>
+          verifyAttendanceTab got skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:13 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (618, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1116}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //a[@id='employeeProfileMenu_DXI4_T']//span[@class='dx-vam dxm-contentText'][normalize-space()='Attendance']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="9"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab</p>
+            <p class="text-sm">
+              <span>2:01:14 pm</span> / <span>00:00:00:085</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:14 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:14 pm</span>
+<span class='badge badge-default'>00:00:00:085</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyAttendanceTab_20251124020114.png' src="D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyAttendanceTab_20251124020114.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:01:14 pm</td>
+        <td>
+          verifyAttendanceTab got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:14 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (618, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1116}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //a[@id='employeeProfileMenu_DXI4_T']//span[@class='dx-vam dxm-contentText'][normalize-space()='Attendance']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="10"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab</p>
+            <p class="text-sm">
+              <span>2:01:15 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:15 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:15 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:01:15 pm</td>
+        <td>
+          verifyDocumentsTab got skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:15 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (734, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1117}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //span[normalize-space()='Documents']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="11"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab</p>
+            <p class="text-sm">
+              <span>2:01:16 pm</span> / <span>00:00:00:084</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:16 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:16 pm</span>
+<span class='badge badge-default'>00:00:00:084</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyDocumentsTab_20251124020116.png' src="D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyDocumentsTab_20251124020116.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:01:16 pm</td>
+        <td>
+          verifyDocumentsTab got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:16 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (734, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1117}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //span[normalize-space()='Documents']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="12"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab</p>
+            <p class="text-sm">
+              <span>2:01:18 pm</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:18 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:18 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:01:18 pm</td>
+        <td>
+          verifyPerformanceTab got skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:18 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (856, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1118}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //a[@id='employeeProfileMenu_DXI6_T']//span[@class='dx-vam dxm-contentText'][normalize-space()='Performance']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab</p>
+            <p class="text-sm">
+              <span>2:01:19 pm</span> / <span>00:00:00:169</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:19 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:19 pm</span>
+<span class='badge badge-default'>00:00:00:169</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyPerformanceTab_20251124020119.png' src="D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyPerformanceTab_20251124020119.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:01:19 pm</td>
+        <td>
+          verifyPerformanceTab got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:19 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (856, 195). Other element would receive the click: <div class="dx-toolbar dx-widget dx-visibility-change-handler dx-collection dx-popup-title dx-has-close-button" role="toolbar">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1118}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //a[@id='employeeProfileMenu_DXI6_T']//span[@class='dx-vam dxm-contentText'][normalize-space()='Performance']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="14"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab</p>
+            <p class="text-sm">
+              <span>2:01:20 pm</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:20 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:20 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:01:20 pm</td>
+        <td>
+          verifyIntegrationTab got skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:20 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (1072, 195). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper dx-datagrid-edit-popup dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1366px; height: 641px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //span[normalize-space()='Integration']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab</p>
+            <p class="text-sm">
+              <span>2:01:21 pm</span> / <span>00:00:00:087</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:21 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:21 pm</span>
+<span class='badge badge-default'>00:00:00:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyIntegrationTab_20251124020121.png' src="D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyIntegrationTab_20251124020121.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:01:21 pm</td>
+        <td>
+          verifyIntegrationTab got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:21 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="dx-vam dxm-contentText">...</span> is not clickable at point (1072, 195). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper dx-datagrid-edit-popup dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1366px; height: 641px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //span[normalize-space()='Integration']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="16"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab</p>
+            <p class="text-sm">
+              <span>2:01:22 pm</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:22 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:22 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:01:22 pm</td>
+        <td>
+          verifyResidencyInfoTab got skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:22 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="dxWeb_mAdaptiveMenu_Office365 dxm-pImage" src="/DXR.axd?r=1_87-BPe0u" alt="..." id="employeeProfileMenu_DXI14_PImg" style="margin-top: 6.23438px;"> is not clickable at point (1268, 194). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper dx-datagrid-edit-popup dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1366px; height: 641px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1120}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //img[@id='employeeProfileMenu_DXI14_PImg']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="17"
+          author=""
+          tag="functional"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab</p>
+            <p class="text-sm">
+              <span>2:01:23 pm</span> / <span>00:00:00:084</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab</h5>
+<span class='badge badge-success'>11.24.2025 2:01:23 pm</span>
+<span class='badge badge-danger'>11.24.2025 2:01:23 pm</span>
+<span class='badge badge-default'>00:00:00:084</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">functional</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyResidencyInfoTab_20251124020123.png' src="D:\Vaibhav\Automation\IdeaProjects\Enfinity_HybridFramework\screenshots\verifyResidencyInfoTab_20251124020123.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:01:23 pm</td>
+        <td>
+          verifyResidencyInfoTab got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:01:23 pm</td>
+        <td>
+          Test case failed: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="dxWeb_mAdaptiveMenu_Office365 dxm-pImage" src="/DXR.axd?r=1_87-BPe0u" alt="..." id="employeeProfileMenu_DXI14_PImg" style="margin-top: 6.23438px;"> is not clickable at point (1268, 194). Other element would receive the click: <div class="dx-overlay-wrapper dx-popup-wrapper dx-datagrid-edit-popup dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1501; position: fixed; width: 1366px; height: 641px; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4f1b7601ce0250d62b33547acec404a, clickElement {id=f.9B6201EF02FEA9FC2E5A519D2B8BFF17.d.4E12320E8FDDBEF44A5557CE73AE068D.e.1120}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53735}, goog:processID: 15536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53735/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4f1b7601ce0250d62b33547acec404a)] -> xpath: //img[@id='employeeProfileMenu_DXI14_PImg']]
+Session ID: e4f1b7601ce0250d62b33547acec404a
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>7</span>
+<span class='badge log badge-skip'>7</span>
+</span>
+<p class="name">functional</p>
+<p class="duration text-sm">17 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>functional</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+<span status="skip" class='badge log badge-skip'>7 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:00:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.createNewPayrollEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:00:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPersonalTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:00:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyJobTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:01:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:01:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:01:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:01:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:01:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:01:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:01:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:01:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:01:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:01:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:01:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:01:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:01:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:01:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 24, 2025 01:59:14 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 24, 2025 02:01:24 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>7</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='17%'>
+<b>3</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='41%'><b>7</b> tests failed,
+<b>7</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='9%'><b>3</b> events passed</small></div>
+<div>
+<small data-tooltip='22%'><b>7</b> events failed,
+<b data-tooltip='%'>21</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.createNewPayrollEmployee":0.005,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPersonalTab":0.002,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyJobTab":0.001,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab":0.001,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPayrollTab":0.104,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab":0.001,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyTimeOffTab":0.086,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab":0.001,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyAttendanceTab":0.085,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab":0.001,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyDocumentsTab":0.084,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab":0,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyPerformanceTab":0.169,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab":0,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyIntegrationTab":0.087,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab":0,"testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest.verifyResidencyInfoTab":0.084
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>functional</td>
+<td>3</td>
+<td>7</td>
+<td>7</td>
+<td>0</td>
+<td>17.647%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Automation Engineer (SDET)</td>
+<td>Vaibhav Chavan</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>Enfinity HRMS</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>HRCore</td>
+</tr>
+<tr>
+<td>Environemnt</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>windows</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>chrome</td>
+</tr>
+<tr>
+<td>Groups</td>
+<td>[regression, datadriven, functional]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 7,
+warningParent: 0,
+skipParent: 7,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 3,
+failEvents: 7,
+warningEvents: 0,
+skipEvents: 7,
+infoEvents: 14
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

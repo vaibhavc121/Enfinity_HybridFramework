@@ -3,8 +3,10 @@ package pageObjects.HRMS.Payroll;
 import base.BasePage;
 
 import factory.DriverFactory;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.EmployeePage1;
@@ -55,6 +57,27 @@ public class PromotionPage extends BasePage
     @FindBy(xpath = "//div[@class='salary-component-info']//p")
     WebElement salCompInfo;
 
+    //region Job Profile Revision
+    @FindBy(xpath = "//input[contains(@id,'NewDepartmentId')]")
+    private WebElement department;
+
+    @FindBy(xpath = "//input[contains(@id,'NewDesignationId')]")
+    private WebElement designation;
+
+    @FindBy(xpath = "//input[contains(@id,'NewWorkLocationId')]")
+    private WebElement workLocation;
+
+    @FindBy(xpath = "//input[contains(@id,'NewManagerEmployeeId')]")
+    private WebElement manager;
+
+    @FindBy(xpath = "//input[contains(@id,'NewProjectId')]")
+    private WebElement project;
+
+    @FindBy(xpath = "//span[@class='dx-button-text'][normalize-space()='Save']")
+    private WebElement save;
+
+    //endregion
+
     //endregion
 
     //region Action Methods
@@ -81,10 +104,17 @@ public class PromotionPage extends BasePage
         provideAndEnter(empdd, value);
     }
 
-    public void provideEffectiveDate(String value)
+    public void providePromotionPeriod(String value)
     {
         waitTS(2);
-        provideAndEnter(effectiveDate, value);
+        WebElement element = waitForElement(effectiveDate);
+        element.click();
+        Actions actions = new Actions(DriverFactory.getDriver());
+        actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
+        waitTS(1);
+        element.sendKeys(value);
+        waitTS(3);
+        element.sendKeys(Keys.ENTER);
     }
 
     public void selectPromotionType(String value)
@@ -95,11 +125,13 @@ public class PromotionPage extends BasePage
 
     public void clickAssignNewSalaryComponent()
     {
+        waitTS(1);
         clickOnElement1(assignNewSalaryComponent);
     }
 
     public void provideSalComponent(String value)
     {
+        waitTS(2);
         provideAndEnter(SalaryComponentdd, value);
     }
 
@@ -131,6 +163,35 @@ public class PromotionPage extends BasePage
         ep.clickPayroll();
         return DataUtils.extractNumericValueFromText(salCompInfo);
     }
+
+    //region Job Profile Revision
+    public void provideDept(String value)
+    {
+        provideAndEnter(department, value);
+    }
+    public void provideDesignation(String value)
+    {
+        provideAndEnter(designation, value);
+    }
+    public void provideWorkLocation(String value)
+    {
+        provideAndEnter(workLocation, value);
+    }
+    public void provideManager(String value)
+    {
+        provideAndEnter(manager, value);
+    }
+    public void provideProject(String value)
+    {
+        provideAndEnter(project, value);
+    }
+    public void savePopup()
+    {
+        waitTS(2);
+        clickOnElement1(save);
+    }
+
+    //endregion
 
     //endregion
 }
