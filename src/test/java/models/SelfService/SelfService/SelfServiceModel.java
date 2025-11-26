@@ -130,19 +130,14 @@ public class SelfServiceModel
 
     public static class PromotionRequestModel
     {
-        public String txnDate;
-        public String effectiveDate;
-        public String effectiveDate1;
-        public String type;
-        public String newDepartment;
-        public String newDesignation;
-        public String newWorkLocation;
-        public String newProject;
-        public String description;
-        public String salaryComponent;
-        public String incrementAmount;
-        public String effectiveFromDate;
-        public String effectiveToDate;
+        public String employee;
+        public String promotionTypeSalRevision;
+        public String promotionTypeJobProfileRevision;
+        public String promotionPeriod;
+        public String salComp;
+        public String incrementAmt;
+        public String salCompEffectiveFromDate;
+        public String remarks;
     }
 
     public static class OvertimeRequestModel

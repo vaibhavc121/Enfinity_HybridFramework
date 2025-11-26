@@ -3,6 +3,7 @@ package pageObjects.HRMS.Payroll;
 import base.BasePage;
 
 import factory.DriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -75,6 +76,16 @@ public class PromotionPage extends BasePage
 
     @FindBy(xpath = "//span[@class='dx-button-text'][normalize-space()='Save']")
     private WebElement save;
+
+    //endregion
+
+    //region Promotion Request
+    @FindBy(xpath = "//a[@title='Revise']")
+    private WebElement reviseBtn;
+    @FindBy(xpath = "//input[contains(@id,'IncrementAmount')]")
+    private WebElement addIncrementAmt;
+    @FindBy(name = "Remarks")
+    private WebElement remarks;
 
     //endregion
 
@@ -191,6 +202,42 @@ public class PromotionPage extends BasePage
         clickOnElement1(save);
     }
 
+    //endregion
+
+    //region Promotion Request
+    public void clickReviseBtn()
+    {
+        clickOnElement1(reviseBtn);
+    }
+
+    public void provideIncrementAmt(String value)
+    {
+        clearAndProvide1(addIncrementAmt, value);
+    }
+
+    public void provideRemarks(String value)
+    {
+        clearAndProvide1(remarks, value);
+    }
+
+    public boolean isCorrectRviseAmtDisplay(String incrementAmt)
+    {
+        Double increAmt = Double.parseDouble(incrementAmt);
+        Double amount = DataUtils.extractNumericValueFromText(waitForElement1(By.xpath("(//table//tr)[2]//td[2]")));
+
+        String expRevisedAmt = String.valueOf(increAmt + amount);
+        Double expRevisedAmt1 = increAmt + amount;
+
+        String actualRevisedAmt = waitForElement1(By.xpath("(//table//tr)[2]//td[3]")).getText();
+        Double actReviseAmt2 = Double.parseDouble(actualRevisedAmt);
+        if (actualRevisedAmt.contains(expRevisedAmt))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
     //endregion
 
     //endregion

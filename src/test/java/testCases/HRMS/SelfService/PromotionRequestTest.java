@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import base.BasePage;
 import base.BaseTest;
 import models.SelfService.SelfService.SelfServiceModel.PromotionRequestModel;
+import pageObjects.HRMS.Payroll.PromotionPage;
 import pageObjects.HRMS.SelfService.PromotionRequestPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import utilities.FileUtils;
@@ -28,27 +29,43 @@ public class PromotionRequestTest extends BaseTest
 
             // self service page
             SelfServicePage ss = new SelfServicePage();
-            ss.clickSelfService();
-            ss.clickTransactions();
+            BasePage.openSidebar();
+            ss.clickTeam();
+            ss.openPromotionRequest("Rohit Chavan");
 
-            // Promotion Request page
-            PromotionRequestPage pr = new PromotionRequestPage();
-            pr.clickPromotionRequest();
-            pr.clickNew();
+            PromotionPage pr = new PromotionPage();
 
-            for (PromotionRequestModel promotionRequest : promotionRequestData)
+            for (PromotionRequestModel proData : promotionRequestData)
             {
-                //pr.provideTxnDate(promotionRequest.txnDate);
-                pr.provideEffectiveDate(promotionRequest.effectiveDate);
-                pr.provideType(promotionRequest.type);
-                pr.provideNewDepartment(promotionRequest.newDepartment);
-                pr.provideNewDesignation(promotionRequest.newDesignation);
-                pr.provideNewWorkLocation(promotionRequest.newWorkLocation);
-                pr.provideNewProject(promotionRequest.newProject);
-                pr.provideDescription(promotionRequest.description);
-                pr.saveAndBack();
+                pr.selectPromotionType(proData.promotionTypeSalRevision);
+                log("selected promotion type: " + proData.promotionTypeSalRevision);
 
-                Assert.assertTrue(BasePage.validateListing("Vaibhav Chavan", 6, 6), "Promotion Request not created.");
+                pr.providePromotionPeriod(proData.promotionPeriod);
+                log("provided Promotion Period: " + proData.promotionPeriod);
+
+                BasePage.clickOnSave();
+                log("clicked on save button popup");
+
+                pr.clickReviseBtn();
+                log("clicked on revise button");
+
+                pr.provideIncrementAmt(proData.incrementAmt);
+                log("provided increment amount: " + proData.incrementAmt);
+
+                pr.provideRemarks(proData.remarks);
+                log("provided remarks: " + proData.remarks);
+
+                pr.savePopup();
+                log("popup saved");
+
+                Assert.assertTrue(pr.isCorrectRviseAmtDisplay(proData.incrementAmt), "Revise amount is not correct.");
+
+                pr.clickViewApproveBack();
+                log("clicked on view approve and navigate back");
+
+                Assert.assertTrue(BasePage.validateListing(proData.employee, 7, 7),
+                        "Promotion for employee: " + proData.employee + " is not created successfully");
+                log("Verified: Promotion for employee: " + proData.employee + " is created successfully");
             }
         } catch (Exception e)
         {

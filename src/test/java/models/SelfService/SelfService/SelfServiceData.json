@@ -140,19 +140,14 @@
   ],
   "createPromotionRequest": [
     {
-      "txnDate": "01-01-2025",
-      "effectiveDate": "01-01-2025",
-      "effectiveDate1": "01-Jan-2025",
-      "type": "Promotion",
-      "newDepartment": "QC",
-      "newDesignation": "Sales Executive",
-      "newWorkLocation": "Salmiya City",
-      "newProject": "Timesheet Entry Testing",
-      "description": "test",
-      "salaryComponent": "SC001 | Basic Salary",
-      "incrementAmount": "100",
-      "effectiveFromDate": "01-02-2025",
-      "effectiveToDate": "31-03-2025"
+      "employee": "Rohit Chavan",
+      "promotionTypeSalRevision": "Salary Revision",
+      "promotionTypeJobProfileRevision": "Job Profile Revision",
+      "promotionPeriod": "Feb-2025",
+      "salComp": "SC04004 | Housing Allowance",
+      "incrementAmt": "100",
+      "salCompEffectiveFromDate": "01-Jan-2023",
+      "remarks": "test"
     }
   ],
   "createPromotionReq": [

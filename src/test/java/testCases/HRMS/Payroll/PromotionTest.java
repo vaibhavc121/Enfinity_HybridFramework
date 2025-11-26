@@ -114,7 +114,7 @@ public class PromotionTest extends BaseTest
         try
         {
             String payrollFile = FileUtils.getDataFile("Payroll", "Payroll", "PayrollData");
-            List<PayrollModel.PromotionModel> promotionData = JsonUtils.convertJsonListDataModel(payrollFile, "createPromotion",
+            List<PayrollModel.PromotionModel> promotionData = JsonUtils.convertJsonListDataModel(payrollFile, "createPromotionSalRevision",
                     PayrollModel.PromotionModel.class);
 
             // payroll pg
@@ -187,8 +187,8 @@ public class PromotionTest extends BaseTest
                 pr.provideWorkLocation(proData.workLocation);
                 log("provided work location: " + proData.workLocation);
 
-                pr.provideManager(proData.manager);
-                log("provided manager: " + proData.manager);
+                // pr.provideManager(proData.manager);
+                // log("provided manager: " + proData.manager);
 
                 pr.provideProject(proData.Project);
                 log("provided project: " + proData.Project);

@@ -84,7 +84,7 @@ public class BaseTest
     {
         //region CloseBrowserWhenClickStopDebugging
         Runtime.getRuntime().addShutdownHook(new Thread(DriverFactory::quitAllDrivers));
-        //endregion\
+        //endregion
 
         //region SoftAssert Initialization
         softAssert = new SoftAssert();
