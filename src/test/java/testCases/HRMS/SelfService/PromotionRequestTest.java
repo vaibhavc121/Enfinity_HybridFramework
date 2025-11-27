@@ -60,8 +60,8 @@ public class PromotionRequestTest extends BaseTest
 
                 Assert.assertTrue(pr.isCorrectRviseAmtDisplay(proData.incrementAmt), "Revise amount is not correct.");
 
-                pr.clickViewApproveBack();
-                log("clicked on view approve and navigate back");
+                pr.clickSaveAndSubmit();
+                log("clicked save and submit button");
 
                 Assert.assertTrue(BasePage.validateListing(proData.employee, 7, 7),
                         "Promotion for employee: " + proData.employee + " is not created successfully");

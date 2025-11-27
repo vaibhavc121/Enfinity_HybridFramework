@@ -70,10 +70,15 @@ public class SelfServicePage extends BasePage
     {
         if (emp.getText().contains(expEmp))
         {
+            waitTS(2);
             clickOnElement1(contextButton);
+            waitTS(2);
             hoverOverElement(transactionsLabel);
             waitTS(2);
             clickOnElement1(promotionRequest);
+        } else
+        {
+            throw new RuntimeException("Employee not found: " + expEmp);
         }
     }
     //endregion

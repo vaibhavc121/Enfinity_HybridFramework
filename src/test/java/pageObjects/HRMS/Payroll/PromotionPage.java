@@ -2,6 +2,7 @@ package pageObjects.HRMS.Payroll;
 
 import base.BasePage;
 
+import base.BaseTest;
 import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -11,7 +12,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.EmployeePage1;
+import utilities.BrowserUtils;
 import utilities.DataUtils;
+import utilities.JavaScriptUtils;
 
 public class PromotionPage extends BasePage
 {
@@ -166,6 +169,16 @@ public class PromotionPage extends BasePage
         clickOnViewApproveBack();
     }
 
+    public void clickSaveAndSubmit()
+    {
+        clickSaveSubmit();
+        waitTS(1);
+        clickOnApprove();
+        waitTS(1);
+        pressEnter();
+        BrowserUtils.navigateBack(BaseTest.getDriver());
+    }
+
     public double getSalary(String empname)
     {
         employee.click();
@@ -207,7 +220,9 @@ public class PromotionPage extends BasePage
     //region Promotion Request
     public void clickReviseBtn()
     {
-        clickOnElement1(reviseBtn);
+        // clickOnElement1(reviseBtn);
+        scrollIntoView(BaseTest.getDriver(), reviseBtn);
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), reviseBtn);
     }
 
     public void provideIncrementAmt(String value)
