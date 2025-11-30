@@ -138,7 +138,7 @@
       "empName": "Vaibhav Chavan"
     }
   ],
-  "createPromotionRequest": [
+  "createPromotionRequestSalRevision": [
     {
       "employee": "Rohit Chavan",
       "promotionTypeSalRevision": "Salary Revision",
@@ -148,6 +148,17 @@
       "incrementAmt": "100",
       "salCompEffectiveFromDate": "01-Jan-2023",
       "remarks": "test"
+    }
+  ],
+  "createPromotionReqJobProfileRevision": [
+    {
+      "employee": "Rohit Chavan",
+      "promotionTypeJobProfileRevision": "Job Profile Revision",
+      "department": "QC",
+      "designation": "Sales Manager",
+      "workLocation": "Salmiya City",
+      "manager": "001 | Vaibhav Chavan",
+      "Project": "Timesheet Entry Testing"
     }
   ],
   "createPromotionReq": [

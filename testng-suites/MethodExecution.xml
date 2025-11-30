@@ -39,21 +39,22 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <!--            <class name="testCases.HRMS.SelfService.ExceptionRequestTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createLoanRequest"/>-->
-            <!--                    <include name="deleteLoanRequest"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
-
-
-            <class name="testCases.HRMS.Performance.PerformanceTest">
+            <class name="testCases.HRMS.SelfService.PromotionRequestTest">
                 <methods>
-                    <include name="createAppraisalCycle"/>
-                    <include name="reviewAppraisal"/>
+                    <include name="createSalaryRevisionRequest"/>
+                    <include name="deleteSalaryRevisionRequest"/>
 
                 </methods>
             </class>
+
+
+            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createAppraisalCycle"/>-->
+            <!--                    <include name="reviewAppraisal"/>-->
+
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
@@ -70,8 +71,8 @@
 
             <!--            <class name="testCases.HRMS.Attendance.AttendanceTest">-->
             <!--                <methods>-->
-            <!--                    <include name="createStrictDayShiftTimetable"/>-->
-            <!--                    <include name="deleteStrictDayShiftTimetable"/>-->
+            <!--                    <include name="createLenientShiftTimetable"/>-->
+            <!--                    <include name="deleteLenientShiftTimetable"/>-->
             <!--                </methods>-->
             <!--            </class>-->
 

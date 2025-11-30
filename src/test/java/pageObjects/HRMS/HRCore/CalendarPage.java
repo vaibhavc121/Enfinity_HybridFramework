@@ -15,7 +15,7 @@ public class CalendarPage extends BasePage
     @FindBy(name = "Name")
     WebElement calname;
 
-    @FindBy(xpath = "//input[contains(@id,'FromDate')]")
+    @FindBy(xpath = "(//input[contains(@id,'FromDate')])[2]")
     WebElement fromDate;
 
     @FindBy(xpath = "//div[@id='SundayAsWeeklyoff']//span[@class='dx-checkbox-icon']")

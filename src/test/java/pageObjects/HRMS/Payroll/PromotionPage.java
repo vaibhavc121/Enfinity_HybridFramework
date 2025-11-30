@@ -14,6 +14,7 @@ import pageObjects.HRMS.HRCore.EmployeePage;
 import pageObjects.HRMS.HRCore.EmployeePage1;
 import utilities.BrowserUtils;
 import utilities.DataUtils;
+import utilities.DriverUtils;
 import utilities.JavaScriptUtils;
 
 public class PromotionPage extends BasePage
@@ -89,6 +90,8 @@ public class PromotionPage extends BasePage
     private WebElement addIncrementAmt;
     @FindBy(name = "Remarks")
     private WebElement remarks;
+    @FindBy(xpath = "//a[@class='form-title-link']")
+    private WebElement promotionRequest;
 
     //endregion
 
@@ -157,6 +160,8 @@ public class PromotionPage extends BasePage
     public void provideEffectiveFromDt(String value)
     {
         clearAndProvide1(effectiveFromDate, value);
+        waitTS(1);
+        clickOnElement1(effectiveFromDate);
     }
 
     public void clickSave()
@@ -175,8 +180,19 @@ public class PromotionPage extends BasePage
         waitTS(1);
         clickOnApprove();
         waitTS(1);
-        pressEnter();
+        DriverUtils.acceptAlert();
         BrowserUtils.navigateBack(BaseTest.getDriver());
+    }
+
+    public void clickSaveAndSubmitPromotionReq()
+    {
+        clickSaveSubmit();
+        waitTS(1);
+        clickOnApprove();
+        waitTS(1);
+        DriverUtils.acceptAlert();
+        clickOnElement1(promotionRequest);
+        //BrowserUtils.navigateBack(BaseTest.getDriver());
     }
 
     public double getSalary(String empname)
@@ -220,9 +236,15 @@ public class PromotionPage extends BasePage
     //region Promotion Request
     public void clickReviseBtn()
     {
+        waitTS(2);
         // clickOnElement1(reviseBtn);
         scrollIntoView(BaseTest.getDriver(), reviseBtn);
         JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), reviseBtn);
+    }
+
+    public void scrollPage()
+    {
+        scrollIntoView(BaseTest.getDriver(), reviseBtn);
     }
 
     public void provideIncrementAmt(String value)

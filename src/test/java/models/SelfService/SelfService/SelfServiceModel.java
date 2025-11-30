@@ -132,11 +132,17 @@ public class SelfServiceModel
     {
         public String employee;
         public String promotionTypeSalRevision;
-        public String promotionTypeJobProfileRevision;
         public String promotionPeriod;
         public String salComp;
         public String incrementAmt;
         public String salCompEffectiveFromDate;
+
+        public String promotionTypeJobProfileRevision;
+        public String department;
+        public String designation;
+        public String workLocation;
+        public String manager;
+        public String Project;
         public String remarks;
     }
 
