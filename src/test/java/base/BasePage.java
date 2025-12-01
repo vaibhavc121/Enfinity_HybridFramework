@@ -34,6 +34,7 @@ import pageObjects.HRMS.Recruitment.RecruitmentPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import pageObjects.HRMS.SuccessionPlanning.SuccessionPage;
 import utilities.BrowserUtils;
+import utilities.DriverUtils;
 import utilities.JavaScriptUtils;
 
 public class BasePage
@@ -220,32 +221,32 @@ public class BasePage
     // endregion
 
     // region For Random data generation
-    public String randomString()
+    public static String randomString()
     {
         String generatedString = RandomStringUtils.randomAlphabetic(6);
         return generatedString;
     }
 
-    public String randomNumber()
+    public static String randomNumber()
     {
         String generatedNumber = RandomStringUtils.randomNumeric(4);
         return generatedNumber;
     }
 
-    public String randomAlphaNumeric()
+    public static String randomAlphaNumeric()
     {
         String alphanumeric = RandomStringUtils.randomAlphanumeric(10);
         return alphanumeric;
     }
 
-    public String randomEmail()
+    public static String randomEmail()
     {
         String generatedString = RandomStringUtils.randomAlphabetic(6);
         String generatedNumber = RandomStringUtils.randomNumeric(3);
         return generatedString + generatedNumber + "@" + "gmail.com";
     }
 
-    public String randomMblNum()
+    public static String randomMblNum()
     {
         String generatedNumber = RandomStringUtils.randomNumeric(10);
         return generatedNumber;
@@ -403,12 +404,12 @@ public class BasePage
         waitTS(2);
     }
 
-    public void clickSubmit()
+    public static void clickSubmit()
     {
         waitForElement1(By.xpath("//span[normalize-space()='Submit']")).click();
     }
 
-    public void clickSaveSubmit()
+    public static void clickSaveSubmit()
     {
         waitForElement1(By.xpath("//span[text()='Save and Submit']")).click();
     }
@@ -1110,6 +1111,31 @@ public class BasePage
         waitForElement1(locator).click();
         selectDropdownValueOffice365("All");
     }
+
+    public static void clickReports()
+    {
+        openSidebar();
+        // waitForElement1(By.xpath("//label[normalize-space()='Reports']")).click();
+        WebElement ele = DriverFactory.getDriver().findElement(By.xpath("//label[normalize-space()='Reports']"));
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), ele);
+    }
+
+    public static void clickAnalytics()
+    {
+        openSidebar();
+        // clickOnElement1(DriverUtils.getDriver().findElement(By.xpath("//label[normalize-space()='Analytics']")));
+        WebElement ele = DriverFactory.getDriver().findElement(By.xpath("//label[normalize-space()='Analytics']"));
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), ele);
+    }
+
+    public static void clickSetups()
+    {
+        openSidebar();
+        // clickOnElement1(DriverUtils.getDriver().findElement(By.xpath("//label[normalize-space()='Setups']")));
+        WebElement ele = DriverFactory.getDriver().findElement(By.xpath("//label[normalize-space()='Setups']"));
+        JavaScriptUtils.clickElementByJavaScript(BaseTest.getDriver(), ele);
+    }
+
     // endregion
 
     // region Keyboard Actions
@@ -1443,17 +1469,17 @@ public class BasePage
         DriverFactory.getDriver().switchTo().alert().accept();
     }
 
-    public void dismissAlert(WebDriver driver)
+    public static void dismissAlert(WebDriver driver)
     {
         DriverFactory.getDriver().switchTo().alert().dismiss();
     }
 
-    public String getAlertText(WebDriver driver)
+    public static String getAlertText(WebDriver driver)
     {
         return DriverFactory.getDriver().switchTo().alert().getText();
     }
 
-    public void sendKeysToAlert(WebDriver driver, String text)
+    public static void sendKeysToAlert(WebDriver driver, String text)
     {
         DriverFactory.getDriver().switchTo().alert().sendKeys(text);
     }
@@ -1472,17 +1498,17 @@ public class BasePage
         return jsExecutor.executeScript(script, args);
     }
 
-    public void scrollToBottom(WebDriver driver)
+    public static void scrollToBottom(WebDriver driver)
     {
         executeScript(DriverFactory.getDriver(), "window.scrollTo(0, document.body.scrollHeight);");
     }
 
-    public void scrollToTop(WebDriver driver)
+    public static void scrollToTop(WebDriver driver)
     {
         executeScript(DriverFactory.getDriver(), "window.scrollTo(0, 0);");
     }
 
-    public void scrollIntoView(WebDriver driver, WebElement element)
+    public static void scrollIntoView(WebDriver driver, WebElement element)
     {
         executeScript(DriverFactory.getDriver(), "arguments[0].scrollIntoView(true);", element);
     }
@@ -1492,7 +1518,7 @@ public class BasePage
         executeScript(DriverFactory.getDriver(), "arguments[0].click();", element);
     }
 
-    public void setAttribute(WebDriver driver, WebElement element, String attributeName, String attributeValue)
+    public static void setAttribute(WebDriver driver, WebElement element, String attributeName, String attributeValue)
     {
         executeScript(DriverFactory.getDriver(), "arguments[0].setAttribute('" + attributeName + "', '" + attributeValue + "');", element);
     }
@@ -1503,7 +1529,7 @@ public class BasePage
                 element);
     }
 
-    public void highlightElement1(WebDriver driver, WebElement element)
+    public static void highlightElement1(WebDriver driver, WebElement element)
     {
         executeScript(DriverFactory.getDriver(), "arguments[0].style.border='3px solid red'", element);
     }
@@ -1522,53 +1548,53 @@ public class BasePage
         }
     }
 
-    public void refreshBrowserUsingJS(WebDriver driver)
+    public static void refreshBrowserUsingJS(WebDriver driver)
     {
         executeScript(DriverFactory.getDriver(), "history.go(0);");
     }
 
-    public void openNewTabUsingJS(WebDriver driver)
+    public static void openNewTabUsingJS(WebDriver driver)
     {
         executeScript(DriverFactory.getDriver(), "window.open();");
     }
     // endregion
 
     // region Frame Handling
-    public void switchToFrameByIndex(int index)
+    public static void switchToFrameByIndex(int index)
     {
         DriverFactory.getDriver().switchTo().frame(index);
     }
 
-    public void switchToFrameByNameOrId(String nameOrId)
+    public static void switchToFrameByNameOrId(String nameOrId)
     {
         DriverFactory.getDriver().switchTo().frame(nameOrId);
     }
 
-    public void switchToFrameByElement(WebElement element)
+    public static void switchToFrameByElement(WebElement element)
     {
         WebElement frameElement = element;
         DriverFactory.getDriver().switchTo().frame(frameElement);
     }
 
-    public void switchToDefaultContent()
+    public static void switchToDefaultContent()
     {
         DriverFactory.getDriver().switchTo().defaultContent();
     }
 
-    public void switchToParentFrame()
+    public static void switchToParentFrame()
     {
         DriverFactory.getDriver().switchTo().parentFrame();
     }
     // endregion
 
     // region Mouse Actions
-    public void hoverOverElement(WebElement locator)
+    public static void hoverOverElement(WebElement locator)
     {
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveToElement(locator).perform();
     }
 
-    public void dragAndDrop1(WebElement sourceLocator, WebElement targetLocator)
+    public static void dragAndDrop1(WebElement sourceLocator, WebElement targetLocator)
     {
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.dragAndDrop(waitForElement(sourceLocator), waitForElement(targetLocator)).perform();
@@ -1625,26 +1651,26 @@ public class BasePage
                 .release().perform();
     }
 
-    public void scrollToElement(WebDriver driver, WebElement element)
+    public static void scrollToElement(WebDriver driver, WebElement element)
     {
         WheelInput.ScrollOrigin origin = WheelInput.ScrollOrigin.fromElement(element);
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.scrollFromOrigin(origin, 0, 0).perform();
     }
 
-    public void moveToLocation(WebDriver driver, int x, int y)
+    public static void moveToLocation(WebDriver driver, int x, int y)
     {
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.moveByOffset(x, y).perform();
     }
 
-    public void scrollByAmount(WebDriver driver, int deltaX, int deltaY)
+    public static void scrollByAmount(WebDriver driver, int deltaX, int deltaY)
     {
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.scrollByAmount(deltaX, deltaY).perform();
     }
 
-    public void scrollFromOrigin(WebDriver driver, WheelInput.ScrollOrigin origin, int deltaX, int deltaY)
+    public static void scrollFromOrigin(WebDriver driver, WheelInput.ScrollOrigin origin, int deltaX, int deltaY)
     {
         Actions actions = new Actions(DriverFactory.getDriver());
         actions.scrollFromOrigin(origin, deltaX, deltaY).perform();
@@ -1652,7 +1678,7 @@ public class BasePage
     // endregion
 
     // region File Upload
-    public void uploadFile(WebElement locator, String filePath)
+    public static void uploadFile(WebElement locator, String filePath)
     {
         waitForElement(locator).sendKeys(filePath);
     }

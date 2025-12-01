@@ -18,7 +18,7 @@ public class LoanPage extends BasePage
     private By loanAmt = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-2\")");
     private By installmentAmt = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-3\")");
     private By noOfInstallments = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ion-input-4\")");
-    private By submit = AppiumBy.androidUIAutomator("new UiSelector().text(\"SUBMIT\")");
+    private static By submit = AppiumBy.androidUIAutomator("new UiSelector().text(\"SUBMIT\")");
 
     //endregion
 
@@ -55,7 +55,7 @@ public class LoanPage extends BasePage
         clearAndProvide(noOfInstallments, amount);
     }
 
-    public void clickSubmit()
+    public static void clickSubmit()
     {
         waitTS(2);
         clickOnElement(submit);

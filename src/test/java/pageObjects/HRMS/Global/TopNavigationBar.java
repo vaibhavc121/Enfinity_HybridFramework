@@ -55,6 +55,11 @@ public class TopNavigationBar extends BasePage
 
     //endregion
 
+    //region Global Settings
+    @FindBy(xpath = "//i[@class='dx-icon dx-icon-gear-light']")
+    private WebElement globalSettingsIcon;
+    //endregion
+
     //region My Account
     //endregion
 
@@ -222,6 +227,13 @@ public class TopNavigationBar extends BasePage
 
     //endregion
 
+    //endregion
+
+    //region Global Settings
+    public void clickGlobalSettingsIcon()
+    {
+        clickOnElement1(globalSettingsIcon);
+    }
     //endregion
 
     //region My Account

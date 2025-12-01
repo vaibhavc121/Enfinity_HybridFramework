@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="RegressionTestSuite">
+<suite name="RegressionTestSuite1">
 
     <groups>
         <run>
@@ -38,7 +38,7 @@
 
 
             <!-- Global -->
-            <!--<class name="testCases.HRMS.Global.BrokenLinksTest"/>-->
+            <class name="testCases.HRMS.Global.BrokenLinksTest"/>
 
             <!-- Flaky Test -->
 

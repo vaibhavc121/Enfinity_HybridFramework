@@ -18,7 +18,7 @@ public class LeavePage extends BasePage
     //private By advanceAmt = AppiumBy.id("ion-input-4");
     private By advanceAmt = AppiumBy.androidUIAutomator("new UiSelector().className(\"android.view.View\").instance(24)");
     private By description = AppiumBy.xpath("//android.widget.EditText[@resource-id=\"ion-textarea-1\"]");
-    private By submit = AppiumBy.xpath("//android.widget.Button[@text=\"SUBMIT\"]");
+    private static By submit = AppiumBy.xpath("//android.widget.Button[@text=\"SUBMIT\"]");
 
     //endregion
 
@@ -45,7 +45,7 @@ public class LeavePage extends BasePage
         DriverFactory.getDriver().findElement(description).click();
         DriverFactory.getDriver().findElement(description).sendKeys("Expense Claim");
     }
-    public void clickSubmit()
+    public static void clickSubmit()
     {
         waitTS(2);
         clickOnElement(submit);

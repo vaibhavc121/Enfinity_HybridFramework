@@ -21,7 +21,7 @@ public class AttendancePage extends BasePage
     public static void clickAttendance()
     {
         BasePage.clickMenuIcon();
-        attendance.click();
+        clickOnElement1(attendance);
     }
 
     public void clickShift()

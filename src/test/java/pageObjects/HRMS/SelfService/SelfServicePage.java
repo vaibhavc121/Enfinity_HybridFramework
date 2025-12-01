@@ -42,7 +42,7 @@ public class SelfServicePage extends BasePage
     public static void clickSelfService()
     {
         BasePage.clickMenuIcon();
-        selfService.click();
+        clickOnElement1(selfService);
     }
 
     public void clickTimeOff()

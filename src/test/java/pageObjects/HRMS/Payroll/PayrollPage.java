@@ -18,7 +18,7 @@ public class PayrollPage extends BasePage
     WebElement transactions;
 
     @FindBy(xpath = "//span[normalize-space()='Reports']")
-    WebElement reports;
+    static WebElement reports;
 
     public static void clkPayroll()
     {
@@ -33,7 +33,7 @@ public class PayrollPage extends BasePage
         JavaScriptUtils.clickElementByJavaScript(DriverFactory.getDriver(), transactions);
     }
 
-    public void clickReports()
+    public static void clickReports()
     {
         BasePage.openSidebar();
         reports.click();
