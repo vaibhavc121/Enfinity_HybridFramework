@@ -34,6 +34,7 @@ import pageObjects.HRMS.Recruitment.RecruitmentPage;
 import pageObjects.HRMS.SelfService.SelfServicePage;
 import pageObjects.HRMS.SuccessionPlanning.SuccessionPage;
 import utilities.BrowserUtils;
+import utilities.DateUtils;
 import utilities.DriverUtils;
 import utilities.JavaScriptUtils;
 
@@ -1397,6 +1398,24 @@ public class BasePage
         String actualValue2 = resultValue(resultIndex2);
         // Validate results
         boolean isValid1 = actualValue1.contains(value1);
+        boolean isValid2 = actualValue2.contains(value2);
+        return isValid1 && isValid2;
+    }
+
+    public static boolean validateListing2Fields1(int filterIndex1, int resultIndex1, String value2,
+                                                  int filterIndex2, int resultIndex2)
+    {
+        // Apply first filter
+        filterByIndex(filterIndex1, DateUtils.getCurrentDate("dd-MMM-yyyy"));
+        waitTS(2);
+        // Apply second filter
+        filterByIndex(filterIndex2, value2);
+        waitTS(2);
+        // Get results
+        String actualValue1 = resultValue(resultIndex1);
+        String actualValue2 = resultValue(resultIndex2);
+        // Validate results
+        boolean isValid1 = actualValue1.contains(DateUtils.getCurrentDate("dd-MMM-yyyy"));
         boolean isValid2 = actualValue2.contains(value2);
         return isValid1 && isValid2;
     }

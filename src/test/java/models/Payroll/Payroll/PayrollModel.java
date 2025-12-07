@@ -165,4 +165,13 @@ public class PayrollModel
         public String remarks;
         public String releaseSuspendDate;
     }
+
+    public static class SalaryComponentModel
+    {
+        public String name;
+        public String earningOrDeduction;
+        public String computationType;
+        public String calculationMethod;
+        public String salaryComponentGroup;
+    }
 }

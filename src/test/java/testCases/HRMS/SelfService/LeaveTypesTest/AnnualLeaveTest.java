@@ -25,7 +25,7 @@ public class AnnualLeaveTest extends BaseTest
     List<SelfServiceModel.EntitlementModel> annualLeaveData = JsonUtils.convertJsonListDataModel(selfServiceFile, "annualLeave.entitlement", SelfServiceModel.EntitlementModel.class);
     ConfigureLeaveTypeSetting stg = new ConfigureLeaveTypeSetting();
 
-    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1, enabled = false)
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void verifyEligibilityDaysAfterJoining()
     {
         try
@@ -88,6 +88,7 @@ public class AnnualLeaveTest extends BaseTest
                         lr.provideToDate(data.eligibilityDaysAfterJoining.toDate);
                         // lr.clickOnSaveSubmit();
                         lr.clickSave();
+                        BasePage.waitTS(3);
 
                         Assert.assertFalse(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Active", 7, 7));
                         log("Veified: Leave request is not created as expected: " + data.eligibilityDaysAfterJoining.leaveType);

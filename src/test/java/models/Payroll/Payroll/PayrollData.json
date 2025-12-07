@@ -181,5 +181,14 @@
       "remarks": "test",
       "releaseSuspendDate": "01-01-2025"
     }
+  ],
+  "salaryComponent": [
+    {
+      "name": "Test",
+      "earningOrDeduction": "Deduction",
+      "computationType": "Sub Component",
+      "calculationMethod": "Fixed Always",
+      "salaryComponentGroup": "Basic"
+    }
   ]
 }
