@@ -21,8 +21,8 @@
 
         <classes>
 
-            <!-- Attendance -->
-
+            <!-- Payroll -->
+            <class name="testCases.HRMS.Payroll.Setups.SalaryComponentTest"/>
 
             <!-- Performance-->
 
