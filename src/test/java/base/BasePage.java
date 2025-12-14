@@ -753,7 +753,13 @@ public class BasePage
                 waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
             } catch (Exception e)
             {
-                waitForElement1(By.xpath("(//tr)[9]//td[2]")).click();
+                try
+                {
+                    waitForElement1(By.xpath("(//tr)[9]//td[2]")).click();
+                } catch (Exception ex)
+                {
+                    waitForElement1(By.xpath("(//tr)[6]//td[1]")).click();
+                }
             }
 
             BaseTest.log("clicked on row");

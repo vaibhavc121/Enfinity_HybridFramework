@@ -23,6 +23,7 @@
 
             <!-- Payroll -->
             <class name="testCases.HRMS.Payroll.Setups.SalaryComponentTest"/>
+            <class name="testCases.HRMS.Payroll.Setups.TicketAccrualTest"/>
 
             <!-- Performance-->
 

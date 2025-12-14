@@ -190,5 +190,31 @@
       "calculationMethod": "Fixed Always",
       "salaryComponentGroup": "Basic"
     }
+  ],
+  "ticketAccrual": [
+    {
+      "name": "Four Tickets Per Year",
+      "numberOfTicket": "4",
+      "numberOfYear": "1",
+      "earningSalaryComponent": "Basic",
+      "includeUnpaidDaysInProvision": true,
+      "ageWisePaymentSchedules": [
+        {
+          "tillAge": "10",
+          "percentage": "50"
+        },
+        {
+          "tillAge": "20",
+          "percentage": "100"
+        }
+      ]
+    }
+  ],
+  "project": [
+    {
+      "name": "Automation Testing Project",
+      "projectGroup": "IT",
+      "projectManagerEmployee": "001 | Vaibhav Chavan"
+    }
   ]
 }

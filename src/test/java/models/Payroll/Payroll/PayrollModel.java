@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 public class PayrollModel
 {
     @Data
@@ -173,5 +175,28 @@ public class PayrollModel
         public String computationType;
         public String calculationMethod;
         public String salaryComponentGroup;
+    }
+
+    public static class TicketAccrualModel
+    {
+        public String name;
+        public String numberOfTicket;
+        public String numberOfYear;
+        public String earningSalaryComponent;
+        public boolean includeUnpaidDaysInProvision;
+        public List<AgeWisePaymentScheduleModel> ageWisePaymentSchedules;
+    }
+
+    public static class AgeWisePaymentScheduleModel
+    {
+        public String tillAge;
+        public String percentage;
+    }
+
+    public static class ProjectModel
+    {
+        public String name;
+        public String projectGroup;
+        public String projectManagerEmployee;
     }
 }

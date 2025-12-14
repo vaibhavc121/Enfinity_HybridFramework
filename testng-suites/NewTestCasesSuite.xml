@@ -23,8 +23,8 @@
         <classes>
 
             <!-- New Test -->
-            <!--            <class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest"/>-->
-            <class name="testCases.HRMS.Payroll.Setups.SalaryComponentTest"/>
+            <!--<class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest"/>-->
+            <class name="testCases.HRMS.Payroll.Setups.ProjectTest"/>
 
 
         </classes>

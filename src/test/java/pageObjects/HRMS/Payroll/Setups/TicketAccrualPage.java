@@ -70,7 +70,7 @@ public class TicketAccrualPage extends BasePage
     {
         clearAndProvide1(earningSalaryCom, value);
     }
-    public void clickIncludeUnpaidDayBtn(String value)
+    public void clickIncludeUnpaidDayBtn()
     {
         clickOnElement1(includeUnpaidDay);
     }
