@@ -199,4 +199,10 @@ public class PayrollModel
         public String projectGroup;
         public String projectManagerEmployee;
     }
+
+    public static class PaymentBatchModel
+    {
+        public String name;
+        public String paymentBatchType;
+    }
 }

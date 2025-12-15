@@ -216,5 +216,11 @@
       "projectGroup": "IT",
       "projectManagerEmployee": "001 | Vaibhav Chavan"
     }
+  ],
+  "paymentBatch": [
+    {
+      "name": "Payment Batch",
+      "paymentBatchType": "Payroll"
+    }
   ]
 }
