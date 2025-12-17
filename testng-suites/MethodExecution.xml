@@ -28,24 +28,21 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <!--            <class name="testCases.HRMS.Payroll.LeaveResumptionTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="verifyLateLeaveResumptionWithUnpaidDays"/>-->
-            <!--                    <include name="deleteLateLeaveResumptionWithUnpaidDays"/>-->
-            <!--                    <include name="verifyLateLeaveResumptionWithPaidDays"/>-->
-            <!--                    <include name="deleteLateLeaveResumptionWithPaidDays"/>-->
-            <!--                    <include name="verifyLateLeaveResumptionWithGrantDays"/>-->
-            <!--                    <include name="deleteLateLeaveResumptionWithGrantDays"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
-
-            <class name="testCases.HRMS.SelfService.PromotionRequestTest">
+            <class name="testCases.HRMS.Payroll.PromotionTest">
                 <methods>
-                    <include name="createSalaryRevisionRequest"/>
-                    <include name="deleteSalaryRevisionRequest"/>
+                    <include name="createSalaryRevision"/>
+                    <include name="deleteSalaryRevision"/>
 
                 </methods>
             </class>
+
+            <!--            <class name="testCases.HRMS.SelfService.PromotionRequestTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createSalaryRevisionRequest"/>-->
+            <!--                    <include name="deleteSalaryRevisionRequest"/>-->
+
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
             <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->

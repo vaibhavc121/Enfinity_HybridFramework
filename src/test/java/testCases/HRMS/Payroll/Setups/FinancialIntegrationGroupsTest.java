@@ -1,5 +1,8 @@
 package testCases.HRMS.Payroll.Setups;
 
-public class FinancialIntegrationGroupsTest
+import base.BaseTest;
+
+public class FinancialIntegrationGroupsTest extends BaseTest
 {
+
 }

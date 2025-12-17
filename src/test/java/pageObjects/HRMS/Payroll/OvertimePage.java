@@ -61,8 +61,8 @@ public class OvertimePage extends BasePage
     public void provideOvertimeDate(String value)
     {
         waitTS(2);
-        //clearAndProvide1(overtimeDate, value);
-        JavaScriptUtils.provideValueJS(overtimeDate, value);
+        clearAndProvide1(overtimeDate, value);
+        //JavaScriptUtils.provideValueJS(overtimeDate, value);
     }
 
     public void provideOvertimeType(String value)

@@ -52,6 +52,7 @@ public class OvertimeTest extends BaseTest
                 op.provideEffectiveDate(ot.effectiveDate);
                 log("provideEffectiveDate");
 
+                BasePage.waitTS(2);
                 op.provideOvertimeDate(ot.overtimeDate);
                 log("provideOvertimeDate");
 
@@ -63,6 +64,11 @@ public class OvertimeTest extends BaseTest
 
                 BasePage.provideDescription(ot.remarks);
                 log("description provided");
+
+                BasePage.pressTab();
+                log("pressed tab to move focus");
+
+                BasePage.waitTS(2);
 
                 op.clickApproveBack();
                 log("clicked on approve");
