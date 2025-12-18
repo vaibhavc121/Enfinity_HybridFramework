@@ -205,4 +205,13 @@ public class PayrollModel
         public String name;
         public String paymentBatchType;
     }
+
+    public static class FinancialIntegrationGroupsModel
+    {
+        public String name;
+        public String division;
+        public String department;
+        public String project;
+        public boolean workLocation;
+    }
 }

@@ -222,5 +222,14 @@
       "name": "Payment Batch",
       "paymentBatchType": "Payroll"
     }
+  ],
+  "financialIntegrationGroups": [
+    {
+      "name": "Pune City",
+      "division": "division",
+      "department": "department",
+      "project": "project",
+      "workLocation": "workLocation"
+    }
   ]
 }
