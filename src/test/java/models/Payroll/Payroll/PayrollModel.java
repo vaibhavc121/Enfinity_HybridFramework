@@ -212,6 +212,6 @@ public class PayrollModel
         public String division;
         public String department;
         public String project;
-        public boolean workLocation;
+        public String workLocation;
     }
 }

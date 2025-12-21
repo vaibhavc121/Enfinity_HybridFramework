@@ -51,7 +51,7 @@ public class PaymentBatchTest extends BaseTest
                 BasePage.clickViewAndBack();
                 log("clicked on view and back btn");
 
-                Assert.assertTrue(BasePage.validateListing(data.name, 2, 1), "Payment Batch creation failed: " + data.name);
+                Assert.assertTrue(BasePage.validateListing(data.name, 3, 2), "Payment Batch creation failed: " + data.name);
                 log("Verified: Payment Batch created successfully: " + data.name);
             }
         } catch (Exception e)
