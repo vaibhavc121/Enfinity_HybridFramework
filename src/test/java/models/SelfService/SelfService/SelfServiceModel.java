@@ -249,4 +249,14 @@ public class SelfServiceModel
         public String leaveApplicabilityFor;
         public boolean allowExceedLeaveBalance;
     }
+
+    public static class AnnouncementModel
+    {
+        public String title;
+        public String expiryDate;
+        public String body;
+        public String department;
+        public String workLocation;
+        public String employee;
+    }
 }

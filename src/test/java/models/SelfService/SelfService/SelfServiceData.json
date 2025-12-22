@@ -332,5 +332,15 @@
         "attachmentMandatoryForLeaveRequest": false
       }
     ]
-  }
+  },
+  "announcement": [
+    {
+      "title": "announcement",
+      "expiryDate": "IT",
+      "body": "High",
+      "department": "Self Approval",
+      "workLocation": "Submit",
+      "employee": "Performance Issue Category"
+    }
+  ]
 }
