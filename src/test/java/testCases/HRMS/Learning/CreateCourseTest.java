@@ -46,26 +46,26 @@ public class CreateCourseTest extends BaseTest
                 cp.provideEnroller(course.enroller);
 
                 int iteration = 1;
-                for (SkillModel skill : course.Skills)
+                for (SkillModel skill : course.skills)
                 {
                     cp.clickAddSkillsBtn();
                     if (iteration == 1)
                     {
-                        cp.provideSkillName1(skill.SkillName);
-                        cp.provideLevel1(skill.Level);
-                        cp.provideWeightage1(skill.Weightage);
+                        cp.provideSkillName1(skill.skillName);
+                        cp.provideLevel1(skill.level);
+                        cp.provideWeightage1(skill.weightage);
                     }
                     if (iteration == 2)
                     {
-                        cp.provideSkillName2(skill.SkillName);
-                        cp.provideLevel2(skill.Level);
-                        cp.provideWeightage2(skill.Weightage);
+                        cp.provideSkillName2(skill.skillName);
+                        cp.provideLevel2(skill.level);
+                        cp.provideWeightage2(skill.weightage);
                     }
                     if (iteration == 3)
                     {
-                        cp.provideSkillName3(skill.SkillName);
-                        cp.provideLevel3(skill.Level);
-                        cp.provideWeightage3(skill.Weightage);
+                        cp.provideSkillName3(skill.skillName);
+                        cp.provideLevel3(skill.level);
+                        cp.provideWeightage3(skill.weightage);
                     }
                     iteration++;
                 }

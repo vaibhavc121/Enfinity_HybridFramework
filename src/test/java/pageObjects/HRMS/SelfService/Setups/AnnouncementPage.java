@@ -33,6 +33,9 @@ public class AnnouncementPage extends BasePage
 
     @FindBy(xpath = "//span[normalize-space()='Delete']")
     private WebElement delete;
+
+    @FindBy(id = "MainMenu_DXI8_P")
+    private WebElement contextMenu;
     //endregion
 
     //region Action Methods
@@ -71,6 +74,10 @@ public class AnnouncementPage extends BasePage
     public void clickDelete()
     {
         clickOnElement1(delete);
+    }
+    public void clickContextMenu()
+    {
+        clickOnElement1(contextMenu);
     }
     //endregion
 }

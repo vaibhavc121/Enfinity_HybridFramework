@@ -336,11 +336,11 @@
   "announcement": [
     {
       "title": "announcement",
-      "expiryDate": "IT",
-      "body": "High",
-      "department": "Self Approval",
-      "workLocation": "Submit",
-      "employee": "Performance Issue Category"
+      "expiryDate": "",
+      "body": "test",
+      "department": "001",
+      "workLocation": "001",
+      "employee": "001"
     }
   ]
 }

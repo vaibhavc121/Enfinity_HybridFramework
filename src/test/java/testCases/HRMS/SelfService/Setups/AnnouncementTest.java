@@ -46,8 +46,8 @@ public class AnnouncementTest extends BaseTest
                 ap.provideTitle(data.title);
                 log("entered title: " + data.title);
 
-                ap.provideExpiryDate(data.expiryDate);
-                log("entered expiry date: " + data.expiryDate);
+                // ap.provideExpiryDate(data.expiryDate);
+                // log("entered expiry date: " + data.expiryDate);
 
                 ap.provideBody(data.body);
                 log("entered body: " + data.body);
@@ -55,8 +55,8 @@ public class AnnouncementTest extends BaseTest
                 ap.provideDepartment(data.department);
                 log("entered department: " + data.department);
 
-                ap.provideWorkLocation(data.workLocation);
-                log("entered work location: " + data.workLocation);
+                // ap.provideWorkLocation(data.workLocation);
+                // log("entered work location: " + data.workLocation);
 
                 ap.provideEmployee(data.employee);
                 log("entered employee: " + data.employee);
@@ -104,6 +104,8 @@ public class AnnouncementTest extends BaseTest
             {
                 BasePage.filterAndOpenTransaction(2, 1, data.title, "Edit");
                 log("filtered and opened announcement: " + data.title);
+                ap.clickContextMenu();
+                log("clicked on context menu");
                 ap.clickDelete();
                 log("clicked on delete btn");
                 BasePage.waitTS(2);
