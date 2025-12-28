@@ -123,5 +123,15 @@
         }
       ]
     }
+  ],
+  "ratingType": [
+    {
+      "name": "Star1",
+      "ratingType": "Dropdown",
+      "label": "Excellent",
+      "score": "5",
+      "description": "Excellent",
+      "distribution": "High"
+    }
   ]
 }

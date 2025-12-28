@@ -126,4 +126,14 @@ public class PerformanceModel
         public String finalScore;
         public String finalRating;
     }
+
+    public static class RatingTypeModel
+    {
+        public String name;
+        public String ratingType;
+        public String label;
+        public String score;
+        public String description;
+        public String distribution;
+    }
 }
