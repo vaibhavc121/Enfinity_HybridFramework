@@ -24,8 +24,7 @@
 
             <!-- New Test -->
             <!--<class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest"/>-->
-            <class name="testCases.HRMS.SelfService.PromotionRequestTest"/>
-
+            <class name="testCases.HRMS.Performance.Setups.FeedbackCategoryTest"/>
 
         </classes>
     </test>

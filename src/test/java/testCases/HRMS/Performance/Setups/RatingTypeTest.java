@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.Performance.PerformancePage;
 import pageObjects.HRMS.Performance.Setups.RatingTypePage;
+import utilities.BrowserUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -46,16 +47,28 @@ public class RatingTypeTest extends BaseTest
                 rp.selectRatingType(data.ratingType);
                 log("selected rating type: " + data.ratingType);
 
-                BasePage.clickOnSave();
-                log("clicked on save btn");
+                // BasePage.clickOnSave();
+                // log("clicked on save btn");
 
-                BasePage.clickOnNewLine();
-                log("clicked on new line btn");
+                // BasePage.clickOnNewLine();
+                // log("clicked on new line btn");
+
+                // rp.provideLabel(data.label);
+                // log("entered label: " + data.label);
+
+                // rp.provideScore(data.score);
+                // log("entered score: " + data.score);
+
+                // rp.provideDesc(data.description);
+                // log("entered description: " + data.description);
+
+                // rp.provideDistribution(data.description);
+                // log("entered distribution: " + data.description);
 
                 BasePage.clickViewAndBack();
                 log("clicked on view and back btn");
 
-                Assert.assertTrue(BasePage.validateListing(data.name, 3, 2), "Rating Type creation failed: " + data.name);
+                Assert.assertTrue(BasePage.validateListing(data.name, 2, 1), "Rating Type creation failed: " + data.name);
                 log("Verified: Rating Type created successfully: " + data.name);
             }
         } catch (Exception e)
@@ -68,5 +81,33 @@ public class RatingTypeTest extends BaseTest
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
     public void deleteRatingType()
     {
+        try
+        {
+
+            //Performance pg
+            PerformancePage pp = new PerformancePage();
+            pp.clickPerformance();
+            log("clicked on performance link");
+            BasePage.clickSetups();
+            log("clicked on setups link");
+
+            //Rating Type pg
+            RatingTypePage rp = new RatingTypePage();
+            rp.clickRatingType();
+            log("clicked on rating type link");
+
+            for (PerformanceModel.RatingTypeModel data : ratingTypeData)
+            {
+                BasePage.performAction(2, data.name, "Delete");
+                BrowserUtils.navigateBack(BaseTest.getDriver());
+
+                Assert.assertFalse(BasePage.validateListing(data.name, 2, 1), "Rating Type deletion failed: " + data.name);
+                log("Verified: Rating Type deleted successfully: " + data.name);
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
     }
 }

@@ -133,5 +133,10 @@
       "description": "Excellent",
       "distribution": "High"
     }
+  ],
+  "feedbackCategory": [
+    {
+      "name": "proactiveness"
+    }
   ]
 }

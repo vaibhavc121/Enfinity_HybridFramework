@@ -15,6 +15,7 @@ public class RatingTypePage extends BasePage
 
     @FindBy(id = "RatingType.RatingType_I")
     private WebElement ratingType;
+    ;
 
     @FindBy(xpath = "(//div[@class='dxgBCTC dx-ellipsis'])[1]")
     private WebElement label;
@@ -33,7 +34,7 @@ public class RatingTypePage extends BasePage
     //region Action Methods
     public void clickRatingType()
     {
-        clickOnElement1(ratingType);
+        clickOnElement1(ratingTypeLink);
     }
     public void provideName(String rname)
     {
@@ -44,21 +45,21 @@ public class RatingTypePage extends BasePage
         clickOnElement1(ratingType);
         selectDropdownValueOffice365(rratingType);
     }
-    public void provideLabel(String value)
+    public void provideLabel(String value) throws InterruptedException
     {
-        clearAndProvide1(label, value);
+        clearAndProvide2(label, value);
     }
-    public void provideScore(String value)
+    public void provideScore(String value) throws InterruptedException
     {
-        clearAndProvide1(score, value);
+        clearAndProvide2(score, value);
     }
-    public void provideDesc(String value)
+    public void provideDesc(String value) throws InterruptedException
     {
-        clearAndProvide1(description, value);
+        clearAndProvide2(description, value);
     }
-    public void provideDistribution(String value)
+    public void provideDistribution(String value) throws InterruptedException
     {
-        clearAndProvide1(distribution, value);
+        clearAndProvide2(distribution, value);
     }
     //endregion
 }
