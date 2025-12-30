@@ -27,6 +27,8 @@
             <class name="testCases.HRMS.Payroll.Setups.ProjectTest"/>
             <class name="testCases.HRMS.Payroll.Setups.PaymentBatchTest"/>
             <class name="testCases.HRMS.Performance.Setups.RatingTypeTest"/>
+            <class name="testCases.HRMS.Performance.Setups.FeedbackCategoryTest"/>
+            <class name="testCases.HRMS.Learning.Setups.CourseRoomTest"/>
 
             <!-- Performance-->
 

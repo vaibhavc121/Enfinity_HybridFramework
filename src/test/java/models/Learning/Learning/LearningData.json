@@ -27,8 +27,14 @@
       "batchName": "AI batch",
       "startDate": "01-Apr-2025",
       "endDate": "30-Apr-2025"
-
-
+    }
+  ],
+  "courseRoom": [
+    {
+      "name": "Jupiter",
+      "capacity": "100",
+      "location": "location",
+      "facilities": "Facilities"
     }
   ]
 }

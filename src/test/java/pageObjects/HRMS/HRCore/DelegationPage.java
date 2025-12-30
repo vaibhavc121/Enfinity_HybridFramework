@@ -40,6 +40,9 @@ public class DelegationPage extends BasePage
     @FindBy(xpath = "(//tr)[6]//td[3]")
     private static WebElement row;
 
+    @FindBy(id = "MainMenu_DXI6_PImg")
+    private WebElement contextMenu;
+
     //endregion
 
     //region Action Methods
@@ -105,6 +108,11 @@ public class DelegationPage extends BasePage
     public void clkSaveBtn()
     {
         CommonActions.clkSave();
+    }
+
+    public void clickContextMenu()
+    {
+        clickOnElement1(contextMenu);
     }
 
     public void clickDelete()

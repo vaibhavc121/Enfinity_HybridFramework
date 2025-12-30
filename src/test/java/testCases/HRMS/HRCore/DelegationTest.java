@@ -24,7 +24,7 @@ public class DelegationTest extends BaseTest
     List<HRCoreModel.DelegationModel> delegationData = JsonUtils.convertJsonListDataModel(delegationFile, "Delegation",
             HRCoreModel.DelegationModel.class);
 
-    @Test(groups = "regression")
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
     public void createDelegation()
     {
         try
@@ -93,7 +93,8 @@ public class DelegationTest extends BaseTest
             for (HRCoreModel.DelegationModel data : delegationData)
             {
                 dp.filterAndOpenTransaction(4, 3, "Active", "Edit");
-                BasePage.switchTab();
+                dp.clickContextMenu();
+                log("clicked on context menu");
                 BasePage.waitTS(2);
                 dp.clickDelete();
 

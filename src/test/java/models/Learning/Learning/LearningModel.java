@@ -32,4 +32,12 @@ public class LearningModel
             public String weightage;
         }
     }
+
+    public static class CourseRoomModel
+    {
+        public String name;
+        public String capacity;
+        public String location;
+        public String facilities;
+    }
 }
