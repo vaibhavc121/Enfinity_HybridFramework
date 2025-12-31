@@ -73,7 +73,7 @@ public class CourseTrainerTest extends BaseTest
         BasePage.performAction(2, "Vaibhav", "Delete");
         BrowserUtils.navigateBack(BaseTest.getDriver());
 
-        Assert.assertFalse(BasePage.validateListing("Vaibhav", 2, 1), "Course room deletion failed: " + "Vaibhav");
-        log("Verified: Course room deleted successfully: " + "Vaibhav");
+        Assert.assertFalse(BasePage.validateListing("Vaibhav", 2, 1), "Course trainer deletion failed: " + "Vaibhav");
+        log("Verified: Course trainer deleted successfully: " + "Vaibhav");
     }
 }

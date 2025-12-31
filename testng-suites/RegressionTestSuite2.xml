@@ -29,6 +29,7 @@
             <class name="testCases.HRMS.Performance.Setups.RatingTypeTest"/>
             <class name="testCases.HRMS.Performance.Setups.FeedbackCategoryTest"/>
             <class name="testCases.HRMS.Learning.Setups.CourseRoomTest"/>
+            <class name="testCases.HRMS.Learning.Setups.CourseTrainerTest"/>
 
             <!-- Performance-->
 
