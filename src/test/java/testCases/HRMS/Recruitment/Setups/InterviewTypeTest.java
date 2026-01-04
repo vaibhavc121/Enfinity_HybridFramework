@@ -63,6 +63,6 @@ public class InterviewTypeTest extends BaseTest
         BrowserUtils.navigateBack(BaseTest.getDriver());
 
         Assert.assertFalse(BasePage.validateListing("InterviewType", 2, 1), "Course trainer deletion failed: " + "InterviewType");
-        log("Verified: Course trainer deleted successfully: " + "InterviewType");
+        log("Verified: interview type deleted successfully: " + "InterviewType");
     }
 }

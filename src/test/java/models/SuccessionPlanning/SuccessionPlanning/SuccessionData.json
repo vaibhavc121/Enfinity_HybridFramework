@@ -12,6 +12,19 @@
       "coursePercentage": "20",
       "description": "test"
     }
-    
+  ],
+  "readiness": [
+    {
+      "name": "readiness",
+      "fromPercentage": "70",
+      "toPercentage": "100"
+    }
+  ],
+  "superiority": [
+    {
+      "name": "readiness",
+      "fromPercentage": "70",
+      "toPercentage": "100"
+    }
   ]
 }
