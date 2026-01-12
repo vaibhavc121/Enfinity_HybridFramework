@@ -32,6 +32,7 @@
             <class name="testCases.HRMS.Learning.Setups.CourseTrainerTest"/>
             <class name="testCases.HRMS.Recruitment.Setups.InterviewTypeTest"/>
             <class name="testCases.HRMS.SuccessionPlanning.Setups.ReadinessTest"/>
+            <class name="testCases.HRMS.SuccessionPlanning.Setups.SuperiorityTest"/>
 
             <!-- Performance-->
 

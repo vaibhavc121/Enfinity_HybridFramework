@@ -24,7 +24,6 @@
 
             <!-- New Test -->
             <!--<class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest"/>-->
-            <class name="testCases.HRMS.SuccessionPlanning.Setups.SuperiorityTest"/>
 
 
         </classes>
