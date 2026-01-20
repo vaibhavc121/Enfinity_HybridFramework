@@ -78,11 +78,14 @@ public class RosterPage extends BasePage
     public void provideEmp(String value)
     {
         clearAndProvide1(employee, value);
+        waitTS(2);
     }
 
     public void clickOnGenerate()
     {
         generate.click();
+        waitTS(2);
+        pressEnter();
     }
 
     public void switchTheTab1()
