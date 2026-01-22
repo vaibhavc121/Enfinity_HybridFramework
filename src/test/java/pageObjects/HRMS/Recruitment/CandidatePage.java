@@ -21,11 +21,11 @@ public class CandidatePage extends BasePage
     //region Locators
 
     //region Personal Information
-    @FindBy(xpath = "(//input[contains(@id,'Name')])[1]")
+    @FindBy(xpath = "(//input[contains(@id,'Name')])[3]")
     private WebElement name;
     @FindBy(xpath = "//input[contains(@id,'Email')]")
     private WebElement email;
-    @FindBy(xpath = "//input[contains(@id,'MobileNumber')]")
+    @FindBy(xpath = "//input[@id='mobileNumber']")
     private WebElement mobileNumber;
     @FindBy(xpath = "//input[contains(@id,'DateOfBirth')]")
     private WebElement dateOfBirth;

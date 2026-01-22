@@ -142,7 +142,7 @@ public class JobApplicationTrackingPage extends BasePage
     private WebElement oKCalendar;
     @FindBy(xpath = "//input[contains(@id,'Duration')]")
     private WebElement interviewDuration;
-    @FindBy(xpath = "//input[contains(@id,'Mode')]")
+    @FindBy(xpath = "(//input[contains(@id,'Mode')])[3]")
     private WebElement interviewMode;
     @FindBy(xpath = "//input[contains(@id,'Location')]")
     private WebElement location;

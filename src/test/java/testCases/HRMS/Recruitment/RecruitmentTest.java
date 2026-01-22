@@ -54,8 +54,8 @@ public class RecruitmentTest extends BaseTest
                 cp.provideEmail(faker.internet().emailAddress());
                 log("Provided Email");
 
-                cp.provideMobileNumber(candidate.mobile);
-                log("Provided Mobile Number");
+                // cp.provideMobileNumber(candidate.mobile);
+                // log("Provided Mobile Number");
 
                 cp.provideDateOfBirth(candidate.dob);
                 log("Provided Date of Birth");
