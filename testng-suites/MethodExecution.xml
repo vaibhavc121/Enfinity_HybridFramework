@@ -45,13 +45,13 @@
             <!--            </class>-->
 
 
-            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createAppraisalCycle"/>-->
-            <!--                    <include name="deleteAppraisalCycle"/>-->
+            <class name="testCases.HRMS.Performance.PerformanceTest">
+                <methods>
+                    <include name="createAppraisalCycle"/>
+                    <include name="deleteAppraisalCycle"/>
 
-            <!--                </methods>-->
-            <!--            </class>-->
+                </methods>
+            </class>
 
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->
@@ -73,12 +73,12 @@
             <!--            </class>-->
 
 
-            <class name="testCases.HRMS.Attendance.AttendanceTest">
+            <!--<class name="testCases.HRMS.Attendance.AttendanceTest">
                 <methods>
                     <include name="createRoster"/>
                     <include name="deleteRoster"/>
                 </methods>
-            </class>
+            </class>-->
 
 
         </classes>

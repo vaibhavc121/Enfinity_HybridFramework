@@ -16,7 +16,7 @@ public class AppraisalCyclePage extends BasePage
     //region Locators
 
     //region Header
-    @FindBy(xpath = "//input[contains(@id,'Name')]")
+    @FindBy(xpath = "(//input[contains(@id,'Name')])[3]")
     private WebElement name;
     @FindBy(xpath = "//input[contains(@id,'AppraisalCycleFromDate')]")
     private WebElement appraisalFromDate;
@@ -69,7 +69,7 @@ public class AppraisalCyclePage extends BasePage
     //endregion
 
     //region Reviewers
-    @FindBy(xpath = "//span[@class='dx-checkbox-icon']")
+    @FindBy(xpath = "(//span[@class='dx-checkbox-icon'])[2]")
     private WebElement allowManualWorkflow;
     @FindBy(xpath = "//input[contains(@id,'WorkflowId')]")
     private WebElement workflow;
