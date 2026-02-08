@@ -33,7 +33,16 @@
       "startDate": "01-Jan-2023",
       "endDate": "01-Jan-2024",
       "workProfile": "Worked on automation testing, API testing, and performance testing"
-
+    }
+  ],
+  "onboardingTask": [
+    {
+      "name": "John Doe",
+      "nameArabic": "جون دو",
+      "email": "johndoe@example.com",
+      "mobileNumber": "+971501234567",
+      "dateOfBirth": "01-Jan-2000",
+      "gender": "Male"
     }
   ]
 }

@@ -543,6 +543,33 @@ public class BasePage
         BaseTest.log("No matching value found in result: " + expectedValue);
     }
 
+    public static void selectDropdownOptionEquals(String expectedValue)
+    {
+        List<WebElement> dropdownList;
+        try
+        {
+            dropdownList = waitForElements2(By.xpath("//div[@class='dx-item-content dx-list-item-content']"));
+        } catch (Exception e)
+        {
+            dropdownList = waitForElements2(By.xpath("//div[@class='dx-item dx-list-item']"));
+        }
+
+        for (WebElement dropdownElement : dropdownList)
+        {
+            String actualValue = dropdownElement.getText().trim().toLowerCase();
+            if (actualValue.contains(expectedValue.toLowerCase()))
+            {
+                if (!actualValue.equals("navigation > my onboarding task"))
+                {
+                    dropdownElement.click();
+                    BaseTest.log("Value selected from result: " + expectedValue);
+                    break;
+                }
+            }
+        }
+        BaseTest.log("No matching value found in result: " + expectedValue);
+    }
+
     public static void selectDropdownValue(String value)
     {
         while (true)
@@ -651,6 +678,17 @@ public class BasePage
         selectDropdownOption(value);*/
 
         TopNavigationBar.globalSearch(value);
+    }
+    public static void globalSearchEquals(String value)
+    {
+        /*        WebElement globalSearchInput = waitForElement1(By.id("GlobalSearch"));
+        globalSearchInput.click();
+        WebElement comboBoxInput = waitForElement1(By.xpath("//input[@role='combobox']"));
+        comboBoxInput.sendKeys(value);
+        waitTS(2);
+        selectDropdownOption(value);*/
+
+        TopNavigationBar.globalSearchEquals(value);
     }
 
     public static void scrollDownWebPageSample()

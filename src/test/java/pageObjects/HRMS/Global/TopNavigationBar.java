@@ -75,6 +75,13 @@ public class TopNavigationBar extends BasePage
         waitTS(2);
         selectDropdownOption(value);
     }
+    public static void globalSearchEquals(String value)
+    {
+        clearAndProvide(By.xpath("//input[@placeholder='Type to search (Ctrl + K)']"), value);
+        BaseTest.log("Global search input provided with value: " + value);
+        waitTS(2);
+        selectDropdownOptionEquals(value);
+    }
     //endregion
 
     //region Notification Popup
