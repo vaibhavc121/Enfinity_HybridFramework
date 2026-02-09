@@ -515,7 +515,13 @@ public class BasePage
             waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
         } catch (Exception e)
         {
-            waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
+            try
+            {
+                waitForElement1(By.xpath("//span[normalize-space()='New']")).click();
+            } catch (Exception e1)
+            {
+                waitForElement1(By.id("MainMenu_DXI2_Img")).click();
+            }
         }
     }
 
@@ -559,7 +565,7 @@ public class BasePage
             String actualValue = dropdownElement.getText().trim().toLowerCase();
             if (actualValue.contains(expectedValue.toLowerCase()))
             {
-                if (!actualValue.equals("navigation > my onboarding task"))
+                if (!actualValue.equals("navigation > my onboarding task") && !actualValue.equals("navigation > my offboarding task"))
                 {
                     dropdownElement.click();
                     BaseTest.log("Value selected from result: " + expectedValue);
@@ -724,7 +730,13 @@ public class BasePage
         waitTS(2);
         try
         {
-            waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
+            try
+            {
+                waitForElement1(By.xpath("(//tr)[6]//td[2]")).click();
+            } catch (Exception e)
+            {
+                waitForElement1(By.xpath("(//tr)[6]//td[1]")).click();
+            }
             BaseTest.log("row selected");
         } catch (Exception e)
         {
@@ -737,7 +749,14 @@ public class BasePage
             BaseTest.log("clickOnView");
         } catch (Exception e)
         {
-            clickOnEdit();
+            try
+            {
+                clickOnEdit();
+            } catch (Exception e1)
+            {
+                waitForElement1(By.xpath("//img[@id='MainMenu_DXI3_Img']")).click();
+            }
+
             BaseTest.log("clickOnEdit");
         }
         waitTS(5);

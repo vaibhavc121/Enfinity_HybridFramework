@@ -34,6 +34,8 @@
             <class name="testCases.HRMS.SuccessionPlanning.Setups.ReadinessTest"/>
             <class name="testCases.HRMS.SuccessionPlanning.Setups.SuperiorityTest"/>
             <class name="testCases.HRMS.Onboarding.OnboardingTaskTest"/>
+            <class name="testCases.HRMS.Onboarding.OnboardingProcessSetupTest"/>
+            <class name="testCases.HRMS.Onboarding.OffboardingTaskTest"/>
 
             <!-- Performance-->
 

@@ -55,8 +55,8 @@ public class ExceptionRequestTest extends BaseTest
                 er.provideLogoutTime(exception.logotTime);
                 log("provided Logout Time: " + exception.logotTime);
 
-                er.provideRemarks(exception.remarks);
-                log("provided Remarks: " + exception.remarks);
+                //er.provideRemarks(exception.remarks);
+                //log("provided Remarks: " + exception.remarks);
 
                 BasePage.clickOnSaveAndSubmitBack();
                 log("clickOnSaveAndSubmitBack");

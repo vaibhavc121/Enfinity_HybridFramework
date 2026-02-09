@@ -25,19 +25,54 @@ public class OnboardingProcessSetupTest extends BaseTest
             op.clickOnboarding();
             log("Clicked on Onboarding");
 
-            BasePage.globalSearchEquals("Onboarding Task");
-            log("Searched for Onboarding Task");
+            BasePage.globalSearchEquals("Onboarding Process Setup");
+            log("Searched for Onboarding Process Setup");
 
             BasePage.clickOnNew();
             log("Clicked on New Button");
 
             OnboardingProcessSetupPage otp = new OnboardingProcessSetupPage();
+            otp.provideName("Onboarding Process Setup");
+            log("Provided Process Name");
+
+            BasePage.clickOnSave();
+            log("Clicked on Save");
+
+            otp.provideArrivalTime("12:00 AM");
+            log("Provided Arrival Time");
+
+            otp.selectWorkLocation("Sharq City");
+            log("Selected Work Location");
+
+            otp.selectContactPerson("001 | Vaibhav Chavan");
+            log("Selected Contact Person");
+
+            otp.provideWelcomeNote("Welcome to the company!");
+            log("Provided Welcome Note");
+
+            otp.provideURL();
+            log("Provided URL");
+
+            otp.provideOtherInstructions("Please complete your profile and submit the required documents.");
+            log("Provided Other Instructions");
+
+            otp.scrollToEmpIntroEmailTemplate();
+            log("Scrolled to Employee Introduction Email Template");
+
+            otp.selectEmpIntroEmailTemplate("10000 | Generic");
+            log("Selected Employee Introduction Email Template");
+
+            otp.selectEmailParticipants("HR");
+            log("Selected Email Participants");
+
+            otp.provideEmailRecipient("abc@gmail.com");
+            log("Provided Email Recipient");
 
             BasePage.clickViewAndBack();
             log("Clicked on View and Back");
 
-            Assert.assertTrue(BasePage.validateListing("Complete Documentation", 2, 1), "Onboarding task creation failed: " + "Complete Documentation");
-            log("Verified: Onboarding task created successfully: " + "Complete Documentation");
+            Assert.assertTrue(BasePage.validateListing("Onboarding Process Setup", 2, 1), "Onboarding Process Setup task creation failed: " + "Onboarding Process Setup");
+            log("Verified: OnboardingProcessSetup created successfully: " + "Onboarding Process Setup");
         } catch (Exception e)
         {
             LoggerFactory.getLogger().error("Test failed due to exception: ", e);
@@ -58,11 +93,11 @@ public class OnboardingProcessSetupTest extends BaseTest
             op.clickOnboarding();
             log("Clicked on Onboarding");
 
-            BasePage.globalSearchEquals("Onboarding Task");
-            log("Searched for Onboarding Task");
+            BasePage.globalSearchEquals("Onboarding Process Setup");
+            log("Searched for Onboarding Process Setup");
 
-            BasePage.deleteTxn(2, "Complete Documentation");
-            Assert.assertFalse(BasePage.validateListing("Complete Documentation", 2, 1));
+            BasePage.deleteTxn(2, "Onboarding Process Setup");
+            Assert.assertFalse(BasePage.validateListing("Onboarding Process Setup", 2, 1));
         } catch (Exception e)
         {
             LoggerFactory.getLogger().error("Test failed due to exception: ", e);

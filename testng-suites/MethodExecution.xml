@@ -36,22 +36,22 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <!--            <class name="testCases.HRMS.SelfService.PromotionRequestTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="createSalaryRevisionRequest"/>-->
-            <!--                    <include name="deleteSalaryRevisionRequest"/>-->
-
-            <!--                </methods>-->
-            <!--            </class>-->
-
-
-            <class name="testCases.HRMS.Performance.PerformanceTest">
+            <class name="testCases.HRMS.SelfService.PromotionRequestTest">
                 <methods>
-                    <include name="createAppraisalCycle"/>
-                    <include name="deleteAppraisalCycle"/>
+                    <include name="createSalaryRevisionRequest"/>
+                    <include name="deleteSalaryRevisionRequest"/>
 
                 </methods>
             </class>
+
+
+            <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="createAppraisalCycle"/>-->
+            <!--                    <include name="deleteAppraisalCycle"/>-->
+
+            <!--                </methods>-->
+            <!--            </class>-->
 
 
             <!--            <class name="testCases.HRMS.Recruitment.RecruitmentTest">-->

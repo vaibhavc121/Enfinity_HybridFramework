@@ -39,7 +39,8 @@ public class TicketAdjustmentTest extends BaseTest
                 ReportsPage rp = new ReportsPage();
                 rp.openReport(ticketAdj.reportName);
                 double ticketBal = rp.getTicketBalance(ticketAdj.employee);
-                double expTicketBal = ticketBal + 1;
+                double TicketBalFloat = ticketBal + 1;
+                String expTicketBal = String.format("%.3f", TicketBalFloat);
 
                 pp.clkPayroll();
                 log("clicked on payroll link");
