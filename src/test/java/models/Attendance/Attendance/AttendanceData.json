@@ -69,5 +69,13 @@
       "secondOutTime": "0500AM",
       "shiftNextDayStartFrom": "Second Half In Time"
     }
+  ],
+  "rosterRequest": [
+    {
+      "fromDate": "01-01-2025",
+      "toDate": "01-01-2025",
+      "timetable": "VRC 9-3",
+      "employee": "001"
+    }
   ]
 }

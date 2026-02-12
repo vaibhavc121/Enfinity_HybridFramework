@@ -18,6 +18,9 @@ public class AttendancePage extends BasePage
     @FindBy(xpath = "//label[normalize-space()='Roster']")
     WebElement roster;
 
+    @FindBy(xpath = "//label[normalize-space()='Roster Request']")
+    private WebElement rosterRequest;
+
     public static void clickAttendance()
     {
         BasePage.clickMenuIcon();
@@ -32,5 +35,10 @@ public class AttendancePage extends BasePage
     public void clickRoster()
     {
         roster.click();
+    }
+
+    public void clickRosterRequest()
+    {
+        clickOnElement1(rosterRequest);
     }
 }
