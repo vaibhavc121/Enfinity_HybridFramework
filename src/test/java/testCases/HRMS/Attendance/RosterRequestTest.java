@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.Attendance.AttendancePage;
 import pageObjects.HRMS.Attendance.RosterRequestPage;
+import utilities.DateUtils;
 import utilities.FileUtils;
 import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
@@ -45,8 +46,11 @@ public class RosterRequestTest extends BaseTest
                 log("Entered Timetable: " + data.timetable);
                 rp.enterEmployee(data.employee);
                 log("Entered Employee: " + data.employee);
-                BasePage.clickOnSave();
+                BasePage.clickOnViewApproveBack();
                 log("Clicked on Save button to save the roster request");
+
+                Assert.assertTrue(BasePage.validateListing(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2),
+                        "Roster is not created successfully");
             }
         } catch (Exception e)
         {
@@ -60,7 +64,19 @@ public class RosterRequestTest extends BaseTest
     {
         try
         {
-            
+            AttendancePage ap = new AttendancePage();
+            ap.clickAttendance();
+            log("Clicked on Attendance menu");
+            ap.clickRosterRequest();
+            log("Clicked on Roster Request");
+
+            for (AttendanceModel.RosterRequestModel data : attendanceData)
+            {
+                BasePage.deleteTxn(2, DateUtils.getCurrentDate("dd-MMM-yyyy"));
+                Assert.assertFalse(BasePage.validateListing(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2),
+                        "Roster request not deleted successfully");
+                log("Assertion passed: Roster request deleted successfully");
+            }
         } catch (Exception e)
         {
             LoggerFactory.getLogger().error("Test failed due to exception: ", e);

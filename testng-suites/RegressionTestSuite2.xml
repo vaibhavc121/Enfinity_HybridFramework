@@ -36,6 +36,7 @@
             <class name="testCases.HRMS.Onboarding.OnboardingTaskTest"/>
             <class name="testCases.HRMS.Onboarding.OnboardingProcessSetupTest"/>
             <class name="testCases.HRMS.Onboarding.OffboardingTaskTest"/>
+            <class name="testCases.HRMS.Attendance.RosterRequestTest"/>
 
             <!-- Performance-->
 
