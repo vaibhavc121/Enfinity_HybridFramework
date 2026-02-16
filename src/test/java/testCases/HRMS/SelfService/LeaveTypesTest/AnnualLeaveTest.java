@@ -106,9 +106,90 @@ public class AnnualLeaveTest extends BaseTest
         }
     }
 
+    @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class, priority = 2)
+    public void verifyCountWeekendsAsLeaveDaysDuringLeaveperiod()
+    {
+        try
+        {
+            for (SelfServiceModel.EntitlementModel data : annualLeaveData)
+            {
+                BasePage.logoutAndLogin("vikas@test.com", "123");
+                if (data.countWeekendsAsLeaveDays == true)
+                {
+                    try
+                    {
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "CountWeekendsAsLeaveDaysDuringLeaveperiod", data.eligibilityDaysAfterJoining.days);
+
+                        // self service page
+                        SelfServicePage ss = new SelfServicePage();
+                        ss.clickSelfService();
+                        ss.clickTransactions();
+
+                        // leave request page
+                        LeaveRequestPage lr = new LeaveRequestPage();
+
+                        lr.clickLeaveRequest();
+                        Thread.sleep(5000);
+                        lr.clickNew();
+                        lr.hoverAndClick(data.eligibilityDaysAfterJoining.leaveType); //Annual leave
+                        lr.provideFromDate(data.eligibilityDaysAfterJoining.fromDate);
+                        lr.provideToDate(data.eligibilityDaysAfterJoining.toDate);
+                        // lr.clickOnSaveSubmit();
+                        lr.clickSave();
+
+                        Assert.assertTrue(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Active", 7, 7), "Leave request is not created: " + data.eligibilityDaysAfterJoining.leaveType);
+                        log("Veified: Leave request is created successfully: " + data.eligibilityDaysAfterJoining.leaveType);
+
+                        LeaveRequestTest lrp = new LeaveRequestTest();
+                        lrp.deleteLeaveRequest();
+                    } catch (Exception e)
+                    {
+                        LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+                        Assert.fail("Test case failed: " + e);
+                    }
+                } else if (data.eligibilityDaysAfterJoining.days >= 30)
+                {
+                    try
+                    {
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining30", data.eligibilityDaysAfterJoining.days);
+
+                        // self service page
+                        SelfServicePage ss = new SelfServicePage();
+                        ss.clickSelfService();
+                        ss.clickTransactions();
+
+                        // leave request page
+                        LeaveRequestPage lr = new LeaveRequestPage();
+
+                        lr.clickLeaveRequest();
+                        Thread.sleep(5000);
+                        lr.clickNew();
+                        lr.hoverAndClick(data.eligibilityDaysAfterJoining.leaveType); //sick leave
+                        lr.provideFromDate(data.eligibilityDaysAfterJoining.fromDate);
+                        lr.provideToDate(data.eligibilityDaysAfterJoining.toDate);
+                        // lr.clickOnSaveSubmit();
+                        lr.clickSave();
+                        BasePage.waitTS(3);
+
+                        Assert.assertFalse(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Active", 7, 7));
+                        log("Veified: Leave request is not created as expected: " + data.eligibilityDaysAfterJoining.leaveType);
+                    } catch (Exception e)
+                    {
+                        LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+                        Assert.fail("Test case failed: " + e);
+                    }
+                }
+            }
+        } catch (Exception e)
+        {
+            LoggerFactory.getLogger().error("Test failed due to exception: ", e);
+            Assert.fail("Test case failed: " + e);
+        }
+    }
+
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
     @Owner("Vaibhav")
-
+    @Reset
     public void resetSettings()
     {
         String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");

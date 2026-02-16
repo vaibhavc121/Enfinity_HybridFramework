@@ -15,10 +15,10 @@ public class ConfigureLeaveTypeSetting extends BasePage
     //region Locators
 
     //region Reset Settings
-    @FindBy(xpath = "(//input[@role='spinbutton'])[2]")
+    @FindBy(xpath = "(//input[@role='spinbutton'])[1]")
     WebElement spinbutton2;
 
-    @FindBy(xpath = "(//input[@role='spinbutton'])[3]")
+    @FindBy(xpath = "(//input[@role='spinbutton'])[2]")
     WebElement spinbutton3;
     //endregion
 
@@ -32,7 +32,7 @@ public class ConfigureLeaveTypeSetting extends BasePage
         globalSearch("Leave Type");
         BasePage.filterAndOpenTransaction(2, 1, leaveType, "View");
 
-        WebElement spinbutton = waitForElement1(By.xpath("(//input[@role='spinbutton'])[3]"));
+        WebElement spinbutton = waitForElement1(By.xpath("(//input[@role='spinbutton'])[2]"));
         if (settingName.equalsIgnoreCase("EligibilityDaysAfterJoining0"))
         {
             clearAndProvide1(spinbutton, stringValue);
