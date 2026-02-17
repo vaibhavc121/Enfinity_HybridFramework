@@ -51,6 +51,9 @@ public class LeaveRequestPage extends BasePage
     @FindBy(xpath = "//input[contains(@id,'CancellationStatus')]")
     private WebElement CancellationStatus;
 
+    @FindBy(id = "Leave.WeekendDays_I")
+    private WebElement weekendDays;
+
     // Action Methods
     public void clickLeaveRequest()
     {

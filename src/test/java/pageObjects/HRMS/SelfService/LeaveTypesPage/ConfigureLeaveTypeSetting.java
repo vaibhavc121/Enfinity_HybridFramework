@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Optional;
 
 public class ConfigureLeaveTypeSetting extends BasePage
 {
@@ -20,12 +21,15 @@ public class ConfigureLeaveTypeSetting extends BasePage
 
     @FindBy(xpath = "(//input[@role='spinbutton'])[2]")
     WebElement spinbutton3;
+
+    @FindBy(xpath = "//div[@id='IncludeWeekends']//div[@class='dx-switch-off'][normalize-space()='No']")
+    private WebElement countWeekendAsLeaveNo;
     //endregion
 
     //endregion
 
     //region Action Methods
-    public void configureLeaveType(String leaveType, String settingName, int value)
+    public void configureLeaveType(String leaveType, String settingName, Optional<Integer> value)
     {
         String stringValue = String.valueOf(value);
 
@@ -39,6 +43,19 @@ public class ConfigureLeaveTypeSetting extends BasePage
         } else if (settingName.equalsIgnoreCase("EligibilityDaysAfterJoining30"))
         {
             clearAndProvide1(spinbutton, stringValue);
+        }
+        if (settingName.equalsIgnoreCase("CountWeekendsAsLeaveDaysDuringLeaveperiodTrue"))
+        {
+            if (!countWeekendAsLeaveNo.getAttribute("class").contains("dx-switch-on"))
+            {
+                clickOnElement1(countWeekendAsLeaveNo);
+            }
+        } else if (settingName.equalsIgnoreCase("CountWeekendsAsLeaveDaysDuringLeaveperiodFalse"))
+        {
+            if (!countWeekendAsLeaveNo.getAttribute("class").contains("dx-switch-off"))
+            {
+                clickOnElement1(countWeekendAsLeaveNo);
+            }
         }
         clickOnSave();
     }

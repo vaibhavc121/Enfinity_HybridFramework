@@ -6,6 +6,7 @@ import base.BasePage;
 import base.BaseTest;
 import factory.LoggerFactory;
 import models.SelfService.SelfService.SelfServiceModel;
+import org.apache.commons.lang3.ObjectUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HRMS.SelfService.LeaveRequestPage;
@@ -18,6 +19,7 @@ import utilities.JsonUtils;
 import utilities.RetryAnalyzer;
 
 import java.util.List;
+import java.util.Optional;
 
 public class AnnualLeaveTest extends BaseTest
 {
@@ -37,7 +39,7 @@ public class AnnualLeaveTest extends BaseTest
                 {
                     try
                     {
-                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining0", data.eligibilityDaysAfterJoining.days);
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining0", Optional.of(data.eligibilityDaysAfterJoining.days));
 
                         // self service page
                         SelfServicePage ss = new SelfServicePage();
@@ -70,7 +72,7 @@ public class AnnualLeaveTest extends BaseTest
                 {
                     try
                     {
-                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining30", data.eligibilityDaysAfterJoining.days);
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining30", Optional.of(data.eligibilityDaysAfterJoining.days));
 
                         // self service page
                         SelfServicePage ss = new SelfServicePage();
@@ -118,7 +120,7 @@ public class AnnualLeaveTest extends BaseTest
                 {
                     try
                     {
-                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "CountWeekendsAsLeaveDaysDuringLeaveperiod", data.eligibilityDaysAfterJoining.days);
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "CountWeekendsAsLeaveDaysDuringLeaveperiodTrue", Optional.empty());
 
                         // self service page
                         SelfServicePage ss = new SelfServicePage();
@@ -147,11 +149,11 @@ public class AnnualLeaveTest extends BaseTest
                         LoggerFactory.getLogger().error("Test failed due to exception: ", e);
                         Assert.fail("Test case failed: " + e);
                     }
-                } else if (data.eligibilityDaysAfterJoining.days >= 30)
+                } else
                 {
                     try
                     {
-                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "EligibilityDaysAfterJoining30", data.eligibilityDaysAfterJoining.days);
+                        stg.configureLeaveType(data.eligibilityDaysAfterJoining.leaveType, "CountWeekendsAsLeaveDaysDuringLeaveperiodFalse", Optional.empty());
 
                         // self service page
                         SelfServicePage ss = new SelfServicePage();
