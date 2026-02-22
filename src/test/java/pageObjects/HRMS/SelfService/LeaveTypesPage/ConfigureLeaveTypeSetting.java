@@ -153,5 +153,13 @@ public class ConfigureLeaveTypeSetting extends BasePage
         element.sendKeys(value);
     }
 
+    public void turnOnSettingCountWeekendAsLeaveNo()
+    {
+        if (!countWeekendAsLeaveNo.getAttribute("class").contains("dx-switch-on"))
+        {
+            clickOnElement1(countWeekendAsLeaveNo);
+        }
+    }
+
     //endregion
 }

@@ -136,6 +136,7 @@ public class AnnualLeaveTest extends BaseTest
                         lr.hoverAndClick(data.eligibilityDaysAfterJoining.leaveType); //Annual leave
                         lr.provideFromDate(data.eligibilityDaysAfterJoining.fromDate);
                         lr.provideToDate(data.eligibilityDaysAfterJoining.toDate);
+                        Assert.assertTrue(lr.isWeekendDaysLessThanOne(), "Weekend days are not less than one for the selected leave period: " + data.eligibilityDaysAfterJoining.leaveType);
                         // lr.clickOnSaveSubmit();
                         lr.clickSave();
 
@@ -191,7 +192,7 @@ public class AnnualLeaveTest extends BaseTest
 
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
     @Owner("Vaibhav")
-    @Reset
+    
     public void resetSettings()
     {
         String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");

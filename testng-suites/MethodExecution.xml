@@ -36,10 +36,10 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name="testCases.HRMS.SelfService.PromotionRequestTest">
+            <class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest">
                 <methods>
-                    <include name="createSalaryRevisionRequest"/>
-                    <include name="deleteSalaryRevisionRequest"/>
+                    <include name="verifyCountWeekendsAsLeaveDaysDuringLeaveperiod"/>
+
 
                 </methods>
             </class>

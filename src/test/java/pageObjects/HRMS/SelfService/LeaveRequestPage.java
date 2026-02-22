@@ -161,4 +161,13 @@ public class LeaveRequestPage extends BasePage
     {
         return resultValue(5).contains(fromDate) && resultValue(8).contains(toDate);
     }
+    public boolean isWeekendDaysLessThanOne()
+    {
+        String value = weekendDays.getText();
+        if (value.equals("0"))
+        {
+            return true;
+        }
+        return false;
+    }
 }
