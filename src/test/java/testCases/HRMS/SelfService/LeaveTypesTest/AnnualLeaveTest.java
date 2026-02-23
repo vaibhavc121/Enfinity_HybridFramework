@@ -174,6 +174,7 @@ public class AnnualLeaveTest extends BaseTest
                         lr.clickSave();
                         BasePage.waitTS(3);
 
+                        //test
                         Assert.assertFalse(BasePage.validateListing2Fields(DateUtils.getCurrentDate("dd-MMM-yyyy"), 2, 2, "Active", 7, 7));
                         log("Veified: Leave request is not created as expected: " + data.eligibilityDaysAfterJoining.leaveType);
                     } catch (Exception e)
@@ -192,7 +193,7 @@ public class AnnualLeaveTest extends BaseTest
 
     @Test(groups = "functional", retryAnalyzer = RetryAnalyzer.class)
     @Owner("Vaibhav")
-    
+
     public void resetSettings()
     {
         String selfServiceFile = FileUtils.getDataFile("SelfService", "SelfService", "SelfServiceData");
