@@ -6,7 +6,7 @@
         <run>
             <include name="regression"></include>
             <include name="datadriven"></include>
-            <include name="functional"></include>
+            <!--<include name="functional"></include>-->
         </run>
     </groups>
 
@@ -23,8 +23,7 @@
         <classes>
 
             <!-- New Test -->
-            <class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest"/>
-
+            <class name="testCases.HRMS.Payroll.TicketAdjustmentTest"/>
 
         </classes>
     </test>

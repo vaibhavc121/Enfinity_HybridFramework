@@ -22,11 +22,11 @@
 
         <classes>
 
-            <!--            <class name="testCases.HRMS.HRCore.CreateDeleteFullEmployeeTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="verifyPerformanceTab"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
+            <class name="testCases.HRMS.HRCore.EmployeeTest">
+                <methods>
+                    <include name="deleteEmployee"/>
+                </methods>
+            </class>
 
             <!--            <class name="testCases.HRMS.Payroll.PromotionTest">-->
             <!--                <methods>-->
@@ -36,13 +36,13 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest">
-                <methods>
-                    <include name="verifyCountWeekendsAsLeaveDaysDuringLeaveperiod"/>
+            <!-- <class name="testCases.HRMS.SelfService.LeaveTypesTest.AnnualLeaveTest">
+                 <methods>
+                     <include name="verifyCountWeekendsAsLeaveDaysDuringLeaveperiod"/>
 
 
-                </methods>
-            </class>
+                 </methods>
+             </class>-->
 
 
             <!--            <class name="testCases.HRMS.Performance.PerformanceTest">-->

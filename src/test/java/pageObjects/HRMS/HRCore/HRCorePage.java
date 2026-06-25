@@ -29,6 +29,7 @@ public class HRCorePage extends BasePage
     {
         BasePage.clickMenuIcon();
         highlightElement(DriverFactory.getDriver(), hRCore, true);
+        waitTS(1);
         clickOnElement1(hRCore);
     }
 

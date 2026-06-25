@@ -59,7 +59,7 @@ public class BasePage
         boolean value = waitForElement1(By.xpath("//i[@title='Close sidebar']")).isDisplayed();
         if (!value)
         {
-            waitForElement1(By.xpath("//i[@class='enfinity-logo-white default-icon']")).click();
+            waitForElement1(By.xpath("//i[@class='hcm-logo-white default-icon']")).click();
             BaseTest.log("Clicked on logo icon to open the sidebar");
         } else
         {
