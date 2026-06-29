@@ -17,7 +17,7 @@ import utilities.RetryAnalyzer;
 public class TimeOffTest extends BaseTest
 {
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 1)
-    public void createTimeOff()
+    public void createPersonalTimeOff()
     {
         try
         {
@@ -73,7 +73,7 @@ public class TimeOffTest extends BaseTest
     }
 
     @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 2)
-    public void deleteTimeOff()
+    public void deletePersonalTimeOff()
     {
         try
         {

@@ -33,7 +33,7 @@ public class MyApprovalTest extends BaseTest
             //endregion
 
             //region Create TimeOff Request
-            to.createTimeOff();
+            to.createPersonalTimeOff();
             //endregion
 
             //region Bulk approve the leave request from manager login

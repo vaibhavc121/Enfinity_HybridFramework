@@ -117,6 +117,7 @@ public class SelfServiceModel
     {
         public String fromDate;
         public String uptoDate;
+        public String superiorEmployee;
         public String category;
         public String country;
         public String city;
